@@ -1,0 +1,126 @@
+- main [ref=f6e3]:
+  - complementary "Building blocks" [ref=f6e4]:
+    - generic "Swarm Canvas" [ref=f6e5]
+    - generic [ref=f6e9]:
+      - button "Add Research" [ref=f6e10]:
+        - generic [ref=f6e11]:
+          - generic [ref=f6e13]: Action
+          - generic [ref=f6e18]: Research
+      - button "Add Read documents" [ref=f6e20]:
+        - generic [ref=f6e21]:
+          - generic [ref=f6e23]: Action
+          - generic [ref=f6e28]: Read documents
+      - button "Add Compare" [ref=f6e30]:
+        - generic [ref=f6e31]:
+          - generic [ref=f6e33]: Action
+          - generic [ref=f6e38]: Compare
+      - button "Add Write" [ref=f6e40]:
+        - generic [ref=f6e41]:
+          - generic [ref=f6e43]: Action
+          - generic [ref=f6e48]: Write
+      - button "Add Parallel team" [ref=f6e50]:
+        - generic [ref=f6e51]:
+          - generic [ref=f6e53]: Control
+          - generic [ref=f6e58]: Parallel team
+      - button "Add Review" [ref=f6e60]:
+        - generic [ref=f6e61]:
+          - generic [ref=f6e63]: Control
+          - generic [ref=f6e68]: Review
+      - button "Add Repeat" [ref=f6e70]:
+        - generic [ref=f6e71]:
+          - generic [ref=f6e73]: Control
+          - generic [ref=f6e78]: Repeat
+    - generic [ref=f6e80]: 7 blocks
+  - region "Swarm canvas" [ref=f6e81]:
+    - application [ref=f6e82]:
+      - generic [ref=f6e84]:
+        - generic:
+          - generic:
+            - img:
+              - group "Edge from example-read to example-parallel"
+            - img:
+              - group "Edge from example-parallel to example-performance" [ref=f6e85] [cursor=pointer]
+            - img:
+              - group "Edge from example-parallel to example-compatibility" [ref=f6e88] [cursor=pointer]
+            - img:
+              - group "Edge from example-performance to example-compare" [ref=f6e91] [cursor=pointer]
+            - img:
+              - group "Edge from example-compatibility to example-compare" [ref=f6e94] [cursor=pointer]
+            - img:
+              - group "Edge from example-compare to example-write"
+            - img:
+              - group "Edge from example-write to example-review"
+            - img:
+              - group "Edge from example-review to example-repeat" [ref=f6e97] [cursor=pointer]:
+                - generic [ref=f6e100]: Needs evidence
+            - img:
+              - group "Edge from example-repeat to example-parallel" [ref=f6e102] [cursor=pointer]:
+                - generic [ref=f6e105]: Research again
+          - generic:
+            - group [ref=f6e107]:
+              - generic [ref=f6e108]:
+                - generic "Read documents input" [ref=f6e109]
+                - generic [ref=f6e110]: Action
+                - heading "Read documents" [level=2] [ref=f6e115]
+                - paragraph [ref=f6e116]: Extract information from files
+                - generic "Read documents output" [ref=f6e117]
+            - group [ref=f6e118]:
+              - generic [ref=f6e119]:
+                - generic "Parallel team input" [ref=f6e120]
+                - generic [ref=f6e121]: Control
+                - heading "Parallel team" [level=2] [ref=f6e126]
+                - paragraph [ref=f6e127]: Work on multiple tasks together
+                - generic "Parallel team output" [ref=f6e128]
+            - group [ref=f6e129]:
+              - generic [ref=f6e130]:
+                - generic "Research input" [ref=f6e131]
+                - generic [ref=f6e132]: Action
+                - heading "Research performance" [level=2] [ref=f6e137]
+                - paragraph [ref=f6e138]: Find sources and gather evidence
+                - generic "Research output" [ref=f6e139]
+            - group [ref=f6e140]:
+              - generic [ref=f6e141]:
+                - generic "Research input" [ref=f6e142]
+                - generic [ref=f6e143]: Action
+                - heading "Research compatibility" [level=2] [ref=f6e148]
+                - paragraph [ref=f6e149]: Find sources and gather evidence
+                - generic "Research output" [ref=f6e150]
+            - group [ref=f6e151]:
+              - generic [ref=f6e152]:
+                - generic "Compare input" [ref=f6e153]
+                - generic [ref=f6e154]: Action
+                - heading "Compare" [level=2] [ref=f6e159]
+                - paragraph [ref=f6e160]: Find patterns and differences
+                - generic "Compare output" [ref=f6e161]
+            - group [ref=f6e162]:
+              - generic [ref=f6e163]:
+                - generic "Write input" [ref=f6e164]
+                - generic [ref=f6e165]: Action
+                - heading "Write" [level=2] [ref=f6e170]
+                - paragraph [ref=f6e171]: Turn findings into an output
+                - generic "Write output" [ref=f6e172]
+            - group [ref=f6e173]:
+              - generic [ref=f6e174]:
+                - generic "Review input" [ref=f6e175]
+                - generic [ref=f6e176]: Control
+                - heading "Review" [level=2] [ref=f6e181]
+                - paragraph [ref=f6e182]: Check the result before continuing
+                - generic "Review output" [ref=f6e183]
+            - group [ref=f6e184]:
+              - generic [ref=f6e185]:
+                - generic "Repeat input" [ref=f6e186]
+                - generic [ref=f6e187]: Control
+                - heading "Repeat" [level=2] [ref=f6e192]
+                - paragraph [ref=f6e193]: Return to a step and try again
+                - generic "Repeat output" [ref=f6e194]
+      - generic:
+        - heading "Swarm canvas" [level=1]
+        - text: Arrange your building blocks.
+      - generic "Control Panel" [ref=f6e195]:
+        - button "Zoom In" [ref=f6e196] [cursor=pointer]
+        - button "Zoom Out" [ref=f6e199] [cursor=pointer]
+        - button "Fit View" [ref=f6e202] [cursor=pointer]
+      - generic: Drag blocks to arrange. Connect the handles.
+      - link "React Flow attribution" [ref=f6e206] [cursor=pointer]:
+        - /url: https://reactflow.dev/attribution
+        - text: React Flow

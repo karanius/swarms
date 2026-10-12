@@ -1,0 +1,6 @@
+PASS: discovery handles absent, existing, and same-home caches
+PASS: resolver, loader, live scan, no duplicate: mlx-community/Llama-3.2-3B-Instruct-4bit -> /Users/x/.exo/models/mlx-community--Llama-3.2-3B-Instruct-4bit
+PASS: resolver, loader, live scan, no duplicate: mlx-community/Qwen3-0.6B-8bit -> /Users/x/.exo/models/mlx-community--Qwen3-0.6B-8bit
+PASS: resolver, loader, live scan, no duplicate: mlx-community/Qwen3.6-35B-A3B-8bit -> /Users/x/.exo/models/mlx-community--Qwen3.6-35B-A3B-8bit
+PASS: isolated cache contains no duplicated safetensors weights
+PASS: live inference runner registered

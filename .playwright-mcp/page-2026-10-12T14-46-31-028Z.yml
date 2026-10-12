@@ -1,0 +1,85 @@
+- main [ref=e3]:
+  - complementary "Building blocks" [ref=e4]:
+    - generic "Swarm Canvas" [ref=e5]
+    - generic [ref=e9]:
+      - button "Add Research" [ref=e10]:
+        - generic [ref=e13]: Research
+      - button "Add Read documents" [ref=e14]:
+        - generic [ref=e17]: Read
+      - button "Add Compare" [ref=e18]:
+        - generic [ref=e21]: Compare
+      - button "Add Write" [ref=e22]:
+        - generic [ref=e25]: Write
+      - button "Add Parallel team" [ref=e26]:
+        - generic [ref=e29]: Parallel
+      - button "Add Review" [ref=e30]:
+        - generic [ref=e33]: Review
+      - button "Add Repeat" [ref=e34]:
+        - generic [ref=e37]: Repeat
+    - generic [ref=e38]: 7 blocks
+  - region "Swarm canvas" [ref=e39]:
+    - application [ref=e40]:
+      - generic [ref=e42]:
+        - generic:
+          - generic:
+            - group [ref=e43]:
+              - generic [ref=e44]:
+                - generic "Research input" [ref=e45]
+                - generic [ref=e46]: Action
+                - heading "Research" [level=2] [ref=e51]
+                - paragraph [ref=e52]: Find sources and gather evidence
+                - generic "Research output" [ref=e53]
+            - group [ref=e54]:
+              - generic [ref=e55]:
+                - generic "Read documents input" [ref=e56]
+                - generic [ref=e57]: Action
+                - heading "Read documents" [level=2] [ref=e62]
+                - paragraph [ref=e63]: Extract information from files
+                - generic "Read documents output" [ref=e64]
+            - group [ref=e65]:
+              - generic [ref=e66]:
+                - generic "Compare input" [ref=e67]
+                - generic [ref=e68]: Action
+                - heading "Compare" [level=2] [ref=e73]
+                - paragraph [ref=e74]: Find patterns and differences
+                - generic "Compare output" [ref=e75]
+            - group [ref=e76]:
+              - generic [ref=e77]:
+                - generic "Write input" [ref=e78]
+                - generic [ref=e79]: Action
+                - heading "Write" [level=2] [ref=e84]
+                - paragraph [ref=e85]: Turn findings into an output
+                - generic "Write output" [ref=e86]
+            - group [ref=e87]:
+              - generic [ref=e88]:
+                - generic "Parallel team input" [ref=e89]
+                - generic [ref=e90]: Control
+                - heading "Parallel team" [level=2] [ref=e95]
+                - paragraph [ref=e96]: Work on multiple tasks together
+                - generic "Parallel team output" [ref=e97]
+            - group [ref=e98]:
+              - generic [ref=e99]:
+                - generic "Review input" [ref=e100]
+                - generic [ref=e101]: Control
+                - heading "Review" [level=2] [ref=e106]
+                - paragraph [ref=e107]: Check the result before continuing
+                - generic "Review output" [ref=e108]
+            - group [ref=e109]:
+              - generic [ref=e110]:
+                - generic "Repeat input" [ref=e111]
+                - generic [ref=e112]: Control
+                - heading "Repeat" [level=2] [ref=e117]
+                - paragraph [ref=e118]: Return to a step and try again
+                - generic "Repeat output" [ref=e119]
+      - generic:
+        - heading "Swarm canvas" [level=1]
+        - text: Arrange your building blocks.
+      - generic [ref=e120]: UI only
+      - generic "Control Panel" [ref=e121]:
+        - button "Zoom In" [ref=e122] [cursor=pointer]
+        - button "Zoom Out" [ref=e125] [cursor=pointer]
+        - button "Fit View" [ref=e128] [cursor=pointer]
+      - generic: Drag blocks to arrange. Connect the handles.
+      - link "React Flow attribution" [ref=e132] [cursor=pointer]:
+        - /url: https://reactflow.dev/attribution
+        - text: React Flow

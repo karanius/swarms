@@ -1,0 +1,14 @@
+exo-runtime/
+
+# Keep the vendored EXO source; exclude its parked repository metadata.
+/exo/parked.git/
+
+# Swarms' broad ignore rules also match these EXO source directories.
+!/exo/Cargo.lock
+!/exo/dashboard/src/lib/
+!/exo/dashboard/src/lib/**
+!/exo/dashboard/src/routes/downloads/
+!/exo/dashboard/src/routes/downloads/**
+!/exo/src/exo/worker/engines/image/
+!/exo/src/exo/worker/engines/image/**
+!/exo/packaging/pyinstaller/exo.spec

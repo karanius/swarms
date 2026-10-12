@@ -1,0 +1,126 @@
+- main [ref=f16e3]:
+  - complementary "Building blocks" [ref=f16e4]:
+    - generic "Swarm Canvas" [ref=f16e5]
+    - generic [ref=f16e9]:
+      - button "Add Research" [ref=f16e10]:
+        - generic [ref=f16e11]:
+          - generic [ref=f16e13]: Action
+          - generic [ref=f16e18]: Research
+      - button "Add Read documents" [ref=f16e20]:
+        - generic [ref=f16e21]:
+          - generic [ref=f16e23]: Action
+          - generic [ref=f16e28]: Read documents
+      - button "Add Compare" [ref=f16e30]:
+        - generic [ref=f16e31]:
+          - generic [ref=f16e33]: Action
+          - generic [ref=f16e38]: Compare
+      - button "Add Write" [ref=f16e40]:
+        - generic [ref=f16e41]:
+          - generic [ref=f16e43]: Action
+          - generic [ref=f16e48]: Write
+      - button "Add Parallel team" [ref=f16e50]:
+        - generic [ref=f16e51]:
+          - generic [ref=f16e53]: Control
+          - generic [ref=f16e58]: Parallel team
+      - button "Add Review" [ref=f16e60]:
+        - generic [ref=f16e61]:
+          - generic [ref=f16e63]: Control
+          - generic [ref=f16e68]: Review
+      - button "Add Repeat" [ref=f16e70]:
+        - generic [ref=f16e71]:
+          - generic [ref=f16e73]: Control
+          - generic [ref=f16e78]: Repeat
+    - generic [ref=f16e80]: 7 blocks
+  - region "Swarm canvas" [ref=f16e81]:
+    - application [ref=f16e82]:
+      - generic [ref=f16e84]:
+        - generic:
+          - generic:
+            - img:
+              - group "Edge from example-read to example-parallel"
+            - img:
+              - group "Edge from example-parallel to example-performance" [ref=f16e85] [cursor=pointer]
+            - img:
+              - group "Edge from example-parallel to example-compatibility" [ref=f16e88] [cursor=pointer]
+            - img:
+              - group "Edge from example-performance to example-compare" [ref=f16e91] [cursor=pointer]
+            - img:
+              - group "Edge from example-compatibility to example-compare" [ref=f16e94] [cursor=pointer]
+            - img:
+              - group "Edge from example-compare to example-write"
+            - img:
+              - group "Edge from example-write to example-review"
+            - img:
+              - group "Edge from example-review to example-repeat" [ref=f16e97] [cursor=pointer]:
+                - generic [ref=f16e100]: Needs evidence
+            - img:
+              - group "Edge from example-repeat to example-parallel" [ref=f16e102] [cursor=pointer]:
+                - generic [ref=f16e105]: Research again
+          - generic:
+            - group [ref=f16e107]:
+              - generic [ref=f16e108]:
+                - generic "Read documents input" [ref=f16e109]
+                - generic [ref=f16e110]: Action
+                - heading "Read documents" [level=2] [ref=f16e115]
+                - paragraph [ref=f16e116]: Extract information from files
+                - generic "Read documents output" [ref=f16e117]
+            - group [ref=f16e118]:
+              - generic [ref=f16e119]:
+                - generic "Parallel team input" [ref=f16e120]
+                - generic [ref=f16e121]: Control
+                - heading "Parallel team" [level=2] [ref=f16e126]
+                - paragraph [ref=f16e127]: Work on multiple tasks together
+                - generic "Parallel team output" [ref=f16e128]
+            - group [ref=f16e129]:
+              - generic [ref=f16e130]:
+                - generic "Research input" [ref=f16e131]
+                - generic [ref=f16e132]: Action
+                - heading "Research performance" [level=2] [ref=f16e137]
+                - paragraph [ref=f16e138]: Find sources and gather evidence
+                - generic "Research output" [ref=f16e139]
+            - group [ref=f16e140]:
+              - generic [ref=f16e141]:
+                - generic "Research input" [ref=f16e142]
+                - generic [ref=f16e143]: Action
+                - heading "Research compatibility" [level=2] [ref=f16e148]
+                - paragraph [ref=f16e149]: Find sources and gather evidence
+                - generic "Research output" [ref=f16e150]
+            - group [ref=f16e151]:
+              - generic [ref=f16e152]:
+                - generic "Compare input" [ref=f16e153]
+                - generic [ref=f16e154]: Action
+                - heading "Compare" [level=2] [ref=f16e159]
+                - paragraph [ref=f16e160]: Find patterns and differences
+                - generic "Compare output" [ref=f16e161]
+            - group [ref=f16e162]:
+              - generic [ref=f16e163]:
+                - generic "Write input" [ref=f16e164]
+                - generic [ref=f16e165]: Action
+                - heading "Write" [level=2] [ref=f16e170]
+                - paragraph [ref=f16e171]: Turn findings into an output
+                - generic "Write output" [ref=f16e172]
+            - group [ref=f16e173]:
+              - generic [ref=f16e174]:
+                - generic "Review input" [ref=f16e175]
+                - generic [ref=f16e176]: Control
+                - heading "Review" [level=2] [ref=f16e181]
+                - paragraph [ref=f16e182]: Check the result before continuing
+                - generic "Review output" [ref=f16e183]
+            - group [ref=f16e184]:
+              - generic [ref=f16e185]:
+                - generic "Repeat input" [ref=f16e186]
+                - generic [ref=f16e187]: Control
+                - heading "Repeat" [level=2] [ref=f16e192]
+                - paragraph [ref=f16e193]: Return to a step and try again
+                - generic "Repeat output" [ref=f16e194]
+      - generic:
+        - heading "Swarm canvas" [level=1]
+        - text: Arrange your building blocks.
+      - generic "Control Panel" [ref=f16e195]:
+        - button "Zoom In" [ref=f16e196] [cursor=pointer]
+        - button "Zoom Out" [ref=f16e199] [cursor=pointer]
+        - button "Fit View" [ref=f16e202] [cursor=pointer]
+      - generic: Drag blocks to arrange. Connect the handles.
+      - link "React Flow attribution" [ref=f16e206] [cursor=pointer]:
+        - /url: https://reactflow.dev/attribution
+        - text: React Flow
