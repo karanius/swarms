@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KeepAlive</key>
+	<true/>
+	<key>Label</key>
+	<string>local.swarms.log-pipeline</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>@PROJECT_ROOT@/services/swarm-runtime-venv/bin/python</string>
+		<string>-m</string>
+		<string>uvicorn</string>
+		<string>services.log_pipeline:app</string>
+		<string>--host</string>
+		<string>127.0.0.1</string>
+		<string>--port</string>
+		<string>52418</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>@PROJECT_ROOT@/services/langfuse/pipeline-runtime/service-error.log</string>
+	<key>StandardOutPath</key>
+	<string>@PROJECT_ROOT@/services/langfuse/pipeline-runtime/service.log</string>
+	<key>ThrottleInterval</key>
+	<integer>5</integer>
+	<key>WorkingDirectory</key>
+	<string>@PROJECT_ROOT@</string>
+</dict>
+</plist>

@@ -1,0 +1,131 @@
+{
+  "id": "images-inventory",
+  "name": "Images on my Mac",
+  "pipeline": "images",
+  "snapshot": {
+    "nodes": [
+      {
+        "id": "images-scope",
+        "type": "imageStep",
+        "position": {
+          "x": 0,
+          "y": 180
+        },
+        "data": {
+          "kind": "scope"
+        }
+      },
+      {
+        "id": "images-scan",
+        "type": "imageStep",
+        "position": {
+          "x": 320,
+          "y": 180
+        },
+        "data": {
+          "kind": "scan"
+        }
+      },
+      {
+        "id": "images-verify",
+        "type": "imageStep",
+        "position": {
+          "x": 640,
+          "y": 180
+        },
+        "data": {
+          "kind": "verify"
+        }
+      },
+      {
+        "id": "images-agent",
+        "type": "imageStep",
+        "position": {
+          "x": 960,
+          "y": 180
+        },
+        "data": {
+          "kind": "agent"
+        }
+      },
+      {
+        "id": "images-report",
+        "type": "imageStep",
+        "position": {
+          "x": 1280,
+          "y": 180
+        },
+        "data": {
+          "kind": "report"
+        }
+      },
+      {
+        "id": "images-markdown",
+        "type": "imageStep",
+        "position": {
+          "x": 1600,
+          "y": 180
+        },
+        "data": {
+          "kind": "markdown"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "images-link-0",
+        "source": "images-scope",
+        "target": "images-scan",
+        "type": "smoothstep",
+        "label": "Permitted folders",
+        "markerEnd": {
+          "type": "arrowclosed"
+        }
+      },
+      {
+        "id": "images-link-1",
+        "source": "images-scan",
+        "target": "images-verify",
+        "type": "smoothstep",
+        "label": "Inventory",
+        "markerEnd": {
+          "type": "arrowclosed"
+        }
+      },
+      {
+        "id": "images-link-2",
+        "source": "images-verify",
+        "target": "images-agent",
+        "type": "smoothstep",
+        "label": "Verified evidence",
+        "markerEnd": {
+          "type": "arrowclosed"
+        }
+      },
+      {
+        "id": "images-link-3",
+        "source": "images-agent",
+        "target": "images-report",
+        "type": "smoothstep",
+        "label": "Explanation",
+        "markerEnd": {
+          "type": "arrowclosed"
+        }
+      },
+      {
+        "id": "images-link-4",
+        "source": "images-report",
+        "target": "images-markdown",
+        "type": "smoothstep",
+        "label": "Inventory \u2192 .md",
+        "markerEnd": {
+          "type": "arrowclosed"
+        }
+      }
+    ],
+    "roots": "~",
+    "job": null,
+    "ioHistory": {},
+    "markdownOutputAdded": true
+  }
+}
