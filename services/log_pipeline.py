@@ -167,3 +167,9 @@ def write_grant(node_id:str,request:GrantRequest):
 
 from services.image_discovery import router as image_discovery_router
 app.include_router(image_discovery_router)
+
+from services.saved_workflows import router as saved_workflows_router
+app.include_router(saved_workflows_router)
+
+from services.workflow_studio import router as workflow_studio_router
+app.include_router(workflow_studio_router)

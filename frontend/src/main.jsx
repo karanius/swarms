@@ -1,3 +1,4 @@
+import {WorkspaceModes} from './WorkflowStudio';
 import ImageDiscovery from './ImageDiscovery';
 import {inputShape,includedSources,composeTask,taskPosition} from './inputComposition';
 import InputShapePanel,{inputFields} from './InputShapePanel';
@@ -234,4 +235,4 @@ function Canvas({pipeline,pipelineStatus,onSelectPipeline}) {
     </div>}
   </main></ModelProfileContext.Provider>;
 }
-createRoot(document.getElementById('root')).render(<React.StrictMode><ReactFlowProvider><PipelineWorkspace>{(pipeline,status,change)=>pipeline==='images'?<ImageDiscovery/>:<Canvas key={pipeline} pipeline={pipeline} pipelineStatus={status} onSelectPipeline={change}/>}</PipelineWorkspace></ReactFlowProvider></React.StrictMode>);
+createRoot(document.getElementById('root')).render(<React.StrictMode><WorkspaceModes><ReactFlowProvider><PipelineWorkspace>{(pipeline,status,change)=>pipeline==='images'?<ImageDiscovery/>:<Canvas key={pipeline} pipeline={pipeline} pipelineStatus={status} onSelectPipeline={change}/>}</PipelineWorkspace></ReactFlowProvider></WorkspaceModes></React.StrictMode>);
