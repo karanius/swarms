@@ -1,0 +1,6 @@
+[submodule "services/deepseek-harness"]
+	path = services/deepseek-harness
+	url = https://github.com/deepseek-ai/deepseek-harness.git
+[submodule "services/langfuse/agent-skills"]
+	path = services/langfuse/agent-skills
+	url = https://github.com/langfuse/skills.git

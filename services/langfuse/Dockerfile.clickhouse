@@ -1,0 +1,3 @@
+FROM docker.io/clickhouse/clickhouse-server:25.12
+
+COPY --chmod=644 clickhouse-memory.xml /etc/clickhouse-server/config.d/memory.xml

@@ -1,0 +1,4 @@
+<clickhouse>
+  <!-- A small local trace store does not need the default large scheduling pool. -->
+  <background_schedule_pool_size>32</background_schedule_pool_size>
+</clickhouse>

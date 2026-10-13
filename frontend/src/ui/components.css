@@ -1,0 +1,20 @@
+.ui-button{font:inherit;cursor:pointer;padding:10px 14px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text)}.ui-button:disabled{cursor:not-allowed;opacity:.5}.ui-button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+
+.ui-input,.ui-textarea{font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px 12px;min-width:0;max-width:100%}.ui-textarea{resize:vertical}.ui-input:focus-visible,.ui-textarea:focus-visible{outline:2px solid var(--accent);outline-offset:3px}.ui-input:disabled,.ui-textarea:disabled{opacity:.5;cursor:not-allowed}
+
+.ui-select{font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px 12px;min-width:0;max-width:100%}.ui-select:focus-visible{outline:2px solid var(--accent);outline-offset:3px}.ui-select:disabled{opacity:.5;cursor:not-allowed}.ui-input[type=checkbox]{padding:0;border-radius:3px;accent-color:var(--accent)}
+
+
+
+.ui-input[type=search]{appearance:auto}.ui-input::placeholder,.ui-textarea::placeholder{color:var(--muted);opacity:1}.ui-button:hover:not(:disabled){border-color:var(--accent)}
+
+.ui-input.ui-input--embedded{padding:0;border:0;border-radius:0;background:transparent}.ui-input.ui-input--embedded:focus-visible{outline:0}
+
+.ui-catalog{margin:0;max-width:850px}.ui-catalog-entry{display:grid;grid-template-columns:140px minmax(0,1fr);align-items:center;gap:24px;padding:24px 0;border-bottom:1px solid var(--border)}.ui-catalog dt{font-size:13px;font-weight:500}.ui-catalog dd{margin:0;min-width:0}.ui-catalog dd>.ui-input:not([type=checkbox]),.ui-catalog dd>.ui-textarea,.ui-catalog dd>.ui-select{width:100%;max-width:360px}.ui-catalog dd>.ui-input[type=checkbox]{width:17px;height:17px}@media(max-width:600px){.ui-catalog-entry{grid-template-columns:1fr;gap:12px}}
+
+.catalog-node{height:190px;width:100%;min-width:0}.catalog-node .react-flow__attribution{display:none}
+
+.catalog-bubble{max-width:360px;padding-top:6px}.catalog-bubble .node-input-bubble,.catalog-bubble .node-output-bubble{position:relative;width:100%;animation:none}
+
+.catalog-icons{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:24px 16px}.catalog-icons li{display:flex;flex-direction:column;align-items:flex-start;gap:10px;min-width:0}.catalog-icons svg{color:var(--text);flex-shrink:0}.catalog-icons span{font-size:11px;color:var(--muted);overflow-wrap:anywhere}

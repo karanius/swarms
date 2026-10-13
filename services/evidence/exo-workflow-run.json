@@ -1,0 +1,51 @@
+{
+  "model": "mlx-community/Llama-3.2-3B-Instruct-4bit",
+  "elapsed_seconds": 2.25,
+  "request": {
+    "model": "mlx-community/Llama-3.2-3B-Instruct-4bit",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Give a concise practical answer. Use only these node types: Research, Read documents, Compare, Write, Parallel team, Review, Repeat. Do not invent capabilities."
+      },
+      {
+        "role": "user",
+        "content": "Design a swarm workflow that reads two product specifications, researches compatibility and performance in parallel, compares the evidence, writes a recommendation, and reviews it. Give the node connections and one sentence of instructions for each node."
+      }
+    ],
+    "max_tokens": 600,
+    "temperature": 0.2,
+    "stream": false
+  },
+  "response": {
+    "id": "faf7c265-6721-4996-91d1-05ffc5a5b43e",
+    "object": "chat.completion",
+    "created": 1791828154,
+    "model": "mlx-community/Llama-3.2-3B-Instruct-4bit",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Here's a design for a swarm workflow:\n\n1. **Read documents**: Read two product specifications documents (input 1 and input 2).\n   - Instructions: Read the two documents and store their contents in variables.\n\n2. **Parallel team**: Run two sub-workflows in parallel:\n   - **Research 1**: Research compatibility of product 1 (input 1) with other products.\n   - **Research 2**: Research performance of product 2 (input 2) with other products.\n   - Instructions: Run the two sub-workflows in parallel to gather compatibility and performance data.\n\n3. **Compare**: Compare the research results from the two sub-workflows.\n   - Instructions: Compare the compatibility and performance data from the two sub-workflows.\n\n4. **Write**: Write a recommendation based on the comparison results.\n   - Instructions: Use the comparison results to write a recommendation for the two products.\n\n5. **Review**: Review the recommendation for accuracy and completeness.\n   - Instructions: Review the recommendation to ensure it accurately reflects the compatibility and performance data.\n\n6. **Repeat**: Repeat the process for new product specifications.\n   - Instructions: The workflow can be repeated for new product specifications.\n\nThe node connections would be as follows:\n\n- Read documents -> Research 1 and Research 2\n- Research 1 and Research 2 -> Compare\n- Compare -> Write\n- Write -> Review\n- Review -> Repeat"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 111,
+      "completion_tokens": 289,
+      "total_tokens": 400,
+      "prompt_tokens_details": {
+        "cached_tokens": 25,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    }
+  }
+}

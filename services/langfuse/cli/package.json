@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "langfuse-cli": "^1.2.4"
+  }
+}

@@ -1,0 +1,8 @@
+import React,{useState} from 'react';
+import {X,DownloadSimple} from './ui/icons';
+import {inventoryReport,downloadInventoryReport} from './imageInventoryReport';
+export default function ImageReportPanel({job,onClose}){
+ const report=inventoryReport(job),[raw,setRaw]=useState(false);
+ if(!report)return null;
+ return <aside className="inventory-document-panel" aria-label="Image inventory document"><header><div><h2>Image inventory</h2><p>Verified scan results · image-inventory.md</p></div><button onClick={()=>downloadInventoryReport(report)}><DownloadSimple size={17}/>Download .md</button><button aria-label="Close inventory document" onClick={onClose}><X size={20}/></button></header><div className="inventory-document-toolbar"><div className="input-format-toggle"><button aria-pressed={!raw} onClick={()=>setRaw(false)}>Document</button><button aria-pressed={raw} onClick={()=>setRaw(true)}>Markdown</button></div><span>{job.inventory.imageFiles.toLocaleString()} files · {job.verification?.coverage}</span></div><article className="inventory-document-body">{raw?<pre aria-label="Raw Markdown report">{report.markdown}</pre>:<><h1>{report.title}</h1>{report.sections.map(section=><section key={section.heading}><h2>{section.heading}</h2>{section.text&&<p>{section.text}</p>}{section.list&&<ul>{section.list.map((item,index)=><li key={index}>{item}</li>)}</ul>}{section.rows&&<div className="inventory-table-scroll"><table><thead><tr>{section.rows[0].map((cell,index)=><th key={index}>{cell}</th>)}</tr></thead><tbody>{section.rows.slice(1).map((row,index)=><tr key={index}>{row.map((cell,column)=><td key={column}>{cell}</td>)}</tr>)}</tbody></table></div>}</section>)}</>}</article></aside>;
+}

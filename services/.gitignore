@@ -12,3 +12,13 @@ exo-runtime/
 !/exo/src/exo/worker/engines/image/
 !/exo/src/exo/worker/engines/image/**
 !/exo/packaging/pyinstaller/exo.spec
+
+harness-runtime/
+harness-install.log
+harness-build.log
+harness-server.log
+
+/swarm-runtime-venv/
+/langfuse/cli/node_modules/
+
+/langfuse/pipeline-runtime/
