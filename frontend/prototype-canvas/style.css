@@ -1,0 +1,12 @@
+*{box-sizing:border-box}body{margin:0;background:#111419}main{height:100dvh;width:100vw}.react-flow{background:#111419}
+.component-tray{position:fixed;z-index:10;left:24px;top:50%;transform:translateY(-13px);font:13px system-ui,sans-serif;color:#e0e5ed}.tray-handle{display:block;width:180px;height:26px;padding:0 10px;border:1px solid #657183;border-radius:4px;background:#20262f;cursor:pointer}.tray-content{display:block;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-8px) scaleY(.96);transform-origin:top left;transition:opacity 180ms ease,transform 220ms ease,visibility 220ms;position:absolute;left:0;top:26px;padding-top:4px;width:300px}.component-tray:hover .tray-content,.component-tray:focus-within .tray-content{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0) scaleY(1)}.tray-list{max-height:42vh;overflow-y:auto;background:#1b2028;border:1px solid #414b5b;border-radius:5px;padding:8px}.tray-list details{border-bottom:1px solid #303844}.tray-list details:last-child{border-bottom:0}.tray-list summary{cursor:pointer;padding:9px 6px}.tray-list ul{list-style:none;margin:0;padding:0 6px 8px 22px}.tray-list li{padding:6px 0;color:#bac5d3}.tray-list small{color:#8592a3;font-size:11px}
+
+.tray-handle{color:#dce4ee;font:12px system-ui,sans-serif;text-align:left}
+@media(prefers-reduced-motion:reduce){.tray-content{transition:none;transform:none}}
+
+.composite-tray{margin-top:34px}.composite-list{min-height:80px}
+.component-tray:hover,.component-tray:focus-within{z-index:11}
+
+.tray-stack{position:fixed;z-index:10;left:24px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:8px}.tray-stack .component-tray{position:relative;left:auto;top:auto;transform:none;margin:0}.tray-stack .tray-handle{width:180px}
+
+.react-flow__node-default{background:#202936;color:#e7edf5;border:1px solid #657b96;border-radius:6px;width:190px;padding:18px;font:13px system-ui,sans-serif}.example-caption{position:absolute;top:22px;left:50%;transform:translateX(-50%);z-index:4;color:#9caabb;font:12px system-ui,sans-serif;pointer-events:none}.react-flow__edge-path{stroke:#758ba7;stroke-width:2}
