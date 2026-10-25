@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useLayoutEffect,useRef} from 'react';
 import catalog from './v2-catalog.json';
 import './v2-library.css';
 
@@ -8,7 +8,36 @@ function CustomItems({plane,items,onAdd}){
 }
 // Independent V2 library copy; edits here do not change the V1 stack.
 export default function V2Library({onAddComponent,activePlane="Components",onSelectPlane,customItems=[],onAddCustom}){
- return (<div className="v2-library"><div className="tray-stack"><div className="stack-label">LIBRARY</div><aside className="component-tray"><button className="plane-selector" aria-label={'Open Confederations plane'} aria-pressed={activePlane==='Confederations'} onClick={()=>onSelectPlane?.('Confederations')}>{activePlane==='Confederations'?'👉':'⭕'}</button><button className="tray-handle" aria-label="Open confederations list">Confederations</button><div className="tray-content"><div className="tray-list"><CustomItems plane={'Confederations'} items={customItems} onAdd={onAddCustom}/>{[
+ const libraryRef=useRef(null);
+ useLayoutEffect(()=>{
+  const root=libraryRef.current;
+  let frame=0;
+  const positionTrays=()=>{
+   const margin=12,width=Math.min(300,window.innerWidth-margin*2);
+   for(const tray of root.querySelectorAll('.component-tray')){
+    const panel=tray.querySelector('.tray-content'),list=tray.querySelector('.tray-list');
+    if(!panel||!list)continue;
+    panel.style.width=width+'px';
+    const anchor=tray.getBoundingClientRect();
+    const height=list.getBoundingClientRect().height+8;
+    const top=Math.max(margin,Math.min(anchor.bottom,window.innerHeight-margin-height));
+    const left=Math.max(margin,Math.min(anchor.left,window.innerWidth-margin-width));
+    panel.style.top=(top-anchor.top)+'px';
+    panel.style.left=(left-anchor.left)+'px';
+    panel.style.bottom='auto';
+   }
+  };
+  const schedule=()=>{cancelAnimationFrame(frame);frame=requestAnimationFrame(positionTrays);};
+  const observer=new ResizeObserver(schedule);
+  root.querySelectorAll('.tray-list,.tray-stack').forEach(element=>observer.observe(element));
+  root.addEventListener('pointerover',positionTrays);
+  root.addEventListener('focusin',positionTrays);
+  root.addEventListener('toggle',schedule,true);
+  window.addEventListener('resize',schedule);
+  positionTrays();
+  return ()=>{cancelAnimationFrame(frame);observer.disconnect();root.removeEventListener('pointerover',positionTrays);root.removeEventListener('focusin',positionTrays);root.removeEventListener('toggle',schedule,true);window.removeEventListener('resize',schedule);};
+ },[]);
+ return (<div className="v2-library" ref={libraryRef}><div className="tray-stack"><div className="stack-label">LIBRARY</div><aside className="component-tray"><button className="plane-selector" aria-label={'Open Confederations plane'} aria-pressed={activePlane==='Confederations'} onClick={()=>onSelectPlane?.('Confederations')}>{activePlane==='Confederations'?'👉':'⭕'}</button><button className="tray-handle" aria-label="Open confederations list">Confederations</button><div className="tray-content"><div className="tray-list"><CustomItems plane={'Confederations'} items={customItems} onAdd={onAddCustom}/>{[
 {category:"Regional Development",items:["Regional Development Confederation","Regional Innovation Confederation","Regional Enterprise Confederation","Regional Resilience Confederation"]},
 {category:"Research and Knowledge",items:["Research Collaboration Confederation","Open Knowledge Confederation","Shared Research Infrastructure Confederation","Evidence Exchange Confederation"]},
 {category:"Trade and Commerce",items:["Trade Network Confederation","Producer Network Confederation","Supply Network Confederation","Circular Commerce Confederation"]},
@@ -87,5 +116,5 @@ export default function V2Library({onAddComponent,activePlane="Components",onSel
 {category:"Evaluation and Quality",items:["Schema and contract validation","Factual consistency review","Rubric-based scoring","Candidate comparison and ranking"]},
 {category:"Actions and Integrations",items:["API request and response mapping","Cross-system record synchronization","Event filtering and dispatch","Action execution and confirmation"]},
 {category:"Memory and Context",items:["Conversation summarization","Task context assembly","Persistent fact storage and retrieval","Context selection and compression"]}
-].map(({category,items})=><details key={category}><summary>{category}</summary><ul>{items.map(name=><li key={name}>{name}</li>)}</ul></details>)}</div></div></aside><aside className="component-tray"><button className="plane-selector" aria-label={'Open Components plane'} aria-pressed={activePlane==='Components'} onClick={()=>onSelectPlane?.('Components')}>{activePlane==='Components'?'👉':'⭕'}</button><button className="tray-handle" aria-label="Open component list">Components</button><div className="tray-content"><div className="tray-list"><CustomItems plane={'Components'} items={customItems} onAdd={onAddCustom}/>{catalog.map(group=><details key={group.name}><summary>{group.name}</summary><ul>{group.items.map(item=><li key={item.id}>{['ChatInput','Agent','ChatOutput'].includes(item.id) && onAddComponent?<button type="button" className="draggable-component" draggable onDragStart={event=>{event.dataTransfer.setData('application/x-langflow-component',item.id);event.dataTransfer.effectAllowed='copy';}} onClick={()=>onAddComponent(item.id)} title="Drag onto the canvas, or click to add">{item.name}</button>:<span className="component-unavailable" title="Not draggable yet">{item.name}{item.legacy&&<small> · legacy</small>}</span>}</li>)}</ul></details>)}</div></div></aside></div></div>);
+].map(({category,items})=><details key={category}><summary>{category}</summary><ul>{items.map(name=><li key={name}>{name}</li>)}</ul></details>)}</div></div></aside><aside className="component-tray"><button className="plane-selector" aria-label={'Open Components plane'} aria-pressed={activePlane==='Components'} onClick={()=>onSelectPlane?.('Components')}>{activePlane==='Components'?'👉':'⭕'}</button><button className="tray-handle" aria-label="Open component list">Components</button><div className="tray-content"><div className="tray-list"><CustomItems plane={'Components'} items={customItems} onAdd={onAddCustom}/>{catalog.map(group=><details key={group.name}><summary>{group.name}</summary><ul>{group.items.map(item=><li key={item.id}>{<button type="button" className="draggable-component" disabled={!onAddComponent} draggable={Boolean(onAddComponent)} onDragStart={event=>{event.dataTransfer.setData('application/x-langflow-component',item.id);event.dataTransfer.effectAllowed='copy';}} onClick={()=>onAddComponent?.(item.id)} title={onAddComponent?"Drag onto the canvas, or click to add":"Loading Langflow components"}>{item.name}{item.legacy&&<small> · legacy</small>}</button>}</li>)}</ul></details>)}</div></div></aside></div></div>);
 }

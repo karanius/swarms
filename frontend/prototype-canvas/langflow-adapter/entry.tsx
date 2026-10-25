@@ -24,7 +24,6 @@ import app from '@/App.css?inline';
 import applies from '@/style/applies.css?inline';
 import flowCss from '@xyflow/react/dist/style.css?inline';
 
-const supportedTypes=['ChatInput','Agent','ChatOutput'];
 export async function mount(element:HTMLElement){
  const shadow=element;
  shadow.replaceChildren();
@@ -54,8 +53,8 @@ export async function mount(element:HTMLElement){
  const catalog=await response.json();
  delete catalog.component_display_names;
  useTypesStore.getState().setTypes(catalog);
- const definitions=Object.fromEntries(supportedTypes.map(type=>[type,Object.values(catalog).map((group:any)=>group[type]).find(Boolean)]));
- for(const type of supportedTypes)if(!definitions[type])throw new Error('Langflow '+type+' is not in the catalog.');
+ const definitions=Object.fromEntries(Object.values(catalog).flatMap((group:any)=>Object.entries(group).filter(([,definition]:any)=>definition?.template)));
+ const supportedTypes=Object.keys(definitions);
  const saved=await fetch('/api/v1/flows/42232ff0-2ef7-46f2-bd61-6151e88cd5e5',{credentials:'include'});
  if(!saved.ok)throw new Error('Langflow flow unavailable ('+saved.status+').');
  const flow=await saved.json();
@@ -81,8 +80,8 @@ export async function mount(element:HTMLElement){
   const onNodesChange=useFlowStore(s=>s.onNodesChange),onEdgesChange=useFlowStore(s=>s.onEdgesChange),onConnect=useFlowStore(s=>s.onConnect);
   return <><AssistantPanel isOpen={assistantOpen} onClose={()=>setAssistantOpen(false)}/><ReactFlow minZoom={MIN_ZOOM} maxZoom={MAX_ZOOM} nodes={nodes} edges={edges} defaultViewport={flow.data?.viewport} nodeTypes={nodeTypes} edgeTypes={edgeTypes} onNodesChange={onNodesChange} onEdgesChange={onEdgesChange} onConnect={onConnect} colorMode="dark" onInit={instance=>{controller.instance=instance;useFlowStore.getState().setReactFlowInstance(instance);}} onDragOver={e=>{if(e.dataTransfer.types.includes('application/x-langflow-component')){e.preventDefault();e.dataTransfer.dropEffect='copy';}}} onDrop={e=>{e.preventDefault();const type=e.dataTransfer.getData('application/x-langflow-component');if(supportedTypes.includes(type))controller.add(type,{x:e.clientX,y:e.clientY});}}><Background/><CanvasControls selectedNode={nodes.find(node=>node.selected)??null}/></ReactFlow></>;
  }
- const controller:any={instance:null,snapshot(){const state=useFlowStore.getState();return structuredClone({nodes:state.nodes,edges:state.edges,viewport:controller.instance?.getViewport()??{x:0,y:0,zoom:1}});},add(type:string,point?:{x:number,y:number}){
-  if(!supportedTypes.includes(type))return;
+ const controller:any={instance:null,clear(){useAssistantManagerStore.getState().setAssistantSidebarOpen(false);useFlowStore.setState({nodes:[],edges:[]});},restore(graph:any){useFlowStore.setState({nodes:structuredClone(graph.nodes),edges:structuredClone(graph.edges)});controller.instance?.setViewport(graph.viewport);},snapshot(){const state=useFlowStore.getState();return structuredClone({nodes:state.nodes,edges:state.edges,viewport:controller.instance?.getViewport()??{x:0,y:0,zoom:1}});},add(type:string,point?:{x:number,y:number}){
+  if(!definitions[type])throw new Error('This component is unavailable in the connected Langflow catalog: '+type);
   const bounds=element.getBoundingClientRect();
   const position=controller.instance?.screenToFlowPosition(point??{x:bounds.x+bounds.width/2,y:bounds.y+bounds.height/2})??{x:300,y:200};
   const id=type+'-'+crypto.randomUUID();

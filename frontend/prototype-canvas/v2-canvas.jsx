@@ -21,6 +21,7 @@ export default function VersionTwo(){
  const [initialLibrary]=useState(readLibrary);
  const [customItems,setCustomItems]=useState(initialLibrary.items);
  const [graphs,setGraphs]=useState({});
+ const [cleared,setCleared]=useState({});
  const [name,setName]=useState(''),[saveMessage,setSaveMessage]=useState('');
  const [error,setError]=useState(''),[ready,setReady]=useState(false);
  const higherPlane=planes[planes.indexOf(activePlane)-1];
@@ -39,6 +40,18 @@ export default function VersionTwo(){
   changePlane(item.plane);
   updateGraph(item.plane,old=>({...old,nodes:[...old.nodes,{id:crypto.randomUUID(),type:'default',position:position??{x:350+old.nodes.length*35,y:220+old.nodes.length*35},data:{label:item.name,customItemId:item.id}}]}));
  }
+ function clearCanvas(){
+  const graph=activePlane==='Components'?native.current?.snapshot():graphs[activePlane];
+  if(!graph?.nodes?.length&&!graph?.edges?.length){setSaveMessage('This canvas is already empty.');return;}
+  setCleared(old=>({...old,[activePlane]:structuredClone(graph)}));
+  if(activePlane==='Components')native.current.clear();else updateGraph(activePlane,()=>emptyGraph());
+  setSaveMessage('Canvas cleared. Saved library items are unchanged.');
+ }
+ function undoClear(){
+  const graph=cleared[activePlane];if(!graph)return;
+  if(activePlane==='Components')native.current.restore(graph);else updateGraph(activePlane,()=>structuredClone(graph));
+  setCleared(old=>({...old,[activePlane]:null}));setSaveMessage('Canvas restored.');
+ }
  function saveAssembly(event){
   event.preventDefault();
   if(!higherPlane||initialLibrary.error)return;
@@ -55,5 +68,5 @@ export default function VersionTwo(){
    setCustomItems(next);setName('');setSaveMessage('Saved “'+title+'” in '+higherPlane+' → Custom.');
   }catch{setSaveMessage('Could not save locally. Browser storage may be full or unavailable. Your canvas is unchanged.');}
  }
- return <main className="v2-canvas"><div className="v2-native-surface" ref={surface} style={{display:activePlane==='Components'?'block':'none'}}/>{planes.filter(plane=>plane!=='Components').map(plane=><section key={plane} className="v2-plane-surface" hidden={activePlane!==plane} aria-label={plane+' plane'}><PlaneSurface plane={plane} graph={graphs[plane]??emptyGraph()} onChange={change=>updateGraph(plane,change)} onDropItem={(id,target,position)=>{const item=customItems.find(entry=>entry.id===id&&entry.plane===target);if(item)addCustom(item,position);}}/></section>)}{error&&activePlane==='Components'&&<div role="alert" className="v2-native-error">{error}</div>}<V2Library activePlane={activePlane} onSelectPlane={changePlane} customItems={customItems} onAddCustom={addCustom} onAddComponent={ready?type=>{changePlane('Components');native.current.add(type);}:undefined}/><div className="assembly-save"><form onSubmit={saveAssembly}><label htmlFor="assembly-name">Assembly name</label><div className="assembly-save-fields"><input id="assembly-name" value={name} onChange={event=>setName(event.target.value)} placeholder="Name your assembly" maxLength={120} disabled={!higherPlane}/><button type="submit" disabled={!higherPlane||Boolean(initialLibrary.error)||(activePlane==='Components'&&!ready)}>Save to {higherPlane??'higher plane'}</button></div></form><p className="assembly-save-hint">{higherPlane?'Saved locally under Custom · design only':'This is the highest plane.'}</p>{(saveMessage||initialLibrary.error)&&<p className="assembly-save-message" role="status">{saveMessage||initialLibrary.error}</p>}</div><MachineSequence/></main>;
+ return <main className="v2-canvas"><div className="v2-native-surface" ref={surface} style={{display:activePlane==='Components'?'block':'none'}}/>{planes.filter(plane=>plane!=='Components').map(plane=><section key={plane} className="v2-plane-surface" hidden={activePlane!==plane} aria-label={plane+' plane'}><PlaneSurface plane={plane} graph={graphs[plane]??emptyGraph()} onChange={change=>updateGraph(plane,change)} onDropItem={(id,target,position)=>{const item=customItems.find(entry=>entry.id===id&&entry.plane===target);if(item)addCustom(item,position);}}/></section>)}{error&&activePlane==='Components'&&<div role="alert" className="v2-native-error">{error}</div>}<V2Library activePlane={activePlane} onSelectPlane={changePlane} customItems={customItems} onAddCustom={addCustom} onAddComponent={ready?type=>{changePlane('Components');try{native.current.add(type);setError('');}catch(cause){setError(cause.message);}}:undefined}/><div className="assembly-save"><div className="canvas-clear-controls"><button type="button" onClick={clearCanvas} disabled={activePlane==='Components'&&!ready}>🧹 Clear canvas</button>{cleared[activePlane]&&<button type="button" onClick={undoClear}>Undo clear</button>}</div><form onSubmit={saveAssembly}><label htmlFor="assembly-name">Assembly name</label><div className="assembly-save-fields"><input id="assembly-name" value={name} onChange={event=>setName(event.target.value)} placeholder="Name your assembly" maxLength={120} disabled={!higherPlane}/><button type="submit" disabled={!higherPlane||Boolean(initialLibrary.error)||(activePlane==='Components'&&!ready)}>Save to {higherPlane??'higher plane'}</button></div></form><p className="assembly-save-hint">{higherPlane?'Saved locally under Custom · design only':'This is the highest plane.'}</p>{(saveMessage||initialLibrary.error)&&<p className="assembly-save-message" role="status">{saveMessage||initialLibrary.error}</p>}</div><MachineSequence/></main>;
 }
