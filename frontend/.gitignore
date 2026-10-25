@@ -2,3 +2,6 @@ node_modules/
 dist/
 canvas-*.png
 settings-*.png
+
+# Generated native Langflow adapter (rebuild from original source)
+public/langflow-native/

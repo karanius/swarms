@@ -1,26 +1,42 @@
 // Empty React Flow playground; components will be introduced together later.
-import React, {useCallback} from 'react';
+import React, {useCallback, useState} from 'react';
 import {createRoot} from 'react-dom/client';
 import {ReactFlow, Background, Controls, ControlButton, addEdge, useNodesState, useEdgesState} from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 import './style.css';
 import catalog from './catalog.json';
-function Playground(){
- const [nodes,,onNodesChange]=useNodesState([
-{id:'research',position:{x:320,y:100},data:{label:'Research Collaboration Confederation'}},
-{id:'workforce',position:{x:760,y:100},data:{label:'Workforce Development Confederation'}},
-{id:'infrastructure',position:{x:760,y:400},data:{label:'Digital Infrastructure Confederation'}},
-{id:'resources',position:{x:320,y:400},data:{label:'Resource Stewardship Confederation'}}
-]);
- const [edges,setEdges,onEdgesChange]=useEdgesState([
-{id:'research-workforce',source:'research',target:'workforce',label:'Research and emerging skill needs'},
-{id:'workforce-infrastructure',source:'workforce',target:'infrastructure',label:'Specialist capacity'},
-{id:'infrastructure-research',source:'infrastructure',target:'research',label:'Shared computing access'},
-{id:'resources-infrastructure',source:'resources',target:'infrastructure',label:'Resource constraints and guidance'},
-{id:'research-resources',source:'research',target:'resources',label:'Efficiency research findings'}
-]);
+import VersionTwo from './v2-canvas.jsx';
+const instanceLayers = [
+{layer:"Confederations",category:"Research and Knowledge",items:["Research Collaboration Confederation"]},
+{layer:"Federation",category:"Research and Knowledge",items:["Research Alliance Federation"]},
+{layer:"Alliances",category:"Research and Innovation",items:["Applied Research Alliance"]},
+{layer:"Ecosystems",category:"Innovation",items:["Innovation Network"]},
+{layer:"Enterprises",category:"Research Organizations",items:["Applied Research Organization"]},
+{layer:"Operations",category:"Knowledge",items:["Research and Intelligence Operations"]},
+{layer:"Programs",category:"Knowledge",items:["Research and Evidence Program"]},
+{layer:"Processes",category:"Research",items:["Research Program","Evidence Maintenance"]},
+{layer:"Full Flow",category:"Research and Reporting",items:["Research brief to sourced report"]},
+{layer:"Composite Components",category:"Knowledge and Research",items:["Multi-source research","Evidence collection and citation"]},
+{layer:"Components",category:"Selected building blocks",items:["Chat Input","Prompt Template","Agent","Language Model","Web Search","URL","Parser","Chat Output"]}
+];
+const referralLayers = [
+{layer:"Confederations",category:"Trade and Commerce",items:["Trade Network Confederation"]},
+{layer:"Federation",category:"Trade and Commerce",items:["Trade Alliance Federation"]},
+{layer:"Alliances",category:"Regional Development",items:["Regional Enterprise Development Alliance"]},
+{layer:"Ecosystems",category:"Community Development",items:["Local Enterprise Network"]},
+{layer:"Enterprises",category:"Digital Businesses",items:["Digital Marketplace Business"]},
+{layer:"Operations",category:"Customer and Marketing",items:["Customer Lifecycle Operations","Marketing Operations","Analytics Operations"]},
+{layer:"Programs",category:"Growth and Customer",items:["Demand Generation Program","Customer Onboarding Program","Analytics Enablement Program"]},
+{layer:"Processes",category:"Marketing and Data",items:["Audience Development","Campaign Lifecycle","Customer Onboarding","Continuous Analytics"]},
+{layer:"Full Flow",category:"Marketing and Business Operations",items:["Market research and audience insights","Campaign strategy and planning","Customer inquiry to reviewed response","Marketing performance analysis"]},
+{layer:"Composite Components",category:"Research, Data, and Quality",items:["Multi-source research","Structured data extraction","Enrichment and classification","Cross-system record synchronization","Schema and contract validation","Human referral review — proposed addition"]},
+{layer:"Components",category:"Selected building blocks",items:["Chat Input","Prompt Template","Agent","Language Model","Structured Output","API Request","SQL Database","Chat Output"]}
+];
+function VersionOne(){
+ const [nodes,,onNodesChange]=useNodesState([]);
+ const [edges,setEdges,onEdgesChange]=useEdgesState([]);
  const onConnect=useCallback(connection=>setEdges(current=>addEdge(connection,current)),[setEdges]);
- return <main><div className="example-caption">Shared Research and Infrastructure Initiative · Hypothetical collaboration of confederations · No execution connected</div><ReactFlow nodes={nodes} edges={edges} onNodesChange={onNodesChange} onEdgesChange={onEdgesChange} onConnect={onConnect} colorMode="dark" fitView fitViewOptions={{padding:0.3}}><Background color="#303640" gap={24}/><Controls showFitView={false}><ControlButton title="Fullscreen" aria-label="Fullscreen" onClick={()=>{if(document.fullscreenElement){document.exitFullscreen();}else{document.documentElement.requestFullscreen();}}}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></ControlButton></Controls></ReactFlow><div className="tray-stack"><aside className="component-tray"><button className="tray-handle" aria-label="Open confederations list">Confederations</button><div className="tray-content"><div className="tray-list">{[
+ return <main><ReactFlow nodes={nodes} edges={edges} onNodesChange={onNodesChange} onEdgesChange={onEdgesChange} onConnect={onConnect} colorMode="dark" fitView fitViewOptions={{padding:0.3}}><Background color="#303640" gap={24}/><Controls showFitView={false}><ControlButton title="Fullscreen" aria-label="Fullscreen" onClick={()=>{if(document.fullscreenElement){document.exitFullscreen();}else{document.documentElement.requestFullscreen();}}}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></ControlButton></Controls></ReactFlow><div className="tray-stack"><div className="stack-label">LIBRARY</div><aside className="component-tray"><button className="tray-handle" aria-label="Open confederations list">Confederations</button><div className="tray-content"><div className="tray-list">{[
 {category:"Regional Development",items:["Regional Development Confederation","Regional Innovation Confederation","Regional Enterprise Confederation","Regional Resilience Confederation"]},
 {category:"Research and Knowledge",items:["Research Collaboration Confederation","Open Knowledge Confederation","Shared Research Infrastructure Confederation","Evidence Exchange Confederation"]},
 {category:"Trade and Commerce",items:["Trade Network Confederation","Producer Network Confederation","Supply Network Confederation","Circular Commerce Confederation"]},
@@ -99,6 +115,11 @@ function Playground(){
 {category:"Evaluation and Quality",items:["Schema and contract validation","Factual consistency review","Rubric-based scoring","Candidate comparison and ranking"]},
 {category:"Actions and Integrations",items:["API request and response mapping","Cross-system record synchronization","Event filtering and dispatch","Action execution and confirmation"]},
 {category:"Memory and Context",items:["Conversation summarization","Task context assembly","Persistent fact storage and retrieval","Context selection and compression"]}
-].map(({category,items})=><details key={category}><summary>{category}</summary><ul>{items.map(name=><li key={name}>{name}</li>)}</ul></details>)}</div></div></aside><aside className="component-tray"><button className="tray-handle" aria-label="Open component list">Components</button><div className="tray-content"><div className="tray-list">{catalog.map(group=><details key={group.name}><summary>{group.name}</summary><ul>{group.items.map(item=><li key={item.id}>{item.name}{item.legacy&&<small> · legacy</small>}</li>)}</ul></details>)}</div></div></aside></div></main>;
+].map(({category,items})=><details key={category}><summary>{category}</summary><ul>{items.map(name=><li key={name}>{name}</li>)}</ul></details>)}</div></div></aside><aside className="component-tray"><button className="tray-handle" aria-label="Open component list">Components</button><div className="tray-content"><div className="tray-list">{catalog.map(group=><details key={group.name}><summary>{group.name}</summary><ul>{group.items.map(item=><li key={item.id}>{item.name}{item.legacy&&<small> · legacy</small>}</li>)}</ul></details>)}</div></div></aside></div><div className="tray-stack instance-stack"><div className="stack-label">INSTANCE · Regional Workforce Intelligence<small>Turning research into sourced evidence for regional workforce decisions</small></div>{instanceLayers.map(({layer,category,items})=><aside key={layer} className="component-tray"><button className="tray-handle" aria-label={'Open instance '+layer}>{layer}<span>{items.length}</span></button><div className="tray-content"><div className="tray-list"><details open><summary>{category}</summary><ul>{items.map(name=><li key={name}>{name}</li>)}</ul></details></div></div></aside>)}</div><div className="tray-stack instance-stack referral-stack"><div className="stack-label">INSTANCE · Real Estate Referral Venture<small>Turning a real estate referral program into a profitable venture</small></div>{referralLayers.map(({layer,category,items})=><aside key={layer} className="component-tray"><button className="tray-handle" aria-label={'Open referral '+layer}>{layer}<span>{items.length}</span></button><div className="tray-content"><div className="tray-list"><details open><summary>{category}</summary><ul>{items.map(name=><li key={name}>{name}</li>)}</ul><p className="selection-note">Proposed selection{['Confederations','Federation','Alliances','Ecosystems'].includes(layer)?' · Optional partner network; not a launch requirement.':layer==='Full Flow'?' · Referral matching, consent, outcome tracking, and unit economics still need definitions.':''}</p></details></div></div></aside>)}</div></main>;
+}
+function Playground(){
+ const [version,setVersion]=useState(()=>new URLSearchParams(window.location.search).get('version')==='2'?2:1);
+ const switchVersion=value=>{setVersion(value);const url=new URL(window.location.href);url.searchParams.set('version',String(value));window.history.replaceState(null,'',url);};
+ return <><nav className="version-switch" aria-label="Canvas version">{[1,2].map(value=><button key={value} aria-pressed={version===value} onClick={()=>switchVersion(value)}>V{value}</button>)}</nav><section hidden={version!==1}><VersionOne/></section><section hidden={version!==2}><VersionTwo/></section></>;
 }
 createRoot(document.getElementById('root')).render(<Playground/>);

@@ -1,0 +1,7 @@
+.v2-native-surface{position:absolute;inset:0;width:100%;height:100%}
+.v2-native-error{position:absolute;left:250px;top:70px;color:#ffb8b8;background:#301c23;padding:16px;border-radius:6px}
+.v2-library .draggable-component{display:block;width:100%;text-align:left;background:#243b45;border:1px solid #4d8190;color:#d8f3f6;font:inherit;border-radius:4px;padding:7px 9px;cursor:grab}
+.v2-library .component-unavailable{opacity:.6}
+.v2-library .component-tray:last-child .tray-content{top:auto;bottom:26px;padding-top:0;padding-bottom:4px;transform-origin:bottom left}
+/* Original controls portal to the page body; inherit their own theme there. */
+.native-langflow-portal{color:hsl(var(--foreground))}
