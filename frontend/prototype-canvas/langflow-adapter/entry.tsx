@@ -81,7 +81,7 @@ export async function mount(element:HTMLElement){
   const onNodesChange=useFlowStore(s=>s.onNodesChange),onEdgesChange=useFlowStore(s=>s.onEdgesChange),onConnect=useFlowStore(s=>s.onConnect);
   return <><AssistantPanel isOpen={assistantOpen} onClose={()=>setAssistantOpen(false)}/><ReactFlow minZoom={MIN_ZOOM} maxZoom={MAX_ZOOM} nodes={nodes} edges={edges} defaultViewport={flow.data?.viewport} nodeTypes={nodeTypes} edgeTypes={edgeTypes} onNodesChange={onNodesChange} onEdgesChange={onEdgesChange} onConnect={onConnect} colorMode="dark" onInit={instance=>{controller.instance=instance;useFlowStore.getState().setReactFlowInstance(instance);}} onDragOver={e=>{if(e.dataTransfer.types.includes('application/x-langflow-component')){e.preventDefault();e.dataTransfer.dropEffect='copy';}}} onDrop={e=>{e.preventDefault();const type=e.dataTransfer.getData('application/x-langflow-component');if(supportedTypes.includes(type))controller.add(type,{x:e.clientX,y:e.clientY});}}><Background/><CanvasControls selectedNode={nodes.find(node=>node.selected)??null}/></ReactFlow></>;
  }
- const controller:any={instance:null,add(type:string,point?:{x:number,y:number}){
+ const controller:any={instance:null,snapshot(){const state=useFlowStore.getState();return structuredClone({nodes:state.nodes,edges:state.edges,viewport:controller.instance?.getViewport()??{x:0,y:0,zoom:1}});},add(type:string,point?:{x:number,y:number}){
   if(!supportedTypes.includes(type))return;
   const bounds=element.getBoundingClientRect();
   const position=controller.instance?.screenToFlowPosition(point??{x:bounds.x+bounds.width/2,y:bounds.y+bounds.height/2})??{x:300,y:200};

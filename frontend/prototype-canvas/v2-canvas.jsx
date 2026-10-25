@@ -1,18 +1,29 @@
 import React, {useEffect,useRef,useState} from 'react';
-import {ReactFlow,Background,Controls,useNodesState,useEdgesState,addEdge} from '@xyflow/react';
+import {ReactFlow,Background,Controls,addEdge,applyNodeChanges,applyEdgeChanges} from '@xyflow/react';
 import V2Library from './v2-library.jsx';
 import MachineSequence from './machine-sequence.jsx';
 import './v2-canvas.css';
 
-const planes=['Confederations','Federation','Alliances','Ecosystems','Enterprises','Operations','Programs','Processes','Flows','Composite Components'];
-function PlaneSurface(){
- const [nodes,,onNodesChange]=useNodesState([]),[edges,setEdges,onEdgesChange]=useEdgesState([]);
- return <ReactFlow nodes={nodes} edges={edges} onNodesChange={onNodesChange} onEdgesChange={onEdgesChange} onConnect={connection=>setEdges(old=>addEdge(connection,old))} colorMode="dark"><Background/><Controls/></ReactFlow>;
+const planes=['Confederations','Federation','Alliances','Ecosystems','Enterprises','Operations','Programs','Processes','Flows','Composite Components','Components'];
+const storageKey='swarms.v2.custom-library.v1';
+const emptyGraph=()=>({nodes:[],edges:[],viewport:{x:0,y:0,zoom:1}});
+function readLibrary(){
+ try{const raw=localStorage.getItem(storageKey);if(!raw)return {items:[]};const saved=JSON.parse(raw);if(saved.schemaVersion!==1||!Array.isArray(saved.items)||saved.items.some(item=>!item.id||!item.name||!planes.includes(item.plane)||!Array.isArray(item.assembly?.nodes)||!Array.isArray(item.assembly?.edges)))throw Error();return saved;}
+ catch{return {items:[],error:'Saved custom library could not be read. Existing storage has been preserved; saving is disabled.'};}
+}
+function PlaneSurface({plane,graph,onChange,onDropItem}){
+ const instance=useRef(null);
+ return <ReactFlow nodes={graph.nodes} edges={graph.edges} defaultViewport={graph.viewport} onInit={flow=>{instance.current=flow;}} onMoveEnd={(_,viewport)=>onChange(old=>({...old,viewport}))} onNodesChange={changes=>onChange(old=>({...old,nodes:applyNodeChanges(changes,old.nodes)}))} onEdgesChange={changes=>onChange(old=>({...old,edges:applyEdgeChanges(changes,old.edges)}))} onConnect={connection=>onChange(old=>({...old,edges:addEdge(connection,old.edges)}))} onDragOver={event=>{if(event.dataTransfer.types.includes('application/x-canvas-custom')){event.preventDefault();event.dataTransfer.dropEffect='copy';}}} onDrop={event=>{event.preventDefault();onDropItem(event.dataTransfer.getData('application/x-canvas-custom'),plane,instance.current?.screenToFlowPosition({x:event.clientX,y:event.clientY}));}} colorMode="dark"><Background/><Controls/></ReactFlow>;
 }
 export default function VersionTwo(){
  const surface=useRef(null),native=useRef(null);
  const [activePlane,setActivePlane]=useState('Components');
+ const [initialLibrary]=useState(readLibrary);
+ const [customItems,setCustomItems]=useState(initialLibrary.items);
+ const [graphs,setGraphs]=useState({});
+ const [name,setName]=useState(''),[saveMessage,setSaveMessage]=useState('');
  const [error,setError]=useState(''),[ready,setReady]=useState(false);
+ const higherPlane=planes[planes.indexOf(activePlane)-1];
  useEffect(()=>{
   let cancelled=false;
   import(/* @vite-ignore */ window.location.origin+'/langflow-native/adapter.js').then(async module=>{
@@ -22,5 +33,27 @@ export default function VersionTwo(){
   }).catch(e=>{if(!cancelled)setError(e.message);});
   return ()=>{cancelled=true;native.current?.unmount();native.current=null;};
  },[]);
- return <main className="v2-canvas"><div className="v2-native-surface" ref={surface} style={{display:activePlane==='Components'?'block':'none'}}/>{planes.map(plane=><section key={plane} className="v2-plane-surface" hidden={activePlane!==plane} aria-label={plane+' plane'}><PlaneSurface/></section>)}{error&&activePlane==='Components'&&<div role="alert" className="v2-native-error">{error}</div>}<V2Library activePlane={activePlane} onSelectPlane={plane=>setActivePlane(plane)} onAddComponent={ready?type=>{setActivePlane('Components');native.current.add(type);}:undefined}/><div className="plane-location" role="status">{activePlane}</div><MachineSequence/></main>;
+ const changePlane=plane=>{setActivePlane(plane);setSaveMessage('');};
+ const updateGraph=(plane,change)=>setGraphs(old=>({...old,[plane]:change(old[plane]??emptyGraph())}));
+ function addCustom(item,position){
+  changePlane(item.plane);
+  updateGraph(item.plane,old=>({...old,nodes:[...old.nodes,{id:crypto.randomUUID(),type:'default',position:position??{x:350+old.nodes.length*35,y:220+old.nodes.length*35},data:{label:item.name,customItemId:item.id}}]}));
+ }
+ function saveAssembly(event){
+  event.preventDefault();
+  if(!higherPlane||initialLibrary.error)return;
+  const title=name.trim();
+  if(!title){setSaveMessage('Give this assembly a name.');return;}
+  if(customItems.some(item=>item.plane===higherPlane&&item.name.toLowerCase()===title.toLowerCase())){setSaveMessage('That name already exists in '+higherPlane+'. Choose another name.');return;}
+  try{
+   const graph=activePlane==='Components'?native.current?.snapshot():graphs[activePlane];
+   if(!graph?.nodes?.length){setSaveMessage('Add items to this plane before saving an assembly.');return;}
+   const usedIds=new Set(graph.nodes.map(node=>node.data?.customItemId).filter(Boolean));
+   const item={id:crypto.randomUUID(),name:title,plane:higherPlane,sourcePlane:activePlane,createdAt:new Date().toISOString(),status:'design-saved',assembly:structuredClone(graph),dependencies:customItems.filter(entry=>usedIds.has(entry.id))};
+   const next=[...customItems,item];
+   localStorage.setItem(storageKey,JSON.stringify({schemaVersion:1,items:next}));
+   setCustomItems(next);setName('');setSaveMessage('Saved “'+title+'” in '+higherPlane+' → Custom.');
+  }catch{setSaveMessage('Could not save locally. Browser storage may be full or unavailable. Your canvas is unchanged.');}
+ }
+ return <main className="v2-canvas"><div className="v2-native-surface" ref={surface} style={{display:activePlane==='Components'?'block':'none'}}/>{planes.filter(plane=>plane!=='Components').map(plane=><section key={plane} className="v2-plane-surface" hidden={activePlane!==plane} aria-label={plane+' plane'}><PlaneSurface plane={plane} graph={graphs[plane]??emptyGraph()} onChange={change=>updateGraph(plane,change)} onDropItem={(id,target,position)=>{const item=customItems.find(entry=>entry.id===id&&entry.plane===target);if(item)addCustom(item,position);}}/></section>)}{error&&activePlane==='Components'&&<div role="alert" className="v2-native-error">{error}</div>}<V2Library activePlane={activePlane} onSelectPlane={changePlane} customItems={customItems} onAddCustom={addCustom} onAddComponent={ready?type=>{changePlane('Components');native.current.add(type);}:undefined}/><div className="assembly-save"><form onSubmit={saveAssembly}><label htmlFor="assembly-name">Assembly name</label><div className="assembly-save-fields"><input id="assembly-name" value={name} onChange={event=>setName(event.target.value)} placeholder="Name your assembly" maxLength={120} disabled={!higherPlane}/><button type="submit" disabled={!higherPlane||Boolean(initialLibrary.error)||(activePlane==='Components'&&!ready)}>Save to {higherPlane??'higher plane'}</button></div></form><p className="assembly-save-hint">{higherPlane?'Saved locally under Custom · design only':'This is the highest plane.'}</p>{(saveMessage||initialLibrary.error)&&<p className="assembly-save-message" role="status">{saveMessage||initialLibrary.error}</p>}</div><MachineSequence/></main>;
 }
