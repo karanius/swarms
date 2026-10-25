@@ -45,7 +45,11 @@ export async function mount(element:HTMLElement){
  for(const child of document.body.children)stylePortal(child);
  const host=document.createElement('body');host.className='native-root dark';host.id='body';shadow.append(host);
  const root=createRoot(host);
- const response=await fetch('/api/v1/all',{credentials:'include'});
+ let response=await fetch('/api/v1/all',{credentials:'include'});
+ if(response.status===401||response.status===403){
+  const refreshed=await fetch('/api/v1/refresh',{method:'POST',credentials:'include'});
+  if(refreshed.ok)response=await fetch('/api/v1/all',{credentials:'include'});
+ }
  if(!response.ok)throw new Error('Langflow component catalog unavailable ('+response.status+').');
  const catalog=await response.json();
  delete catalog.component_display_names;

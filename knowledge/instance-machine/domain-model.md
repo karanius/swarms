@@ -276,6 +276,12 @@ For example, missing credentials may block execution without blocking blueprint 
 
 Discovery can expose unknowns by examining triggers, required information, expected results, failure behavior, and success checks. Some omissions emerge only during design or testing. Boundary resolution determines which unknowns matter for the next action. Structural omissions can be checked, factual unknowns investigated, and requester-owned choices clarified with the requester. The system does not assume it can detect every missing detail from the initial intent.
 
+### Layer placement
+
+Layer placement is explicit and justified by the responsibility and contract assigned to an item, rather than inferred solely from its name, number of constituent pieces, or diagram complexity. The same underlying behavior may serve as a reusable capability in one context and a complete task in another.
+
+When defining a layer, describe its purpose, permitted contents, exposed and hidden boundaries, and validation responsibility. A composite packages an internal assembly behind a reusable capability; a flow uses capabilities to complete a task. These distinctions guide further definition, but exact composite, flow, and process boundaries remain open. Layer labels alone do not establish execution semantics.
+
 ## Term record template
 
 - Term:
@@ -303,6 +309,7 @@ Entity schemas, stable identifiers, relationship definitions, and terminology us
 
 ## Working decisions
 
+- 2026-10-25 — Accepted by the user: justify layer placement through an item's assigned responsibility and contract, rather than name, size, or diagram complexity. Reuse boundaries depend on context. Exact definitions for individual layers remain open. Source: the layer-boundary discussion and the user's agreement.
 - 2026-10-25 — Confirmed by the user: unknowns remain explicit and linked to affected designs; blocking is relative to a particular action, allowing independent work to continue. Discovery progressively exposes uncertainty rather than presuming completeness from initial intent. Source: the missing-details discussion and explicit acceptance of action-relative blocking.
 - 2026-10-25 — Confirmed by the user: conflict is distinct from a gap and identifies incompatible conditions in the current design. Expose the clash and necessary changes; do not silently choose or relax conditions. Resolution must remain explicit and auditable. Source: the conflict discussion and explicit acceptance.
 - 2026-10-25 — Accepted by the user: constraints limit acceptable solutions; satisfying an outcome does not excuse violating a constraint. Boundary resolution must expose conflicts rather than silently relax the boundaries. Formal representation and change procedures remain open. Source: the constraint discussion and the user's acknowledgment.
