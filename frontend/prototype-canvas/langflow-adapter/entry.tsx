@@ -1,8 +1,8 @@
-import React, {useEffect} from 'react';
+import React, {useEffect,useRef} from 'react';
 import {createRoot} from 'react-dom/client';
 import {BrowserRouter} from 'react-router-dom';
 import {QueryClientProvider} from '@tanstack/react-query';
-import {ReactFlow, ReactFlowProvider, Background} from '@xyflow/react';
+import {ReactFlow, ReactFlowProvider, Background,useNodesInitialized} from '@xyflow/react';
 import CanvasControls from '@/components/core/canvasControlsComponent/CanvasControls';
 import {AssistantPanel} from '@/components/core/assistantPanel';
 import {SidebarProvider} from '@/components/ui/sidebar';
@@ -18,6 +18,7 @@ import {useTypesStore} from '@/stores/typesStore';
 import {queryClient} from '@/contexts';
 import {TooltipProvider} from '@/components/ui/tooltip';
 import '@/i18n';
+import {configureExecutionMemory,prepareIsolatedRun,executionMemoryPolicy} from './execution-memory.mjs';
 import classes from '@/style/classes.css?inline';
 import theme from '@/style/index.css?inline';
 import app from '@/App.css?inline';
@@ -62,6 +63,15 @@ export async function mount(element:HTMLElement){
  useFlowsManagerStore.setState({currentFlowId:flow.id,currentFlow:flow});
  useDarkStore.setState({dark:true});
  useFlowStore.setState({nodes:flow.data?.nodes??[],edges:flow.data?.edges??[]});
+ // Only this adapter instance owns this wrapper; upstream Langflow stays unchanged.
+ const originalBuildFlow=useFlowStore.getState().buildFlow;
+ const isolatedBuildFlow=async (options:any)=>{
+  if(useFlowStore.getState().isBuilding)throw new Error('An execution is already running.');
+  const run=prepareIsolatedRun(useFlowStore.getState().nodes);
+  useFlowStore.setState({nodes:run.nodes});
+  return originalBuildFlow({...options,input_value:options?.input_value??run.inputValue,session:run.session});
+ };
+ useFlowStore.setState({buildFlow:isolatedBuildFlow});
  function Canvas(){
   const assistantOpen=useAssistantManagerStore(s=>s.assistantSidebarOpen);
   const setAssistantOpen=useAssistantManagerStore(s=>s.setAssistantSidebarOpen);
@@ -77,16 +87,33 @@ export async function mount(element:HTMLElement){
    return ()=>window.removeEventListener('lf:start-add-note',addNote);
   },[]);
   const nodes=useFlowStore(s=>s.nodes),edges=useFlowStore(s=>s.edges);
+  const nodesInitialized=useNodesInitialized();
+  const knownIds=useRef(new Set((flow.data?.nodes??[]).map((node:any)=>node.id)));
+  const pendingFrame=useRef(false);
+  const nodeIds=nodes.map(node=>node.id).join('|');
+  useEffect(()=>{
+   const ids=new Set(nodes.map(node=>node.id));
+   if(nodes.some(node=>!knownIds.current.has(node.id)))pendingFrame.current=true;
+   knownIds.current=ids;
+   if(!nodes.length){pendingFrame.current=false;return;}
+   if(!pendingFrame.current||!nodesInitialized||!controller.instance)return;
+   const frame=requestAnimationFrame(()=>{
+    pendingFrame.current=false;
+    setAssistantOpen(false);
+    controller.instance.fitView({nodes:nodes.map(node=>({id:node.id})),padding:{left:'260px',right:'40px',top:'200px',bottom:'90px'},minZoom:MIN_ZOOM,maxZoom:1,duration:250});
+   });
+   return ()=>cancelAnimationFrame(frame);
+  },[nodeIds,nodesInitialized]);
   const onNodesChange=useFlowStore(s=>s.onNodesChange),onEdgesChange=useFlowStore(s=>s.onEdgesChange),onConnect=useFlowStore(s=>s.onConnect);
   return <><AssistantPanel isOpen={assistantOpen} onClose={()=>setAssistantOpen(false)}/><ReactFlow minZoom={MIN_ZOOM} maxZoom={MAX_ZOOM} nodes={nodes} edges={edges} defaultViewport={flow.data?.viewport} nodeTypes={nodeTypes} edgeTypes={edgeTypes} onNodesChange={onNodesChange} onEdgesChange={onEdgesChange} onConnect={onConnect} colorMode="dark" onInit={instance=>{controller.instance=instance;useFlowStore.getState().setReactFlowInstance(instance);}} onDragOver={e=>{if(e.dataTransfer.types.includes('application/x-langflow-component')){e.preventDefault();e.dataTransfer.dropEffect='copy';}}} onDrop={e=>{e.preventDefault();const type=e.dataTransfer.getData('application/x-langflow-component');if(supportedTypes.includes(type))controller.add(type,{x:e.clientX,y:e.clientY});}}><Background/><CanvasControls selectedNode={nodes.find(node=>node.selected)??null}/></ReactFlow></>;
  }
- const controller:any={instance:null,clear(){useAssistantManagerStore.getState().setAssistantSidebarOpen(false);useFlowStore.setState({nodes:[],edges:[]});},restore(graph:any){useFlowStore.setState({nodes:structuredClone(graph.nodes),edges:structuredClone(graph.edges)});controller.instance?.setViewport(graph.viewport);},snapshot(){const state=useFlowStore.getState();return structuredClone({nodes:state.nodes,edges:state.edges,viewport:controller.instance?.getViewport()??{x:0,y:0,zoom:1}});},add(type:string,point?:{x:number,y:number}){
+ const controller:any={instance:null,clear(){useAssistantManagerStore.getState().setAssistantSidebarOpen(false);useFlowStore.setState({nodes:[],edges:[]});},restore(graph:any){useFlowStore.setState({nodes:structuredClone(graph.nodes),edges:structuredClone(graph.edges)});controller.instance?.setViewport(graph.viewport);},snapshot(){const state=useFlowStore.getState();return structuredClone({nodes:configureExecutionMemory(state.nodes),edges:state.edges,memoryPolicy:executionMemoryPolicy,viewport:controller.instance?.getViewport()??{x:0,y:0,zoom:1}});},add(type:string,point?:{x:number,y:number}){
   if(!definitions[type])throw new Error('This component is unavailable in the connected Langflow catalog: '+type);
   const bounds=element.getBoundingClientRect();
   const position=controller.instance?.screenToFlowPosition(point??{x:bounds.x+bounds.width/2,y:bounds.y+bounds.height/2})??{x:300,y:200};
   const id=type+'-'+crypto.randomUUID();
   useFlowStore.getState().setNodes(nodes=>[...nodes,{id,type:'genericNode',position,data:{id,type,node:structuredClone(definitions[type])}}]);
- },unmount(){root.unmount();portalObserver.disconnect();portalStyle.remove();shadow.replaceChildren();}};
+ },unmount(){if(useFlowStore.getState().buildFlow===isolatedBuildFlow)useFlowStore.setState({buildFlow:originalBuildFlow});root.unmount();portalObserver.disconnect();portalStyle.remove();shadow.replaceChildren();}};
  root.render(<BrowserRouter><QueryClientProvider client={queryClient}><TooltipProvider><ReactFlowProvider><SidebarProvider defaultOpen={false} className="h-full min-h-0" style={{height:"100%",minHeight:0}}><Canvas/></SidebarProvider></ReactFlowProvider></TooltipProvider></QueryClientProvider></BrowserRouter>);
  return controller;
 }
