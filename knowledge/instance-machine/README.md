@@ -5,19 +5,19 @@ title: Instance Machine Foundations
 type: knowledge-index
 status: defining
 created: 2026-10-25
-updated: 2026-10-25
+updated: 2026-10-26
 tags: [instance-machine, architecture]
 ---
 
 # Instance Machine Foundations
 
-A linked workspace for defining the machine together before implementing its foundations. The five records are placeholders with questions, record templates, and definition gates. They are not approved specifications or working subsystems.
+A linked workspace for defining the machine together before implementing its foundations. The five records develop through questions, proposals, and definition gates. The Domain Model records accepted terms; the Canonical Specification now contains a concrete draft for Library JSON and Instance JSON with illustrative examples. Remaining placeholders and draft details are not approved specifications or working subsystems.
 
 | Record | What we will define | What it will produce |
 | --- | --- | --- |
 | [Domain Model](domain-model.md) | Terms, boundaries, and relationships | Entity and relationship schemas |
 | [Contracts](contracts.md) | Interfaces, obligations, compatibility, and evidence | Contract schemas, validators, and tests |
-| [Canonical Specification](canonical-specification.md) | The authoritative instance record and its projections | Versioned schema, storage, and view interfaces |
+| [Canonical Specification](canonical-specification.md) | Library and instance records, references, revisions, and projections | Versioned schema, storage, and view interfaces |
 | [Compiler Lifecycle](compiler-lifecycle.md) | States, transitions, decomposition, assembly, and recovery | Executable controller and subsystem interfaces |
 | [Proof Milestone](proof-milestone.md) | One end-to-end success definition | Fixtures, acceptance tests, and evidence |
 
@@ -40,3 +40,11 @@ Start with the Domain Model. Take one unresolved question at a time, work throug
 - [Metadata-driven Composition Workbook](../../CONCEPT.md)
 
 The existing sequence and algorithm remain context. These placeholders refine their unresolved definitions rather than silently replacing them.
+
+## Canonical JSON draft
+
+- [Library and Instance specification](canonical-specification.md)
+- [Illustrative day-zero library](examples/day-zero.library.json)
+- [Illustrative day-zero instance](examples/day-zero.instance.json)
+
+The examples demonstrate a proposed format and unresolved boundaries. They are not installed-catalog exports or executable artifacts. Formal schemas and runtime integration remain subsequent work.

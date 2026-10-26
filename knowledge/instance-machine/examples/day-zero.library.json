@@ -1,0 +1,165 @@
+{
+  "schemaVersion": "draft-1",
+  "kind": "library",
+  "id": "example-library",
+  "revision": "catalog-r1",
+  "layers": [
+    {
+      "id": "configuration",
+      "name": "Configuration",
+      "order": 0
+    },
+    {
+      "id": "components",
+      "name": "Components",
+      "order": 1
+    },
+    {
+      "id": "composite-components",
+      "name": "Composite Components",
+      "order": 2
+    },
+    {
+      "id": "flows",
+      "name": "Flows",
+      "order": 3
+    }
+  ],
+  "items": [
+    {
+      "id": "chat-input",
+      "revision": "r1",
+      "name": "Chat Input",
+      "layerId": "components",
+      "capability": {
+        "description": "Accept supplied text",
+        "limitations": [
+          "Illustrative catalog description; actual native contract and source snapshot must be resolved."
+        ]
+      },
+      "contract": {
+        "status": "draft",
+        "inputs": [
+          {
+            "id": "text",
+            "type": "illustrative-message",
+            "nativeContractRef": null
+          }
+        ],
+        "outputs": [
+          {
+            "id": "message",
+            "type": "illustrative-message",
+            "nativeContractRef": null
+          }
+        ]
+      },
+      "definition": {
+        "kind": "native",
+        "componentType": "ChatInput",
+        "artifactRef": null
+      },
+      "dependencies": [],
+      "lifecycle": {
+        "designReadiness": "incomplete",
+        "implementation": "not-established",
+        "designValidation": "not-checked",
+        "behaviorValidation": "not-checked"
+      },
+      "provenance": {
+        "kind": "illustrative-fixture",
+        "notAnInstalledCatalogExport": true
+      }
+    },
+    {
+      "id": "agent",
+      "revision": "r1",
+      "name": "Agent",
+      "layerId": "components",
+      "capability": {
+        "description": "Produce a response using configured instructions and a model",
+        "limitations": [
+          "Illustrative catalog description; actual native contract and source snapshot must be resolved."
+        ]
+      },
+      "contract": {
+        "status": "draft",
+        "inputs": [
+          {
+            "id": "message",
+            "type": "illustrative-message",
+            "nativeContractRef": null
+          }
+        ],
+        "outputs": [
+          {
+            "id": "response",
+            "type": "illustrative-message",
+            "nativeContractRef": null
+          }
+        ]
+      },
+      "definition": {
+        "kind": "native",
+        "componentType": "Agent",
+        "artifactRef": null
+      },
+      "dependencies": [],
+      "lifecycle": {
+        "designReadiness": "incomplete",
+        "implementation": "not-established",
+        "designValidation": "not-checked",
+        "behaviorValidation": "not-checked"
+      },
+      "provenance": {
+        "kind": "illustrative-fixture",
+        "notAnInstalledCatalogExport": true
+      }
+    },
+    {
+      "id": "chat-output",
+      "revision": "r1",
+      "name": "Chat Output",
+      "layerId": "components",
+      "capability": {
+        "description": "Expose a resulting message",
+        "limitations": [
+          "Illustrative catalog description; actual native contract and source snapshot must be resolved."
+        ]
+      },
+      "contract": {
+        "status": "draft",
+        "inputs": [
+          {
+            "id": "message",
+            "type": "illustrative-message",
+            "nativeContractRef": null
+          }
+        ],
+        "outputs": [
+          {
+            "id": "message",
+            "type": "illustrative-message",
+            "nativeContractRef": null
+          }
+        ]
+      },
+      "definition": {
+        "kind": "native",
+        "componentType": "ChatOutput",
+        "artifactRef": null
+      },
+      "dependencies": [],
+      "lifecycle": {
+        "designReadiness": "incomplete",
+        "implementation": "not-established",
+        "designValidation": "not-checked",
+        "behaviorValidation": "not-checked"
+      },
+      "provenance": {
+        "kind": "illustrative-fixture",
+        "notAnInstalledCatalogExport": true
+      }
+    }
+  ]
+}

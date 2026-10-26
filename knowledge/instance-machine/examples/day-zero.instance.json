@@ -1,0 +1,299 @@
+{
+  "schemaVersion": "draft-1",
+  "kind": "instance",
+  "id": "example-summary-instance",
+  "revision": "instance-r1",
+  "name": "Summarization capability design",
+  "libraryRef": {
+    "id": "example-library",
+    "revision": "catalog-r1"
+  },
+  "intent": {
+    "description": "I want a short summary of supplied text.",
+    "source": "illustrative-fixture"
+  },
+  "requirements": [
+    {
+      "id": "requirement-summary",
+      "description": "Return exactly three faithful bullet points from supplied text.",
+      "status": "proposed",
+      "parentIds": [],
+      "acceptanceCriteria": [
+        "Exactly three bullet points.",
+        "Every substantive claim is supported by the supplied text."
+      ],
+      "realizationRefs": [
+        {
+          "id": "assemble-summary",
+          "revision": "r1"
+        }
+      ]
+    }
+  ],
+  "constraints": [
+    {
+      "id": "constraint-no-invention",
+      "description": "Do not introduce unsupported claims.",
+      "status": "proposed"
+    }
+  ],
+  "decisions": [],
+  "assumptions": [],
+  "unknowns": [
+    {
+      "id": "unknown-model",
+      "question": "Which existing Langflow model configuration may this instance use?",
+      "blocks": [
+        {
+          "action": "execute",
+          "subjectId": "writer"
+        }
+      ]
+    }
+  ],
+  "conflicts": [],
+  "localItems": [
+    {
+      "id": "local-summarizer",
+      "revision": "r1",
+      "name": "Three-point Summarizer",
+      "layerId": "composite-components",
+      "capability": {
+        "description": "Turn supplied text into three concise bullet points",
+        "limitations": [
+          "Proposed assembly; no execution or behavioral proof supplied."
+        ]
+      },
+      "contract": {
+        "status": "draft",
+        "inputs": [
+          {
+            "id": "text",
+            "type": "illustrative-message",
+            "nativeContractRef": null
+          }
+        ],
+        "outputs": [
+          {
+            "id": "summary",
+            "type": "illustrative-message",
+            "nativeContractRef": null
+          }
+        ],
+        "obligations": [
+          "Return exactly three bullet points.",
+          "Do not introduce unsupported claims."
+        ]
+      },
+      "definition": {
+        "kind": "assembly",
+        "assemblyRef": {
+          "id": "assemble-summary",
+          "revision": "r1"
+        },
+        "boundaryMappings": [
+          {
+            "direction": "input",
+            "externalPortId": "text",
+            "internal": {
+              "placementId": "input",
+              "portId": "text"
+            }
+          },
+          {
+            "direction": "output",
+            "externalPortId": "summary",
+            "internal": {
+              "placementId": "output",
+              "portId": "message"
+            }
+          }
+        ]
+      },
+      "dependencies": [
+        {
+          "libraryId": "example-library",
+          "itemId": "chat-input",
+          "revision": "r1"
+        },
+        {
+          "libraryId": "example-library",
+          "itemId": "agent",
+          "revision": "r1"
+        },
+        {
+          "libraryId": "example-library",
+          "itemId": "chat-output",
+          "revision": "r1"
+        }
+      ],
+      "lifecycle": {
+        "designReadiness": "incomplete",
+        "implementation": "not-established",
+        "designValidation": "not-checked",
+        "behaviorValidation": "not-checked"
+      },
+      "provenance": {
+        "kind": "illustrative-fixture",
+        "sourceRequirementIds": [
+          "requirement-summary"
+        ]
+      }
+    }
+  ],
+  "assemblies": [
+    {
+      "id": "assemble-summary",
+      "revision": "r1",
+      "layerId": "components",
+      "addresses": [
+        "requirement-summary"
+      ],
+      "placements": [
+        {
+          "id": "input",
+          "itemRef": {
+            "libraryId": "example-library",
+            "itemId": "chat-input",
+            "revision": "r1"
+          },
+          "configuration": {},
+          "resourceBindings": {}
+        },
+        {
+          "id": "writer",
+          "itemRef": {
+            "libraryId": "example-library",
+            "itemId": "agent",
+            "revision": "r1"
+          },
+          "configuration": {
+            "instructions": "Summarize supplied text in three bullet points without adding claims."
+          },
+          "resourceBindings": {}
+        },
+        {
+          "id": "output",
+          "itemRef": {
+            "libraryId": "example-library",
+            "itemId": "chat-output",
+            "revision": "r1"
+          },
+          "configuration": {},
+          "resourceBindings": {}
+        }
+      ],
+      "connections": [
+        {
+          "id": "input-to-writer",
+          "from": {
+            "placementId": "input",
+            "portId": "message"
+          },
+          "to": {
+            "placementId": "writer",
+            "portId": "message"
+          }
+        },
+        {
+          "id": "writer-to-output",
+          "from": {
+            "placementId": "writer",
+            "portId": "response"
+          },
+          "to": {
+            "placementId": "output",
+            "portId": "message"
+          }
+        }
+      ],
+      "lifecycle": {
+        "designReadiness": "incomplete",
+        "implementation": "not-established",
+        "designValidation": "not-checked",
+        "behaviorValidation": "not-checked"
+      }
+    },
+    {
+      "id": "use-summarizer",
+      "revision": "r1",
+      "layerId": "composite-components",
+      "addresses": [
+        "requirement-summary"
+      ],
+      "placements": [
+        {
+          "id": "summarizer",
+          "localItemRef": {
+            "itemId": "local-summarizer",
+            "revision": "r1"
+          },
+          "configuration": {},
+          "resourceBindings": {}
+        }
+      ],
+      "connections": [],
+      "lifecycle": {
+        "designReadiness": "incomplete",
+        "implementation": "not-established",
+        "designValidation": "not-checked",
+        "behaviorValidation": "not-checked"
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "id": "gap-native-definitions",
+      "kind": "missing-definition",
+      "requirementIds": [
+        "requirement-summary"
+      ],
+      "subjectIds": [
+        "input",
+        "writer",
+        "output"
+      ],
+      "description": "Pin real native definitions and resolve their actual contracts, field mappings, and transitive dependencies.",
+      "nextAction": "resolve-native-definitions",
+      "blocksActions": [
+        "build"
+      ]
+    },
+    {
+      "id": "gap-model-binding",
+      "kind": "configuration",
+      "requirementIds": [
+        "requirement-summary"
+      ],
+      "subjectIds": [
+        "writer"
+      ],
+      "description": "Bind an existing permitted Langflow model configuration; store references, not keys.",
+      "nextAction": "configure",
+      "blocksActions": [
+        "execute"
+      ]
+    },
+    {
+      "id": "gap-behavior-evidence",
+      "kind": "evidence",
+      "requirementIds": [
+        "requirement-summary"
+      ],
+      "subjectIds": [
+        "assemble-summary",
+        "local-summarizer"
+      ],
+      "description": "The proposed component assembly and its composite boundary have no behavioral evidence.",
+      "nextAction": "validate-after-build",
+      "blocksActions": [
+        "claim-behavior-validated"
+      ]
+    }
+  ],
+  "evidenceRefs": [],
+  "provenance": {
+    "kind": "illustrative-fixture",
+    "decisionRefs": []
+  }
+}

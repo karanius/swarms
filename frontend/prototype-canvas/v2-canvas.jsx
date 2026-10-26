@@ -1,6 +1,7 @@
 import React, {useEffect,useRef,useState} from 'react';
 import {ReactFlow,Background,Controls,addEdge,applyNodeChanges,applyEdgeChanges} from '@xyflow/react';
 import V2Library from './v2-library.jsx';
+import {parseFlowImport} from './langflow-adapter/import-flow.mjs';
 import MachineSequence from './machine-sequence.jsx';
 import './v2-canvas.css';
 
@@ -16,7 +17,8 @@ function PlaneSurface({plane,graph,onChange,onDropItem}){
  return <ReactFlow nodes={graph.nodes} edges={graph.edges} defaultViewport={graph.viewport} onInit={flow=>{instance.current=flow;}} onMoveEnd={(_,viewport)=>onChange(old=>({...old,viewport}))} onNodesChange={changes=>onChange(old=>({...old,nodes:applyNodeChanges(changes,old.nodes)}))} onEdgesChange={changes=>onChange(old=>({...old,edges:applyEdgeChanges(changes,old.edges)}))} onConnect={connection=>onChange(old=>({...old,edges:addEdge(connection,old.edges)}))} onDragOver={event=>{if(event.dataTransfer.types.includes('application/x-canvas-custom')){event.preventDefault();event.dataTransfer.dropEffect='copy';}}} onDrop={event=>{event.preventDefault();onDropItem(event.dataTransfer.getData('application/x-canvas-custom'),plane,instance.current?.screenToFlowPosition({x:event.clientX,y:event.clientY}));}} colorMode="dark"><Background/><Controls/></ReactFlow>;
 }
 export default function VersionTwo(){
- const surface=useRef(null),native=useRef(null);
+ const surface=useRef(null),native=useRef(null),importInput=useRef(null);
+ const [importBackup,setImportBackup]=useState(null);
  const [activePlane,setActivePlane]=useState('Components');
  const [initialLibrary]=useState(readLibrary);
  const [customItems,setCustomItems]=useState(initialLibrary.items);
@@ -39,6 +41,21 @@ export default function VersionTwo(){
  function addCustom(item,position){
   changePlane(item.plane);
   updateGraph(item.plane,old=>({...old,nodes:[...old.nodes,{id:crypto.randomUUID(),type:'default',position:position??{x:350+old.nodes.length*35,y:220+old.nodes.length*35},data:{label:item.name,customItemId:item.id}}]}));
+ }
+ async function importFlow(event){
+  const file=event.target.files?.[0];if(!file)return;
+  try{
+   const flow=parseFlowImport(await file.text());
+   const backup=native.current.snapshot();
+   native.current.importFlow(flow.data);
+   setImportBackup(backup);changePlane('Components');setName(flow.name);
+   setSaveMessage('Loaded “'+flow.name+'”: '+flow.data.nodes.length+' items, '+flow.data.edges.length+' connections.');
+  }catch(cause){setSaveMessage('Import failed: '+cause.message);}
+  finally{event.target.value='';}
+ }
+ function undoImport(){
+  if(!importBackup)return;
+  native.current.importFlow(importBackup);setImportBackup(null);changePlane('Components');setSaveMessage('Previous canvas restored.');
  }
  function clearCanvas(){
   const graph=activePlane==='Components'?native.current?.snapshot():graphs[activePlane];
@@ -68,5 +85,5 @@ export default function VersionTwo(){
    setCustomItems(next);setName('');setSaveMessage('Saved “'+title+'” in '+higherPlane+' → Custom.');
   }catch{setSaveMessage('Could not save locally. Browser storage may be full or unavailable. Your canvas is unchanged.');}
  }
- return <main className="v2-canvas"><div className="v2-native-surface" ref={surface} style={{display:activePlane==='Components'?'block':'none'}}/>{planes.filter(plane=>plane!=='Components').map(plane=><section key={plane} className="v2-plane-surface" hidden={activePlane!==plane} aria-label={plane+' plane'}><PlaneSurface plane={plane} graph={graphs[plane]??emptyGraph()} onChange={change=>updateGraph(plane,change)} onDropItem={(id,target,position)=>{const item=customItems.find(entry=>entry.id===id&&entry.plane===target);if(item)addCustom(item,position);}}/></section>)}{error&&activePlane==='Components'&&<div role="alert" className="v2-native-error">{error}</div>}<V2Library activePlane={activePlane} onSelectPlane={changePlane} customItems={customItems} onAddCustom={addCustom} onAddComponent={ready?type=>{changePlane('Components');try{native.current.add(type);setError('');}catch(cause){setError(cause.message);}}:undefined}/><div className="assembly-save"><div className="canvas-clear-controls"><button type="button" onClick={clearCanvas} disabled={activePlane==='Components'&&!ready}>🧹 Clear canvas</button>{cleared[activePlane]&&<button type="button" onClick={undoClear}>Undo clear</button>}</div><form onSubmit={saveAssembly}><label htmlFor="assembly-name">Assembly name</label><div className="assembly-save-fields"><input id="assembly-name" value={name} onChange={event=>setName(event.target.value)} placeholder="Name your assembly" maxLength={120} disabled={!higherPlane}/><button type="submit" disabled={!higherPlane||Boolean(initialLibrary.error)||(activePlane==='Components'&&!ready)}>Save to {higherPlane??'higher plane'}</button></div></form><p className="assembly-save-hint">{higherPlane?'Saved locally under Custom · design only · fresh run history':'This is the highest plane.'}</p>{(saveMessage||initialLibrary.error)&&<p className="assembly-save-message" role="status">{saveMessage||initialLibrary.error}</p>}</div><MachineSequence/></main>;
+ return <main className="v2-canvas"><div className="v2-native-surface" ref={surface} style={{display:activePlane==='Components'?'block':'none'}}/>{planes.filter(plane=>plane!=='Components').map(plane=><section key={plane} className="v2-plane-surface" hidden={activePlane!==plane} aria-label={plane+' plane'}><PlaneSurface plane={plane} graph={graphs[plane]??emptyGraph()} onChange={change=>updateGraph(plane,change)} onDropItem={(id,target,position)=>{const item=customItems.find(entry=>entry.id===id&&entry.plane===target);if(item)addCustom(item,position);}}/></section>)}{error&&activePlane==='Components'&&<div role="alert" className="v2-native-error">{error}</div>}<V2Library activePlane={activePlane} onSelectPlane={changePlane} customItems={customItems} onAddCustom={addCustom} onAddComponent={ready?type=>{changePlane('Components');try{native.current.add(type);setError('');}catch(cause){setError(cause.message);}}:undefined}/><div className="assembly-save"><div className="canvas-clear-controls"><input ref={importInput} type="file" accept=".json,application/json" aria-label="Import Langflow JSON file" hidden onChange={importFlow}/><button type="button" disabled={!ready} onClick={()=>importInput.current.click()}>Import JSON</button>{importBackup&&<button type="button" onClick={undoImport}>Undo import</button>}<button type="button" onClick={clearCanvas} disabled={activePlane==='Components'&&!ready}>🧹 Clear canvas</button>{cleared[activePlane]&&<button type="button" onClick={undoClear}>Undo clear</button>}</div><form onSubmit={saveAssembly}><label htmlFor="assembly-name">Assembly name</label><div className="assembly-save-fields"><input id="assembly-name" value={name} onChange={event=>setName(event.target.value)} placeholder="Name your assembly" maxLength={120} disabled={!higherPlane}/><button type="submit" disabled={!higherPlane||Boolean(initialLibrary.error)||(activePlane==='Components'&&!ready)}>Save to {higherPlane??'higher plane'}</button></div></form><p className="assembly-save-hint">{higherPlane?'Saved locally under Custom · design only · fresh run history':'This is the highest plane.'}</p>{(saveMessage||initialLibrary.error)&&<p className="assembly-save-message" role="status">{saveMessage||initialLibrary.error}</p>}</div><MachineSequence/></main>;
 }
