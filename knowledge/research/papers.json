@@ -4024,7 +4024,7 @@
           "id": "cb399a69-9fc9-4295-bf99-f7e5a3a0fb07",
           "type": "researchFigure",
           "props": {
-            "artifactJson": "{\"schemaVersion\":1,\"kind\":\"layers\",\"title\":\"Shared components within a composite\",\"provenance\":{\"kind\":\"synthetic-design\",\"label\":\"Synthetic structural example; no live agent or execution.\"},\"layers\":[{\"id\":\"components\",\"label\":\"Components\",\"order\":0},{\"id\":\"composite\",\"label\":\"Composite\",\"order\":1}],\"nodes\":[{\"id\":\"receive\",\"label\":\"Receive\",\"layer\":\"components\",\"position\":{\"x\":0,\"y\":0}},{\"id\":\"process\",\"label\":\"Process\",\"layer\":\"components\",\"position\":{\"x\":240,\"y\":0}},{\"id\":\"respond\",\"label\":\"Respond\",\"layer\":\"components\",\"position\":{\"x\":480,\"y\":0}},{\"id\":\"summary-composite\",\"label\":\"Summary composite\",\"layer\":\"composite\",\"position\":{\"x\":240,\"y\":220}}],\"edges\":[{\"id\":\"receive-process\",\"source\":\"receive\",\"target\":\"process\",\"kind\":\"data\"},{\"id\":\"process-respond\",\"source\":\"process\",\"target\":\"respond\",\"kind\":\"data\"},{\"id\":\"member-receive\",\"source\":\"receive\",\"target\":\"summary-composite\",\"kind\":\"membership\"},{\"id\":\"member-process\",\"source\":\"process\",\"target\":\"summary-composite\",\"kind\":\"membership\"},{\"id\":\"member-respond\",\"source\":\"respond\",\"target\":\"summary-composite\",\"kind\":\"membership\"}]}"
+            "artifactJson": "{\"schemaVersion\":1,\"kind\":\"layers\",\"title\":\"Shared components within a composite\",\"provenance\":{\"kind\":\"synthetic-design\",\"label\":\"Synthetic structural example; no live agent or execution.\"},\"layers\":[{\"id\":\"components\",\"label\":\"Components\",\"order\":0},{\"id\":\"composite\",\"label\":\"Composite\",\"order\":1}],\"nodes\":[{\"id\":\"receive\",\"label\":\"Receive\",\"layer\":\"components\",\"position\":{\"x\":0,\"y\":0}},{\"id\":\"process\",\"label\":\"Process\",\"layer\":\"components\",\"position\":{\"x\":240,\"y\":0}},{\"id\":\"respond\",\"label\":\"Respond\",\"layer\":\"components\",\"position\":{\"x\":480,\"y\":0}},{\"id\":\"summary-composite\",\"label\":\"Summary composite\",\"layer\":\"composite\",\"position\":{\"x\":240,\"y\":-150}}],\"edges\":[{\"id\":\"receive-process\",\"source\":\"receive\",\"target\":\"process\",\"kind\":\"data\"},{\"id\":\"process-respond\",\"source\":\"process\",\"target\":\"respond\",\"kind\":\"data\"},{\"id\":\"member-receive\",\"source\":\"receive\",\"target\":\"summary-composite\",\"kind\":\"membership\"},{\"id\":\"member-process\",\"source\":\"process\",\"target\":\"summary-composite\",\"kind\":\"membership\"},{\"id\":\"member-respond\",\"source\":\"respond\",\"target\":\"summary-composite\",\"kind\":\"membership\"}]}"
           },
           "children": []
         },
@@ -4041,7 +4041,7 @@
         }
       ],
       "createdAt": "2026-10-28T20:51:16.542Z",
-      "updatedAt": "2026-10-28T21:13:13.027Z"
+      "updatedAt": "2026-10-28T21:14:40.502Z"
     }
   ]
 }
