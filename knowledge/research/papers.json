@@ -13,200 +13,948 @@
           "id": "f2b3ea05-a13e-4875-a6dc-4871aea7ea9c",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Abstract"
+          "content": [
+            {
+              "type": "text",
+              "text": "Abstract",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "ab959504-b134-4fe7-ab1b-993c96813d21",
+          "id": "feb86104-63aa-411e-af1c-b22a32d59dba",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Working draft — Paper 2. We investigate how a generator chooses the next description-changing action when an intent is not yet supported by the available library and instance specification. The proposal is a boundary-resolution policy over explicit requirements, versioned descriptions, graph state, judgments, and gaps. This manuscript remains theoretical: its output is an updated instance specification and decision trace, not runtime execution. No new experiments, rendered figures, or claims of optimality are included.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "43b246b8-5ab0-478f-aa4e-a5ea89df156c",
+          "id": "b3a80b2e-6d64-45bf-ab72-916936e79d94",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Introduction and Research Question"
+          "content": [
+            {
+              "type": "text",
+              "text": "1. Research Question and Scope",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "05664663-cb16-4520-a072-925e623d70fd",
+          "id": "8f130c58-bc71-4571-9a72-345c63e69581",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Given an intent, component descriptions, applicable rule descriptions, and unresolved gaps, which action should the generator propose next? The action may clarify intent, resolve a reference, decompose a requirement, reuse an existing item, connect items, package a higher-layer representation, revise a candidate, defer an obligation, or stop. Moving upward is one possible action, not a mandatory measure of progress.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "9a138633-667f-47c1-a126-54b943c8ef7e",
+          "id": "4b8c8b29-7afd-4c78-a69f-609d3cf9cf54",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Background and Related Work"
+          "content": [
+            {
+              "type": "text",
+              "text": "2. Relationship to Paper 1",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "2de6c00c-d99c-4727-a41f-859b797d89ff",
+          "id": "ec9caf30-c6f9-4061-b12c-35f887789c8a",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Paper 1 defines descriptions, occurrences, assembly boundaries, representational packaging, and met/violated/unknown judgments. Paper 2 must define how those records guide a decision. It inherits the distinction between a structurally complete specification and proven behavior. A library item is not selected merely because its label sounds relevant, and a generated higher-layer description is not evidence that its claimed behavior works.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "1bf62382-a35f-4aee-844c-8420bdf3ff92",
+          "id": "1c4f79e6-6aa7-4b72-9e62-78645be306ca",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Requirements and Evaluation Criteria"
+          "content": [
+            {
+              "type": "text",
+              "text": "3. Proposed Decision State",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "d31af8d8-f30c-4cb2-a319-f306d8054f6d",
+          "id": "7171be83-0799-4f5c-bbf1-4ff9e3601e88",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Let S = (Rᵦ, Lᵥ, G, U, J, T, b): a versioned requirement baseline, a pinned library snapshot, the current multilayer graphs, active unresolved obligations, versioned judgments, decision history, and remaining budget. A boundary is an identified relation between a requirement and a missing or insufficiently justified realization. It records what is required, what is available, where they fail to meet, and which facts are unknown or contradicted. The boundary is not a vague global entropy score.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "0db02735-2d57-42f5-9ed1-21440ad9fd6e",
+          "id": "ab2fe7ec-5f1f-4f31-9d58-368ff164087d",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Design Claim and Proposed Architecture"
+          "content": [
+            {
+              "type": "text",
+              "text": "4. Candidate Decision Procedure — Provisional",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "f011ca0f-81fe-464f-ab5b-3981c01e864a",
+          "id": "c9697b3c-a794-4aa2-9c7a-4c17207e31ed",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "First, select a requirement-scoped unresolved boundary. Second, identify applicable rule families using the descriptions and known gaps. Third, generate candidate actions with declared operands and expected specification changes. Fourth, reject candidates that violate mandatory conditions and preserve unknown conditions as obligations. Fifth, compare the remaining candidates under an explicit policy. Sixth, apply one candidate to a proposed specification revision, retaining alternatives and rationale. Seventh, reassess affected boundaries without silently dropping requirements. Eighth, continue, ask for missing information, or return a scoped complete, partial, or blocked record. The exact selection and comparison policy is the central open design question.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "494accad-3e34-4644-9ed2-83b1ca3f00d3",
+          "id": "a587aba5-97f0-4a0d-9357-37a78a8a36ff",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Assumptions and Alternative Explanations"
+          "content": [
+            {
+              "type": "text",
+              "text": "5. Actions and Applicability",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "df1763ec-bf6e-4d62-bc4a-4e40bf724229",
+          "id": "ffca7511-0a95-4d99-b816-978c777566f3",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "The table below is an initial action vocabulary, not yet a complete decision table. Each action needs its own preconditions, output schema, failure states, and rule identity. Configuration and dependency references can be described without supplying live credentials or activating a resource.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "3a8c50f5-6c79-40b3-aa92-350f8c09ff8c",
+          "id": "638a320c-9a1f-4634-800b-4ea354b6b309",
+          "type": "table",
+          "props": {
+            "textColor": "default"
+          },
+          "content": {
+            "type": "tableContent",
+            "columnWidths": [
+              null,
+              null,
+              null
+            ],
+            "headerRows": 1,
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Action",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Reason to consider it",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Proposed output",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Clarify",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A requirement is ambiguous or missing a consequential decision.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A precise question or an explicitly labeled assumption; do not invent an answer.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Resolve a reference",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A configuration, resource, or version reference is missing or ambiguous.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A named binding or unresolved dependency record.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Decompose",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A requirement is too broad for available described capabilities.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Child requirements with a trace to the parent; preserve its acceptance obligations.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Reuse or select",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "An existing scoped item may address the requirement.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A referenced occurrence plus applicability judgments.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Compose horizontally",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A rule can propose compatible wiring within a layer.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A candidate graph, configuration, boundary, and residual obligations.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Package upward",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A candidate has a defined boundary and representational purpose.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A higher-layer occurrence referencing the same members; no implicit certification.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Revise or stop",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "The candidate conflicts, repeats a state, lacks evidence, or exhausts budget.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A recorded alternative, clarification, partial result, or scoped blocked outcome.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "children": []
+        },
+        {
+          "id": "39d10630-b844-47ee-82ff-7e6ccca4edfd",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Alternatives and Tradeoffs"
+          "content": [
+            {
+              "type": "text",
+              "text": "6. Comparing Alternatives without Hiding Assumptions",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "86ac7d79-7e6d-48d9-9ab7-7fea9111de9d",
+          "id": "bd578e66-3380-4811-8090-3b77fdacf132",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Mandatory-constraint checks precede preference ranking. A candidate that is unknown is not equivalent to one known to satisfy its conditions. Possible comparison dimensions include requirement relevance, unresolved assumptions, the scope of affected changes, applicable reusable evidence, expected specification progress, and estimated cost. Estimates must be distinguished from observations. We have not selected weights, a reward function, or a solver; an interpretable deterministic ordering is one candidate policy to formalize and challenge. Any policy must specify tie-breaking and retain rejected alternatives in the decision trace.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "8eddf34b-816c-45b1-98fa-7c4eb4f7215a",
+          "id": "07542270-a8e6-4f94-9e26-42af1a6d3d7b",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Validation Methods"
+          "content": [
+            {
+              "type": "text",
+              "text": "7. Symbolic Example: An Incomplete Summarizer Specification",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "75d56c7c-8dcb-45f1-921d-154f2d20b2ac",
+          "id": "77c9c74d-b040-48af-bed7-d1efc000e509",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Suppose the intent requires a source-grounded three-point summary, and the available descriptions include Chat Input, Agent, and Chat Output. Their declared interfaces support the Message-valued connections, but that alone does not close the grounding requirement. The policy should distinguish a missing configuration binding from a missing capability or an unsupported behavioral claim. A symbolic revision may specify instructions and a model reference while carrying grounding and failure-handling obligations forward. No model needs to run to write that revision.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "894f3cb3-5306-4113-ade2-d8b1b7d43530",
+          "id": "a7dec559-008f-4fee-93a2-630510838e99",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Results and Evidence"
+          "content": [
+            {
+              "type": "text",
+              "text": "8. Stopping and Revision Obligations",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "04ac0f8e-e501-4dcf-ba1a-111ee826db0e",
+          "id": "1596a2e0-2343-4d56-b889-33da1a733128",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Each attempted action consumes a positive unit of a finite design budget, and its suboperations must terminate or be interruptible. A complete claim is requirement-scoped and needs every mandatory judgment to meet its stated evidence criterion; untested behavior must not become met merely because its test plan is written. Budget exhaustion returns a partial specification with remaining gaps. Rejection concerns the current candidate; it does not establish that the intent is impossible. Revising scope or removing a requirement requires an explicit decision.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "6b7d6958-7416-482d-9edd-8ebc4eb2a1dc",
+          "id": "9d35cb3c-86cd-45e9-8134-771300d3e884",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Discussion and Critical Evaluation"
+          "content": [
+            {
+              "type": "text",
+              "text": "9. Editorial Visualization Placeholders",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "7f29dcf5-5628-4237-939e-e3ba8662ba57",
+          "id": "42e8def0-2866-4803-855b-3c0f66dd9685",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "[FIGURE PLACEHOLDER P2-F1 — Boundary record: requirement above, available descriptions below, and the precise unsupported relation between them.] [FIGURE PLACEHOLDER P2-F2 — Decision flow: locate boundary → propose actions → judge conditions → compare → revise specification → reassess, with clarification and stopping branches.] [FIGURE PLACEHOLDER P2-F3 — Layered view showing downward decomposition, horizontal composition, and upward packaging as distinct alternatives.] [TABLE PLACEHOLDER P2-T1 — Complete action preconditions and output records, to be developed from the initial vocabulary below.] These are text annotations for future editorial production, not executable figures.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "6c2f0576-cb93-42a8-abfc-d5536e2c2853",
+          "id": "29631caf-32f6-4d4d-8afd-f49c4eedfad7",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Limitations and Validity"
+          "content": [
+            {
+              "type": "text",
+              "text": "10. Open Questions for the Next Draft",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "599ff958-f612-4f36-ba65-77614a37363d",
+          "id": "b3c26837-206f-41d0-adec-a08a2170e99a",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "What is the minimal boundary record? Which action families are applicable to each gap type? What must a candidate supply to support an expected progress claim? How do we rank unknowns without rewarding speculation? How should rules detect revisiting equivalent states? Which layer-specific requirements must remain fixed when a higher-layer record is rewritten? These questions must be answered before calling the policy a complete algorithm.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "3334a8e6-72e8-4c35-8233-b864fdbc5ca7",
+          "id": "2819284d-7716-4fc4-a0a3-70e44affabb4",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Conclusion"
+          "content": [
+            {
+              "type": "text",
+              "text": "11. Review and Evidence Status",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "93c2fe69-4075-4404-b9c0-b49c16555168",
+          "id": "81b54904-9de7-415f-b3a8-7fa99010bc3f",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "This is an initial conceptual draft, not a reviewed final paper. Its examples are symbolic and its candidate policy is untested. Paper 1 supplies the local conceptual baseline; its historical fixed-recipe observations do not validate the selection policy proposed here. Internal AI review and revision will be recorded after the policy is specified. External academic peer review has not occurred.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "23bee13a-a8a4-45e0-b180-d440890c7fa7",
+          "id": "08de593c-908a-4393-a1f4-eb8514659f25",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Open Questions and Next Tests"
+          "content": [
+            {
+              "type": "text",
+              "text": "References",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "4277477b-4ddf-44f9-b632-bae207596695",
+          "id": "71e12989-ba24-4e69-9d06-7a31a1e2de7e",
           "type": "paragraph",
-          "content": []
-        },
-        {
-          "id": "0f35da18-67a2-4382-89c1-dfb8104a9238",
-          "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
           },
-          "content": "Reproducibility and Disclosures"
-        },
-        {
-          "id": "51f1cf5f-52a2-489a-ab56-dd38a1d1f72f",
-          "type": "paragraph",
-          "content": []
-        },
-        {
-          "id": "80415398-33c6-4d46-926a-0ac4338944c5",
-          "type": "heading",
-          "props": {
-            "level": 2
-          },
-          "content": "References"
-        },
-        {
-          "id": "13056263-dcb6-4ca3-a342-b27c6e9791d5",
-          "type": "paragraph",
-          "content": []
+          "content": [
+            {
+              "type": "text",
+              "text": "[1] From Components to Instances: Iterative Composition — Paper 1, completed conceptual manuscript and internal review record in knowledge/research/reviews/paper-1-instance-generation/. [2] Project domain model: knowledge/instance-machine/",
+              "styles": {}
+            },
+            {
+              "type": "link",
+              "href": "https://domain-model.md",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "domain-model.md",
+                  "styles": {}
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ". Further decision/search literature should be reviewed before making claims of novelty, completeness, or comparative advantage.",
+              "styles": {}
+            }
+          ],
+          "children": []
         }
       ],
       "createdAt": "2026-10-28T21:25:31.164Z",
-      "updatedAt": "2026-10-28T21:25:31.224Z"
+      "updatedAt": "2026-10-28T21:26:08.087Z"
     },
     {
       "id": "8c8e315d-55c9-4262-8a6d-b884ad2e06cb",
