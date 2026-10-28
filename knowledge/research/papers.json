@@ -13,174 +13,844 @@
           "id": "ada40061-3d12-4cf3-ba56-bda67cd92f32",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Abstract"
+          "content": [
+            {
+              "type": "text",
+              "text": "Abstract",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "3514ab07-d379-4747-9988-3230b308437d",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Working proposal only. This paper investigates whether repeated, constraint-guided composition can grow existing components into an intent-specific instance. No experimental findings are claimed.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "fb5524bb-e76b-4e24-b284-059164724ddf",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Introduction and Research Question",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "8c1ff699-b773-4080-a1b6-1e8610b8f5d1",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Can an iterative algorithm use the available components’ capabilities, interfaces, dependencies, and constraints to propose composites, represent viable assemblies at higher planes, and continue until a specified instance intent is satisfied? The user describes this as System 1 thinking guided by the components’ genetic makeup. These are working metaphors whose technical meanings remain to be defined.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "5f6847e6-7b31-450b-a94e-c84cb8fb4a70",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Background and Related Work",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "bc883e21-5f25-4985-9a38-10a632c85095",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Not researched yet.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "36564a72-bc15-4caa-8245-08569feb38ed",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Provisional Hypotheses and Predictions",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "585b9190-0491-45f0-8082-2c168bf3666b",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Proposed hypothesis: capability-guided candidate selection, explicit compatibility checks, and feedback from validation can produce increasingly useful assemblies while reusing previously validated pieces. This hypothesis is untested.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "e97f1124-88ab-4539-b89f-a7a668698d5b",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Assumptions and Alternative Explanations",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "dec86d48-4ed0-4e64-98c3-3b0aa2573650",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Open assumptions: component descriptions contain enough information to judge useful combinations; local compatibility can be supplemented by assembly-level behavior checks; repeated composition improves requirement coverage rather than merely adding layers. Compare against predefined recipes and unguided composition.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "666b018b-8f23-4275-842b-91461c36f62b",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Methods of Inquiry",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "c1ddd301-fe97-4e92-9605-011d6cf16bc6",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Proposed loop for discussion: identify an unresolved requirement; inspect available pieces; propose a candidate assembly; validate its interfaces and behavior; reject or revise failures; expose a successful assembly as a reusable higher-layer item; reassess the remaining requirements. Define evaluation tasks, baselines, budgets, and stopping rules before testing.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "09d7eae8-9754-4ff1-bd27-ab5c570abadf",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Results and Evidence",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "3efd32f1-98f1-4182-a392-03d5c7d5ae77",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "No experiment has been run for this research question. Existing canvas demonstrations do not establish that this general algorithm works.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "6060a616-7552-40d6-b5da-83f74b54577b",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Discussion and Critical Evaluation",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "c25e1c47-7d0e-42bc-b7d0-7e3e765710d5",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "To be developed after defining the mechanism and collecting evidence.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "9d503356-0f70-49b8-975a-f903e02a88a6",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Limitations and Validity",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "88953fb3-c4b2-4bd3-bb95-2807bdd996b3",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Compatibility alone does not establish usefulness or correctness. More abstraction layers do not necessarily indicate progress. Hidden dependencies, inaccurate capability descriptions, and failed assumptions may prevent a viable assembly.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "35f04804-2381-47ec-bbf0-232aba702748",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Conclusion",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "9d5a4e84-fcff-42a6-aae9-bf0026341f32",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Unresolved. This is a research direction, not an established capability.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "ded991d5-d364-4b87-942d-073871d3b06e",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Open Questions and Next Tests",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "63d926be-4d83-4191-8826-2932c2cc6e82",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "What precisely does System 1 mean here: rapid retrieval of known assemblies, learned candidate ranking, or another mechanism? What constitutes the genetic makeup of a component? What measurable requirement coverage, validation evidence, and resource limits define a substantial instance and stop the iteration?",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "1a5d0a77-2f00-411a-b08d-cc69704a9cc4",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Reproducibility and Disclosures",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "c7c32648-61ac-4758-abb5-0202f059d928",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Initial idea supplied by the user; organization and provisional wording assisted by AI. No external literature review or experimental evaluation has yet been performed.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "21db178f-a124-4bad-b22a-913621b84bf2",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "References",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "740b7c61-7c39-400b-bd41-82f7a8b49bba",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "To be gathered.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
           "id": "bd7f983a-d5b4-43c7-931b-0a4e6e79d962",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [],
+          "children": []
         },
         {
           "id": "f67fbeb5-f6ea-4c5c-8841-3cef8a4c0043",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Introduction and Research Question"
+          "content": [
+            {
+              "type": "text",
+              "text": "Introduction and Research Question",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
           "id": "2bf51a35-4554-4f11-850e-d324356ef0f9",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [],
+          "children": []
         },
         {
           "id": "925824ee-cc3d-4d27-a2f0-62ac1cf1f35e",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Background and Related Work"
+          "content": [
+            {
+              "type": "text",
+              "text": "Background and Related Work",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
           "id": "91767201-03da-424d-a58d-a10bb870bdfa",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [],
+          "children": []
         },
         {
           "id": "d756f7c0-818f-468f-b1f4-5397f47c5c1f",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Provisional Hypotheses and Predictions"
+          "content": [
+            {
+              "type": "text",
+              "text": "Provisional Hypotheses and Predictions",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
           "id": "2d0d7b7c-6607-48f6-9f5d-157241b4e4de",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [],
+          "children": []
         },
         {
           "id": "c0c4bd30-e8cd-40c9-b17d-81546deb6fff",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Assumptions and Alternative Explanations"
+          "content": [
+            {
+              "type": "text",
+              "text": "Assumptions and Alternative Explanations",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
           "id": "a4d0306a-aa90-4816-9ad9-15f8bfe1d530",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [],
+          "children": []
         },
         {
           "id": "1bb3ba2a-4f14-41a7-a85f-43dbaa21f4db",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Methods of Inquiry"
+          "content": [
+            {
+              "type": "text",
+              "text": "Methods of Inquiry",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
           "id": "74b13f46-039c-456f-94ec-b7f172c7b5cf",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [],
+          "children": []
         },
         {
           "id": "becd676c-d355-4531-9029-5117b18433c8",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Results and Evidence"
+          "content": [
+            {
+              "type": "text",
+              "text": "Results and Evidence",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
           "id": "82145570-c9d6-40d8-a663-4497caff3252",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [],
+          "children": []
         },
         {
           "id": "94e8e354-ee7c-4d81-a75e-9f7180272b5f",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Discussion and Critical Evaluation"
+          "content": [
+            {
+              "type": "text",
+              "text": "Discussion and Critical Evaluation",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
           "id": "f0df2be2-7794-4044-b043-440b2437f222",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [],
+          "children": []
         },
         {
           "id": "5a032592-7a12-4392-b56a-68c45d76a8fd",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Limitations and Validity"
+          "content": [
+            {
+              "type": "text",
+              "text": "Limitations and Validity",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
           "id": "cc292d45-a05c-4965-b187-98ad430059b6",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [],
+          "children": []
         },
         {
           "id": "e3c1a45d-7ca9-4991-a5d4-8139febb178c",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Conclusion"
+          "content": [
+            {
+              "type": "text",
+              "text": "Conclusion",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
           "id": "c0ca7b06-6fbe-4627-965d-a6b032000167",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [],
+          "children": []
         },
         {
           "id": "cb6173f0-5014-44d4-ac57-97064e0933e8",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Open Questions and Next Tests"
+          "content": [
+            {
+              "type": "text",
+              "text": "Open Questions and Next Tests",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
           "id": "c0b241e4-4e01-4467-b7f6-2315213110f3",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [],
+          "children": []
         },
         {
           "id": "aca419af-52d6-40ec-9d9e-e98ee00389b1",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Reproducibility and Disclosures"
+          "content": [
+            {
+              "type": "text",
+              "text": "Reproducibility and Disclosures",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
           "id": "180808c7-57fa-44eb-8d54-f83af61d90c5",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [],
+          "children": []
         },
         {
           "id": "bcd5a880-8a39-45cb-84e9-73af32b2fe4d",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "References"
+          "content": [
+            {
+              "type": "text",
+              "text": "References",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
           "id": "3020f32c-70d0-4348-aa76-bfba6c31c009",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [],
+          "children": []
         }
       ],
       "createdAt": "2026-10-28T20:51:16.542Z",
-      "updatedAt": "2026-10-28T20:51:16.617Z"
+      "updatedAt": "2026-10-28T20:51:31.965Z"
     }
   ]
 }
