@@ -22,14 +22,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Abstract\nWorking proposal only. This paper investigates whether repeated, constraint-guided composition can grow existing components into an intent-specific instance. No experimental findings are claimed.",
+              "text": "Abstract",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "e8164693-bd3c-4b51-88b4-dfd9c8cec0e8",
+          "id": "655c9e19-44f9-4dca-a385-627244f9f649",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -39,14 +39,33 @@
           "content": [
             {
               "type": "text",
-              "text": "Introduction and Research Question\nWhich algorithm or combination of methods can most effectively use component capabilities, interfaces, dependencies, and constraints to iteratively produce viable composites and higher-layer assemblies until an instance satisfies its intent? Candidate approaches are not restricted to System 1 or System 2: deterministic algorithms, neural models, language-model reasoning, and hybrid methods are all in scope. The genetic makeup metaphor refers provisionally to the structured description of each component; its precise definition remains open.",
+              "text": "Working proposal only. This paper investigates whether repeated, constraint-guided composition can grow existing components into an intent-specific instance. No experimental findings are claimed.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "f012a45b-900c-4c40-87eb-e4b923e8e54f",
+          "id": "5e2c3f30-42eb-45c8-b37f-0bccb0536a4d",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Introduction and Research Question",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "d70e0e5a-da47-47ec-9b42-75018d553d94",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -56,14 +75,33 @@
           "content": [
             {
               "type": "text",
-              "text": "Background and Related Work\nNot researched yet.",
+              "text": "Which algorithm or combination of methods can most effectively use component capabilities, interfaces, dependencies, and constraints to iteratively produce viable composites and higher-layer assemblies until an instance satisfies its intent? Candidate approaches are not restricted to System 1 or System 2: deterministic algorithms, neural models, language-model reasoning, and hybrid methods are all in scope. The genetic makeup metaphor refers provisionally to the structured description of each component; its precise definition remains open.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "cf02114a-be63-4906-9c1e-c9762d0d2a17",
+          "id": "1d1c9771-7911-4384-abde-c13bf5af8f09",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Background and Related Work",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "97798be5-cb1c-450c-8e4b-e0c94b364d1c",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -73,14 +111,33 @@
           "content": [
             {
               "type": "text",
-              "text": "Provisional Hypotheses and Predictions\nNo method is selected yet. Candidate hypotheses: deterministic composition may perform well where rules and interfaces are complete; learned candidate selection may reduce search effort; model-based reasoning may help with ambiguous requirements or novel combinations; hybrid methods may combine these advantages. Each claim requires comparative evidence and may be rejected.",
+              "text": "Not researched yet.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "c75c5bd7-ae42-48cf-8e2b-9c6071cc14d0",
+          "id": "3ecfcd36-0af5-4b74-b7b7-086fca98ad34",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Provisional Hypotheses and Predictions",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "4bdc75ca-3d8e-4bcc-83f7-691ff680219c",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -90,14 +147,33 @@
           "content": [
             {
               "type": "text",
-              "text": "Assumptions and Alternative Explanations\nOpen assumptions: component descriptions contain enough information to judge useful combinations; local compatibility can be supplemented by assembly-level behavior checks; repeated composition improves requirement coverage rather than merely adding layers. Compare against predefined recipes and unguided composition.",
+              "text": "No method is selected yet. Candidate hypotheses: deterministic composition may perform well where rules and interfaces are complete; learned candidate selection may reduce search effort; model-based reasoning may help with ambiguous requirements or novel combinations; hybrid methods may combine these advantages. Each claim requires comparative evidence and may be rejected.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "d22e4cc5-ec04-490a-85ba-4d10f9a19570",
+          "id": "b1b65fcb-872f-4858-b1e3-f439655ec0e9",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Assumptions and Alternative Explanations",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "f9800a7b-9b5d-459c-b54c-7e605dd5c353",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -107,14 +183,33 @@
           "content": [
             {
               "type": "text",
-              "text": "Proposed Component Description — Genetic Makeup\nWorking schema for investigation, not yet an accepted standard: (1) Capability: what the component does, its intended behavior, and limits. (2) Inputs: accepted fields, data types, and preconditions. (3) Outputs: produced fields, data types, and guarantees. (4) Configuration: adjustable parameters, defaults, and constraints. (5) Dependencies: required models, tools, storage, credentials or resource bindings, and versions; reference secrets without embedding them. (6) Validation Evidence: the tests, observed results, provenance, and component version supporting claims that it works. Unknowns remain explicit. Interface compatibility is necessary but does not establish that the combined behavior satisfies the intent.",
+              "text": "Open assumptions: component descriptions contain enough information to judge useful combinations; local compatibility can be supplemented by assembly-level behavior checks; repeated composition improves requirement coverage rather than merely adding layers. Compare against predefined recipes and unguided composition.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "9c9c04b7-dec0-443a-9c72-5f8dbbfc7bb5",
+          "id": "5e061bc8-1e43-4a55-80ec-a51f1898b7ce",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Proposed Component Description — Genetic Makeup",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "d19d7993-745f-4aa4-8ca6-c0ce4268bbc7",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -124,14 +219,418 @@
           "content": [
             {
               "type": "text",
-              "text": "Worked Example — Langflow Agent\nObserved from the authenticated local Langflow component catalog. Definition facts and unknowns are distinguished below.",
+              "text": "Working schema for investigation, not yet an accepted standard.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "a528871b-02af-48dc-b159-77e2a50f6f6d",
+          "id": "8ebede91-40bd-4ebf-bb7a-e589efced642",
+          "type": "table",
+          "props": {
+            "textColor": "default"
+          },
+          "content": {
+            "type": "tableContent",
+            "columnWidths": [
+              null,
+              null,
+              null
+            ],
+            "headerRows": 1,
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Field",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "What it records",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Why assembly needs it",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Capability",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Intended behavior, purpose, and limits.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Determine whether the piece addresses a requirement.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Inputs",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Accepted fields, data types, and preconditions.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Check what can feed into this piece.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Outputs",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Produced fields, data types, and guarantees.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Check what this piece can supply to others.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Configuration",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Parameters, defaults, and constraints.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Configure the piece for this particular instance.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Dependencies",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Required models, tools, storage, resource bindings, and versions. Reference credentials; never embed secrets.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Determine what must be available before the piece can work.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Validation Evidence",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Tests, observed results, provenance, and the version tested.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Distinguish demonstrated behavior from assumptions.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "children": []
+        },
+        {
+          "id": "85050413-4062-48d8-a474-8784e976fc2b",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -141,14 +640,33 @@
           "content": [
             {
               "type": "text",
-              "text": "Connection Compatibility Check\nA structural type check was run against the connected catalog; this is not an end-to-end behavioral test.",
+              "text": "Unknowns remain explicit. Type compatibility alone does not establish that an assembly satisfies the intent.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "dc1ec923-b1f5-4fca-ae8a-1fa070031d55",
+          "id": "8af5f12e-7cd7-45ef-9cc4-c0a8c7196bb6",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Worked Example — Langflow Agent",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "a5df06b7-8953-4f63-9e92-2018cb2eb104",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -158,14 +676,437 @@
           "content": [
             {
               "type": "text",
-              "text": "Schema Gaps Revealed by the Example\nThe six fields organize the evidence but do not yet define machine-checkable behavioral semantics, exact resource/version bindings, configuration validity rules, or acceptance tests for an assembled task. Next, express these missing conditions as explicit contracts and verify them with a representative assembly. These are proposed refinements, not established findings about algorithm effectiveness.",
+              "text": "Observed from the authenticated local Langflow component catalog. Definition facts and unknowns are distinguished below.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "f7ae27f0-663f-451a-bc9b-42c59d3c6522",
+          "id": "2e334474-73c2-4a32-872c-97387712b3a8",
+          "type": "table",
+          "props": {
+            "textColor": "default"
+          },
+          "content": {
+            "type": "tableContent",
+            "columnWidths": [
+              null,
+              null,
+              null
+            ],
+            "headerRows": 1,
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Field",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Agent record",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Evidence status",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Capability",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "The connected catalog describes Agent as completing a task using configured instructions and tools. Actual usefulness depends on the selected model, instructions, and connected tools.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Declared capability; task success not guaranteed.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Inputs",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "input_value: str field accepting Message; system_prompt: str accepting Message; model: required, accepting LanguageModel; tools: optional, accepting Tool. Other optional inputs include output_schema and context_id.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Verified from the connected definition.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Outputs",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "response: Message; structured_response: Data or JSON. Output declarations do not guarantee factual accuracy or schema conformance in every run.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Declared output types verified; behavioral guarantees not established.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Configuration",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Current catalog defaults: max_iterations 15; n_messages 100; stream true; handle_parsing_errors true; max_tokens 0. Built-in date and calculator toggles are true. These are catalog defaults, not a claim about a particular configured instance.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Defaults observed; provider-specific meaning and limits require further inspection.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Dependencies",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Requires a configured language model and a working Langflow runtime. Provider access or credentials may be needed depending on the selected model. Optional tools have their own resource dependencies; API Proxy is one possible binding, not an intrinsic Agent requirement.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Model dependency declared; full transitive prerequisites not yet established.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Validation Evidence",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Checked the connected Agent, ChatInput, and ChatOutput definitions. Both proposed edges share Message in produced and accepted types. No live inference, factuality, safety, latency, or tool-use evaluation was performed in this check.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Interface check passed; application-level behavior remains untested.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "children": []
+        },
+        {
+          "id": "25ba67e5-7e17-43f4-8036-5c6e7baf30ef",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Connection Compatibility Check",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "22a4644f-43a0-49c9-b54b-f1d4d230856e",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -175,14 +1116,217 @@
           "content": [
             {
               "type": "text",
-              "text": "Methods of Inquiry\nDefine representative composition tasks, shared component libraries, validation checks, stopping rules, and equal resource budgets. Compare deterministic search and recipes, learned or neural candidate selection, language-model planning, and hybrid variants. Measure requirement satisfaction, valid assembly rate, unsupported assumptions, runtime success where execution is in scope, latency, cost, and reuse on held-out tasks. Keep evaluators independent of candidate generation. Reward measured outcomes rather than additional nodes or layers.",
+              "text": "A structural type check was run against the connected catalog; this is not an end-to-end behavioral test.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "d4909cf6-337e-4f94-95b3-da1d13bdc3ac",
+          "id": "2a1da6df-9f91-4fc3-8af0-09001cac1ec1",
+          "type": "table",
+          "props": {
+            "textColor": "default"
+          },
+          "content": {
+            "type": "tableContent",
+            "columnWidths": [
+              null,
+              null,
+              null
+            ],
+            "headerRows": 1,
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Connection",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Declared types",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Result",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "ChatInput.message → Agent.input_value",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Message → accepted Message",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Type-compatible. Does not test task quality.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Agent.response → ChatOutput.input_value",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Message → accepted Data, JSON, DataFrame, Table, Message",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Type-compatible. Does not test successful execution.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "children": []
+        },
+        {
+          "id": "bedaab46-fff9-4993-acab-bfd984228d3e",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Schema Gaps Revealed by the Example",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "90346573-b798-4a69-8201-37c018d45470",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -192,14 +1336,33 @@
           "content": [
             {
               "type": "text",
-              "text": "Immediate Next Step\nDescribe one existing Langflow component using these six fields, taking available interface and configuration facts from its actual definition and distinguishing verified behavior from assumptions. Check whether the record is sufficient to assess a candidate connection. Record any missing facts as gaps, refine the schema, and repeat before choosing a composition algorithm.",
+              "text": "The six fields organize the evidence but do not yet define machine-checkable behavioral semantics, exact resource/version bindings, configuration validity rules, or acceptance tests for an assembled task. Next, express these missing conditions as explicit contracts and verify them with a representative assembly. These are proposed refinements, not established findings about algorithm effectiveness.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "570054be-f206-4eee-ba02-1026ad800927",
+          "id": "b490504d-1d55-490b-b9cb-060ae99ebcc7",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Methods of Inquiry",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "e863b9f3-8ad2-40ad-9cac-7f1399acf8ad",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -209,14 +1372,33 @@
           "content": [
             {
               "type": "text",
-              "text": "Results and Evidence\nPreliminary structural observation: the two edges ChatInput.message → Agent.input_value and Agent.response → ChatOutput.input_value are type-compatible in the connected catalog. This establishes an interface fact only. No experiment comparing composition algorithms has been run.",
+              "text": "Define representative composition tasks, shared component libraries, validation checks, stopping rules, and equal resource budgets. Compare deterministic search and recipes, learned or neural candidate selection, language-model planning, and hybrid variants. Measure requirement satisfaction, valid assembly rate, unsupported assumptions, runtime success where execution is in scope, latency, cost, and reuse on held-out tasks. Keep evaluators independent of candidate generation. Reward measured outcomes rather than additional nodes or layers.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "fc9c8fda-ee6b-468d-86f3-f1c63e460500",
+          "id": "087dfff7-961e-4d63-a6c6-7af4ad5dd99f",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Immediate Next Step",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "28cb3c6a-d94a-4601-a7f1-baea74ffef01",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -226,14 +1408,33 @@
           "content": [
             {
               "type": "text",
-              "text": "Discussion and Critical Evaluation\nTo be developed after defining the mechanism and collecting evidence.",
+              "text": "Describe one existing Langflow component using these six fields, taking available interface and configuration facts from its actual definition and distinguishing verified behavior from assumptions. Check whether the record is sufficient to assess a candidate connection. Record any missing facts as gaps, refine the schema, and repeat before choosing a composition algorithm.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "eb156078-cfde-4264-9561-3082ce59ae2d",
+          "id": "d7781c7b-e104-4068-b62d-b728fea03830",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Results and Evidence",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "7f1394eb-556b-46bc-b22e-98caf4145f59",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -243,14 +1444,33 @@
           "content": [
             {
               "type": "text",
-              "text": "Limitations and Validity\nCompatibility alone does not establish usefulness or correctness. More abstraction layers do not necessarily indicate progress. Hidden dependencies, inaccurate capability descriptions, and failed assumptions may prevent a viable assembly.",
+              "text": "Preliminary structural observation: the two edges ChatInput.message → Agent.input_value and Agent.response → ChatOutput.input_value are type-compatible in the connected catalog. This establishes an interface fact only. No experiment comparing composition algorithms has been run.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "f3a57b3e-ed91-4e07-a9ac-aee23ead776b",
+          "id": "14e4e8bb-3867-48b8-9371-0380493eaaac",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Discussion and Critical Evaluation",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "85af59e5-0c8c-47ce-bb14-3caa6adb75e0",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -260,14 +1480,33 @@
           "content": [
             {
               "type": "text",
-              "text": "Conclusion\nUnresolved. This is a research direction, not an established capability.",
+              "text": "To be developed after defining the mechanism and collecting evidence.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "585d5b47-bb9b-4360-be95-a66465b6e0e3",
+          "id": "10a6edf0-161d-4881-85a5-a39a8175c330",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Limitations and Validity",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "06c5dc31-d4f3-47a1-9428-cea24cf130bf",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -277,14 +1516,33 @@
           "content": [
             {
               "type": "text",
-              "text": "Open Questions and Next Tests\nWhat exactly belongs in a component’s structured description? What is the minimum representative task set? Which outcomes and constraints define effectiveness, and how should quality, cost, latency, reliability, and reuse be balanced? What evidence establishes that an instance is substantial enough to stop? Specific model identities and capability claims mentioned in conversation require verification before becoming research premises.",
+              "text": "Compatibility alone does not establish usefulness or correctness. More abstraction layers do not necessarily indicate progress. Hidden dependencies, inaccurate capability descriptions, and failed assumptions may prevent a viable assembly.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "08a2633c-c2b9-4000-9285-4bc9fdcb2d94",
+          "id": "a76c68f0-e6a8-4337-bff6-a1a5c789ec1f",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Conclusion",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "663b98d2-6931-4fca-a52c-ce6dfb058569",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -294,14 +1552,33 @@
           "content": [
             {
               "type": "text",
-              "text": "Reproducibility and Disclosures\nInitial idea supplied by the user; organization and provisional wording assisted by AI. No external literature review or experimental evaluation has yet been performed.",
+              "text": "Unresolved. This is a research direction, not an established capability.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "8c9afd69-1a46-4978-ad00-6983e15c7cc5",
+          "id": "f443cb77-fe41-4747-9b92-6b96e9a24d96",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Open Questions and Next Tests",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "5aac61ee-b4fe-410e-a178-7976fb36228f",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -311,7 +1588,79 @@
           "content": [
             {
               "type": "text",
-              "text": "References\nComponent evidence: authenticated local Langflow /api/v1/all, inspected during this session. Local source checkout: aeb10d96bb2ea797696613af931e91ddf51f3320. Sanitized three-component interface snapshot SHA-256: 201ea54bae1520bfdff293b117a4ade8d2f2655d4a807b0a6f0a0e06ae1e49f6. The snapshot covers declared descriptions, input types and required flags, and outputs; it excludes credentials and code. General composition literature remains to be reviewed.",
+              "text": "What exactly belongs in a component’s structured description? What is the minimum representative task set? Which outcomes and constraints define effectiveness, and how should quality, cost, latency, reliability, and reuse be balanced? What evidence establishes that an instance is substantial enough to stop? Specific model identities and capability claims mentioned in conversation require verification before becoming research premises.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "37c49f45-083f-4610-a3e5-61f99d95de2c",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Reproducibility and Disclosures",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "d2db8a26-3022-4b41-a839-5e38f7901fe9",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Initial idea supplied by the user; organization and provisional wording assisted by AI. No external literature review or experimental evaluation has yet been performed.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "1b7064fe-225e-42a5-b9cb-2c799e569976",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "References",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "a8c0446b-c4f6-4bc8-ad14-30b2cb50144f",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Component evidence: authenticated local Langflow /api/v1/all, inspected during this session. Local source checkout: aeb10d96bb2ea797696613af931e91ddf51f3320. Sanitized three-component interface snapshot SHA-256: 201ea54bae1520bfdff293b117a4ade8d2f2655d4a807b0a6f0a0e06ae1e49f6. The snapshot covers declared descriptions, input types and required flags, and outputs; it excludes credentials and code. General composition literature remains to be reviewed.",
               "styles": {}
             }
           ],
@@ -319,7 +1668,7 @@
         }
       ],
       "createdAt": "2026-10-28T20:51:16.542Z",
-      "updatedAt": "2026-10-28T20:57:22.099Z"
+      "updatedAt": "2026-10-28T20:57:49.121Z"
     }
   ]
 }
