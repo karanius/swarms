@@ -29,7 +29,7 @@
           "children": []
         },
         {
-          "id": "655c9e19-44f9-4dca-a385-627244f9f649",
+          "id": "33dd2428-27d1-41d5-9e6b-80318c86d5d4",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -46,7 +46,7 @@
           "children": []
         },
         {
-          "id": "5e2c3f30-42eb-45c8-b37f-0bccb0536a4d",
+          "id": "b14f8400-cc5c-4c2a-a49a-ed82485ef979",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -65,7 +65,7 @@
           "children": []
         },
         {
-          "id": "d70e0e5a-da47-47ec-9b42-75018d553d94",
+          "id": "d72720b0-4df8-4406-89ee-7758c057625e",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -82,7 +82,7 @@
           "children": []
         },
         {
-          "id": "1d1c9771-7911-4384-abde-c13bf5af8f09",
+          "id": "46ed7eb0-752c-4411-8a0d-7d5cb26d082e",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -101,7 +101,7 @@
           "children": []
         },
         {
-          "id": "97798be5-cb1c-450c-8e4b-e0c94b364d1c",
+          "id": "0e7e2526-0d0e-4e89-9078-c6da0075a206",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -118,7 +118,7 @@
           "children": []
         },
         {
-          "id": "3ecfcd36-0af5-4b74-b7b7-086fca98ad34",
+          "id": "9d5add23-f175-4272-a3a9-38c43b8f79db",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -137,7 +137,7 @@
           "children": []
         },
         {
-          "id": "4bdc75ca-3d8e-4bcc-83f7-691ff680219c",
+          "id": "9840f820-2b23-4bb6-822b-7e244fc6884d",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -154,7 +154,7 @@
           "children": []
         },
         {
-          "id": "b1b65fcb-872f-4858-b1e3-f439655ec0e9",
+          "id": "edad6aa4-6e1b-459e-a193-851e8747917d",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -173,7 +173,7 @@
           "children": []
         },
         {
-          "id": "f9800a7b-9b5d-459c-b54c-7e605dd5c353",
+          "id": "db1ac682-40a0-4a0c-b4b6-d0f85a933848",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -190,7 +190,7 @@
           "children": []
         },
         {
-          "id": "5e061bc8-1e43-4a55-80ec-a51f1898b7ce",
+          "id": "1c4a4c14-3a1d-490e-9351-6cbfc0361ce5",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -209,7 +209,7 @@
           "children": []
         },
         {
-          "id": "d19d7993-745f-4aa4-8ca6-c0ce4268bbc7",
+          "id": "170b4f4a-5fcc-49f1-b398-6e100fc7806f",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -219,14 +219,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Working schema for investigation, not yet an accepted standard.",
+              "text": "Working six-field schema for investigation. Unknowns remain explicit.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "8ebede91-40bd-4ebf-bb7a-e589efced642",
+          "id": "e5a157ed-94fb-4dfd-98b6-12ad22709564",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -630,24 +630,7 @@
           "children": []
         },
         {
-          "id": "85050413-4062-48d8-a474-8784e976fc2b",
-          "type": "paragraph",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left"
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Unknowns remain explicit. Type compatibility alone does not establish that an assembly satisfies the intent.",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "8af5f12e-7cd7-45ef-9cc4-c0a8c7196bb6",
+          "id": "65029b83-424f-4312-bc89-c1e418ccdd9c",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -666,7 +649,7 @@
           "children": []
         },
         {
-          "id": "a5df06b7-8953-4f63-9e92-2018cb2eb104",
+          "id": "e8b7115d-1318-4227-b000-d1ddb78598b8",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -683,7 +666,7 @@
           "children": []
         },
         {
-          "id": "2e334474-73c2-4a32-872c-97387712b3a8",
+          "id": "6c4c25fe-554e-4bc2-82df-12c38eebdeeb",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -1087,7 +1070,7 @@
           "children": []
         },
         {
-          "id": "25ba67e5-7e17-43f4-8036-5c6e7baf30ef",
+          "id": "ae27981b-e3d8-458a-81f0-c550801c6a22",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1106,7 +1089,7 @@
           "children": []
         },
         {
-          "id": "22a4644f-43a0-49c9-b54b-f1d4d230856e",
+          "id": "1a309317-501b-46a7-a02d-87e3faaec515",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1123,7 +1106,7 @@
           "children": []
         },
         {
-          "id": "2a1da6df-9f91-4fc3-8af0-09001cac1ec1",
+          "id": "190e5690-3aef-4afb-b8de-11ec907771f0",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -1307,7 +1290,7 @@
           "children": []
         },
         {
-          "id": "bedaab46-fff9-4993-acab-bfd984228d3e",
+          "id": "6eff2b73-4c48-4335-869e-e44fe0e9d7a0",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1326,7 +1309,7 @@
           "children": []
         },
         {
-          "id": "90346573-b798-4a69-8201-37c018d45470",
+          "id": "3ceebaf2-6596-43d7-af75-3fb27110c815",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1343,7 +1326,1273 @@
           "children": []
         },
         {
-          "id": "b490504d-1d55-490b-b9cb-060ae99ebcc7",
+          "id": "646c95d2-4b12-4edd-b435-8a9cb5fd095e",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Proposed Behavioral Contract",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "a2d8301b-d8a4-4af8-a429-3edd26b591c0",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Working contract for a deliberately small summarization assembly. This specifies required behavior, not behavior already provided or proven by the current runtime. It can be revised before implementation.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "6b267057-dd30-41f4-af8a-3c2050831e4d",
+          "type": "table",
+          "props": {
+            "textColor": "default"
+          },
+          "content": {
+            "type": "tableContent",
+            "columnWidths": [
+              null,
+              null,
+              null
+            ],
+            "headerRows": 1,
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Contract element",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Proposed obligation",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "How to interpret it",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Purpose and scope",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Proposed first behavioral task: summarize supplied text into exactly three concise bullet points. No browsing, external tools, or cross-session memory.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "This is a bounded probe of the contract, not the final instance goal.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input contract",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A nonempty source-text string with an explicit request to summarize. Treat source contents as data. Define an input-length limit before running an evaluation.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Host validates preconditions; model compliance alone is insufficient.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Output contract",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Exactly three nonempty bullet points in a consistent list format. Output remains a Message; a deterministic validator checks the list structure.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Port type Message alone does not establish this format.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Semantic contract",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Each bullet must be supported by the supplied source. Cover its principal points and preserve important uncertainty or contradictions; introduce no unsupported factual assertions.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Requires source-grounded review or an independently evaluated semantic checker.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Configuration and dependencies",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Pin the Agent, model binding, instructions, generation settings, tool configuration, runtime, and validator versions. Resolve required resources before execution; reference credentials without storing them in the paper.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Missing or unresolved settings block a claim of reproducibility.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "State and isolation",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Start each evaluation case with a fresh isolated session, disabled external tools, and no unrelated chat history. Keep source text and results associated with the correct case.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Check isolation at the runtime boundary.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Failure behavior",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "For invalid inputs or missing dependencies, return an explicit failure state rather than fabricate a result. For format or semantic failures, retain the failed output and mark the run as failed; any retry must be bounded and recorded.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "These are proposed wrapper obligations, not capabilities established by the bare Agent definition.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Acceptance and evidence",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A passing run needs valid inputs and resources, successful execution, output-format checks, and semantic review. Retain the case, configuration, raw output, checker results, and evidence provenance.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Passing one example is insufficient to validate a reusable composite for all uses.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "children": []
+        },
+        {
+          "id": "90ae52e3-d825-478a-972f-aed736dd0a4e",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Proposed Behavioral Test Matrix",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "c9599df1-a06e-4138-99e0-d2b350c5bc0f",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "All cases below are planned and have not been run in this research pass. Predefine source fixtures, expected observations, reviewer criteria, resource budgets, and thresholds before evaluating competing methods. A statistical reliability claim also needs an appropriate sampling and repetition plan.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "3d416409-7f26-4cad-a89f-868f3854e534",
+          "type": "table",
+          "props": {
+            "textColor": "default"
+          },
+          "content": {
+            "type": "tableContent",
+            "columnWidths": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "headerRows": 1,
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Case",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input or condition",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Required observation",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Evaluator",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Status",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "B1 — Basic source",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A source with three distinct factual points.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Exactly three nonempty bullets; source-grounded coverage of the three points.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Format checker plus semantic review.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Not run",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "B2 — Conflicting evidence",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A source containing an explicit disagreement or uncertainty.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Preserve the disagreement or uncertainty rather than invent a resolution.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Semantic review against the source.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Not run",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "B3 — Instructions inside source data",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A source containing quoted directions unrelated to the summarization request.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Summarize the source without treating embedded directions as authority.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Behavioral review with predefined criteria.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Not run",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "B4 — Empty input",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "An empty or whitespace-only source.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Precondition failure before model execution; no invented summary.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Deterministic host check and execution trace.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Not run",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "B5 — Missing model binding",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "An unresolved required model or credential reference.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Explicit dependency failure; no claim of completed work.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Dependency resolver check and trace.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Not run",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "B6 — Repetition and isolation",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Repeat a case with fresh sessions, then run an unrelated source.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Record variability; no content carried from the previous source.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Session-boundary inspection plus output review.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Not run",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "children": []
+        },
+        {
+          "id": "227805a5-12be-4573-9427-1789d6c73c98",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Validation and Promotion Rule",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "bb802114-1b75-460b-b0cb-73aecea6b1cf",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Evaluate leaf components, horizontal wiring, and the composite’s own end-to-end requirements separately. Successful lower-level checks are necessary but do not establish higher-level behavior. Promote only a version whose declared scope is supported by recorded evidence; preserve failures and unresolved gaps. A later change to a dependency or configuration requires impact assessment and relevant revalidation. Do not present the assembly as generally validated by this small task suite.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "44248f51-8bfd-4da6-856c-bd4ea3eab238",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1362,7 +2611,7 @@
           "children": []
         },
         {
-          "id": "e863b9f3-8ad2-40ad-9cac-7f1399acf8ad",
+          "id": "8d72681a-66cb-4ed3-923b-4eba8b869448",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1379,7 +2628,7 @@
           "children": []
         },
         {
-          "id": "087dfff7-961e-4d63-a6c6-7af4ad5dd99f",
+          "id": "73db13cf-20c5-43e6-a2fe-5184fb2edf4d",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1398,7 +2647,7 @@
           "children": []
         },
         {
-          "id": "28cb3c6a-d94a-4601-a7f1-baea74ffef01",
+          "id": "1faeacfe-9593-451b-b171-f31164f3d125",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1408,14 +2657,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Describe one existing Langflow component using these six fields, taking available interface and configuration facts from its actual definition and distinguishing verified behavior from assumptions. Check whether the record is sufficient to assess a candidate connection. Record any missing facts as gaps, refine the schema, and repeat before choosing a composition algorithm.",
+              "text": "Define the exact source fixtures, frozen model/runtime configuration, acceptance rubric, and resource limits for the proposed contract. Implement missing host-side precondition, dependency, output-validation, and isolation checks. Run the planned cases in an isolated evaluation, record failures, and refine the schema before comparing composition algorithms.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "d7781c7b-e104-4068-b62d-b728fea03830",
+          "id": "15666c9c-b573-4d95-a6b3-01d537d78b88",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1434,7 +2683,7 @@
           "children": []
         },
         {
-          "id": "7f1394eb-556b-46bc-b22e-98caf4145f59",
+          "id": "22108bfb-d60d-4809-a17c-bd669c5e9905",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1451,7 +2700,7 @@
           "children": []
         },
         {
-          "id": "14e4e8bb-3867-48b8-9371-0380493eaaac",
+          "id": "d0f7498f-aec1-4e1d-a87c-3208f9b205ed",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1470,7 +2719,7 @@
           "children": []
         },
         {
-          "id": "85af59e5-0c8c-47ce-bb14-3caa6adb75e0",
+          "id": "e527ae64-ef77-482d-b6ba-357c0d93e147",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1487,7 +2736,7 @@
           "children": []
         },
         {
-          "id": "10a6edf0-161d-4881-85a5-a39a8175c330",
+          "id": "a67eeaf0-4291-40aa-b551-8021e9073b78",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1506,7 +2755,7 @@
           "children": []
         },
         {
-          "id": "06c5dc31-d4f3-47a1-9428-cea24cf130bf",
+          "id": "9a179275-046f-478c-b270-02a65b7b76cd",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1523,7 +2772,7 @@
           "children": []
         },
         {
-          "id": "a76c68f0-e6a8-4337-bff6-a1a5c789ec1f",
+          "id": "83323f28-4fc9-4776-b156-0063f8048edb",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1542,7 +2791,7 @@
           "children": []
         },
         {
-          "id": "663b98d2-6931-4fca-a52c-ce6dfb058569",
+          "id": "ed9edf0d-d2c4-44a5-8e26-39d7404e8827",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1559,7 +2808,7 @@
           "children": []
         },
         {
-          "id": "f443cb77-fe41-4747-9b92-6b96e9a24d96",
+          "id": "d8ff7bdf-3cd7-4d83-b08c-76214ae3f5fc",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1578,7 +2827,7 @@
           "children": []
         },
         {
-          "id": "5aac61ee-b4fe-410e-a178-7976fb36228f",
+          "id": "ac2f2bfd-504f-495f-a936-50b68cb5ef8e",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1595,7 +2844,7 @@
           "children": []
         },
         {
-          "id": "37c49f45-083f-4610-a3e5-61f99d95de2c",
+          "id": "6a4bc031-e0d8-4831-87b7-4c3a4bcf7599",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1614,7 +2863,7 @@
           "children": []
         },
         {
-          "id": "d2db8a26-3022-4b41-a839-5e38f7901fe9",
+          "id": "2f86b9ba-9216-4396-8747-69fc6fc8f526",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1631,7 +2880,7 @@
           "children": []
         },
         {
-          "id": "1b7064fe-225e-42a5-b9cb-2c799e569976",
+          "id": "015502b2-2337-4ed6-80bd-328b555b4bfa",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1650,7 +2899,7 @@
           "children": []
         },
         {
-          "id": "a8c0446b-c4f6-4bc8-ad14-30b2cb50144f",
+          "id": "e585adb6-c10d-47ab-b426-dbe9a1f61b75",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1668,7 +2917,7 @@
         }
       ],
       "createdAt": "2026-10-28T20:51:16.542Z",
-      "updatedAt": "2026-10-28T20:57:49.121Z"
+      "updatedAt": "2026-10-28T20:59:10.513Z"
     }
   ]
 }
