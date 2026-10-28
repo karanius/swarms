@@ -29,7 +29,7 @@
           "children": []
         },
         {
-          "id": "8118879c-7399-47f3-af68-1d93dd8d5b16",
+          "id": "a2f4925c-49d1-4cfe-b9c7-30411c7cadb5",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -46,7 +46,7 @@
           "children": []
         },
         {
-          "id": "0d706385-f997-4105-8879-084604bda536",
+          "id": "bae65297-4122-4678-9283-1260cc01a24e",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -65,7 +65,7 @@
           "children": []
         },
         {
-          "id": "4b9728ab-5b0c-4f47-bd88-649b391889fa",
+          "id": "8dbfced2-f511-4475-aab6-28febbe535db",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -82,7 +82,7 @@
           "children": []
         },
         {
-          "id": "42df893f-c6e3-4e12-b2f3-50949c884123",
+          "id": "5f512c54-ce73-4845-bd4f-744092dfaef1",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -101,7 +101,7 @@
           "children": []
         },
         {
-          "id": "c5630b71-4c13-43fa-8972-ee919e819778",
+          "id": "280a67f0-5d51-4729-87f7-4302e35776ec",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -118,7 +118,7 @@
           "children": []
         },
         {
-          "id": "f07d188b-09a5-461d-a423-dc14cf2fa41b",
+          "id": "b41d9c52-e736-4830-ba8e-5711a3ff0e4b",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -137,7 +137,7 @@
           "children": []
         },
         {
-          "id": "b1811cff-d902-4a42-8823-0f1f360e7d09",
+          "id": "88d3ecd0-d26c-46c2-b400-c8b5351110ad",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -147,14 +147,14 @@
           "content": [
             {
               "type": "text",
-              "text": "For this paper, genetic makeup is a metaphor for a structured description, not a biological or learning mechanism. Write d = (k, ℓ, C, I, O, Θ, D, E). Here k is a stable definition identity plus version; ℓ is its library layer; C describes capability and limits; I and O describe ports and conditions; Θ is the configurable parameter space; D lists dependencies; E records evidence and its scope. Identity and layer are metadata around the six descriptive fields below. Natural-language descriptions may be retained, but a future generator must distinguish explicit machine-checkable constraints from uninterpreted claims.",
+              "text": "For this paper, genetic makeup is a metaphor for a structured description, not a biological or learning mechanism. Write d = (k, ℓ, C, I, O, Θ, D, E). Here k is a stable definition identity plus version; ℓ is its library layer; C describes capability and limits; I and O describe ports and conditions; Θ is the configurable parameter space; D lists dependencies; E records evidence and its scope. Identity and layer are metadata around the six descriptive fields below. Natural-language descriptions may be retained, but a future generator must distinguish explicit machine-checkable constraints from uninterpreted claims. Definition keys are namespace-qualified: a description can belong to a pinned library snapshot or remain a proposed, instance-local definition. Evidence records identify the definition, configuration and dependency versions they concern; they do not automatically remain applicable after a change.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "92b16351-a72b-4b9e-86bc-167ccde7d597",
+          "id": "47feaeef-279c-4c2e-9a8e-7523b391173f",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -438,7 +438,7 @@
           "children": []
         },
         {
-          "id": "e1ccac3f-e79b-4040-ae33-1b17b8fdd7a3",
+          "id": "118fe5be-18af-4a11-9da3-933458de4332",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -457,7 +457,7 @@
           "children": []
         },
         {
-          "id": "1c533e98-4497-4f03-82ea-69f024ee3dd8",
+          "id": "5451af63-59fb-456f-9a05-6b9e00012de3",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -474,7 +474,7 @@
           "children": []
         },
         {
-          "id": "f80e6622-0f5c-4c4b-8a10-d651ec735c2e",
+          "id": "61dd9901-770f-48b4-bc91-ccf01046be7d",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -493,7 +493,7 @@
           "children": []
         },
         {
-          "id": "bd7c03c1-c0dc-445b-855a-6a097c8577a9",
+          "id": "9969288a-1099-42dd-b5d8-8c9ce4a9f250",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -503,14 +503,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Intent is the initial statement of purpose; requirements refine it through discovery. Define the document J = (intent, R, {Gℓ}, P, B, U, T), where R is the current requirement set, P maps higher items to lower members and interfaces, B contains configuration and resource references, U contains unresolved gaps, and T records versions, decisions, and supporting judgments. Requirements have identity, scope, mandatory or optional status, and acceptance criteria. Configuration references below Components remain part of the description: model access, storage, tools, and credentials may be required for later activation, but no live authentication is needed merely to describe the intended binding. Secrets are referenced rather than embedded.",
+              "text": "Intent is the initial statement of purpose; requirements refine it through discovery. Define the document J = (intent, R, {Gℓ}, P, B, U, T), where R is the current requirement set, P maps higher items to lower members and interfaces, B contains configuration and resource references, U contains unresolved gaps, and T records versions, decisions, and supporting judgments. Requirements have identity, scope, mandatory or optional status, and acceptance criteria. Configuration references below Components remain part of the description: model access, storage, tools, and credentials may be required for later activation, but no live authentication is needed merely to describe the intended binding. Secrets are referenced rather than embedded. Acceptance is judged against a versioned requirement baseline Rᵦ with explicit scope membership. Every mandatory requirement in that scope must retain a judgment and its evidence criterion. Removing a requirement or narrowing scope is an explicit versioned decision, not an unexplained increase in progress. U contains active unresolved obligations; rejected candidates and decision history belong in T. Updates to U identify which obligations are added, resolved, superseded, or retained.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "b37a1ee7-4256-4198-b631-53aaf72c92eb",
+          "id": "64df4877-b9f8-4d60-ab62-c251b2615f45",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -529,7 +529,7 @@
           "children": []
         },
         {
-          "id": "c59049a6-8f8f-49b7-ba3e-449745c5ba38",
+          "id": "88837484-8c27-4a82-8892-910248ad33f9",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -539,14 +539,14 @@
           "content": [
             {
               "type": "text",
-              "text": "A description supplies the operands; a rule supplies the transformation. A rule record r declares a target layer, an input pattern over selected occurrences, applicability conditions, a construction procedure, the output description, and obligations that remain to be established. Schematically, r(R, S, θ, W) proposes (H, d↑, M, U′): S is the selected set, θ its configuration, W the proposed wiring, H the horizontal assembly, d↑ its higher-layer description, M the membership and interface mapping, and U′ the resulting gaps. This notation specifies an interface for rules; it is not an implemented solver or a promise that a satisfying proposal exists.",
+              "text": "Distinguish a description dₖ from an occurrence v = (o, k, θ), where o is an occurrence identity, k references a scoped definition version, and θ binds its parameters. A rule declares its input pattern, applicability conditions, construction, outputs, and remaining obligations. Write r(Rᵦ, G, S, θ, W) as proposing (G꜀, d*, v*, M, U′, T′). G is the surrounding graph; S identifies selected occurrences, including any explicitly declared new occurrences; W records intended connection edits. The construction first writes candidate graph G꜀ with those edits and records the treatment of existing incident edges. It then identifies the member subgraph H = (S, F), including its retained internal edges, and computes boundary incidence from G꜀ rather than guessing it from F. The result d* is a proposed instance-local assembly description, and v* is its higher-layer occurrence. Registering a reusable library definition is a separate, explicit operation. This is a rule interface, not a solver implementation or a guarantee that a satisfactory proposal exists.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "54c60e62-851d-4a78-9e98-d8b030eccbd9",
+          "id": "2d05be92-8786-49a4-9cbe-60f2eae16c36",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -830,7 +830,7 @@
           "children": []
         },
         {
-          "id": "7ec0d294-a5e7-4f65-8a64-3d1cec8c5a72",
+          "id": "4039776a-186e-44f5-8cb9-27683c9e1563",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -849,7 +849,7 @@
           "children": []
         },
         {
-          "id": "816c3905-26cc-4b9d-b043-2d6520ce2c60",
+          "id": "e687c7c4-e426-407a-b8cd-3f353331e639",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -859,14 +859,14 @@
           "content": [
             {
               "type": "text",
-              "text": "A rule evaluates each relevant condition as met, violated, or unknown under stated evidence criteria. Met means the available description and evidence establish that particular condition. Violated means available information contradicts it. Unknown means the necessary information or justification is absent or insufficient. Unknown must not be coerced into met. A violated mandatory condition rejects that candidate unless an explicit alternative or adapter changes the proposal. An unknown design condition keeps the proposal conditional and records a gap. These judgments apply to types, semantics, configuration, dependencies, requirements, and evidence separately.",
+              "text": "A rule evaluates each relevant condition as met, violated, or unknown under stated evidence criteria. Met means the available description and evidence establish that particular condition. Violated means available information contradicts it. Unknown means the necessary information or justification is absent or insufficient. Unknown must not be coerced into met. A violated mandatory condition rejects that candidate unless an explicit alternative or adapter changes the proposal. An unknown design condition keeps the proposal conditional and records a gap. These judgments apply to types, semantics, configuration, dependencies, requirements, and evidence separately. Judgments themselves record the requirement baseline, rule version, description versions, evidence references, and applicable assumptions. If evidence both supports and contradicts a condition, preserve that conflict in the record; the condition cannot count as met until the conflict is resolved under declared criteria. The outward judgment remains unknown while the conflict is unresolved. Changed configuration or dependencies trigger an applicability review of earlier judgments.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "a3cf3b48-73d3-43c3-a78c-d5c3eec75638",
+          "id": "c938c4ff-5a3d-4e1f-aa9e-efa4e536373f",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -885,7 +885,7 @@
           "children": []
         },
         {
-          "id": "c7f84e07-2674-4124-a834-eab3c99ab34e",
+          "id": "419c5863-d212-4c09-acd0-cf926db523b0",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -895,14 +895,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Horizontal assembly proposes connections among items within a layer. A connection judgment checks named endpoints, accepted and produced types, required fields, configuration constraints, dependency references, and any declared behavioral conditions. Under a deliberately narrow nominal type rule, an output type may connect when it is explicitly accepted by the target input; coercions require a named adapter. This only licenses an interface proposal. The assembly boundary contains its declared external entry and exit ports, including any crossing edges from the surrounding graph. Parameters and dependencies exposed to the surrounding system are also recorded. Deriving that boundary does not derive behavioral guarantees by simply taking the union of child capabilities. State, ordering, failure propagation, resource competition, and cycles can change the result.",
+              "text": "Horizontal assembly proposes and records connections among occurrences within a layer. A connection judgment checks named endpoints, accepted and produced types, required fields, configuration constraints, dependencies, and declared behavioral conditions. Under a narrow nominal type rule, an output type may connect when explicitly accepted by the target input; conversions require a named adapter or separately described binding. The selected assembly H includes both its member occurrences and retained internal edges F. Its boundary records required unbound inputs, intentionally exposed ports, and every edge crossing the selection in candidate graph G꜀. Exposed parameters and dependencies are recorded as well. These judgments license a structural proposal, not a behavioral guarantee. State, ordering, failure propagation, cycles, and resource competition can change an assembly’s meaning.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "5bb03898-59fb-4b72-8e9c-270390a0bf7f",
+          "id": "2a0acb86-df11-4243-99b7-cc1e1ced78fb",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -921,7 +921,7 @@
           "children": []
         },
         {
-          "id": "e65e8b55-adb2-43e2-bcf4-c20afa695313",
+          "id": "742449e8-5afc-4660-9497-feb386457fb5",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -931,14 +931,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Vertical packaging creates a higher-layer occurrence that represents a selected assembly H. In Paper 1, packaging is representational only: it does not change execution semantics or create a new runtime. Preserve the selected occurrence identities, their definition versions, configurations, and internal connections. For every edge crossing H’s boundary, retain the original member endpoint and its exposed-interface mapping. Several external edges may use one exposed port, but distinct internal endpoints must not be silently conflated. Unfolding the wrapper follows the retained references to recover the same member subgraph and boundary relations. This is a representation invariant, conditional on complete and unchanged records; it is not proof that the assembly fulfills its purpose.",
+              "text": "Vertical packaging writes a higher-layer occurrence representing H and referencing its instance-local description. In Paper 1 it is purely representational: it does not create a runtime or change execution semantics. Preserve member identities, pinned definitions, bindings, and retained internal edges. For each crossing edge in G꜀, retain its original member endpoint and exposed-interface mapping. Several external edges may use one exposed port, but distinct internal endpoints must not be silently conflated. Required unbound inputs remain visible obligations rather than disappearing because no edge crosses them. Unfolding follows the retained references to recover H and the incident boundary relations of G꜀; it does not undo intentional edits that produced G꜀ from G. This preservation claim assumes complete and unchanged records. Overlapping wrappers may reference the same stateful occurrence: shared identity does not imply ownership, concurrency safety, resource isolation, or absence of interference.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "384fa0b4-79fb-45c8-b8ad-83f6f99aeb7f",
+          "id": "d8cb6bca-dec9-447d-93b9-e6aef8492ea3",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -957,7 +957,7 @@
           "children": []
         },
         {
-          "id": "18a85505-759e-48c3-88b6-0a661a249de7",
+          "id": "c50eac21-7eba-4a6d-9321-6bc5dc2bfcce",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -967,14 +967,14 @@
           "content": [
             {
               "type": "text",
-              "text": "The proposed higher item receives the same general description fields: claimed capability, exposed inputs and outputs, configuration surface, dependencies, and evidence or obligations. This permits another rule to consider it as an operand. What changes between Composite, Flows, Processes, and other layers is not merely a numeric level. Each layer needs its own admissible objects, composition meaning, and acceptance conditions. Those definitions cannot be inferred from a label or a node count. This paper supplies a common record structure, while Paper 2 must specify how candidate rules are selected and how layer-specific constraints are represented.",
+              "text": "The proposed higher item receives the same general description fields: claimed capability, exposed inputs and outputs, configuration surface, dependencies, and evidence or obligations. This permits another rule to consider it as an operand. What changes between Composite, Flows, Processes, and other layers is not merely a numeric level. Each layer needs its own admissible objects, composition meaning, and acceptance conditions. Those definitions cannot be inferred from a label or a node count. This paper supplies a common record structure, while Paper 2 must specify how candidate rules are selected and how layer-specific constraints are represented. Recursive use refers to the proposed scoped description and occurrence; copying that description into the shared library requires separate registration and its own evidence/status record.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "e2fc3c74-4624-424c-a784-fee7b2592c31",
+          "id": "9ee176ec-edd7-4150-af29-0dd55ab49a4a",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -993,7 +993,7 @@
           "children": []
         },
         {
-          "id": "d8d937e0-be22-4fbe-b452-9f229f59f950",
+          "id": "f13a6135-5598-4bd7-b52c-2ecad6427f63",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1010,7 +1010,7 @@
           "children": []
         },
         {
-          "id": "b80efc02-fa6c-42f5-bddf-e1f39b3eee48",
+          "id": "83c7b1b8-d115-456c-ab85-00e6eade5e53",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -1194,7 +1194,7 @@
           "children": []
         },
         {
-          "id": "8e9e6d28-c125-4d48-a0a6-f5a1a7ecf8d7",
+          "id": "14f71f6c-fef2-4a83-9cd4-a7869618043a",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1213,7 +1213,7 @@
           "children": []
         },
         {
-          "id": "5bb9863b-d675-469d-8f55-81dd1d7351b4",
+          "id": "012f38d6-a30e-4b2f-ae7c-0193d7b77208",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1223,14 +1223,14 @@
           "content": [
             {
               "type": "text",
-              "text": "For the three-node proposal, the external source-text entry maps to Chat Input’s input_value field; the output maps to Chat Output’s message port. The named bindings for the model and any optional resources remain explicit. A missing provider binding can be written as an unresolved dependency; it must not be presented as operationally ready. If the descriptions lack a source-grounding guarantee, the generated record carries a grounding obligation instead of inventing one. Reuse at a higher layer is therefore a proposal with a scoped contract, not automatic certification of every possible use.",
+              "text": "The proposed external source-text entry is a binding to Chat Input’s input_value string field. This is distinct from the Message-valued edge leaving Chat Input. The record must identify that field binding and any required construction or conversion; Message compatibility does not establish it. The external exit maps to Chat Output’s message port. Named model bindings and optional resource references remain explicit. A missing provider reference can be written as an unresolved dependency and must not be presented as operational readiness. A source-grounding requirement without sufficient support remains an obligation, not a guarantee. Reuse above this boundary is a scoped proposal and does not certify every future use.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "0e0e2ff3-c829-4bdf-a049-3ad6673c64e2",
+          "id": "0f203af9-cb46-4e17-821b-dfca70fe6afb",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1249,7 +1249,7 @@
           "children": []
         },
         {
-          "id": "eb1b9857-97f8-4d8a-aeac-02b384cfbf3b",
+          "id": "76b854f3-63af-43fd-bbdb-03886dd30359",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1259,14 +1259,14 @@
           "content": [
             {
               "type": "text",
-              "text": "The design process can proceed downward from requirements, upward from available pieces, or from an intermediate boundary. Each revision identifies the affected gap, proposes a rule application, records its judgments, and revises the relevant graphs and mappings. Progress is measured against requirements and unresolved obligations, not the number of layers created. Structural completeness, requirement satisfaction, and readiness for execution are separate properties. A record can be structurally complete while containing unverified behavioral obligations. A claim of requirement satisfaction is permitted only for a stated scope whose mandatory conditions meet its declared evidence criteria. Partial retains unresolved conditions; blocked identifies a violated mandatory condition or unavailable prerequisite. A finite search budget ensures stopping only if individual operations are bounded or interruptible; it does not establish existence, completeness of search, or success.",
+              "text": "Design can proceed downward from requirements, upward from existing items, or from an intermediate boundary. Each attempted transition identifies a gap, proposes a rule application, records its judgments, and updates affected graphs and mappings. Progress is relative to the unchanged requirement baseline unless a scope change is explicitly recorded. Structural completeness, satisfaction, and execution readiness are independent judgments. A structurally complete record may contain unknown behavioral obligations. Satisfaction for a declared scope requires a supported met judgment for every mandatory requirement under its evidence criteria; unknown or violated conditions preclude that satisfaction claim. Rejection concerns a candidate, not the impossibility of the intent. A blocked result identifies the unmet prerequisite or violated constraint for the current proposal or declared search horizon. A partial result retains unresolved obligations. Every attempted transition, including retries and failed expansions, consumes a positive unit of a finite budget, and suboperations must terminate or be interruptible. Exhaustion returns the current partial record and remaining obligations. This bounds the proposed procedure; it guarantees neither that a solution exists nor that search will find one.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "12ebc2b8-854c-4ba2-93f2-3bff5ccca44a",
+          "id": "05486fa9-b9d6-43ee-bceb-69eb636086df",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1285,7 +1285,7 @@
           "children": []
         },
         {
-          "id": "b308e2aa-ddd1-430e-a0cd-670e6164c3d3",
+          "id": "a3fdcc33-513d-4177-adf3-e21061c963b8",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1302,7 +1302,7 @@
           "children": []
         },
         {
-          "id": "aad1c5a3-398e-4de4-b83d-23c239994eea",
+          "id": "128e96f9-3db2-49bb-9056-4dae644ee493",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1321,7 +1321,7 @@
           "children": []
         },
         {
-          "id": "3c0ada66-8179-4482-a632-b385ba1c826c",
+          "id": "d07afec2-bc05-4752-b19c-b53363205fc9",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1331,14 +1331,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Before the current design-only scope was established, a fixed recipe was recorded using real Langflow definitions. Five live short-source cases returned three nonempty bullets and received independent AI-agent source-grounding review; two invalid cases were blocked by evaluator guards before runtime. There were four distinct short sources and one repeat. These observations illustrate one authored recipe and an evidence-recording path. They do not validate rule discovery, general search, long-document summarization, semantic inference, or arbitrary layer generation. No additional runtime experiment is part of finishing this manuscript. The archived artifact and review remain available under the experiment record cited below.",
+              "text": "Before the current design-only scope was established, a fixed recipe was recorded using real Langflow definitions. Five live short-source cases returned three nonempty bullets and received independent AI-agent source-grounding review; two invalid cases were blocked by evaluator guards before runtime. There were four distinct short sources and one repeat. These observations illustrate one authored recipe and an evidence-recording path. They do not validate rule discovery, general search, long-document summarization, semantic inference, or arbitrary layer generation. No additional runtime experiment is part of finishing this manuscript. The archived artifact and review remain available under the experiment record cited below. The evaluator files retain their original pending-review annotation; subsequent fixture-scoped judgments are recorded separately in review.json. They are not retroactively relabeled as generator self-assessments.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "d92f88ca-76cc-46d7-af72-4bf34107a53a",
+          "id": "90d46e55-493e-4353-8515-739b9a40ac5f",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1357,7 +1357,7 @@
           "children": []
         },
         {
-          "id": "161387bd-877d-4764-acb3-d96c2e85df43",
+          "id": "6757fba9-fc39-4831-be30-ba77cfffc90a",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1374,7 +1374,7 @@
           "children": []
         },
         {
-          "id": "2e4dd628-f604-4188-b2cf-9441157cf8e1",
+          "id": "d2e774a4-45cb-45f2-8937-97e316cd4932",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1393,7 +1393,7 @@
           "children": []
         },
         {
-          "id": "f372f791-23c0-49ce-9b36-8fabd5648545",
+          "id": "d4af15c3-c831-4321-b842-87f7243f97e1",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1410,7 +1410,7 @@
           "children": []
         },
         {
-          "id": "71e27947-d112-4df9-a71a-b8ca4cf19890",
+          "id": "06e91ccd-98fb-4ddf-a894-26f2bc43ed6d",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1429,7 +1429,7 @@
           "children": []
         },
         {
-          "id": "2ed1cfce-2c7f-4462-a6fb-e491cfbb354e",
+          "id": "4fb3baf3-c083-4afd-94b1-280dbad5a1b3",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1446,7 +1446,7 @@
           "children": []
         },
         {
-          "id": "aaa82366-a754-43f4-baa7-44edcf86088a",
+          "id": "f5826d32-365c-426c-aae1-2ff1db54a20a",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1465,7 +1465,7 @@
           "children": []
         },
         {
-          "id": "01fe115b-1968-473f-ae52-d0647f760cdd",
+          "id": "968c56e0-9d74-4e0d-9dd9-2184f305ce69",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1475,14 +1475,298 @@
           "content": [
             {
               "type": "text",
-              "text": "This is a completed conceptual draft prepared from the user’s research direction with AI-assisted editing. An independent AI agent reviewed the formal outline and identified distinctions incorporated here, including instance identity, three-valued judgments, representational packaging, scoped acceptance, and bounded operations. Full-manuscript internal review is the next acceptance gate; the document is not externally or academically peer-reviewed. Historical semantic judgments used a separate AI-agent reviewer and are bounded by their fixtures. No external endorsements, formal correctness proof, or comprehensive literature review are claimed.",
+              "text": "This conceptual manuscript was prepared from the user’s research direction with AI-assisted drafting. Three separate AI-agent reviews covered formal definitions, skeptical counterexamples, and Langflow/evidence fidelity. Their first-round major and minor findings were consolidated and revised; the revised formal claims are undergoing a bounded verification pass. The review record distinguishes addressed findings from limitations and is retained with versioned manuscript snapshots. This is internal AI review, not external academic peer review. No formal correctness proof, comprehensive literature review, or outside endorsement is claimed. Historical semantic review remains limited to its authored fixtures.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "1faac2d7-a56d-496e-a74a-aec641457853",
+          "id": "f303557a-fbc3-4716-a6f4-08c930242e5e",
+          "type": "table",
+          "props": {
+            "textColor": "default"
+          },
+          "content": {
+            "type": "tableContent",
+            "columnWidths": [
+              null,
+              null
+            ],
+            "headerRows": 1,
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Consolidated review finding",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Revision",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Ambient context and boundary incidence",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Added G and candidate G꜀; distinguished intended edits, retained internal edges, crossing edges, and required unbound inputs.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Definition versus occurrence",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Added namespace-qualified definitions, occurrence triples, instance-local proposed descriptions, and separate library registration.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Vacuous or conflicting acceptance",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Pinned requirement baseline/scope; preserved mandatory judgments and unresolved conflicts; scope reduction requires a recorded decision.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Shared state and blocked candidates",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Clarified overlapping membership carries no isolation guarantee; candidate rejection does not prove the intent impossible.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Text binding and semantic claims",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Separated string field binding from Message edge compatibility; behavioral obligations stay explicit.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Stopping and evidence integrity",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Every attempted transition consumes budget; suboperations must be bounded; retained pending-review history and disclosed missing interface snapshot.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "children": []
+        },
+        {
+          "id": "961c6541-a8d4-4209-9ffc-463979771e8b",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1501,7 +1785,7 @@
           "children": []
         },
         {
-          "id": "ede31571-9095-4359-804a-564e9c53847f",
+          "id": "6a9e0398-672a-4d6b-8d9e-d3521d2511c4",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1575,7 +1859,7 @@
             },
             {
               "type": "text",
-              "text": ", user-confirmed terminology developed in this project. [5] Historical local Langflow interface observation: source checkout aeb10d96bb2ea797696613af931e91ddf51f3320; sanitized interface hash 201ea54bae1520bfdff293b117a4ade8d2f2655d4a807b0a6f0a0e06ae1e49f6. [6] Historical recorded experiment: knowledge/research/experiments/20261028T210157Z-3490a2d8/ — artifact.json, manifest.json, results.json, review.json, and raw responses.",
+              "text": ", user-confirmed terminology developed in this project. [5] Historical local Langflow interface observation: source checkout aeb10d96bb2ea797696613af931e91ddf51f3320; sanitized interface hash 201ea54bae1520bfdff293b117a4ade8d2f2655d4a807b0a6f0a0e06ae1e49f6. The interface observation snapshot for [5] is not included in the manuscript evidence bundle; the archived baseline artifact in [6] retains the concrete interfaces used by the worked example. [6] Historical recorded experiment: knowledge/research/experiments/20261028T210157Z-3490a2d8/ — artifact.json, manifest.json, results.json, review.json, and raw responses.",
               "styles": {}
             }
           ],
@@ -1583,7 +1867,7 @@
         }
       ],
       "createdAt": "2026-10-28T20:51:16.542Z",
-      "updatedAt": "2026-10-28T21:19:48.481Z"
+      "updatedAt": "2026-10-28T21:21:23.393Z"
     }
   ]
 }
