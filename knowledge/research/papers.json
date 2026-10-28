@@ -2,6 +2,213 @@
   "schemaVersion": 1,
   "papers": [
     {
+      "id": "8d975b9f-7f46-42f5-8366-093a1894bbce",
+      "title": "Boundary Resolution — Choosing the Next Composition Step",
+      "templateRef": {
+        "id": "technical-design",
+        "version": 2
+      },
+      "content": [
+        {
+          "id": "f2b3ea05-a13e-4875-a6dc-4871aea7ea9c",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Abstract"
+        },
+        {
+          "id": "ab959504-b134-4fe7-ab1b-993c96813d21",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "43b246b8-5ab0-478f-aa4e-a5ea89df156c",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Introduction and Research Question"
+        },
+        {
+          "id": "05664663-cb16-4520-a072-925e623d70fd",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "9a138633-667f-47c1-a126-54b943c8ef7e",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Background and Related Work"
+        },
+        {
+          "id": "2de6c00c-d99c-4727-a41f-859b797d89ff",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "1bf62382-a35f-4aee-844c-8420bdf3ff92",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Requirements and Evaluation Criteria"
+        },
+        {
+          "id": "d31af8d8-f30c-4cb2-a319-f306d8054f6d",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "0db02735-2d57-42f5-9ed1-21440ad9fd6e",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Design Claim and Proposed Architecture"
+        },
+        {
+          "id": "f011ca0f-81fe-464f-ab5b-3981c01e864a",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "494accad-3e34-4644-9ed2-83b1ca3f00d3",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Assumptions and Alternative Explanations"
+        },
+        {
+          "id": "df1763ec-bf6e-4d62-bc4a-4e40bf724229",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "3a8c50f5-6c79-40b3-aa92-350f8c09ff8c",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Alternatives and Tradeoffs"
+        },
+        {
+          "id": "86ac7d79-7e6d-48d9-9ab7-7fea9111de9d",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "8eddf34b-816c-45b1-98fa-7c4eb4f7215a",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Validation Methods"
+        },
+        {
+          "id": "75d56c7c-8dcb-45f1-921d-154f2d20b2ac",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "894f3cb3-5306-4113-ade2-d8b1b7d43530",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Results and Evidence"
+        },
+        {
+          "id": "04ac0f8e-e501-4dcf-ba1a-111ee826db0e",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "6b7d6958-7416-482d-9edd-8ebc4eb2a1dc",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Discussion and Critical Evaluation"
+        },
+        {
+          "id": "7f29dcf5-5628-4237-939e-e3ba8662ba57",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "6c2f0576-cb93-42a8-abfc-d5536e2c2853",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Limitations and Validity"
+        },
+        {
+          "id": "599ff958-f612-4f36-ba65-77614a37363d",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "3334a8e6-72e8-4c35-8233-b864fdbc5ca7",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Conclusion"
+        },
+        {
+          "id": "93c2fe69-4075-4404-b9c0-b49c16555168",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "23bee13a-a8a4-45e0-b180-d440890c7fa7",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Open Questions and Next Tests"
+        },
+        {
+          "id": "4277477b-4ddf-44f9-b632-bae207596695",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "0f35da18-67a2-4382-89c1-dfb8104a9238",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Reproducibility and Disclosures"
+        },
+        {
+          "id": "51f1cf5f-52a2-489a-ab56-dd38a1d1f72f",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "80415398-33c6-4d46-926a-0ac4338944c5",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "References"
+        },
+        {
+          "id": "13056263-dcb6-4ca3-a342-b27c6e9791d5",
+          "type": "paragraph",
+          "content": []
+        }
+      ],
+      "createdAt": "2026-10-28T21:25:31.164Z",
+      "updatedAt": "2026-10-28T21:25:31.224Z"
+    },
+    {
       "id": "8c8e315d-55c9-4262-8a6d-b884ad2e06cb",
       "title": "From Components to Instances: Iterative Composition",
       "templateRef": {
