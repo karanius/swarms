@@ -3966,6 +3966,42 @@
           "children": []
         },
         {
+          "id": "36b5d191-61f6-4a8f-96a5-6f2c6309e351",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Synthetic Algorithm Design",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "63e7ade5-b6e6-4c10-91ae-630e4c219a83",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Work in progress: these figures describe proposed structure and decisions. Editing or navigating them does not execute models, tools, or the composition algorithm.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
           "id": "46a49419-93f2-430a-8a10-1800a3f3936b",
           "type": "researchFigure",
           "props": {
@@ -3983,10 +4019,29 @@
           },
           "content": [],
           "children": []
+        },
+        {
+          "id": "cb399a69-9fc9-4295-bf99-f7e5a3a0fb07",
+          "type": "researchFigure",
+          "props": {
+            "artifactJson": "{\"schemaVersion\":1,\"kind\":\"layers\",\"title\":\"Shared components within a composite\",\"provenance\":{\"kind\":\"synthetic-design\",\"label\":\"Synthetic structural example; no live agent or execution.\"},\"layers\":[{\"id\":\"components\",\"label\":\"Components\",\"order\":0},{\"id\":\"composite\",\"label\":\"Composite\",\"order\":1}],\"nodes\":[{\"id\":\"receive\",\"label\":\"Receive\",\"layer\":\"components\",\"position\":{\"x\":0,\"y\":0}},{\"id\":\"process\",\"label\":\"Process\",\"layer\":\"components\",\"position\":{\"x\":240,\"y\":0}},{\"id\":\"respond\",\"label\":\"Respond\",\"layer\":\"components\",\"position\":{\"x\":480,\"y\":0}},{\"id\":\"summary-composite\",\"label\":\"Summary composite\",\"layer\":\"composite\",\"position\":{\"x\":240,\"y\":220}}],\"edges\":[{\"id\":\"receive-process\",\"source\":\"receive\",\"target\":\"process\",\"kind\":\"data\"},{\"id\":\"process-respond\",\"source\":\"process\",\"target\":\"respond\",\"kind\":\"data\"},{\"id\":\"member-receive\",\"source\":\"receive\",\"target\":\"summary-composite\",\"kind\":\"membership\"},{\"id\":\"member-process\",\"source\":\"process\",\"target\":\"summary-composite\",\"kind\":\"membership\"},{\"id\":\"member-respond\",\"source\":\"respond\",\"target\":\"summary-composite\",\"kind\":\"membership\"}]}"
+          },
+          "children": []
+        },
+        {
+          "id": "d48c419b-ae0c-4fa3-b413-a82f6593a9d1",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [],
+          "children": []
         }
       ],
       "createdAt": "2026-10-28T20:51:16.542Z",
-      "updatedAt": "2026-10-28T21:11:01.045Z"
+      "updatedAt": "2026-10-28T21:12:01.675Z"
     }
   ]
 }
