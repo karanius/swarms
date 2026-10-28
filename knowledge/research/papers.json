@@ -29,7 +29,7 @@
           "children": []
         },
         {
-          "id": "501e8d35-83f7-4c1b-bc16-1dc0d6824d8d",
+          "id": "e13bcae0-0ec0-470f-8892-a33065650525",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -46,7 +46,7 @@
           "children": []
         },
         {
-          "id": "343681cb-ff65-4db1-a5f6-1b862d368f93",
+          "id": "1f2b7410-774a-4e75-97d6-f18a88037b7b",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -65,7 +65,7 @@
           "children": []
         },
         {
-          "id": "71412d7d-d70b-453a-b9a4-a79d475910c2",
+          "id": "6656aa44-d81a-4e39-b55b-fe1019f17ac7",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -82,7 +82,7 @@
           "children": []
         },
         {
-          "id": "636b7d9d-45c6-4df2-9e50-87e8b895e396",
+          "id": "caf3dd77-4a76-4078-97df-c568465ef35e",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -101,7 +101,7 @@
           "children": []
         },
         {
-          "id": "34eab192-8366-404e-8da7-8e4de8a3b192",
+          "id": "29bda37d-49ab-4a44-9bbc-632e9cf19fe5",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -118,7 +118,7 @@
           "children": []
         },
         {
-          "id": "9b8bb5c9-1762-43bb-ae77-579c4fbc3749",
+          "id": "356f845a-289d-4e7d-8549-ac64761aeac5",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -137,7 +137,7 @@
           "children": []
         },
         {
-          "id": "8909c974-5608-4874-afb2-07fef6e06438",
+          "id": "e9bab237-234f-4908-b96b-206c9f8e1568",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -154,7 +154,7 @@
           "children": []
         },
         {
-          "id": "19027d7b-c434-413b-8082-cee8569e48a3",
+          "id": "3d7d3c52-114f-43ce-8ea1-ca85f6151360",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -173,7 +173,7 @@
           "children": []
         },
         {
-          "id": "3dd44027-78da-4efd-be7f-149ea96968ba",
+          "id": "cacf5880-2bdb-411b-8594-0f7dbd6a7ff0",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -190,7 +190,43 @@
           "children": []
         },
         {
-          "id": "8ba3ee76-b71c-4351-ae30-baa9399ff44e",
+          "id": "8cb9f41f-e9cc-495c-be45-4dbdd49168c5",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Proposed Component Description — Genetic Makeup",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "20edaebe-6e14-461b-8aab-f6cc46c9d00d",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Working schema for investigation, not yet an accepted standard: (1) Capability: what the component does, its intended behavior, and limits. (2) Inputs: accepted fields, data types, and preconditions. (3) Outputs: produced fields, data types, and guarantees. (4) Configuration: adjustable parameters, defaults, and constraints. (5) Dependencies: required models, tools, storage, credentials or resource bindings, and versions; reference secrets without embedding them. (6) Validation Evidence: the tests, observed results, provenance, and component version supporting claims that it works. Unknowns remain explicit. Interface compatibility is necessary but does not establish that the combined behavior satisfies the intent.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "14a8a894-bceb-4059-a59c-e2921a60cca9",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -209,7 +245,7 @@
           "children": []
         },
         {
-          "id": "b2a29ed8-1ce0-4bae-9493-0c8dcc3a2b00",
+          "id": "8f0dccbd-a13c-4f4e-a442-f7b4171b489d",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -226,7 +262,43 @@
           "children": []
         },
         {
-          "id": "c696747a-797d-4723-b9a9-e9047c603999",
+          "id": "eaa4547e-7ce2-4af0-ae07-72134a3bfebf",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Immediate Next Step",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "c999bd2d-aa64-4f88-8ce4-37f53f1da003",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Describe one existing Langflow component using these six fields, taking available interface and configuration facts from its actual definition and distinguishing verified behavior from assumptions. Check whether the record is sufficient to assess a candidate connection. Record any missing facts as gaps, refine the schema, and repeat before choosing a composition algorithm.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "ad2ee033-8758-440a-af4e-14cf560431a2",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -245,7 +317,7 @@
           "children": []
         },
         {
-          "id": "2a907a30-ef19-42df-9d4b-1f22b9f6a35f",
+          "id": "5f39cea8-8248-4d3a-907d-e40ec421df9d",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -262,7 +334,7 @@
           "children": []
         },
         {
-          "id": "bde609b3-e067-4ea9-bbbd-fee3bee677dc",
+          "id": "ce0b679a-cd1d-4ffb-832b-e68d4e2d2188",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -281,7 +353,7 @@
           "children": []
         },
         {
-          "id": "b795e4ac-3801-492a-9c7d-f680ee57d5f2",
+          "id": "ee0b38fb-bed5-4783-94b2-e775d203c96f",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -298,7 +370,7 @@
           "children": []
         },
         {
-          "id": "3d6eb567-f039-4967-8c83-5d22ea4feed1",
+          "id": "5b09cbaf-05b0-41ee-a8a2-e79efb5b5a3a",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -317,7 +389,7 @@
           "children": []
         },
         {
-          "id": "a6dfd1de-eef7-4c8c-a2f9-94ea43f8a74f",
+          "id": "1a16f243-0864-4d6d-9734-c3c2b631dadf",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -334,7 +406,7 @@
           "children": []
         },
         {
-          "id": "80bb6d7d-855a-452b-8776-d223080be12f",
+          "id": "b02c3422-048b-4e63-8426-31bccb97e49c",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -353,7 +425,7 @@
           "children": []
         },
         {
-          "id": "e07417ef-a6a6-4fdd-83dc-bef53e44607c",
+          "id": "7d736aae-89a0-4dac-b32f-034c1502cfdc",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -370,7 +442,7 @@
           "children": []
         },
         {
-          "id": "df33d747-a3a9-442f-bce3-b065f5ce3a64",
+          "id": "bcf5908b-5c50-481c-b7ae-9e3d1644a3c5",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -389,7 +461,7 @@
           "children": []
         },
         {
-          "id": "cfa1aecd-ce94-47b0-9d80-01bc69ce74c8",
+          "id": "b7123004-f3a8-4c4a-9f47-6ebe93ddca2a",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -406,7 +478,7 @@
           "children": []
         },
         {
-          "id": "9518cc5e-0cdd-4397-8b82-a77a8d9a4c22",
+          "id": "f6f294d4-7087-4c9e-85ec-48b380bdcdba",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -425,7 +497,7 @@
           "children": []
         },
         {
-          "id": "9b1edb59-269b-4dd6-9db9-388cba70b0c8",
+          "id": "9040b6d2-0417-4c80-ac4c-70727d307ff4",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -442,7 +514,7 @@
           "children": []
         },
         {
-          "id": "668f7995-a67d-43d4-bb75-ccccf0b8efff",
+          "id": "2ca85d3f-9be3-4b08-93a5-5726894b4c96",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -461,7 +533,7 @@
           "children": []
         },
         {
-          "id": "2d599123-8e8e-4af3-a9bd-f834120046dd",
+          "id": "725138b2-0f7c-4b41-a952-9213810ea7b3",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -479,7 +551,7 @@
         }
       ],
       "createdAt": "2026-10-28T20:51:16.542Z",
-      "updatedAt": "2026-10-28T20:53:32.670Z"
+      "updatedAt": "2026-10-28T20:54:40.852Z"
     }
   ]
 }
