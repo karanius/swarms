@@ -29,7 +29,7 @@
           "children": []
         },
         {
-          "id": "d64ebb5d-4365-4f60-ab94-8c594c81ec34",
+          "id": "00866905-3ae6-47b2-9222-751ca8187650",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -39,14 +39,50 @@
           "content": [
             {
               "type": "text",
-              "text": "Preliminary experiment report. A fixed deterministic recipe assembled real Langflow components into a three-point summarization graph. Five live cases passed format checks and independent source-grounding review; two invalid inputs were blocked by evaluator guards. These bounded observations establish a working baseline pipeline, not general composition discovery.",
+              "text": "Research programme in specification generation. We aim to formalize how structured component descriptions and composition rules can iteratively write an intent-specific, multilayer instance as JSON. Current work is theoretical and editorial. Historical fixed-recipe experiment results are retained separately below; they do not establish the desired generation algorithm.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "89b53cac-6791-46ae-bb8a-34a4c9ce2f25",
+          "id": "92455856-7809-4688-a414-9748539418fd",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Current Research Scope — Specification Generation",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "3f73e047-0377-4e7b-9bd5-d54989f3bcd7",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "The current goal is to define the mathematical objects, admissibility rules, and iterative procedure that write an intent-specific instance specification across the layers it requires. Output is structured JSON, with explicit gaps and validation obligations. No new model, tool, or workflow execution is part of this design stage. Earlier experiment records are retained as historical preliminary evidence, not as the current next action.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "f23f881a-1afc-408a-8a06-39998ae5f0a1",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -65,7 +101,7 @@
           "children": []
         },
         {
-          "id": "33951425-63cd-48aa-a015-3e147ad546fc",
+          "id": "a8b15b85-2222-4f1b-840e-2237bf2be38f",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -82,7 +118,7 @@
           "children": []
         },
         {
-          "id": "290d64a4-a569-4fe1-b7af-af838cd735e8",
+          "id": "dcaaa1d3-5007-45f9-ae55-295f44321f4b",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -101,7 +137,7 @@
           "children": []
         },
         {
-          "id": "b3e7a2cb-d9ab-42f2-8207-565b83e757fa",
+          "id": "2db3ce85-ef06-403e-8886-099053895a1e",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -118,7 +154,7 @@
           "children": []
         },
         {
-          "id": "f069ae5b-fb64-40eb-bff1-88be72b0a841",
+          "id": "d854991f-ec46-4c64-9265-82b710aded13",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -137,7 +173,7 @@
           "children": []
         },
         {
-          "id": "1e69fe59-3453-4c84-b5cc-979b8f388826",
+          "id": "a64c2c19-9d29-4810-9fb0-29a0ca3eb4b6",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -154,7 +190,7 @@
           "children": []
         },
         {
-          "id": "f1c66d73-44ae-4582-ab6e-b71b46e4702c",
+          "id": "79bec03b-1517-421d-b6b6-5c19e5072475",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -173,7 +209,7 @@
           "children": []
         },
         {
-          "id": "f6b449c8-c6c3-42bf-81df-ff18f8a144f6",
+          "id": "85a49a36-ecc0-4a19-b4de-f0654dea8c20",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -190,7 +226,7 @@
           "children": []
         },
         {
-          "id": "4ad1e02d-c4dc-48cf-af3a-5d70a03fe32f",
+          "id": "c56ae96c-8da5-4248-8884-776efb627f42",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -209,7 +245,7 @@
           "children": []
         },
         {
-          "id": "cc887c2e-45fe-4065-8a2d-18cc1d666dd9",
+          "id": "d6dffa53-c137-495d-8972-7455c5009b67",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -226,7 +262,7 @@
           "children": []
         },
         {
-          "id": "a93c5b7f-ef85-4d02-8776-cf57f02c58c4",
+          "id": "edda65fd-104a-4897-84d6-31c44dc7a25d",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -630,7 +666,483 @@
           "children": []
         },
         {
-          "id": "bb7d0075-87d4-4dea-ac87-42cfe6ec059e",
+          "id": "9ea71900-b881-466a-b644-75da7822c75d",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "How Component Descriptions Feed Generation Rules",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "33a2229d-8998-4ce6-bb5d-4da40ccfa151",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Working formulation: a component description is an operand; a generation rule is an operator. The rule proposes an assembly from selected operands, subject to explicit compatibility and intent constraints, then describes the result as an item on a higher plane. The six fields are information supplied to the rule, not the rule itself. Composition must derive the resulting behavior; it cannot simply assume that capabilities combine without interference. A higher item needs layer-specific meaning and requirements, not merely a higher label.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "3f98e719-4b1b-49e4-88d6-865f69273d51",
+          "type": "table",
+          "props": {
+            "textColor": "default"
+          },
+          "content": {
+            "type": "tableContent",
+            "columnWidths": [
+              null,
+              null,
+              null
+            ],
+            "headerRows": 1,
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Description field",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Rule uses it to…",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Generated specification",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Capability",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Use stated behavior and limits to nominate candidates for a requirement.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A candidate match with explicit assumptions; descriptive similarity is not proof.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Inputs and outputs",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Check boundary types and stated preconditions/postconditions. Internalize connections within a proposed assembly.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A typed connection proposal; unresolved semantic compatibility becomes a gap.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Configuration",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Check required settings, allowed values, and cross-component constraints.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A configuration assignment or unresolved constraint; no guessed hidden defaults.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Dependencies",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Resolve versioned component and resource references, including dependencies introduced by composition.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A dependency graph and required bindings; credentials remain references.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Validation evidence",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Associate evidence with the exact component version and scope; separate inherited evidence from new assembly-level obligations.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "An evidence record and outstanding checks; unexecuted behavior stays unverified.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Assembly description",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Derive the proposed group’s external ports, behavior claim, configuration surface, dependencies, member references, and unresolved obligations.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A new higher-layer description in the same general form, enabling another iteration.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "children": []
+        },
+        {
+          "id": "eb3db161-7aae-4acd-b5c3-024799a30f8b",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Editorial Visual Plan",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "22d94fc9-9cbc-4ef9-a902-f17cd95c1871",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "[VISUAL PLACEHOLDER D1 — React Flow diagram: component-description fields entering a composition-rule node; candidate assembly and unresolved gaps leaving it.] [VISUAL PLACEHOLDER D2 — Layered structural illustration: one proposed composite above its same member identities, showing external boundaries and membership.] [VISUAL PLACEHOLDER D3 — Iteration diagram: requirement gap → candidate selection → constraint checking → assembly description → higher-layer projection → reassessment, with revision branches. These are editorial figure requirements; do not execute or render an algorithm yet.]",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "17170273-f549-4f73-927a-273bac8b7ce3",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -649,7 +1161,7 @@
           "children": []
         },
         {
-          "id": "a3b793de-6d3e-4ae1-85a0-ca6704588227",
+          "id": "d240bdf8-34b6-454b-9b9c-2b65d4ef2274",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -666,7 +1178,7 @@
           "children": []
         },
         {
-          "id": "1dff0472-4ce6-4582-9895-187493bcd4b4",
+          "id": "23339e36-f08f-4d8d-9372-09b4e5c233c9",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -1070,7 +1582,7 @@
           "children": []
         },
         {
-          "id": "d12bf907-29d3-416c-93d7-cd704e37f124",
+          "id": "3098c330-26ee-42b1-b6f4-ff12fe8ea6fd",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1089,7 +1601,7 @@
           "children": []
         },
         {
-          "id": "f4a6f296-eb1a-4a09-9ac6-3c2c93671715",
+          "id": "fd3bd5b4-3f67-46b0-82c6-b067e4736e6d",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1106,7 +1618,7 @@
           "children": []
         },
         {
-          "id": "9e4d99cc-3fd9-42c9-a221-b67395e576b7",
+          "id": "35c0f563-7bde-4a6a-9a40-daffd7860493",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -1290,7 +1802,7 @@
           "children": []
         },
         {
-          "id": "c0585f7b-0426-4920-b35e-01df423f1d87",
+          "id": "5c8e9291-7e95-4a0c-9901-1c78734b93a6",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1309,7 +1821,7 @@
           "children": []
         },
         {
-          "id": "7abe98f2-b299-4654-85d7-1e459ec89263",
+          "id": "3ca174aa-e03a-4a5e-8757-61a6156682e7",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1326,7 +1838,7 @@
           "children": []
         },
         {
-          "id": "a7ee68e5-73eb-48a9-b7d6-3fe917c08dc6",
+          "id": "f618c239-5b25-42af-9327-6e8f686d389f",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1345,7 +1857,7 @@
           "children": []
         },
         {
-          "id": "f23bf4e6-025e-4f02-9db4-31f3d9a07093",
+          "id": "6ec7545d-af4d-4648-9256-d16684f194bb",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1362,7 +1874,7 @@
           "children": []
         },
         {
-          "id": "eef0e565-e5a2-4ad0-a691-d496e8397b30",
+          "id": "33cc3977-7339-4ad4-b883-ac5bf3716780",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -1876,7 +2388,7 @@
           "children": []
         },
         {
-          "id": "a203a245-6816-4d16-85fb-cb2922934754",
+          "id": "d4dd40e0-2666-4bf8-9248-d372a7a16c5d",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1895,7 +2407,7 @@
           "children": []
         },
         {
-          "id": "d9c4f622-0e0f-44c7-9e87-6538c29c267b",
+          "id": "70be92ea-fa99-417d-b8f7-4281c732a80d",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1912,7 +2424,7 @@
           "children": []
         },
         {
-          "id": "62350957-e378-4f50-ac88-e59d34f1df9e",
+          "id": "78d29079-826e-44a7-80fd-f8e9b4495ed8",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -2556,7 +3068,7 @@
           "children": []
         },
         {
-          "id": "f48db74e-a1f0-4f95-9f98-6a3c9c288083",
+          "id": "58877683-335d-42e1-8fa7-3afa4bada101",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -2575,7 +3087,7 @@
           "children": []
         },
         {
-          "id": "f4d25b2e-3ef8-4cf2-a3e0-c3b50f350133",
+          "id": "64460970-3ae0-43c6-8d30-18426b5c2ead",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -2592,7 +3104,7 @@
           "children": []
         },
         {
-          "id": "59d063f8-8fa1-4c2b-9c84-678a6c2b5ab1",
+          "id": "b07ee6fc-3c3e-4317-b1f5-6744f3aebebd",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -2611,7 +3123,7 @@
           "children": []
         },
         {
-          "id": "97d0535f-837a-46bd-a8ff-a5817eac5c0f",
+          "id": "62bfbe4e-15c8-4b92-b039-4223e4c4f5d0",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -2628,7 +3140,7 @@
           "children": []
         },
         {
-          "id": "4f3c672e-a8c9-4895-93c6-62c5267376c5",
+          "id": "59a6cd6d-0a24-488e-873b-ed07550e5d04",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -2647,7 +3159,7 @@
           "children": []
         },
         {
-          "id": "ab1b31dd-f33e-445c-8587-4c9848e48655",
+          "id": "1a5f2d47-648d-4493-9150-42b9077a54c1",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -2664,7 +3176,7 @@
           "children": []
         },
         {
-          "id": "645cd298-9c0e-44f2-9535-305be124241f",
+          "id": "0c9ce9b0-6d69-47ad-b617-15c95ac20f65",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -2683,7 +3195,7 @@
           "children": []
         },
         {
-          "id": "92f7e228-8914-4965-9c54-500fe347aa14",
+          "id": "599b4f34-988e-4d0b-9934-3e153959875f",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -2700,7 +3212,7 @@
           "children": []
         },
         {
-          "id": "520dcced-c24a-448e-84ce-81ae1c7ccfe3",
+          "id": "4cc6878b-f171-49f6-b987-0865c32daffb",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -2994,7 +3506,7 @@
           "children": []
         },
         {
-          "id": "2045915d-2aea-4e7b-9540-92d61075aa26",
+          "id": "b72beed5-411a-430c-83f2-325648ea7826",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -3013,7 +3525,7 @@
           "children": []
         },
         {
-          "id": "73fafbbb-e5b3-4312-a55f-f05491e2aac1",
+          "id": "0f984795-b3ae-4e2d-91b9-ec5e5800b3f2",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -3023,14 +3535,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Strengthen the baseline with long and distractor-rich sources, an insufficient-but-nonempty source, harder embedded-direction cases, and broader repetition with predefined rubrics. Then remove the supplied recipe and compare contract-driven component selection against this baseline using the same task set and budgets.",
+              "text": "Specify one generation rule precisely: its operands, applicability conditions, construction steps, resulting higher-layer description, and failure or unresolved outcomes. Work through a symbolic example on paper. Define layer-specific constraints and stopping conditions before further implementation or runtime experiments.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "0e7acbf5-7b8a-4940-b608-053a41efa3cd",
+          "id": "6dea5211-3ccc-472a-bafa-06d3b843a0be",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -3049,7 +3561,7 @@
           "children": []
         },
         {
-          "id": "fb578568-b3b4-477a-8e84-5d133edd6867",
+          "id": "89db3c09-3b3a-445e-92e2-b230d1786de2",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -3066,7 +3578,7 @@
           "children": []
         },
         {
-          "id": "2d4f49e0-8aec-40c8-98da-594950b64433",
+          "id": "a27ff9f5-16e2-407f-ab94-a3a759ff0785",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -3085,7 +3597,7 @@
           "children": []
         },
         {
-          "id": "75ac8947-368c-4434-81de-62a9d3258f34",
+          "id": "7fa17f78-7d1a-463a-93f7-5a397decb85b",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -3102,7 +3614,7 @@
           "children": []
         },
         {
-          "id": "ca21d5c3-d82b-400f-af02-591d25e35657",
+          "id": "81b7ea9b-a8f8-4987-a526-55a7d7abd063",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -3698,7 +4210,7 @@
           "children": []
         },
         {
-          "id": "90eef7ee-f540-4e4e-9057-86be208afe9d",
+          "id": "83b74f7a-722b-4d8e-ae81-8e08f6a8302c",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -3717,7 +4229,7 @@
           "children": []
         },
         {
-          "id": "def0ab32-32ba-4c81-a90e-8ebdcca54c97",
+          "id": "fa69b2e7-920c-4887-b5a6-32b9b4d374b6",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -3734,7 +4246,7 @@
           "children": []
         },
         {
-          "id": "9bf8abdc-4045-4cf7-850e-0502a2855d15",
+          "id": "830314b0-cce8-4439-a94c-995f2e40ca14",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -3753,7 +4265,7 @@
           "children": []
         },
         {
-          "id": "3f3d4c89-e8a9-4c5a-a4b1-6f15172c39a7",
+          "id": "8538885f-627d-444e-890c-340086a81a46",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -3770,7 +4282,7 @@
           "children": []
         },
         {
-          "id": "9ec17e13-2826-4856-b061-f269d2eccff7",
+          "id": "64997559-c3f7-4055-aab3-7926a2cf9b07",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -3789,7 +4301,7 @@
           "children": []
         },
         {
-          "id": "4648db23-db8d-4dcd-81c1-1bf43aaf0f1c",
+          "id": "e93c4045-6da5-4921-b195-a814313d454a",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -3806,7 +4318,7 @@
           "children": []
         },
         {
-          "id": "252bc0fa-33c2-414d-b627-38b996968624",
+          "id": "71258f34-218e-4a85-9d75-515ff12bd4b1",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -3825,7 +4337,7 @@
           "children": []
         },
         {
-          "id": "76b6f1df-e09d-44b8-8dca-fac16e74ce4a",
+          "id": "d6e76c53-c956-4b9a-9200-476b514c2009",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -3842,7 +4354,7 @@
           "children": []
         },
         {
-          "id": "aea518f2-f38b-4e9a-8c01-f7875570f041",
+          "id": "df6a6355-c4c7-4d08-a2bc-76af89bdb369",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -3861,7 +4373,7 @@
           "children": []
         },
         {
-          "id": "0fe9ad7d-d2e4-47a1-9d5e-9998b52ca9e3",
+          "id": "729dc933-1c0c-4cd4-bf72-c2a63f6c495f",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -3878,7 +4390,7 @@
           "children": []
         },
         {
-          "id": "c60b1b4f-7108-4061-8541-9444d519814f",
+          "id": "ac931ae9-8bc6-469b-9ef9-5699028bf30c",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -3897,7 +4409,7 @@
           "children": []
         },
         {
-          "id": "5678291d-20e5-499c-b12c-423c90162294",
+          "id": "b1479d32-dcab-4e8d-b5b9-31d285d0c337",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -3914,7 +4426,7 @@
           "children": []
         },
         {
-          "id": "e5c8a6a0-0c84-409b-9ac2-152c4ae97a4f",
+          "id": "fcf428a2-a694-43ab-b6f4-ee51b947fdd6",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -3933,7 +4445,7 @@
           "children": []
         },
         {
-          "id": "cfdbb381-f3c6-4fd7-a62f-b94f15994e5b",
+          "id": "d21195c2-2bf0-4f22-84f1-22aaf4918a9b",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -3964,84 +4476,10 @@
             }
           ],
           "children": []
-        },
-        {
-          "id": "36b5d191-61f6-4a8f-96a5-6f2c6309e351",
-          "type": "heading",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left",
-            "level": 2,
-            "isToggleable": false
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Synthetic Algorithm Design",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "63e7ade5-b6e6-4c10-91ae-630e4c219a83",
-          "type": "paragraph",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left"
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Work in progress: these figures describe proposed structure and decisions. Editing or navigating them does not execute models, tools, or the composition algorithm.",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "46a49419-93f2-430a-8a10-1800a3f3936b",
-          "type": "researchFigure",
-          "props": {
-            "artifactJson": "{\"schemaVersion\":1,\"kind\":\"graph\",\"title\":\"Proposed composition design\",\"provenance\":{\"kind\":\"synthetic-design\",\"label\":\"Conceptual proposal only; not an implemented or proven algorithm.\"},\"layers\":[{\"id\":\"design\",\"label\":\"Proposed reasoning stages\",\"order\":0}],\"nodes\":[{\"id\":\"intent\",\"label\":\"Intent\",\"layer\":\"design\",\"position\":{\"x\":0,\"y\":0},\"description\":\"Describe the desired outcome.\"},{\"id\":\"requirements\",\"label\":\"Requirements\",\"layer\":\"design\",\"position\":{\"x\":240,\"y\":0},\"description\":\"Make constraints and acceptance criteria explicit.\"},{\"id\":\"resolve\",\"label\":\"Resolve boundary\",\"layer\":\"design\",\"position\":{\"x\":480,\"y\":0},\"description\":\"Find the unresolved boundary between requirements above and available pieces below.\"},{\"id\":\"select\",\"label\":\"Select\",\"layer\":\"design\",\"position\":{\"x\":720,\"y\":0},\"description\":\"Propose components against requirements.\"},{\"id\":\"compose\",\"label\":\"Compose\",\"layer\":\"design\",\"position\":{\"x\":0,\"y\":190},\"description\":\"Propose compatible connections and boundaries.\"},{\"id\":\"check\",\"label\":\"Check\",\"layer\":\"design\",\"position\":{\"x\":240,\"y\":190},\"description\":\"Inspect proposed structure and outstanding uncertainty.\"},{\"id\":\"promote\",\"label\":\"Promote\",\"layer\":\"design\",\"position\":{\"x\":480,\"y\":190},\"description\":\"Propose a reusable composite after evidence review.\"},{\"id\":\"reassess\",\"label\":\"Reassess\",\"layer\":\"design\",\"position\":{\"x\":720,\"y\":190},\"description\":\"Reconsider the design against new evidence.\"}],\"edges\":[{\"id\":\"data-0\",\"source\":\"intent\",\"target\":\"requirements\",\"kind\":\"data\"},{\"id\":\"data-1\",\"source\":\"requirements\",\"target\":\"resolve\",\"kind\":\"data\"},{\"id\":\"data-2\",\"source\":\"resolve\",\"target\":\"select\",\"kind\":\"data\"},{\"id\":\"data-3\",\"source\":\"select\",\"target\":\"compose\",\"kind\":\"data\"},{\"id\":\"data-4\",\"source\":\"compose\",\"target\":\"check\",\"kind\":\"data\"},{\"id\":\"data-5\",\"source\":\"check\",\"target\":\"promote\",\"kind\":\"data\"},{\"id\":\"data-6\",\"source\":\"promote\",\"target\":\"reassess\",\"kind\":\"data\"},{\"id\":\"feedback-requirements\",\"source\":\"reassess\",\"target\":\"requirements\",\"kind\":\"feedback\"},{\"id\":\"feedback-select\",\"source\":\"check\",\"target\":\"select\",\"kind\":\"feedback\"}]}"
-          },
-          "children": []
-        },
-        {
-          "id": "67eda19a-c7b8-4fe7-bc71-ceb3bd9acce4",
-          "type": "paragraph",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left"
-          },
-          "content": [],
-          "children": []
-        },
-        {
-          "id": "cb399a69-9fc9-4295-bf99-f7e5a3a0fb07",
-          "type": "researchFigure",
-          "props": {
-            "artifactJson": "{\"schemaVersion\":1,\"kind\":\"layers\",\"title\":\"Shared components within a composite\",\"provenance\":{\"kind\":\"synthetic-design\",\"label\":\"Synthetic structural example; no live agent or execution.\"},\"layers\":[{\"id\":\"components\",\"label\":\"Components\",\"order\":0},{\"id\":\"composite\",\"label\":\"Composite\",\"order\":1}],\"nodes\":[{\"id\":\"receive\",\"label\":\"Receive\",\"layer\":\"components\",\"position\":{\"x\":0,\"y\":0}},{\"id\":\"process\",\"label\":\"Process\",\"layer\":\"components\",\"position\":{\"x\":240,\"y\":0}},{\"id\":\"respond\",\"label\":\"Respond\",\"layer\":\"components\",\"position\":{\"x\":480,\"y\":0}},{\"id\":\"summary-composite\",\"label\":\"Summary composite\",\"layer\":\"composite\",\"position\":{\"x\":240,\"y\":-150}}],\"edges\":[{\"id\":\"receive-process\",\"source\":\"receive\",\"target\":\"process\",\"kind\":\"data\"},{\"id\":\"process-respond\",\"source\":\"process\",\"target\":\"respond\",\"kind\":\"data\"},{\"id\":\"member-receive\",\"source\":\"receive\",\"target\":\"summary-composite\",\"kind\":\"membership\"},{\"id\":\"member-process\",\"source\":\"process\",\"target\":\"summary-composite\",\"kind\":\"membership\"},{\"id\":\"member-respond\",\"source\":\"respond\",\"target\":\"summary-composite\",\"kind\":\"membership\"}]}"
-          },
-          "children": []
-        },
-        {
-          "id": "d48c419b-ae0c-4fa3-b413-a82f6593a9d1",
-          "type": "paragraph",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left"
-          },
-          "content": [],
-          "children": []
         }
       ],
       "createdAt": "2026-10-28T20:51:16.542Z",
-      "updatedAt": "2026-10-28T21:14:40.502Z"
+      "updatedAt": "2026-10-28T21:16:34.441Z"
     }
   ]
 }
