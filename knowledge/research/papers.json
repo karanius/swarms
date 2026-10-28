@@ -29,7 +29,7 @@
           "children": []
         },
         {
-          "id": "5d24f895-0c29-41dc-8d4c-0d77691541b4",
+          "id": "79308835-52c1-4054-a9e2-1db267a12b9a",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -46,7 +46,7 @@
           "children": []
         },
         {
-          "id": "2ce206a9-4785-42df-b5ab-6b8fc137bfff",
+          "id": "ee5100a2-2503-4f50-adfd-5246f5d71a8f",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -65,7 +65,7 @@
           "children": []
         },
         {
-          "id": "35516725-06c5-470e-a57e-72c51e08af54",
+          "id": "6ffb08f4-e1f2-4b83-ab56-d8920a639642",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -82,7 +82,7 @@
           "children": []
         },
         {
-          "id": "90292b01-4c07-419c-b0b8-6056cbf76549",
+          "id": "0f3afb1d-27dd-4ca8-937e-374fa0895351",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -101,7 +101,7 @@
           "children": []
         },
         {
-          "id": "34d7da2a-a00c-404f-9425-44b03a07eed3",
+          "id": "bb597405-9de3-468a-916e-e5feaaebed36",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -118,7 +118,7 @@
           "children": []
         },
         {
-          "id": "5bb10707-7707-4c89-9f4f-2230d6b452f2",
+          "id": "bc8414c7-82f5-42ed-a170-fd29ee537ac7",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -137,7 +137,7 @@
           "children": []
         },
         {
-          "id": "d9de8377-db75-4e1f-a62c-574398c1e0ad",
+          "id": "c8a04610-8ff4-49c9-b20b-9ade4f7e3bcf",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -154,7 +154,7 @@
           "children": []
         },
         {
-          "id": "4425a898-b48b-45c4-b159-5f558087cfe2",
+          "id": "12d89aa4-9c5d-4404-a011-a20a57645e81",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -438,7 +438,7 @@
           "children": []
         },
         {
-          "id": "b7263bc0-6868-4382-a0af-8a975ba4dc22",
+          "id": "f4059da0-e1c4-408a-9108-70e81ccfb072",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -457,7 +457,7 @@
           "children": []
         },
         {
-          "id": "85d69337-4ac5-400d-af48-a6589d5a57bd",
+          "id": "7e7b9ca1-ecc2-4bf6-ad10-1cc42089ffb4",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -474,7 +474,7 @@
           "children": []
         },
         {
-          "id": "760d0fa4-a707-4ef8-a222-5531770d4452",
+          "id": "e10acce0-7823-4f7c-ae5c-f9ef466971d7",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -493,7 +493,7 @@
           "children": []
         },
         {
-          "id": "fe4d9379-79fc-4728-87d9-27f997983611",
+          "id": "acaf9d14-6571-4c6d-ba80-a8b9de09e607",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -510,7 +510,7 @@
           "children": []
         },
         {
-          "id": "a999c0e3-6b75-4e9c-8053-c391053cb996",
+          "id": "393d6a7d-f736-498d-8d5b-93fc328f1fe5",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -529,7 +529,7 @@
           "children": []
         },
         {
-          "id": "d20689a1-c9c9-4ee7-8c24-34120dde5e49",
+          "id": "19dc2940-1d30-4367-96dc-2fa906472aeb",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -546,7 +546,7 @@
           "children": []
         },
         {
-          "id": "bdcf5106-0443-4d35-b657-46f22e45b186",
+          "id": "6b7a10a0-b066-4bfa-a39a-7335677c69c2",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -773,7 +773,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Unknown conditions, rejected alternatives, unresolved behavior claims, and required evidence.",
+                        "text": "Unknown conditions and evidence requirements, each with identity, status, and requirement references.",
                         "styles": {}
                       }
                     ],
@@ -811,7 +811,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Rule identity/version, sources, decision rationale, and affected requirements.",
+                        "text": "Rule identity/version, sources, rationale, rejected alternatives, scope changes, and affected requirements.",
                         "styles": {}
                       }
                     ],
@@ -830,7 +830,7 @@
           "children": []
         },
         {
-          "id": "5303c02d-d85e-48a0-926a-ef9c4157334e",
+          "id": "2b7e3012-39b6-4228-816a-e189c7d00d10",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -849,7 +849,7 @@
           "children": []
         },
         {
-          "id": "f42f7f57-1487-4225-89e4-4b882edeedc0",
+          "id": "12755383-4207-44d8-b0b8-13894982746f",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -866,7 +866,7 @@
           "children": []
         },
         {
-          "id": "e3eff8b7-01d1-4986-98f0-134da10bfca2",
+          "id": "c37e37ea-eba4-4b44-8364-fa579870e1c4",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -885,7 +885,7 @@
           "children": []
         },
         {
-          "id": "9a365f23-42d5-4ce1-bd58-fb50b67b2c47",
+          "id": "83d324f7-78cf-42d4-a3ff-65944b90b034",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -902,7 +902,7 @@
           "children": []
         },
         {
-          "id": "6cd77fb8-4df8-4be0-8da2-b2fd5c43ceae",
+          "id": "a8d0c299-d255-428f-ad0c-02a85e10c456",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -921,7 +921,7 @@
           "children": []
         },
         {
-          "id": "bc05a468-4868-417a-947a-c42d81ad4400",
+          "id": "94fc9329-f89e-4951-95fb-0d5cba63a685",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -938,7 +938,7 @@
           "children": []
         },
         {
-          "id": "27430ef1-723c-4e98-b489-539ae611e66c",
+          "id": "f283ff2d-61d4-4b88-8c41-f526c37ae06c",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -957,7 +957,7 @@
           "children": []
         },
         {
-          "id": "4420a510-f714-40ce-9ae8-0ef74d21ed03",
+          "id": "82f3646f-250d-4e24-8f08-44171b1d2c6d",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -974,7 +974,7 @@
           "children": []
         },
         {
-          "id": "b51caf7c-f457-43bb-937d-d51eca79ab01",
+          "id": "f24c6b40-377a-4cca-a994-81a18a82a185",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -993,7 +993,7 @@
           "children": []
         },
         {
-          "id": "92b91ad7-3f48-46f8-b0e0-af7197227cf9",
+          "id": "b0d6079e-455e-4ccf-bcb4-4ce92660d08c",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1010,7 +1010,7 @@
           "children": []
         },
         {
-          "id": "eec3b68f-704f-48f9-a9ea-c21cfce54de5",
+          "id": "e155aa70-614a-4533-971f-92c5dfe9c812",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -1194,7 +1194,7 @@
           "children": []
         },
         {
-          "id": "80c86d4c-5ba1-4e55-a1da-22300c0709fa",
+          "id": "9c6a899d-e70b-4fa1-bb9d-17bf865433db",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1213,7 +1213,7 @@
           "children": []
         },
         {
-          "id": "092c8f29-94b9-4bd2-b289-745309e97c43",
+          "id": "7ff34989-c4b6-4e74-ab3b-796bf79df6af",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1230,7 +1230,7 @@
           "children": []
         },
         {
-          "id": "3a9963d9-7ce2-4a42-b05f-2e399d418877",
+          "id": "c19ad9d5-b876-402c-a1ca-efc7e3338e28",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1249,7 +1249,7 @@
           "children": []
         },
         {
-          "id": "a06025a7-1176-4897-9862-1599d38cd1e6",
+          "id": "8d5503f2-8985-4e5a-a8f8-3b1d63d22727",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1266,7 +1266,7 @@
           "children": []
         },
         {
-          "id": "d972f14e-5e6b-4116-ab9b-a5c20b22937c",
+          "id": "618d4bd3-50f0-4997-b262-5cb861522de2",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1285,7 +1285,7 @@
           "children": []
         },
         {
-          "id": "9620f664-68ea-4abd-8ca4-e595c4644a8f",
+          "id": "159a6388-801d-411e-9842-8fa0a821ca86",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1302,7 +1302,7 @@
           "children": []
         },
         {
-          "id": "dc8e6af8-3f9b-48cc-bf05-9872d171ded2",
+          "id": "754d7861-4b66-4fb3-a1f5-a3bec276bb77",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1321,7 +1321,7 @@
           "children": []
         },
         {
-          "id": "3d60eaad-1f6a-44d8-8757-263d1d1e46b6",
+          "id": "088b7744-66c3-4842-8fce-d031a19b1d84",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1338,7 +1338,7 @@
           "children": []
         },
         {
-          "id": "499092a6-ce95-4b5a-b904-36ff7689b5fd",
+          "id": "309bae60-6957-4f15-b467-8e2f086da8d5",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1357,7 +1357,7 @@
           "children": []
         },
         {
-          "id": "460530b3-55a2-438d-9f8f-1649d2370051",
+          "id": "cf7b5657-05d6-413b-8a09-2121b40893f0",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1374,7 +1374,7 @@
           "children": []
         },
         {
-          "id": "282ecf3b-7cd8-4864-8976-05e989ee3f51",
+          "id": "db892dca-ff0d-452d-aebd-88f98f04d458",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1393,7 +1393,7 @@
           "children": []
         },
         {
-          "id": "a3f6cc9c-df2c-4d82-8a37-9a94c7262d30",
+          "id": "d58f70e8-65da-49ae-a25c-5305d54de84f",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1410,7 +1410,7 @@
           "children": []
         },
         {
-          "id": "014b2159-19f2-4530-b564-d6875812ecbc",
+          "id": "9acbe122-d846-48e0-9d61-78059d553e89",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1429,7 +1429,7 @@
           "children": []
         },
         {
-          "id": "eb906cc6-8372-487f-8a2b-5e16b8a0bb54",
+          "id": "825f35e3-2463-47a2-a1bd-dfefabc21e1e",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1446,7 +1446,7 @@
           "children": []
         },
         {
-          "id": "f2498146-58e1-4223-9282-bf7d2961271c",
+          "id": "550457cf-cdb3-471f-8234-1544ca3b69ac",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1465,7 +1465,7 @@
           "children": []
         },
         {
-          "id": "60acc58e-c051-4348-9359-4d1dca576e6a",
+          "id": "2b8aad34-a2e3-4228-8cf1-aae06bc66bac",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1475,14 +1475,14 @@
           "content": [
             {
               "type": "text",
-              "text": "This conceptual manuscript was prepared from the user’s research direction with AI-assisted drafting. Three separate AI-agent reviews covered formal definitions, skeptical counterexamples, and Langflow/evidence fidelity. Their first-round major and minor findings were consolidated and revised; the revised formal claims are undergoing a bounded verification pass. The review record distinguishes addressed findings from limitations and is retained with versioned manuscript snapshots. This is internal AI review, not external academic peer review. No formal correctness proof, comprehensive literature review, or outside endorsement is claimed. Historical semantic review remains limited to its authored fixtures.",
+              "text": "This completed conceptual manuscript was prepared from the user’s research direction with AI-assisted drafting. Three separate AI-agent reviews covered formal definitions, skeptical counterexamples, and Langflow/evidence fidelity. First-round findings were consolidated and revised; a second bounded formal and skeptical check confirmed that the major findings were addressed and identified a final table/history consistency correction, now applied. No remaining conceptual blocker was reported within those review scopes. The review record retains findings, responses, and frozen manuscript versions. This is internal AI review, not external academic peer review. It does not establish a formal correctness proof, comprehensive literature coverage, empirical generality, or outside endorsement. Historical semantic judgments remain limited to their authored fixtures.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "806f793f-bdab-4628-bd7f-65006fc98186",
+          "id": "b6c7581b-59f7-4551-9234-4c65690f1bb7",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -1766,7 +1766,7 @@
           "children": []
         },
         {
-          "id": "7d9410ee-963d-4678-a1c3-6fa155b0f34f",
+          "id": "b64f20f9-47fb-4b4e-adf6-72aff06c761a",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1785,7 +1785,7 @@
           "children": []
         },
         {
-          "id": "f33b7930-d0ac-4ae6-8e9d-f3ba6f0d24e3",
+          "id": "3ff97a44-5510-4a6a-8a0a-72f0ba878401",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1867,7 +1867,7 @@
         }
       ],
       "createdAt": "2026-10-28T20:51:16.542Z",
-      "updatedAt": "2026-10-28T21:22:06.051Z"
+      "updatedAt": "2026-10-28T21:23:20.882Z"
     }
   ]
 }
