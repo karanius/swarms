@@ -29,7 +29,7 @@
           "children": []
         },
         {
-          "id": "33dd2428-27d1-41d5-9e6b-80318c86d5d4",
+          "id": "3e36168e-5162-4bee-9044-7335b5b7a5a0",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -46,7 +46,7 @@
           "children": []
         },
         {
-          "id": "b14f8400-cc5c-4c2a-a49a-ed82485ef979",
+          "id": "7a75eac0-e901-40dd-8850-d7c734748cb1",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -65,7 +65,7 @@
           "children": []
         },
         {
-          "id": "d72720b0-4df8-4406-89ee-7758c057625e",
+          "id": "89fa3a58-7b51-451b-b3f0-dd9800e8a2e4",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -82,7 +82,7 @@
           "children": []
         },
         {
-          "id": "46ed7eb0-752c-4411-8a0d-7d5cb26d082e",
+          "id": "62ac2861-d4c5-4ee1-b324-48dc84c057ae",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -101,7 +101,7 @@
           "children": []
         },
         {
-          "id": "0e7e2526-0d0e-4e89-9078-c6da0075a206",
+          "id": "7dc4279f-872b-4128-b315-c08350532667",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -118,7 +118,7 @@
           "children": []
         },
         {
-          "id": "9d5add23-f175-4272-a3a9-38c43b8f79db",
+          "id": "fa0eb460-affe-4e5d-bfa7-f377ed11bab3",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -137,7 +137,7 @@
           "children": []
         },
         {
-          "id": "9840f820-2b23-4bb6-822b-7e244fc6884d",
+          "id": "76607891-d05a-4bf9-b4f1-524fcb1ee773",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -154,7 +154,7 @@
           "children": []
         },
         {
-          "id": "edad6aa4-6e1b-459e-a193-851e8747917d",
+          "id": "6316bc9b-d6c6-4f1d-b54a-1a89d21bbc4f",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -173,7 +173,7 @@
           "children": []
         },
         {
-          "id": "db1ac682-40a0-4a0c-b4b6-d0f85a933848",
+          "id": "d2cc399d-c275-4ce9-89fb-0e9b1d6ccbd1",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -190,7 +190,7 @@
           "children": []
         },
         {
-          "id": "1c4a4c14-3a1d-490e-9351-6cbfc0361ce5",
+          "id": "9b838e7c-c342-4927-ab62-d89301fa4394",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -209,7 +209,7 @@
           "children": []
         },
         {
-          "id": "170b4f4a-5fcc-49f1-b398-6e100fc7806f",
+          "id": "be4a5296-579b-4e25-b4d6-ca6a243f394d",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -226,7 +226,7 @@
           "children": []
         },
         {
-          "id": "e5a157ed-94fb-4dfd-98b6-12ad22709564",
+          "id": "13d3675d-e11d-4737-9594-82b3019c400b",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -630,7 +630,7 @@
           "children": []
         },
         {
-          "id": "65029b83-424f-4312-bc89-c1e418ccdd9c",
+          "id": "bc65e8ae-619a-4c3a-bb3e-2590e1c6dc86",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -649,7 +649,7 @@
           "children": []
         },
         {
-          "id": "e8b7115d-1318-4227-b000-d1ddb78598b8",
+          "id": "c5896497-3dd0-4a24-b529-38b1ec389363",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -666,7 +666,7 @@
           "children": []
         },
         {
-          "id": "6c4c25fe-554e-4bc2-82df-12c38eebdeeb",
+          "id": "f17a7c92-aec5-47e6-b318-8035f1144c4a",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -1070,7 +1070,7 @@
           "children": []
         },
         {
-          "id": "ae27981b-e3d8-458a-81f0-c550801c6a22",
+          "id": "c94255dc-234f-4967-9bed-3813eb8b6c6a",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1089,7 +1089,7 @@
           "children": []
         },
         {
-          "id": "1a309317-501b-46a7-a02d-87e3faaec515",
+          "id": "c59b2374-37be-4ab8-9c15-7adb6476ea19",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1106,7 +1106,7 @@
           "children": []
         },
         {
-          "id": "190e5690-3aef-4afb-b8de-11ec907771f0",
+          "id": "cc52200f-dfe7-47a4-908c-c801a31ba1ae",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -1290,7 +1290,7 @@
           "children": []
         },
         {
-          "id": "6eff2b73-4c48-4335-869e-e44fe0e9d7a0",
+          "id": "28f053df-da5e-48b6-918c-1ca52bdcaa81",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1309,7 +1309,7 @@
           "children": []
         },
         {
-          "id": "3ceebaf2-6596-43d7-af75-3fb27110c815",
+          "id": "218d6332-aa9e-4c73-886c-dde68dd8b595",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1326,7 +1326,7 @@
           "children": []
         },
         {
-          "id": "646c95d2-4b12-4edd-b435-8a9cb5fd095e",
+          "id": "856be472-f18d-4304-b197-98bac862b224",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1345,7 +1345,7 @@
           "children": []
         },
         {
-          "id": "a2d8301b-d8a4-4af8-a429-3edd26b591c0",
+          "id": "8f6dba2e-84e3-44ff-99ec-8c9371bed029",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1362,7 +1362,7 @@
           "children": []
         },
         {
-          "id": "6b267057-dd30-41f4-af8a-3c2050831e4d",
+          "id": "cd94cb2f-c3eb-4a40-be51-1ed9f5e8ea62",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -1876,7 +1876,7 @@
           "children": []
         },
         {
-          "id": "90ae52e3-d825-478a-972f-aed736dd0a4e",
+          "id": "416f328a-6991-406a-a514-d150d4a18f98",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1895,7 +1895,7 @@
           "children": []
         },
         {
-          "id": "c9599df1-a06e-4138-99e0-d2b350c5bc0f",
+          "id": "f3a2cea3-a2e1-4fa5-ae0e-eeea7366bc57",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1912,7 +1912,7 @@
           "children": []
         },
         {
-          "id": "3d416409-7f26-4cad-a89f-868f3854e534",
+          "id": "09081020-6e8b-4fd1-ab5a-64b12daef119",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -2556,7 +2556,7 @@
           "children": []
         },
         {
-          "id": "227805a5-12be-4573-9427-1789d6c73c98",
+          "id": "35428c00-74dd-48f6-bad8-ab90c6471dd4",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -2575,7 +2575,7 @@
           "children": []
         },
         {
-          "id": "bb802114-1b75-460b-b0cb-73aecea6b1cf",
+          "id": "3f26d8ba-bc3b-4a8d-9b6e-2e58688421f7",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -2592,7 +2592,7 @@
           "children": []
         },
         {
-          "id": "44248f51-8bfd-4da6-856c-bd4ea3eab238",
+          "id": "794ef607-657d-4593-9583-12185aa0dd6a",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -2611,7 +2611,7 @@
           "children": []
         },
         {
-          "id": "8d72681a-66cb-4ed3-923b-4eba8b869448",
+          "id": "f04a1daa-b592-4de6-a78e-223160e20159",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -2628,7 +2628,373 @@
           "children": []
         },
         {
-          "id": "73db13cf-20c5-43e6-a2fe-5184fb2edf4d",
+          "id": "a164110d-2980-4953-9019-05125cebd9c9",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Experiment 1 — Deterministic Baseline",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "ac3cfde1-2c68-4b8d-9850-18569ebe9527",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Begin with a fixed recipe that assembles real ChatInput, Agent, and ChatOutput definitions into a JSON graph for a bounded three-point summarization task. The assembly procedure is deterministic; model-generated answers may vary. This tests the assembly and evaluation pipeline, not autonomous discovery, a novel composition algorithm, or superiority over other methods.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "03c25794-80a8-488d-9af7-100f1ee57e99",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Multi-agent Experiment Responsibilities",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "4cf6c894-048f-46e7-a3a2-2f19b0ceb770",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Separate construction, execution, and judgment. Use the same source definitions, task fixtures, configuration, and evidence record across workers. The coordinator reconciles reports and records unresolved disagreements; consensus does not replace test evidence.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "638474a3-1e1c-48ee-a2b8-942441594771",
+          "type": "table",
+          "props": {
+            "textColor": "default"
+          },
+          "content": {
+            "type": "tableContent",
+            "columnWidths": [
+              null,
+              null,
+              null
+            ],
+            "headerRows": 1,
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Role",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Responsibility",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Required handoff",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Assembly worker",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Produce fixed-recipe JSON and compatibility checks.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Assembly artifact, tests, versions, and limitations.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Evaluation worker",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Execute bounded isolated cases and retain raw evidence.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Inputs, outputs, configuration, checks, and failures.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Independent reviewer",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Assess grounding, coverage, uncertainty, and experimental validity.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Evidence-backed judgments separate from generator claims.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Coordinator",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Check consistency and integrate the record.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "A report separating passed, failed, and unresolved checks.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "children": []
+        },
+        {
+          "id": "32312ce8-8cdf-4512-850a-bcefcd6d5da8",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -2647,7 +3013,7 @@
           "children": []
         },
         {
-          "id": "1faeacfe-9593-451b-b171-f31164f3d125",
+          "id": "764a7294-3e52-4bf1-a2ac-647d8298fcfa",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -2664,7 +3030,7 @@
           "children": []
         },
         {
-          "id": "15666c9c-b573-4d95-a6b3-01d537d78b88",
+          "id": "e48453c2-f18c-4743-8144-7772f78ba908",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -2683,7 +3049,7 @@
           "children": []
         },
         {
-          "id": "22108bfb-d60d-4809-a17c-bd669c5e9905",
+          "id": "f50e1e95-cf53-4476-8493-fe5d52cfc7d7",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -2700,7 +3066,7 @@
           "children": []
         },
         {
-          "id": "d0f7498f-aec1-4e1d-a87c-3208f9b205ed",
+          "id": "de5d5042-002b-44a5-9a10-d454e16439f9",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -2719,7 +3085,7 @@
           "children": []
         },
         {
-          "id": "e527ae64-ef77-482d-b6ba-357c0d93e147",
+          "id": "92e5d18e-cde8-451c-80f8-5bad8a45a2f1",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -2736,7 +3102,7 @@
           "children": []
         },
         {
-          "id": "a67eeaf0-4291-40aa-b551-8021e9073b78",
+          "id": "30bd7915-4be8-44e3-9b47-5576b8d16f3c",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -2755,7 +3121,7 @@
           "children": []
         },
         {
-          "id": "9a179275-046f-478c-b270-02a65b7b76cd",
+          "id": "49ec766d-eb18-42bd-85fe-8761d05b37af",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -2772,7 +3138,7 @@
           "children": []
         },
         {
-          "id": "83323f28-4fc9-4776-b156-0063f8048edb",
+          "id": "c6f09108-ca1a-4747-9964-15442ef6bfe4",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -2791,7 +3157,7 @@
           "children": []
         },
         {
-          "id": "ed9edf0d-d2c4-44a5-8e26-39d7404e8827",
+          "id": "75d49949-0dec-4240-86d1-97698ed28276",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -2808,7 +3174,7 @@
           "children": []
         },
         {
-          "id": "d8ff7bdf-3cd7-4d83-b08c-76214ae3f5fc",
+          "id": "c9d4b060-2811-488d-82cb-8c5282e0db23",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -2827,7 +3193,7 @@
           "children": []
         },
         {
-          "id": "ac2f2bfd-504f-495f-a936-50b68cb5ef8e",
+          "id": "68fc5176-0800-4190-8c2b-142a0a8b37a3",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -2844,7 +3210,7 @@
           "children": []
         },
         {
-          "id": "6a4bc031-e0d8-4831-87b7-4c3a4bcf7599",
+          "id": "6d42088b-aa0e-41b0-8f01-8472d552eaa7",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -2863,7 +3229,7 @@
           "children": []
         },
         {
-          "id": "2f86b9ba-9216-4396-8747-69fc6fc8f526",
+          "id": "99326c4b-18da-4eaf-8cb3-c0473986cb41",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -2880,7 +3246,7 @@
           "children": []
         },
         {
-          "id": "015502b2-2337-4ed6-80bd-328b555b4bfa",
+          "id": "7d0b4b4f-11d4-45f9-beed-2c933d3b2a3c",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -2899,7 +3265,7 @@
           "children": []
         },
         {
-          "id": "e585adb6-c10d-47ab-b426-dbe9a1f61b75",
+          "id": "e758f788-f139-47b5-aa53-873586582829",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -2917,7 +3283,7 @@
         }
       ],
       "createdAt": "2026-10-28T20:51:16.542Z",
-      "updatedAt": "2026-10-28T20:59:10.513Z"
+      "updatedAt": "2026-10-28T21:01:39.699Z"
     }
   ]
 }
