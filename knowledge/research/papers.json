@@ -29,7 +29,7 @@
           "children": []
         },
         {
-          "id": "e13bcae0-0ec0-470f-8892-a33065650525",
+          "id": "e6b70d97-6a6b-42bd-8ae4-245dec4d1670",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -46,7 +46,7 @@
           "children": []
         },
         {
-          "id": "1f2b7410-774a-4e75-97d6-f18a88037b7b",
+          "id": "f2bee90c-311b-4f35-9f5b-054f104d47cc",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -65,7 +65,7 @@
           "children": []
         },
         {
-          "id": "6656aa44-d81a-4e39-b55b-fe1019f17ac7",
+          "id": "01e1786f-51ac-478c-b2c7-1934f32fcd28",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -82,7 +82,7 @@
           "children": []
         },
         {
-          "id": "caf3dd77-4a76-4078-97df-c568465ef35e",
+          "id": "0642bb20-bd51-4422-8150-79ae83561a3f",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -101,7 +101,7 @@
           "children": []
         },
         {
-          "id": "29bda37d-49ab-4a44-9bbc-632e9cf19fe5",
+          "id": "dda43ddd-c907-453b-8e2b-f82e8416f8f4",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -118,7 +118,7 @@
           "children": []
         },
         {
-          "id": "356f845a-289d-4e7d-8549-ac64761aeac5",
+          "id": "c7c84723-8259-452d-b3ba-ba615368abfd",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -137,7 +137,7 @@
           "children": []
         },
         {
-          "id": "e9bab237-234f-4908-b96b-206c9f8e1568",
+          "id": "3121d010-1803-4a4e-ac2e-f9696568349d",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -154,7 +154,7 @@
           "children": []
         },
         {
-          "id": "3d7d3c52-114f-43ce-8ea1-ca85f6151360",
+          "id": "1c64a4f5-2499-414d-af37-2c7835473d6f",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -173,7 +173,7 @@
           "children": []
         },
         {
-          "id": "cacf5880-2bdb-411b-8594-0f7dbd6a7ff0",
+          "id": "685b4dc4-9de1-416a-80e8-7487cf5d586b",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -190,7 +190,7 @@
           "children": []
         },
         {
-          "id": "8cb9f41f-e9cc-495c-be45-4dbdd49168c5",
+          "id": "cdd97306-c68c-4f6c-b3bd-774224bb6684",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -209,7 +209,7 @@
           "children": []
         },
         {
-          "id": "20edaebe-6e14-461b-8aab-f6cc46c9d00d",
+          "id": "b12482ab-8e79-4146-b60c-e7f8e2d1c095",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -219,14 +219,435 @@
           "content": [
             {
               "type": "text",
-              "text": "Working schema for investigation, not yet an accepted standard: (1) Capability: what the component does, its intended behavior, and limits. (2) Inputs: accepted fields, data types, and preconditions. (3) Outputs: produced fields, data types, and guarantees. (4) Configuration: adjustable parameters, defaults, and constraints. (5) Dependencies: required models, tools, storage, credentials or resource bindings, and versions; reference secrets without embedding them. (6) Validation Evidence: the tests, observed results, provenance, and component version supporting claims that it works. Unknowns remain explicit. Interface compatibility is necessary but does not establish that the combined behavior satisfies the intent.",
+              "text": "Working schema for investigation, not yet an accepted standard.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "14a8a894-bceb-4059-a59c-e2921a60cca9",
+          "id": "dc4ae2ab-a594-4c81-ac29-06b75cdbbfbd",
+          "type": "table",
+          "props": {
+            "textColor": "default"
+          },
+          "content": {
+            "type": "tableContent",
+            "columnWidths": [
+              null,
+              null,
+              null
+            ],
+            "headerRows": 1,
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Field",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "What it records",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Why assembly needs it",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Capability",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Intended behavior, purpose, and limits.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Determine whether the piece addresses a requirement.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Inputs",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Accepted fields, data types, and preconditions.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Check what can feed into this piece.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Outputs",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Produced fields, data types, and guarantees.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Check what this piece can supply to others.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Configuration",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Parameters, defaults, and constraints.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Configure the piece for this particular instance.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Dependencies",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Required models, tools, storage, resource bindings, and versions. Reference credentials; never embed secrets.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Determine what must be available before the piece can work.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Validation Evidence",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Tests, observed results, provenance, and the version tested.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Distinguish demonstrated behavior from assumptions.",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "children": []
+        },
+        {
+          "id": "1ee355ef-62e0-46d3-b5dd-d583b1f759a8",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Unknowns remain explicit. Interface compatibility is necessary but does not establish that the combined behavior satisfies the intent.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "42c048bf-8407-4fb5-a3af-357b93f54a10",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -245,7 +666,7 @@
           "children": []
         },
         {
-          "id": "8f0dccbd-a13c-4f4e-a442-f7b4171b489d",
+          "id": "8d375e33-cec9-476d-80ea-253198cc331c",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -262,7 +683,7 @@
           "children": []
         },
         {
-          "id": "eaa4547e-7ce2-4af0-ae07-72134a3bfebf",
+          "id": "9c5d2d0f-058a-4785-aef0-2df30bf70162",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -281,7 +702,7 @@
           "children": []
         },
         {
-          "id": "c999bd2d-aa64-4f88-8ce4-37f53f1da003",
+          "id": "491a2bec-02c1-4335-b807-f33b7ef0a7fb",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -298,7 +719,7 @@
           "children": []
         },
         {
-          "id": "ad2ee033-8758-440a-af4e-14cf560431a2",
+          "id": "4c975c4c-558a-4206-aab2-eeceed93b063",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -317,7 +738,7 @@
           "children": []
         },
         {
-          "id": "5f39cea8-8248-4d3a-907d-e40ec421df9d",
+          "id": "6bcaf595-b0d0-492d-8881-2c2dba28b567",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -334,7 +755,7 @@
           "children": []
         },
         {
-          "id": "ce0b679a-cd1d-4ffb-832b-e68d4e2d2188",
+          "id": "de4debe3-9138-4664-83c9-f2f56c28ec6b",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -353,7 +774,7 @@
           "children": []
         },
         {
-          "id": "ee0b38fb-bed5-4783-94b2-e775d203c96f",
+          "id": "c8c2ed44-5d05-41eb-b35b-f02a0575a2dc",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -370,7 +791,7 @@
           "children": []
         },
         {
-          "id": "5b09cbaf-05b0-41ee-a8a2-e79efb5b5a3a",
+          "id": "8ca4e253-60f6-440e-b0b7-09955e6cedd5",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -389,7 +810,7 @@
           "children": []
         },
         {
-          "id": "1a16f243-0864-4d6d-9734-c3c2b631dadf",
+          "id": "d40fa36f-1e51-4bf4-89e5-bb237cf5e691",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -406,7 +827,7 @@
           "children": []
         },
         {
-          "id": "b02c3422-048b-4e63-8426-31bccb97e49c",
+          "id": "e1748d3f-dc65-468c-9ec8-1dae16f735f0",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -425,7 +846,7 @@
           "children": []
         },
         {
-          "id": "7d736aae-89a0-4dac-b32f-034c1502cfdc",
+          "id": "ef0b144e-67c1-4852-821d-fabf40d89d2b",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -442,7 +863,7 @@
           "children": []
         },
         {
-          "id": "bcf5908b-5c50-481c-b7ae-9e3d1644a3c5",
+          "id": "bdbc4ba5-7509-43ad-b1f1-ba0b1fc32cc9",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -461,7 +882,7 @@
           "children": []
         },
         {
-          "id": "b7123004-f3a8-4c4a-9f47-6ebe93ddca2a",
+          "id": "f19b165b-f895-4aaa-a167-a3f6f9657ded",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -478,7 +899,7 @@
           "children": []
         },
         {
-          "id": "f6f294d4-7087-4c9e-85ec-48b380bdcdba",
+          "id": "f9573ec7-dcb2-485a-9dd5-bfef656478f4",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -497,7 +918,7 @@
           "children": []
         },
         {
-          "id": "9040b6d2-0417-4c80-ac4c-70727d307ff4",
+          "id": "3b5f428c-0e6d-42fc-8d2c-e53d694cc7e8",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -514,7 +935,7 @@
           "children": []
         },
         {
-          "id": "2ca85d3f-9be3-4b08-93a5-5726894b4c96",
+          "id": "db52e222-15f6-46f0-8e3f-1dda1a051230",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -533,7 +954,7 @@
           "children": []
         },
         {
-          "id": "725138b2-0f7c-4b41-a952-9213810ea7b3",
+          "id": "15b7c83f-3def-4d24-8e9e-d7c66595dfb8",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -551,7 +972,7 @@
         }
       ],
       "createdAt": "2026-10-28T20:51:16.542Z",
-      "updatedAt": "2026-10-28T20:54:40.852Z"
+      "updatedAt": "2026-10-28T20:55:42.615Z"
     }
   ]
 }
