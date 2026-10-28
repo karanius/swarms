@@ -1,0 +1,125 @@
+{
+  "session_id": "research-composition-16d7518f285544548ad4a68d1cc48a75",
+  "outputs": [
+    {
+      "inputs": {
+        "input_value": "The Arbor pilot enrolled 18 volunteers. It ran for six weeks. Its final report was published in May 2025."
+      },
+      "outputs": [
+        {
+          "results": {
+            "message": {
+              "text_key": "text",
+              "data": {
+                "timestamp": "2026-10-28 21:02:09.440093 UTC",
+                "sender": "Machine",
+                "sender_name": "AI",
+                "session_id": "research-composition-16d7518f285544548ad4a68d1cc48a75",
+                "context_id": "research-composition-16d7518f285544548ad4a68d1cc48a75",
+                "text": "- The Arbor pilot enrolled 18 volunteers.\n- The pilot ran for six weeks.\n- Its final report was published in May 2025.",
+                "files": [],
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": null,
+                  "background_color": null,
+                  "edited": false,
+                  "source": {
+                    "id": null,
+                    "display_name": null,
+                    "source": null
+                  },
+                  "icon": "Bot",
+                  "allow_markdown": false,
+                  "positive_feedback": null,
+                  "state": "complete",
+                  "targets": [],
+                  "usage": null,
+                  "build_duration": null
+                },
+                "category": "message",
+                "content_blocks": [],
+                "session_metadata": {
+                  "graph_run_id": "cf8678d2-6886-4121-9714-3768698312a7"
+                },
+                "id": "79bb2d5f-403b-4fa3-b622-c6a93e8a0780",
+                "flow_id": "89428b52-8772-41e6-af69-be2f2d1d3510",
+                "run_id": "cf8678d2-6886-4121-9714-3768698312a7",
+                "duration": null
+              },
+              "default_value": "",
+              "sender": "Machine",
+              "sender_name": "AI",
+              "files": [],
+              "session_id": "research-composition-16d7518f285544548ad4a68d1cc48a75",
+              "context_id": "research-composition-16d7518f285544548ad4a68d1cc48a75",
+              "run_id": "cf8678d2-6886-4121-9714-3768698312a7",
+              "timestamp": "2026-10-28 21:02:09.440093 UTC",
+              "flow_id": "89428b52-8772-41e6-af69-be2f2d1d3510",
+              "error": false,
+              "edit": false,
+              "properties": {
+                "text_color": null,
+                "background_color": null,
+                "edited": false,
+                "source": {
+                  "id": "Agent-baseline-2",
+                  "display_name": "Agent",
+                  "source": "gpt-6.1-sol"
+                },
+                "icon": "Bot",
+                "allow_markdown": false,
+                "positive_feedback": null,
+                "state": "complete",
+                "targets": [],
+                "usage": null,
+                "build_duration": null
+              },
+              "category": "message",
+              "content_blocks": [],
+              "duration": null,
+              "session_metadata": {
+                "graph_run_id": "cf8678d2-6886-4121-9714-3768698312a7"
+              },
+              "text": "- The Arbor pilot enrolled 18 volunteers.\n- The pilot ran for six weeks.\n- Its final report was published in May 2025."
+            }
+          },
+          "artifacts": {
+            "message": "- The Arbor pilot enrolled 18 volunteers.\n\n- The pilot ran for six weeks.\n\n- Its final report was published in May 2025.",
+            "sender": "Machine",
+            "sender_name": "AI",
+            "files": [],
+            "type": "object"
+          },
+          "outputs": {
+            "message": {
+              "message": "- The Arbor pilot enrolled 18 volunteers.\n- The pilot ran for six weeks.\n- Its final report was published in May 2025.",
+              "type": "text"
+            }
+          },
+          "logs": {
+            "message": []
+          },
+          "messages": [
+            {
+              "message": "- The Arbor pilot enrolled 18 volunteers.\n\n- The pilot ran for six weeks.\n\n- Its final report was published in May 2025.",
+              "sender": "Machine",
+              "sender_name": "AI",
+              "session_id": "research-composition-16d7518f285544548ad4a68d1cc48a75",
+              "stream_url": null,
+              "component_id": "ChatOutput-baseline-3",
+              "files": [],
+              "type": "text"
+            }
+          ],
+          "timedelta": null,
+          "duration": null,
+          "component_display_name": "Chat Output",
+          "component_id": "ChatOutput-baseline-3",
+          "used_frozen_result": false,
+          "token_usage": null
+        }
+      ]
+    }
+  ]
+}

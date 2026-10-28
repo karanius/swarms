@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "independent AI-agent source-grounding review",
+  "evidenceFiles": {
+    "artifact.json": "8023e330d0e28c969b6235ead6d4762917859a7524fc11de6b63ceee8d130794",
+    "manifest.json": "cb46233b07919aacecb90c39342582dab1a113e6e0a0fd5e7043581575f2b844",
+    "results.json": "d0f62ce63a2ab5de5878ad9d52ef8b351dfd4413f32265d3aeb51ae8e4b88a43"
+  },
+  "cases": [
+    {
+      "case": "basic",
+      "format": true,
+      "semantics": "pass within authored fixture",
+      "hostGuard": "not applicable"
+    },
+    {
+      "case": "contradiction",
+      "format": true,
+      "semantics": "pass within authored fixture",
+      "hostGuard": "not applicable"
+    },
+    {
+      "case": "quoted-directions",
+      "format": true,
+      "semantics": "pass within authored fixture",
+      "hostGuard": "not applicable"
+    },
+    {
+      "case": "fresh-after-quoted",
+      "format": true,
+      "semantics": "pass within authored fixture",
+      "hostGuard": "not applicable"
+    },
+    {
+      "case": "basic-repeat",
+      "format": true,
+      "semantics": "pass within authored fixture",
+      "hostGuard": "not applicable"
+    },
+    {
+      "case": "empty-input",
+      "format": null,
+      "semantics": "not assessed: native runtime not called",
+      "hostGuard": "passed"
+    },
+    {
+      "case": "missing-model-binding",
+      "format": null,
+      "semantics": "not assessed: native runtime not called",
+      "hostGuard": "passed"
+    }
+  ],
+  "summary": {
+    "executedCases": 5,
+    "distinctSources": 4,
+    "semanticPasses": 5,
+    "hostGuardPasses": 2,
+    "runtimeFailures": 0,
+    "totalRecordedRequestSeconds": 15.01
+  },
+  "limitations": [
+    "Fixed recipe supplied graph structure; no discovery algorithm was tested.",
+    "Four distinct short sources and one repeat test fact preservation, not substantive long-source compression.",
+    "Quoted directions case was explicitly labeled as data; no broad injection-resistance claim.",
+    "One successor case showed no observed cross-case leakage; no general isolation, retention, or deletion proof.",
+    "Nonempty insufficient-source behavior remains untested.",
+    "Empty and missing-model failures were blocked by the evaluator, not tested natively.",
+    "Model identity is a provider alias, not a pinned immutable model version.",
+    "Langflow-level call limit does not measure proxy or provider internal retries.",
+    "Semantic judgments are independent agent assessments, not formal proofs or blinded human ratings."
+  ]
+}

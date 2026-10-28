@@ -1,0 +1,35 @@
+{
+  "run_id": "20261028T210157Z-3490a2d8",
+  "created_at_utc": "2026-10-28T21:02:13.477688+00:00",
+  "flow_id": "89428b52-8772-41e6-af69-be2f2d1d3510",
+  "flow_name": "Research composition baseline 20261028T210157Z-3490a2d8",
+  "method": "fixed-recipe baseline, not general composition",
+  "runtime_route": "/api/v1/run/session/{flow_id}",
+  "route_source": "/Users/x/projects/langflow/src/backend/base/langflow/api/v1/endpoints.py:1268",
+  "route_note": "Session-auth sibling of /api/v1/run/{flow_id}; both delegate _run_flow_internal.",
+  "model_calls_upper_bound": 5,
+  "run_requests": 5,
+  "per_request_timeout_seconds": 40,
+  "artifact_sha256": "c138f72e2ad93ffa8819d432ee738c9579f0a92a3fc0752a7cf5b7a0b5792049",
+  "catalog_sha256": "5761b5116eef53afbd7719e5f4c832c94a86a9bb306c568d2da1fba728fca729",
+  "flow_config_sha256": "feb04b4534a395c5687d75e6bae2d6aee2c05a8809c3fa425aecb336895d7a2f",
+  "model": {
+    "provider": "OpenAI Compatible",
+    "name": "gpt-6.1-sol"
+  },
+  "model_version": "provider alias only; upstream immutable version unavailable",
+  "sessions_unique": true,
+  "semantic_assessment": "pending independent review",
+  "retention_note": "should_store_message false where supported; no claim of global retention elimination; history set to zero.",
+  "known_limitations": [
+    "No native invalid-input or missing-model execution attempted",
+    "Five authored fixtures do not establish general isolation or composition correctness",
+    "Proxy-internal retry behavior not measured"
+  ],
+  "credential_scan": "passed: no configured nonempty secret values found in recorded files",
+  "evaluator_sha256": "f614187e48b9615ae70b3c3439f9d916496300b6e90118c2ed33a1b837bfdc68",
+  "session_ids_returned_match_requested": true,
+  "format_pass_count": 5,
+  "host_precondition_block_count": 2,
+  "total_native_request_duration_seconds": 15.01
+}
