@@ -29,7 +29,7 @@
           "children": []
         },
         {
-          "id": "00866905-3ae6-47b2-9222-751ca8187650",
+          "id": "8118879c-7399-47f3-af68-1d93dd8d5b16",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -39,14 +39,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Research programme in specification generation. We aim to formalize how structured component descriptions and composition rules can iteratively write an intent-specific, multilayer instance as JSON. Current work is theoretical and editorial. Historical fixed-recipe experiment results are retained separately below; they do not establish the desired generation algorithm.",
+              "text": "This conceptual paper defines a descriptive framework for generating an intent-specific instance specification from versioned library items. It separates an item description from the rule that operates on descriptions, and separates horizontal assembly from vertical representation. Rules propose typed arrangements, preserve member identities and interface mappings, and carry unresolved requirements forward explicitly. The intended product is a multilayer JSON specification, not a running system. We define the representation, rule judgments, and obligations that a future generator must respect; we do not claim a general synthesis algorithm, behavioral correctness, or empirical superiority.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "92455856-7809-4688-a414-9748539418fd",
+          "id": "0d706385-f997-4105-8879-084604bda536",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -58,14 +58,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Current Research Scope — Specification Generation",
+              "text": "1. Introduction and Scope",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "3f73e047-0377-4e7b-9bd5-d54989f3bcd7",
+          "id": "4b9728ab-5b0c-4f47-bd88-649b391889fa",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -75,14 +75,14 @@
           "content": [
             {
               "type": "text",
-              "text": "The current goal is to define the mathematical objects, admissibility rules, and iterative procedure that write an intent-specific instance specification across the layers it requires. Output is structured JSON, with explicit gaps and validation obligations. No new model, tool, or workflow execution is part of this design stage. Earlier experiment records are retained as historical preliminary evidence, not as the current next action.",
+              "text": "An instance is a purposeful vertical slice of a layered library: it selects, configures, and connects only the pieces needed for a stated intent. At day zero, executable components may already exist while higher-layer items do not. The research question is how structured descriptions and explicit rules can write the missing assemblies without inventing unsupported capabilities. This first paper establishes the vocabulary and rule semantics. Candidate search and layer-specific policies are reserved for Paper 2. Runtime implementation and evaluation are later work.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "f23f881a-1afc-408a-8a06-39998ae5f0a1",
+          "id": "42df893f-c6e3-4e12-b2f3-50949c884123",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -94,14 +94,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Introduction and Research Question",
+              "text": "2. Context and Related Foundations",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "a8b15b85-2222-4f1b-840e-2237bf2be38f",
+          "id": "c5630b71-4c13-43fa-8972-ee919e819778",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -111,14 +111,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Which algorithm or combination of methods can most effectively use component capabilities, interfaces, dependencies, and constraints to iteratively produce viable composites and higher-layer assemblies until an instance satisfies its intent? Candidate approaches are not restricted to System 1 or System 2: deterministic algorithms, neural models, language-model reasoning, and hybrid methods are all in scope. The genetic makeup metaphor refers provisionally to the structured description of each component; its precise definition remains open.",
+              "text": "Langflow documents inputs and outputs as configurations governing component data flow, editor fields, ports, and connection validation [1]. This provides concrete interface facts, but does not establish a general algorithm for satisfying arbitrary intents across our library layers. JSON Schema specifies structural assertions over JSON documents [2,3]; passing those assertions does not by itself establish the meaning or correctness of a generated system. We use these sources as implementation context, not as evidence that the proposed framework works. This is a selective conceptual grounding, not a systematic literature review or a claim of novelty.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "dcaaa1d3-5007-45f9-ae55-295f44321f4b",
+          "id": "f07d188b-09a5-461d-a423-dc14cf2fa41b",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -130,14 +130,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Background and Related Work",
+              "text": "3. Component Descriptions: The Genetic Makeup Metaphor",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "2db3ce85-ef06-403e-8886-099053895a1e",
+          "id": "b1811cff-d902-4a42-8823-0f1f360e7d09",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -147,122 +147,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Not researched yet.",
+              "text": "For this paper, genetic makeup is a metaphor for a structured description, not a biological or learning mechanism. Write d = (k, ℓ, C, I, O, Θ, D, E). Here k is a stable definition identity plus version; ℓ is its library layer; C describes capability and limits; I and O describe ports and conditions; Θ is the configurable parameter space; D lists dependencies; E records evidence and its scope. Identity and layer are metadata around the six descriptive fields below. Natural-language descriptions may be retained, but a future generator must distinguish explicit machine-checkable constraints from uninterpreted claims.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "d854991f-ec46-4c64-9265-82b710aded13",
-          "type": "heading",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left",
-            "level": 2,
-            "isToggleable": false
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Provisional Hypotheses and Predictions",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "a64c2c19-9d29-4810-9fb0-29a0ca3eb4b6",
-          "type": "paragraph",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left"
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "No method is selected yet. Candidate hypotheses: deterministic composition may perform well where rules and interfaces are complete; learned candidate selection may reduce search effort; model-based reasoning may help with ambiguous requirements or novel combinations; hybrid methods may combine these advantages. Each claim requires comparative evidence and may be rejected.",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "79bec03b-1517-421d-b6b6-5c19e5072475",
-          "type": "heading",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left",
-            "level": 2,
-            "isToggleable": false
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Assumptions and Alternative Explanations",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "85a49a36-ecc0-4a19-b4de-f0654dea8c20",
-          "type": "paragraph",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left"
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Open assumptions: component descriptions contain enough information to judge useful combinations; local compatibility can be supplemented by assembly-level behavior checks; repeated composition improves requirement coverage rather than merely adding layers. Compare against predefined recipes and unguided composition.",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "c56ae96c-8da5-4248-8884-776efb627f42",
-          "type": "heading",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left",
-            "level": 2,
-            "isToggleable": false
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Proposed Component Description — Genetic Makeup",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "d6dffa53-c137-495d-8972-7455c5009b67",
-          "type": "paragraph",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left"
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Working six-field schema for investigation. Unknowns remain explicit.",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "edda65fd-104a-4897-84d6-31c44dc7a25d",
+          "id": "92b16351-a72b-4b9e-86bc-167ccde7d597",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -270,7 +162,6 @@
           "content": {
             "type": "tableContent",
             "columnWidths": [
-              null,
               null,
               null
             ],
@@ -300,24 +191,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "What it records",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Why assembly needs it",
+                        "text": "Required description",
                         "styles": {}
                       }
                     ],
@@ -338,7 +212,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Capability",
+                        "text": "C — Capability",
                         "styles": {}
                       }
                     ],
@@ -355,24 +229,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Intended behavior, purpose, and limits.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Determine whether the piece addresses a requirement.",
+                        "text": "Purpose, intended behavior, limits, and any formal claim or natural-language qualification.",
                         "styles": {}
                       }
                     ],
@@ -393,7 +250,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Inputs",
+                        "text": "I — Inputs",
                         "styles": {}
                       }
                     ],
@@ -410,24 +267,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Accepted fields, data types, and preconditions.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Check what can feed into this piece.",
+                        "text": "Named ports, accepted types, preconditions, required or optional status.",
                         "styles": {}
                       }
                     ],
@@ -448,7 +288,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Outputs",
+                        "text": "O — Outputs",
                         "styles": {}
                       }
                     ],
@@ -465,24 +305,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Produced fields, data types, and guarantees.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Check what this piece can supply to others.",
+                        "text": "Named ports, produced types, postconditions, and the status of guarantees.",
                         "styles": {}
                       }
                     ],
@@ -503,7 +326,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Configuration",
+                        "text": "Θ — Configuration",
                         "styles": {}
                       }
                     ],
@@ -520,24 +343,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Parameters, defaults, and constraints.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Configure the piece for this particular instance.",
+                        "text": "Declared parameters, permitted values, defaults, and cross-parameter constraints.",
                         "styles": {}
                       }
                     ],
@@ -558,7 +364,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Dependencies",
+                        "text": "D — Dependencies",
                         "styles": {}
                       }
                     ],
@@ -575,24 +381,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Required models, tools, storage, resource bindings, and versions. Reference credentials; never embed secrets.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Determine what must be available before the piece can work.",
+                        "text": "Versioned item and resource references, transitive prerequisites, and unresolved bindings.",
                         "styles": {}
                       }
                     ],
@@ -613,7 +402,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Validation Evidence",
+                        "text": "E — Evidence",
                         "styles": {}
                       }
                     ],
@@ -630,24 +419,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Tests, observed results, provenance, and the version tested.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Distinguish demonstrated behavior from assumptions.",
+                        "text": "Claim, tested or analyzed version, method, result, provenance, and applicable scope.",
                         "styles": {}
                       }
                     ],
@@ -666,7 +438,7 @@
           "children": []
         },
         {
-          "id": "9ea71900-b881-466a-b644-75da7822c75d",
+          "id": "e1ccac3f-e79b-4040-ae33-1b17b8fdd7a3",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -678,14 +450,14 @@
           "content": [
             {
               "type": "text",
-              "text": "How Component Descriptions Feed Generation Rules",
+              "text": "4. Library Definitions, Instance References, and Layer Graphs",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "33a2229d-8998-4ce6-bb5d-4da40ccfa151",
+          "id": "1c533e98-4497-4f03-82ea-69f024ee3dd8",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -695,14 +467,86 @@
           "content": [
             {
               "type": "text",
-              "text": "Working formulation: a component description is an operand; a generation rule is an operator. The rule proposes an assembly from selected operands, subject to explicit compatibility and intent constraints, then describes the result as an item on a higher plane. The six fields are information supplied to the rule, not the rule itself. Composition must derive the resulting behavior; it cannot simply assume that capabilities combine without interference. A higher item needs layer-specific meaning and requirements, not merely a higher label.",
+              "text": "Let Lᵥ be a versioned library snapshot, and Λ the ordered set of library layers. An instance node is an occurrence with its own identity, a reference to a definition version, and a configuration binding. Two occurrences may reference the same definition without being the same instance. Each relevant layer has a typed attributed graph Gℓ = (Vℓ, Eℓ). Higher-layer nodes reference the same lower-level occurrence identities they represent; they do not silently duplicate them. A membership relation records this vertical representation. A layer may be empty or marked unnecessary with a reason. No rule requires filling every layer merely because the layer exists.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "3f98e719-4b1b-49e4-88d6-865f69273d51",
+          "id": "f80e6622-0f5c-4c4b-8a10-d651ec735c2e",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "5. Intent, Requirements, and the Generated Instance Document",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "bd7c03c1-c0dc-445b-855a-6a097c8577a9",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Intent is the initial statement of purpose; requirements refine it through discovery. Define the document J = (intent, R, {Gℓ}, P, B, U, T), where R is the current requirement set, P maps higher items to lower members and interfaces, B contains configuration and resource references, U contains unresolved gaps, and T records versions, decisions, and supporting judgments. Requirements have identity, scope, mandatory or optional status, and acceptance criteria. Configuration references below Components remain part of the description: model access, storage, tools, and credentials may be required for later activation, but no live authentication is needed merely to describe the intended binding. Secrets are referenced rather than embedded.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "b37a1ee7-4256-4198-b631-53aaf72c92eb",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "6. Generation Rules as Operators over Descriptions",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "c59049a6-8f8f-49b7-ba3e-449745c5ba38",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "A description supplies the operands; a rule supplies the transformation. A rule record r declares a target layer, an input pattern over selected occurrences, applicability conditions, a construction procedure, the output description, and obligations that remain to be established. Schematically, r(R, S, θ, W) proposes (H, d↑, M, U′): S is the selected set, θ its configuration, W the proposed wiring, H the horizontal assembly, d↑ its higher-layer description, M the membership and interface mapping, and U′ the resulting gaps. This notation specifies an interface for rules; it is not an implemented solver or a promise that a satisfying proposal exists.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "54c60e62-851d-4a78-9e98-d8b030eccbd9",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -710,7 +554,6 @@
           "content": {
             "type": "tableContent",
             "columnWidths": [
-              null,
               null,
               null
             ],
@@ -723,7 +566,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Description field",
+                        "text": "Rule field",
                         "styles": {}
                       }
                     ],
@@ -740,24 +583,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Rule uses it to…",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Generated specification",
+                        "text": "Declared meaning",
                         "styles": {}
                       }
                     ],
@@ -778,7 +604,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Capability",
+                        "text": "Input pattern",
                         "styles": {}
                       }
                     ],
@@ -795,24 +621,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Use stated behavior and limits to nominate candidates for a requirement.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "A candidate match with explicit assumptions; descriptive similarity is not proof.",
+                        "text": "Requirements and a selected set of versioned item occurrences.",
                         "styles": {}
                       }
                     ],
@@ -833,7 +642,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Inputs and outputs",
+                        "text": "Conditions",
                         "styles": {}
                       }
                     ],
@@ -850,24 +659,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Check boundary types and stated preconditions/postconditions. Internalize connections within a proposed assembly.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "A typed connection proposal; unresolved semantic compatibility becomes a gap.",
+                        "text": "Typed endpoints, semantic assumptions, valid configuration, dependency closure, and layer-specific constraints.",
                         "styles": {}
                       }
                     ],
@@ -888,7 +680,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Configuration",
+                        "text": "Construction",
                         "styles": {}
                       }
                     ],
@@ -905,24 +697,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Check required settings, allowed values, and cross-component constraints.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "A configuration assignment or unresolved constraint; no guessed hidden defaults.",
+                        "text": "A declared horizontal graph, configuration bindings, and external boundary mapping.",
                         "styles": {}
                       }
                     ],
@@ -943,7 +718,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Dependencies",
+                        "text": "Output",
                         "styles": {}
                       }
                     ],
@@ -960,24 +735,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Resolve versioned component and resource references, including dependencies introduced by composition.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "A dependency graph and required bindings; credentials remain references.",
+                        "text": "A proposed higher-layer description referencing the same member occurrences.",
                         "styles": {}
                       }
                     ],
@@ -998,7 +756,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Validation evidence",
+                        "text": "Residual obligations",
                         "styles": {}
                       }
                     ],
@@ -1015,24 +773,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Associate evidence with the exact component version and scope; separate inherited evidence from new assembly-level obligations.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "An evidence record and outstanding checks; unexecuted behavior stays unverified.",
+                        "text": "Unknown conditions, rejected alternatives, unresolved behavior claims, and required evidence.",
                         "styles": {}
                       }
                     ],
@@ -1053,7 +794,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Assembly description",
+                        "text": "Trace",
                         "styles": {}
                       }
                     ],
@@ -1070,24 +811,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Derive the proposed group’s external ports, behavior claim, configuration surface, dependencies, member references, and unresolved obligations.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "A new higher-layer description in the same general form, enabling another iteration.",
+                        "text": "Rule identity/version, sources, decision rationale, and affected requirements.",
                         "styles": {}
                       }
                     ],
@@ -1106,7 +830,7 @@
           "children": []
         },
         {
-          "id": "eb3db161-7aae-4acd-b5c3-024799a30f8b",
+          "id": "7ec0d294-a5e7-4f65-8a64-3d1cec8c5a72",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1118,14 +842,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Editorial Visual Plan",
+              "text": "7. Applicability Judgments: Met, Violated, or Unknown",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "22d94fc9-9cbc-4ef9-a902-f17cd95c1871",
+          "id": "816c3905-26cc-4b9d-b043-2d6520ce2c60",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1135,14 +859,14 @@
           "content": [
             {
               "type": "text",
-              "text": "[VISUAL PLACEHOLDER D1 — React Flow diagram: component-description fields entering a composition-rule node; candidate assembly and unresolved gaps leaving it.] [VISUAL PLACEHOLDER D2 — Layered structural illustration: one proposed composite above its same member identities, showing external boundaries and membership.] [VISUAL PLACEHOLDER D3 — Iteration diagram: requirement gap → candidate selection → constraint checking → assembly description → higher-layer projection → reassessment, with revision branches. These are editorial figure requirements; do not execute or render an algorithm yet.]",
+              "text": "A rule evaluates each relevant condition as met, violated, or unknown under stated evidence criteria. Met means the available description and evidence establish that particular condition. Violated means available information contradicts it. Unknown means the necessary information or justification is absent or insufficient. Unknown must not be coerced into met. A violated mandatory condition rejects that candidate unless an explicit alternative or adapter changes the proposal. An unknown design condition keeps the proposal conditional and records a gap. These judgments apply to types, semantics, configuration, dependencies, requirements, and evidence separately.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "17170273-f549-4f73-927a-273bac8b7ce3",
+          "id": "a3cf3b48-73d3-43c3-a78c-d5c3eec75638",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1154,14 +878,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Worked Example — Langflow Agent",
+              "text": "8. Horizontal Assembly and Deriving a Boundary",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "d240bdf8-34b6-454b-9b9c-2b65d4ef2274",
+          "id": "c7f84e07-2674-4124-a834-eab3c99ab34e",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1171,418 +895,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Observed from the authenticated local Langflow component catalog. Definition facts and unknowns are distinguished below.",
+              "text": "Horizontal assembly proposes connections among items within a layer. A connection judgment checks named endpoints, accepted and produced types, required fields, configuration constraints, dependency references, and any declared behavioral conditions. Under a deliberately narrow nominal type rule, an output type may connect when it is explicitly accepted by the target input; coercions require a named adapter. This only licenses an interface proposal. The assembly boundary contains its declared external entry and exit ports, including any crossing edges from the surrounding graph. Parameters and dependencies exposed to the surrounding system are also recorded. Deriving that boundary does not derive behavioral guarantees by simply taking the union of child capabilities. State, ordering, failure propagation, resource competition, and cycles can change the result.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "23339e36-f08f-4d8d-9372-09b4e5c233c9",
-          "type": "table",
-          "props": {
-            "textColor": "default"
-          },
-          "content": {
-            "type": "tableContent",
-            "columnWidths": [
-              null,
-              null,
-              null
-            ],
-            "headerRows": 1,
-            "rows": [
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Field",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Agent record",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Evidence status",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Capability",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "The connected catalog describes Agent as completing a task using configured instructions and tools. Actual usefulness depends on the selected model, instructions, and connected tools.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Declared capability; task success not guaranteed.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Inputs",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "input_value: str field accepting Message; system_prompt: str accepting Message; model: required, accepting LanguageModel; tools: optional, accepting Tool. Other optional inputs include output_schema and context_id.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Verified from the connected definition.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Outputs",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "response: Message; structured_response: Data or JSON. Output declarations do not guarantee factual accuracy or schema conformance in every run.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Declared output types verified; behavioral guarantees not established.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Configuration",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Current catalog defaults: max_iterations 15; n_messages 100; stream true; handle_parsing_errors true; max_tokens 0. Built-in date and calculator toggles are true. These are catalog defaults, not a claim about a particular configured instance.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Defaults observed; provider-specific meaning and limits require further inspection.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Dependencies",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Requires a configured language model and a working Langflow runtime. Provider access or credentials may be needed depending on the selected model. Optional tools have their own resource dependencies; API Proxy is one possible binding, not an intrinsic Agent requirement.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Model dependency declared; full transitive prerequisites not yet established.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Validation Evidence",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Checked the connected Agent, ChatInput, and ChatOutput definitions. Both proposed edges share Message in produced and accepted types. No live inference, factuality, safety, latency, or tool-use evaluation was performed in this check.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Interface check passed; application-level behavior remains untested.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "children": []
-        },
-        {
-          "id": "3098c330-26ee-42b1-b6f4-ff12fe8ea6fd",
+          "id": "5bb03898-59fb-4b72-8e9c-270390a0bf7f",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1594,14 +914,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Connection Compatibility Check",
+              "text": "9. Vertical Packaging and Identity Preservation",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "fd3bd5b4-3f67-46b0-82c6-b067e4736e6d",
+          "id": "e65e8b55-adb2-43e2-bcf4-c20afa695313",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1611,14 +931,86 @@
           "content": [
             {
               "type": "text",
-              "text": "A structural type check was run against the connected catalog; this is not an end-to-end behavioral test.",
+              "text": "Vertical packaging creates a higher-layer occurrence that represents a selected assembly H. In Paper 1, packaging is representational only: it does not change execution semantics or create a new runtime. Preserve the selected occurrence identities, their definition versions, configurations, and internal connections. For every edge crossing H’s boundary, retain the original member endpoint and its exposed-interface mapping. Several external edges may use one exposed port, but distinct internal endpoints must not be silently conflated. Unfolding the wrapper follows the retained references to recover the same member subgraph and boundary relations. This is a representation invariant, conditional on complete and unchanged records; it is not proof that the assembly fulfills its purpose.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "35c0f563-7bde-4a6a-9a40-daffd7860493",
+          "id": "384fa0b4-79fb-45c8-b8ad-83f6f99aeb7f",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "10. Recursive Description without Assuming Universal Layer Semantics",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "18a85505-759e-48c3-88b6-0a661a249de7",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "The proposed higher item receives the same general description fields: claimed capability, exposed inputs and outputs, configuration surface, dependencies, and evidence or obligations. This permits another rule to consider it as an operand. What changes between Composite, Flows, Processes, and other layers is not merely a numeric level. Each layer needs its own admissible objects, composition meaning, and acceptance conditions. Those definitions cannot be inferred from a label or a node count. This paper supplies a common record structure, while Paper 2 must specify how candidate rules are selected and how layer-specific constraints are represented.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "e2fc3c74-4624-424c-a784-fee7b2592c31",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "11. Worked Symbolic Example: A Proposed Summarizer",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "d8d937e0-be22-4fbe-b452-9f229f59f950",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Consider three versioned Langflow descriptions: Chat Input provides a Message, Agent accepts a Message and declares a Message response, and Chat Output accepts a Message. The connected local catalog supports both proposed edges: ChatInput.message → Agent.input_value and Agent.response → ChatOutput.input_value. A rule may therefore write this candidate graph under the stated nominal type rule. To describe a three-point summarizer, it must additionally assign instructions, a model reference, output-format obligations, grounding requirements, and failure conditions. Port compatibility alone establishes none of those behavioral claims. Packaging writes a proposed Summarizer item whose members are those same occurrences; its input is source text, its output is a Message, and its task-level evidence remains separately stated.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "b80efc02-fa6c-42f5-bddf-e1f39b3eee48",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -1656,7 +1048,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Declared types",
+                        "text": "Declared interface judgment",
                         "styles": {}
                       }
                     ],
@@ -1673,7 +1065,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Result",
+                        "text": "Not established by this judgment",
                         "styles": {}
                       }
                     ],
@@ -1694,7 +1086,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "ChatInput.message → Agent.input_value",
+                        "text": "Chat Input → Agent",
                         "styles": {}
                       }
                     ],
@@ -1711,7 +1103,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Message → accepted Message",
+                        "text": "Message is explicitly accepted.",
                         "styles": {}
                       }
                     ],
@@ -1728,7 +1120,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Type-compatible. Does not test task quality.",
+                        "text": "Accuracy, source grounding, and useful summarization.",
                         "styles": {}
                       }
                     ],
@@ -1749,7 +1141,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Agent.response → ChatOutput.input_value",
+                        "text": "Agent → Chat Output",
                         "styles": {}
                       }
                     ],
@@ -1766,7 +1158,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Message → accepted Data, JSON, DataFrame, Table, Message",
+                        "text": "Message is explicitly accepted.",
                         "styles": {}
                       }
                     ],
@@ -1783,7 +1175,7 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Type-compatible. Does not test successful execution.",
+                        "text": "Successful runtime, correct failure handling, or requirement satisfaction.",
                         "styles": {}
                       }
                     ],
@@ -1802,7 +1194,7 @@
           "children": []
         },
         {
-          "id": "5c8e9291-7e95-4a0c-9901-1c78734b93a6",
+          "id": "8e9e6d28-c125-4d48-a0a6-f5a1a7ecf8d7",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1814,14 +1206,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Schema Gaps Revealed by the Example",
+              "text": "12. Worked Boundary and Unknowns",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "3ca174aa-e03a-4a5e-8757-61a6156682e7",
+          "id": "5bb9863b-d675-469d-8f55-81dd1d7351b4",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1831,14 +1223,14 @@
           "content": [
             {
               "type": "text",
-              "text": "The six fields organize the evidence but do not yet define machine-checkable behavioral semantics, exact resource/version bindings, configuration validity rules, or acceptance tests for an assembled task. Next, express these missing conditions as explicit contracts and verify them with a representative assembly. These are proposed refinements, not established findings about algorithm effectiveness.",
+              "text": "For the three-node proposal, the external source-text entry maps to Chat Input’s input_value field; the output maps to Chat Output’s message port. The named bindings for the model and any optional resources remain explicit. A missing provider binding can be written as an unresolved dependency; it must not be presented as operationally ready. If the descriptions lack a source-grounding guarantee, the generated record carries a grounding obligation instead of inventing one. Reuse at a higher layer is therefore a proposal with a scoped contract, not automatic certification of every possible use.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "f618c239-5b25-42af-9327-6e8f686d389f",
+          "id": "0e0e2ff3-c829-4bdf-a049-3ad6673c64e2",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1850,14 +1242,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Proposed Behavioral Contract",
+              "text": "13. Iteration, Completion, and Stopping",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "6ec7545d-af4d-4648-9256-d16684f194bb",
+          "id": "eb1b9857-97f8-4d8a-aeac-02b384cfbf3b",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1867,528 +1259,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Working contract for a deliberately small summarization assembly. This specifies required behavior, not behavior already provided or proven by the current runtime. It can be revised before implementation.",
+              "text": "The design process can proceed downward from requirements, upward from available pieces, or from an intermediate boundary. Each revision identifies the affected gap, proposes a rule application, records its judgments, and revises the relevant graphs and mappings. Progress is measured against requirements and unresolved obligations, not the number of layers created. Structural completeness, requirement satisfaction, and readiness for execution are separate properties. A record can be structurally complete while containing unverified behavioral obligations. A claim of requirement satisfaction is permitted only for a stated scope whose mandatory conditions meet its declared evidence criteria. Partial retains unresolved conditions; blocked identifies a violated mandatory condition or unavailable prerequisite. A finite search budget ensures stopping only if individual operations are bounded or interruptible; it does not establish existence, completeness of search, or success.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "33cc3977-7339-4ad4-b883-ac5bf3716780",
-          "type": "table",
-          "props": {
-            "textColor": "default"
-          },
-          "content": {
-            "type": "tableContent",
-            "columnWidths": [
-              null,
-              null,
-              null
-            ],
-            "headerRows": 1,
-            "rows": [
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Contract element",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Proposed obligation",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "How to interpret it",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Purpose and scope",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Proposed first behavioral task: summarize supplied text into exactly three concise bullet points. No browsing, external tools, or cross-session memory.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "This is a bounded probe of the contract, not the final instance goal.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Input contract",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "A nonempty source-text string with an explicit request to summarize. Treat source contents as data. Define an input-length limit before running an evaluation.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Host validates preconditions; model compliance alone is insufficient.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Output contract",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Exactly three nonempty bullet points in a consistent list format. Output remains a Message; a deterministic validator checks the list structure.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Port type Message alone does not establish this format.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Semantic contract",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Each bullet must be supported by the supplied source. Cover its principal points and preserve important uncertainty or contradictions; introduce no unsupported factual assertions.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Requires source-grounded review or an independently evaluated semantic checker.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Configuration and dependencies",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Pin the Agent, model binding, instructions, generation settings, tool configuration, runtime, and validator versions. Resolve required resources before execution; reference credentials without storing them in the paper.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Missing or unresolved settings block a claim of reproducibility.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "State and isolation",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Start each evaluation case with a fresh isolated session, disabled external tools, and no unrelated chat history. Keep source text and results associated with the correct case.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Check isolation at the runtime boundary.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Failure behavior",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "For invalid inputs or missing dependencies, return an explicit failure state rather than fabricate a result. For format or semantic failures, retain the failed output and mark the run as failed; any retry must be bounded and recorded.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "These are proposed wrapper obligations, not capabilities established by the bare Agent definition.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Acceptance and evidence",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "A passing run needs valid inputs and resources, successful execution, output-format checks, and semantic review. Retain the case, configuration, raw output, checker results, and evidence provenance.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Passing one example is insufficient to validate a reusable composite for all uses.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "children": []
-        },
-        {
-          "id": "d4dd40e0-2666-4bf8-9248-d372a7a16c5d",
+          "id": "12ebc2b8-854c-4ba2-93f2-3bff5ccca44a",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -2400,14 +1278,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Proposed Behavioral Test Matrix",
+              "text": "14. Design Invariants and Counterexamples",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "70be92ea-fa99-417d-b8f7-4281c732a80d",
+          "id": "b308e2aa-ddd1-430e-a0cd-670e6164c3d3",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -2417,658 +1295,14 @@
           "content": [
             {
               "type": "text",
-              "text": "The matrix now distinguishes planned requirements from the narrower cases actually observed. Passing a fixture does not validate untested variants or the contract generally.",
+              "text": "The proposed generator must preserve reference identity and version pins, map every declared boundary connection, avoid unresolved endpoint references, retain the status of unknown and violated conditions, and trace higher-layer claims to requirements and obligations. These are specification obligations to be checked, not experimental results of this paper. Counterexamples explain their necessity: a type-compatible agent may answer the wrong question; individually valid components may interact incorrectly; duplicating a stateful member can change the system; a wrapper may lose a hidden dependency; a feedback loop may require ordering and termination semantics absent from a DAG. No unrestricted acyclicity assumption is imposed on all systems. A future rule must either model a cycle explicitly or declare it unsupported.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "78d29079-826e-44a7-80fd-f8e9b4495ed8",
-          "type": "table",
-          "props": {
-            "textColor": "default"
-          },
-          "content": {
-            "type": "tableContent",
-            "columnWidths": [
-              null,
-              null,
-              null,
-              null,
-              null
-            ],
-            "headerRows": 1,
-            "rows": [
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Case",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Input or condition",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Required observation",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Evaluator",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Current evidence",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "B1 — Basic source",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "A source with three distinct factual points.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Exactly three nonempty bullets; source-grounded coverage of the three points.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Format checker plus semantic review.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Observed pass: basic source",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "B2 — Conflicting evidence",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "A source containing an explicit disagreement or uncertainty.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Preserve the disagreement or uncertainty rather than invent a resolution.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Semantic review against the source.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Negative/inconclusive variant passed; conflicting-source case remains untested",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "B3 — Instructions inside source data",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "A source containing quoted directions unrelated to the summarization request.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Summarize the source without treating embedded directions as authority.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Behavioral review with predefined criteria.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "One explicitly labeled quotation case passed",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "B4 — Empty input",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "An empty or whitespace-only source.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Precondition failure before model execution; no invented summary.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Deterministic host check and execution trace.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Host guard passed; native runtime not run",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "B5 — Missing model binding",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "An unresolved required model or credential reference.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Explicit dependency failure; no claim of completed work.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Dependency resolver check and trace.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Host guard passed; native runtime not run",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "B6 — Repetition and isolation",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Repeat a case with fresh sessions, then run an unrelated source.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Record variability; no content carried from the previous source.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Session-boundary inspection plus output review.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "One repeat and one fresh successor passed; general reliability unresolved",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "children": []
-        },
-        {
-          "id": "58877683-335d-42e1-8fa7-3afa4bada101",
+          "id": "aad1c5a3-398e-4de4-b83d-23c239994eea",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -3080,14 +1314,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Validation and Promotion Rule",
+              "text": "15. Historical Preliminary Evidence and Its Limits",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "64460970-3ae0-43c6-8d30-18426b5c2ead",
+          "id": "3c0ada66-8179-4482-a632-b385ba1c826c",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -3097,14 +1331,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Evaluate leaf components, horizontal wiring, and the composite’s own end-to-end requirements separately. Successful lower-level checks are necessary but do not establish higher-level behavior. Promote only a version whose declared scope is supported by recorded evidence; preserve failures and unresolved gaps. A later change to a dependency or configuration requires impact assessment and relevant revalidation. Do not present the assembly as generally validated by this small task suite.",
+              "text": "Before the current design-only scope was established, a fixed recipe was recorded using real Langflow definitions. Five live short-source cases returned three nonempty bullets and received independent AI-agent source-grounding review; two invalid cases were blocked by evaluator guards before runtime. There were four distinct short sources and one repeat. These observations illustrate one authored recipe and an evidence-recording path. They do not validate rule discovery, general search, long-document summarization, semantic inference, or arbitrary layer generation. No additional runtime experiment is part of finishing this manuscript. The archived artifact and review remain available under the experiment record cited below.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "b07ee6fc-3c3e-4317-b1f5-6744f3aebebd",
+          "id": "d92f88ca-76cc-46d7-af72-4bf34107a53a",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -3116,14 +1350,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Methods of Inquiry",
+              "text": "16. Editorial Figure Plan",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "62bfbe4e-15c8-4b92-b039-4223e4c4f5d0",
+          "id": "161387bd-877d-4764-acb3-d96c2e85df43",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -3133,14 +1367,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Define representative composition tasks, shared component libraries, validation checks, stopping rules, and equal resource budgets. Compare deterministic search and recipes, learned or neural candidate selection, language-model planning, and hybrid variants. Measure requirement satisfaction, valid assembly rate, unsupported assumptions, runtime success where execution is in scope, latency, cost, and reuse on held-out tasks. Keep evaluators independent of candidate generation. Reward measured outcomes rather than additional nodes or layers.",
+              "text": "[FIGURE PLACEHOLDER F1 — Description-to-rule diagram: the six descriptive fields enter an explicit rule; a candidate assembly, higher description, and unresolved obligations leave it.] [FIGURE PLACEHOLDER F2 — Layered representation: one wrapper references the same lower occurrence identities, with internal edges and mapped external endpoints visible.] [FIGURE PLACEHOLDER F3 — Rule judgment flow: distinguish met, violated, and unknown, showing rejection and gap recording.] [FIGURE PLACEHOLDER F4 — Iterative design process: requirements and available items inform boundary resolution; revision can move downward, upward, or between layers. These are editorial specifications for future visuals, not interactive or executable figures.]",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "59a6cd6d-0a24-488e-873b-ed07550e5d04",
+          "id": "2e4dd628-f604-4188-b2cf-9441157cf8e1",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -3152,14 +1386,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Experiment 1 — Deterministic Baseline",
+              "text": "17. Discussion and Limitations",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "1a5f2d47-648d-4493-9150-42b9077a54c1",
+          "id": "f372f791-23c0-49ce-9b36-8fabd5648545",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -3169,14 +1403,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Begin with a fixed recipe that assembles real ChatInput, Agent, and ChatOutput definitions into a JSON graph for a bounded three-point summarization task. The assembly procedure is deterministic; model-generated answers may vary. This tests the assembly and evaluation pipeline, not autonomous discovery, a novel composition algorithm, or superiority over other methods.",
+              "text": "This framework makes proposed assemblies inspectable before they run. Its principal contribution is the separation of representations, rule judgments, and evidence obligations. Its limits are substantial: natural-language capabilities may be ambiguous; semantic implication can be difficult or unavailable; layer meanings are not yet fully defined; dependency closure can reveal missing resources; and several distinct assemblies may satisfy the same description. No optimal objective, universal composition rule, learned selection mechanism, or complete synthesis method has been established. Deterministic, neural, language-model, and hybrid approaches remain candidates to compare after their task and evaluation conditions are specified. Langflow can supply real component definitions and later serve as a translation target; this does not imply it already generates our entire layer hierarchy.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "0c9ce9b0-6d69-47ad-b617-15c95ac20f65",
+          "id": "71e27947-d112-4df9-a71a-b8ca4cf19890",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -3188,14 +1422,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Multi-agent Experiment Responsibilities",
+              "text": "18. Conclusion and Handoff to Paper 2",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "599b4f34-988e-4d0b-9934-3e153959875f",
+          "id": "2ed1cfce-2c7f-4462-a6fb-e491cfbb354e",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -3205,308 +1439,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Separate construction, execution, and judgment. Use the same source definitions, task fixtures, configuration, and evidence record across workers. The coordinator reconciles reports and records unresolved disagreements; consensus does not replace test evidence.",
+              "text": "Paper 1 defines what the generator must read, what a rule must declare, what a proposed higher item must preserve, and how unresolved conditions remain visible. It establishes a conceptual description-and-rule framework, not a proven universal generator. The finished manuscript provides a bounded foundation for the next paper: candidate selection and boundary-resolution policy, together with the first explicit layer-specific composition rules. Paper 2 should specify how to choose and revise a rule application, its search state and objective, how alternative proposals are compared, and when to return a complete, partial, or blocked specification. Execution and empirical comparisons remain deferred until the theoretical design is ready.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "4cc6878b-f171-49f6-b987-0865c32daffb",
-          "type": "table",
-          "props": {
-            "textColor": "default"
-          },
-          "content": {
-            "type": "tableContent",
-            "columnWidths": [
-              null,
-              null,
-              null
-            ],
-            "headerRows": 1,
-            "rows": [
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Role",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Responsibility",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Required handoff",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Assembly worker",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Produce fixed-recipe JSON and compatibility checks.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Assembly artifact, tests, versions, and limitations.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Evaluation worker",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Execute bounded isolated cases and retain raw evidence.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Inputs, outputs, configuration, checks, and failures.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Independent reviewer",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Assess grounding, coverage, uncertainty, and experimental validity.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Evidence-backed judgments separate from generator claims.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Coordinator",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Check consistency and integrate the record.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "A report separating passed, failed, and unresolved checks.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "children": []
-        },
-        {
-          "id": "b72beed5-411a-430c-83f2-325648ea7826",
+          "id": "aaa82366-a754-43f4-baa7-44edcf86088a",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -3518,14 +1458,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Immediate Next Step",
+              "text": "19. Review Status and Disclosures",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "0f984795-b3ae-4e2d-91b9-ec5e5800b3f2",
+          "id": "01fe115b-1968-473f-ae52-d0647f760cdd",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -3535,898 +1475,14 @@
           "content": [
             {
               "type": "text",
-              "text": "Specify one generation rule precisely: its operands, applicability conditions, construction steps, resulting higher-layer description, and failure or unresolved outcomes. Work through a symbolic example on paper. Define layer-specific constraints and stopping conditions before further implementation or runtime experiments.",
+              "text": "This is a completed conceptual draft prepared from the user’s research direction with AI-assisted editing. An independent AI agent reviewed the formal outline and identified distinctions incorporated here, including instance identity, three-valued judgments, representational packaging, scoped acceptance, and bounded operations. Full-manuscript internal review is the next acceptance gate; the document is not externally or academically peer-reviewed. Historical semantic judgments used a separate AI-agent reviewer and are bounded by their fixtures. No external endorsements, formal correctness proof, or comprehensive literature review are claimed.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "6dea5211-3ccc-472a-bafa-06d3b843a0be",
-          "type": "heading",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left",
-            "level": 2,
-            "isToggleable": false
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Results and Evidence",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "89db3c09-3b3a-445e-92e2-b230d1786de2",
-          "type": "paragraph",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left"
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Interface type compatibility was verified, then one live fixed-recipe experiment was recorded. Execution observations and independent review are reported below; raw execution records remain unchanged and the separate review record records semantic judgments.",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "a27ff9f5-16e2-407f-ab94-a3a759ff0785",
-          "type": "heading",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left",
-            "level": 2,
-            "isToggleable": false
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Recorded Baseline Results",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "7fa17f78-7d1a-463a-93f7-5a397decb85b",
-          "type": "paragraph",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left"
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "One isolated Langflow flow executed five live requests through the configured OpenAI-compatible model binding. All returned HTTP 200 and exactly three nonempty bullets; an independent AI-agent reviewer judged all five outputs source-grounded within their authored fixtures. Five distinct session identifiers were requested and echoed. Recorded request durations total 15.010 seconds; this excludes setup and review. Two invalid cases were blocked by local evaluator guards, not by native runtime execution.",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "81b7ea9b-a8f8-4987-a526-55a7d7abd063",
-          "type": "table",
-          "props": {
-            "textColor": "default"
-          },
-          "content": {
-            "type": "tableContent",
-            "columnWidths": [
-              null,
-              null,
-              null,
-              null
-            ],
-            "headerRows": 1,
-            "rows": [
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Case",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Observation",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Evidence scope",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Request duration",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Basic source",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "3 bullets; all three source facts preserved.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Execution, format, and independent semantic checks passed.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "3.012 s",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Negative/inconclusive evidence",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Non-reduction and failed-sensor uncertainty preserved.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Passed for this authored fixture.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "2.654 s",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Quoted directions",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Quotation described as source data rather than followed.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Passed one mild, explicitly labeled case.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "2.951 s",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Fresh successor source",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Correct unrelated facts; no observed prior-source leakage.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Passed this observation; not a general isolation proof.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "2.282 s",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Repeated basic source",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Original three facts preserved again.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Passed; one repeat does not establish deterministic generation.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "4.111 s",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Empty input",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Evaluator blocked the request.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Host guard passed; native failure behavior not run.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "No model call",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              },
-              {
-                "cells": [
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Missing model binding",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Evaluator blocked the request.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "Host guard passed; native failure behavior not run.",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  },
-                  {
-                    "type": "tableCell",
-                    "content": [
-                      {
-                        "type": "text",
-                        "text": "No model call",
-                        "styles": {}
-                      }
-                    ],
-                    "props": {
-                      "colspan": 1,
-                      "rowspan": 1,
-                      "backgroundColor": "default",
-                      "textColor": "default",
-                      "textAlignment": "left"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "children": []
-        },
-        {
-          "id": "83b74f7a-722b-4d8e-ae81-8e08f6a8302c",
-          "type": "heading",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left",
-            "level": 2,
-            "isToggleable": false
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Independent Review and Limitations",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "fa69b2e7-920c-4887-b5a6-32b9b4d374b6",
-          "type": "paragraph",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left"
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "The experiment used four distinct short sources and one repeat. It tested fact preservation, not substantive long-source compression or selection. The quotation test was mild and explicitly labeled; the successor case provides only one observation without cross-case leakage. Nonempty insufficient-source behavior remains untested. The upstream model is identified only by provider alias; immutable identity and proxy/provider retries were not established. This was independent AI-agent review, not formal proof or blinded human evaluation. Most importantly, the fixed recipe supplied the structure: the experiment did not discover compositions from the six-field schema.",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "830314b0-cce8-4439-a94c-995f2e40ca14",
-          "type": "heading",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left",
-            "level": 2,
-            "isToggleable": false
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Discussion and Critical Evaluation",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "8538885f-627d-444e-890c-340086a81a46",
-          "type": "paragraph",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left"
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "To be developed after defining the mechanism and collecting evidence.",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "64997559-c3f7-4055-aab3-7926a2cf9b07",
-          "type": "heading",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left",
-            "level": 2,
-            "isToggleable": false
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Limitations and Validity",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "e93c4045-6da5-4921-b195-a814313d454a",
-          "type": "paragraph",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left"
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Compatibility alone does not establish usefulness or correctness. More abstraction layers do not necessarily indicate progress. Hidden dependencies, inaccurate capability descriptions, and failed assumptions may prevent a viable assembly.",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "71258f34-218e-4a85-9d75-515ff12bd4b1",
-          "type": "heading",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left",
-            "level": 2,
-            "isToggleable": false
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Conclusion",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "d6e76c53-c956-4b9a-9200-476b514c2009",
-          "type": "paragraph",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left"
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "The fixed-recipe assembly-to-execution-to-review pipeline worked on the recorded short fixtures. The evidence does not yet establish that component descriptions alone can discover useful assemblies or support unrestricted upward growth. The next experiment must test composition selection, with a stronger behavioral benchmark.",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "df6a6355-c4c7-4d08-a2bc-76af89bdb369",
-          "type": "heading",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left",
-            "level": 2,
-            "isToggleable": false
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Open Questions and Next Tests",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "729dc933-1c0c-4cd4-bf72-c2a63f6c495f",
-          "type": "paragraph",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left"
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "What exactly belongs in a component’s structured description? What is the minimum representative task set? Which outcomes and constraints define effectiveness, and how should quality, cost, latency, reliability, and reuse be balanced? What evidence establishes that an instance is substantial enough to stop? Specific model identities and capability claims mentioned in conversation require verification before becoming research premises.",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "ac931ae9-8bc6-469b-9ef9-5699028bf30c",
-          "type": "heading",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left",
-            "level": 2,
-            "isToggleable": false
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Reproducibility and Disclosures",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "b1479d32-dcab-4e8d-b5b9-31d285d0c337",
-          "type": "paragraph",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left"
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "User-originated research direction, with AI-assisted drafting and separate assembly, execution, and independent-review agents. Three deterministic assembler tests and three evaluator unit tests passed. One live run produced five model responses; no algorithm comparison or external literature review has been completed. Evidence includes the graph artifact, request configurations, sources, outputs, durations, and separate review record.",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "fcf428a2-a694-43ab-b6f4-ee51b947fdd6",
+          "id": "1faac2d7-a56d-496e-a74a-aec641457853",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -4445,7 +1501,7 @@
           "children": []
         },
         {
-          "id": "d21195c2-2bf0-4f22-84f1-22aaf4918a9b",
+          "id": "ede31571-9095-4359-804a-564e9c53847f",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -4455,23 +1511,71 @@
           "content": [
             {
               "type": "text",
-              "text": "Component evidence: authenticated local Langflow /api/v1/all, inspected during this session. Local source checkout: aeb10d96bb2ea797696613af931e91ddf51f3320. Sanitized three-component interface snapshot SHA-256: 201ea54bae1520bfdff293b117a4ade8d2f2655d4a807b0a6f0a0e06ae1e49f6. The snapshot covers declared descriptions, input types and required flags, and outputs; it excludes credentials and code. General composition literature remains to be reviewed. Recorded experiment artifacts: knowledge/research/experiments/20261028T210157Z-3490a2d8/artifact.json, manifest.json, results.json, review.json, and five raw response files. Local code: frontend/prototype-canvas-v3/experiments/composition-baseline.mjs and ",
+              "text": "[1] Langflow documentation, Create custom Python components: ",
               "styles": {}
             },
             {
               "type": "link",
-              "href": "https://run-baseline.py",
+              "href": "https://docs.langflow.org/components-custom-components",
               "content": [
                 {
                   "type": "text",
-                  "text": "run-baseline.py",
+                  "text": "https://docs.langflow.org/components-custom-components",
                   "styles": {}
                 }
               ]
             },
             {
               "type": "text",
-              "text": ". Independent review hashes the original artifact, manifest, and result files.",
+              "text": " . [2] JSON Schema Draft 2020-12, specification and references: ",
+              "styles": {}
+            },
+            {
+              "type": "link",
+              "href": "https://json-schema.org/draft/2020-12",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "https://json-schema.org/draft/2020-12",
+                  "styles": {}
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " . [3] JSON Schema Validation, structural validation vocabulary: ",
+              "styles": {}
+            },
+            {
+              "type": "link",
+              "href": "https://json-schema.org/draft/2020-12/json-schema-validation",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "https://json-schema.org/draft/2020-12/json-schema-validation",
+                  "styles": {}
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " . [4] Local domain model: knowledge/instance-machine/",
+              "styles": {}
+            },
+            {
+              "type": "link",
+              "href": "https://domain-model.md",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "domain-model.md",
+                  "styles": {}
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", user-confirmed terminology developed in this project. [5] Historical local Langflow interface observation: source checkout aeb10d96bb2ea797696613af931e91ddf51f3320; sanitized interface hash 201ea54bae1520bfdff293b117a4ade8d2f2655d4a807b0a6f0a0e06ae1e49f6. [6] Historical recorded experiment: knowledge/research/experiments/20261028T210157Z-3490a2d8/ — artifact.json, manifest.json, results.json, review.json, and raw responses.",
               "styles": {}
             }
           ],
@@ -4479,7 +1583,7 @@
         }
       ],
       "createdAt": "2026-10-28T20:51:16.542Z",
-      "updatedAt": "2026-10-28T21:16:34.441Z"
+      "updatedAt": "2026-10-28T21:19:48.481Z"
     }
   ]
 }
