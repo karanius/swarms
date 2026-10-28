@@ -1,4 +1,186 @@
 {
   "schemaVersion": 1,
-  "papers": []
+  "papers": [
+    {
+      "id": "8c8e315d-55c9-4262-8a6d-b884ad2e06cb",
+      "title": "From Components to Instances: Iterative Composition",
+      "templateRef": {
+        "id": "exploration",
+        "version": 2
+      },
+      "content": [
+        {
+          "id": "ada40061-3d12-4cf3-ba56-bda67cd92f32",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Abstract"
+        },
+        {
+          "id": "bd7f983a-d5b4-43c7-931b-0a4e6e79d962",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "f67fbeb5-f6ea-4c5c-8841-3cef8a4c0043",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Introduction and Research Question"
+        },
+        {
+          "id": "2bf51a35-4554-4f11-850e-d324356ef0f9",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "925824ee-cc3d-4d27-a2f0-62ac1cf1f35e",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Background and Related Work"
+        },
+        {
+          "id": "91767201-03da-424d-a58d-a10bb870bdfa",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "d756f7c0-818f-468f-b1f4-5397f47c5c1f",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Provisional Hypotheses and Predictions"
+        },
+        {
+          "id": "2d0d7b7c-6607-48f6-9f5d-157241b4e4de",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "c0c4bd30-e8cd-40c9-b17d-81546deb6fff",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Assumptions and Alternative Explanations"
+        },
+        {
+          "id": "a4d0306a-aa90-4816-9ad9-15f8bfe1d530",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "1bb3ba2a-4f14-41a7-a85f-43dbaa21f4db",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Methods of Inquiry"
+        },
+        {
+          "id": "74b13f46-039c-456f-94ec-b7f172c7b5cf",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "becd676c-d355-4531-9029-5117b18433c8",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Results and Evidence"
+        },
+        {
+          "id": "82145570-c9d6-40d8-a663-4497caff3252",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "94e8e354-ee7c-4d81-a75e-9f7180272b5f",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Discussion and Critical Evaluation"
+        },
+        {
+          "id": "f0df2be2-7794-4044-b043-440b2437f222",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "5a032592-7a12-4392-b56a-68c45d76a8fd",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Limitations and Validity"
+        },
+        {
+          "id": "cc292d45-a05c-4965-b187-98ad430059b6",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "e3c1a45d-7ca9-4991-a5d4-8139febb178c",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Conclusion"
+        },
+        {
+          "id": "c0ca7b06-6fbe-4627-965d-a6b032000167",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "cb6173f0-5014-44d4-ac57-97064e0933e8",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Open Questions and Next Tests"
+        },
+        {
+          "id": "c0b241e4-4e01-4467-b7f6-2315213110f3",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "aca419af-52d6-40ec-9d9e-e98ee00389b1",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "Reproducibility and Disclosures"
+        },
+        {
+          "id": "180808c7-57fa-44eb-8d54-f83af61d90c5",
+          "type": "paragraph",
+          "content": []
+        },
+        {
+          "id": "bcd5a880-8a39-45cb-84e9-73af32b2fe4d",
+          "type": "heading",
+          "props": {
+            "level": 2
+          },
+          "content": "References"
+        },
+        {
+          "id": "3020f32c-70d0-4348-aa76-bfba6c31c009",
+          "type": "paragraph",
+          "content": []
+        }
+      ],
+      "createdAt": "2026-10-28T20:51:16.542Z",
+      "updatedAt": "2026-10-28T20:51:16.617Z"
+    }
+  ]
 }
