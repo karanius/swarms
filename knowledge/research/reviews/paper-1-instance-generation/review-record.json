@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "Internal independent AI-agent review; not external academic peer review",
+  "paper": "From Components to Instances: Iterative Composition",
+  "manuscripts": {
+    "manuscript-r1.html": "e7018418b8d9dfc4724ce9f9df6f9fcc38904bab0921eba92aacbdc6ca1c4b8a",
+    "manuscript-r2.html": "f27ec3503b9245d3d21926840e19d775a24f6601053f59ec5a25a69d55e5a19d",
+    "manuscript-final.html": "f27ec3503b9245d3d21926840e19d775a24f6601053f59ec5a25a69d55e5a19d"
+  },
+  "reviewers": [
+    {
+      "reviewer": "Formal definitions reviewer",
+      "scope": "Definitions, rule operands, boundary preservation, identity, acceptance, stopping",
+      "round1": [
+        {
+          "severity": "major",
+          "finding": "Boundary preservation lacks ambient graph operands.",
+          "revision": "Added ambient G, declared edits yielding candidate Gc, selected H and boundary incidence.",
+          "status": "addressed"
+        },
+        {
+          "severity": "major",
+          "finding": "Reusable definitions and instance occurrences are conflated.",
+          "revision": "Added scoped definition identities, occurrence triples, proposed local descriptions and separate library registration.",
+          "status": "addressed"
+        },
+        {
+          "severity": "major",
+          "finding": "Acceptance can become vacuous through changing scope.",
+          "revision": "Pinned requirement baseline, retained mandatory judgments and required explicit scope-change decisions.",
+          "status": "addressed"
+        },
+        {
+          "severity": "minor",
+          "finding": "Rejected alternatives are mixed with active obligations.",
+          "revision": "Kept unresolved obligations in U and rejected alternatives/history in T; corrected section 6 table.",
+          "status": "addressed"
+        },
+        {
+          "severity": "minor",
+          "finding": "Finite budget lacks positive consumption per attempt.",
+          "revision": "Required each attempt to consume budget and suboperations to terminate or be interruptible.",
+          "status": "addressed"
+        }
+      ],
+      "round2": "Three major findings addressed; stopping addressed; final table consistency correction identified and applied. No new blocking contradiction reported."
+    },
+    {
+      "reviewer": "Skeptical conceptual reviewer",
+      "scope": "Counterexamples, hidden assumptions, semantic and generality claims",
+      "round1": [
+        {
+          "severity": "major",
+          "finding": "Conflicting evidence can otherwise count as met.",
+          "revision": "Conflict retained explicitly; judgment remains unknown until resolved.",
+          "status": "addressed"
+        },
+        {
+          "severity": "major",
+          "finding": "Crossing edges alone omit mandatory unconnected inputs.",
+          "revision": "Boundary includes required unbound inputs and retained internal edges.",
+          "status": "addressed"
+        },
+        {
+          "severity": "major",
+          "finding": "Shared members can interfere despite preserved identity.",
+          "revision": "Overlapping wrappers confer no ownership, concurrency or isolation guarantees.",
+          "status": "addressed"
+        },
+        {
+          "severity": "major",
+          "finding": "Failed candidate can be confused with impossible intent.",
+          "revision": "Blocked outcome scoped to proposal or declared search horizon.",
+          "status": "addressed"
+        },
+        {
+          "severity": "major",
+          "finding": "Text binding can be confused with Message compatibility.",
+          "revision": "Separated input string field binding from Message-valued connection.",
+          "status": "addressed"
+        }
+      ],
+      "round2": "All five major findings addressed. Final table/history consistency and review-status edits applied. No remaining conceptual blocker within scope."
+    },
+    {
+      "reviewer": "Langflow and evidence fidelity reviewer",
+      "scope": "Component interfaces, representation, historical evidence and claim scope",
+      "round1": [
+        {
+          "severity": "minor",
+          "finding": "Original evaluator files retain pending-review fields.",
+          "revision": "Explained that later independent judgments are in separate review.json.",
+          "status": "addressed"
+        },
+        {
+          "severity": "minor",
+          "finding": "Historical interface fingerprint lacks retrievable observation snapshot.",
+          "revision": "Disclosed missing snapshot; identified concrete interfaces retained in archived baseline artifact.",
+          "status": "addressed"
+        }
+      ],
+      "outcome": "No blockers or major findings; interface and historical evidence statements match scoped local records."
+    }
+  ],
+  "disposition": "Completed conceptual manuscript. Reported findings addressed; no remaining conceptual blocker reported within review scopes. Not a formal proof or validated general generator.",
+  "limitations": [
+    "AI-agent reviews, not external human academic peer review.",
+    "No blinded reviewer assignment, independence audit, formal proof or comprehensive literature verification.",
+    "Second pass checked prior findings rather than starting a new unrestricted review.",
+    "No runtime experiment was run to finish the paper."
+  ]
+}
