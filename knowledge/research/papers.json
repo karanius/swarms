@@ -29,7 +29,7 @@
           "children": []
         },
         {
-          "id": "33dd57ff-4bec-41a9-a623-17792a8999f3",
+          "id": "c0efb731-5880-4a85-92ab-6464d4f72c13",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -46,7 +46,7 @@
           "children": []
         },
         {
-          "id": "666970da-dc8e-4ecd-9386-357965e25f58",
+          "id": "69a4c636-4f94-4ec8-8e9d-53daee4b7faa",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -65,7 +65,7 @@
           "children": []
         },
         {
-          "id": "24eb4fba-9d43-4ebd-ba0b-f7dca75da97d",
+          "id": "d5e6d74f-a8d4-4b40-835f-41bd0526de5f",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -82,7 +82,7 @@
           "children": []
         },
         {
-          "id": "8ca1521e-5723-488e-9e07-4ca55e0afdde",
+          "id": "61be33a6-fa67-477d-9741-c234a548468d",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -376,7 +376,7 @@
           "children": []
         },
         {
-          "id": "669ec460-d07a-4d8f-9382-7ff03041d19e",
+          "id": "8375eaeb-ce43-49c4-a57c-00c6a93d5200",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -395,7 +395,7 @@
           "children": []
         },
         {
-          "id": "b2a1da3a-5073-4484-84fc-1423e0d8ed87",
+          "id": "2b0e7a6a-dd28-4ee7-95fc-d33d82193afa",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -412,7 +412,7 @@
           "children": []
         },
         {
-          "id": "db32977e-52b3-41ef-9082-0d9fb39b00c1",
+          "id": "29de6a74-2754-4b30-9c9c-ec9c7a313b56",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -816,7 +816,7 @@
           "children": []
         },
         {
-          "id": "bbdfd278-799c-46a1-babf-3e297680b26e",
+          "id": "2cbd5b4b-39bf-4168-bef0-65b226709d5a",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -835,7 +835,7 @@
           "children": []
         },
         {
-          "id": "ff74c97b-01d1-470f-8fbe-b166da16657d",
+          "id": "4cdbee32-1e64-4fdd-bc5f-2d49b640e8d6",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -852,7 +852,7 @@
           "children": []
         },
         {
-          "id": "e7b0328a-15eb-44a6-b7db-9eee4a1f2ac8",
+          "id": "049051d6-66a6-4868-ae88-204caad44234",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -1531,7 +1531,7 @@
           "children": []
         },
         {
-          "id": "d16afc53-252b-4b17-bbad-3fa673a4fc0d",
+          "id": "6dc17dd0-258b-4146-a078-623c765eb3f7",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1550,7 +1550,7 @@
           "children": []
         },
         {
-          "id": "9d34b660-d1eb-4a05-ba4c-754f694ffb02",
+          "id": "c6e66a73-76ff-4215-b63e-eecd1e873a7d",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1567,7 +1567,7 @@
           "children": []
         },
         {
-          "id": "1546b492-a863-4bf1-8ca6-25e7284cff5a",
+          "id": "3085fd90-e454-436e-801b-3bb4cfea5964",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -1916,7 +1916,7 @@
           "children": []
         },
         {
-          "id": "7a6c76dd-4fba-4a92-83a0-ab9945fb7d13",
+          "id": "d79d9d81-971d-4355-885f-29561a3bfd43",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1933,7 +1933,7 @@
           "children": []
         },
         {
-          "id": "f2cfdd9d-37dd-445c-a6d3-46124dc4ecab",
+          "id": "3a86bf55-75fd-4837-b9b7-6f7b22e6ec6d",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -1952,7 +1952,7 @@
           "children": []
         },
         {
-          "id": "7d0f103e-60a8-486b-bc26-53df8e511afe",
+          "id": "bf00a31d-e5d7-4776-b7d7-45e1a7962e2e",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -1969,7 +1969,7 @@
           "children": []
         },
         {
-          "id": "8dde3e2c-26f4-4e16-9d04-8ecbc3586e58",
+          "id": "bf64043c-22ba-47fd-9d9c-bf5064b98761",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -2428,7 +2428,7 @@
           "children": []
         },
         {
-          "id": "a72d1d17-a155-4720-b770-d89ff1366773",
+          "id": "a7f2fb83-f917-4891-b8e3-f0c05d3d990f",
           "type": "image",
           "props": {
             "textAlignment": "left",
@@ -2441,24 +2441,7 @@
           "children": []
         },
         {
-          "id": "57988084-09c8-437c-b721-d45e5c0adea8",
-          "type": "paragraph",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left"
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Figure 1. Conceptual boundary map. Arrows show information used to write a proposal, not an executed flow.",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "43b593da-3788-4ec7-b874-26e63656e86e",
+          "id": "05593c4b-7706-428c-b322-3af8ecac8238",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -2477,7 +2460,7 @@
           "children": []
         },
         {
-          "id": "12a6bb80-64b1-4275-a9f8-9d17813efe62",
+          "id": "86cbcbe2-24fe-4102-bdea-596b77f04eb1",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -2494,7 +2477,7 @@
           "children": []
         },
         {
-          "id": "2aa12f4d-f759-4fc8-9687-64e1cdbf3cc8",
+          "id": "9b35d56e-5d4d-45a2-bb6f-f0b2eef672cc",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -2511,7 +2494,7 @@
           "children": []
         },
         {
-          "id": "c2bc9f7d-d815-4f36-bedd-c59db09307e6",
+          "id": "fc984148-0a00-4454-814a-2a939430094d",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -2860,7 +2843,7 @@
           "children": []
         },
         {
-          "id": "ffdded10-fc77-4903-8a9f-9a64e6f3da40",
+          "id": "e8074086-d6b2-40be-b7ad-630d5da7873b",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -2879,7 +2862,7 @@
           "children": []
         },
         {
-          "id": "7ee1b0cc-5444-4a0a-9274-a58ef694cc7c",
+          "id": "3de87d94-24e2-46c0-b528-118ff6261273",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -2896,7 +2879,7 @@
           "children": []
         },
         {
-          "id": "92753c3d-4c2c-4a7c-87a0-736004ff9f59",
+          "id": "858d405d-64cd-4602-b8a9-1d2d0c4af387",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -3355,7 +3338,7 @@
           "children": []
         },
         {
-          "id": "32800b2f-5aeb-471f-a96a-ed56757efe69",
+          "id": "32b126ee-93cb-4650-bf42-842b4f908624",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -3374,7 +3357,7 @@
           "children": []
         },
         {
-          "id": "03cee5a7-aeb5-4524-ba1b-15b35d1b885d",
+          "id": "64420563-f093-4cbe-a7e7-876aa36ecf3f",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -3888,7 +3871,7 @@
           "children": []
         },
         {
-          "id": "81f16e2f-2d90-4044-b49b-de165c1eb3f1",
+          "id": "6adfa1b1-e66b-4998-81b9-60afd353d242",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -3905,7 +3888,7 @@
           "children": []
         },
         {
-          "id": "ddce76e5-c11d-4f23-a445-17a93f11c9f1",
+          "id": "4f4f41ee-baac-46a1-a6f9-d96ad22c4919",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -3924,7 +3907,7 @@
           "children": []
         },
         {
-          "id": "fbf62c76-5692-4a43-af27-1d9266b8e056",
+          "id": "6280f7f5-d60f-4375-bff0-41a69a466526",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -3941,7 +3924,7 @@
           "children": []
         },
         {
-          "id": "563b44d6-2ae7-4203-b748-9dcdc9495e01",
+          "id": "2ae67a05-adf8-40e2-aec6-e0311417ab33",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -4321,7 +4304,7 @@
           "children": []
         },
         {
-          "id": "17303b82-60ff-4207-8bd5-f953283d6557",
+          "id": "c4672517-b84d-40b8-9fdf-c20f12a76508",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -4338,7 +4321,7 @@
           "children": []
         },
         {
-          "id": "f261bf3c-5ebf-4399-827e-07efdbcd0a05",
+          "id": "1f13837c-0826-4c93-864a-b4afba01c77e",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -4357,7 +4340,7 @@
           "children": []
         },
         {
-          "id": "b9128d28-0121-44e4-bcfc-1dc688a63e0a",
+          "id": "0129b9d6-e7eb-4f5b-a2d4-f36fa7c5cad5",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -4374,7 +4357,7 @@
           "children": []
         },
         {
-          "id": "cc5e0a56-bcb8-4d0d-909a-f8d49fc7f9a9",
+          "id": "8a5902c5-7cba-4458-9074-65d1eae01a1f",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -4668,7 +4651,7 @@
           "children": []
         },
         {
-          "id": "79464c5f-dbe6-4df4-b64e-3ee7442172be",
+          "id": "3b33426f-cdca-46cf-9224-209183bfd684",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -4685,7 +4668,7 @@
           "children": []
         },
         {
-          "id": "a88e983c-032f-4aec-9fca-fe71ff5c97cb",
+          "id": "10d8c154-8669-40b8-8082-96c1b0a2c2f2",
           "type": "image",
           "props": {
             "textAlignment": "left",
@@ -4698,24 +4681,7 @@
           "children": []
         },
         {
-          "id": "b6dfa2c2-feef-439b-8faf-1223bce33f64",
-          "type": "paragraph",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left"
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Figure 2. Vertical arrows denote representation by references. Packaging neither duplicates members nor adds evidence. Only required, defined profiles participate.",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "438fde71-94d8-42b1-9780-0cc43efc5948",
+          "id": "abcea0b1-23b2-4cda-9636-f4ec9687fa5b",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -4734,7 +4700,7 @@
           "children": []
         },
         {
-          "id": "f3e97eaa-7a3b-466a-aeb5-01f1960aeadc",
+          "id": "cd04b3fa-bb4d-4cf5-9b6b-681b951536d2",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -4751,7 +4717,7 @@
           "children": []
         },
         {
-          "id": "17a465cc-9736-4691-a9c8-05217ba85678",
+          "id": "45a0b932-8ef7-4bcd-8e33-51141d85f568",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -5155,7 +5121,7 @@
           "children": []
         },
         {
-          "id": "16afa1d1-00ee-422c-a320-63a91a440f83",
+          "id": "dfe42faa-76e9-455f-b016-cdf83d0181d9",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -5172,7 +5138,7 @@
           "children": []
         },
         {
-          "id": "9c2ed16d-9da0-4dea-b05a-b0e168876896",
+          "id": "deda954f-3beb-426e-a3b5-b35d02142943",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -5191,7 +5157,7 @@
           "children": []
         },
         {
-          "id": "df0e47d6-ffda-4f27-8afc-750eb1289f81",
+          "id": "c152d980-36ac-4320-95ea-ca68323761e3",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -5208,7 +5174,7 @@
           "children": []
         },
         {
-          "id": "091f7505-c2f3-47a8-9461-1203bb8213b3",
+          "id": "7a7cc6a2-5cab-4c87-84cd-2befc956dc3a",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -5667,7 +5633,7 @@
           "children": []
         },
         {
-          "id": "866eddaa-3467-49e5-ace3-b29694a63a96",
+          "id": "4107f81a-ee28-40f2-b0b4-2733fa5e8276",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -5684,7 +5650,7 @@
           "children": []
         },
         {
-          "id": "e80d17e9-9b8e-493f-b90c-edc19660fc53",
+          "id": "e2e27212-7049-4a29-b874-e9db00565128",
           "type": "image",
           "props": {
             "textAlignment": "left",
@@ -5697,24 +5663,7 @@
           "children": []
         },
         {
-          "id": "763de830-bfa9-41ae-8bc6-f8fecd0a79f5",
-          "type": "paragraph",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left"
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Figure 3. Design procedure only. The return from reassessment to selection is iteration across document revisions, not a cycle inserted into the component DAG.",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "d8a98ffb-4667-40d1-95a4-f72e67bb4d39",
+          "id": "6d97ed35-10c3-4c01-8dc8-bf2389b642bf",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -5733,7 +5682,7 @@
           "children": []
         },
         {
-          "id": "2199aa03-ec29-44f8-81ad-8c5a93081b7c",
+          "id": "b4bc77f8-28b4-452e-8f3c-1504c39bf9bd",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -5750,7 +5699,7 @@
           "children": []
         },
         {
-          "id": "6085d417-225e-496f-9d73-1382a20d2189",
+          "id": "a7506c1e-8074-40c3-b262-f9fa4d5d7c8e",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -6154,7 +6103,7 @@
           "children": []
         },
         {
-          "id": "098c1180-601a-40da-a314-5cf7328fc93c",
+          "id": "d30fff26-fc55-45fb-8e68-ca808745182f",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -6171,7 +6120,7 @@
           "children": []
         },
         {
-          "id": "4ba820ea-f096-4ca0-a3ed-cc5d062572f1",
+          "id": "23dbc4b8-a5f4-4300-adc7-dfe08accfe87",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -6190,7 +6139,7 @@
           "children": []
         },
         {
-          "id": "e7743011-1a65-407e-9931-f315b364a8ed",
+          "id": "ff342214-6fd9-41e0-9190-6f142ab4c7be",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -6594,7 +6543,7 @@
           "children": []
         },
         {
-          "id": "b940712a-7be7-4a87-8d78-0ddcee88ee1c",
+          "id": "cd6972ad-b1b1-480d-b5c9-5c2ee426100c",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -6611,7 +6560,7 @@
           "children": []
         },
         {
-          "id": "8d5277e2-1aa0-4a70-93d4-68c0daafa26b",
+          "id": "5d0022ff-c24e-46e7-956b-347d5e5eda09",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -6630,7 +6579,7 @@
           "children": []
         },
         {
-          "id": "3d7e03ba-d672-4c89-97b6-332060bc76c4",
+          "id": "19c8fea6-c817-456f-b951-acd85c3fcb3c",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -7144,7 +7093,7 @@
           "children": []
         },
         {
-          "id": "8c59cec0-c6a9-4411-bbe5-f3a037d95755",
+          "id": "029cceb4-e9e5-4def-ac19-f114c7bc0c7d",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -7161,7 +7110,7 @@
           "children": []
         },
         {
-          "id": "a04caeb6-fb24-4b47-bb64-54cd102dd728",
+          "id": "1e8ce1bd-15b3-4193-8ef4-c04253206378",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -7180,7 +7129,7 @@
           "children": []
         },
         {
-          "id": "959f629e-b1d4-4e66-a3f0-49b3d33eed36",
+          "id": "f96e32ac-04dd-4f04-8aa0-f23ced516931",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -7197,7 +7146,7 @@
           "children": []
         },
         {
-          "id": "c150b72b-8d4b-4367-997e-d9a7145d8eb5",
+          "id": "c2b69f1b-15f9-4a7f-b2b9-6a60bc9251d9",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -7711,7 +7660,7 @@
           "children": []
         },
         {
-          "id": "1875ebe7-f158-45fd-aa31-33bcf8bcbe66",
+          "id": "2f010e6b-bc77-4593-adc7-2e906e133dd6",
           "type": "image",
           "props": {
             "textAlignment": "left",
@@ -7724,24 +7673,7 @@
           "children": []
         },
         {
-          "id": "d8ac440a-14ab-4dcc-bf35-31cafcae702d",
-          "type": "paragraph",
-          "props": {
-            "backgroundColor": "default",
-            "textColor": "default",
-            "textAlignment": "left"
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Figure 4. The proposed upper item represents the lower assembly. Diagram arrows are descriptive and carry no claim of a successful run.",
-              "styles": {}
-            }
-          ],
-          "children": []
-        },
-        {
-          "id": "955de096-d583-4d19-a754-0f7ac6df2c2d",
+          "id": "32c8a045-253d-4214-bef9-eb00b9bf1ab8",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -7760,7 +7692,7 @@
           "children": []
         },
         {
-          "id": "66ad432d-b197-4074-9d64-93c4a60dc1bf",
+          "id": "53544be1-f8b2-480f-ad07-86c15a4a810d",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -7777,7 +7709,7 @@
           "children": []
         },
         {
-          "id": "a4721556-a0c9-41ae-836f-d3e3ea052494",
+          "id": "b61c485f-2654-477e-9bd0-a6bf19dfe28f",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -8126,7 +8058,7 @@
           "children": []
         },
         {
-          "id": "b3732f60-71db-4102-b799-7800a321006a",
+          "id": "155b9a92-17fd-4ac3-8dcf-54a6e1151f1f",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -8145,7 +8077,7 @@
           "children": []
         },
         {
-          "id": "8c703619-1459-4e43-8050-d88b6d47ad8d",
+          "id": "ac94d97b-4d7a-4573-8008-37703295cf42",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -8162,7 +8094,7 @@
           "children": []
         },
         {
-          "id": "0674a81f-4611-45b5-be8d-960c44a9f304",
+          "id": "9e816cf2-bd2f-4231-9c86-a32f2eb988b1",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -8511,7 +8443,7 @@
           "children": []
         },
         {
-          "id": "f522d07b-9342-48ce-884d-f49a84edde94",
+          "id": "8dff9e88-8d3c-407f-afd9-665c34f9611c",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -8530,7 +8462,7 @@
           "children": []
         },
         {
-          "id": "64d37f06-7ee3-42f5-9d4d-f140f1e699c9",
+          "id": "c8d0c7a8-d1ab-4938-9104-c463724818ee",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -8547,7 +8479,7 @@
           "children": []
         },
         {
-          "id": "638c67d2-a749-4514-a6b1-56f7ad197f5e",
+          "id": "9f34be1e-8e21-4896-bc8a-e2184cdebb3a",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -9006,7 +8938,7 @@
           "children": []
         },
         {
-          "id": "8b89d0e6-8349-4329-a7ad-504ee2b3386c",
+          "id": "f47a8163-1557-4a70-8a06-18cdf9abbf59",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -9025,7 +8957,7 @@
           "children": []
         },
         {
-          "id": "c481d342-7b5b-4afb-b0c2-817178b65755",
+          "id": "559a3332-90ee-4614-bd22-6135996c960a",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -9042,7 +8974,7 @@
           "children": []
         },
         {
-          "id": "c4ba4854-695e-44a5-b470-1b0a170a5d41",
+          "id": "c9df810b-11ac-4d94-9108-5a9074a53ba7",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -9391,7 +9323,7 @@
           "children": []
         },
         {
-          "id": "2922f479-0d27-4363-926f-da0366282a6f",
+          "id": "4b71d8b9-8b21-445b-92c1-ce2884cd4f51",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -9408,7 +9340,7 @@
           "children": []
         },
         {
-          "id": "5ddb4eb7-d4f9-4084-bdc1-d8600470fe7f",
+          "id": "07ec5faf-d18c-4d28-9e38-25fe21ca778b",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -9427,7 +9359,7 @@
           "children": []
         },
         {
-          "id": "74575e97-1ab8-42ec-a47a-466a311457f6",
+          "id": "5d8978c8-80b1-4239-9142-3a2e40ba3b4b",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -9444,7 +9376,7 @@
           "children": []
         },
         {
-          "id": "54c19120-9a0b-4d08-afb3-f4546a5054a2",
+          "id": "4a1fe10b-69cb-4936-a4dd-a680c097c037",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -9690,7 +9622,7 @@
           "children": []
         },
         {
-          "id": "aef7fae9-bff1-4a7a-9a46-6c7864a6f9e4",
+          "id": "595147a7-364e-4515-92d2-56468b836279",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -9707,7 +9639,7 @@
           "children": []
         },
         {
-          "id": "31659b6e-8579-4785-b1e6-6566e2241b55",
+          "id": "3817afd1-a56c-40a3-8224-fe8441265610",
           "type": "heading",
           "props": {
             "backgroundColor": "default",
@@ -9726,7 +9658,7 @@
           "children": []
         },
         {
-          "id": "95c2bafb-176e-48e9-a3c3-d265b959a7d6",
+          "id": "029fdf56-a5fc-499a-9645-32add4278350",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -9743,7 +9675,7 @@
           "children": []
         },
         {
-          "id": "001d0c61-e7f4-43a4-9c7c-9280452a3725",
+          "id": "2eacdb17-79e9-4c12-990a-edfa5aabd6f1",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -9776,7 +9708,7 @@
           "children": []
         },
         {
-          "id": "70aa2ec4-3036-4d7c-899c-d21186307ba5",
+          "id": "ad26b69c-1607-4c69-96e4-c5b09bda836c",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -9809,7 +9741,7 @@
           "children": []
         },
         {
-          "id": "43582c29-8282-46e1-9217-19bb39616a54",
+          "id": "3a94bdaa-8372-4e31-8c8d-b20d27c03653",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -9842,7 +9774,7 @@
           "children": []
         },
         {
-          "id": "dac20b1d-e579-4501-8115-63b31dc2f15a",
+          "id": "2b59d2cf-176f-4f37-946f-2e5470e8d37d",
           "type": "paragraph",
           "props": {
             "backgroundColor": "default",
@@ -9860,7 +9792,7 @@
         }
       ],
       "createdAt": "2026-10-28T21:25:31.164Z",
-      "updatedAt": "2026-10-29T14:47:30.191Z"
+      "updatedAt": "2026-10-29T14:48:53.905Z"
     },
     {
       "id": "8c8e315d-55c9-4262-8a6d-b884ad2e06cb",
