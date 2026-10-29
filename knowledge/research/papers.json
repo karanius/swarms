@@ -10,6 +10,45 @@
       },
       "content": [
         {
+          "id": "3297b626-1a36-4c71-a074-8168f1640cee",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Executable Notebook",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "d2567367-38a8-43e9-8346-5995a6582d5b",
+          "type": "researchNotebook",
+          "props": {
+            "paperId": "8b72d1b8-2f32-4968-8b7f-c33b9e6c3eca",
+            "notebookId": "241bb561-358c-4c1a-9990-0a8e85688648"
+          },
+          "children": []
+        },
+        {
+          "id": "eae5218c-8c73-4c40-8619-2ea7ab85c5f6",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [],
+          "children": []
+        },
+        {
           "id": "1c0c2d09-1c4c-4cd2-b084-96c6dd921076",
           "type": "heading",
           "props": {
@@ -959,7 +998,7 @@
         }
       ],
       "createdAt": "2026-10-29T15:02:31.652Z",
-      "updatedAt": "2026-10-29T15:02:57.912Z"
+      "updatedAt": "2026-10-29T15:12:31.293Z"
     },
     {
       "id": "8d975b9f-7f46-42f5-8366-093a1894bbce",
