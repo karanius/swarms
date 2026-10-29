@@ -1,0 +1,62 @@
+[
+  {
+    "collection": "development-exposed",
+    "method": "boundary",
+    "cases": 4,
+    "passes": 4,
+    "closed": 3,
+    "invalid_accepted": 0,
+    "operations": 69,
+    "backtracks": 1
+  },
+  {
+    "collection": "development-exposed",
+    "method": "fifo",
+    "cases": 4,
+    "passes": 4,
+    "closed": 3,
+    "invalid_accepted": 0,
+    "operations": 69,
+    "backtracks": 1
+  },
+  {
+    "collection": "development-exposed",
+    "method": "greedy",
+    "cases": 4,
+    "passes": 3,
+    "closed": 2,
+    "invalid_accepted": 0,
+    "operations": 50,
+    "backtracks": 0
+  },
+  {
+    "collection": "evaluation-same-author-exposed",
+    "method": "boundary",
+    "cases": 24,
+    "passes": 24,
+    "closed": 12,
+    "invalid_accepted": 0,
+    "operations": 332,
+    "backtracks": 1
+  },
+  {
+    "collection": "evaluation-same-author-exposed",
+    "method": "fifo",
+    "cases": 24,
+    "passes": 24,
+    "closed": 12,
+    "invalid_accepted": 0,
+    "operations": 341,
+    "backtracks": 1
+  },
+  {
+    "collection": "evaluation-same-author-exposed",
+    "method": "greedy",
+    "cases": 24,
+    "passes": 23,
+    "closed": 11,
+    "invalid_accepted": 0,
+    "operations": 313,
+    "backtracks": 0
+  }
+]

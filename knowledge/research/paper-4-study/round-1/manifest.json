@@ -1,0 +1,14 @@
+{
+  "version": "p4-controller-1",
+  "python": "3.14.7",
+  "implementation_files": {
+    "protocol.json": "436d74d7b3b87bd7a42ebb6ac1589dcda2659e4e44c89ebad251749cf76e7c3c",
+    "controller.py": "14c45555950a746285b27b6fa748f1ea1fb10039f8e37cc16d80c31ec7c6e518",
+    "cases.py": "b12c3312efa3969cdb5fb9118175155446ffd402065966f071b5861a6ba7da6c",
+    "assessor.py": "9eb308819fcf6e67d8b7c3167d0a0a738456a143e4c41f8eb3ba05e465388d73",
+    "run_study.py": "c6201b7617b76ebaba6544c82fae816659bfa70df9a2a280b9fa5b48976f29ab"
+  },
+  "case_count": 28,
+  "exposure": "same-author exposed; not independent held-out evaluation",
+  "cases_sha256": "aeae9f4ceac1c2cfa2b1d31a4284283f093646502f74f7a8bfe85633c8d78074"
+}

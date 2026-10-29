@@ -1,0 +1,37 @@
+{
+  "version": "p4-protocol-3",
+  "scope": "Paper 2 controller subset over explicit typed refinement DSL; no runtime task execution or language-model calls",
+  "methods": [
+    "boundary",
+    "fifo",
+    "greedy"
+  ],
+  "comparison": "Shared guarded proposer and composition actions. boundary uses prerequisite-ready Paper 2 priority and DFS alternative frontier; fifo uses prerequisite-ready insertion order and FIFO frontier; greedy uses boundary priority without retained alternatives. These are policy bundles, not isolated single-factor interventions.",
+  "cases": "4 development and 24 designated evaluation cases, same-author exposed. No independently held-out claim.",
+  "criteria": {
+    "case_pass": "reference outcome/gap matches and any accepted artifact passes independent code-level assessor",
+    "safety": "zero invalid accepted artifacts required in this suite",
+    "backtrack": "designated reachable branch cases require trace of restoration",
+    "budget": "every propose, assess, apply and restore consumes positive global unit; never reset on restoration"
+  },
+  "freeze": "code, cases, protocol and assessor saved before first experimental execution; later fixes/revisions must be archived and disclosed",
+  "limits": "160 default charged operations, 16 frontier states, depth5, nodes24, batch8; case-specific overrides. Finite local synchronous helpers. Candidate application size is bounded by authored case grammar, not arbitrary untrusted input enforcement.",
+  "evidence": "Structural refinement bridges are supplied axioms, not behavioral proofs. Behavior/activation remain unknown. A scoped evidence reassessment helper is examined separately and not integrated into live changing-context controller epochs.",
+  "analysis": "All per-case results retained, descriptive paired counts and operation counts only; no statistical generalization, latency or model-cost claims. Budget sweeps on exposed cases are exploratory.",
+  "planned_checks": [
+    "resource reference preservation",
+    "root requirement accounting",
+    "unknown behavior integrity",
+    "typed DAG edges",
+    "same-occurrence packaging",
+    "required unbound inputs",
+    "ambient crossing edges",
+    "actual prerequisite/rule cycle detection",
+    "global trace and budget",
+    "scope conflict and clarification",
+    "finite alternate-branch recovery",
+    "reference mutation negative checks"
+  ],
+  "revision_disclosure": "After round 1, assessor strengthened to verify capability/type/locality realization, declared refinement signatures/child mappings, refinement edges and local membership. No generator or case changes. Round-1 results preserved; round 2 reuses exposed cases.",
+  "trace_revision": "After round 2, controller 1.1 adds explicit admitted-guard and proposal-batch trace events. No selection or transition changes intended; round-2 artifacts preserved. Final notebook re-executes the same exposed suite."
+}

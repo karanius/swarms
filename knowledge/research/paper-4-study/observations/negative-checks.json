@@ -1,0 +1,56 @@
+{
+  "drop-boundary": {
+    "passed": false,
+    "errors": [
+      "boundary-loss"
+    ],
+    "invalid_accepted": true
+  },
+  "invent-behavior-proof": {
+    "passed": false,
+    "errors": [
+      "behavior-overclaim"
+    ],
+    "invalid_accepted": true
+  },
+  "drop-requirement": {
+    "passed": false,
+    "errors": [
+      "outcome",
+      "requirement-loss"
+    ],
+    "invalid_accepted": false
+  },
+  "overrun-budget": {
+    "passed": false,
+    "errors": [
+      "budget",
+      "budget-accounting"
+    ],
+    "invalid_accepted": true
+  },
+  "bad-endpoint": {
+    "passed": false,
+    "errors": [
+      "refinement-edge-loss",
+      "type"
+    ],
+    "invalid_accepted": true
+  },
+  "wrong-capability": {
+    "passed": false,
+    "errors": [
+      "capability-realization"
+    ],
+    "invalid_accepted": true
+  },
+  "drop-refinement-edge": {
+    "passed": false,
+    "errors": [
+      "boundary-loss",
+      "edge-count",
+      "refinement-edge-loss"
+    ],
+    "invalid_accepted": true
+  }
+}

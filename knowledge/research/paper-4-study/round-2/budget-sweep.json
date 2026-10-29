@@ -1,0 +1,488 @@
+[
+  {
+    "case": "E-backtrack",
+    "budget": 4,
+    "method": "boundary",
+    "outcome": "partial",
+    "gap": "budget-exhausted",
+    "operations": 4,
+    "backtracks": 0
+  },
+  {
+    "case": "E-backtrack",
+    "budget": 4,
+    "method": "fifo",
+    "outcome": "partial",
+    "gap": "budget-exhausted",
+    "operations": 4,
+    "backtracks": 0
+  },
+  {
+    "case": "E-backtrack",
+    "budget": 4,
+    "method": "greedy",
+    "outcome": "partial",
+    "gap": "budget-exhausted",
+    "operations": 4,
+    "backtracks": 0
+  },
+  {
+    "case": "E-backtrack",
+    "budget": 12,
+    "method": "boundary",
+    "outcome": "partial",
+    "gap": "budget-exhausted",
+    "operations": 12,
+    "backtracks": 1
+  },
+  {
+    "case": "E-backtrack",
+    "budget": 12,
+    "method": "fifo",
+    "outcome": "partial",
+    "gap": "budget-exhausted",
+    "operations": 12,
+    "backtracks": 1
+  },
+  {
+    "case": "E-backtrack",
+    "budget": 12,
+    "method": "greedy",
+    "outcome": "blocked-within-horizon",
+    "gap": "unsupported-boundary:R-report/a-dead@1/x",
+    "operations": 5,
+    "backtracks": 0
+  },
+  {
+    "case": "E-backtrack",
+    "budget": 24,
+    "method": "boundary",
+    "outcome": "design-closed",
+    "gap": null,
+    "operations": 24,
+    "backtracks": 1
+  },
+  {
+    "case": "E-backtrack",
+    "budget": 24,
+    "method": "fifo",
+    "outcome": "design-closed",
+    "gap": null,
+    "operations": 24,
+    "backtracks": 1
+  },
+  {
+    "case": "E-backtrack",
+    "budget": 24,
+    "method": "greedy",
+    "outcome": "blocked-within-horizon",
+    "gap": "unsupported-boundary:R-report/a-dead@1/x",
+    "operations": 5,
+    "backtracks": 0
+  },
+  {
+    "case": "E-backtrack",
+    "budget": 48,
+    "method": "boundary",
+    "outcome": "design-closed",
+    "gap": null,
+    "operations": 24,
+    "backtracks": 1
+  },
+  {
+    "case": "E-backtrack",
+    "budget": 48,
+    "method": "fifo",
+    "outcome": "design-closed",
+    "gap": null,
+    "operations": 24,
+    "backtracks": 1
+  },
+  {
+    "case": "E-backtrack",
+    "budget": 48,
+    "method": "greedy",
+    "outcome": "blocked-within-horizon",
+    "gap": "unsupported-boundary:R-report/a-dead@1/x",
+    "operations": 5,
+    "backtracks": 0
+  },
+  {
+    "case": "E-backtrack",
+    "budget": 96,
+    "method": "boundary",
+    "outcome": "design-closed",
+    "gap": null,
+    "operations": 24,
+    "backtracks": 1
+  },
+  {
+    "case": "E-backtrack",
+    "budget": 96,
+    "method": "fifo",
+    "outcome": "design-closed",
+    "gap": null,
+    "operations": 24,
+    "backtracks": 1
+  },
+  {
+    "case": "E-backtrack",
+    "budget": 96,
+    "method": "greedy",
+    "outcome": "blocked-within-horizon",
+    "gap": "unsupported-boundary:R-report/a-dead@1/x",
+    "operations": 5,
+    "backtracks": 0
+  },
+  {
+    "case": "E-backtrack",
+    "budget": 160,
+    "method": "boundary",
+    "outcome": "design-closed",
+    "gap": null,
+    "operations": 24,
+    "backtracks": 1
+  },
+  {
+    "case": "E-backtrack",
+    "budget": 160,
+    "method": "fifo",
+    "outcome": "design-closed",
+    "gap": null,
+    "operations": 24,
+    "backtracks": 1
+  },
+  {
+    "case": "E-backtrack",
+    "budget": 160,
+    "method": "greedy",
+    "outcome": "blocked-within-horizon",
+    "gap": "unsupported-boundary:R-report/a-dead@1/x",
+    "operations": 5,
+    "backtracks": 0
+  },
+  {
+    "case": "E-three-step",
+    "budget": 4,
+    "method": "boundary",
+    "outcome": "partial",
+    "gap": "budget-exhausted",
+    "operations": 4,
+    "backtracks": 0
+  },
+  {
+    "case": "E-three-step",
+    "budget": 4,
+    "method": "fifo",
+    "outcome": "partial",
+    "gap": "budget-exhausted",
+    "operations": 4,
+    "backtracks": 0
+  },
+  {
+    "case": "E-three-step",
+    "budget": 4,
+    "method": "greedy",
+    "outcome": "partial",
+    "gap": "budget-exhausted",
+    "operations": 4,
+    "backtracks": 0
+  },
+  {
+    "case": "E-three-step",
+    "budget": 12,
+    "method": "boundary",
+    "outcome": "partial",
+    "gap": "budget-exhausted",
+    "operations": 12,
+    "backtracks": 0
+  },
+  {
+    "case": "E-three-step",
+    "budget": 12,
+    "method": "fifo",
+    "outcome": "partial",
+    "gap": "budget-exhausted",
+    "operations": 12,
+    "backtracks": 0
+  },
+  {
+    "case": "E-three-step",
+    "budget": 12,
+    "method": "greedy",
+    "outcome": "partial",
+    "gap": "budget-exhausted",
+    "operations": 12,
+    "backtracks": 0
+  },
+  {
+    "case": "E-three-step",
+    "budget": 24,
+    "method": "boundary",
+    "outcome": "partial",
+    "gap": "budget-exhausted",
+    "operations": 24,
+    "backtracks": 0
+  },
+  {
+    "case": "E-three-step",
+    "budget": 24,
+    "method": "fifo",
+    "outcome": "partial",
+    "gap": "budget-exhausted",
+    "operations": 24,
+    "backtracks": 0
+  },
+  {
+    "case": "E-three-step",
+    "budget": 24,
+    "method": "greedy",
+    "outcome": "partial",
+    "gap": "budget-exhausted",
+    "operations": 24,
+    "backtracks": 0
+  },
+  {
+    "case": "E-three-step",
+    "budget": 48,
+    "method": "boundary",
+    "outcome": "design-closed",
+    "gap": null,
+    "operations": 27,
+    "backtracks": 0
+  },
+  {
+    "case": "E-three-step",
+    "budget": 48,
+    "method": "fifo",
+    "outcome": "design-closed",
+    "gap": null,
+    "operations": 27,
+    "backtracks": 0
+  },
+  {
+    "case": "E-three-step",
+    "budget": 48,
+    "method": "greedy",
+    "outcome": "design-closed",
+    "gap": null,
+    "operations": 27,
+    "backtracks": 0
+  },
+  {
+    "case": "E-three-step",
+    "budget": 96,
+    "method": "boundary",
+    "outcome": "design-closed",
+    "gap": null,
+    "operations": 27,
+    "backtracks": 0
+  },
+  {
+    "case": "E-three-step",
+    "budget": 96,
+    "method": "fifo",
+    "outcome": "design-closed",
+    "gap": null,
+    "operations": 27,
+    "backtracks": 0
+  },
+  {
+    "case": "E-three-step",
+    "budget": 96,
+    "method": "greedy",
+    "outcome": "design-closed",
+    "gap": null,
+    "operations": 27,
+    "backtracks": 0
+  },
+  {
+    "case": "E-three-step",
+    "budget": 160,
+    "method": "boundary",
+    "outcome": "design-closed",
+    "gap": null,
+    "operations": 27,
+    "backtracks": 0
+  },
+  {
+    "case": "E-three-step",
+    "budget": 160,
+    "method": "fifo",
+    "outcome": "design-closed",
+    "gap": null,
+    "operations": 27,
+    "backtracks": 0
+  },
+  {
+    "case": "E-three-step",
+    "budget": 160,
+    "method": "greedy",
+    "outcome": "design-closed",
+    "gap": null,
+    "operations": 27,
+    "backtracks": 0
+  },
+  {
+    "case": "E-conflict-priority",
+    "budget": 4,
+    "method": "boundary",
+    "outcome": "blocked-within-horizon",
+    "gap": "mandatory-conflict:R-conflict",
+    "operations": 0,
+    "backtracks": 0
+  },
+  {
+    "case": "E-conflict-priority",
+    "budget": 4,
+    "method": "fifo",
+    "outcome": "blocked-within-horizon",
+    "gap": "mandatory-conflict:R-conflict",
+    "operations": 3,
+    "backtracks": 0
+  },
+  {
+    "case": "E-conflict-priority",
+    "budget": 4,
+    "method": "greedy",
+    "outcome": "blocked-within-horizon",
+    "gap": "mandatory-conflict:R-conflict",
+    "operations": 0,
+    "backtracks": 0
+  },
+  {
+    "case": "E-conflict-priority",
+    "budget": 12,
+    "method": "boundary",
+    "outcome": "blocked-within-horizon",
+    "gap": "mandatory-conflict:R-conflict",
+    "operations": 0,
+    "backtracks": 0
+  },
+  {
+    "case": "E-conflict-priority",
+    "budget": 12,
+    "method": "fifo",
+    "outcome": "blocked-within-horizon",
+    "gap": "mandatory-conflict:R-conflict",
+    "operations": 3,
+    "backtracks": 0
+  },
+  {
+    "case": "E-conflict-priority",
+    "budget": 12,
+    "method": "greedy",
+    "outcome": "blocked-within-horizon",
+    "gap": "mandatory-conflict:R-conflict",
+    "operations": 0,
+    "backtracks": 0
+  },
+  {
+    "case": "E-conflict-priority",
+    "budget": 24,
+    "method": "boundary",
+    "outcome": "blocked-within-horizon",
+    "gap": "mandatory-conflict:R-conflict",
+    "operations": 0,
+    "backtracks": 0
+  },
+  {
+    "case": "E-conflict-priority",
+    "budget": 24,
+    "method": "fifo",
+    "outcome": "blocked-within-horizon",
+    "gap": "mandatory-conflict:R-conflict",
+    "operations": 3,
+    "backtracks": 0
+  },
+  {
+    "case": "E-conflict-priority",
+    "budget": 24,
+    "method": "greedy",
+    "outcome": "blocked-within-horizon",
+    "gap": "mandatory-conflict:R-conflict",
+    "operations": 0,
+    "backtracks": 0
+  },
+  {
+    "case": "E-conflict-priority",
+    "budget": 48,
+    "method": "boundary",
+    "outcome": "blocked-within-horizon",
+    "gap": "mandatory-conflict:R-conflict",
+    "operations": 0,
+    "backtracks": 0
+  },
+  {
+    "case": "E-conflict-priority",
+    "budget": 48,
+    "method": "fifo",
+    "outcome": "blocked-within-horizon",
+    "gap": "mandatory-conflict:R-conflict",
+    "operations": 3,
+    "backtracks": 0
+  },
+  {
+    "case": "E-conflict-priority",
+    "budget": 48,
+    "method": "greedy",
+    "outcome": "blocked-within-horizon",
+    "gap": "mandatory-conflict:R-conflict",
+    "operations": 0,
+    "backtracks": 0
+  },
+  {
+    "case": "E-conflict-priority",
+    "budget": 96,
+    "method": "boundary",
+    "outcome": "blocked-within-horizon",
+    "gap": "mandatory-conflict:R-conflict",
+    "operations": 0,
+    "backtracks": 0
+  },
+  {
+    "case": "E-conflict-priority",
+    "budget": 96,
+    "method": "fifo",
+    "outcome": "blocked-within-horizon",
+    "gap": "mandatory-conflict:R-conflict",
+    "operations": 3,
+    "backtracks": 0
+  },
+  {
+    "case": "E-conflict-priority",
+    "budget": 96,
+    "method": "greedy",
+    "outcome": "blocked-within-horizon",
+    "gap": "mandatory-conflict:R-conflict",
+    "operations": 0,
+    "backtracks": 0
+  },
+  {
+    "case": "E-conflict-priority",
+    "budget": 160,
+    "method": "boundary",
+    "outcome": "blocked-within-horizon",
+    "gap": "mandatory-conflict:R-conflict",
+    "operations": 0,
+    "backtracks": 0
+  },
+  {
+    "case": "E-conflict-priority",
+    "budget": 160,
+    "method": "fifo",
+    "outcome": "blocked-within-horizon",
+    "gap": "mandatory-conflict:R-conflict",
+    "operations": 3,
+    "backtracks": 0
+  },
+  {
+    "case": "E-conflict-priority",
+    "budget": 160,
+    "method": "greedy",
+    "outcome": "blocked-within-horizon",
+    "gap": "mandatory-conflict:R-conflict",
+    "operations": 0,
+    "backtracks": 0
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "no_invalid_acceptance": true,
+  "boundary_suite": true,
+  "negative_checks_detected": true,
+  "evidence_expected": true
+}

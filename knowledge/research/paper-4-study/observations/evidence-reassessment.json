@@ -1,0 +1,48 @@
+[
+  {
+    "condition": "current",
+    "result": {
+      "judgment": "met",
+      "reason": "scoped-evidence",
+      "support": [
+        "analysis:1"
+      ],
+      "contradiction": []
+    }
+  },
+  {
+    "condition": "changed-model",
+    "result": {
+      "judgment": "unknown",
+      "reason": "stale-context",
+      "support": [
+        "analysis:1"
+      ],
+      "contradiction": []
+    }
+  },
+  {
+    "condition": "changed-transitive-tool",
+    "result": {
+      "judgment": "unknown",
+      "reason": "stale-context",
+      "support": [
+        "analysis:1"
+      ],
+      "contradiction": []
+    }
+  },
+  {
+    "condition": "conflicted",
+    "result": {
+      "judgment": "unknown",
+      "reason": "conflict",
+      "support": [
+        "analysis:1"
+      ],
+      "contradiction": [
+        "counterexample:1"
+      ]
+    }
+  }
+]

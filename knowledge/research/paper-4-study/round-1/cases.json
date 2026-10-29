@@ -1,0 +1,3056 @@
+[
+  {
+    "id": "D-decompose",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "design-closed",
+      "nodes": 2,
+      "edges": 1,
+      "backtrack": false
+    },
+    "collection": "development-exposed"
+  },
+  {
+    "id": "D-backtrack",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "a-dead@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "x",
+            "cap": "missing",
+            "in": "Text",
+            "out": "Report"
+          }
+        ],
+        "edges": [],
+        "entry": "x",
+        "exit": "x",
+        "bridge": "met"
+      },
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "design-closed",
+      "nodes": 2,
+      "edges": 1,
+      "backtrack": true
+    },
+    "collection": "development-exposed"
+  },
+  {
+    "id": "D-resource",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [
+          "resource:model"
+        ],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {
+      "resource:model": {
+        "version": "1",
+        "described": true
+      }
+    },
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "design-closed",
+      "nodes": 2,
+      "edges": 1,
+      "backtrack": false
+    },
+    "collection": "development-exposed"
+  },
+  {
+    "id": "D-clarify",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": null,
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "awaiting-clarification",
+      "gap_prefix": "ambiguous-capability"
+    },
+    "collection": "development-exposed"
+  },
+  {
+    "id": "E-three-step",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "clean@1",
+        "layer": "components",
+        "cap": "clean",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Clean"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "tag@1",
+        "layer": "components",
+        "cap": "tag",
+        "inputs": {
+          "in": {
+            "type": "Clean",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Tags"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "render@1",
+        "layer": "components",
+        "cap": "render",
+        "inputs": {
+          "in": {
+            "type": "Tags",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "three@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "clean",
+            "in": "Text",
+            "out": "Clean"
+          },
+          {
+            "key": "b",
+            "cap": "tag",
+            "in": "Clean",
+            "out": "Tags"
+          },
+          {
+            "key": "c",
+            "cap": "render",
+            "in": "Tags",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ],
+          [
+            "b",
+            "c"
+          ]
+        ],
+        "entry": "a",
+        "exit": "c",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "design-closed",
+      "nodes": 3,
+      "edges": 2,
+      "backtrack": false
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-direct-reuse",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "direct@1",
+        "layer": "components",
+        "cap": "report",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "design-closed",
+      "nodes": 1,
+      "edges": 0,
+      "backtrack": false
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-nested",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "clean@1",
+        "layer": "components",
+        "cap": "clean",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Clean"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Clean",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "outer@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "prepare",
+            "cap": "prepare",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "write",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "prepare",
+            "write"
+          ]
+        ],
+        "entry": "prepare",
+        "exit": "write",
+        "bridge": "met"
+      },
+      {
+        "id": "inner@1",
+        "cap": "prepare",
+        "in": "Text",
+        "out": "Facts",
+        "steps": [
+          {
+            "key": "clean",
+            "cap": "clean",
+            "in": "Text",
+            "out": "Clean"
+          },
+          {
+            "key": "extract",
+            "cap": "extract",
+            "in": "Clean",
+            "out": "Facts"
+          }
+        ],
+        "edges": [
+          [
+            "clean",
+            "extract"
+          ]
+        ],
+        "entry": "clean",
+        "exit": "extract",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "design-closed",
+      "nodes": 3,
+      "edges": 2,
+      "backtrack": false
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-backtrack",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "a-dead@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "x",
+            "cap": "unsupported",
+            "in": "Text",
+            "out": "Report"
+          }
+        ],
+        "edges": [],
+        "entry": "x",
+        "exit": "x",
+        "bridge": "met"
+      },
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "design-closed",
+      "nodes": 2,
+      "edges": 1,
+      "backtrack": true
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-type-reject",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "a-wrong@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Image",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "design-closed",
+      "nodes": 2,
+      "edges": 1,
+      "backtrack": false
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-locality",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "locality": "local"
+      }
+    ],
+    "library": [
+      {
+        "id": "a-cloud@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "remote"
+      },
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "design-closed",
+      "nodes": 2,
+      "edges": 1,
+      "backtrack": false
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-extra-input",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          },
+          "context": {
+            "type": "Context",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "design-closed",
+      "nodes": 2,
+      "edges": 1,
+      "backtrack": false,
+      "extra_input": true
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-crossing",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [
+      [
+        "occ:R-report/report-standard@1/a",
+        "out",
+        "outside",
+        "in"
+      ]
+    ],
+    "oracle": {
+      "outcome": "design-closed",
+      "nodes": 2,
+      "edges": 1,
+      "backtrack": false,
+      "crossings": 1
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-two-roots",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      },
+      {
+        "id": "R-other",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "design-closed",
+      "nodes": 4,
+      "edges": 2,
+      "backtrack": false
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-prerequisite",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "needs": [
+          "R-before"
+        ]
+      },
+      {
+        "id": "R-before",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "design-closed",
+      "nodes": 4,
+      "edges": 2,
+      "backtrack": false
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-missing",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "blocked-within-horizon",
+      "gap_prefix": "unsupported-boundary"
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-no-resource",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [
+          "resource:absent"
+        ],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "blocked-within-horizon",
+      "gap_prefix": "missing-resource"
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-bound-resource",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [
+          "resource:store"
+        ],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {
+      "resource:store": {
+        "version": "1",
+        "described": true
+      }
+    },
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "design-closed",
+      "nodes": 2,
+      "edges": 1,
+      "backtrack": false
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-unknown-bridge",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "unknown"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "blocked-within-horizon",
+      "gap_prefix": "unsupported-boundary"
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-rule-cycle",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ],
+          [
+            "b",
+            "a"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "blocked-within-horizon",
+      "gap_prefix": "unsupported-boundary"
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-prerequisite-cycle",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "needs": [
+          "R-before"
+        ]
+      },
+      {
+        "id": "R-before",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "needs": [
+          "R-report"
+        ]
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "blocked-within-horizon",
+      "gap_prefix": "prerequisite-cycle"
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-missing-prerequisite",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "needs": [
+          "unknown"
+        ]
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "blocked-within-horizon",
+      "gap_prefix": "missing-prerequisite"
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-budget",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 2,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "partial",
+      "gap_prefix": "budget-exhausted"
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-profile",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "flows-to-processes@unprovided",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "blocked-within-horizon",
+      "gap_prefix": "unsupported-profile"
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-frontier-pruned",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "a-dead@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "x",
+            "cap": "unsupported",
+            "in": "Text",
+            "out": "Report"
+          }
+        ],
+        "edges": [],
+        "entry": "x",
+        "exit": "x",
+        "bridge": "met"
+      },
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 0,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "blocked-within-horizon",
+      "gap_prefix": "unsupported-boundary"
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-conflict-priority",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      },
+      {
+        "id": "R-conflict",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "conflict": true
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 4,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "blocked-within-horizon",
+      "gap_prefix": "mandatory-conflict"
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-empty",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "awaiting-clarification",
+      "gap_prefix": "empty-scope"
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-depth-limit",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 0,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "blocked-within-horizon",
+      "gap_prefix": "unsupported-boundary"
+    },
+    "collection": "evaluation-same-author-exposed"
+  },
+  {
+    "id": "E-distractor",
+    "baseline_version": "requirements@1",
+    "library_version": "synthetic-library@1",
+    "profile": "components-to-composite-dag@1",
+    "requirements": [
+      {
+        "id": "R-report",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report"
+      }
+    ],
+    "library": [
+      {
+        "id": "extract@1",
+        "layer": "components",
+        "cap": "extract",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Facts"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "write@1",
+        "layer": "components",
+        "cap": "write",
+        "inputs": {
+          "in": {
+            "type": "Facts",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      },
+      {
+        "id": "other@1",
+        "layer": "components",
+        "cap": "unrelated",
+        "inputs": {
+          "in": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "out": "Report"
+        },
+        "config": {
+          "mode": "declared"
+        },
+        "resources": [],
+        "locality": "local"
+      }
+    ],
+    "rules": [
+      {
+        "id": "report-standard@1",
+        "cap": "report",
+        "in": "Text",
+        "out": "Report",
+        "steps": [
+          {
+            "key": "a",
+            "cap": "extract",
+            "in": "Text",
+            "out": "Facts"
+          },
+          {
+            "key": "b",
+            "cap": "write",
+            "in": "Facts",
+            "out": "Report"
+          }
+        ],
+        "edges": [
+          [
+            "a",
+            "b"
+          ]
+        ],
+        "entry": "a",
+        "exit": "b",
+        "bridge": "met"
+      }
+    ],
+    "resources": {},
+    "limits": {
+      "attempts": 160,
+      "frontier": 16,
+      "depth": 5,
+      "nodes": 24,
+      "candidates": 8
+    },
+    "ambient_edges": [],
+    "oracle": {
+      "outcome": "design-closed",
+      "nodes": 2,
+      "edges": 1,
+      "backtrack": false
+    },
+    "collection": "evaluation-same-author-exposed"
+  }
+]

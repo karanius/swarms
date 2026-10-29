@@ -1,0 +1,39 @@
+{
+  "drop-boundary": {
+    "passed": false,
+    "errors": [
+      "boundary-loss"
+    ],
+    "invalid_accepted": true
+  },
+  "invent-behavior-proof": {
+    "passed": false,
+    "errors": [
+      "behavior-overclaim"
+    ],
+    "invalid_accepted": true
+  },
+  "drop-requirement": {
+    "passed": false,
+    "errors": [
+      "outcome",
+      "requirement-loss"
+    ],
+    "invalid_accepted": false
+  },
+  "overrun-budget": {
+    "passed": false,
+    "errors": [
+      "budget",
+      "budget-accounting"
+    ],
+    "invalid_accepted": true
+  },
+  "bad-endpoint": {
+    "passed": false,
+    "errors": [
+      "type"
+    ],
+    "invalid_accepted": true
+  }
+}
