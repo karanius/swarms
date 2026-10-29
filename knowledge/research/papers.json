@@ -3,7 +3,7 @@
   "papers": [
     {
       "id": "8b72d1b8-2f32-4968-8b7f-c33b9e6c3eca",
-      "title": "",
+      "title": "Iterative Development of Boundary Resolution — Paper 3",
       "templateRef": {
         "id": "experiment",
         "version": 2
@@ -13,174 +13,953 @@
           "id": "1c0c2d09-1c4c-4cd2-b084-96c6dd921076",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Abstract"
+          "content": [
+            {
+              "type": "text",
+              "text": "PAPER 3 · STUDY TEMPLATE · NOT STARTED",
+              "styles": {
+                "bold": true
+              }
+            }
+          ],
+          "children": []
         },
         {
-          "id": "6350653b-336b-40b7-b18c-64cfa5f5801d",
+          "id": "7c308daa-2ad3-4b91-9763-b9174d2d7782",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Working title and section prompts only. Develop this paper together, slowly. No study decisions are finalized and no experiments are authorized by this template.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "2f06e69e-575d-4822-95b7-5c01262b29ca",
+          "id": "54943548-1450-4900-9d2d-f1176faa86dc",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Introduction and Research Question"
+          "content": [
+            {
+              "type": "text",
+              "text": "Abstract",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "aedb1b75-cde4-40dc-8134-80a962aebd9e",
+          "id": "43f5d2b0-421d-427d-851f-40259265fbf2",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "To write last, after the study. No findings yet.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "83636c39-189f-41f4-b3b5-307bac469620",
+          "id": "bb384791-68ad-4a91-883d-4da31a63ceba",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Background and Related Work"
+          "content": [
+            {
+              "type": "text",
+              "text": "1. Research Question and Scope",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "ace35b98-2743-4aa9-a02d-e89add15aa47",
+          "id": "c59d04e9-46c4-44d2-8c15-47513c41ad4e",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "To define together: what should the first study establish, and what remains outside its scope? Initial direction: investigate Paper 2 while refining its missing rules, starting with Components → Composite.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "380f10a1-a074-4543-a497-71ff3b1576ca",
+          "id": "d15f5937-6fd8-44a0-9e50-5392531b5070",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Hypotheses, Predictions, and Refutation Criteria"
+          "content": [
+            {
+              "type": "text",
+              "text": "2. Relationship to Papers 1 and 2",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "1d550f56-eeac-416a-9f54-e4c9956c6a03",
+          "id": "83fb9925-ec03-463e-855f-3a1c9fc1ff8d",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Identify the exact versions, inherited rules, and assumptions under study. Separate the proposed algorithm from its implementation.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "b7631dc3-b7c4-475b-9310-e89fdfa50ed9",
+          "id": "78a63692-a17d-40c0-93af-33a63e30c355",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Assumptions and Alternative Explanations"
+          "content": [
+            {
+              "type": "text",
+              "text": "3. Hypotheses, Alternatives, and Refutation",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "85a4603f-4a90-4a51-a188-d9f7f8f338c2",
+          "id": "0ff29ccb-4e9a-4f2f-8eb3-3a8fee65c2e8",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "To define together: competing explanations, predicted observations, and evidence that would weaken each claim.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "23946fc2-5cab-4778-92c2-d2516f2b4197",
+          "id": "64ad4eec-afe3-4256-b7a9-811dcc2f1853",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Methods and Analysis Plan"
+          "content": [
+            {
+              "type": "text",
+              "text": "4. Inputs and Expected Artifacts",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "eaf92977-cf21-4a36-a571-9065516f4603",
+          "id": "2e5d7cd2-fc26-442a-a5ae-667d5cedb9e0",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "To define together: structured requirements, pinned library, constraints, unresolved obligations, and the instance specification to be written. Conversational discovery is not assumed to be solved.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "0a672975-131c-4671-b6ec-268ad7c53f08",
+          "id": "e7094e84-7706-45dd-8163-87b8b8f7938a",
+          "type": "table",
+          "props": {
+            "textColor": "default"
+          },
+          "content": {
+            "type": "tableContent",
+            "columnWidths": [
+              null,
+              null,
+              null
+            ],
+            "headerRows": 1,
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input or output",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Definition to agree",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Status",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Input requirements and library",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "To define together",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Pending",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Generated instance artifact",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "To define together",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Pending",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "children": []
+        },
+        {
+          "id": "78ee648a-2253-40e3-978b-3adcd251fc80",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Reproducibility and Disclosures"
+          "content": [
+            {
+              "type": "text",
+              "text": "5. Development Cases and Held-Out Evaluation",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "e85f1f46-1cbc-48a1-9164-3f2841a58e22",
+          "id": "d8d67a09-9891-4751-858c-4bccccddb893",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Define separate case collections and access rules before evaluation. Cases used to revise the algorithm must not be reported as untouched evaluation cases.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "354cd3b2-3f87-4ff5-afed-e405d9992e75",
+          "id": "2bbed0b6-2519-43cc-bbd2-abda6ce96b80",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Results and Evidence"
+          "content": [
+            {
+              "type": "text",
+              "text": "6. Baselines, Measures, and Decision Criteria",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "09d7590a-a242-4ab2-8b57-5d79ab29efa5",
+          "id": "1cd72aa4-eb55-4f83-ba9d-f05006fd7ebd",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "To define together: fair comparison conditions, what is measured, and what counts as failure, ambiguity, or improvement. No thresholds have been selected.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "1d29f99f-7637-445e-a42a-0b3af855aafb",
+          "id": "23666e8a-76c8-42b1-8ca2-a61ee52bb502",
+          "type": "table",
+          "props": {
+            "textColor": "default"
+          },
+          "content": {
+            "type": "tableContent",
+            "columnWidths": [
+              null,
+              null,
+              null
+            ],
+            "headerRows": 1,
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Criterion",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "How to assess it",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Decision rule",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "To define",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "To define",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Not selected",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "children": []
+        },
+        {
+          "id": "a03530bf-a980-4596-b377-a5c21311d54b",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Discussion and Critical Evaluation"
+          "content": [
+            {
+              "type": "text",
+              "text": "7. Iterative Development Protocol",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "f5bcc50b-cef2-470b-8b79-e9e3ecb6f1f3",
+          "id": "e39f1171-c887-465a-92e3-9a3b3261d9f7",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Proposed cycle to refine together: freeze a rule version → examine defined cases → classify failures → revise explicitly → reassess earlier cases and fresh cases. No iteration has run.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "70f55de8-1727-4cf8-942c-cc6cf2785d4a",
+          "id": "789771f7-404d-44f8-a3aa-9a397936c133",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Limitations and Validity"
+          "content": [
+            {
+              "type": "text",
+              "text": "8. Version, Evidence, and Revision Records",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "65559fe9-51b8-4653-b57f-6d49f57b5cf0",
+          "id": "07d11f99-f927-49eb-aac2-ff9f09c5c880",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Record which algorithm, library, inputs, implementation, and evaluation criteria produced each artifact. Track corrections rather than rewriting earlier outcomes.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "2522b202-eb89-4ea3-8e22-4b481b096e3c",
+          "id": "e6df99af-9fbd-48b3-b1b4-5c239aab1440",
+          "type": "table",
+          "props": {
+            "textColor": "default"
+          },
+          "content": {
+            "type": "tableContent",
+            "columnWidths": [
+              null,
+              null,
+              null
+            ],
+            "headerRows": 1,
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Iteration / rule version",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Observation and evidence",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Revision and rationale",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              },
+              {
+                "cells": [
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "No iteration yet",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "No observations",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  },
+                  {
+                    "type": "tableCell",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "No revisions",
+                        "styles": {}
+                      }
+                    ],
+                    "props": {
+                      "colspan": 1,
+                      "rowspan": 1,
+                      "backgroundColor": "default",
+                      "textColor": "default",
+                      "textAlignment": "left"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "children": []
+        },
+        {
+          "id": "0d579fcd-f4b4-416c-b4df-fe6327be6f7c",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Conclusion"
+          "content": [
+            {
+              "type": "text",
+              "text": "9. Visual and Table Plan",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "67bd0fb4-aff7-4e80-b789-142787c2f96c",
+          "id": "bcb9014e-df3a-44e8-9f68-553f8029328d",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Add diagrams for study structure and layer transitions when their definitions are agreed. Add statistical figures only when actual observations exist; no illustrative numbers are results.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "e048f71a-fc1a-4483-9a59-21bac04acb7a",
+          "id": "808eb2fd-e5d2-4600-a4b0-d579e47c2139",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "Open Questions and Next Tests"
+          "content": [
+            {
+              "type": "text",
+              "text": "10. Results and Observations — Not Started",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "8e100635-a507-4c71-9bb3-edaa7c0da64a",
+          "id": "cf8d04bc-dd2a-4253-b4b9-56bf688d1429",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Reserved. No experiments, generated study outputs, measurements, or findings exist for Paper 3.",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "454c3086-e350-4281-8385-6f3bf9b16db1",
+          "id": "b6b06b92-75e9-4edd-8ccf-ff166aec935d",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
-          "content": "References"
+          "content": [
+            {
+              "type": "text",
+              "text": "11. Discussion, Limitations, and Next-Layer Gate",
+              "styles": {}
+            }
+          ],
+          "children": []
         },
         {
-          "id": "ee669b27-641c-4f4b-8ada-ee700d79cf21",
+          "id": "c9e81056-69d4-4697-aba5-a502cdeaf3c9",
           "type": "paragraph",
-          "content": []
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Reserved for interpretation after observations. Define the gate for extending upward before claiming that a lower-layer result generalizes.",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "03454100-d717-49f8-8eac-3b561d6f84c8",
+          "type": "heading",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "12. Conclusion, Review, and References",
+              "styles": {}
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "a46c78ad-26a3-4650-a963-58712fff3109",
+          "type": "paragraph",
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Conclusion pending. Record review status, AI assistance, source references, and unresolved questions. This is a template, not a reviewed study.",
+              "styles": {}
+            }
+          ],
+          "children": []
         }
       ],
       "createdAt": "2026-10-29T15:02:31.652Z",
-      "updatedAt": "2026-10-29T15:02:31.652Z"
+      "updatedAt": "2026-10-29T15:02:57.912Z"
     },
     {
       "id": "8d975b9f-7f46-42f5-8366-093a1894bbce",
