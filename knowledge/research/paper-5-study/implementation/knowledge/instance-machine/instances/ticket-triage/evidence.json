@@ -1,0 +1,23 @@
+{
+  "kind": "implementation-verification",
+  "scope": "initial authored design, not behavior or autonomous generation",
+  "headRevision": 5,
+  "checks": {
+    "storageProjectionTests": 9,
+    "v3EntryBuild": "passed",
+    "sameOriginRejection": 403,
+    "staleBaseRejection": 409,
+    "unsupportedActionRejection": 400,
+    "businessAnswersInvented": false,
+    "behaviorExecuted": false,
+    "deploymentPerformed": false
+  },
+  "browser": [
+    "saved checkpoint creates revision 5",
+    "reopened revision 5 from disk",
+    "revision 1 shows intent-only state",
+    "historical revision editing disabled",
+    "composite opens same Agent occurrence reference",
+    "visible JSON has revision 5, ten entities and four unanswered questions"
+  ]
+}

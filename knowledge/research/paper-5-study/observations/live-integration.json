@@ -1,0 +1,24 @@
+{
+  "kind": "visible-live-integration",
+  "baseRevision": 5,
+  "savedRevision": 6,
+  "source": "V3 Instance / Revise design UI",
+  "ruleStatus": "proposed",
+  "businessQuestionsUnanswered": 4,
+  "affectedItems": 8,
+  "unchanged": [
+    "input",
+    "model-config"
+  ],
+  "preservation": {
+    "passed": true,
+    "failures": []
+  },
+  "newGapIds": [
+    "G-approve-policy-outage",
+    "G-evidence-policy-outage",
+    "G-predicate-policy-outage"
+  ],
+  "behavior": "not-tested",
+  "deployment": "not-requested"
+}

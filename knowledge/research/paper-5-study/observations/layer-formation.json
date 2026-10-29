@@ -1,0 +1,4820 @@
+{
+  "scope": "exploratory addendum after user clarified layer formation; no independent evaluation",
+  "revision": "Initial candidate-limit reference expected zero candidates incorrectly; a limit of one permits the first valid group. Corrected to one composite after inspecting sorted enumeration and retained round-1 results.",
+  "moduleSha256": "106792d8e5370956d83a389f93971b55d95c5f2fc50553345a0d38ef15bc9554",
+  "results": [
+    {
+      "name": "grounded-no-review",
+      "counts": [
+        2,
+        1,
+        0
+      ],
+      "expected": [
+        2,
+        1,
+        0
+      ],
+      "passed": true,
+      "result": {
+        "version": "layer-formation-1",
+        "components": [
+          {
+            "id": "input",
+            "layer": "components",
+            "name": "Chat Input",
+            "requirements": [
+              "R-intake"
+            ],
+            "inputs": [
+              "str"
+            ],
+            "outputs": [
+              "Message"
+            ],
+            "leafIds": [
+              "input"
+            ],
+            "definition": {
+              "id": "ChatInput",
+              "revision": "54baabc2534e2645dc4cbf15810ee15a455befdec5ca4614d4ded76d090a6c58"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "files",
+                  "type": "file",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "sender",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "sender_name",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "session_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "should_store_message",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "message",
+                  "types": [
+                    "Message"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": [],
+            "fieldBinding": {
+              "input_value": {
+                "externalName": "ticketText",
+                "type": "str",
+                "status": "proposed"
+              }
+            }
+          },
+          {
+            "id": "classifier",
+            "layer": "components",
+            "name": "Agent",
+            "requirements": [
+              "R-assess"
+            ],
+            "inputs": [
+              "Message",
+              "LanguageModel",
+              "DataFrame",
+              "Table",
+              "Tool"
+            ],
+            "outputs": [
+              "Message",
+              "Data",
+              "JSON"
+            ],
+            "leafIds": [
+              "classifier"
+            ],
+            "definition": {
+              "id": "Agent",
+              "revision": "d2f72d8f3e3779e43fedbd3f24d1c39752c5fbc170b5a2f2ac9706204d1c4fd5"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "add_calculator_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "add_current_date_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "api_key",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "base_url_ibm_watsonx",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "format_instructions",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "handle_parsing_errors",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "max_iterations",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "max_tokens",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "model",
+                  "type": "model",
+                  "accepted": [
+                    "LanguageModel"
+                  ],
+                  "required": true
+                },
+                {
+                  "name": "n_messages",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "output_schema",
+                  "type": "table",
+                  "accepted": [
+                    "DataFrame",
+                    "Table"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "project_id",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "stream",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "system_prompt",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "tools",
+                  "type": "other",
+                  "accepted": [
+                    "Tool"
+                  ],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "response",
+                  "types": [
+                    "Message"
+                  ]
+                },
+                {
+                  "name": "structured_response",
+                  "types": [
+                    "Data",
+                    "JSON"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": [
+              {
+                "member": "classifier",
+                "field": "model",
+                "resourceRef": "model-config",
+                "status": "unresolved/native binding not established"
+              }
+            ]
+          },
+          {
+            "id": "writer",
+            "layer": "components",
+            "name": "Agent",
+            "requirements": [
+              "R-draft"
+            ],
+            "inputs": [
+              "Message",
+              "LanguageModel",
+              "DataFrame",
+              "Table",
+              "Tool"
+            ],
+            "outputs": [
+              "Message",
+              "Data",
+              "JSON"
+            ],
+            "leafIds": [
+              "writer"
+            ],
+            "definition": {
+              "id": "Agent",
+              "revision": "d2f72d8f3e3779e43fedbd3f24d1c39752c5fbc170b5a2f2ac9706204d1c4fd5"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "add_calculator_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "add_current_date_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "api_key",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "base_url_ibm_watsonx",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "format_instructions",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "handle_parsing_errors",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "max_iterations",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "max_tokens",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "model",
+                  "type": "model",
+                  "accepted": [
+                    "LanguageModel"
+                  ],
+                  "required": true
+                },
+                {
+                  "name": "n_messages",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "output_schema",
+                  "type": "table",
+                  "accepted": [
+                    "DataFrame",
+                    "Table"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "project_id",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "stream",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "system_prompt",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "tools",
+                  "type": "other",
+                  "accepted": [
+                    "Tool"
+                  ],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "response",
+                  "types": [
+                    "Message"
+                  ]
+                },
+                {
+                  "name": "structured_response",
+                  "types": [
+                    "Data",
+                    "JSON"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": [
+              {
+                "member": "writer",
+                "field": "model",
+                "resourceRef": "model-config",
+                "status": "unresolved/native binding not established"
+              }
+            ]
+          },
+          {
+            "id": "output",
+            "layer": "components",
+            "name": "Chat Output",
+            "requirements": [
+              "R-draft"
+            ],
+            "inputs": [
+              "Message",
+              "Data",
+              "JSON",
+              "DataFrame",
+              "Table"
+            ],
+            "outputs": [
+              "Message"
+            ],
+            "leafIds": [
+              "output"
+            ],
+            "definition": {
+              "id": "ChatOutput",
+              "revision": "5fd032ef268bd58dc20ccb88db5f629c4f449638745256417ed6b772eba9ba2a"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "clean_data",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "data_template",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "other",
+                  "accepted": [
+                    "Data",
+                    "JSON",
+                    "DataFrame",
+                    "Table",
+                    "Message"
+                  ],
+                  "required": true
+                },
+                {
+                  "name": "sender",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "sender_name",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "session_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "should_store_message",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "message",
+                  "types": [
+                    "Message"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": []
+          }
+        ],
+        "composite": {
+          "items": [
+            {
+              "id": "composite:edf3a47f1df7",
+              "layer": "composite",
+              "name": "Assessment capability",
+              "requirements": [
+                "R-assess",
+                "R-intake"
+              ],
+              "members": [
+                "classifier",
+                "input"
+              ],
+              "leafIds": [
+                "classifier",
+                "input"
+              ],
+              "inputs": [
+                "str"
+              ],
+              "outputs": [
+                "Message",
+                "Data",
+                "JSON"
+              ],
+              "boundary": {
+                "entries": [
+                  "input"
+                ],
+                "exits": [
+                  "classifier"
+                ],
+                "crossing": [
+                  {
+                    "id": "L-assess-draft",
+                    "from": "classifier",
+                    "to": "writer",
+                    "kind": "data",
+                    "fromPort": "response",
+                    "toPort": "input_value",
+                    "type": "Message",
+                    "status": "interface-compatible"
+                  }
+                ],
+                "fieldBindings": []
+              },
+              "unresolvedBindings": [
+                {
+                  "member": "classifier",
+                  "field": "model",
+                  "resourceRef": "model-config",
+                  "status": "unresolved/native binding not established"
+                }
+              ],
+              "profile": "components-to-composite-responsibility@1",
+              "structuralStatus": "candidate",
+              "behavior": "unknown",
+              "provenance": "explicit-profile grouping; not learned emergence"
+            },
+            {
+              "id": "composite:d7466e47a603",
+              "layer": "composite",
+              "name": "Drafting capability",
+              "requirements": [
+                "R-draft"
+              ],
+              "members": [
+                "output",
+                "writer"
+              ],
+              "leafIds": [
+                "output",
+                "writer"
+              ],
+              "inputs": [
+                "Message",
+                "LanguageModel",
+                "DataFrame",
+                "Table",
+                "Tool"
+              ],
+              "outputs": [
+                "Message"
+              ],
+              "boundary": {
+                "entries": [
+                  "writer"
+                ],
+                "exits": [
+                  "output"
+                ],
+                "crossing": [
+                  {
+                    "id": "L-assess-draft",
+                    "from": "classifier",
+                    "to": "writer",
+                    "kind": "data",
+                    "fromPort": "response",
+                    "toPort": "input_value",
+                    "type": "Message",
+                    "status": "interface-compatible"
+                  }
+                ],
+                "fieldBindings": []
+              },
+              "unresolvedBindings": [
+                {
+                  "member": "writer",
+                  "field": "model",
+                  "resourceRef": "model-config",
+                  "status": "unresolved/native binding not established"
+                }
+              ],
+              "profile": "components-to-composite-responsibility@1",
+              "structuralStatus": "candidate",
+              "behavior": "unknown",
+              "provenance": "explicit-profile grouping; not learned emergence"
+            }
+          ],
+          "links": [
+            {
+              "id": "composite:edf3a47f1df7>composite:d7466e47a603:Message",
+              "from": "composite:edf3a47f1df7",
+              "to": "composite:d7466e47a603",
+              "type": "Message",
+              "underlyingLink": "L-assess-draft",
+              "underlyingIncidence": {
+                "id": "L-assess-draft",
+                "from": "classifier",
+                "to": "writer",
+                "kind": "data",
+                "fromPort": "response",
+                "toPort": "input_value",
+                "type": "Message",
+                "status": "interface-compatible"
+              }
+            }
+          ],
+          "attempts": 10,
+          "omitted": false,
+          "gaps": [],
+          "trace": [
+            {
+              "ids": [
+                "classifier",
+                "input"
+              ],
+              "accepted": true,
+              "item": "composite:edf3a47f1df7"
+            },
+            {
+              "ids": [
+                "classifier",
+                "output"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "classifier",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "input",
+                "output"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "input",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "output",
+                "writer"
+              ],
+              "accepted": true,
+              "item": "composite:d7466e47a603"
+            },
+            {
+              "ids": [
+                "classifier",
+                "input",
+                "output"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "classifier",
+                "input",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "classifier",
+                "output",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "input",
+                "output",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            }
+          ]
+        },
+        "flows": {
+          "items": [
+            {
+              "id": "flows:ba88bb7e3488",
+              "layer": "flows",
+              "name": "Triage sequence",
+              "requirements": [
+                "R-assess",
+                "R-draft",
+                "R-intake"
+              ],
+              "members": [
+                "composite:d7466e47a603",
+                "composite:edf3a47f1df7"
+              ],
+              "leafIds": [
+                "classifier",
+                "input",
+                "output",
+                "writer"
+              ],
+              "inputs": [
+                "str"
+              ],
+              "outputs": [
+                "Message"
+              ],
+              "boundary": {
+                "entries": [
+                  "composite:edf3a47f1df7"
+                ],
+                "exits": [
+                  "composite:d7466e47a603"
+                ],
+                "crossing": [],
+                "fieldBindings": []
+              },
+              "unresolvedBindings": [
+                {
+                  "member": "writer",
+                  "field": "model",
+                  "resourceRef": "model-config",
+                  "status": "unresolved/native binding not established"
+                },
+                {
+                  "member": "classifier",
+                  "field": "model",
+                  "resourceRef": "model-config",
+                  "status": "unresolved/native binding not established"
+                }
+              ],
+              "profile": "composite-to-flow-order@1",
+              "structuralStatus": "candidate",
+              "behavior": "unknown",
+              "provenance": "explicit-profile grouping; not learned emergence"
+            }
+          ],
+          "links": [],
+          "attempts": 1,
+          "omitted": false,
+          "gaps": [],
+          "trace": [
+            {
+              "ids": [
+                "composite:d7466e47a603",
+                "composite:edf3a47f1df7"
+              ],
+              "accepted": true,
+              "item": "flows:ba88bb7e3488"
+            }
+          ]
+        },
+        "process": {
+          "items": [],
+          "gaps": [
+            {
+              "kind": "missing-lifecycle-contract",
+              "requirement": "R-review",
+              "description": "A flow does not define accountable review, escalation and completion on its own."
+            }
+          ]
+        },
+        "claimBoundary": "Layer-specific responsibilities and lifecycle semantics are supplied. Typed metadata bounds candidates but does not uniquely derive higher-layer meaning."
+      }
+    },
+    {
+      "name": "missing-flow-profile",
+      "counts": [
+        2,
+        0,
+        0
+      ],
+      "expected": [
+        2,
+        0,
+        0
+      ],
+      "passed": true,
+      "result": {
+        "version": "layer-formation-1",
+        "components": [
+          {
+            "id": "input",
+            "layer": "components",
+            "name": "Chat Input",
+            "requirements": [
+              "R-intake"
+            ],
+            "inputs": [
+              "str"
+            ],
+            "outputs": [
+              "Message"
+            ],
+            "leafIds": [
+              "input"
+            ],
+            "definition": {
+              "id": "ChatInput",
+              "revision": "54baabc2534e2645dc4cbf15810ee15a455befdec5ca4614d4ded76d090a6c58"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "files",
+                  "type": "file",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "sender",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "sender_name",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "session_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "should_store_message",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "message",
+                  "types": [
+                    "Message"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": [],
+            "fieldBinding": {
+              "input_value": {
+                "externalName": "ticketText",
+                "type": "str",
+                "status": "proposed"
+              }
+            }
+          },
+          {
+            "id": "classifier",
+            "layer": "components",
+            "name": "Agent",
+            "requirements": [
+              "R-assess"
+            ],
+            "inputs": [
+              "Message",
+              "LanguageModel",
+              "DataFrame",
+              "Table",
+              "Tool"
+            ],
+            "outputs": [
+              "Message",
+              "Data",
+              "JSON"
+            ],
+            "leafIds": [
+              "classifier"
+            ],
+            "definition": {
+              "id": "Agent",
+              "revision": "d2f72d8f3e3779e43fedbd3f24d1c39752c5fbc170b5a2f2ac9706204d1c4fd5"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "add_calculator_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "add_current_date_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "api_key",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "base_url_ibm_watsonx",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "format_instructions",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "handle_parsing_errors",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "max_iterations",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "max_tokens",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "model",
+                  "type": "model",
+                  "accepted": [
+                    "LanguageModel"
+                  ],
+                  "required": true
+                },
+                {
+                  "name": "n_messages",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "output_schema",
+                  "type": "table",
+                  "accepted": [
+                    "DataFrame",
+                    "Table"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "project_id",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "stream",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "system_prompt",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "tools",
+                  "type": "other",
+                  "accepted": [
+                    "Tool"
+                  ],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "response",
+                  "types": [
+                    "Message"
+                  ]
+                },
+                {
+                  "name": "structured_response",
+                  "types": [
+                    "Data",
+                    "JSON"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": [
+              {
+                "member": "classifier",
+                "field": "model",
+                "resourceRef": "model-config",
+                "status": "unresolved/native binding not established"
+              }
+            ]
+          },
+          {
+            "id": "writer",
+            "layer": "components",
+            "name": "Agent",
+            "requirements": [
+              "R-draft"
+            ],
+            "inputs": [
+              "Message",
+              "LanguageModel",
+              "DataFrame",
+              "Table",
+              "Tool"
+            ],
+            "outputs": [
+              "Message",
+              "Data",
+              "JSON"
+            ],
+            "leafIds": [
+              "writer"
+            ],
+            "definition": {
+              "id": "Agent",
+              "revision": "d2f72d8f3e3779e43fedbd3f24d1c39752c5fbc170b5a2f2ac9706204d1c4fd5"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "add_calculator_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "add_current_date_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "api_key",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "base_url_ibm_watsonx",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "format_instructions",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "handle_parsing_errors",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "max_iterations",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "max_tokens",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "model",
+                  "type": "model",
+                  "accepted": [
+                    "LanguageModel"
+                  ],
+                  "required": true
+                },
+                {
+                  "name": "n_messages",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "output_schema",
+                  "type": "table",
+                  "accepted": [
+                    "DataFrame",
+                    "Table"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "project_id",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "stream",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "system_prompt",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "tools",
+                  "type": "other",
+                  "accepted": [
+                    "Tool"
+                  ],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "response",
+                  "types": [
+                    "Message"
+                  ]
+                },
+                {
+                  "name": "structured_response",
+                  "types": [
+                    "Data",
+                    "JSON"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": [
+              {
+                "member": "writer",
+                "field": "model",
+                "resourceRef": "model-config",
+                "status": "unresolved/native binding not established"
+              }
+            ]
+          },
+          {
+            "id": "output",
+            "layer": "components",
+            "name": "Chat Output",
+            "requirements": [
+              "R-draft"
+            ],
+            "inputs": [
+              "Message",
+              "Data",
+              "JSON",
+              "DataFrame",
+              "Table"
+            ],
+            "outputs": [
+              "Message"
+            ],
+            "leafIds": [
+              "output"
+            ],
+            "definition": {
+              "id": "ChatOutput",
+              "revision": "5fd032ef268bd58dc20ccb88db5f629c4f449638745256417ed6b772eba9ba2a"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "clean_data",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "data_template",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "other",
+                  "accepted": [
+                    "Data",
+                    "JSON",
+                    "DataFrame",
+                    "Table",
+                    "Message"
+                  ],
+                  "required": true
+                },
+                {
+                  "name": "sender",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "sender_name",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "session_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "should_store_message",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "message",
+                  "types": [
+                    "Message"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": []
+          }
+        ],
+        "composite": {
+          "items": [
+            {
+              "id": "composite:edf3a47f1df7",
+              "layer": "composite",
+              "name": "Assessment capability",
+              "requirements": [
+                "R-assess",
+                "R-intake"
+              ],
+              "members": [
+                "classifier",
+                "input"
+              ],
+              "leafIds": [
+                "classifier",
+                "input"
+              ],
+              "inputs": [
+                "str"
+              ],
+              "outputs": [
+                "Message",
+                "Data",
+                "JSON"
+              ],
+              "boundary": {
+                "entries": [
+                  "input"
+                ],
+                "exits": [
+                  "classifier"
+                ],
+                "crossing": [
+                  {
+                    "id": "L-assess-draft",
+                    "from": "classifier",
+                    "to": "writer",
+                    "kind": "data",
+                    "fromPort": "response",
+                    "toPort": "input_value",
+                    "type": "Message",
+                    "status": "interface-compatible"
+                  }
+                ],
+                "fieldBindings": []
+              },
+              "unresolvedBindings": [
+                {
+                  "member": "classifier",
+                  "field": "model",
+                  "resourceRef": "model-config",
+                  "status": "unresolved/native binding not established"
+                }
+              ],
+              "profile": "components-to-composite-responsibility@1",
+              "structuralStatus": "candidate",
+              "behavior": "unknown",
+              "provenance": "explicit-profile grouping; not learned emergence"
+            },
+            {
+              "id": "composite:d7466e47a603",
+              "layer": "composite",
+              "name": "Drafting capability",
+              "requirements": [
+                "R-draft"
+              ],
+              "members": [
+                "output",
+                "writer"
+              ],
+              "leafIds": [
+                "output",
+                "writer"
+              ],
+              "inputs": [
+                "Message",
+                "LanguageModel",
+                "DataFrame",
+                "Table",
+                "Tool"
+              ],
+              "outputs": [
+                "Message"
+              ],
+              "boundary": {
+                "entries": [
+                  "writer"
+                ],
+                "exits": [
+                  "output"
+                ],
+                "crossing": [
+                  {
+                    "id": "L-assess-draft",
+                    "from": "classifier",
+                    "to": "writer",
+                    "kind": "data",
+                    "fromPort": "response",
+                    "toPort": "input_value",
+                    "type": "Message",
+                    "status": "interface-compatible"
+                  }
+                ],
+                "fieldBindings": []
+              },
+              "unresolvedBindings": [
+                {
+                  "member": "writer",
+                  "field": "model",
+                  "resourceRef": "model-config",
+                  "status": "unresolved/native binding not established"
+                }
+              ],
+              "profile": "components-to-composite-responsibility@1",
+              "structuralStatus": "candidate",
+              "behavior": "unknown",
+              "provenance": "explicit-profile grouping; not learned emergence"
+            }
+          ],
+          "links": [
+            {
+              "id": "composite:edf3a47f1df7>composite:d7466e47a603:Message",
+              "from": "composite:edf3a47f1df7",
+              "to": "composite:d7466e47a603",
+              "type": "Message",
+              "underlyingLink": "L-assess-draft",
+              "underlyingIncidence": {
+                "id": "L-assess-draft",
+                "from": "classifier",
+                "to": "writer",
+                "kind": "data",
+                "fromPort": "response",
+                "toPort": "input_value",
+                "type": "Message",
+                "status": "interface-compatible"
+              }
+            }
+          ],
+          "attempts": 10,
+          "omitted": false,
+          "gaps": [],
+          "trace": [
+            {
+              "ids": [
+                "classifier",
+                "input"
+              ],
+              "accepted": true,
+              "item": "composite:edf3a47f1df7"
+            },
+            {
+              "ids": [
+                "classifier",
+                "output"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "classifier",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "input",
+                "output"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "input",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "output",
+                "writer"
+              ],
+              "accepted": true,
+              "item": "composite:d7466e47a603"
+            },
+            {
+              "ids": [
+                "classifier",
+                "input",
+                "output"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "classifier",
+                "input",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "classifier",
+                "output",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "input",
+                "output",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            }
+          ]
+        },
+        "flows": {
+          "items": [],
+          "links": [],
+          "attempts": 0,
+          "omitted": true,
+          "gaps": [
+            {
+              "kind": "missing-profile"
+            }
+          ]
+        },
+        "process": {
+          "items": [],
+          "gaps": []
+        },
+        "claimBoundary": "Layer-specific responsibilities and lifecycle semantics are supplied. Typed metadata bounds candidates but does not uniquely derive higher-layer meaning."
+      }
+    },
+    {
+      "name": "supplied-review-fixture",
+      "counts": [
+        2,
+        1,
+        1
+      ],
+      "expected": [
+        2,
+        1,
+        1
+      ],
+      "passed": true,
+      "result": {
+        "version": "layer-formation-1",
+        "components": [
+          {
+            "id": "input",
+            "layer": "components",
+            "name": "Chat Input",
+            "requirements": [
+              "R-intake"
+            ],
+            "inputs": [
+              "str"
+            ],
+            "outputs": [
+              "Message"
+            ],
+            "leafIds": [
+              "input"
+            ],
+            "definition": {
+              "id": "ChatInput",
+              "revision": "54baabc2534e2645dc4cbf15810ee15a455befdec5ca4614d4ded76d090a6c58"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "files",
+                  "type": "file",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "sender",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "sender_name",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "session_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "should_store_message",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "message",
+                  "types": [
+                    "Message"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": [],
+            "fieldBinding": {
+              "input_value": {
+                "externalName": "ticketText",
+                "type": "str",
+                "status": "proposed"
+              }
+            }
+          },
+          {
+            "id": "classifier",
+            "layer": "components",
+            "name": "Agent",
+            "requirements": [
+              "R-assess"
+            ],
+            "inputs": [
+              "Message",
+              "LanguageModel",
+              "DataFrame",
+              "Table",
+              "Tool"
+            ],
+            "outputs": [
+              "Message",
+              "Data",
+              "JSON"
+            ],
+            "leafIds": [
+              "classifier"
+            ],
+            "definition": {
+              "id": "Agent",
+              "revision": "d2f72d8f3e3779e43fedbd3f24d1c39752c5fbc170b5a2f2ac9706204d1c4fd5"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "add_calculator_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "add_current_date_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "api_key",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "base_url_ibm_watsonx",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "format_instructions",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "handle_parsing_errors",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "max_iterations",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "max_tokens",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "model",
+                  "type": "model",
+                  "accepted": [
+                    "LanguageModel"
+                  ],
+                  "required": true
+                },
+                {
+                  "name": "n_messages",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "output_schema",
+                  "type": "table",
+                  "accepted": [
+                    "DataFrame",
+                    "Table"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "project_id",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "stream",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "system_prompt",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "tools",
+                  "type": "other",
+                  "accepted": [
+                    "Tool"
+                  ],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "response",
+                  "types": [
+                    "Message"
+                  ]
+                },
+                {
+                  "name": "structured_response",
+                  "types": [
+                    "Data",
+                    "JSON"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": [
+              {
+                "member": "classifier",
+                "field": "model",
+                "resourceRef": "model-config",
+                "status": "unresolved/native binding not established"
+              }
+            ]
+          },
+          {
+            "id": "writer",
+            "layer": "components",
+            "name": "Agent",
+            "requirements": [
+              "R-draft"
+            ],
+            "inputs": [
+              "Message",
+              "LanguageModel",
+              "DataFrame",
+              "Table",
+              "Tool"
+            ],
+            "outputs": [
+              "Message",
+              "Data",
+              "JSON"
+            ],
+            "leafIds": [
+              "writer"
+            ],
+            "definition": {
+              "id": "Agent",
+              "revision": "d2f72d8f3e3779e43fedbd3f24d1c39752c5fbc170b5a2f2ac9706204d1c4fd5"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "add_calculator_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "add_current_date_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "api_key",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "base_url_ibm_watsonx",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "format_instructions",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "handle_parsing_errors",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "max_iterations",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "max_tokens",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "model",
+                  "type": "model",
+                  "accepted": [
+                    "LanguageModel"
+                  ],
+                  "required": true
+                },
+                {
+                  "name": "n_messages",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "output_schema",
+                  "type": "table",
+                  "accepted": [
+                    "DataFrame",
+                    "Table"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "project_id",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "stream",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "system_prompt",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "tools",
+                  "type": "other",
+                  "accepted": [
+                    "Tool"
+                  ],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "response",
+                  "types": [
+                    "Message"
+                  ]
+                },
+                {
+                  "name": "structured_response",
+                  "types": [
+                    "Data",
+                    "JSON"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": [
+              {
+                "member": "writer",
+                "field": "model",
+                "resourceRef": "model-config",
+                "status": "unresolved/native binding not established"
+              }
+            ]
+          },
+          {
+            "id": "output",
+            "layer": "components",
+            "name": "Chat Output",
+            "requirements": [
+              "R-draft"
+            ],
+            "inputs": [
+              "Message",
+              "Data",
+              "JSON",
+              "DataFrame",
+              "Table"
+            ],
+            "outputs": [
+              "Message"
+            ],
+            "leafIds": [
+              "output"
+            ],
+            "definition": {
+              "id": "ChatOutput",
+              "revision": "5fd032ef268bd58dc20ccb88db5f629c4f449638745256417ed6b772eba9ba2a"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "clean_data",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "data_template",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "other",
+                  "accepted": [
+                    "Data",
+                    "JSON",
+                    "DataFrame",
+                    "Table",
+                    "Message"
+                  ],
+                  "required": true
+                },
+                {
+                  "name": "sender",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "sender_name",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "session_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "should_store_message",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "message",
+                  "types": [
+                    "Message"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": []
+          }
+        ],
+        "composite": {
+          "items": [
+            {
+              "id": "composite:edf3a47f1df7",
+              "layer": "composite",
+              "name": "Assessment capability",
+              "requirements": [
+                "R-assess",
+                "R-intake"
+              ],
+              "members": [
+                "classifier",
+                "input"
+              ],
+              "leafIds": [
+                "classifier",
+                "input"
+              ],
+              "inputs": [
+                "str"
+              ],
+              "outputs": [
+                "Message",
+                "Data",
+                "JSON"
+              ],
+              "boundary": {
+                "entries": [
+                  "input"
+                ],
+                "exits": [
+                  "classifier"
+                ],
+                "crossing": [
+                  {
+                    "id": "L-assess-draft",
+                    "from": "classifier",
+                    "to": "writer",
+                    "kind": "data",
+                    "fromPort": "response",
+                    "toPort": "input_value",
+                    "type": "Message",
+                    "status": "interface-compatible"
+                  }
+                ],
+                "fieldBindings": []
+              },
+              "unresolvedBindings": [
+                {
+                  "member": "classifier",
+                  "field": "model",
+                  "resourceRef": "model-config",
+                  "status": "unresolved/native binding not established"
+                }
+              ],
+              "profile": "components-to-composite-responsibility@1",
+              "structuralStatus": "candidate",
+              "behavior": "unknown",
+              "provenance": "explicit-profile grouping; not learned emergence"
+            },
+            {
+              "id": "composite:d7466e47a603",
+              "layer": "composite",
+              "name": "Drafting capability",
+              "requirements": [
+                "R-draft"
+              ],
+              "members": [
+                "output",
+                "writer"
+              ],
+              "leafIds": [
+                "output",
+                "writer"
+              ],
+              "inputs": [
+                "Message",
+                "LanguageModel",
+                "DataFrame",
+                "Table",
+                "Tool"
+              ],
+              "outputs": [
+                "Message"
+              ],
+              "boundary": {
+                "entries": [
+                  "writer"
+                ],
+                "exits": [
+                  "output"
+                ],
+                "crossing": [
+                  {
+                    "id": "L-assess-draft",
+                    "from": "classifier",
+                    "to": "writer",
+                    "kind": "data",
+                    "fromPort": "response",
+                    "toPort": "input_value",
+                    "type": "Message",
+                    "status": "interface-compatible"
+                  }
+                ],
+                "fieldBindings": []
+              },
+              "unresolvedBindings": [
+                {
+                  "member": "writer",
+                  "field": "model",
+                  "resourceRef": "model-config",
+                  "status": "unresolved/native binding not established"
+                }
+              ],
+              "profile": "components-to-composite-responsibility@1",
+              "structuralStatus": "candidate",
+              "behavior": "unknown",
+              "provenance": "explicit-profile grouping; not learned emergence"
+            }
+          ],
+          "links": [
+            {
+              "id": "composite:edf3a47f1df7>composite:d7466e47a603:Message",
+              "from": "composite:edf3a47f1df7",
+              "to": "composite:d7466e47a603",
+              "type": "Message",
+              "underlyingLink": "L-assess-draft",
+              "underlyingIncidence": {
+                "id": "L-assess-draft",
+                "from": "classifier",
+                "to": "writer",
+                "kind": "data",
+                "fromPort": "response",
+                "toPort": "input_value",
+                "type": "Message",
+                "status": "interface-compatible"
+              }
+            }
+          ],
+          "attempts": 10,
+          "omitted": false,
+          "gaps": [],
+          "trace": [
+            {
+              "ids": [
+                "classifier",
+                "input"
+              ],
+              "accepted": true,
+              "item": "composite:edf3a47f1df7"
+            },
+            {
+              "ids": [
+                "classifier",
+                "output"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "classifier",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "input",
+                "output"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "input",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "output",
+                "writer"
+              ],
+              "accepted": true,
+              "item": "composite:d7466e47a603"
+            },
+            {
+              "ids": [
+                "classifier",
+                "input",
+                "output"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "classifier",
+                "input",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "classifier",
+                "output",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "input",
+                "output",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            }
+          ]
+        },
+        "flows": {
+          "items": [
+            {
+              "id": "flows:ba88bb7e3488",
+              "layer": "flows",
+              "name": "Triage sequence",
+              "requirements": [
+                "R-assess",
+                "R-draft",
+                "R-intake"
+              ],
+              "members": [
+                "composite:d7466e47a603",
+                "composite:edf3a47f1df7"
+              ],
+              "leafIds": [
+                "classifier",
+                "input",
+                "output",
+                "writer"
+              ],
+              "inputs": [
+                "str"
+              ],
+              "outputs": [
+                "Message"
+              ],
+              "boundary": {
+                "entries": [
+                  "composite:edf3a47f1df7"
+                ],
+                "exits": [
+                  "composite:d7466e47a603"
+                ],
+                "crossing": [],
+                "fieldBindings": []
+              },
+              "unresolvedBindings": [
+                {
+                  "member": "writer",
+                  "field": "model",
+                  "resourceRef": "model-config",
+                  "status": "unresolved/native binding not established"
+                },
+                {
+                  "member": "classifier",
+                  "field": "model",
+                  "resourceRef": "model-config",
+                  "status": "unresolved/native binding not established"
+                }
+              ],
+              "profile": "composite-to-flow-order@1",
+              "structuralStatus": "candidate",
+              "behavior": "unknown",
+              "provenance": "explicit-profile grouping; not learned emergence"
+            }
+          ],
+          "links": [],
+          "attempts": 1,
+          "omitted": false,
+          "gaps": [],
+          "trace": [
+            {
+              "ids": [
+                "composite:d7466e47a603",
+                "composite:edf3a47f1df7"
+              ],
+              "accepted": true,
+              "item": "flows:ba88bb7e3488"
+            }
+          ]
+        },
+        "process": {
+          "items": [
+            {
+              "id": "processes:6d0090b08f81",
+              "layer": "processes",
+              "name": "Proposed triage lifecycle",
+              "members": [
+                "flows:ba88bb7e3488"
+              ],
+              "leafIds": [
+                "classifier",
+                "input",
+                "output",
+                "writer"
+              ],
+              "requirements": [
+                "R-assess",
+                "R-draft",
+                "R-intake",
+                "R-review"
+              ],
+              "reviewContract": {
+                "owner": "synthetic-reviewer-role",
+                "completion": "draft explicitly accepted or returned"
+              },
+              "structuralStatus": "candidate",
+              "behavior": "unknown",
+              "provenance": "supplied synthetic lifecycle contract; not runtime evidence"
+            }
+          ],
+          "gaps": []
+        },
+        "claimBoundary": "Layer-specific responsibilities and lifecycle semantics are supplied. Typed metadata bounds candidates but does not uniquely derive higher-layer meaning."
+      }
+    },
+    {
+      "name": "candidate-limit",
+      "counts": [
+        1,
+        0,
+        0
+      ],
+      "expected": [
+        1,
+        0,
+        0
+      ],
+      "passed": true,
+      "result": {
+        "version": "layer-formation-1",
+        "components": [
+          {
+            "id": "input",
+            "layer": "components",
+            "name": "Chat Input",
+            "requirements": [
+              "R-intake"
+            ],
+            "inputs": [
+              "str"
+            ],
+            "outputs": [
+              "Message"
+            ],
+            "leafIds": [
+              "input"
+            ],
+            "definition": {
+              "id": "ChatInput",
+              "revision": "54baabc2534e2645dc4cbf15810ee15a455befdec5ca4614d4ded76d090a6c58"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "files",
+                  "type": "file",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "sender",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "sender_name",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "session_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "should_store_message",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "message",
+                  "types": [
+                    "Message"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": [],
+            "fieldBinding": {
+              "input_value": {
+                "externalName": "ticketText",
+                "type": "str",
+                "status": "proposed"
+              }
+            }
+          },
+          {
+            "id": "classifier",
+            "layer": "components",
+            "name": "Agent",
+            "requirements": [
+              "R-assess"
+            ],
+            "inputs": [
+              "Message",
+              "LanguageModel",
+              "DataFrame",
+              "Table",
+              "Tool"
+            ],
+            "outputs": [
+              "Message",
+              "Data",
+              "JSON"
+            ],
+            "leafIds": [
+              "classifier"
+            ],
+            "definition": {
+              "id": "Agent",
+              "revision": "d2f72d8f3e3779e43fedbd3f24d1c39752c5fbc170b5a2f2ac9706204d1c4fd5"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "add_calculator_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "add_current_date_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "api_key",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "base_url_ibm_watsonx",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "format_instructions",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "handle_parsing_errors",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "max_iterations",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "max_tokens",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "model",
+                  "type": "model",
+                  "accepted": [
+                    "LanguageModel"
+                  ],
+                  "required": true
+                },
+                {
+                  "name": "n_messages",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "output_schema",
+                  "type": "table",
+                  "accepted": [
+                    "DataFrame",
+                    "Table"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "project_id",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "stream",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "system_prompt",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "tools",
+                  "type": "other",
+                  "accepted": [
+                    "Tool"
+                  ],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "response",
+                  "types": [
+                    "Message"
+                  ]
+                },
+                {
+                  "name": "structured_response",
+                  "types": [
+                    "Data",
+                    "JSON"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": [
+              {
+                "member": "classifier",
+                "field": "model",
+                "resourceRef": "model-config",
+                "status": "unresolved/native binding not established"
+              }
+            ]
+          },
+          {
+            "id": "writer",
+            "layer": "components",
+            "name": "Agent",
+            "requirements": [
+              "R-draft"
+            ],
+            "inputs": [
+              "Message",
+              "LanguageModel",
+              "DataFrame",
+              "Table",
+              "Tool"
+            ],
+            "outputs": [
+              "Message",
+              "Data",
+              "JSON"
+            ],
+            "leafIds": [
+              "writer"
+            ],
+            "definition": {
+              "id": "Agent",
+              "revision": "d2f72d8f3e3779e43fedbd3f24d1c39752c5fbc170b5a2f2ac9706204d1c4fd5"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "add_calculator_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "add_current_date_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "api_key",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "base_url_ibm_watsonx",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "format_instructions",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "handle_parsing_errors",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "max_iterations",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "max_tokens",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "model",
+                  "type": "model",
+                  "accepted": [
+                    "LanguageModel"
+                  ],
+                  "required": true
+                },
+                {
+                  "name": "n_messages",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "output_schema",
+                  "type": "table",
+                  "accepted": [
+                    "DataFrame",
+                    "Table"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "project_id",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "stream",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "system_prompt",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "tools",
+                  "type": "other",
+                  "accepted": [
+                    "Tool"
+                  ],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "response",
+                  "types": [
+                    "Message"
+                  ]
+                },
+                {
+                  "name": "structured_response",
+                  "types": [
+                    "Data",
+                    "JSON"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": [
+              {
+                "member": "writer",
+                "field": "model",
+                "resourceRef": "model-config",
+                "status": "unresolved/native binding not established"
+              }
+            ]
+          },
+          {
+            "id": "output",
+            "layer": "components",
+            "name": "Chat Output",
+            "requirements": [
+              "R-draft"
+            ],
+            "inputs": [
+              "Message",
+              "Data",
+              "JSON",
+              "DataFrame",
+              "Table"
+            ],
+            "outputs": [
+              "Message"
+            ],
+            "leafIds": [
+              "output"
+            ],
+            "definition": {
+              "id": "ChatOutput",
+              "revision": "5fd032ef268bd58dc20ccb88db5f629c4f449638745256417ed6b772eba9ba2a"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "clean_data",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "data_template",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "other",
+                  "accepted": [
+                    "Data",
+                    "JSON",
+                    "DataFrame",
+                    "Table",
+                    "Message"
+                  ],
+                  "required": true
+                },
+                {
+                  "name": "sender",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "sender_name",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "session_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "should_store_message",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "message",
+                  "types": [
+                    "Message"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": []
+          }
+        ],
+        "composite": {
+          "items": [
+            {
+              "id": "composite:edf3a47f1df7",
+              "layer": "composite",
+              "name": "Assessment capability",
+              "requirements": [
+                "R-assess",
+                "R-intake"
+              ],
+              "members": [
+                "classifier",
+                "input"
+              ],
+              "leafIds": [
+                "classifier",
+                "input"
+              ],
+              "inputs": [
+                "str"
+              ],
+              "outputs": [
+                "Message",
+                "Data",
+                "JSON"
+              ],
+              "boundary": {
+                "entries": [
+                  "input"
+                ],
+                "exits": [
+                  "classifier"
+                ],
+                "crossing": [
+                  {
+                    "id": "L-assess-draft",
+                    "from": "classifier",
+                    "to": "writer",
+                    "kind": "data",
+                    "fromPort": "response",
+                    "toPort": "input_value",
+                    "type": "Message",
+                    "status": "interface-compatible"
+                  }
+                ],
+                "fieldBindings": []
+              },
+              "unresolvedBindings": [
+                {
+                  "member": "classifier",
+                  "field": "model",
+                  "resourceRef": "model-config",
+                  "status": "unresolved/native binding not established"
+                }
+              ],
+              "profile": "components-to-composite-responsibility@1",
+              "structuralStatus": "candidate",
+              "behavior": "unknown",
+              "provenance": "explicit-profile grouping; not learned emergence"
+            }
+          ],
+          "links": [],
+          "attempts": 1,
+          "omitted": true,
+          "gaps": [],
+          "trace": [
+            {
+              "ids": [
+                "classifier",
+                "input"
+              ],
+              "accepted": true,
+              "item": "composite:edf3a47f1df7"
+            }
+          ]
+        },
+        "flows": {
+          "items": [],
+          "links": [],
+          "attempts": 0,
+          "omitted": false,
+          "gaps": [
+            {
+              "kind": "no-supported-group",
+              "profile": "composite-to-flow-order@1"
+            }
+          ],
+          "trace": []
+        },
+        "process": {
+          "items": [],
+          "gaps": []
+        },
+        "claimBoundary": "Layer-specific responsibilities and lifecycle semantics are supplied. Typed metadata bounds candidates but does not uniquely derive higher-layer meaning."
+      }
+    },
+    {
+      "name": "reordered-input",
+      "counts": [
+        2,
+        1,
+        0
+      ],
+      "expected": [
+        2,
+        1,
+        0
+      ],
+      "passed": true,
+      "result": {
+        "version": "layer-formation-1",
+        "components": [
+          {
+            "id": "output",
+            "layer": "components",
+            "name": "Chat Output",
+            "requirements": [
+              "R-draft"
+            ],
+            "inputs": [
+              "Message",
+              "Data",
+              "JSON",
+              "DataFrame",
+              "Table"
+            ],
+            "outputs": [
+              "Message"
+            ],
+            "leafIds": [
+              "output"
+            ],
+            "definition": {
+              "id": "ChatOutput",
+              "revision": "5fd032ef268bd58dc20ccb88db5f629c4f449638745256417ed6b772eba9ba2a"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "clean_data",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "data_template",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "other",
+                  "accepted": [
+                    "Data",
+                    "JSON",
+                    "DataFrame",
+                    "Table",
+                    "Message"
+                  ],
+                  "required": true
+                },
+                {
+                  "name": "sender",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "sender_name",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "session_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "should_store_message",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "message",
+                  "types": [
+                    "Message"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": []
+          },
+          {
+            "id": "writer",
+            "layer": "components",
+            "name": "Agent",
+            "requirements": [
+              "R-draft"
+            ],
+            "inputs": [
+              "Message",
+              "LanguageModel",
+              "DataFrame",
+              "Table",
+              "Tool"
+            ],
+            "outputs": [
+              "Message",
+              "Data",
+              "JSON"
+            ],
+            "leafIds": [
+              "writer"
+            ],
+            "definition": {
+              "id": "Agent",
+              "revision": "d2f72d8f3e3779e43fedbd3f24d1c39752c5fbc170b5a2f2ac9706204d1c4fd5"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "add_calculator_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "add_current_date_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "api_key",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "base_url_ibm_watsonx",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "format_instructions",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "handle_parsing_errors",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "max_iterations",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "max_tokens",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "model",
+                  "type": "model",
+                  "accepted": [
+                    "LanguageModel"
+                  ],
+                  "required": true
+                },
+                {
+                  "name": "n_messages",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "output_schema",
+                  "type": "table",
+                  "accepted": [
+                    "DataFrame",
+                    "Table"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "project_id",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "stream",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "system_prompt",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "tools",
+                  "type": "other",
+                  "accepted": [
+                    "Tool"
+                  ],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "response",
+                  "types": [
+                    "Message"
+                  ]
+                },
+                {
+                  "name": "structured_response",
+                  "types": [
+                    "Data",
+                    "JSON"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": [
+              {
+                "member": "writer",
+                "field": "model",
+                "resourceRef": "model-config",
+                "status": "unresolved/native binding not established"
+              }
+            ]
+          },
+          {
+            "id": "classifier",
+            "layer": "components",
+            "name": "Agent",
+            "requirements": [
+              "R-assess"
+            ],
+            "inputs": [
+              "Message",
+              "LanguageModel",
+              "DataFrame",
+              "Table",
+              "Tool"
+            ],
+            "outputs": [
+              "Message",
+              "Data",
+              "JSON"
+            ],
+            "leafIds": [
+              "classifier"
+            ],
+            "definition": {
+              "id": "Agent",
+              "revision": "d2f72d8f3e3779e43fedbd3f24d1c39752c5fbc170b5a2f2ac9706204d1c4fd5"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "add_calculator_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "add_current_date_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "api_key",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "base_url_ibm_watsonx",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "format_instructions",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "handle_parsing_errors",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "max_iterations",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "max_tokens",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "model",
+                  "type": "model",
+                  "accepted": [
+                    "LanguageModel"
+                  ],
+                  "required": true
+                },
+                {
+                  "name": "n_messages",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "output_schema",
+                  "type": "table",
+                  "accepted": [
+                    "DataFrame",
+                    "Table"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "project_id",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "stream",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "system_prompt",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "tools",
+                  "type": "other",
+                  "accepted": [
+                    "Tool"
+                  ],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "response",
+                  "types": [
+                    "Message"
+                  ]
+                },
+                {
+                  "name": "structured_response",
+                  "types": [
+                    "Data",
+                    "JSON"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": [
+              {
+                "member": "classifier",
+                "field": "model",
+                "resourceRef": "model-config",
+                "status": "unresolved/native binding not established"
+              }
+            ]
+          },
+          {
+            "id": "input",
+            "layer": "components",
+            "name": "Chat Input",
+            "requirements": [
+              "R-intake"
+            ],
+            "inputs": [
+              "str"
+            ],
+            "outputs": [
+              "Message"
+            ],
+            "leafIds": [
+              "input"
+            ],
+            "definition": {
+              "id": "ChatInput",
+              "revision": "54baabc2534e2645dc4cbf15810ee15a455befdec5ca4614d4ded76d090a6c58"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "files",
+                  "type": "file",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "sender",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "sender_name",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "session_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "should_store_message",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "message",
+                  "types": [
+                    "Message"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": [],
+            "fieldBinding": {
+              "input_value": {
+                "externalName": "ticketText",
+                "type": "str",
+                "status": "proposed"
+              }
+            }
+          }
+        ],
+        "composite": {
+          "items": [
+            {
+              "id": "composite:edf3a47f1df7",
+              "layer": "composite",
+              "name": "Assessment capability",
+              "requirements": [
+                "R-assess",
+                "R-intake"
+              ],
+              "members": [
+                "classifier",
+                "input"
+              ],
+              "leafIds": [
+                "classifier",
+                "input"
+              ],
+              "inputs": [
+                "str"
+              ],
+              "outputs": [
+                "Message",
+                "Data",
+                "JSON"
+              ],
+              "boundary": {
+                "entries": [
+                  "input"
+                ],
+                "exits": [
+                  "classifier"
+                ],
+                "crossing": [
+                  {
+                    "id": "L-assess-draft",
+                    "from": "classifier",
+                    "to": "writer",
+                    "kind": "data",
+                    "fromPort": "response",
+                    "toPort": "input_value",
+                    "type": "Message",
+                    "status": "interface-compatible"
+                  }
+                ],
+                "fieldBindings": []
+              },
+              "unresolvedBindings": [
+                {
+                  "member": "classifier",
+                  "field": "model",
+                  "resourceRef": "model-config",
+                  "status": "unresolved/native binding not established"
+                }
+              ],
+              "profile": "components-to-composite-responsibility@1",
+              "structuralStatus": "candidate",
+              "behavior": "unknown",
+              "provenance": "explicit-profile grouping; not learned emergence"
+            },
+            {
+              "id": "composite:d7466e47a603",
+              "layer": "composite",
+              "name": "Drafting capability",
+              "requirements": [
+                "R-draft"
+              ],
+              "members": [
+                "output",
+                "writer"
+              ],
+              "leafIds": [
+                "output",
+                "writer"
+              ],
+              "inputs": [
+                "Message",
+                "LanguageModel",
+                "DataFrame",
+                "Table",
+                "Tool"
+              ],
+              "outputs": [
+                "Message"
+              ],
+              "boundary": {
+                "entries": [
+                  "writer"
+                ],
+                "exits": [
+                  "output"
+                ],
+                "crossing": [
+                  {
+                    "id": "L-assess-draft",
+                    "from": "classifier",
+                    "to": "writer",
+                    "kind": "data",
+                    "fromPort": "response",
+                    "toPort": "input_value",
+                    "type": "Message",
+                    "status": "interface-compatible"
+                  }
+                ],
+                "fieldBindings": []
+              },
+              "unresolvedBindings": [
+                {
+                  "member": "writer",
+                  "field": "model",
+                  "resourceRef": "model-config",
+                  "status": "unresolved/native binding not established"
+                }
+              ],
+              "profile": "components-to-composite-responsibility@1",
+              "structuralStatus": "candidate",
+              "behavior": "unknown",
+              "provenance": "explicit-profile grouping; not learned emergence"
+            }
+          ],
+          "links": [
+            {
+              "id": "composite:edf3a47f1df7>composite:d7466e47a603:Message",
+              "from": "composite:edf3a47f1df7",
+              "to": "composite:d7466e47a603",
+              "type": "Message",
+              "underlyingLink": "L-assess-draft",
+              "underlyingIncidence": {
+                "id": "L-assess-draft",
+                "from": "classifier",
+                "to": "writer",
+                "kind": "data",
+                "fromPort": "response",
+                "toPort": "input_value",
+                "type": "Message",
+                "status": "interface-compatible"
+              }
+            }
+          ],
+          "attempts": 10,
+          "omitted": false,
+          "gaps": [],
+          "trace": [
+            {
+              "ids": [
+                "classifier",
+                "input"
+              ],
+              "accepted": true,
+              "item": "composite:edf3a47f1df7"
+            },
+            {
+              "ids": [
+                "classifier",
+                "output"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "classifier",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "input",
+                "output"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "input",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "output",
+                "writer"
+              ],
+              "accepted": true,
+              "item": "composite:d7466e47a603"
+            },
+            {
+              "ids": [
+                "classifier",
+                "input",
+                "output"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "classifier",
+                "input",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "classifier",
+                "output",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "input",
+                "output",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            }
+          ]
+        },
+        "flows": {
+          "items": [
+            {
+              "id": "flows:ba88bb7e3488",
+              "layer": "flows",
+              "name": "Triage sequence",
+              "requirements": [
+                "R-assess",
+                "R-draft",
+                "R-intake"
+              ],
+              "members": [
+                "composite:d7466e47a603",
+                "composite:edf3a47f1df7"
+              ],
+              "leafIds": [
+                "classifier",
+                "input",
+                "output",
+                "writer"
+              ],
+              "inputs": [
+                "str"
+              ],
+              "outputs": [
+                "Message"
+              ],
+              "boundary": {
+                "entries": [
+                  "composite:edf3a47f1df7"
+                ],
+                "exits": [
+                  "composite:d7466e47a603"
+                ],
+                "crossing": [],
+                "fieldBindings": []
+              },
+              "unresolvedBindings": [
+                {
+                  "member": "writer",
+                  "field": "model",
+                  "resourceRef": "model-config",
+                  "status": "unresolved/native binding not established"
+                },
+                {
+                  "member": "classifier",
+                  "field": "model",
+                  "resourceRef": "model-config",
+                  "status": "unresolved/native binding not established"
+                }
+              ],
+              "profile": "composite-to-flow-order@1",
+              "structuralStatus": "candidate",
+              "behavior": "unknown",
+              "provenance": "explicit-profile grouping; not learned emergence"
+            }
+          ],
+          "links": [],
+          "attempts": 1,
+          "omitted": false,
+          "gaps": [],
+          "trace": [
+            {
+              "ids": [
+                "composite:d7466e47a603",
+                "composite:edf3a47f1df7"
+              ],
+              "accepted": true,
+              "item": "flows:ba88bb7e3488"
+            }
+          ]
+        },
+        "process": {
+          "items": [],
+          "gaps": [
+            {
+              "kind": "missing-lifecycle-contract",
+              "requirement": "R-review",
+              "description": "A flow does not define accountable review, escalation and completion on its own."
+            }
+          ]
+        },
+        "claimBoundary": "Layer-specific responsibilities and lifecycle semantics are supplied. Typed metadata bounds candidates but does not uniquely derive higher-layer meaning."
+      }
+    },
+    {
+      "name": "disconnected-flow",
+      "counts": [
+        2,
+        0,
+        0
+      ],
+      "expected": [
+        2,
+        0,
+        0
+      ],
+      "passed": true,
+      "result": {
+        "version": "layer-formation-1",
+        "components": [
+          {
+            "id": "input",
+            "layer": "components",
+            "name": "Chat Input",
+            "requirements": [
+              "R-intake"
+            ],
+            "inputs": [
+              "str"
+            ],
+            "outputs": [
+              "Message"
+            ],
+            "leafIds": [
+              "input"
+            ],
+            "definition": {
+              "id": "ChatInput",
+              "revision": "54baabc2534e2645dc4cbf15810ee15a455befdec5ca4614d4ded76d090a6c58"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "files",
+                  "type": "file",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "sender",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "sender_name",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "session_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "should_store_message",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "message",
+                  "types": [
+                    "Message"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": [],
+            "fieldBinding": {
+              "input_value": {
+                "externalName": "ticketText",
+                "type": "str",
+                "status": "proposed"
+              }
+            }
+          },
+          {
+            "id": "classifier",
+            "layer": "components",
+            "name": "Agent",
+            "requirements": [
+              "R-assess"
+            ],
+            "inputs": [
+              "Message",
+              "LanguageModel",
+              "DataFrame",
+              "Table",
+              "Tool"
+            ],
+            "outputs": [
+              "Message",
+              "Data",
+              "JSON"
+            ],
+            "leafIds": [
+              "classifier"
+            ],
+            "definition": {
+              "id": "Agent",
+              "revision": "d2f72d8f3e3779e43fedbd3f24d1c39752c5fbc170b5a2f2ac9706204d1c4fd5"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "add_calculator_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "add_current_date_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "api_key",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "base_url_ibm_watsonx",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "format_instructions",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "handle_parsing_errors",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "max_iterations",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "max_tokens",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "model",
+                  "type": "model",
+                  "accepted": [
+                    "LanguageModel"
+                  ],
+                  "required": true
+                },
+                {
+                  "name": "n_messages",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "output_schema",
+                  "type": "table",
+                  "accepted": [
+                    "DataFrame",
+                    "Table"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "project_id",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "stream",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "system_prompt",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "tools",
+                  "type": "other",
+                  "accepted": [
+                    "Tool"
+                  ],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "response",
+                  "types": [
+                    "Message"
+                  ]
+                },
+                {
+                  "name": "structured_response",
+                  "types": [
+                    "Data",
+                    "JSON"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": [
+              {
+                "member": "classifier",
+                "field": "model",
+                "resourceRef": "model-config",
+                "status": "unresolved/native binding not established"
+              }
+            ]
+          },
+          {
+            "id": "writer",
+            "layer": "components",
+            "name": "Agent",
+            "requirements": [
+              "R-draft"
+            ],
+            "inputs": [
+              "Message",
+              "LanguageModel",
+              "DataFrame",
+              "Table",
+              "Tool"
+            ],
+            "outputs": [
+              "Message",
+              "Data",
+              "JSON"
+            ],
+            "leafIds": [
+              "writer"
+            ],
+            "definition": {
+              "id": "Agent",
+              "revision": "d2f72d8f3e3779e43fedbd3f24d1c39752c5fbc170b5a2f2ac9706204d1c4fd5"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "add_calculator_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "add_current_date_tool",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "api_key",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "base_url_ibm_watsonx",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "format_instructions",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "handle_parsing_errors",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "max_iterations",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "max_tokens",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "model",
+                  "type": "model",
+                  "accepted": [
+                    "LanguageModel"
+                  ],
+                  "required": true
+                },
+                {
+                  "name": "n_messages",
+                  "type": "int",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "output_schema",
+                  "type": "table",
+                  "accepted": [
+                    "DataFrame",
+                    "Table"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "project_id",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "stream",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "system_prompt",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "tools",
+                  "type": "other",
+                  "accepted": [
+                    "Tool"
+                  ],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "response",
+                  "types": [
+                    "Message"
+                  ]
+                },
+                {
+                  "name": "structured_response",
+                  "types": [
+                    "Data",
+                    "JSON"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": [
+              {
+                "member": "writer",
+                "field": "model",
+                "resourceRef": "model-config",
+                "status": "unresolved/native binding not established"
+              }
+            ]
+          },
+          {
+            "id": "output",
+            "layer": "components",
+            "name": "Chat Output",
+            "requirements": [
+              "R-draft"
+            ],
+            "inputs": [
+              "Message",
+              "Data",
+              "JSON",
+              "DataFrame",
+              "Table"
+            ],
+            "outputs": [
+              "Message"
+            ],
+            "leafIds": [
+              "output"
+            ],
+            "definition": {
+              "id": "ChatOutput",
+              "revision": "5fd032ef268bd58dc20ccb88db5f629c4f449638745256417ed6b772eba9ba2a"
+            },
+            "ports": {
+              "inputs": [
+                {
+                  "name": "clean_data",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "context_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "data_template",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "input_value",
+                  "type": "other",
+                  "accepted": [
+                    "Data",
+                    "JSON",
+                    "DataFrame",
+                    "Table",
+                    "Message"
+                  ],
+                  "required": true
+                },
+                {
+                  "name": "sender",
+                  "type": "str",
+                  "accepted": [],
+                  "required": false
+                },
+                {
+                  "name": "sender_name",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "session_id",
+                  "type": "str",
+                  "accepted": [
+                    "Message"
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "should_store_message",
+                  "type": "bool",
+                  "accepted": [],
+                  "required": false
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "message",
+                  "types": [
+                    "Message"
+                  ]
+                }
+              ]
+            },
+            "unresolvedBindings": []
+          }
+        ],
+        "composite": {
+          "items": [
+            {
+              "id": "composite:edf3a47f1df7",
+              "layer": "composite",
+              "name": "Assessment capability",
+              "requirements": [
+                "R-assess",
+                "R-intake"
+              ],
+              "members": [
+                "classifier",
+                "input"
+              ],
+              "leafIds": [
+                "classifier",
+                "input"
+              ],
+              "inputs": [
+                "str"
+              ],
+              "outputs": [
+                "Message",
+                "Data",
+                "JSON"
+              ],
+              "boundary": {
+                "entries": [
+                  "input"
+                ],
+                "exits": [
+                  "classifier"
+                ],
+                "crossing": [],
+                "fieldBindings": []
+              },
+              "unresolvedBindings": [
+                {
+                  "member": "classifier",
+                  "field": "model",
+                  "resourceRef": "model-config",
+                  "status": "unresolved/native binding not established"
+                }
+              ],
+              "profile": "components-to-composite-responsibility@1",
+              "structuralStatus": "candidate",
+              "behavior": "unknown",
+              "provenance": "explicit-profile grouping; not learned emergence"
+            },
+            {
+              "id": "composite:d7466e47a603",
+              "layer": "composite",
+              "name": "Drafting capability",
+              "requirements": [
+                "R-draft"
+              ],
+              "members": [
+                "output",
+                "writer"
+              ],
+              "leafIds": [
+                "output",
+                "writer"
+              ],
+              "inputs": [
+                "Message",
+                "LanguageModel",
+                "DataFrame",
+                "Table",
+                "Tool"
+              ],
+              "outputs": [
+                "Message"
+              ],
+              "boundary": {
+                "entries": [
+                  "writer"
+                ],
+                "exits": [
+                  "output"
+                ],
+                "crossing": [],
+                "fieldBindings": []
+              },
+              "unresolvedBindings": [
+                {
+                  "member": "writer",
+                  "field": "model",
+                  "resourceRef": "model-config",
+                  "status": "unresolved/native binding not established"
+                }
+              ],
+              "profile": "components-to-composite-responsibility@1",
+              "structuralStatus": "candidate",
+              "behavior": "unknown",
+              "provenance": "explicit-profile grouping; not learned emergence"
+            }
+          ],
+          "links": [],
+          "attempts": 10,
+          "omitted": false,
+          "gaps": [],
+          "trace": [
+            {
+              "ids": [
+                "classifier",
+                "input"
+              ],
+              "accepted": true,
+              "item": "composite:edf3a47f1df7"
+            },
+            {
+              "ids": [
+                "classifier",
+                "output"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "classifier",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "input",
+                "output"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "input",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "output",
+                "writer"
+              ],
+              "accepted": true,
+              "item": "composite:d7466e47a603"
+            },
+            {
+              "ids": [
+                "classifier",
+                "input",
+                "output"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "classifier",
+                "input",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "classifier",
+                "output",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            },
+            {
+              "ids": [
+                "input",
+                "output",
+                "writer"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            }
+          ]
+        },
+        "flows": {
+          "items": [],
+          "links": [],
+          "attempts": 1,
+          "omitted": false,
+          "gaps": [
+            {
+              "kind": "no-supported-group",
+              "profile": "composite-to-flow-order@1"
+            }
+          ],
+          "trace": [
+            {
+              "ids": [
+                "composite:d7466e47a603",
+                "composite:edf3a47f1df7"
+              ],
+              "accepted": false,
+              "reason": "profile-responsibility-or-graph"
+            }
+          ]
+        },
+        "process": {
+          "items": [],
+          "gaps": []
+        },
+        "claimBoundary": "Layer-specific responsibilities and lifecycle semantics are supplied. Typed metadata bounds candidates but does not uniquely derive higher-layer meaning."
+      }
+    }
+  ]
+}

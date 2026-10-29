@@ -1,0 +1,616 @@
+{
+  "schemaVersion": 1,
+  "kind": "intent-instance",
+  "id": "ticket-triage",
+  "name": "Ticket triage",
+  "revision": 4,
+  "parentRevision": 3,
+  "change": {
+    "action": "expose-controller-boundary",
+    "summary": "Connect the design to Paper 4 honestly: this grounded proposal is authored; automatic translation from real library descriptions to controller predicates remains an explicit adapter gap.",
+    "source": "assistant-design-review"
+  },
+  "intent": {
+    "description": "Design a ticket-triage system as an intent-specific slice of the library.",
+    "confirmed": "The user accepted this as the working example and authorized iterative development.",
+    "source": "conversation",
+    "scope": "specification only; deployment and behavior are not established"
+  },
+  "libraryRef": {
+    "id": "ticket-triage-component-snapshot",
+    "revision": "e5e69c90be3f193e1b2dd18a4836585dee91cc3517137fa9c43cfc94939b948a",
+    "file": "library.json"
+  },
+  "layers": [
+    {
+      "id": "processes",
+      "name": "Processes",
+      "order": 4,
+      "semantics": "proposed lifecycle and human decisions"
+    },
+    {
+      "id": "flows",
+      "name": "Flows",
+      "order": 3,
+      "semantics": "proposed task/data ordering; not native executable orchestration"
+    },
+    {
+      "id": "composite",
+      "name": "Composite",
+      "order": 2,
+      "semantics": "local wrappers referencing the same component occurrences"
+    },
+    {
+      "id": "components",
+      "name": "Components",
+      "order": 1,
+      "semantics": "pinned Langflow definitions and instance configuration"
+    },
+    {
+      "id": "configuration",
+      "name": "Configuration",
+      "order": 0,
+      "semantics": "references to existing model/tool/storage configuration; no credentials"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "R-instance",
+      "description": "Produce an inspectable instance JSON grounded in library pieces and expose unresolved boundaries.",
+      "status": "confirmed",
+      "parentIds": [],
+      "phase": "design",
+      "realizationIds": [
+        "process-triage"
+      ]
+    },
+    {
+      "id": "R-intake",
+      "description": "Accept a support ticket for assessment.",
+      "status": "proposed",
+      "parentIds": [
+        "R-instance"
+      ],
+      "phase": "design",
+      "realizationIds": [
+        "input",
+        "assess",
+        "triage-flow"
+      ]
+    },
+    {
+      "id": "R-assess",
+      "description": "Assess ticket intent and urgency under an agreed policy; retain uncertainty.",
+      "status": "proposed",
+      "parentIds": [
+        "R-instance"
+      ],
+      "phase": "behavior",
+      "realizationIds": [
+        "classifier",
+        "assess"
+      ]
+    },
+    {
+      "id": "R-draft",
+      "description": "Prepare an appropriate response draft using the ticket and its assessment.",
+      "status": "proposed",
+      "parentIds": [
+        "R-instance"
+      ],
+      "phase": "behavior",
+      "realizationIds": [
+        "writer",
+        "output",
+        "draft",
+        "triage-flow"
+      ]
+    },
+    {
+      "id": "R-review",
+      "description": "Define human review and escalation before any external action.",
+      "status": "proposed",
+      "parentIds": [
+        "R-instance"
+      ],
+      "phase": "process",
+      "realizationIds": [
+        "process-triage",
+        "review-policy"
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": "process-triage",
+      "name": "Ticket triage lifecycle",
+      "layer": "processes",
+      "kind": "local-assembly",
+      "status": "proposed",
+      "members": [
+        "triage-flow"
+      ],
+      "requirementIds": [
+        "R-instance",
+        "R-review"
+      ],
+      "description": "Proposed lifecycle: receive a ticket, assess it, prepare a draft, and apply a review decision. Review and escalation rules remain open."
+    },
+    {
+      "id": "triage-flow",
+      "name": "Assess \u2192 draft",
+      "layer": "flows",
+      "kind": "local-assembly",
+      "status": "proposed",
+      "members": [
+        "assess",
+        "draft"
+      ],
+      "requirementIds": [
+        "R-intake",
+        "R-draft"
+      ],
+      "description": "Proposed ordering of two local composites. The assessment Message must preserve the original ticket; that behavior has no evidence yet."
+    },
+    {
+      "id": "assess",
+      "name": "Ticket assessment",
+      "layer": "composite",
+      "kind": "local-assembly",
+      "status": "proposed",
+      "members": [
+        "input",
+        "classifier"
+      ],
+      "requirementIds": [
+        "R-intake",
+        "R-assess"
+      ],
+      "description": "Represent the same Chat Input and assessment Agent occurrences as one local capability.",
+      "interface": {
+        "input": {
+          "entityId": "input",
+          "port": "input_value",
+          "kind": "field",
+          "type": "str"
+        },
+        "output": {
+          "entityId": "classifier",
+          "port": "response",
+          "kind": "output",
+          "type": "Message"
+        }
+      }
+    },
+    {
+      "id": "draft",
+      "name": "Response drafting",
+      "layer": "composite",
+      "kind": "local-assembly",
+      "status": "proposed",
+      "members": [
+        "writer",
+        "output"
+      ],
+      "requirementIds": [
+        "R-draft"
+      ],
+      "description": "Represent the response Agent and Chat Output occurrences without duplicating them.",
+      "interface": {
+        "input": {
+          "entityId": "writer",
+          "port": "input_value",
+          "kind": "input",
+          "type": "Message"
+        },
+        "output": {
+          "entityId": "output",
+          "port": "message",
+          "kind": "output",
+          "type": "Message"
+        }
+      }
+    },
+    {
+      "id": "input",
+      "name": "Ticket input",
+      "layer": "components",
+      "kind": "native-reference",
+      "status": "grounded",
+      "members": [],
+      "requirementIds": [
+        "R-intake"
+      ],
+      "description": "Pinned Chat Input definition. Manual entry is a proposal pending channel confirmation.",
+      "itemRef": {
+        "id": "ChatInput",
+        "revision": "54baabc2534e2645dc4cbf15810ee15a455befdec5ca4614d4ded76d090a6c58"
+      },
+      "configuration": {
+        "should_store_message": false
+      },
+      "fieldBindings": {
+        "input_value": {
+          "externalName": "ticketText",
+          "type": "str",
+          "status": "proposed"
+        }
+      }
+    },
+    {
+      "id": "classifier",
+      "name": "Assessment agent",
+      "layer": "components",
+      "kind": "native-reference",
+      "status": "grounded",
+      "members": [],
+      "requirementIds": [
+        "R-assess"
+      ],
+      "description": "Pinned Agent interface; instructions describe intended behavior, not proven capability.",
+      "itemRef": {
+        "id": "Agent",
+        "revision": "d2f72d8f3e3779e43fedbd3f24d1c39752c5fbc170b5a2f2ac9706204d1c4fd5"
+      },
+      "configuration": {
+        "system_prompt": "Assess the supplied ticket using the agreed policy. Preserve its original text in the assessment for downstream drafting. If the policy or facts are insufficient, state the uncertainty. Return assessment and original ticket.",
+        "n_messages": 0,
+        "add_calculator_tool": false,
+        "add_current_date_tool": false
+      },
+      "resourceRefs": [
+        "model-config"
+      ]
+    },
+    {
+      "id": "writer",
+      "name": "Drafting agent",
+      "layer": "components",
+      "kind": "native-reference",
+      "status": "grounded",
+      "members": [],
+      "requirementIds": [
+        "R-draft"
+      ],
+      "description": "A separate Agent occurrence referencing the same definition version. No tools are attached and no message is sent externally.",
+      "itemRef": {
+        "id": "Agent",
+        "revision": "d2f72d8f3e3779e43fedbd3f24d1c39752c5fbc170b5a2f2ac9706204d1c4fd5"
+      },
+      "configuration": {
+        "system_prompt": "Prepare a response draft from the original ticket and its assessment. Do not invent missing facts or claim external actions. Flag uncertainty for human review.",
+        "n_messages": 0,
+        "add_calculator_tool": false,
+        "add_current_date_tool": false
+      },
+      "resourceRefs": [
+        "model-config"
+      ]
+    },
+    {
+      "id": "output",
+      "name": "Draft output",
+      "layer": "components",
+      "kind": "native-reference",
+      "status": "grounded",
+      "members": [],
+      "requirementIds": [
+        "R-draft"
+      ],
+      "description": "Pinned Chat Output definition; displays a Message. It is not an outbound ticket-system integration.",
+      "itemRef": {
+        "id": "ChatOutput",
+        "revision": "5fd032ef268bd58dc20ccb88db5f629c4f449638745256417ed6b772eba9ba2a"
+      },
+      "configuration": {
+        "should_store_message": false
+      }
+    },
+    {
+      "id": "model-config",
+      "name": "Existing model configuration",
+      "layer": "configuration",
+      "kind": "resource-reference",
+      "status": "unresolved",
+      "members": [],
+      "requirementIds": [
+        "R-assess",
+        "R-draft"
+      ],
+      "description": "Bind an existing Langflow model configuration, optionally API Proxy. No credential, token or private authentication data is copied.",
+      "bindingRef": null,
+      "activation": "not-checked"
+    },
+    {
+      "id": "review-policy",
+      "name": "Review and escalation policy",
+      "layer": "processes",
+      "kind": "decision",
+      "status": "unresolved",
+      "members": [],
+      "requirementIds": [
+        "R-review"
+      ],
+      "description": "A proposed human decision boundary, not a fabricated executable component."
+    }
+  ],
+  "links": [
+    {
+      "id": "L-input-assess",
+      "from": "input",
+      "to": "classifier",
+      "kind": "data",
+      "fromPort": "message",
+      "toPort": "input_value",
+      "type": "Message",
+      "status": "interface-compatible"
+    },
+    {
+      "id": "L-assess-draft",
+      "from": "classifier",
+      "to": "writer",
+      "kind": "data",
+      "fromPort": "response",
+      "toPort": "input_value",
+      "type": "Message",
+      "status": "interface-compatible"
+    },
+    {
+      "id": "L-draft-output",
+      "from": "writer",
+      "to": "output",
+      "kind": "data",
+      "fromPort": "response",
+      "toPort": "input_value",
+      "type": "Message",
+      "status": "interface-compatible"
+    },
+    {
+      "id": "L-composites",
+      "from": "assess",
+      "to": "draft",
+      "kind": "data",
+      "fromPort": "output",
+      "toPort": "input",
+      "type": "Message",
+      "status": "proposed-projection",
+      "realizesLinkId": "L-assess-draft"
+    },
+    {
+      "id": "L-review",
+      "from": "triage-flow",
+      "to": "review-policy",
+      "kind": "lifecycle",
+      "status": "proposed"
+    },
+    {
+      "id": "L-model-classifier",
+      "from": "model-config",
+      "to": "classifier",
+      "kind": "dependency",
+      "status": "unresolved"
+    },
+    {
+      "id": "L-model-writer",
+      "from": "model-config",
+      "to": "writer",
+      "kind": "dependency",
+      "status": "unresolved"
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q-channel",
+      "title": "Where do tickets enter?",
+      "options": [
+        {
+          "value": "manual",
+          "label": "Paste ticket text for the first design"
+        },
+        {
+          "value": "integration",
+          "label": "Connect an existing ticket system later"
+        }
+      ],
+      "answer": null,
+      "gapId": "G-channel"
+    },
+    {
+      "id": "Q-policy",
+      "title": "Which initial triage policy should we describe?",
+      "options": [
+        {
+          "value": "urgent-routine-uncertain",
+          "label": "Urgent / routine / uncertain \u2014 rules still need definition"
+        },
+        {
+          "value": "custom",
+          "label": "A custom policy \u2014 define it together"
+        }
+      ],
+      "answer": null,
+      "gapId": "G-policy"
+    },
+    {
+      "id": "Q-review",
+      "title": "What happens after a draft?",
+      "options": [
+        {
+          "value": "human-review",
+          "label": "Human review before any external action"
+        },
+        {
+          "value": "draft-only",
+          "label": "Stop at the draft; no external action"
+        }
+      ],
+      "answer": null,
+      "gapId": "G-review"
+    },
+    {
+      "id": "Q-model",
+      "title": "Which existing model binding should the design reference?",
+      "options": [
+        {
+          "value": "api-proxy",
+          "label": "Existing API Proxy configuration \u2014 availability not checked"
+        },
+        {
+          "value": "unresolved",
+          "label": "Keep the model binding open"
+        }
+      ],
+      "answer": null,
+      "gapId": "G-model"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "G-channel",
+      "kind": "clarification",
+      "status": "open",
+      "description": "Ticket intake channel has not been confirmed.",
+      "requirementIds": [
+        "R-intake"
+      ],
+      "entityIds": [
+        "input"
+      ],
+      "blocks": [
+        "confirm-design-scope"
+      ],
+      "nextAction": "Answer the intake question."
+    },
+    {
+      "id": "G-policy",
+      "kind": "clarification",
+      "status": "open",
+      "description": "Urgency categories and their decision rules are not confirmed.",
+      "requirementIds": [
+        "R-assess"
+      ],
+      "entityIds": [
+        "classifier",
+        "assess"
+      ],
+      "blocks": [
+        "claim-behavior-correct"
+      ],
+      "nextAction": "Agree on categories, examples and uncertainty rules."
+    },
+    {
+      "id": "G-review",
+      "kind": "clarification",
+      "status": "open",
+      "description": "Review and escalation responsibilities are not defined.",
+      "requirementIds": [
+        "R-review"
+      ],
+      "entityIds": [
+        "review-policy",
+        "process-triage"
+      ],
+      "blocks": [
+        "finalize-process"
+      ],
+      "nextAction": "Choose the draft handoff, then define escalation details if needed."
+    },
+    {
+      "id": "G-model",
+      "kind": "binding",
+      "status": "open",
+      "description": "Existing model configuration reference has not been selected.",
+      "requirementIds": [
+        "R-assess",
+        "R-draft"
+      ],
+      "entityIds": [
+        "model-config"
+      ],
+      "blocks": [
+        "assemble-native-export"
+      ],
+      "nextAction": "Select an existing configuration reference; keep secrets in its original store."
+    },
+    {
+      "id": "G-behavior",
+      "kind": "evidence",
+      "status": "open",
+      "description": "Classification, original-ticket preservation, grounding and draft quality are untested.",
+      "requirementIds": [
+        "R-assess",
+        "R-draft"
+      ],
+      "entityIds": [
+        "classifier",
+        "writer",
+        "assess",
+        "draft"
+      ],
+      "blocks": [
+        "claim-behavior-correct"
+      ],
+      "nextAction": "Design a separate behavioral evaluation when execution is wanted."
+    },
+    {
+      "id": "G-upper-profiles",
+      "kind": "layer-semantics",
+      "status": "open",
+      "description": "Flow and Process records are proposed responsibilities; their execution/validation profiles are not implemented.",
+      "requirementIds": [
+        "R-instance",
+        "R-review"
+      ],
+      "entityIds": [
+        "triage-flow",
+        "process-triage"
+      ],
+      "blocks": [
+        "claim-all-layers-buildable"
+      ],
+      "nextAction": "Refine the profiles incrementally rather than infer them from labels."
+    },
+    {
+      "id": "G-controller-adapter",
+      "kind": "compiler-adapter",
+      "status": "open",
+      "description": "Paper 4 uses an explicit structural grammar. Translating these real component references and intent requirements into that grammar is not yet implemented; this instance is an authored proposal, not autonomous generation.",
+      "requirementIds": [
+        "R-instance"
+      ],
+      "entityIds": [
+        "process-triage",
+        "triage-flow"
+      ],
+      "blocks": [
+        "claim-autonomous-instance-generation"
+      ],
+      "nextAction": "Develop the adapter against the pinned contracts and preserve unmet semantic judgments."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision-grounding",
+      "kind": "assembly-proposal",
+      "source": "assistant",
+      "description": "Reuse native definitions without modification, preserve distinct Agent occurrences and expose every remaining boundary. Paper 4 is a controller reference, not a claimed generator run."
+    }
+  ],
+  "validation": {
+    "status": "design-draft",
+    "behavior": "not-tested",
+    "deployment": "not-requested"
+  },
+  "unusedLayers": {
+    "names": [
+      "Confederations",
+      "Federation",
+      "Alliances",
+      "Ecosystems",
+      "Enterprises",
+      "Operations",
+      "Programs"
+    ],
+    "reason": "No present requirement justifies these layers."
+  }
+}

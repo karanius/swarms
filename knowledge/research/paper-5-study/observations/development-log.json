@@ -1,0 +1,28 @@
+{
+  "events": [
+    {
+      "kind": "scope-clarification",
+      "description": "Requester emphasized layer formation as central objective; revision and formation were distinguished and an exploratory addendum added."
+    },
+    {
+      "kind": "representation-fix",
+      "description": "Native component names now precede instance-role labels; components were not moved to the composite plane."
+    },
+    {
+      "kind": "guard-strengthening",
+      "description": "Prior decision preservation and unchanged entity count added after initial comparison; round-1 output retained."
+    },
+    {
+      "kind": "reference-correction",
+      "description": "Candidate cap one permits one valid first group; original zero expectation corrected with failed output retained."
+    },
+    {
+      "kind": "tooling-recovery",
+      "description": "Notebook preparation initially used system Python without nbformat; rerun under the existing Research environment. This was not an algorithm observation."
+    },
+    {
+      "kind": "source-preservation",
+      "description": "Notebook imports a captured dependency closure identical to live core/store at capture; pinned Ajv package has no reported audit findings at installation."
+    }
+  ]
+}

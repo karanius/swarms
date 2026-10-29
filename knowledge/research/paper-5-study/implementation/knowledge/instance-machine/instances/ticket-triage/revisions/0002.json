@@ -1,0 +1,392 @@
+{
+  "schemaVersion": 1,
+  "kind": "intent-instance",
+  "id": "ticket-triage",
+  "name": "Ticket triage",
+  "revision": 2,
+  "parentRevision": 1,
+  "change": {
+    "action": "decompose",
+    "summary": "Propose intake, assessment, drafting and review responsibilities; lower realization remains open.",
+    "source": "assistant-proposal"
+  },
+  "intent": {
+    "description": "Design a ticket-triage system as an intent-specific slice of the library.",
+    "confirmed": "The user accepted this as the working example and authorized iterative development.",
+    "source": "conversation",
+    "scope": "specification only; deployment and behavior are not established"
+  },
+  "libraryRef": {
+    "id": "ticket-triage-component-snapshot",
+    "revision": "e5e69c90be3f193e1b2dd18a4836585dee91cc3517137fa9c43cfc94939b948a",
+    "file": "library.json"
+  },
+  "layers": [
+    {
+      "id": "processes",
+      "name": "Processes",
+      "order": 4,
+      "semantics": "proposed lifecycle and human decisions"
+    },
+    {
+      "id": "flows",
+      "name": "Flows",
+      "order": 3,
+      "semantics": "proposed task/data ordering; not native executable orchestration"
+    },
+    {
+      "id": "composite",
+      "name": "Composite",
+      "order": 2,
+      "semantics": "local wrappers referencing the same component occurrences"
+    },
+    {
+      "id": "components",
+      "name": "Components",
+      "order": 1,
+      "semantics": "pinned Langflow definitions and instance configuration"
+    },
+    {
+      "id": "configuration",
+      "name": "Configuration",
+      "order": 0,
+      "semantics": "references to existing model/tool/storage configuration; no credentials"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "R-instance",
+      "description": "Produce an inspectable instance JSON grounded in library pieces and expose unresolved boundaries.",
+      "status": "confirmed",
+      "parentIds": [],
+      "phase": "design",
+      "realizationIds": [
+        "process-triage"
+      ]
+    },
+    {
+      "id": "R-intake",
+      "description": "Accept a support ticket for assessment.",
+      "status": "proposed",
+      "parentIds": [
+        "R-instance"
+      ],
+      "phase": "design",
+      "realizationIds": [
+        "assess",
+        "triage-flow"
+      ]
+    },
+    {
+      "id": "R-assess",
+      "description": "Assess ticket intent and urgency under an agreed policy; retain uncertainty.",
+      "status": "proposed",
+      "parentIds": [
+        "R-instance"
+      ],
+      "phase": "behavior",
+      "realizationIds": [
+        "assess"
+      ]
+    },
+    {
+      "id": "R-draft",
+      "description": "Prepare an appropriate response draft using the ticket and its assessment.",
+      "status": "proposed",
+      "parentIds": [
+        "R-instance"
+      ],
+      "phase": "behavior",
+      "realizationIds": [
+        "draft",
+        "triage-flow"
+      ]
+    },
+    {
+      "id": "R-review",
+      "description": "Define human review and escalation before any external action.",
+      "status": "proposed",
+      "parentIds": [
+        "R-instance"
+      ],
+      "phase": "process",
+      "realizationIds": [
+        "process-triage",
+        "review-policy"
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": "process-triage",
+      "name": "Ticket triage lifecycle",
+      "layer": "processes",
+      "kind": "local-assembly",
+      "status": "proposed",
+      "members": [
+        "triage-flow"
+      ],
+      "requirementIds": [
+        "R-instance",
+        "R-review"
+      ],
+      "description": "Proposed lifecycle: receive a ticket, assess it, prepare a draft, and apply a review decision. Review and escalation rules remain open."
+    },
+    {
+      "id": "triage-flow",
+      "name": "Assess \u2192 draft",
+      "layer": "flows",
+      "kind": "local-assembly",
+      "status": "proposed",
+      "members": [
+        "assess",
+        "draft"
+      ],
+      "requirementIds": [
+        "R-intake",
+        "R-draft"
+      ],
+      "description": "Proposed ordering of two local composites. The assessment Message must preserve the original ticket; that behavior has no evidence yet."
+    },
+    {
+      "id": "assess",
+      "name": "Ticket assessment",
+      "layer": "composite",
+      "kind": "local-assembly",
+      "status": "proposed",
+      "members": [],
+      "requirementIds": [
+        "R-intake",
+        "R-assess"
+      ],
+      "description": "Represent the same Chat Input and assessment Agent occurrences as one local capability."
+    },
+    {
+      "id": "draft",
+      "name": "Response drafting",
+      "layer": "composite",
+      "kind": "local-assembly",
+      "status": "proposed",
+      "members": [],
+      "requirementIds": [
+        "R-draft"
+      ],
+      "description": "Represent the response Agent and Chat Output occurrences without duplicating them."
+    },
+    {
+      "id": "review-policy",
+      "name": "Review and escalation policy",
+      "layer": "processes",
+      "kind": "decision",
+      "status": "unresolved",
+      "members": [],
+      "requirementIds": [
+        "R-review"
+      ],
+      "description": "A proposed human decision boundary, not a fabricated executable component."
+    }
+  ],
+  "links": [
+    {
+      "id": "L-composites",
+      "from": "assess",
+      "to": "draft",
+      "kind": "data",
+      "fromPort": "output",
+      "toPort": "input",
+      "type": "Message",
+      "status": "proposed-projection"
+    },
+    {
+      "id": "L-review",
+      "from": "triage-flow",
+      "to": "review-policy",
+      "kind": "lifecycle",
+      "status": "proposed"
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q-channel",
+      "title": "Where do tickets enter?",
+      "options": [
+        {
+          "value": "manual",
+          "label": "Paste ticket text for the first design"
+        },
+        {
+          "value": "integration",
+          "label": "Connect an existing ticket system later"
+        }
+      ],
+      "answer": null,
+      "gapId": "G-channel"
+    },
+    {
+      "id": "Q-policy",
+      "title": "Which initial triage policy should we describe?",
+      "options": [
+        {
+          "value": "urgent-routine-uncertain",
+          "label": "Urgent / routine / uncertain \u2014 rules still need definition"
+        },
+        {
+          "value": "custom",
+          "label": "A custom policy \u2014 define it together"
+        }
+      ],
+      "answer": null,
+      "gapId": "G-policy"
+    },
+    {
+      "id": "Q-review",
+      "title": "What happens after a draft?",
+      "options": [
+        {
+          "value": "human-review",
+          "label": "Human review before any external action"
+        },
+        {
+          "value": "draft-only",
+          "label": "Stop at the draft; no external action"
+        }
+      ],
+      "answer": null,
+      "gapId": "G-review"
+    },
+    {
+      "id": "Q-model",
+      "title": "Which existing model binding should the design reference?",
+      "options": [
+        {
+          "value": "api-proxy",
+          "label": "Existing API Proxy configuration \u2014 availability not checked"
+        },
+        {
+          "value": "unresolved",
+          "label": "Keep the model binding open"
+        }
+      ],
+      "answer": null,
+      "gapId": "G-model"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "G-channel",
+      "kind": "clarification",
+      "status": "open",
+      "description": "Ticket intake channel has not been confirmed.",
+      "requirementIds": [
+        "R-intake"
+      ],
+      "entityIds": [],
+      "blocks": [
+        "confirm-design-scope"
+      ],
+      "nextAction": "Answer the intake question."
+    },
+    {
+      "id": "G-policy",
+      "kind": "clarification",
+      "status": "open",
+      "description": "Urgency categories and their decision rules are not confirmed.",
+      "requirementIds": [
+        "R-assess"
+      ],
+      "entityIds": [
+        "assess"
+      ],
+      "blocks": [
+        "claim-behavior-correct"
+      ],
+      "nextAction": "Agree on categories, examples and uncertainty rules."
+    },
+    {
+      "id": "G-review",
+      "kind": "clarification",
+      "status": "open",
+      "description": "Review and escalation responsibilities are not defined.",
+      "requirementIds": [
+        "R-review"
+      ],
+      "entityIds": [
+        "review-policy",
+        "process-triage"
+      ],
+      "blocks": [
+        "finalize-process"
+      ],
+      "nextAction": "Choose the draft handoff, then define escalation details if needed."
+    },
+    {
+      "id": "G-model",
+      "kind": "binding",
+      "status": "open",
+      "description": "Existing model configuration reference has not been selected.",
+      "requirementIds": [
+        "R-assess",
+        "R-draft"
+      ],
+      "entityIds": [],
+      "blocks": [
+        "assemble-native-export"
+      ],
+      "nextAction": "Select an existing configuration reference; keep secrets in its original store."
+    },
+    {
+      "id": "G-behavior",
+      "kind": "evidence",
+      "status": "open",
+      "description": "Classification, original-ticket preservation, grounding and draft quality are untested.",
+      "requirementIds": [
+        "R-assess",
+        "R-draft"
+      ],
+      "entityIds": [
+        "assess",
+        "draft"
+      ],
+      "blocks": [
+        "claim-behavior-correct"
+      ],
+      "nextAction": "Design a separate behavioral evaluation when execution is wanted."
+    },
+    {
+      "id": "G-upper-profiles",
+      "kind": "layer-semantics",
+      "status": "open",
+      "description": "Flow and Process records are proposed responsibilities; their execution/validation profiles are not implemented.",
+      "requirementIds": [
+        "R-instance",
+        "R-review"
+      ],
+      "entityIds": [
+        "triage-flow",
+        "process-triage"
+      ],
+      "blocks": [
+        "claim-all-layers-buildable"
+      ],
+      "nextAction": "Refine the profiles incrementally rather than infer them from labels."
+    }
+  ],
+  "decisions": [],
+  "validation": {
+    "status": "design-draft",
+    "behavior": "not-tested",
+    "deployment": "not-requested"
+  },
+  "unusedLayers": {
+    "names": [
+      "Confederations",
+      "Federation",
+      "Alliances",
+      "Ecosystems",
+      "Enterprises",
+      "Operations",
+      "Programs"
+    ],
+    "reason": "No present requirement justifies these layers."
+  }
+}

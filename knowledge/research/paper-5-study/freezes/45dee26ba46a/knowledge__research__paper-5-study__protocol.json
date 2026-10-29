@@ -1,0 +1,29 @@
+{
+  "version": "p5-protocol-2",
+  "question": "Can a bounded revision algorithm propagate a structured policy change through an existing instance, propose a narrow patch and preserve unrelated design?",
+  "scope": "Structured rule -> requirement-mapped prompt adapter -> directed data/lifecycle and upward membership reachability -> proposed patch -> preservation and native-reference validation -> optimistic revision save. No free-text intent understanding, behavioral classification or general compiler claim.",
+  "methods": [
+    "impact",
+    "direct-only",
+    "rewrite-all"
+  ],
+  "exposure": "Same-author exposed cases and assessor. An integration preview probe preceded this protocol; no preregistered or independent evaluation claim.",
+  "criteria": {
+    "reference_match": "expected blocked gap or expected affected set plus preserved unrelated content and proposed-only status",
+    "safe_commit": "live store accepts only regenerated impact-method plans with matching base and digest; comparison variants never committed",
+    "preservation": "old requirements, gaps, links, questions, identities, native refs and nonseed configurations unchanged"
+  },
+  "limits": {
+    "maxAffected": 100,
+    "maxOperations": 100,
+    "predicateGrammar": "two explicit boolean fact fields; equals true; urgent/routine result; uncertainty otherwise"
+  },
+  "hypotheses": {
+    "H1": "impact closure identifies explicit review reachability in authored graphs",
+    "H2": "selective patches preserve unrelated content better than direct-only or rewrite-all ablations",
+    "H3": "stale/tampered previews cannot overwrite a current design"
+  },
+  "claim_boundary": "Reachability is a conservative reassessment scope, not semantic proof. A saved proposed rule is not an approved policy. Raw-ticket predicate extraction remains a recorded gap. Local structural tests do not validate Langflow behavior.",
+  "artifacts": "baseline snapshot, protocol/module hashes, all case outputs and failures, negative corruption checks, Node store tests, Jupyter cell outputs, live UI revision evidence",
+  "revision": "After first comparison, preservation guard was strengthened for prior decision records and unchanged entity count. Earlier results retained in round-1. Same exposed cases rerun; no independent replication claim."
+}

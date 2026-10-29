@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "kind": "intent-instance",
+  "id": "ticket-triage",
+  "name": "Ticket triage",
+  "revision": 1,
+  "parentRevision": null,
+  "change": {
+    "action": "record-intent",
+    "summary": "Record the authorized working intent and iterative design boundary.",
+    "source": "conversation"
+  },
+  "intent": {
+    "description": "Design a ticket-triage system as an intent-specific slice of the library.",
+    "confirmed": "The user accepted this as the working example and authorized iterative development.",
+    "source": "conversation",
+    "scope": "specification only; deployment and behavior are not established"
+  },
+  "libraryRef": {
+    "id": "ticket-triage-component-snapshot",
+    "revision": "e5e69c90be3f193e1b2dd18a4836585dee91cc3517137fa9c43cfc94939b948a",
+    "file": "library.json"
+  },
+  "layers": [
+    {
+      "id": "processes",
+      "name": "Processes",
+      "order": 4,
+      "semantics": "proposed lifecycle and human decisions"
+    },
+    {
+      "id": "flows",
+      "name": "Flows",
+      "order": 3,
+      "semantics": "proposed task/data ordering; not native executable orchestration"
+    },
+    {
+      "id": "composite",
+      "name": "Composite",
+      "order": 2,
+      "semantics": "local wrappers referencing the same component occurrences"
+    },
+    {
+      "id": "components",
+      "name": "Components",
+      "order": 1,
+      "semantics": "pinned Langflow definitions and instance configuration"
+    },
+    {
+      "id": "configuration",
+      "name": "Configuration",
+      "order": 0,
+      "semantics": "references to existing model/tool/storage configuration; no credentials"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "R-instance",
+      "description": "Produce an inspectable instance JSON grounded in library pieces and expose unresolved boundaries.",
+      "status": "confirmed",
+      "parentIds": [],
+      "phase": "design",
+      "realizationIds": []
+    }
+  ],
+  "entities": [],
+  "links": [],
+  "questions": [
+    {
+      "id": "Q-channel",
+      "title": "Where do tickets enter?",
+      "options": [
+        {
+          "value": "manual",
+          "label": "Paste ticket text for the first design"
+        },
+        {
+          "value": "integration",
+          "label": "Connect an existing ticket system later"
+        }
+      ],
+      "answer": null,
+      "gapId": "G-channel"
+    },
+    {
+      "id": "Q-policy",
+      "title": "Which initial triage policy should we describe?",
+      "options": [
+        {
+          "value": "urgent-routine-uncertain",
+          "label": "Urgent / routine / uncertain \u2014 rules still need definition"
+        },
+        {
+          "value": "custom",
+          "label": "A custom policy \u2014 define it together"
+        }
+      ],
+      "answer": null,
+      "gapId": "G-policy"
+    },
+    {
+      "id": "Q-review",
+      "title": "What happens after a draft?",
+      "options": [
+        {
+          "value": "human-review",
+          "label": "Human review before any external action"
+        },
+        {
+          "value": "draft-only",
+          "label": "Stop at the draft; no external action"
+        }
+      ],
+      "answer": null,
+      "gapId": "G-review"
+    },
+    {
+      "id": "Q-model",
+      "title": "Which existing model binding should the design reference?",
+      "options": [
+        {
+          "value": "api-proxy",
+          "label": "Existing API Proxy configuration \u2014 availability not checked"
+        },
+        {
+          "value": "unresolved",
+          "label": "Keep the model binding open"
+        }
+      ],
+      "answer": null,
+      "gapId": "G-model"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "G-channel",
+      "kind": "clarification",
+      "status": "open",
+      "description": "Ticket intake channel has not been confirmed.",
+      "requirementIds": [
+        "R-instance"
+      ],
+      "entityIds": [],
+      "blocks": [
+        "confirm-design-scope"
+      ],
+      "nextAction": "Answer the intake question."
+    },
+    {
+      "id": "G-policy",
+      "kind": "clarification",
+      "status": "open",
+      "description": "Urgency categories and their decision rules are not confirmed.",
+      "requirementIds": [
+        "R-instance"
+      ],
+      "entityIds": [],
+      "blocks": [
+        "claim-behavior-correct"
+      ],
+      "nextAction": "Agree on categories, examples and uncertainty rules."
+    },
+    {
+      "id": "G-review",
+      "kind": "clarification",
+      "status": "open",
+      "description": "Review and escalation responsibilities are not defined.",
+      "requirementIds": [
+        "R-instance"
+      ],
+      "entityIds": [],
+      "blocks": [
+        "finalize-process"
+      ],
+      "nextAction": "Choose the draft handoff, then define escalation details if needed."
+    },
+    {
+      "id": "G-model",
+      "kind": "binding",
+      "status": "open",
+      "description": "Existing model configuration reference has not been selected.",
+      "requirementIds": [
+        "R-instance"
+      ],
+      "entityIds": [],
+      "blocks": [
+        "assemble-native-export"
+      ],
+      "nextAction": "Select an existing configuration reference; keep secrets in its original store."
+    },
+    {
+      "id": "G-behavior",
+      "kind": "evidence",
+      "status": "open",
+      "description": "Classification, original-ticket preservation, grounding and draft quality are untested.",
+      "requirementIds": [
+        "R-instance"
+      ],
+      "entityIds": [],
+      "blocks": [
+        "claim-behavior-correct"
+      ],
+      "nextAction": "Design a separate behavioral evaluation when execution is wanted."
+    },
+    {
+      "id": "G-upper-profiles",
+      "kind": "layer-semantics",
+      "status": "open",
+      "description": "Flow and Process records are proposed responsibilities; their execution/validation profiles are not implemented.",
+      "requirementIds": [
+        "R-instance"
+      ],
+      "entityIds": [],
+      "blocks": [
+        "claim-all-layers-buildable"
+      ],
+      "nextAction": "Refine the profiles incrementally rather than infer them from labels."
+    }
+  ],
+  "decisions": [],
+  "validation": {
+    "status": "design-draft",
+    "behavior": "not-tested",
+    "deployment": "not-requested"
+  },
+  "unusedLayers": {
+    "names": [
+      "Confederations",
+      "Federation",
+      "Alliances",
+      "Ecosystems",
+      "Enterprises",
+      "Operations",
+      "Programs"
+    ],
+    "reason": "No present requirement justifies these layers."
+  }
+}
