@@ -1,0 +1,7 @@
+{
+  "protocol_sha256": "3563df6f176ccca9f0f6d0d3f0c4992b26a016cf1008a7f35cf8f409d58d8394",
+  "implementation_sha256": "8684d0b30532b67b4709e801bc8c46656aa949df90d81f0ee1b33043758963b2",
+  "cases_sha256": "5be7a1afda22bdf6052b5f1b32c2b63a537eb07f38fb77636bcfd6b37e5520a9",
+  "scope": "synthetic finite structural candidate selection; not full Paper 2",
+  "evaluation_exposure": "same-author exposed; no independently held-out claim"
+}

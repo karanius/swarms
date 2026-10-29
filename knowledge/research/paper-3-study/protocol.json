@@ -1,0 +1,49 @@
+{
+  "protocol_version": "p3-structural-1",
+  "scope": "Finite synthetic structural pipeline selection and Components-to-Composite packaging; not Langflow execution or a complete Paper 2 controller",
+  "methods": [
+    "ungated-first",
+    "boundary-v0",
+    "boundary-v1"
+  ],
+  "baseline": "ungated-first selects the first named-capability candidate; it uses repaired packaging but skips candidate type/locality gates. Common profile, ambiguity, budget and cycle guards remain. All methods see the same descriptions and candidate order.",
+  "v0": "typed and constraint-gated bounded candidate selection; packaging exposes crossing edges but omits required unbound inputs. Configuration/dependency references are retained.",
+  "v1": "v0 plus required unbound input exposure; one planned packaging correction.",
+  "development_case_ids": [
+    "D-clean",
+    "D-hidden-input",
+    "D-wrong-first"
+  ],
+  "evaluation_case_ids": [
+    "E-clean",
+    "E-wrong-first",
+    "E-locality",
+    "E-missing",
+    "E-ambiguous",
+    "E-budget",
+    "E-hidden-input",
+    "E-crossing",
+    "E-distinct-identity",
+    "E-unrelated-node",
+    "E-profile",
+    "E-cycle",
+    "E-config-resource",
+    "E-no-compatible"
+  ],
+  "exposure": "All cases and methods authored by the same AI assistant in one session; evaluation cases are designated evaluation, not independently held out. No statistical generalization claim.",
+  "revision": "v0 and the proposed v1 correction are frozen together before execution; this is a planned defect/correction demonstration, not a revision discovered blindly from observations",
+  "decision_criteria": {
+    "conformance": "zero accepted-artifact violations among the explicit oracle checks for a method to pass this bounded suite",
+    "case_pass": "expected outcome matches; composite artifacts additionally pass independent structural oracle",
+    "gap": "expected gap kind matches, not merely any non-success outcome",
+    "comparison": "paired descriptive case counts and attempts; no significance test, no model-cost or latency claim"
+  },
+  "limits": "default 8 examined candidates; exact per-case overrides recorded; finite authored candidate domain; no recursive decomposition, branch backtracking, behavioral inference or generated primitive implementation",
+  "hypotheses": {
+    "H1": "partial examination within finite candidate grammar",
+    "H2": "partial examination of explicit structural gaps",
+    "H3": "comparison only to weak ungated selector; no strong baseline superiority claim",
+    "H4": "planned correction with exposed same-author evaluation, not independent evidence of generalization"
+  },
+  "execution": "pure local Python specification generation and assertions; no models, remote tools, Langflow runtime or deployment"
+}

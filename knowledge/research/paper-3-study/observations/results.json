@@ -1,0 +1,5512 @@
+[
+  {
+    "case": "D-clean",
+    "method": "ungated-first",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:D-clean",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": true
+    },
+    "collection": "development"
+  },
+  {
+    "case": "D-clean",
+    "method": "boundary-v0",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:D-clean",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": false,
+      "errors": [
+        "unbound-input-loss"
+      ],
+      "accepted_artifact": true
+    },
+    "collection": "development"
+  },
+  {
+    "case": "D-clean",
+    "method": "boundary-v1",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:D-clean",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": true
+    },
+    "collection": "development"
+  },
+  {
+    "case": "D-hidden-input",
+    "method": "ungated-first",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:D-hidden-input",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            },
+            "context": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ],
+        [
+          "worker",
+          "context"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": true
+    },
+    "collection": "development"
+  },
+  {
+    "case": "D-hidden-input",
+    "method": "boundary-v0",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:D-hidden-input",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            },
+            "context": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": false,
+      "errors": [
+        "unbound-input-loss"
+      ],
+      "accepted_artifact": true
+    },
+    "collection": "development"
+  },
+  {
+    "case": "D-hidden-input",
+    "method": "boundary-v1",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:D-hidden-input",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            },
+            "context": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ],
+        [
+          "worker",
+          "context"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": true
+    },
+    "collection": "development"
+  },
+  {
+    "case": "D-wrong-first",
+    "method": "ungated-first",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "bad",
+        "guards": {
+          "input_type": true,
+          "output_type": false,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:D-wrong-first",
+      "layer": "composite",
+      "members": [
+        "source",
+        "bad",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "bad",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Number"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "bad",
+          "message"
+        ],
+        [
+          "bad",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "bad": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": false,
+      "errors": [
+        "membership-mismatch",
+        "type-mismatch"
+      ],
+      "accepted_artifact": true
+    },
+    "collection": "development"
+  },
+  {
+    "case": "D-wrong-first",
+    "method": "boundary-v0",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 2,
+    "trace": [
+      {
+        "candidate": "bad",
+        "guards": {
+          "input_type": true,
+          "output_type": false,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": false,
+        "charged": 1
+      },
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:D-wrong-first",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": false,
+      "errors": [
+        "unbound-input-loss"
+      ],
+      "accepted_artifact": true
+    },
+    "collection": "development"
+  },
+  {
+    "case": "D-wrong-first",
+    "method": "boundary-v1",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 2,
+    "trace": [
+      {
+        "candidate": "bad",
+        "guards": {
+          "input_type": true,
+          "output_type": false,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": false,
+        "charged": 1
+      },
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:D-wrong-first",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": true
+    },
+    "collection": "development"
+  },
+  {
+    "case": "E-clean",
+    "method": "ungated-first",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-clean",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-clean",
+    "method": "boundary-v0",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-clean",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": false,
+      "errors": [
+        "unbound-input-loss"
+      ],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-clean",
+    "method": "boundary-v1",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-clean",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-wrong-first",
+    "method": "ungated-first",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "bad",
+        "guards": {
+          "input_type": false,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-wrong-first",
+      "layer": "composite",
+      "members": [
+        "source",
+        "bad",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "bad",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Image",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "bad",
+          "message"
+        ],
+        [
+          "bad",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "bad": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": false,
+      "errors": [
+        "membership-mismatch",
+        "type-mismatch"
+      ],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-wrong-first",
+    "method": "boundary-v0",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 2,
+    "trace": [
+      {
+        "candidate": "bad",
+        "guards": {
+          "input_type": false,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": false,
+        "charged": 1
+      },
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-wrong-first",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": false,
+      "errors": [
+        "unbound-input-loss"
+      ],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-wrong-first",
+    "method": "boundary-v1",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 2,
+    "trace": [
+      {
+        "candidate": "bad",
+        "guards": {
+          "input_type": false,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": false,
+        "charged": 1
+      },
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-wrong-first",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-locality",
+    "method": "ungated-first",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "remote",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": false,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-locality",
+      "layer": "composite",
+      "members": [
+        "source",
+        "remote",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "remote",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "remote",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "remote",
+          "message"
+        ],
+        [
+          "remote",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "remote": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": false,
+      "errors": [
+        "constraint-mismatch",
+        "membership-mismatch"
+      ],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-locality",
+    "method": "boundary-v0",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 2,
+    "trace": [
+      {
+        "candidate": "remote",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": false,
+          "layer": true
+        },
+        "accepted": false,
+        "charged": 1
+      },
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-locality",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": false,
+      "errors": [
+        "unbound-input-loss"
+      ],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-locality",
+    "method": "boundary-v1",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 2,
+    "trace": [
+      {
+        "candidate": "remote",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": false,
+          "layer": true
+        },
+        "accepted": false,
+        "charged": 1
+      },
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-locality",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-missing",
+    "method": "ungated-first",
+    "outcome": "blocked-within-horizon",
+    "gap": "missing-capability",
+    "attempts": 0,
+    "trace": [],
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": false
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-missing",
+    "method": "boundary-v0",
+    "outcome": "blocked-within-horizon",
+    "gap": "missing-capability",
+    "attempts": 0,
+    "trace": [],
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": false
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-missing",
+    "method": "boundary-v1",
+    "outcome": "blocked-within-horizon",
+    "gap": "missing-capability",
+    "attempts": 0,
+    "trace": [],
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": false
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-ambiguous",
+    "method": "ungated-first",
+    "outcome": "awaiting-clarification",
+    "gap": "ambiguous-capability",
+    "attempts": 0,
+    "trace": [],
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": false
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-ambiguous",
+    "method": "boundary-v0",
+    "outcome": "awaiting-clarification",
+    "gap": "ambiguous-capability",
+    "attempts": 0,
+    "trace": [],
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": false
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-ambiguous",
+    "method": "boundary-v1",
+    "outcome": "awaiting-clarification",
+    "gap": "ambiguous-capability",
+    "attempts": 0,
+    "trace": [],
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": false
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-budget",
+    "method": "ungated-first",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "bad",
+        "guards": {
+          "input_type": true,
+          "output_type": false,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-budget",
+      "layer": "composite",
+      "members": [
+        "source",
+        "bad",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "bad",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Number"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "bad",
+          "message"
+        ],
+        [
+          "bad",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "bad": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": false,
+      "errors": [
+        "gap-mismatch",
+        "membership-mismatch",
+        "outcome-mismatch",
+        "type-mismatch",
+        "unbound-input-loss"
+      ],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-budget",
+    "method": "boundary-v0",
+    "outcome": "partial",
+    "gap": "budget-exhausted",
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "bad",
+        "guards": {
+          "input_type": true,
+          "output_type": false,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": false,
+        "charged": 1
+      }
+    ],
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": false
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-budget",
+    "method": "boundary-v1",
+    "outcome": "partial",
+    "gap": "budget-exhausted",
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "bad",
+        "guards": {
+          "input_type": true,
+          "output_type": false,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": false,
+        "charged": 1
+      }
+    ],
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": false
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-hidden-input",
+    "method": "ungated-first",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-hidden-input",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            },
+            "provenance": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ],
+        [
+          "worker",
+          "provenance"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-hidden-input",
+    "method": "boundary-v0",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-hidden-input",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            },
+            "provenance": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": false,
+      "errors": [
+        "unbound-input-loss"
+      ],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-hidden-input",
+    "method": "boundary-v1",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-hidden-input",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            },
+            "provenance": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ],
+        [
+          "worker",
+          "provenance"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-crossing",
+    "method": "ungated-first",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-crossing",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [
+        [
+          "worker",
+          "response",
+          "external",
+          "input"
+        ]
+      ],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-crossing",
+    "method": "boundary-v0",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-crossing",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [
+        [
+          "worker",
+          "response",
+          "external",
+          "input"
+        ]
+      ],
+      "exposed_required_inputs": [],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": false,
+      "errors": [
+        "unbound-input-loss"
+      ],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-crossing",
+    "method": "boundary-v1",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-crossing",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [
+        [
+          "worker",
+          "response",
+          "external",
+          "input"
+        ]
+      ],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-distinct-identity",
+    "method": "ungated-first",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-distinct-identity",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink",
+        "worker-second"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        },
+        {
+          "id": "worker-second",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {},
+          "outputs": {},
+          "config": {},
+          "dependencies": []
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {},
+        "worker-second": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-distinct-identity",
+    "method": "boundary-v0",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-distinct-identity",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink",
+        "worker-second"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        },
+        {
+          "id": "worker-second",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {},
+          "outputs": {},
+          "config": {},
+          "dependencies": []
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {},
+        "worker-second": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": false,
+      "errors": [
+        "unbound-input-loss"
+      ],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-distinct-identity",
+    "method": "boundary-v1",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-distinct-identity",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink",
+        "worker-second"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        },
+        {
+          "id": "worker-second",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {},
+          "outputs": {},
+          "config": {},
+          "dependencies": []
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {},
+        "worker-second": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-unrelated-node",
+    "method": "ungated-first",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-unrelated-node",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-unrelated-node",
+    "method": "boundary-v0",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-unrelated-node",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": false,
+      "errors": [
+        "unbound-input-loss"
+      ],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-unrelated-node",
+    "method": "boundary-v1",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-unrelated-node",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-profile",
+    "method": "ungated-first",
+    "outcome": "blocked-within-horizon",
+    "gap": "unsupported-profile",
+    "attempts": 0,
+    "trace": [],
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": false
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-profile",
+    "method": "boundary-v0",
+    "outcome": "blocked-within-horizon",
+    "gap": "unsupported-profile",
+    "attempts": 0,
+    "trace": [],
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": false
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-profile",
+    "method": "boundary-v1",
+    "outcome": "blocked-within-horizon",
+    "gap": "unsupported-profile",
+    "attempts": 0,
+    "trace": [],
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": false
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-cycle",
+    "method": "ungated-first",
+    "outcome": "blocked-within-horizon",
+    "gap": "unsupported-cycle",
+    "attempts": 0,
+    "trace": [],
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": false
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-cycle",
+    "method": "boundary-v0",
+    "outcome": "blocked-within-horizon",
+    "gap": "unsupported-cycle",
+    "attempts": 0,
+    "trace": [],
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": false
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-cycle",
+    "method": "boundary-v1",
+    "outcome": "blocked-within-horizon",
+    "gap": "unsupported-cycle",
+    "attempts": 0,
+    "trace": [],
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": false
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-config-resource",
+    "method": "ungated-first",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-config-resource",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1",
+            "store_ref": "resource:storage@1"
+          },
+          "dependencies": [
+            "resource:model@1",
+            "resource:storage@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1",
+          "store_ref": "resource:storage@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1",
+        "resource:storage@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-config-resource",
+    "method": "boundary-v0",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-config-resource",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1",
+            "store_ref": "resource:storage@1"
+          },
+          "dependencies": [
+            "resource:model@1",
+            "resource:storage@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1",
+          "store_ref": "resource:storage@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1",
+        "resource:storage@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": false,
+      "errors": [
+        "unbound-input-loss"
+      ],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-config-resource",
+    "method": "boundary-v1",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": true,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-config-resource",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Message"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1",
+            "store_ref": "resource:storage@1"
+          },
+          "dependencies": [
+            "resource:model@1",
+            "resource:storage@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1",
+          "store_ref": "resource:storage@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1",
+        "resource:storage@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-no-compatible",
+    "method": "ungated-first",
+    "outcome": "design-closed",
+    "gap": null,
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": false,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": true,
+        "charged": 1
+      }
+    ],
+    "composite": {
+      "id": "composite:E-no-compatible",
+      "layer": "composite",
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ],
+      "member_records": [
+        {
+          "id": "source",
+          "definition": "synthetic/source@1",
+          "layer": "components",
+          "role": "source",
+          "inputs": {
+            "text": {
+              "type": "Text",
+              "required": true
+            }
+          },
+          "outputs": {
+            "message": "Message"
+          }
+        },
+        {
+          "id": "worker",
+          "definition": "synthetic/transform@1",
+          "layer": "components",
+          "role": "transform",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "response": "Number"
+          },
+          "capability": "summarize",
+          "locality": "local",
+          "config": {
+            "model_ref": "resource:model@1"
+          },
+          "dependencies": [
+            "resource:model@1"
+          ]
+        },
+        {
+          "id": "sink",
+          "definition": "synthetic/sink@1",
+          "layer": "components",
+          "role": "sink",
+          "inputs": {
+            "message": {
+              "type": "Message",
+              "required": true
+            }
+          },
+          "outputs": {
+            "result": "Message"
+          }
+        }
+      ],
+      "edges": [
+        [
+          "source",
+          "message",
+          "worker",
+          "message"
+        ],
+        [
+          "worker",
+          "response",
+          "sink",
+          "message"
+        ]
+      ],
+      "crossings": [],
+      "exposed_required_inputs": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "output_map": [
+        "sink",
+        "result"
+      ],
+      "configuration": {
+        "source": {},
+        "worker": {
+          "model_ref": "resource:model@1"
+        },
+        "sink": {}
+      },
+      "dependency_refs": [
+        "resource:model@1"
+      ]
+    },
+    "residuals": [
+      {
+        "requirement": "behavior:faithful-summary",
+        "phase": "behavior",
+        "judgment": "unknown",
+        "reason": "No generated application was executed"
+      },
+      {
+        "requirement": "activation:resources",
+        "phase": "activation",
+        "judgment": "unknown",
+        "reason": "References are described, not authenticated"
+      }
+    ],
+    "requirement_accounting": {
+      "design:typed-assembly": "met",
+      "design:complete-boundary": "met",
+      "behavior:faithful-summary": "unknown",
+      "activation:resources": "unknown"
+    },
+    "assessment": {
+      "passed": false,
+      "errors": [
+        "gap-mismatch",
+        "membership-mismatch",
+        "outcome-mismatch",
+        "type-mismatch",
+        "unbound-input-loss"
+      ],
+      "accepted_artifact": true
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-no-compatible",
+    "method": "boundary-v0",
+    "outcome": "blocked-within-horizon",
+    "gap": "no-compatible-candidate",
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": false,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": false,
+        "charged": 1
+      }
+    ],
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": false
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "case": "E-no-compatible",
+    "method": "boundary-v1",
+    "outcome": "blocked-within-horizon",
+    "gap": "no-compatible-candidate",
+    "attempts": 1,
+    "trace": [
+      {
+        "candidate": "worker",
+        "guards": {
+          "input_type": true,
+          "output_type": false,
+          "locality": true,
+          "layer": true
+        },
+        "accepted": false,
+        "charged": 1
+      }
+    ],
+    "assessment": {
+      "passed": true,
+      "errors": [],
+      "accepted_artifact": false
+    },
+    "collection": "designated-evaluation-exposed"
+  }
+]

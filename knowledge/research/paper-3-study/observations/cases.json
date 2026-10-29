@@ -1,0 +1,1449 @@
+[
+  {
+    "id": "D-clean",
+    "family": "pipeline",
+    "profile": "components-to-composite-dag@1",
+    "source": {
+      "id": "source",
+      "definition": "synthetic/source@1",
+      "layer": "components",
+      "role": "source",
+      "inputs": {
+        "text": {
+          "type": "Text",
+          "required": true
+        }
+      },
+      "outputs": {
+        "message": "Message"
+      }
+    },
+    "sink": {
+      "id": "sink",
+      "definition": "synthetic/sink@1",
+      "layer": "components",
+      "role": "sink",
+      "inputs": {
+        "message": {
+          "type": "Message",
+          "required": true
+        }
+      },
+      "outputs": {
+        "result": "Message"
+      }
+    },
+    "candidates": [
+      {
+        "id": "worker",
+        "definition": "synthetic/transform@1",
+        "layer": "components",
+        "role": "transform",
+        "inputs": {
+          "message": {
+            "type": "Message",
+            "required": true
+          }
+        },
+        "outputs": {
+          "response": "Message"
+        },
+        "capability": "summarize",
+        "locality": "local",
+        "config": {
+          "model_ref": "resource:model@1"
+        },
+        "dependencies": [
+          "resource:model@1"
+        ]
+      }
+    ],
+    "required_capability": "summarize",
+    "required_locality": null,
+    "budget": 8,
+    "ambient_edges": [],
+    "additional_members": [],
+    "forced_cycle": false,
+    "oracle": {
+      "outcome": "design-closed",
+      "boundary": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "crossings": [],
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ]
+    },
+    "collection": "development"
+  },
+  {
+    "id": "D-hidden-input",
+    "family": "unbound-input",
+    "profile": "components-to-composite-dag@1",
+    "source": {
+      "id": "source",
+      "definition": "synthetic/source@1",
+      "layer": "components",
+      "role": "source",
+      "inputs": {
+        "text": {
+          "type": "Text",
+          "required": true
+        }
+      },
+      "outputs": {
+        "message": "Message"
+      }
+    },
+    "sink": {
+      "id": "sink",
+      "definition": "synthetic/sink@1",
+      "layer": "components",
+      "role": "sink",
+      "inputs": {
+        "message": {
+          "type": "Message",
+          "required": true
+        }
+      },
+      "outputs": {
+        "result": "Message"
+      }
+    },
+    "candidates": [
+      {
+        "id": "worker",
+        "definition": "synthetic/transform@1",
+        "layer": "components",
+        "role": "transform",
+        "inputs": {
+          "message": {
+            "type": "Message",
+            "required": true
+          },
+          "context": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "response": "Message"
+        },
+        "capability": "summarize",
+        "locality": "local",
+        "config": {
+          "model_ref": "resource:model@1"
+        },
+        "dependencies": [
+          "resource:model@1"
+        ]
+      }
+    ],
+    "required_capability": "summarize",
+    "required_locality": null,
+    "budget": 8,
+    "ambient_edges": [],
+    "additional_members": [],
+    "forced_cycle": false,
+    "oracle": {
+      "outcome": "design-closed",
+      "boundary": [
+        [
+          "source",
+          "text"
+        ],
+        [
+          "worker",
+          "context"
+        ]
+      ],
+      "crossings": [],
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ]
+    },
+    "collection": "development"
+  },
+  {
+    "id": "D-wrong-first",
+    "family": "pipeline",
+    "profile": "components-to-composite-dag@1",
+    "source": {
+      "id": "source",
+      "definition": "synthetic/source@1",
+      "layer": "components",
+      "role": "source",
+      "inputs": {
+        "text": {
+          "type": "Text",
+          "required": true
+        }
+      },
+      "outputs": {
+        "message": "Message"
+      }
+    },
+    "sink": {
+      "id": "sink",
+      "definition": "synthetic/sink@1",
+      "layer": "components",
+      "role": "sink",
+      "inputs": {
+        "message": {
+          "type": "Message",
+          "required": true
+        }
+      },
+      "outputs": {
+        "result": "Message"
+      }
+    },
+    "candidates": [
+      {
+        "id": "bad",
+        "definition": "synthetic/transform@1",
+        "layer": "components",
+        "role": "transform",
+        "inputs": {
+          "message": {
+            "type": "Message",
+            "required": true
+          }
+        },
+        "outputs": {
+          "response": "Number"
+        },
+        "capability": "summarize",
+        "locality": "local",
+        "config": {
+          "model_ref": "resource:model@1"
+        },
+        "dependencies": [
+          "resource:model@1"
+        ]
+      },
+      {
+        "id": "worker",
+        "definition": "synthetic/transform@1",
+        "layer": "components",
+        "role": "transform",
+        "inputs": {
+          "message": {
+            "type": "Message",
+            "required": true
+          }
+        },
+        "outputs": {
+          "response": "Message"
+        },
+        "capability": "summarize",
+        "locality": "local",
+        "config": {
+          "model_ref": "resource:model@1"
+        },
+        "dependencies": [
+          "resource:model@1"
+        ]
+      }
+    ],
+    "required_capability": "summarize",
+    "required_locality": null,
+    "budget": 8,
+    "ambient_edges": [],
+    "additional_members": [],
+    "forced_cycle": false,
+    "oracle": {
+      "outcome": "design-closed",
+      "boundary": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "crossings": [],
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ]
+    },
+    "collection": "development"
+  },
+  {
+    "id": "E-clean",
+    "family": "pipeline",
+    "profile": "components-to-composite-dag@1",
+    "source": {
+      "id": "source",
+      "definition": "synthetic/source@1",
+      "layer": "components",
+      "role": "source",
+      "inputs": {
+        "text": {
+          "type": "Text",
+          "required": true
+        }
+      },
+      "outputs": {
+        "message": "Message"
+      }
+    },
+    "sink": {
+      "id": "sink",
+      "definition": "synthetic/sink@1",
+      "layer": "components",
+      "role": "sink",
+      "inputs": {
+        "message": {
+          "type": "Message",
+          "required": true
+        }
+      },
+      "outputs": {
+        "result": "Message"
+      }
+    },
+    "candidates": [
+      {
+        "id": "worker",
+        "definition": "synthetic/transform@1",
+        "layer": "components",
+        "role": "transform",
+        "inputs": {
+          "message": {
+            "type": "Message",
+            "required": true
+          }
+        },
+        "outputs": {
+          "response": "Message"
+        },
+        "capability": "summarize",
+        "locality": "local",
+        "config": {
+          "model_ref": "resource:model@1"
+        },
+        "dependencies": [
+          "resource:model@1"
+        ]
+      }
+    ],
+    "required_capability": "summarize",
+    "required_locality": null,
+    "budget": 8,
+    "ambient_edges": [],
+    "additional_members": [],
+    "forced_cycle": false,
+    "oracle": {
+      "outcome": "design-closed",
+      "boundary": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "crossings": [],
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ]
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "id": "E-wrong-first",
+    "family": "pipeline",
+    "profile": "components-to-composite-dag@1",
+    "source": {
+      "id": "source",
+      "definition": "synthetic/source@1",
+      "layer": "components",
+      "role": "source",
+      "inputs": {
+        "text": {
+          "type": "Text",
+          "required": true
+        }
+      },
+      "outputs": {
+        "message": "Message"
+      }
+    },
+    "sink": {
+      "id": "sink",
+      "definition": "synthetic/sink@1",
+      "layer": "components",
+      "role": "sink",
+      "inputs": {
+        "message": {
+          "type": "Message",
+          "required": true
+        }
+      },
+      "outputs": {
+        "result": "Message"
+      }
+    },
+    "candidates": [
+      {
+        "id": "bad",
+        "definition": "synthetic/transform@1",
+        "layer": "components",
+        "role": "transform",
+        "inputs": {
+          "message": {
+            "type": "Image",
+            "required": true
+          }
+        },
+        "outputs": {
+          "response": "Message"
+        },
+        "capability": "summarize",
+        "locality": "local",
+        "config": {
+          "model_ref": "resource:model@1"
+        },
+        "dependencies": [
+          "resource:model@1"
+        ]
+      },
+      {
+        "id": "worker",
+        "definition": "synthetic/transform@1",
+        "layer": "components",
+        "role": "transform",
+        "inputs": {
+          "message": {
+            "type": "Message",
+            "required": true
+          }
+        },
+        "outputs": {
+          "response": "Message"
+        },
+        "capability": "summarize",
+        "locality": "local",
+        "config": {
+          "model_ref": "resource:model@1"
+        },
+        "dependencies": [
+          "resource:model@1"
+        ]
+      }
+    ],
+    "required_capability": "summarize",
+    "required_locality": null,
+    "budget": 8,
+    "ambient_edges": [],
+    "additional_members": [],
+    "forced_cycle": false,
+    "oracle": {
+      "outcome": "design-closed",
+      "boundary": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "crossings": [],
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ]
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "id": "E-locality",
+    "family": "pipeline",
+    "profile": "components-to-composite-dag@1",
+    "source": {
+      "id": "source",
+      "definition": "synthetic/source@1",
+      "layer": "components",
+      "role": "source",
+      "inputs": {
+        "text": {
+          "type": "Text",
+          "required": true
+        }
+      },
+      "outputs": {
+        "message": "Message"
+      }
+    },
+    "sink": {
+      "id": "sink",
+      "definition": "synthetic/sink@1",
+      "layer": "components",
+      "role": "sink",
+      "inputs": {
+        "message": {
+          "type": "Message",
+          "required": true
+        }
+      },
+      "outputs": {
+        "result": "Message"
+      }
+    },
+    "candidates": [
+      {
+        "id": "remote",
+        "definition": "synthetic/transform@1",
+        "layer": "components",
+        "role": "transform",
+        "inputs": {
+          "message": {
+            "type": "Message",
+            "required": true
+          }
+        },
+        "outputs": {
+          "response": "Message"
+        },
+        "capability": "summarize",
+        "locality": "remote",
+        "config": {
+          "model_ref": "resource:model@1"
+        },
+        "dependencies": [
+          "resource:model@1"
+        ]
+      },
+      {
+        "id": "worker",
+        "definition": "synthetic/transform@1",
+        "layer": "components",
+        "role": "transform",
+        "inputs": {
+          "message": {
+            "type": "Message",
+            "required": true
+          }
+        },
+        "outputs": {
+          "response": "Message"
+        },
+        "capability": "summarize",
+        "locality": "local",
+        "config": {
+          "model_ref": "resource:model@1"
+        },
+        "dependencies": [
+          "resource:model@1"
+        ]
+      }
+    ],
+    "required_capability": "summarize",
+    "required_locality": "local",
+    "budget": 8,
+    "ambient_edges": [],
+    "additional_members": [],
+    "forced_cycle": false,
+    "oracle": {
+      "outcome": "design-closed",
+      "boundary": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "crossings": [],
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ]
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "id": "E-missing",
+    "family": "pipeline",
+    "profile": "components-to-composite-dag@1",
+    "source": {
+      "id": "source",
+      "definition": "synthetic/source@1",
+      "layer": "components",
+      "role": "source",
+      "inputs": {
+        "text": {
+          "type": "Text",
+          "required": true
+        }
+      },
+      "outputs": {
+        "message": "Message"
+      }
+    },
+    "sink": {
+      "id": "sink",
+      "definition": "synthetic/sink@1",
+      "layer": "components",
+      "role": "sink",
+      "inputs": {
+        "message": {
+          "type": "Message",
+          "required": true
+        }
+      },
+      "outputs": {
+        "result": "Message"
+      }
+    },
+    "candidates": [],
+    "required_capability": "summarize",
+    "required_locality": null,
+    "budget": 8,
+    "ambient_edges": [],
+    "additional_members": [],
+    "forced_cycle": false,
+    "oracle": {
+      "outcome": "blocked-within-horizon",
+      "gap": "missing-capability"
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "id": "E-ambiguous",
+    "family": "pipeline",
+    "profile": "components-to-composite-dag@1",
+    "source": {
+      "id": "source",
+      "definition": "synthetic/source@1",
+      "layer": "components",
+      "role": "source",
+      "inputs": {
+        "text": {
+          "type": "Text",
+          "required": true
+        }
+      },
+      "outputs": {
+        "message": "Message"
+      }
+    },
+    "sink": {
+      "id": "sink",
+      "definition": "synthetic/sink@1",
+      "layer": "components",
+      "role": "sink",
+      "inputs": {
+        "message": {
+          "type": "Message",
+          "required": true
+        }
+      },
+      "outputs": {
+        "result": "Message"
+      }
+    },
+    "candidates": [
+      {
+        "id": "worker",
+        "definition": "synthetic/transform@1",
+        "layer": "components",
+        "role": "transform",
+        "inputs": {
+          "message": {
+            "type": "Message",
+            "required": true
+          }
+        },
+        "outputs": {
+          "response": "Message"
+        },
+        "capability": "summarize",
+        "locality": "local",
+        "config": {
+          "model_ref": "resource:model@1"
+        },
+        "dependencies": [
+          "resource:model@1"
+        ]
+      }
+    ],
+    "required_capability": null,
+    "required_locality": null,
+    "budget": 8,
+    "ambient_edges": [],
+    "additional_members": [],
+    "forced_cycle": false,
+    "oracle": {
+      "outcome": "awaiting-clarification",
+      "gap": "ambiguous-capability"
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "id": "E-budget",
+    "family": "pipeline",
+    "profile": "components-to-composite-dag@1",
+    "source": {
+      "id": "source",
+      "definition": "synthetic/source@1",
+      "layer": "components",
+      "role": "source",
+      "inputs": {
+        "text": {
+          "type": "Text",
+          "required": true
+        }
+      },
+      "outputs": {
+        "message": "Message"
+      }
+    },
+    "sink": {
+      "id": "sink",
+      "definition": "synthetic/sink@1",
+      "layer": "components",
+      "role": "sink",
+      "inputs": {
+        "message": {
+          "type": "Message",
+          "required": true
+        }
+      },
+      "outputs": {
+        "result": "Message"
+      }
+    },
+    "candidates": [
+      {
+        "id": "bad",
+        "definition": "synthetic/transform@1",
+        "layer": "components",
+        "role": "transform",
+        "inputs": {
+          "message": {
+            "type": "Message",
+            "required": true
+          }
+        },
+        "outputs": {
+          "response": "Number"
+        },
+        "capability": "summarize",
+        "locality": "local",
+        "config": {
+          "model_ref": "resource:model@1"
+        },
+        "dependencies": [
+          "resource:model@1"
+        ]
+      },
+      {
+        "id": "worker",
+        "definition": "synthetic/transform@1",
+        "layer": "components",
+        "role": "transform",
+        "inputs": {
+          "message": {
+            "type": "Message",
+            "required": true
+          }
+        },
+        "outputs": {
+          "response": "Message"
+        },
+        "capability": "summarize",
+        "locality": "local",
+        "config": {
+          "model_ref": "resource:model@1"
+        },
+        "dependencies": [
+          "resource:model@1"
+        ]
+      }
+    ],
+    "required_capability": "summarize",
+    "required_locality": null,
+    "budget": 1,
+    "ambient_edges": [],
+    "additional_members": [],
+    "forced_cycle": false,
+    "oracle": {
+      "outcome": "partial",
+      "gap": "budget-exhausted"
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "id": "E-hidden-input",
+    "family": "unbound-input",
+    "profile": "components-to-composite-dag@1",
+    "source": {
+      "id": "source",
+      "definition": "synthetic/source@1",
+      "layer": "components",
+      "role": "source",
+      "inputs": {
+        "text": {
+          "type": "Text",
+          "required": true
+        }
+      },
+      "outputs": {
+        "message": "Message"
+      }
+    },
+    "sink": {
+      "id": "sink",
+      "definition": "synthetic/sink@1",
+      "layer": "components",
+      "role": "sink",
+      "inputs": {
+        "message": {
+          "type": "Message",
+          "required": true
+        }
+      },
+      "outputs": {
+        "result": "Message"
+      }
+    },
+    "candidates": [
+      {
+        "id": "worker",
+        "definition": "synthetic/transform@1",
+        "layer": "components",
+        "role": "transform",
+        "inputs": {
+          "message": {
+            "type": "Message",
+            "required": true
+          },
+          "provenance": {
+            "type": "Text",
+            "required": true
+          }
+        },
+        "outputs": {
+          "response": "Message"
+        },
+        "capability": "summarize",
+        "locality": "local",
+        "config": {
+          "model_ref": "resource:model@1"
+        },
+        "dependencies": [
+          "resource:model@1"
+        ]
+      }
+    ],
+    "required_capability": "summarize",
+    "required_locality": null,
+    "budget": 8,
+    "ambient_edges": [],
+    "additional_members": [],
+    "forced_cycle": false,
+    "oracle": {
+      "outcome": "design-closed",
+      "boundary": [
+        [
+          "source",
+          "text"
+        ],
+        [
+          "worker",
+          "provenance"
+        ]
+      ],
+      "crossings": [],
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ]
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "id": "E-crossing",
+    "family": "pipeline",
+    "profile": "components-to-composite-dag@1",
+    "source": {
+      "id": "source",
+      "definition": "synthetic/source@1",
+      "layer": "components",
+      "role": "source",
+      "inputs": {
+        "text": {
+          "type": "Text",
+          "required": true
+        }
+      },
+      "outputs": {
+        "message": "Message"
+      }
+    },
+    "sink": {
+      "id": "sink",
+      "definition": "synthetic/sink@1",
+      "layer": "components",
+      "role": "sink",
+      "inputs": {
+        "message": {
+          "type": "Message",
+          "required": true
+        }
+      },
+      "outputs": {
+        "result": "Message"
+      }
+    },
+    "candidates": [
+      {
+        "id": "worker",
+        "definition": "synthetic/transform@1",
+        "layer": "components",
+        "role": "transform",
+        "inputs": {
+          "message": {
+            "type": "Message",
+            "required": true
+          }
+        },
+        "outputs": {
+          "response": "Message"
+        },
+        "capability": "summarize",
+        "locality": "local",
+        "config": {
+          "model_ref": "resource:model@1"
+        },
+        "dependencies": [
+          "resource:model@1"
+        ]
+      }
+    ],
+    "required_capability": "summarize",
+    "required_locality": null,
+    "budget": 8,
+    "ambient_edges": [
+      [
+        "worker",
+        "response",
+        "external",
+        "input"
+      ]
+    ],
+    "additional_members": [],
+    "forced_cycle": false,
+    "oracle": {
+      "outcome": "design-closed",
+      "boundary": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "crossings": [
+        [
+          "worker",
+          "response",
+          "external",
+          "input"
+        ]
+      ],
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ]
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "id": "E-distinct-identity",
+    "family": "identity",
+    "profile": "components-to-composite-dag@1",
+    "source": {
+      "id": "source",
+      "definition": "synthetic/source@1",
+      "layer": "components",
+      "role": "source",
+      "inputs": {
+        "text": {
+          "type": "Text",
+          "required": true
+        }
+      },
+      "outputs": {
+        "message": "Message"
+      }
+    },
+    "sink": {
+      "id": "sink",
+      "definition": "synthetic/sink@1",
+      "layer": "components",
+      "role": "sink",
+      "inputs": {
+        "message": {
+          "type": "Message",
+          "required": true
+        }
+      },
+      "outputs": {
+        "result": "Message"
+      }
+    },
+    "candidates": [
+      {
+        "id": "worker",
+        "definition": "synthetic/transform@1",
+        "layer": "components",
+        "role": "transform",
+        "inputs": {
+          "message": {
+            "type": "Message",
+            "required": true
+          }
+        },
+        "outputs": {
+          "response": "Message"
+        },
+        "capability": "summarize",
+        "locality": "local",
+        "config": {
+          "model_ref": "resource:model@1"
+        },
+        "dependencies": [
+          "resource:model@1"
+        ]
+      }
+    ],
+    "required_capability": "summarize",
+    "required_locality": null,
+    "budget": 8,
+    "ambient_edges": [],
+    "additional_members": [
+      {
+        "id": "worker-second",
+        "definition": "synthetic/transform@1",
+        "layer": "components",
+        "role": "transform",
+        "inputs": {},
+        "outputs": {},
+        "config": {},
+        "dependencies": []
+      }
+    ],
+    "forced_cycle": false,
+    "oracle": {
+      "outcome": "design-closed",
+      "boundary": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "crossings": [],
+      "members": [
+        "source",
+        "worker",
+        "sink",
+        "worker-second"
+      ]
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "id": "E-unrelated-node",
+    "family": "pipeline",
+    "profile": "components-to-composite-dag@1",
+    "source": {
+      "id": "source",
+      "definition": "synthetic/source@1",
+      "layer": "components",
+      "role": "source",
+      "inputs": {
+        "text": {
+          "type": "Text",
+          "required": true
+        }
+      },
+      "outputs": {
+        "message": "Message"
+      }
+    },
+    "sink": {
+      "id": "sink",
+      "definition": "synthetic/sink@1",
+      "layer": "components",
+      "role": "sink",
+      "inputs": {
+        "message": {
+          "type": "Message",
+          "required": true
+        }
+      },
+      "outputs": {
+        "result": "Message"
+      }
+    },
+    "candidates": [
+      {
+        "id": "worker",
+        "definition": "synthetic/transform@1",
+        "layer": "components",
+        "role": "transform",
+        "inputs": {
+          "message": {
+            "type": "Message",
+            "required": true
+          }
+        },
+        "outputs": {
+          "response": "Message"
+        },
+        "capability": "summarize",
+        "locality": "local",
+        "config": {
+          "model_ref": "resource:model@1"
+        },
+        "dependencies": [
+          "resource:model@1"
+        ]
+      }
+    ],
+    "required_capability": "summarize",
+    "required_locality": null,
+    "budget": 8,
+    "ambient_edges": [
+      [
+        "outside-a",
+        "out",
+        "outside-b",
+        "in"
+      ]
+    ],
+    "additional_members": [],
+    "forced_cycle": false,
+    "oracle": {
+      "outcome": "design-closed",
+      "boundary": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "crossings": [],
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ]
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "id": "E-profile",
+    "family": "pipeline",
+    "profile": "composite-to-enterprise@unknown",
+    "source": {
+      "id": "source",
+      "definition": "synthetic/source@1",
+      "layer": "components",
+      "role": "source",
+      "inputs": {
+        "text": {
+          "type": "Text",
+          "required": true
+        }
+      },
+      "outputs": {
+        "message": "Message"
+      }
+    },
+    "sink": {
+      "id": "sink",
+      "definition": "synthetic/sink@1",
+      "layer": "components",
+      "role": "sink",
+      "inputs": {
+        "message": {
+          "type": "Message",
+          "required": true
+        }
+      },
+      "outputs": {
+        "result": "Message"
+      }
+    },
+    "candidates": [
+      {
+        "id": "worker",
+        "definition": "synthetic/transform@1",
+        "layer": "components",
+        "role": "transform",
+        "inputs": {
+          "message": {
+            "type": "Message",
+            "required": true
+          }
+        },
+        "outputs": {
+          "response": "Message"
+        },
+        "capability": "summarize",
+        "locality": "local",
+        "config": {
+          "model_ref": "resource:model@1"
+        },
+        "dependencies": [
+          "resource:model@1"
+        ]
+      }
+    ],
+    "required_capability": "summarize",
+    "required_locality": null,
+    "budget": 8,
+    "ambient_edges": [],
+    "additional_members": [],
+    "forced_cycle": false,
+    "oracle": {
+      "outcome": "blocked-within-horizon",
+      "gap": "unsupported-profile"
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "id": "E-cycle",
+    "family": "pipeline",
+    "profile": "components-to-composite-dag@1",
+    "source": {
+      "id": "source",
+      "definition": "synthetic/source@1",
+      "layer": "components",
+      "role": "source",
+      "inputs": {
+        "text": {
+          "type": "Text",
+          "required": true
+        }
+      },
+      "outputs": {
+        "message": "Message"
+      }
+    },
+    "sink": {
+      "id": "sink",
+      "definition": "synthetic/sink@1",
+      "layer": "components",
+      "role": "sink",
+      "inputs": {
+        "message": {
+          "type": "Message",
+          "required": true
+        }
+      },
+      "outputs": {
+        "result": "Message"
+      }
+    },
+    "candidates": [
+      {
+        "id": "worker",
+        "definition": "synthetic/transform@1",
+        "layer": "components",
+        "role": "transform",
+        "inputs": {
+          "message": {
+            "type": "Message",
+            "required": true
+          }
+        },
+        "outputs": {
+          "response": "Message"
+        },
+        "capability": "summarize",
+        "locality": "local",
+        "config": {
+          "model_ref": "resource:model@1"
+        },
+        "dependencies": [
+          "resource:model@1"
+        ]
+      }
+    ],
+    "required_capability": "summarize",
+    "required_locality": null,
+    "budget": 8,
+    "ambient_edges": [],
+    "additional_members": [],
+    "forced_cycle": true,
+    "oracle": {
+      "outcome": "blocked-within-horizon",
+      "gap": "unsupported-cycle"
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "id": "E-config-resource",
+    "family": "pipeline",
+    "profile": "components-to-composite-dag@1",
+    "source": {
+      "id": "source",
+      "definition": "synthetic/source@1",
+      "layer": "components",
+      "role": "source",
+      "inputs": {
+        "text": {
+          "type": "Text",
+          "required": true
+        }
+      },
+      "outputs": {
+        "message": "Message"
+      }
+    },
+    "sink": {
+      "id": "sink",
+      "definition": "synthetic/sink@1",
+      "layer": "components",
+      "role": "sink",
+      "inputs": {
+        "message": {
+          "type": "Message",
+          "required": true
+        }
+      },
+      "outputs": {
+        "result": "Message"
+      }
+    },
+    "candidates": [
+      {
+        "id": "worker",
+        "definition": "synthetic/transform@1",
+        "layer": "components",
+        "role": "transform",
+        "inputs": {
+          "message": {
+            "type": "Message",
+            "required": true
+          }
+        },
+        "outputs": {
+          "response": "Message"
+        },
+        "capability": "summarize",
+        "locality": "local",
+        "config": {
+          "model_ref": "resource:model@1",
+          "store_ref": "resource:storage@1"
+        },
+        "dependencies": [
+          "resource:model@1",
+          "resource:storage@1"
+        ]
+      }
+    ],
+    "required_capability": "summarize",
+    "required_locality": null,
+    "budget": 8,
+    "ambient_edges": [],
+    "additional_members": [],
+    "forced_cycle": false,
+    "oracle": {
+      "outcome": "design-closed",
+      "boundary": [
+        [
+          "source",
+          "text"
+        ]
+      ],
+      "crossings": [],
+      "members": [
+        "source",
+        "worker",
+        "sink"
+      ]
+    },
+    "collection": "designated-evaluation-exposed"
+  },
+  {
+    "id": "E-no-compatible",
+    "family": "pipeline",
+    "profile": "components-to-composite-dag@1",
+    "source": {
+      "id": "source",
+      "definition": "synthetic/source@1",
+      "layer": "components",
+      "role": "source",
+      "inputs": {
+        "text": {
+          "type": "Text",
+          "required": true
+        }
+      },
+      "outputs": {
+        "message": "Message"
+      }
+    },
+    "sink": {
+      "id": "sink",
+      "definition": "synthetic/sink@1",
+      "layer": "components",
+      "role": "sink",
+      "inputs": {
+        "message": {
+          "type": "Message",
+          "required": true
+        }
+      },
+      "outputs": {
+        "result": "Message"
+      }
+    },
+    "candidates": [
+      {
+        "id": "worker",
+        "definition": "synthetic/transform@1",
+        "layer": "components",
+        "role": "transform",
+        "inputs": {
+          "message": {
+            "type": "Message",
+            "required": true
+          }
+        },
+        "outputs": {
+          "response": "Number"
+        },
+        "capability": "summarize",
+        "locality": "local",
+        "config": {
+          "model_ref": "resource:model@1"
+        },
+        "dependencies": [
+          "resource:model@1"
+        ]
+      }
+    ],
+    "required_capability": "summarize",
+    "required_locality": null,
+    "budget": 8,
+    "ambient_edges": [],
+    "additional_members": [],
+    "forced_cycle": false,
+    "oracle": {
+      "outcome": "blocked-within-horizon",
+      "gap": "no-compatible-candidate"
+    },
+    "collection": "designated-evaluation-exposed"
+  }
+]

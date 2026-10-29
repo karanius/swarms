@@ -1,0 +1,56 @@
+[
+  {
+    "collection": "development",
+    "method": "ungated-first",
+    "cases": 3,
+    "passes": 2,
+    "accepted_artifacts": 3,
+    "invalid_accepted": 1,
+    "candidate_attempts": 3
+  },
+  {
+    "collection": "development",
+    "method": "boundary-v0",
+    "cases": 3,
+    "passes": 0,
+    "accepted_artifacts": 3,
+    "invalid_accepted": 3,
+    "candidate_attempts": 4
+  },
+  {
+    "collection": "development",
+    "method": "boundary-v1",
+    "cases": 3,
+    "passes": 3,
+    "accepted_artifacts": 3,
+    "invalid_accepted": 0,
+    "candidate_attempts": 4
+  },
+  {
+    "collection": "designated-evaluation-exposed",
+    "method": "ungated-first",
+    "cases": 14,
+    "passes": 10,
+    "accepted_artifacts": 10,
+    "invalid_accepted": 4,
+    "candidate_attempts": 10
+  },
+  {
+    "collection": "designated-evaluation-exposed",
+    "method": "boundary-v0",
+    "cases": 14,
+    "passes": 6,
+    "accepted_artifacts": 8,
+    "invalid_accepted": 8,
+    "candidate_attempts": 12
+  },
+  {
+    "collection": "designated-evaluation-exposed",
+    "method": "boundary-v1",
+    "cases": 14,
+    "passes": 14,
+    "accepted_artifacts": 8,
+    "invalid_accepted": 0,
+    "candidate_attempts": 12
+  }
+]
