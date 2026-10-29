@@ -1,0 +1,34 @@
+{
+  "source_sha256": "810c274fae01e9d42efa25a03932875ad4b547caf9f51394f09ea2270ce50462",
+  "papers": [
+    {
+      "paper_id": "8b72d1b8-2f32-4968-8b7f-c33b9e6c3eca",
+      "title": "Iterative Development of Boundary Resolution — Paper 3",
+      "notebook": "Paper 3 - Iterative Development of Boundary Resolution.ipynb",
+      "source_blocks": 34,
+      "notebook_cells": 18,
+      "embedded_sources": [
+        "8b72d1b8-2f32-4968-8b7f-c33b9e6c3eca--241bb561-358c-4c1a-9990-0a8e85688648.ipynb"
+      ],
+      "sha256": "93da1193f846b28eba6ce84079ca94d2fcaf80f46194548fa7a3f4207b077f4b"
+    },
+    {
+      "paper_id": "8d975b9f-7f46-42f5-8366-093a1894bbce",
+      "title": "Boundary Resolution — Choosing the Next Composition Step",
+      "notebook": "Paper 2 - Boundary Resolution.ipynb",
+      "source_blocks": 84,
+      "notebook_cells": 24,
+      "embedded_sources": [],
+      "sha256": "53f43850c886a880577086348b393cd2d407a4d476f3098252f38c3e67c8ec3b"
+    },
+    {
+      "paper_id": "8c8e315d-55c9-4262-8a6d-b884ad2e06cb",
+      "title": "From Components to Instances: Iterative Composition",
+      "notebook": "Paper 1 - From Components to Instances.ipynb",
+      "source_blocks": 46,
+      "notebook_cells": 22,
+      "embedded_sources": [],
+      "sha256": "18ce6c16e40216db9aebabff30cc96f3a8217a990645769af637e4b761cfa52d"
+    }
+  ]
+}
