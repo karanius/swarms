@@ -10,10 +10,14 @@
       },
       "content": [
         {
-          "id": "ca949a88-a465-4cbd-8d0c-d8ad26ab48fb",
+          "id": "f2b3ea05-a13e-4875-a6dc-4871aea7ea9c",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -25,9 +29,13 @@
           "children": []
         },
         {
-          "id": "5fd78f31-626e-40cf-be71-31c5a3c274db",
+          "id": "33dd57ff-4bec-41a9-a623-17792a8999f3",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -38,10 +46,14 @@
           "children": []
         },
         {
-          "id": "39d39099-fa1b-494e-9449-9ee45620ccdf",
+          "id": "666970da-dc8e-4ecd-9386-357965e25f58",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -53,9 +65,13 @@
           "children": []
         },
         {
-          "id": "46b2904a-2194-43c6-8d1a-e7c3b9799dac",
+          "id": "24eb4fba-9d43-4ebd-ba0b-f7dca75da97d",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -66,7 +82,7 @@
           "children": []
         },
         {
-          "id": "1f0e80af-56b8-4f7c-a2d8-9d5a86a772e0",
+          "id": "8ca1521e-5723-488e-9e07-4ca55e0afdde",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -360,10 +376,14 @@
           "children": []
         },
         {
-          "id": "d29f32db-903e-4a72-ad91-e3d4128c68da",
+          "id": "669ec460-d07a-4d8f-9382-7ff03041d19e",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -375,9 +395,13 @@
           "children": []
         },
         {
-          "id": "5291408b-1b99-44bb-b0d8-9b0ce7ed30ae",
+          "id": "b2a1da3a-5073-4484-84fc-1423e0d8ed87",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -388,7 +412,7 @@
           "children": []
         },
         {
-          "id": "0ee9d15d-d0e8-4826-adb5-c90d306dfb0b",
+          "id": "db32977e-52b3-41ef-9082-0d9fb39b00c1",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -792,10 +816,14 @@
           "children": []
         },
         {
-          "id": "8fb37c43-a71f-44b7-b6fd-3feb9671325e",
+          "id": "bbdfd278-799c-46a1-babf-3e297680b26e",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -807,9 +835,13 @@
           "children": []
         },
         {
-          "id": "2f4d05c4-8b9f-4e8e-bd10-7714550e3391",
+          "id": "ff74c97b-01d1-470f-8fbe-b166da16657d",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -820,7 +852,7 @@
           "children": []
         },
         {
-          "id": "09cfdd06-ff6f-404d-8128-987063fe624f",
+          "id": "e7b0328a-15eb-44a6-b7db-9eee4a1f2ac8",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -1499,10 +1531,14 @@
           "children": []
         },
         {
-          "id": "5a547211-0f4d-49b7-b226-4bcafecc33fb",
+          "id": "d16afc53-252b-4b17-bbad-3fa673a4fc0d",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -1514,9 +1550,13 @@
           "children": []
         },
         {
-          "id": "1328b6da-4bef-42dd-abd8-ea27d2e1e8d5",
+          "id": "9d34b660-d1eb-4a05-ba4c-754f694ffb02",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -1527,7 +1567,7 @@
           "children": []
         },
         {
-          "id": "05029a4b-ab4e-47ff-8f40-e785e1f4ac22",
+          "id": "1546b492-a863-4bf1-8ca6-25e7284cff5a",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -1876,9 +1916,13 @@
           "children": []
         },
         {
-          "id": "948d8dd6-6a23-4c0d-b2ad-58d7dfcf46d7",
+          "id": "7a6c76dd-4fba-4a92-83a0-ab9945fb7d13",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -1889,10 +1933,14 @@
           "children": []
         },
         {
-          "id": "1d51d0f3-0abd-4bfc-b671-daaf7c790850",
+          "id": "f2cfdd9d-37dd-445c-a6d3-46124dc4ecab",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -1904,9 +1952,13 @@
           "children": []
         },
         {
-          "id": "bdc1bd65-9cc5-4ea1-8c10-31fbce8890bb",
+          "id": "7d0f103e-60a8-486b-bc26-53df8e511afe",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -1917,7 +1969,7 @@
           "children": []
         },
         {
-          "id": "88948203-2ec6-407e-bde8-2d46bdaa52a8",
+          "id": "8dde3e2c-26f4-4e16-9d04-8ecbc3586e58",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -2376,23 +2428,26 @@
           "children": []
         },
         {
-          "id": "91414368-1f67-4959-94a5-4a709e219dae",
+          "id": "a72d1d17-a155-4720-b770-d89ff1366773",
           "type": "image",
           "props": {
-            "url": "/research-figures/paper-2/boundary-map.svg",
+            "textAlignment": "left",
+            "backgroundColor": "default",
+            "name": "Figure 1. Conceptual boundary map. Arrows show information used to write a proposal, not an executed flow.",
+            "url": "http://127.0.0.1:5188/research-figures/paper-2/boundary-map.svg",
             "caption": "Figure 1. Conceptual boundary map. Arrows show information used to write a proposal, not an executed flow.",
-            "name": "Figure 1 · The unresolved boundary",
-            "showPreview": true,
-            "previewWidth": 1040,
-            "textAlignment": "center",
-            "backgroundColor": "default"
+            "showPreview": true
           },
           "children": []
         },
         {
-          "id": "309d56a1-dd3c-4d36-8931-85948ab788c1",
+          "id": "57988084-09c8-437c-b721-d45e5c0adea8",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -2403,10 +2458,14 @@
           "children": []
         },
         {
-          "id": "341fa2a8-f162-4c04-bc7d-83844ba6cfc8",
+          "id": "43b593da-3788-4ec7-b874-26e63656e86e",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -2418,9 +2477,13 @@
           "children": []
         },
         {
-          "id": "0dd1b977-27b0-4c70-939f-c1b60c45a40a",
+          "id": "12a6bb80-64b1-4275-a9f8-9d17813efe62",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -2431,9 +2494,13 @@
           "children": []
         },
         {
-          "id": "d4abcf4c-543c-4d66-a26c-549199ca4155",
+          "id": "2aa12f4d-f759-4fc8-9687-64e1cdbf3cc8",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -2444,7 +2511,7 @@
           "children": []
         },
         {
-          "id": "2d5e9274-445b-4545-a764-09c2af36b26a",
+          "id": "c2bc9f7d-d815-4f36-bedd-c59db09307e6",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -2793,10 +2860,14 @@
           "children": []
         },
         {
-          "id": "a0dcd211-408d-4a06-ad62-8cc046a0aa39",
+          "id": "ffdded10-fc77-4903-8a9f-9a64e6f3da40",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -2808,9 +2879,13 @@
           "children": []
         },
         {
-          "id": "a35d0d00-bceb-4a5c-8c45-6567f3a71254",
+          "id": "7ee1b0cc-5444-4a0a-9274-a58ef694cc7c",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -2821,7 +2896,7 @@
           "children": []
         },
         {
-          "id": "b322caab-84a9-4f19-8b9f-e971155608c7",
+          "id": "92753c3d-4c2c-4a7c-87a0-736004ff9f59",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -3280,10 +3355,14 @@
           "children": []
         },
         {
-          "id": "31893f13-cfdf-4c5c-b164-985739cc773f",
+          "id": "32800b2f-5aeb-471f-a96a-ed56757efe69",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -3295,7 +3374,7 @@
           "children": []
         },
         {
-          "id": "0200d09b-31ce-48fc-9436-7018e68ad08d",
+          "id": "03cee5a7-aeb5-4524-ba1b-15b35d1b885d",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -3809,9 +3888,13 @@
           "children": []
         },
         {
-          "id": "e6f79b43-98d1-4dce-af53-e7423b7f6698",
+          "id": "81f16e2f-2d90-4044-b49b-de165c1eb3f1",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -3822,10 +3905,14 @@
           "children": []
         },
         {
-          "id": "d500c885-e87a-4b50-b52e-a6b78b6efe73",
+          "id": "ddce76e5-c11d-4f23-a445-17a93f11c9f1",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -3837,9 +3924,13 @@
           "children": []
         },
         {
-          "id": "bad0d357-daf5-403f-a91d-b6307fed79c2",
+          "id": "fbf62c76-5692-4a43-af27-1d9266b8e056",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -3850,7 +3941,7 @@
           "children": []
         },
         {
-          "id": "9ac66734-3c79-4b3c-b5b5-27e29949c1ca",
+          "id": "563b44d6-2ae7-4203-b748-9dcdc9495e01",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -4230,9 +4321,13 @@
           "children": []
         },
         {
-          "id": "6a441396-603a-4b52-94b8-fd205cd428fb",
+          "id": "17303b82-60ff-4207-8bd5-f953283d6557",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -4243,10 +4338,14 @@
           "children": []
         },
         {
-          "id": "2dc676f9-133b-4698-83f5-f335391f7794",
+          "id": "f261bf3c-5ebf-4399-827e-07efdbcd0a05",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -4258,9 +4357,13 @@
           "children": []
         },
         {
-          "id": "7d5e8838-f4f3-4115-9acf-9e8b89e89b07",
+          "id": "b9128d28-0121-44e4-bcfc-1dc688a63e0a",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -4271,7 +4374,7 @@
           "children": []
         },
         {
-          "id": "b01eb16b-f718-41e5-a11e-736539cc2f9e",
+          "id": "cc5e0a56-bcb8-4d0d-909a-f8d49fc7f9a9",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -4565,9 +4668,13 @@
           "children": []
         },
         {
-          "id": "b9f65d64-f84b-4331-972c-26b6e6804f54",
+          "id": "79464c5f-dbe6-4df4-b64e-3ee7442172be",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -4578,23 +4685,26 @@
           "children": []
         },
         {
-          "id": "07c14501-4a79-410b-8573-e7a7db7bcae8",
+          "id": "a88e983c-032f-4aec-9fca-fe71ff5c97cb",
           "type": "image",
           "props": {
-            "url": "/research-figures/paper-2/planes.svg",
+            "textAlignment": "left",
+            "backgroundColor": "default",
+            "name": "Figure 2. Vertical arrows denote representation by references. Packaging neither duplicates members nor adds evidence. Only required, defined profiles participate.",
+            "url": "http://127.0.0.1:5188/research-figures/paper-2/planes.svg",
             "caption": "Figure 2. Vertical arrows denote representation by references. Packaging neither duplicates members nor adds evidence. Only required, defined profiles participate.",
-            "name": "Figure 2 · One system, several representations",
-            "showPreview": true,
-            "previewWidth": 1040,
-            "textAlignment": "center",
-            "backgroundColor": "default"
+            "showPreview": true
           },
           "children": []
         },
         {
-          "id": "c29bb601-3dd8-4263-be03-014e99f3c37f",
+          "id": "b6dfa2c2-feef-439b-8faf-1223bce33f64",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -4605,10 +4715,14 @@
           "children": []
         },
         {
-          "id": "ef1ecd19-fc11-4dd3-b1e8-d25fee57e7fa",
+          "id": "438fde71-94d8-42b1-9780-0cc43efc5948",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -4620,9 +4734,13 @@
           "children": []
         },
         {
-          "id": "cce9d71c-5c1e-4005-a4a5-c8ff112cdfc8",
+          "id": "f3e97eaa-7a3b-466a-aeb5-01f1960aeadc",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -4633,7 +4751,7 @@
           "children": []
         },
         {
-          "id": "4c61c22a-4f32-47b2-b4e5-a2c5d2d86d55",
+          "id": "17a465cc-9736-4691-a9c8-05217ba85678",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -5037,9 +5155,13 @@
           "children": []
         },
         {
-          "id": "50dd8c20-677f-4353-91d1-7a78181c882a",
+          "id": "16afa1d1-00ee-422c-a320-63a91a440f83",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -5050,10 +5172,14 @@
           "children": []
         },
         {
-          "id": "e52c3ae1-4e58-4775-b454-5ed057b7c55d",
+          "id": "9c2ed16d-9da0-4dea-b05a-b0e168876896",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -5065,9 +5191,13 @@
           "children": []
         },
         {
-          "id": "f0fca573-5736-4907-a64f-b041c332fa72",
+          "id": "df0e47d6-ffda-4f27-8afc-750eb1289f81",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -5078,7 +5208,7 @@
           "children": []
         },
         {
-          "id": "8ff998bc-7cb2-44e5-bba5-6f844241720a",
+          "id": "091f7505-c2f3-47a8-9461-1203bb8213b3",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -5537,9 +5667,13 @@
           "children": []
         },
         {
-          "id": "4234a5f7-e4ba-4073-a009-cd1dc8a2eab3",
+          "id": "866eddaa-3467-49e5-ace3-b29694a63a96",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -5550,23 +5684,26 @@
           "children": []
         },
         {
-          "id": "9c0a7c52-069c-449d-b401-03eee7ddecd5",
+          "id": "e80d17e9-9b8e-493f-b90c-edc19660fc53",
           "type": "image",
           "props": {
-            "url": "/research-figures/paper-2/decision-cycle.svg",
+            "textAlignment": "left",
+            "backgroundColor": "default",
+            "name": "Figure 3. Design procedure only. The return from reassessment to selection is iteration across document revisions, not a cycle inserted into the component DAG.",
+            "url": "http://127.0.0.1:5188/research-figures/paper-2/decision-cycle.svg",
             "caption": "Figure 3. Design procedure only. The return from reassessment to selection is iteration across document revisions, not a cycle inserted into the component DAG.",
-            "name": "Figure 3 · Bounded decision cycle",
-            "showPreview": true,
-            "previewWidth": 1040,
-            "textAlignment": "center",
-            "backgroundColor": "default"
+            "showPreview": true
           },
           "children": []
         },
         {
-          "id": "d8c58c73-974d-47ae-8c41-55c9fadbd8c5",
+          "id": "763de830-bfa9-41ae-8bc6-f8fecd0a79f5",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -5577,10 +5714,14 @@
           "children": []
         },
         {
-          "id": "cad14324-b029-4fbf-b25a-3e435c3a72e4",
+          "id": "d8a98ffb-4667-40d1-95a4-f72e67bb4d39",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -5592,9 +5733,13 @@
           "children": []
         },
         {
-          "id": "2dfa23e0-6498-4691-ba44-7aae4d7435bb",
+          "id": "2199aa03-ec29-44f8-81ad-8c5a93081b7c",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -5605,7 +5750,7 @@
           "children": []
         },
         {
-          "id": "5ad6d6ce-c446-46aa-a9ac-3cd0b0e2984d",
+          "id": "6085d417-225e-496f-9d73-1382a20d2189",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -6009,9 +6154,13 @@
           "children": []
         },
         {
-          "id": "32e36ec5-b049-4772-b621-c79de8948666",
+          "id": "098c1180-601a-40da-a314-5cf7328fc93c",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -6022,10 +6171,14 @@
           "children": []
         },
         {
-          "id": "63f10b18-d3f2-4eb5-8fdb-c1d538483f61",
+          "id": "4ba820ea-f096-4ca0-a3ed-cc5d062572f1",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -6037,7 +6190,7 @@
           "children": []
         },
         {
-          "id": "8cc0ca2f-6eb6-4cd9-9196-0001e0ba5281",
+          "id": "e7743011-1a65-407e-9931-f315b364a8ed",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -6441,9 +6594,13 @@
           "children": []
         },
         {
-          "id": "1acb5099-a3ed-4317-8512-1d2e69d157a8",
+          "id": "b940712a-7be7-4a87-8d78-0ddcee88ee1c",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -6454,10 +6611,14 @@
           "children": []
         },
         {
-          "id": "f31cc733-002e-47c0-bbf5-1ebebee12bd2",
+          "id": "8d5277e2-1aa0-4a70-93d4-68c0daafa26b",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -6469,7 +6630,7 @@
           "children": []
         },
         {
-          "id": "1d4edf0a-aa50-4f2d-901d-4a8831d4772f",
+          "id": "3d7e03ba-d672-4c89-97b6-332060bc76c4",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -6983,9 +7144,13 @@
           "children": []
         },
         {
-          "id": "28e815ee-3e3e-456d-a1a5-425cfa1ed293",
+          "id": "8c59cec0-c6a9-4411-bbe5-f3a037d95755",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -6996,10 +7161,14 @@
           "children": []
         },
         {
-          "id": "a34af7a2-d7a5-4ff2-b8a5-a1fa5b491da6",
+          "id": "a04caeb6-fb24-4b47-bb64-54cd102dd728",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -7011,9 +7180,13 @@
           "children": []
         },
         {
-          "id": "e59a8dd9-0a97-43ce-9483-782b5deda78d",
+          "id": "959f629e-b1d4-4e66-a3f0-49b3d33eed36",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -7024,7 +7197,7 @@
           "children": []
         },
         {
-          "id": "86a37748-041b-427a-babf-19c76f74fad8",
+          "id": "c150b72b-8d4b-4367-997e-d9a7145d8eb5",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -7538,23 +7711,26 @@
           "children": []
         },
         {
-          "id": "1fbd7937-4983-4676-96d7-0cad3573396b",
+          "id": "1875ebe7-f158-45fd-aa31-33bcf8bcbe66",
           "type": "image",
           "props": {
-            "url": "/research-figures/paper-2/symbolic-assembly.svg",
+            "textAlignment": "left",
+            "backgroundColor": "default",
+            "name": "Figure 4. The proposed upper item represents the lower assembly. Diagram arrows are descriptive and carry no claim of a successful run.",
+            "url": "http://127.0.0.1:5188/research-figures/paper-2/symbolic-assembly.svg",
             "caption": "Figure 4. The proposed upper item represents the lower assembly. Diagram arrows are descriptive and carry no claim of a successful run.",
-            "name": "Figure 4 · Symbolic packaging, not execution",
-            "showPreview": true,
-            "previewWidth": 1040,
-            "textAlignment": "center",
-            "backgroundColor": "default"
+            "showPreview": true
           },
           "children": []
         },
         {
-          "id": "d3ee4349-edad-420d-b0e7-a81240d46ef2",
+          "id": "d8ac440a-14ab-4dcc-bf35-31cafcae702d",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -7565,10 +7741,14 @@
           "children": []
         },
         {
-          "id": "d0557985-30c5-4c5c-a536-d09bedce1229",
+          "id": "955de096-d583-4d19-a754-0f7ac6df2c2d",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -7580,9 +7760,13 @@
           "children": []
         },
         {
-          "id": "29630929-7c01-4089-8e89-40289de9c9e4",
+          "id": "66ad432d-b197-4074-9d64-93c4a60dc1bf",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -7593,7 +7777,7 @@
           "children": []
         },
         {
-          "id": "2a28f2a8-85a0-4388-a753-ad58369cfdec",
+          "id": "a4721556-a0c9-41ae-836f-d3e3ea052494",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -7942,10 +8126,14 @@
           "children": []
         },
         {
-          "id": "e2894775-7637-4461-94e0-0c99fe654f90",
+          "id": "b3732f60-71db-4102-b799-7800a321006a",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -7957,9 +8145,13 @@
           "children": []
         },
         {
-          "id": "ac88869c-8af8-4bc4-8d3e-fb4b129d05f0",
+          "id": "8c703619-1459-4e43-8050-d88b6d47ad8d",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -7970,7 +8162,7 @@
           "children": []
         },
         {
-          "id": "373e31de-0f71-465b-ab7e-c157d33394cb",
+          "id": "0674a81f-4611-45b5-be8d-960c44a9f304",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -8319,10 +8511,14 @@
           "children": []
         },
         {
-          "id": "677bcad0-5f39-4cdf-b35a-76ac03e25ea8",
+          "id": "f522d07b-9342-48ce-884d-f49a84edde94",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -8334,9 +8530,13 @@
           "children": []
         },
         {
-          "id": "f8d29d72-2ff1-4934-b6f4-7c57134df839",
+          "id": "64d37f06-7ee3-42f5-9d4d-f140f1e699c9",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -8347,7 +8547,7 @@
           "children": []
         },
         {
-          "id": "fc0f7d56-090e-4a3c-928d-c3e2cea6dd05",
+          "id": "638c67d2-a749-4514-a6b1-56f7ad197f5e",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -8806,10 +9006,14 @@
           "children": []
         },
         {
-          "id": "956a7561-b799-405b-ac4e-9d25b5055213",
+          "id": "8b89d0e6-8349-4329-a7ad-504ee2b3386c",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -8821,9 +9025,13 @@
           "children": []
         },
         {
-          "id": "6ba2d3e4-429d-4191-9e40-8590ec614377",
+          "id": "c481d342-7b5b-4afb-b0c2-817178b65755",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -8834,7 +9042,7 @@
           "children": []
         },
         {
-          "id": "13a2a80f-7f00-4d92-b795-fe928db7fd37",
+          "id": "c4ba4854-695e-44a5-b470-1b0a170a5d41",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -9183,9 +9391,13 @@
           "children": []
         },
         {
-          "id": "a9d1de0f-06e3-4c73-b583-55f821c01112",
+          "id": "2922f479-0d27-4363-926f-da0366282a6f",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -9196,10 +9408,14 @@
           "children": []
         },
         {
-          "id": "67bc7ca5-366b-41ed-85b4-45b96e52fdff",
+          "id": "5ddb4eb7-d4f9-4084-bdc1-d8600470fe7f",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -9211,9 +9427,13 @@
           "children": []
         },
         {
-          "id": "5d25e318-aaa2-444a-bc1e-9125ace5efb3",
+          "id": "74575e97-1ab8-42ec-a47a-466a311457f6",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -9224,7 +9444,7 @@
           "children": []
         },
         {
-          "id": "c24818f3-158f-42b6-a871-602efb40ec58",
+          "id": "54c19120-9a0b-4d08-afb3-f4546a5054a2",
           "type": "table",
           "props": {
             "textColor": "default"
@@ -9470,9 +9690,13 @@
           "children": []
         },
         {
-          "id": "78eda250-df84-4e8e-9e87-01c8b9e6a7ea",
+          "id": "aef7fae9-bff1-4a7a-9a46-6c7864a6f9e4",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -9483,10 +9707,14 @@
           "children": []
         },
         {
-          "id": "9a31e7ac-7cda-4ca4-bf71-48adb15cade7",
+          "id": "31659b6e-8579-4785-b1e6-6566e2241b55",
           "type": "heading",
           "props": {
-            "level": 2
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left",
+            "level": 2,
+            "isToggleable": false
           },
           "content": [
             {
@@ -9498,9 +9726,13 @@
           "children": []
         },
         {
-          "id": "1ddbfe0e-c0e9-4295-9f56-18aad2b27cae",
+          "id": "95c2bafb-176e-48e9-a3c3-d265b959a7d6",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -9511,48 +9743,112 @@
           "children": []
         },
         {
-          "id": "df8f4fb4-e68f-4af5-8c24-6e1d6492a3a7",
+          "id": "001d0c61-e7f4-43a4-9c7c-9280452a3725",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
-              "text": "[2] Langflow, Components overview: https://docs.langflow.org/concepts-components . Consulted for component inputs, outputs, parameters and typed ports, not for our proposed multilayer controller. The deployed local version may differ from current documentation; the symbolic summarizer interfaces are those recorded in Paper 1.",
+              "text": "[2] Langflow, Components overview: ",
+              "styles": {}
+            },
+            {
+              "type": "link",
+              "href": "https://docs.langflow.org/concepts-components",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "https://docs.langflow.org/concepts-components",
+                  "styles": {}
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " . Consulted for component inputs, outputs, parameters and typed ports, not for our proposed multilayer controller. The deployed local version may differ from current documentation; the symbolic summarizer interfaces are those recorded in Paper 1.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "670bcae0-ffe4-4113-8df2-faa7e7e30468",
+          "id": "70aa2ec4-3036-4d7c-899c-d21186307ba5",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
-              "text": "[3] JSON Schema Draft 2020-12, JSON Schema Validation: https://json-schema.org/draft/2020-12/json-schema-validation . Structural validation vocabulary; not a proof of instance behavior.",
+              "text": "[3] JSON Schema Draft 2020-12, JSON Schema Validation: ",
+              "styles": {}
+            },
+            {
+              "type": "link",
+              "href": "https://json-schema.org/draft/2020-12/json-schema-validation",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "https://json-schema.org/draft/2020-12/json-schema-validation",
+                  "styles": {}
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " . Structural validation vocabulary; not a proof of instance behavior.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "6d523747-ea3f-489d-9694-37abae50dc1e",
+          "id": "43582c29-8282-46e1-9217-19bb39616a54",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
-              "text": "[4] Project domain model: knowledge/instance-machine/domain-model.md. User-confirmed vocabulary for layers, instances, requirements and boundary resolution; not external validation.",
+              "text": "[4] Project domain model: knowledge/instance-machine/",
+              "styles": {}
+            },
+            {
+              "type": "link",
+              "href": "https://domain-model.md",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "domain-model.md",
+                  "styles": {}
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ". User-confirmed vocabulary for layers, instances, requirements and boundary resolution; not external validation.",
               "styles": {}
             }
           ],
           "children": []
         },
         {
-          "id": "78468b98-912a-4414-95e5-728a1ab742db",
+          "id": "dac20b1d-e579-4501-8115-63b31dc2f15a",
           "type": "paragraph",
-          "props": {},
+          "props": {
+            "backgroundColor": "default",
+            "textColor": "default",
+            "textAlignment": "left"
+          },
           "content": [
             {
               "type": "text",
@@ -9564,7 +9860,7 @@
         }
       ],
       "createdAt": "2026-10-28T21:25:31.164Z",
-      "updatedAt": "2026-10-29T14:46:56.074578+00:00"
+      "updatedAt": "2026-10-29T14:47:30.191Z"
     },
     {
       "id": "8c8e315d-55c9-4262-8a6d-b884ad2e06cb",
