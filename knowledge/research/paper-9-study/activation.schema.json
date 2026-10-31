@@ -1,0 +1,187 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "design_mode": {
+      "const": false
+    },
+    "required_before_activation": {
+      "type": "object",
+      "properties": {
+        "audience_job": {
+          "type": "string",
+          "minLength": 1
+        },
+        "language": {
+          "type": "string",
+          "minLength": 1
+        },
+        "geography": {
+          "type": "string",
+          "minLength": 1
+        },
+        "time_window": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_connectors": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "allowed_sources": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "freshness_window": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "time_cap_seconds": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "cash_cap_amount": {
+          "type": "number",
+          "minimum": 0
+        },
+        "currency": {
+          "type": "string",
+          "minLength": 1
+        },
+        "max_attempts_per_node": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_concurrent_retrievals": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "retention_policy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "storage_binding": {
+          "type": "string",
+          "minLength": 1
+        },
+        "review_acceptance_owner": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "audience_job",
+        "language",
+        "geography",
+        "time_window",
+        "source_connectors",
+        "allowed_sources",
+        "freshness_window",
+        "time_cap_seconds",
+        "cash_cap_amount",
+        "currency",
+        "max_attempts_per_node",
+        "max_concurrent_retrievals",
+        "retention_policy",
+        "storage_binding",
+        "review_acceptance_owner"
+      ],
+      "additionalProperties": false
+    },
+    "role_bindings": {
+      "type": "object",
+      "properties": {
+        "intelligence_owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_reviewer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "operations_owner": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "intelligence_owner",
+        "evidence_reviewer",
+        "operations_owner"
+      ],
+      "additionalProperties": false
+    },
+    "runtime_bindings": {
+      "type": "object",
+      "properties": {
+        "model_revision": {
+          "type": "string",
+          "minLength": 1
+        },
+        "runtime": {
+          "type": "string",
+          "minLength": 1
+        },
+        "secret_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "model_revision",
+        "runtime",
+        "secret_refs"
+      ],
+      "additionalProperties": false
+    },
+    "side_effects": {
+      "type": "object",
+      "properties": {
+        "publication": {
+          "const": false
+        },
+        "spending": {
+          "const": false
+        },
+        "account_changes": {
+          "const": false
+        }
+      },
+      "required": [
+        "publication",
+        "spending",
+        "account_changes"
+      ],
+      "additionalProperties": false
+    },
+    "local_generation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "unknown_gate": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "design_mode",
+    "required_before_activation",
+    "role_bindings",
+    "runtime_bindings",
+    "side_effects",
+    "local_generation",
+    "unknown_gate"
+  ],
+  "additionalProperties": false
+}

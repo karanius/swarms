@@ -1,0 +1,179 @@
+{
+  "project_id": "da2312a0-20b9-4633-bd90-67c0803ac43c",
+  "native_recordings": [
+    {
+      "style": "neutral",
+      "id": "3dee3b6c-24d2-469d-bfef-665bb8b5cdb3",
+      "mode": "performance",
+      "exact_words": true,
+      "sha256": "b53fac3ccbf37cf513f6936975fbba396f62e9d9aa121433dc7f4f80fe33c79d"
+    },
+    {
+      "style": "neutral",
+      "id": "3abf2cb4-426f-45ad-9381-99638c32f716",
+      "mode": "profile_reuse",
+      "exact_words": true,
+      "sha256": "9e60d8f1d3e3672b2a4ea14e557f78a8bc4ccb1d05e93c34f9eaf6a71a9e7316"
+    },
+    {
+      "style": "neutral",
+      "id": "e45acc8b-c26c-4dee-a9ca-f9166f34da72",
+      "mode": "profile_reuse",
+      "exact_words": true,
+      "sha256": "844e5e022de92100ff7984ade26972e4bda248214cb3c64ddcdef4d117a886c2"
+    },
+    {
+      "style": "reassurance",
+      "id": "b6724e41-0d6b-4e09-bba7-4769d85b58f2",
+      "mode": "performance",
+      "exact_words": true,
+      "sha256": "f1b5695b45a3724652a4d32391d6ca04e42513add4015332940ab6b13ab7f503"
+    },
+    {
+      "style": "reassurance",
+      "id": "b2ca86db-7708-4b32-bab6-46fc9540d16e",
+      "mode": "profile_reuse",
+      "exact_words": true,
+      "sha256": "4c888c36805bce75e4886d50764d68b525ea377cb94a0670699dafd5ed38969f"
+    },
+    {
+      "style": "reassurance",
+      "id": "aabb43e9-2e36-4c7e-99ce-8b347f5c7d54",
+      "mode": "profile_reuse",
+      "exact_words": true,
+      "sha256": "bc299872b94ad6dad519bee410ca27ffae929c729f98d6f09c73e960c6b3d8ac"
+    },
+    {
+      "style": "anger",
+      "id": "d1426fd9-f0b8-4bc4-a340-bfd5be55e2e2",
+      "mode": "performance",
+      "exact_words": true,
+      "sha256": "c4498ad348ca29fd6c4ec64810642b6fc5521dda564e76ca62502c32d1d437f0"
+    },
+    {
+      "style": "anger",
+      "id": "dd401243-bf89-4be1-b531-9b00de07626c",
+      "mode": "profile_reuse",
+      "exact_words": true,
+      "sha256": "5ea1aca6e0550a383d07fdd369b44b16aba3d5da38a5d1af8b764829113da5a5"
+    },
+    {
+      "style": "anger",
+      "id": "0785d035-a05f-457e-bf0f-070579a0d51d",
+      "mode": "profile_reuse",
+      "exact_words": true,
+      "sha256": "25a543d9d6d0bd5d6f39665bb5d939fe30023dc0caf3cb89473cc7e586505566"
+    },
+    {
+      "style": "sadness",
+      "id": "4573f627-ff12-43df-bd54-effe5a9f2d5f",
+      "mode": "performance",
+      "exact_words": true,
+      "sha256": "53586c745044da3b4c950099353cc9ab063c6a20a5ae9b344d14569d9d447608"
+    },
+    {
+      "style": "sadness",
+      "id": "d0ea9360-c1cd-42bc-8dc0-6739cb1723b9",
+      "mode": "profile_reuse",
+      "exact_words": true,
+      "sha256": "1c4ba78e9880b8c5ddc780a7dea016e794f1707aee3d50bbfcd4d0791a2c33b5"
+    },
+    {
+      "style": "sadness",
+      "id": "7326815e-39ec-47f0-956f-ef24f5358e59",
+      "mode": "profile_reuse",
+      "exact_words": true,
+      "sha256": "8285f7c90e3f069838519f0425fe1a7a6a8319926284d4e41dbd51ba15b814f2"
+    },
+    {
+      "style": "happiness",
+      "id": "4b7938ac-f6c7-4be6-94aa-c7fc0e5f727a",
+      "mode": "performance",
+      "exact_words": true,
+      "sha256": "4c0cfae5ef920a9c1bc1354508bdf72222870fc38679d0e83e5a7bac4abb92d7"
+    },
+    {
+      "style": "happiness",
+      "id": "081b7686-e8e9-4947-84fd-7a1990af3eb1",
+      "mode": "profile_reuse",
+      "exact_words": true,
+      "sha256": "d96b70d5481936cd4e924316363351ef9bc498e0a496e5935da609ed0c55cd7b"
+    },
+    {
+      "style": "happiness",
+      "id": "7afcce02-ebdc-4a97-9a8e-975ef88c0bad",
+      "mode": "profile_reuse",
+      "exact_words": true,
+      "sha256": "f2de4d1efa8f8609672aa0b4f6ad6cee1fdf2a6579e5f0c27de88109d87ccaf1"
+    },
+    {
+      "style": "excitement",
+      "id": "c6b9a34a-aec0-4d6f-a987-0374ef68a469",
+      "mode": "performance",
+      "exact_words": true,
+      "sha256": "3b315bf6d3427fded0a720283efcbb3694e55b601618995b3b0a04424bd1c94f"
+    },
+    {
+      "style": "excitement",
+      "id": "81e2060d-fc18-426e-8cb7-dbb624a99c30",
+      "mode": "profile_reuse",
+      "exact_words": true,
+      "sha256": "3e5e56d088a01a27ee17a48217dc1c61a84db96651614eb36773865864f96e2d"
+    },
+    {
+      "style": "excitement",
+      "id": "08c39a03-1906-402b-98cd-37ee67d0ad6f",
+      "mode": "profile_reuse",
+      "exact_words": true,
+      "sha256": "8d030d7c638202ab054cf12e5e9a0db978c4a33d28db836dde1ce835823cc511"
+    },
+    {
+      "style": "curiosity",
+      "id": "49d9282b-fd73-4e23-9b6b-54bc23b5fe67",
+      "mode": "performance",
+      "exact_words": true,
+      "sha256": "77b1984435f162c4c48e29628e3b1df8187e3a580a7a0514e4e985536a95b5fd"
+    },
+    {
+      "style": "curiosity",
+      "id": "af4c5255-11c0-447d-8a8c-e6d20c1c0c0f",
+      "mode": "profile_reuse",
+      "exact_words": true,
+      "sha256": "b6958539dffe44226835a37bc74e13ed5dc7b0af31c1ecf0b499be4434e91c4f"
+    },
+    {
+      "style": "curiosity",
+      "id": "7c11eded-d94f-41e7-8a38-adb2f6780842",
+      "mode": "profile_reuse",
+      "exact_words": true,
+      "sha256": "05756425c055a2455e0f263d4358c6435f6bbe5894931abf736b004bdffe4494"
+    }
+  ],
+  "automatic_exact_words_passed": 21,
+  "identity_handoffs_verified": 7,
+  "performance_to_validation_handoffs_verified": 14,
+  "distinct_generated_wavs": 21,
+  "draft_export_wavs": 22,
+  "existing_auditions_preserved": 14,
+  "contract_tests_passed": 39,
+  "browser": {
+    "five_tabs": true,
+    "create_import_lock_generate": true,
+    "refresh_restored_project_and_stage": true,
+    "playback": {
+      "sample": "anger performance",
+      "duration_seconds": 6.08,
+      "error": null
+    },
+    "responsive_overflow": {
+      "desktop": false,
+      "mobile": false
+    },
+    "service_restart_restored_project_stage_style_and_players": true
+  },
+  "real_listener_reviews": 0,
+  "real_published_packages": 0,
+  "scope": "Workflow implementation verified; acting and speaker consistency require actual listener qualification. Publication and casting contracts tested only with isolated fixtures.",
+  "unreviewed_publish_http_rejected": true,
+  "paper16_addition_saved": true
+}

@@ -1,0 +1,30 @@
+{
+  "scope": "Character Library interface preview only",
+  "routes": {
+    "/characters": 200,
+    "/characters?view=new": 200,
+    "/characters?view=experiments": 200,
+    "/": 200,
+    "/design": 200,
+    "/design/auditions": 200,
+    "/record": 200
+  },
+  "legacy_backlinks_verified": true,
+  "native_generation_or_profile_api_calls_in_preview": false,
+  "browser_checks": [
+    "create browser-only draft",
+    "edit details",
+    "reload retains draft",
+    "design button opens honest placeholder",
+    "previous experiments opens earlier designer and returns",
+    "zero audio players and generation controls",
+    "390px width contains ordinary and100-character names"
+  ],
+  "review": "Ship for named long-name fix; independent source/screenshot review",
+  "detector": "Regex fallback returned no findings; parser-based checks unavailable",
+  "screenshots": [
+    ".impeccable/review/character-library/final-desktop.png",
+    ".impeccable/review/character-library/final-mobile.png"
+  ],
+  "verified_at": 1793445228.417983
+}

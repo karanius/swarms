@@ -1,0 +1,6 @@
+[
+ {"title":"F5-TTS official repository", "url":"https://github.com/SWivid/F5-TTS", "use":"Architecture/code provenance; code license differs from pretrained weights", "checked":"2026-10-30"},
+ {"title":"F5-TTS pretrained model card", "url":"https://huggingface.co/SWivid/F5-TTS", "use":"Pretrained weights CC-BY-NC-4.0; research output not commercially cleared", "checked":"2026-10-30"},
+ {"title":"Ollama Generate API", "url":"https://docs.ollama.com/api/generate", "use":"JSON output and local inference response metadata", "checked":"2026-10-30"},
+ {"title":"FFmpeg FAQ", "url":"https://www.ffmpeg.org/faq.html", "use":"Concat demuxer with matching encoded streams", "checked":"2026-10-30"}
+]

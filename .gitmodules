@@ -4,3 +4,6 @@
 [submodule "services/langfuse/agent-skills"]
 	path = services/langfuse/agent-skills
 	url = https://github.com/langfuse/skills.git
+[submodule "services/harness2"]
+	path = services/harness2
+	url = https://github.com/google-research/harness2.git

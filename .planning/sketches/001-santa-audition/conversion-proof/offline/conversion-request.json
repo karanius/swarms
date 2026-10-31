@@ -1,0 +1,12 @@
+{
+  "source": "/Users/x/.local/share/swarms/scene-datasets/crema/1006/1006_MTI_ANG_XX.wav",
+  "target": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/82a4a0db-dfd8-4389-8b9b-c6553ab5d92f/voice.wav",
+  "output": "/Users/x/projects/swarms/.planning/sketches/001-santa-audition/conversion-proof/offline",
+  "seed": 65,
+  "revision": "51383efd921027683c89e5348211d93ff12ac2a8",
+  "steps": 30,
+  "cfg": 0.7,
+  "length_adjust": 1.0,
+  "f0_condition": false,
+  "auto_f0_adjust": false
+}

@@ -1,0 +1,597 @@
+{
+  "scope": "Exposed development scenarios plus contract checks; no independent user-comprehension study, system runtime or optimality proof.",
+  "cases": [
+    {
+      "case": "local_video",
+      "question": "Find reusable pieces for a video-generation pipeline that runs locally on an Apple Silicon Mac. I need script input, image or video generation, narration, subtitles, and final video assembly. Show each piece\u2019s hardware requirements, dependencies, inputs and outputs. Identify anything requiring cloud services, paid APIs, or custom development, and report capabilities with no matching evidence.",
+      "context": {},
+      "summary": "Still-image video path: 2 of 5 capability slots have provisional library candidates. No complete, runnable system is established.",
+      "recommendation_reason": "The alternatives have equal retrieved coverage. There is no evidence-backed winner; choose the output style before committing.",
+      "approaches": [
+        {
+          "name": "Still-image video path",
+          "members": [
+            "script_input",
+            "video_assembly",
+            "subtitles",
+            "narration",
+            "image_generation"
+          ],
+          "unfilled": [
+            "video_assembly",
+            "subtitles",
+            "image_generation"
+          ],
+          "evidence_ids": [
+            "component:817af4c08af1179019804b1de15b78d28813d98d20a73fed879469ff8b118a07",
+            "component:0f1ee06b5c85636f462cbe0220edcacf0b3574ac398a487597da6c16b32226b0"
+          ]
+        },
+        {
+          "name": "Generated-motion video path",
+          "members": [
+            "script_input",
+            "video_assembly",
+            "subtitles",
+            "narration",
+            "video_generation"
+          ],
+          "unfilled": [
+            "video_assembly",
+            "subtitles",
+            "video_generation"
+          ],
+          "evidence_ids": [
+            "component:817af4c08af1179019804b1de15b78d28813d98d20a73fed879469ff8b118a07",
+            "component:0f1ee06b5c85636f462cbe0220edcacf0b3574ac398a487597da6c16b32226b0"
+          ]
+        }
+      ],
+      "next_action": {
+        "priority": "resolve_gap",
+        "title": "Final video assembly: Locate or specify a local video assembler accepting visual assets, narration audio and subtitle files. Preserve all declared hard constraints.",
+        "why": "No qualifying evidence was returned by this bounded library search.",
+        "acceptance_evidence": "Produce one playable video with the requested duration, audible narration and synchronized captions; record dependencies and actual Mac execution.",
+        "search_query": "local video assembly visual assets audio SRT mux render",
+        "evidence_ids": []
+      },
+      "diagnoses": [
+        {
+          "acceptance_evidence": "Show a source-backed interface and one representative input/output check; state any remaining uncertainty.",
+          "search_query": "script input",
+          "capability": "script_input",
+          "label": "Script input",
+          "category": "unverified",
+          "explanation": "A source declares a relevant capability, but the proposed use is not proven.",
+          "next_action": "Check configuration, local execution, license and one input/output example for the selected piece.",
+          "inspected": 21,
+          "conflicting": 2,
+          "evidence_ids": [
+            "component:817af4c08af1179019804b1de15b78d28813d98d20a73fed879469ff8b118a07",
+            "component:ab22c0f76c7e39512c4d03de2e72658adeb6da4cd0b16b4a8e1c963202030674",
+            "group:4e5954fa528f96ef06896644321aab15c47f9203f3cb44353af4b3930d7389a4",
+            "group:e1023588187ebc8b5404225c6a71afccc4068ec78535abf33c7f54ac392f17b9",
+            "group:4f729cf408f26d6022a78f337f2ed3417a51ba8eea4dc98fcfaf72d4a6e5663f",
+            "group:52daae6cb433eb7d9e010a5329cce0d990d6867e825a0f109b5529cf717b8ce4",
+            "group:7258e98f7ed7a64afc589b091facbe3af3b645d9cfdbbcc30df3cbf18a1a5807",
+            "group:8c6479a0cefa0a0d304979d4f50d893b195ac655a89d83bd1991e5a78818340e",
+            "group:0b48edb3f87f02b27e9c0fda17b359ba5905c58f70b3ea41230b6f1d2a44a0e8",
+            "template:a265e32a61dc317bd7727dfd8abea3ec8bc61a233873dcf8f49f4bc93b4956dc:0",
+            "group:82f1f41359eb5ce44325d4d67192881939053a3dcf16561b24d5ec99c3c9d97d",
+            "template:1fac78a6586e5064511f95968ba7c3f94086a762497cd51071a888324b0a9f18:0",
+            "group:529d959e0745320e59a880cd963d67494355605d1e62c82f19b79a6ebfa9e4dc",
+            "template:68e936d8b15443dced76e2401abd31e84080852552fd9caa191d8a6c5c81af03:0",
+            "group:ee084d6f16111203e641d5cb852a237499c8ec711f0577f859256228f6681090",
+            "group:cb851405441002b5cb6785ed05942c822e6da992f0bffa0aac78bf209738c18c",
+            "group:12053532a13f20559df6fb7a0634a8a114269b3cdbe401b3bb796a79faafc6e3",
+            "group:1c3ddd2f95ce96f1d5b8097ca71deabffc9cceb23f17956a312861ac64e951e8",
+            "template:f18753102f71622531a549959ccf777f5056779511927c20b6448e2ab4b49aa6:0",
+            "template:97c666af818eae74092cd2bf088b9b47a0b164fc00b09f18b65eedffebe39fdb:0",
+            "group:0530239d69800f2edf6e4d1442107151778a790b4065929a59cb7a95c040a86d"
+          ],
+          "search_scope": "At most 30 qualified candidates per capability; no claim of exhaustive absence."
+        },
+        {
+          "acceptance_evidence": "Generate one image from a script-derived prompt, record model/license, peak memory and elapsed time.",
+          "search_query": "local Apple Silicon image generation model memory",
+          "capability": "image_generation",
+          "label": "Image generation",
+          "category": "mixed_evidence_gap",
+          "explanation": "Some options conflict; the remaining options have insufficient relevance or unresolved structure.",
+          "next_action": "Locate a local image generator for the chosen Mac and memory budget. Preserve all declared hard constraints.",
+          "inspected": 7,
+          "conflicting": 2,
+          "evidence_ids": [
+            "component:0bb7651d36ae040d2b1f0b4e7d6e848fddf37bcfef50864a70be38c59919b9dd",
+            "group:f0d64426d16549ff7b4422ca523317472a38e0837e4e378ebe1312dd0e7a1a86",
+            "group:cb851405441002b5cb6785ed05942c822e6da992f0bffa0aac78bf209738c18c",
+            "group:65247f12e6856e3692a7745aa1e6d43b7757be3be463c1d86d765b9c9ca2760a",
+            "group:0a723d9303b3069785da7a2f434597a6732b24428c94736d27c09a94d55f1e67",
+            "template:1734039ead59709f40727e86690f0689eb2f03b02f23d386cbeb17e61509d4b2:0",
+            "template:a2f1dd9922a934fbe6cd11a4c1b798e36a7e8f77400c2479567bd36ea4377619:0"
+          ],
+          "search_scope": "At most 30 qualified candidates per capability; no claim of exhaustive absence."
+        },
+        {
+          "acceptance_evidence": "Generate one short clip; record model/license, duration, peak memory and elapsed time.",
+          "search_query": "local Apple Silicon text to video generation model memory",
+          "capability": "video_generation",
+          "label": "Video generation",
+          "category": "mixed_evidence_gap",
+          "explanation": "Some options conflict; the remaining options have insufficient relevance or unresolved structure.",
+          "next_action": "Locate a local motion-clip generator for the chosen Mac and memory budget. Preserve all declared hard constraints.",
+          "inspected": 10,
+          "conflicting": 7,
+          "evidence_ids": [
+            "component:891883c52ed098acc29682d38b3b10f0731e621e9d11e1b3fc0035bf99a113c9",
+            "component:7ae1c6b4f4f4f8a4162a892c69c55252a9f3a0fa019d72e8495f21f4434a5f42",
+            "template:59f25e37071d15aa5a1750ff48f725080f6055996b7a8d6f46a2d54f84df9dd8:0",
+            "group:97c29c7a18b994f66ba1b9b48733bc86d8f2d187cc969ab4f7b4061fe9786b77",
+            "group:a004daaafa8d4c2b766e658d4c9d60e413d56268347a5f12d31e1b15390e6f72",
+            "group:7bfcf46c1f1ce44c1410146b25b9d7e25ebbb8f4ce27021fcc3f3360284d81c5",
+            "group:c01f60fb04f16c194dfb4135f723fcdfcfc9ab28bcd13f49bec7ad8236d8b6e7",
+            "group:83b78f169877a67fb2d3ccd43a6306e3f799bf2410792393c70ad1e848212097",
+            "group:ec42895d91e2fa957bbd5bd2d9628b3d0afbe71bc418a3a86bafcf4d4edd1051",
+            "template:81b161d9748e250f5e5609bf78a79210b844dc943be855f4ec7c20577c6966dc:0"
+          ],
+          "search_scope": "At most 30 qualified candidates per capability; no claim of exhaustive absence."
+        },
+        {
+          "acceptance_evidence": "Render one intelligible audio file locally; record voice/model license and measured runtime.",
+          "search_query": "local text to speech script audio Apple Silicon",
+          "capability": "narration",
+          "label": "Narration / speech synthesis",
+          "category": "unverified",
+          "explanation": "A source declares a relevant capability, but the proposed use is not proven.",
+          "next_action": "Check configuration, local execution, license and one input/output example for the selected piece.",
+          "inspected": 17,
+          "conflicting": 7,
+          "evidence_ids": [
+            "component:0f1ee06b5c85636f462cbe0220edcacf0b3574ac398a487597da6c16b32226b0",
+            "template:a265e32a61dc317bd7727dfd8abea3ec8bc61a233873dcf8f49f4bc93b4956dc:0",
+            "group:52daae6cb433eb7d9e010a5329cce0d990d6867e825a0f109b5529cf717b8ce4",
+            "group:660c8192fb57837e81e959a61981bf1dcff8ebc4bff9fa319c040197a38a9503",
+            "group:e6be8bbaa092cf431f19de92cc71ada90dbaea99ac87bdbf8217d3ccc77167f7",
+            "component:1f58135a5fefda598c42fa506791f752b0624b819d9846f7516ed48326e02572",
+            "component:952aea6902e8882303cbcf29fef79cb6bd7806bde9768c22c889149cbd753509",
+            "template:dad337b6ea829d156b10cfccbfa5d2001d2e84c0e0414b6a4683b3f0b4ee684f:0",
+            "template:097bd2c7527ee705adca72f6e111dc8c394e8bd24d01f49010cb4546b6d89279:0",
+            "group:870a22439a54bae398363865edce604cc33b65a62700c8f9354ff37b3142b952",
+            "template:7b05be3225e132bf0bf4ca438f1037c647794b7d5c43aaa6080e98fe505d7c08:0",
+            "group:8dbdde42a594be678e42783fc01cbe05a37a7fc5ade1b0d5413056a2349c6eaa",
+            "group:6e90618a0e67f63e37bedf48d5da9da229119afd3cfb4476a23065fbb003f14e",
+            "template:f18753102f71622531a549959ccf777f5056779511927c20b6448e2ab4b49aa6:0",
+            "group:a57ad13f4b0d5e47d01244bdad447c31e8517f4e28fd37c3ef5250c5445f6c78",
+            "group:8789ba8595d813041c95a76a3e9fe4d39abcc7f433d5ff3ec9546972eb866f9f",
+            "group:4f729cf408f26d6022a78f337f2ed3417a51ba8eea4dc98fcfaf72d4a6e5663f"
+          ],
+          "search_scope": "At most 30 qualified candidates per capability; no claim of exhaustive absence."
+        },
+        {
+          "acceptance_evidence": "Produce subtitles from representative narration and check timestamps against the audio.",
+          "search_query": "local subtitle transcription timestamps SRT VTT",
+          "capability": "subtitles",
+          "label": "Subtitles / captions",
+          "category": "constraint_conflict",
+          "explanation": "Every inspected option conflicts with a hard constraint.",
+          "next_action": "Locate subtitle generation with timestamps and an SRT or VTT export. Preserve all declared hard constraints.",
+          "inspected": 4,
+          "conflicting": 4,
+          "evidence_ids": [
+            "component:5820eaf596b878cd08c74c2ad269a591620751e0c6938a75ed155e6473755216",
+            "group:fc640e1ee21f3b46926023f7e0290258e5035d80fd148c29345003ca29e2fca7",
+            "group:ae0631c3ba2c9b6a923ef7914bc8876514808b0140e77a8679af3083669917b1",
+            "template:09540fe99d8bf9f877bc37105415ced03f7d084efad6f874d6107cb6fba557a3:0"
+          ],
+          "search_scope": "At most 30 qualified candidates per capability; no claim of exhaustive absence."
+        },
+        {
+          "acceptance_evidence": "Produce one playable video with the requested duration, audible narration and synchronized captions; record dependencies and actual Mac execution.",
+          "search_query": "local video assembly visual assets audio SRT mux render",
+          "capability": "video_assembly",
+          "label": "Final video assembly",
+          "category": "retrieval_gap",
+          "explanation": "No qualifying evidence was returned by this bounded library search.",
+          "next_action": "Locate or specify a local video assembler accepting visual assets, narration audio and subtitle files. Preserve all declared hard constraints.",
+          "inspected": 0,
+          "conflicting": 0,
+          "evidence_ids": [],
+          "search_scope": "At most 30 qualified candidates per capability; no claim of exhaustive absence."
+        }
+      ],
+      "checks": {
+        "valid_source_contracts": true,
+        "concrete_next_action": true,
+        "requirements_retained": true,
+        "no_runtime_promotion": true,
+        "relation_profile_limit_visible": true
+      }
+    },
+    {
+      "case": "clarified_narrated_video",
+      "question": "Local video generation on my Mac",
+      "context": {
+        "memory_gb": 64,
+        "duration_seconds": 30,
+        "output_goal": "narrated_video",
+        "visual_path": "image_generation"
+      },
+      "summary": "Still-image video path: 2 of 5 capability slots have provisional library candidates. No complete, runnable system is established.",
+      "recommendation_reason": "Your selected visual path is prioritized. This is a preference, not evidence that it will work.",
+      "approaches": [
+        {
+          "name": "Still-image video path",
+          "members": [
+            "script_input",
+            "video_assembly",
+            "subtitles",
+            "narration",
+            "image_generation"
+          ],
+          "unfilled": [
+            "video_assembly",
+            "subtitles",
+            "image_generation"
+          ],
+          "evidence_ids": [
+            "component:817af4c08af1179019804b1de15b78d28813d98d20a73fed879469ff8b118a07",
+            "component:0f1ee06b5c85636f462cbe0220edcacf0b3574ac398a487597da6c16b32226b0"
+          ]
+        },
+        {
+          "name": "Generated-motion video path",
+          "members": [
+            "script_input",
+            "video_assembly",
+            "subtitles",
+            "narration",
+            "video_generation"
+          ],
+          "unfilled": [
+            "video_assembly",
+            "subtitles",
+            "video_generation"
+          ],
+          "evidence_ids": [
+            "component:817af4c08af1179019804b1de15b78d28813d98d20a73fed879469ff8b118a07",
+            "component:0f1ee06b5c85636f462cbe0220edcacf0b3574ac398a487597da6c16b32226b0"
+          ]
+        }
+      ],
+      "next_action": {
+        "priority": "resolve_gap",
+        "title": "Final video assembly: Locate or specify a local video assembler accepting visual assets, narration audio and subtitle files. Preserve all declared hard constraints.",
+        "why": "No qualifying evidence was returned by this bounded library search.",
+        "acceptance_evidence": "Produce one playable video with the requested duration, audible narration and synchronized captions; record dependencies and actual Mac execution.",
+        "search_query": "local video assembly visual assets audio SRT mux render",
+        "evidence_ids": [],
+        "target_context": "User target: 64 GB unified memory, 30 second output. Measure feasibility; do not assume it."
+      },
+      "diagnoses": [
+        {
+          "acceptance_evidence": "Show a source-backed interface and one representative input/output check; state any remaining uncertainty.",
+          "search_query": "script input",
+          "capability": "script_input",
+          "label": "Script input",
+          "category": "unverified",
+          "explanation": "A source declares a relevant capability, but the proposed use is not proven.",
+          "next_action": "Check configuration, local execution, license and one input/output example for the selected piece.",
+          "inspected": 21,
+          "conflicting": 2,
+          "evidence_ids": [
+            "component:817af4c08af1179019804b1de15b78d28813d98d20a73fed879469ff8b118a07",
+            "component:ab22c0f76c7e39512c4d03de2e72658adeb6da4cd0b16b4a8e1c963202030674",
+            "group:4e5954fa528f96ef06896644321aab15c47f9203f3cb44353af4b3930d7389a4",
+            "group:e1023588187ebc8b5404225c6a71afccc4068ec78535abf33c7f54ac392f17b9",
+            "group:4f729cf408f26d6022a78f337f2ed3417a51ba8eea4dc98fcfaf72d4a6e5663f",
+            "group:52daae6cb433eb7d9e010a5329cce0d990d6867e825a0f109b5529cf717b8ce4",
+            "group:7258e98f7ed7a64afc589b091facbe3af3b645d9cfdbbcc30df3cbf18a1a5807",
+            "group:8c6479a0cefa0a0d304979d4f50d893b195ac655a89d83bd1991e5a78818340e",
+            "group:0b48edb3f87f02b27e9c0fda17b359ba5905c58f70b3ea41230b6f1d2a44a0e8",
+            "template:a265e32a61dc317bd7727dfd8abea3ec8bc61a233873dcf8f49f4bc93b4956dc:0",
+            "group:82f1f41359eb5ce44325d4d67192881939053a3dcf16561b24d5ec99c3c9d97d",
+            "template:1fac78a6586e5064511f95968ba7c3f94086a762497cd51071a888324b0a9f18:0",
+            "group:529d959e0745320e59a880cd963d67494355605d1e62c82f19b79a6ebfa9e4dc",
+            "template:68e936d8b15443dced76e2401abd31e84080852552fd9caa191d8a6c5c81af03:0",
+            "group:ee084d6f16111203e641d5cb852a237499c8ec711f0577f859256228f6681090",
+            "group:cb851405441002b5cb6785ed05942c822e6da992f0bffa0aac78bf209738c18c",
+            "group:12053532a13f20559df6fb7a0634a8a114269b3cdbe401b3bb796a79faafc6e3",
+            "group:1c3ddd2f95ce96f1d5b8097ca71deabffc9cceb23f17956a312861ac64e951e8",
+            "template:f18753102f71622531a549959ccf777f5056779511927c20b6448e2ab4b49aa6:0",
+            "template:97c666af818eae74092cd2bf088b9b47a0b164fc00b09f18b65eedffebe39fdb:0",
+            "group:0530239d69800f2edf6e4d1442107151778a790b4065929a59cb7a95c040a86d"
+          ],
+          "search_scope": "At most 30 qualified candidates per capability; no claim of exhaustive absence."
+        },
+        {
+          "acceptance_evidence": "Generate one image from a script-derived prompt, record model/license, peak memory and elapsed time.",
+          "search_query": "local Apple Silicon image generation model memory",
+          "capability": "image_generation",
+          "label": "Image generation",
+          "category": "mixed_evidence_gap",
+          "explanation": "Some options conflict; the remaining options have insufficient relevance or unresolved structure.",
+          "next_action": "Locate a local image generator for the chosen Mac and memory budget. Preserve all declared hard constraints.",
+          "inspected": 7,
+          "conflicting": 2,
+          "evidence_ids": [
+            "component:0bb7651d36ae040d2b1f0b4e7d6e848fddf37bcfef50864a70be38c59919b9dd",
+            "group:f0d64426d16549ff7b4422ca523317472a38e0837e4e378ebe1312dd0e7a1a86",
+            "group:cb851405441002b5cb6785ed05942c822e6da992f0bffa0aac78bf209738c18c",
+            "group:65247f12e6856e3692a7745aa1e6d43b7757be3be463c1d86d765b9c9ca2760a",
+            "group:0a723d9303b3069785da7a2f434597a6732b24428c94736d27c09a94d55f1e67",
+            "template:1734039ead59709f40727e86690f0689eb2f03b02f23d386cbeb17e61509d4b2:0",
+            "template:a2f1dd9922a934fbe6cd11a4c1b798e36a7e8f77400c2479567bd36ea4377619:0"
+          ],
+          "search_scope": "At most 30 qualified candidates per capability; no claim of exhaustive absence."
+        },
+        {
+          "acceptance_evidence": "Generate one short clip; record model/license, duration, peak memory and elapsed time.",
+          "search_query": "local Apple Silicon text to video generation model memory",
+          "capability": "video_generation",
+          "label": "Video generation",
+          "category": "mixed_evidence_gap",
+          "explanation": "Some options conflict; the remaining options have insufficient relevance or unresolved structure.",
+          "next_action": "Locate a local motion-clip generator for the chosen Mac and memory budget. Preserve all declared hard constraints.",
+          "inspected": 10,
+          "conflicting": 7,
+          "evidence_ids": [
+            "component:891883c52ed098acc29682d38b3b10f0731e621e9d11e1b3fc0035bf99a113c9",
+            "component:7ae1c6b4f4f4f8a4162a892c69c55252a9f3a0fa019d72e8495f21f4434a5f42",
+            "template:59f25e37071d15aa5a1750ff48f725080f6055996b7a8d6f46a2d54f84df9dd8:0",
+            "group:97c29c7a18b994f66ba1b9b48733bc86d8f2d187cc969ab4f7b4061fe9786b77",
+            "group:a004daaafa8d4c2b766e658d4c9d60e413d56268347a5f12d31e1b15390e6f72",
+            "group:7bfcf46c1f1ce44c1410146b25b9d7e25ebbb8f4ce27021fcc3f3360284d81c5",
+            "group:c01f60fb04f16c194dfb4135f723fcdfcfc9ab28bcd13f49bec7ad8236d8b6e7",
+            "group:83b78f169877a67fb2d3ccd43a6306e3f799bf2410792393c70ad1e848212097",
+            "group:ec42895d91e2fa957bbd5bd2d9628b3d0afbe71bc418a3a86bafcf4d4edd1051",
+            "template:81b161d9748e250f5e5609bf78a79210b844dc943be855f4ec7c20577c6966dc:0"
+          ],
+          "search_scope": "At most 30 qualified candidates per capability; no claim of exhaustive absence."
+        },
+        {
+          "acceptance_evidence": "Render one intelligible audio file locally; record voice/model license and measured runtime.",
+          "search_query": "local text to speech script audio Apple Silicon",
+          "capability": "narration",
+          "label": "Narration / speech synthesis",
+          "category": "unverified",
+          "explanation": "A source declares a relevant capability, but the proposed use is not proven.",
+          "next_action": "Check configuration, local execution, license and one input/output example for the selected piece.",
+          "inspected": 17,
+          "conflicting": 7,
+          "evidence_ids": [
+            "component:0f1ee06b5c85636f462cbe0220edcacf0b3574ac398a487597da6c16b32226b0",
+            "template:a265e32a61dc317bd7727dfd8abea3ec8bc61a233873dcf8f49f4bc93b4956dc:0",
+            "group:52daae6cb433eb7d9e010a5329cce0d990d6867e825a0f109b5529cf717b8ce4",
+            "group:660c8192fb57837e81e959a61981bf1dcff8ebc4bff9fa319c040197a38a9503",
+            "group:e6be8bbaa092cf431f19de92cc71ada90dbaea99ac87bdbf8217d3ccc77167f7",
+            "component:1f58135a5fefda598c42fa506791f752b0624b819d9846f7516ed48326e02572",
+            "component:952aea6902e8882303cbcf29fef79cb6bd7806bde9768c22c889149cbd753509",
+            "template:dad337b6ea829d156b10cfccbfa5d2001d2e84c0e0414b6a4683b3f0b4ee684f:0",
+            "template:097bd2c7527ee705adca72f6e111dc8c394e8bd24d01f49010cb4546b6d89279:0",
+            "group:870a22439a54bae398363865edce604cc33b65a62700c8f9354ff37b3142b952",
+            "template:7b05be3225e132bf0bf4ca438f1037c647794b7d5c43aaa6080e98fe505d7c08:0",
+            "group:8dbdde42a594be678e42783fc01cbe05a37a7fc5ade1b0d5413056a2349c6eaa",
+            "group:6e90618a0e67f63e37bedf48d5da9da229119afd3cfb4476a23065fbb003f14e",
+            "template:f18753102f71622531a549959ccf777f5056779511927c20b6448e2ab4b49aa6:0",
+            "group:a57ad13f4b0d5e47d01244bdad447c31e8517f4e28fd37c3ef5250c5445f6c78",
+            "group:8789ba8595d813041c95a76a3e9fe4d39abcc7f433d5ff3ec9546972eb866f9f",
+            "group:4f729cf408f26d6022a78f337f2ed3417a51ba8eea4dc98fcfaf72d4a6e5663f"
+          ],
+          "search_scope": "At most 30 qualified candidates per capability; no claim of exhaustive absence."
+        },
+        {
+          "acceptance_evidence": "Produce subtitles from representative narration and check timestamps against the audio.",
+          "search_query": "local subtitle transcription timestamps SRT VTT",
+          "capability": "subtitles",
+          "label": "Subtitles / captions",
+          "category": "constraint_conflict",
+          "explanation": "Every inspected option conflicts with a hard constraint.",
+          "next_action": "Locate subtitle generation with timestamps and an SRT or VTT export. Preserve all declared hard constraints.",
+          "inspected": 4,
+          "conflicting": 4,
+          "evidence_ids": [
+            "component:5820eaf596b878cd08c74c2ad269a591620751e0c6938a75ed155e6473755216",
+            "group:fc640e1ee21f3b46926023f7e0290258e5035d80fd148c29345003ca29e2fca7",
+            "group:ae0631c3ba2c9b6a923ef7914bc8876514808b0140e77a8679af3083669917b1",
+            "template:09540fe99d8bf9f877bc37105415ced03f7d084efad6f874d6107cb6fba557a3:0"
+          ],
+          "search_scope": "At most 30 qualified candidates per capability; no claim of exhaustive absence."
+        },
+        {
+          "acceptance_evidence": "Produce one playable video with the requested duration, audible narration and synchronized captions; record dependencies and actual Mac execution.",
+          "search_query": "local video assembly visual assets audio SRT mux render",
+          "capability": "video_assembly",
+          "label": "Final video assembly",
+          "category": "retrieval_gap",
+          "explanation": "No qualifying evidence was returned by this bounded library search.",
+          "next_action": "Locate or specify a local video assembler accepting visual assets, narration audio and subtitle files. Preserve all declared hard constraints.",
+          "inspected": 0,
+          "conflicting": 0,
+          "evidence_ids": [],
+          "search_scope": "At most 30 qualified candidates per capability; no claim of exhaustive absence."
+        }
+      ],
+      "checks": {
+        "valid_source_contracts": true,
+        "concrete_next_action": true,
+        "requirements_retained": true,
+        "no_runtime_promotion": true,
+        "relation_profile_limit_visible": true
+      }
+    },
+    {
+      "case": "non_media",
+      "question": "Find SQL queries and vector retrieval",
+      "context": {},
+      "summary": "Requested capability approach: 2 of 2 capability slots have provisional library candidates. No complete, runnable system is established.",
+      "recommendation_reason": "This approach has the fewest unfilled requested capability slots among the compared paths. Coverage does not prove feasibility.",
+      "approaches": [
+        {
+          "name": "Requested capability approach",
+          "members": [
+            "sql",
+            "vector_retrieval"
+          ],
+          "unfilled": [],
+          "evidence_ids": [
+            "component:a7b8cd8c896b82fc1c027507444611e1aa4fe8d31b1868756af58e0d47f558b2",
+            "component:15fb67842ee22d8a6b46cc919ed95578377219394f812d085ac5f1d9e9f4df59"
+          ]
+        }
+      ],
+      "next_action": {
+        "priority": "design",
+        "title": "Define the cross-capability handoffs before proposing wiring.",
+        "why": "No relationship profile for this domain is implemented.",
+        "evidence_ids": []
+      },
+      "diagnoses": [
+        {
+          "acceptance_evidence": "Show a source-backed interface and one representative input/output check; state any remaining uncertainty.",
+          "search_query": "SQL",
+          "capability": "sql",
+          "label": "Relational data queries",
+          "category": "unverified",
+          "explanation": "A source declares a relevant capability, but the proposed use is not proven.",
+          "next_action": "Check configuration, local execution, license and one input/output example for the selected piece.",
+          "inspected": 30,
+          "conflicting": 0,
+          "evidence_ids": [
+            "component:b9631812f427f1c498cff1bb0a71d384b5c64e33455812ef0a0bfd29256a82e8",
+            "component:0ac47c1dcec75819ea2c8ab06cb73154d9ae5b38aeeaadec02f3e98050593619",
+            "component:4550fc4a2ed6fcd6dbdfc459020802442fb1786327e1e1cb4e41f5a1ab0461a3",
+            "component:754812fcb8a376462fabfe804aa26231b9e38e781fae3b072eee62e616f97a76",
+            "component:2e82a84344f809fae954bd5408265c85b2e98f40570aa8050a739bf636fdc217",
+            "component:a7b8cd8c896b82fc1c027507444611e1aa4fe8d31b1868756af58e0d47f558b2",
+            "component:f1a38ab281bdbba5b77753fd2fac2b2cc76d170b3eef450f0b2495ebb8ae7e0f",
+            "component:538a74de0505dd7f93d344c2fb535979fb7064bf67a35de92dd3094c6088fde4",
+            "component:d22adb4b12197987cf97294ea6a93a937c562409f4d756c0a397caf92f658c51",
+            "component:f1efdbc271a4602e0bfdcd56fde85b5869521624a4d61f67a8d5e898b36f9592",
+            "group:cca664d2b782b2bf7900a1acf64b25c509cf518bdd72295ed48f2c00e1766859",
+            "group:3e89713599d43424d1b9648b588feefc92ddf0554b58257c9147489690a7f6af",
+            "group:0e0ae44b05daec97e67a346767b30e3c36abde4198911754e794f8994872073e",
+            "group:2cbbfdb142918933ee89bcf3faef8a3e5a8d3bad2ac656224e6ad8a61f0314c0",
+            "template:34f604aaba106a65f42956801b7532553faec857fadd1db66c00736e8a934ec0:0",
+            "group:2f69fbf20ba62bb49fe31cb0bb12833536d2004d8c04fdcda84dd6b76a9470f8",
+            "group:b58a5fa4472891bd9753948a55cf913f76153bacdbe57bb78d9f0bcc2a348f32",
+            "template:2a3a5e8c3e9bb4f2a35437a94a9774a14c63bc4b02f9d954e929e30b75089273:0",
+            "template:cb96716235572c59c4d92f7ccbf02b4a0266ab6546f43bfe2f446221a25608cd:0",
+            "template:6a4b82a9b5b0409085feb607b8bbfb47da3845d413e5eed5b29d96f507eb12a9:0",
+            "group:d16f51d57c627b8285d9959a3df8e5ede7aeb77b9fb7b917367d0f0659d3d104",
+            "group:b923106165021d016b9c9a0599e82b9b9236cc07c362e1294ae05e2d2edbca54",
+            "template:8cb5f94f15d0359bb71f4892f8dc6327a64a4aee8f4b972c8529ab138832a873:0",
+            "group:34bed8254fac5fe003ee2f09909343bb7c4fd4b28030fc7beef4c40983cd54fe",
+            "group:10a1a701e88921cd5998354b4553570f3fd675e2480605248bc395b4568a093f",
+            "group:138a5141980d22b254e83cfd51ae0579db33dc19acb9556d722e7fed983c396b",
+            "group:cfe1576b2f411036f05034ba662fe44fd0b4e8ff78bc9d263f9a2487c86dd4c1",
+            "group:90022131b741d4e56db337902999d26a4ddad2d9c975bdd6cb3258d0a75175f0",
+            "template:7356bf91486b58d4579a1774fe10598bed4d3a156a2589a641b2c0c6cf8518aa:0",
+            "group:bb11ca0a9cc0b7c99e174794e2fbacaa29004fc2aac96ebc88b92863fd5cbb52"
+          ],
+          "search_scope": "At most 30 qualified candidates per capability; no claim of exhaustive absence."
+        },
+        {
+          "acceptance_evidence": "Show a source-backed interface and one representative input/output check; state any remaining uncertainty.",
+          "search_query": "vector retrieval",
+          "capability": "vector_retrieval",
+          "label": "Vector retrieval",
+          "category": "unverified",
+          "explanation": "A source declares a relevant capability, but the proposed use is not proven.",
+          "next_action": "Check configuration, local execution, license and one input/output example for the selected piece.",
+          "inspected": 30,
+          "conflicting": 0,
+          "evidence_ids": [
+            "component:0259c89c7f96faf3078b845050e5f8a405df85896c298bb7b77fc8bc386f0b0e",
+            "component:bc5064dedef86a874bae534d9bc5f0d69a74297f22b54f35333109bbe3f72d3a",
+            "component:af4212c4379e037e8a7714143e62e642072db2efced6903359484dadd485c697",
+            "component:5f02c413cfbf509b24aee1fc97a78ab0cb553d9813afd00cb30adef28c4a0210",
+            "component:96500df24e15cf78b6a592a83ede67a6d5fcd964df8f9e638177a9a7a188e77a",
+            "component:e6bb60c4c2b52bdbe895089f376c2cd587eecc6b9e4abd236de9a44f4272f19d",
+            "component:c8e3a1f558526338b0dc5557d160c7d28043f11203dd708ace44787191828cdc",
+            "component:c3343c1d2d1a6f6fb2ca7ac3269fd2fbe2e5de5daf986e154e807ae181253d7f",
+            "component:d00316e1adcdeb010da69ce01817b36dbab0548b57cb126b31aa4566bc14f1b6",
+            "component:f1fd721d89bcbdddd90fc82ee65910b775cab3b9b68386d9d6052e9ad08c524b",
+            "component:58b9748d98d90226dc235a56f1de033a6624fc8d74b4c4051de360c18436f8d2",
+            "component:85e4ed9f429e8de8ef5e87d83d9f1c97f95633d93a881c09f8d1e124155669d2",
+            "component:7b1e9d0c10f7f99af3d03a401c27803e6c516e3621f580bef9ee245cf4afc325",
+            "component:04aa23ab182fe23de00c26f572d42de0b0c219623e6c61496557de6cf2689680",
+            "component:fd7b9961b975358560907cb2108ecfd29f1856f7c6fc98bd474b340d09bb4c6a",
+            "component:552689090a66d216df3edf8d77676b2a00693cee8b89d06935e4b9bb5f644417",
+            "component:9717804f3442553580442f88412bdce02269f3bd3ac967a1088a41469f19ad0e",
+            "component:fb885402b71ffe2ea0bb0be8f1c96d662740f68a544b83e1a75c2d3d9f651138",
+            "component:a8e6244d83b69e7a1aa8fb16df7ae64802ed10b414b26e1ee4e4fcd5b1d5a44a",
+            "component:15fb67842ee22d8a6b46cc919ed95578377219394f812d085ac5f1d9e9f4df59",
+            "group:a27a3fbfeb38a7cb281b59d8bba02610fe00707a3f48065741992c824b5ce09d",
+            "group:b87d5b3bdfd068c63b50a31bed9d6a2ac65e6aef7c251cdd6634f8091a4976ea",
+            "group:301078dc701e6e4bd17bf5bd3de5e45638b0b36eae99a1842438e704eb644fad",
+            "group:b108ff4136c87ba72a58a950f53f277b6219d4c40e7aa78c66f28ae1fbda27ee",
+            "group:b5627510c4743d2ba2f077829ecc1b1b2ea490aecede48b943a6315912bdc569",
+            "group:469a775fb110dbd5e886700945e86f7d6779549534d580c111b3705065bd7c2d",
+            "group:adbe6bca4493e5f28c9e7479eaa72f043fab105d1b4f6ba09189152fe932d105",
+            "group:5557418a439d1e7bcd690905b9b183ec91af5131e4ddcf685aa2cf55521a5d51",
+            "group:be234b03e41f921c2413286d1102c9c0e83ac75af37a595e914131f84343a210",
+            "group:71cbf53a62f6c0372fd7e106df7ee12e0ce1ff67bc7810981a22c562299a29be"
+          ],
+          "search_scope": "At most 30 qualified candidates per capability; no claim of exhaustive absence."
+        }
+      ],
+      "checks": {
+        "valid_source_contracts": true,
+        "concrete_next_action": true,
+        "requirements_retained": true,
+        "no_runtime_promotion": true,
+        "relation_profile_limit_visible": true
+      }
+    },
+    {
+      "case": "unknown",
+      "question": "Find zzzquantum987",
+      "context": {},
+      "summary": "Requested capability approach: 0 of 1 capability slots have provisional library candidates. No complete, runnable system is established.",
+      "recommendation_reason": "This approach has the fewest unfilled requested capability slots among the compared paths. Coverage does not prove feasibility.",
+      "approaches": [
+        {
+          "name": "Requested capability approach",
+          "members": [
+            "unmapped"
+          ],
+          "unfilled": [
+            "unmapped"
+          ],
+          "evidence_ids": []
+        }
+      ],
+      "next_action": {
+        "priority": "resolve_gap",
+        "title": "Unmapped requested capability: Clarify the unmapped requirement before selecting parts.",
+        "why": "The engine cannot reliably interpret this part of the request.",
+        "acceptance_evidence": "Show a source-backed interface and one representative input/output check; state any remaining uncertainty.",
+        "search_query": "Find zzzquantum987",
+        "evidence_ids": []
+      },
+      "diagnoses": [
+        {
+          "acceptance_evidence": "Show a source-backed interface and one representative input/output check; state any remaining uncertainty.",
+          "search_query": "Find zzzquantum987",
+          "capability": "unmapped",
+          "label": "Unmapped requested capability",
+          "category": "interpretation_gap",
+          "explanation": "The engine cannot reliably interpret this part of the request.",
+          "next_action": "Clarify the unmapped requirement before selecting parts.",
+          "inspected": 0,
+          "conflicting": 0,
+          "evidence_ids": [],
+          "search_scope": "At most 30 qualified candidates per capability; no claim of exhaustive absence."
+        }
+      ],
+      "checks": {
+        "valid_source_contracts": true,
+        "concrete_next_action": true,
+        "requirements_retained": true,
+        "no_runtime_promotion": true,
+        "relation_profile_limit_visible": true
+      }
+    }
+  ],
+  "all_contract_checks_pass": true
+}

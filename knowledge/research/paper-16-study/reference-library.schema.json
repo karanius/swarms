@@ -1,0 +1,287 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "version",
+    "focus_speaker",
+    "scope",
+    "sources",
+    "references"
+  ],
+  "properties": {
+    "version": {
+      "const": "1.0.0"
+    },
+    "focus_speaker": {
+      "const": "0012"
+    },
+    "scope": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array"
+    },
+    "references": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "speaker_id",
+          "language",
+          "emotion",
+          "audio",
+          "original_audio",
+          "source_audio",
+          "transcript",
+          "performance",
+          "provenance",
+          "review"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "speaker_id": {
+            "type": "string",
+            "pattern": "^00(1[1-9]|20)$"
+          },
+          "language": {
+            "const": "en"
+          },
+          "emotion": {
+            "enum": [
+              "neutral",
+              "anger",
+              "happiness",
+              "sadness",
+              "surprise"
+            ]
+          },
+          "audio": {
+            "type": "object",
+            "required": [
+              "path",
+              "sha256",
+              "duration_seconds",
+              "sample_rate",
+              "channels"
+            ],
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "duration_seconds": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "sample_rate": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "channels": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "additionalProperties": false
+          },
+          "original_audio": {
+            "type": "object",
+            "required": [
+              "path",
+              "sha256",
+              "duration_seconds",
+              "sample_rate",
+              "channels"
+            ],
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "duration_seconds": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "sample_rate": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "channels": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "additionalProperties": false
+          },
+          "source_audio": {
+            "type": "object",
+            "required": [
+              "path",
+              "sha256",
+              "duration_seconds",
+              "sample_rate",
+              "channels"
+            ],
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "duration_seconds": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "sample_rate": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "channels": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "additionalProperties": false
+          },
+          "transcript": {
+            "type": "object",
+            "required": [
+              "text",
+              "status",
+              "word_alignment"
+            ],
+            "properties": {
+              "text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "status": {
+                "enum": [
+                  "dataset_metadata_unverified",
+                  "human_verified"
+                ]
+              },
+              "word_alignment": {
+                "type": [
+                  "array",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          },
+          "performance": {
+            "type": "object",
+            "required": [
+              "intensity",
+              "intent",
+              "arousal",
+              "valence",
+              "emphasis",
+              "pauses",
+              "annotation_basis"
+            ],
+            "properties": {
+              "intensity": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 1
+              },
+              "intent": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "arousal": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 1
+              },
+              "valence": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": -1,
+                "maximum": 1
+              },
+              "emphasis": {
+                "type": [
+                  "array",
+                  "null"
+                ]
+              },
+              "pauses": {
+                "type": [
+                  "array",
+                  "null"
+                ]
+              },
+              "annotation_basis": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "provenance": {
+            "type": "object",
+            "required": [
+              "dataset",
+              "processing",
+              "emotion_basis",
+              "speaker_basis"
+            ]
+          },
+          "review": {
+            "type": "object",
+            "required": [
+              "status",
+              "ratings",
+              "limitations"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "candidate_unrated",
+                  "reviewed",
+                  "rejected"
+                ]
+              },
+              "ratings": {
+                "type": "array"
+              },
+              "limitations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,39 @@
+{
+  "title": "One Small Light",
+  "voices": {
+    "Mira": {
+      "speaker_id": "0015",
+      "gender": "female"
+    },
+    "Rowan": {
+      "speaker_id": "0012",
+      "gender": "male"
+    }
+  },
+  "scenes": [
+    {
+      "speaker": "Mira",
+      "emotion": "sadness",
+      "headline": "Too many possibilities",
+      "text": "I keep collecting ideas, but none of them feels ready to begin."
+    },
+    {
+      "speaker": "Rowan",
+      "emotion": "neutral",
+      "headline": "Choose one small thing",
+      "text": "Then let\u2019s choose one small thing we can finish together, today."
+    },
+    {
+      "speaker": "Mira",
+      "emotion": "surprise",
+      "headline": "A light. A path. A first step.",
+      "text": "Just one? A light, a path, and a first step?"
+    },
+    {
+      "speaker": "Rowan",
+      "emotion": "happiness",
+      "headline": "Somewhere safe to start",
+      "text": "Exactly. We don\u2019t need the whole bridge. We need somewhere safe to start."
+    }
+  ]
+}

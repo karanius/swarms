@@ -1,0 +1,122 @@
+{
+  "status": "passed",
+  "source": "/Users/x/projects/swarms/knowledge/research/paper-14-study/runs/dia-dialogue-01/native.wav",
+  "source_sha256": "a8bf9dd37a7fcd12e9e3eff7a8b2aa00fbd53f953892b9beef19039f35773625",
+  "original_copy_sha256": "a8bf9dd37a7fcd12e9e3eff7a8b2aa00fbd53f953892b9beef19039f35773625",
+  "master_sha256": "379dace34844cc9a832fb92a66589a26187a02117fffce5b763f8b5647ae109f",
+  "profile": "Balanced",
+  "settings": {
+    "sample_rate": 48000,
+    "target_lufs": -16.0,
+    "true_peak_db": -1.5,
+    "loudness_range": 11,
+    "profiles": {
+      "Gentle": {
+        "highpass_hz": 60,
+        "mud_db": -1.0,
+        "presence_db": 0.5,
+        "ratio": 1.5,
+        "threshold_db": -18,
+        "attack_ms": 20,
+        "release_ms": 150,
+        "deess_intensity": 0.08
+      },
+      "Balanced": {
+        "highpass_hz": 70,
+        "mud_db": -2.0,
+        "presence_db": 1.5,
+        "ratio": 2.2,
+        "threshold_db": -18,
+        "attack_ms": 15,
+        "release_ms": 120,
+        "deess_intensity": 0.15
+      },
+      "Present": {
+        "highpass_hz": 80,
+        "mud_db": -2.5,
+        "presence_db": 2.0,
+        "ratio": 3.0,
+        "threshold_db": -20,
+        "attack_ms": 10,
+        "release_ms": 100,
+        "deess_intensity": 0.22
+      }
+    }
+  },
+  "pre_gain_db": -3.5078858152178967,
+  "pedalboard_version": "0.9.26",
+  "ffmpeg_version": "7.1",
+  "duration_seconds": 9.916625,
+  "sample_rate": 48000,
+  "channels": 1,
+  "original_measurement": {
+    "input_i": "-16.46",
+    "input_tp": "0.00",
+    "input_lra": "1.20",
+    "input_thresh": "-26.50",
+    "output_i": "-16.27",
+    "output_tp": "-1.50",
+    "output_lra": "0.60",
+    "output_thresh": "-26.32",
+    "normalization_type": "dynamic",
+    "target_offset": "0.27"
+  },
+  "master_measurement": {
+    "input_i": "-15.94",
+    "input_tp": "-1.46",
+    "input_lra": "0.90",
+    "input_thresh": "-25.98",
+    "output_i": "-15.88",
+    "output_tp": "-1.50",
+    "output_lra": "0.90",
+    "output_thresh": "-25.93",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.12"
+  },
+  "normalization_passes": {
+    "first_pass": {
+      "input_i": "-22.36",
+      "input_tp": "-3.93",
+      "input_lra": "1.10",
+      "input_thresh": "-32.40",
+      "output_i": "-15.97",
+      "output_tp": "-1.50",
+      "output_lra": "1.00",
+      "output_thresh": "-26.02",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.03"
+    },
+    "second_pass": {
+      "input_i": "-22.36",
+      "input_tp": "-3.93",
+      "input_lra": "1.10",
+      "input_thresh": "-32.40",
+      "output_i": "-16.00",
+      "output_tp": "-1.50",
+      "output_lra": "0.90",
+      "output_thresh": "-26.04",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.00"
+    }
+  },
+  "comparison_lufs": -21.0,
+  "comparison_loudness_difference_lu": 0.0,
+  "before_measurement": {
+    "input_i": "-21.0",
+    "input_tp": "-4.4",
+    "meter": "FFmpeg ebur128"
+  },
+  "after_measurement": {
+    "input_i": "-21.0",
+    "input_tp": "-6.5",
+    "meter": "FFmpeg ebur128"
+  },
+  "before": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-dialogue-01/master/20261030T124437-976607Z/before-matched.wav",
+  "after": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-dialogue-01/master/20261030T124437-976607Z/after-matched.wav",
+  "master": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-dialogue-01/master/20261030T124437-976607Z/polished.wav",
+  "original": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-dialogue-01/master/20261030T124437-976607Z/original.wav",
+  "comparison": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-dialogue-01/master/20261030T124437-976607Z/before-then-after.wav",
+  "elapsed_seconds": 0.782,
+  "tts_rerun": false,
+  "limits": "No denoising or neural restoration. Mono output. 48 kHz conversion does not create missing detail. Listening determines quality; loudness target is our preset, not a platform requirement."
+}

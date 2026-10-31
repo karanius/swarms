@@ -1,0 +1,21 @@
+{
+  "performance-source-01": {
+    "source": "user listening feedback in conversation",
+    "assessment": "User described the relief/disbelief sample as better; no numerical score or verified identity/word-accuracy assessment."
+  },
+  "dynamic-performance-01": {
+    "purpose": "User-requested harder dynamic passage; continuous emotional transitions, same reference and engine.",
+    "assessment": "Not yet rated by listener."
+  },
+  "opposite-tones-comparison": {
+    "source": "user listening report in conversation",
+    "assessment": "User reported neutral and switching recordings sounded the same, with no perceived difference.",
+    "interpretation": "The single global written direction did not demonstrate useful anger-reassurance-anger switching in this example. This does not establish that all instruction control fails.",
+    "recommended_next_test": "Independently generate each sentence with its own contrasting direction, audition before joining, and compare to the neutral control. If single-sentence contrast also fails, investigate a verified performance-transfer method rather than more global emotion prompting."
+  },
+  "isolated-tones-neutral-vs-reassurance": {
+    "source": "user listening report",
+    "assessment": "User reported neutral and reassurance did not differ much.",
+    "interpretation": "Independent single-line written direction did not demonstrate a useful neutral/reassurance contrast for this listener; other isolated contrasts were not rated."
+  }
+}

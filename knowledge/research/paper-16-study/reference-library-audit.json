@@ -1,0 +1,315 @@
+{
+  "reference_count": 50,
+  "focus_speaker": "0012",
+  "focus_references": 5,
+  "integrity": "All source, original and enhanced hashes verified",
+  "annotation_gaps": {
+    "intensity": "not supplied",
+    "performance_details": "not supplied",
+    "human_transcript_review": "not performed",
+    "reference_listening_ratings": "not performed"
+  },
+  "historical_takes": [
+    {
+      "take_id": "initial-index-0",
+      "model": "index",
+      "bindings": [
+        {
+          "role": "Voice identity reference",
+          "canonical_id": "esd:0012:neutral",
+          "hash_matches": true,
+          "speaker_matches": true
+        },
+        {
+          "role": "Emotion reference",
+          "canonical_id": "esd:0012:neutral",
+          "hash_matches": true,
+          "speaker_matches": true
+        }
+      ],
+      "status": "linked"
+    },
+    {
+      "take_id": "initial-index-1",
+      "model": "index",
+      "bindings": [
+        {
+          "role": "Voice identity reference",
+          "canonical_id": "esd:0012:neutral",
+          "hash_matches": true,
+          "speaker_matches": true
+        },
+        {
+          "role": "Emotion reference",
+          "canonical_id": "esd:0012:anger",
+          "hash_matches": true,
+          "speaker_matches": true
+        }
+      ],
+      "status": "linked"
+    },
+    {
+      "take_id": "initial-index-2",
+      "model": "index",
+      "bindings": [
+        {
+          "role": "Voice identity reference",
+          "canonical_id": "esd:0012:neutral",
+          "hash_matches": true,
+          "speaker_matches": true
+        },
+        {
+          "role": "Emotion reference",
+          "canonical_id": "esd:0012:anger",
+          "hash_matches": true,
+          "speaker_matches": true
+        }
+      ],
+      "status": "linked"
+    },
+    {
+      "take_id": "initial-vox-0",
+      "model": "vox",
+      "bindings": [
+        {
+          "role": "Source reference",
+          "canonical_id": "esd:0012:neutral",
+          "hash_matches": true,
+          "speaker_matches": true
+        }
+      ],
+      "status": "linked"
+    },
+    {
+      "take_id": "initial-vox-1",
+      "model": "vox",
+      "bindings": [
+        {
+          "role": "Source reference",
+          "canonical_id": "esd:0012:anger",
+          "hash_matches": true,
+          "speaker_matches": true
+        }
+      ],
+      "status": "linked"
+    },
+    {
+      "take_id": "take-20261030-221805-b7ac3031",
+      "model": "index",
+      "bindings": [
+        {
+          "role": "Voice identity reference",
+          "canonical_id": "esd:0012:neutral",
+          "hash_matches": true,
+          "speaker_matches": true
+        },
+        {
+          "role": "Emotion reference",
+          "canonical_id": "esd:0012:anger",
+          "hash_matches": true,
+          "speaker_matches": true
+        }
+      ],
+      "status": "linked"
+    },
+    {
+      "take_id": "take-20261030-221956-8544657a",
+      "model": "f5",
+      "bindings": [
+        {
+          "role": "Source reference",
+          "canonical_id": "esd:0012:neutral",
+          "hash_matches": true,
+          "speaker_matches": true
+        }
+      ],
+      "status": "linked"
+    },
+    {
+      "take_id": "take-20261030-222057-b6d70665",
+      "model": "dia",
+      "bindings": [
+        {
+          "role": "Source reference",
+          "canonical_id": "esd:0012:neutral",
+          "hash_matches": true,
+          "speaker_matches": true
+        }
+      ],
+      "status": "linked"
+    },
+    {
+      "take_id": "take-20261030-222522-8d0ea9da",
+      "model": "vox",
+      "bindings": [
+        {
+          "role": "Source reference",
+          "canonical_id": "esd:0012:neutral",
+          "hash_matches": true,
+          "speaker_matches": true
+        }
+      ],
+      "status": "linked"
+    },
+    {
+      "take_id": "take-20261030-222812-40846348",
+      "model": "index",
+      "bindings": [
+        {
+          "role": "Voice identity reference",
+          "canonical_id": "esd:0012:neutral",
+          "hash_matches": true,
+          "speaker_matches": true
+        },
+        {
+          "role": "Emotion reference",
+          "canonical_id": "esd:0012:neutral",
+          "hash_matches": true,
+          "speaker_matches": true
+        }
+      ],
+      "status": "linked"
+    },
+    {
+      "take_id": "take-20261030-232748-34082d34",
+      "model": "dia",
+      "bindings": [
+        {
+          "role": "Source reference",
+          "canonical_id": "esd:0012:neutral",
+          "hash_matches": true,
+          "speaker_matches": true
+        }
+      ],
+      "status": "linked"
+    },
+    {
+      "take_id": "take-20261030-232812-b39fe0ed",
+      "model": "dia",
+      "bindings": [
+        {
+          "role": "Source reference",
+          "canonical_id": "esd:0012:neutral",
+          "hash_matches": true,
+          "speaker_matches": true
+        }
+      ],
+      "status": "linked"
+    },
+    {
+      "take_id": "take-20261030-235221-e90e2d3c",
+      "model": "index",
+      "bindings": [
+        {
+          "role": "Voice identity reference",
+          "canonical_id": "esd:0012:neutral",
+          "hash_matches": true,
+          "speaker_matches": true
+        },
+        {
+          "role": "Emotion reference",
+          "canonical_id": "esd:0012:neutral",
+          "hash_matches": true,
+          "speaker_matches": true
+        }
+      ],
+      "status": "linked"
+    },
+    {
+      "take_id": "take-20261031-000514-eb8a0f7a",
+      "model": "index",
+      "bindings": [
+        {
+          "role": "Voice identity reference",
+          "canonical_id": "esd:0012:neutral",
+          "hash_matches": true,
+          "speaker_matches": true
+        },
+        {
+          "role": "Emotion reference",
+          "canonical_id": "esd:0012:anger",
+          "hash_matches": true,
+          "speaker_matches": true
+        }
+      ],
+      "status": "linked"
+    },
+    {
+      "take_id": "take-20261031-000543-0fb5668e",
+      "model": "vox",
+      "bindings": [
+        {
+          "role": "Source reference",
+          "canonical_id": "esd:0012:anger",
+          "hash_matches": true,
+          "speaker_matches": true
+        }
+      ],
+      "status": "linked"
+    },
+    {
+      "take_id": "take-20261031-000601-ee1c0d64",
+      "model": "f5",
+      "bindings": [
+        {
+          "role": "Source reference",
+          "canonical_id": "esd:0012:anger",
+          "hash_matches": true,
+          "speaker_matches": true
+        }
+      ],
+      "status": "linked"
+    },
+    {
+      "take_id": "take-20261031-000615-fa3f3316",
+      "model": "dia",
+      "bindings": [
+        {
+          "role": "Source reference",
+          "canonical_id": "esd:0012:anger",
+          "hash_matches": true,
+          "speaker_matches": true
+        }
+      ],
+      "status": "linked"
+    },
+    {
+      "take_id": "take-20261031-001751-5dcde654",
+      "model": "dia",
+      "bindings": [
+        {
+          "role": "Source reference",
+          "canonical_id": "esd:0011:happiness",
+          "hash_matches": true,
+          "speaker_matches": true
+        }
+      ],
+      "status": "linked"
+    },
+    {
+      "take_id": "take-20261031-001904-8a70198c",
+      "model": "index",
+      "bindings": [
+        {
+          "role": "Voice identity reference",
+          "canonical_id": "esd:0011:neutral",
+          "hash_matches": true,
+          "speaker_matches": true
+        },
+        {
+          "role": "Emotion reference",
+          "canonical_id": "esd:0011:happiness",
+          "hash_matches": true,
+          "speaker_matches": true
+        }
+      ],
+      "status": "linked"
+    }
+  ],
+  "summary": {
+    "linked": 19,
+    "unconditioned": 0,
+    "review_required": 0,
+    "unresolved": 0
+  }
+}

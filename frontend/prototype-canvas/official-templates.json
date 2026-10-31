@@ -1,0 +1,1457 @@
+{
+  "schemaVersion": 1,
+  "sourceRevision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+  "placementNote": "Imported candidates, not validated composite boundaries. Review contracts before promotion.",
+  "items": [
+    {
+      "id": "langflow-official:assemblyai-flow",
+      "name": "AssemblyAI_Flow",
+      "category": "Documentation Examples",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "docs/static/files/AssemblyAI_Flow.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/docs/static/files/AssemblyAI_Flow.json",
+        "gitBlobSha": "195bb1906abf83b3c671eb1a2f28a4e123885142",
+        "sha256": "8ac242c4536903e4f52f7b878a7f1bdfe4383733fa6d3a32b4fa66d31fd87a55",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/assemblyai-flow.json",
+      "nodeCount": 7,
+      "edgeCount": 5,
+      "componentTypes": [
+        "AssemblyAIGetSubtitles",
+        "AssemblyAILeMUR",
+        "AssemblyAIListTranscripts",
+        "AssemblyAITranscriptionJobCreator",
+        "AssemblyAITranscriptionJobPoller",
+        "ParseData",
+        "Prompt"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "AssemblyAITranscriptionJobCreator-Idt7P",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "AssemblyAITranscriptionJobPoller-F46nf",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "AssemblyAIGetSubtitles-3sjU6",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "AssemblyAIListTranscripts-3prc4",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "AssemblyAILeMUR-jzwHZ",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": null
+    },
+    {
+      "id": "langflow-official:basic-prompting",
+      "name": "Basic Prompting",
+      "category": "Agent Patterns",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Basic Prompting.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Basic%20Prompting.json",
+        "gitBlobSha": "5f3dac6426cce16f2b6c70a037af6fce4c86b753",
+        "sha256": "60d9ad4dc4ffd1d41579dbc73e862397413fd388321ddab2eeba628e4892304b",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/basic-prompting.json",
+      "nodeCount": 6,
+      "edgeCount": 3,
+      "componentTypes": [
+        "ChatInput",
+        "ChatOutput",
+        "LanguageModelComponent",
+        "Prompt"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "LanguageModelComponent-FLeYF",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.8.0"
+    },
+    {
+      "id": "langflow-official:blog-writer",
+      "name": "Blog Writer",
+      "category": "Content Production",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Blog Writer.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Blog%20Writer.json",
+        "gitBlobSha": "d82b0e4a9eae7dd6172beabcae555e0dd375cc18",
+        "sha256": "36aa281ff641ebf9948b354848d6c9efd4b5e66eba2a808e4006a2167e9ee7e6",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/blog-writer.json",
+      "nodeCount": 6,
+      "edgeCount": 4,
+      "componentTypes": [
+        "Agent",
+        "ChatInput",
+        "ChatOutput",
+        "Prompt Template",
+        "URLComponent"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "Agent-9tNMJ",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.1rc3"
+    },
+    {
+      "id": "langflow-official:content-aggregator",
+      "name": "Content Aggregator",
+      "category": "Content Production",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Content Aggregator.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Content%20Aggregator.json",
+        "gitBlobSha": "316afe8fb4b7ed8be4c9059f14171cd9171d2d7b",
+        "sha256": "cdbd5f76d71f94051e78e6eb3ed3853ccfaa6bd146943ce5dc382931f354e2a9",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/content-aggregator.json",
+      "nodeCount": 8,
+      "edgeCount": 6,
+      "componentTypes": [
+        "Agent",
+        "BatchRunComponent",
+        "ChatInput",
+        "ChatOutput",
+        "SaveToFile",
+        "UnifiedWebSearch",
+        "parser"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "BatchRun-ca",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "Agent-ZH2Rd",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "SaveToFile-VVVVb",
+          "field": "aws_access_key_id",
+          "required": false
+        },
+        {
+          "nodeId": "SaveToFile-VVVVb",
+          "field": "aws_secret_access_key",
+          "required": false
+        },
+        {
+          "nodeId": "SaveToFile-VVVVb",
+          "field": "service_account_key",
+          "required": true
+        }
+      ],
+      "lastTestedVersion": "1.10.0"
+    },
+    {
+      "id": "langflow-official:conversational-notion-agent",
+      "name": "Conversational_Notion_Agent",
+      "category": "Documentation Examples",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "docs/static/files/Conversational_Notion_Agent.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/docs/static/files/Conversational_Notion_Agent.json",
+        "gitBlobSha": "edf1dd06ee750226aa6f6a3b3e6c92cc6f8b17d1",
+        "sha256": "9c9ffa79e6b3bb9b2957f82eb356e166ed083782958ad293ba2f2f6710313294",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/conversational-notion-agent.json",
+      "nodeCount": 17,
+      "edgeCount": 13,
+      "componentTypes": [
+        "AddContentToPage",
+        "ChatInput",
+        "ChatOutput",
+        "CurrentDateComponent",
+        "Memory",
+        "NotionDatabaseProperties",
+        "NotionListPages",
+        "NotionPageContent",
+        "NotionPageCreator",
+        "NotionPageUpdate",
+        "NotionSearch",
+        "NotionUserList",
+        "OpenAIModel",
+        "Prompt",
+        "ToolCallingAgent",
+        "ToolkitComponent",
+        "TypeConverterComponent"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "AddContentToPage-3iQ3m",
+          "field": "notion_secret",
+          "required": true
+        },
+        {
+          "nodeId": "NotionPageCreator-Gdgtd",
+          "field": "notion_secret",
+          "required": true
+        },
+        {
+          "nodeId": "NotionDatabaseProperties-F3Vjj",
+          "field": "notion_secret",
+          "required": true
+        },
+        {
+          "nodeId": "NotionListPages-9cC7f",
+          "field": "notion_secret",
+          "required": true
+        },
+        {
+          "nodeId": "NotionUserList-4C1Rj",
+          "field": "notion_secret",
+          "required": true
+        },
+        {
+          "nodeId": "NotionPageContent-didQ9",
+          "field": "notion_secret",
+          "required": true
+        },
+        {
+          "nodeId": "NotionSearch-Qrabo",
+          "field": "notion_secret",
+          "required": true
+        },
+        {
+          "nodeId": "NotionPageUpdate-DWOeO",
+          "field": "notion_secret",
+          "required": true
+        },
+        {
+          "nodeId": "OpenAIModel-gIFGV",
+          "field": "api_key",
+          "required": true
+        }
+      ],
+      "lastTestedVersion": "1.4.2"
+    },
+    {
+      "id": "langflow-official:custom-component-generator",
+      "name": "Custom Component Generator",
+      "category": "Development",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Custom Component Generator.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Custom%20Component%20Generator.json",
+        "gitBlobSha": "fdeecc0d5e6b8fb45aa88fd3355db320663562e5",
+        "sha256": "b46ffc6ec566f2e433454781b2e7d4ce30f2c9b6a28088be64da5c5061193965",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/custom-component-generator.json",
+      "nodeCount": 6,
+      "edgeCount": 4,
+      "componentTypes": [
+        "Agent",
+        "ChatInput",
+        "ChatOutput",
+        "MemoryBase",
+        "URLComponent"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "Agent-I0nts",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.1"
+    },
+    {
+      "id": "langflow-official:deep-research-agent",
+      "name": "Deep Research Agent",
+      "category": "Research and Analysis",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Deep Research Agent.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Deep%20Research%20Agent.json",
+        "gitBlobSha": "c663de15271b22c282a3d11f09b9350554d85aaf",
+        "sha256": "be16e3e5bb5a901eea8272e5b4841754e49a26f7cd65db3b359df4454d833cc2",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/deep-research-agent.json",
+      "nodeCount": 9,
+      "edgeCount": 8,
+      "componentTypes": [
+        "Agent",
+        "ChatInput",
+        "ChatOutput",
+        "Prompt",
+        "UnifiedWebSearch"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "Agent-mIgZ5",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "Agent-plan",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "Agent-synth",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.0"
+    },
+    {
+      "id": "langflow-official:document-q-a",
+      "name": "Document Q&A",
+      "category": "Knowledge and Retrieval",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Document Q&A.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Document%20Q%26A.json",
+        "gitBlobSha": "690dd9c812785c82f18cedc2355d04dbcaabf259",
+        "sha256": "c6a3bfd8e9dc72277b00452f2eb30c4c6246efa64c55356650eed47c30dcdab9",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/document-q-a.json",
+      "nodeCount": 7,
+      "edgeCount": 6,
+      "componentTypes": [
+        "Agent",
+        "ChatInput",
+        "ChatOutput",
+        "Knowledge",
+        "Prompt",
+        "parser"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "KnowledgeRetrieve-docqa",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "Agent-docqa",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.0"
+    },
+    {
+      "id": "langflow-official:eval-and-remediate-cleanlab",
+      "name": "eval_and_remediate_cleanlab",
+      "category": "Documentation Examples",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "docs/static/files/eval_and_remediate_cleanlab.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/docs/static/files/eval_and_remediate_cleanlab.json",
+        "gitBlobSha": "09c6a31dc0ec869a93360f1a94691a45d09ea0ed",
+        "sha256": "06f3657d2cc4cef359da638201bb90c93b892fe13e99a2f9bfd4f262066c0e85",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/eval-and-remediate-cleanlab.json",
+      "nodeCount": 6,
+      "edgeCount": 8,
+      "componentTypes": [
+        "ChatInput",
+        "ChatOutput",
+        "CleanlabEvaluator",
+        "CleanlabRemediator",
+        "OpenAIModel",
+        "Prompt"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "OpenAIModel-1P8nP",
+          "field": "api_key",
+          "required": true
+        },
+        {
+          "nodeId": "CleanlabEvaluator-Pfyl2",
+          "field": "api_key",
+          "required": true
+        }
+      ],
+      "lastTestedVersion": "1.4.1"
+    },
+    {
+      "id": "langflow-official:financial-report-parser",
+      "name": "Financial Report Parser",
+      "category": "Data Extraction and Classification",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Financial Report Parser.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Financial%20Report%20Parser.json",
+        "gitBlobSha": "149fc1aa7452f5b69af6ff53cdb90569cf7bad54",
+        "sha256": "4bcb392572bc694fe681634c14c41aec2956d7cb0adb06fb5241705bdde466ef",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/financial-report-parser.json",
+      "nodeCount": 5,
+      "edgeCount": 3,
+      "componentTypes": [
+        "Agent",
+        "ChatOutput",
+        "File",
+        "ParserComponent"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "File-NGW2N",
+          "field": "aws_access_key_id",
+          "required": true
+        },
+        {
+          "nodeId": "File-NGW2N",
+          "field": "aws_secret_access_key",
+          "required": true
+        },
+        {
+          "nodeId": "File-NGW2N",
+          "field": "service_account_key",
+          "required": true
+        },
+        {
+          "nodeId": "Agent-6rJWA",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.1rc3"
+    },
+    {
+      "id": "langflow-official:hybrid-search-rag",
+      "name": "Hybrid Search RAG",
+      "category": "Knowledge and Retrieval",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Hybrid Search RAG.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Hybrid%20Search%20RAG.json",
+        "gitBlobSha": "1d5e8afdde1343614719859f19ef019b508d5812",
+        "sha256": "2ff3d8167e7b54397d688b6a8e4eea4544b5f7183c9e2d726278288a7482a917",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/hybrid-search-rag.json",
+      "nodeCount": 11,
+      "edgeCount": 7,
+      "componentTypes": [
+        "Agent",
+        "AstraDB",
+        "ChatInput",
+        "ChatOutput",
+        "File",
+        "ParserComponent",
+        "SplitText"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "File-hsri",
+          "field": "aws_access_key_id",
+          "required": true
+        },
+        {
+          "nodeId": "File-hsri",
+          "field": "aws_secret_access_key",
+          "required": true
+        },
+        {
+          "nodeId": "File-hsri",
+          "field": "service_account_key",
+          "required": true
+        },
+        {
+          "nodeId": "AstraDB-hsri",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "AstraDB-hsri",
+          "field": "token",
+          "required": true
+        },
+        {
+          "nodeId": "Agent-hsr",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "AstraDB-AkDya",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "AstraDB-AkDya",
+          "field": "token",
+          "required": true
+        }
+      ],
+      "lastTestedVersion": "1.10.0"
+    },
+    {
+      "id": "langflow-official:image-sentiment-analysis",
+      "name": "Image Sentiment Analysis",
+      "category": "Data Extraction and Classification",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Image Sentiment Analysis.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Image%20Sentiment%20Analysis.json",
+        "gitBlobSha": "23f98a492691d433de3ce7b8400b0abd17c12359",
+        "sha256": "e6adcf4d947ee29e168f3c66a3a2ecdecf8278d58adb37906eca3003e525bb1f",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/image-sentiment-analysis.json",
+      "nodeCount": 4,
+      "edgeCount": 2,
+      "componentTypes": [
+        "ChatInput",
+        "ChatOutput",
+        "LanguageModelComponent"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "LanguageModelComponent-KHx2J",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.0"
+    },
+    {
+      "id": "langflow-official:instagram-copywriter",
+      "name": "Instagram Copywriter",
+      "category": "Content Production",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Instagram Copywriter.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Instagram%20Copywriter.json",
+        "gitBlobSha": "bb70ae051782a4418f72bfdf2fb5102fabab1388",
+        "sha256": "c3308a544f8359998ea22001fa8ba3de4d483d94d9d5d6adc1766dbecc0fcd51",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/instagram-copywriter.json",
+      "nodeCount": 6,
+      "edgeCount": 4,
+      "componentTypes": [
+        "Agent",
+        "ChatInput",
+        "ChatOutput",
+        "UnifiedWebSearch"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "Agent-caption",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "Agent-MnLtf",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.0"
+    },
+    {
+      "id": "langflow-official:knowledge-retrieval",
+      "name": "Knowledge Retrieval",
+      "category": "Knowledge and Retrieval",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Knowledge Retrieval.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Knowledge%20Retrieval.json",
+        "gitBlobSha": "67fa9ec0cd49423364a43a809ad22bfac8f327fd",
+        "sha256": "2eed43f8ef7dee66653b12bdc1437686646257a6410eccf54b0d53bcd3dba23c",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/knowledge-retrieval.json",
+      "nodeCount": 5,
+      "edgeCount": 3,
+      "componentTypes": [
+        "ChatInput",
+        "ChatOutput",
+        "Knowledge",
+        "parser"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "Knowledge-Y8gm2",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.1rc3"
+    },
+    {
+      "id": "langflow-official:market-research",
+      "name": "Market Research",
+      "category": "Research and Analysis",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Market Research.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Market%20Research.json",
+        "gitBlobSha": "bd9aaa44bd252ba9b577fe59561f714d26a4a11c",
+        "sha256": "abf556c2e976ecaea0a451090ea247c4c076fe891baa6614582a8eb857d52955",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/market-research.json",
+      "nodeCount": 7,
+      "edgeCount": 5,
+      "componentTypes": [
+        "Agent",
+        "ChatInput",
+        "ChatOutput",
+        "ParserComponent",
+        "StructuredOutput",
+        "UnifiedWebSearch"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "Agent-Hz2it",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "StructuredOutput-zfjb9",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.0"
+    },
+    {
+      "id": "langflow-official:meeting-summary",
+      "name": "Meeting Summary",
+      "category": "Content Production",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Meeting Summary.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Meeting%20Summary.json",
+        "gitBlobSha": "72f472e7c10d7a5e5f9c39b4a71c1e01d29008fc",
+        "sha256": "473952ccdc183d9ef7196a002de0a43e5ba70a2c54c63ff0611bf091eaccb709",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/meeting-summary.json",
+      "nodeCount": 7,
+      "edgeCount": 5,
+      "componentTypes": [
+        "Agent",
+        "AssemblyAITranscriber",
+        "ChatInput",
+        "ChatOutput",
+        "MemoryBase",
+        "Prompt"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "AAITranscriber-ms",
+          "field": "api_key",
+          "required": true
+        },
+        {
+          "nodeId": "Agent-summary",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.0"
+    },
+    {
+      "id": "langflow-official:meeting-notes-agent",
+      "name": "Meeting_Notes_Agent",
+      "category": "Documentation Examples",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "docs/static/files/Meeting_Notes_Agent.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/docs/static/files/Meeting_Notes_Agent.json",
+        "gitBlobSha": "bc46e70bc113cf848cbf9e646750e0675567a7cc",
+        "sha256": "15113bb0c401bf1e56ec26f1a470e176ea4a7f1b49f8d78ce880a5987ed560b2",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/meeting-notes-agent.json",
+      "nodeCount": 21,
+      "edgeCount": 20,
+      "componentTypes": [
+        "AddContentToPage",
+        "ChatOutput",
+        "CurrentDateComponent",
+        "NotionDatabaseProperties",
+        "NotionPageCreator",
+        "NotionPageUpdate",
+        "NotionSearch",
+        "NotionUserList",
+        "OpenAIModel",
+        "ParseData",
+        "Prompt",
+        "TextInput",
+        "ToolCallingAgent"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "NotionUserList-TvIKS",
+          "field": "notion_secret",
+          "required": true
+        },
+        {
+          "nodeId": "NotionSearch-M66HF",
+          "field": "notion_secret",
+          "required": true
+        },
+        {
+          "nodeId": "OpenAIModel-Ht8xI",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "OpenAIModel-OTfnt",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "AddContentToPage-vrAvx",
+          "field": "notion_secret",
+          "required": true
+        },
+        {
+          "nodeId": "NotionPageCreator-Exc7f",
+          "field": "notion_secret",
+          "required": true
+        },
+        {
+          "nodeId": "NotionDatabaseProperties-IjzLV",
+          "field": "notion_secret",
+          "required": true
+        },
+        {
+          "nodeId": "NotionPageUpdate-bexvy",
+          "field": "notion_secret",
+          "required": true
+        },
+        {
+          "nodeId": "NotionSearch-EdSJb",
+          "field": "notion_secret",
+          "required": true
+        },
+        {
+          "nodeId": "NotionUserList-wFEb1",
+          "field": "notion_secret",
+          "required": true
+        }
+      ],
+      "lastTestedVersion": "1.0.17.dev8"
+    },
+    {
+      "id": "langflow-official:memory-chatbot",
+      "name": "Memory Chatbot",
+      "category": "Knowledge and Retrieval",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Memory Chatbot.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Memory%20Chatbot.json",
+        "gitBlobSha": "518e2f02331be58ed470e4c83ad4eb794886620b",
+        "sha256": "e0fca48307fefcff7739a4e559414485a153cbbee016c31d09b29e81fe99396c",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/memory-chatbot.json",
+      "nodeCount": 5,
+      "edgeCount": 3,
+      "componentTypes": [
+        "Agent",
+        "ChatInput",
+        "ChatOutput",
+        "MemoryBase"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "Agent-AlLub",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.1rc3"
+    },
+    {
+      "id": "langflow-official:multi-agent-flow",
+      "name": "Multi Agent Flow",
+      "category": "Agent Patterns",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Multi Agent Flow.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Multi%20Agent%20Flow.json",
+        "gitBlobSha": "995142634278e5f77a8995083293240d79280c74",
+        "sha256": "0c8904af765e22f06f4c1112b2fd95a9661bfe3cb1c79003cc049e1cc80b75ba",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/multi-agent-flow.json",
+      "nodeCount": 6,
+      "edgeCount": 4,
+      "componentTypes": [
+        "Agent",
+        "ChatInput",
+        "ChatOutput"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "Agent-maf-1",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "Agent-maf-2",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "Agent-maf-3",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.0"
+    },
+    {
+      "id": "langflow-official:portfolio-website-code-generator",
+      "name": "Portfolio Website Code Generator",
+      "category": "Development",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Portfolio Website Code Generator.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Portfolio%20Website%20Code%20Generator.json",
+        "gitBlobSha": "9ec734d4810738405fa86e427197a78bcb2d4099",
+        "sha256": "b34a2bbdb61ccf7f61bbacc999bcae9059a91bf7f367282472af588c32bc64b8",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/portfolio-website-code-generator.json",
+      "nodeCount": 4,
+      "edgeCount": 2,
+      "componentTypes": [
+        "Agent",
+        "ChatOutput",
+        "File"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "File-wvfA7",
+          "field": "aws_access_key_id",
+          "required": true
+        },
+        {
+          "nodeId": "File-wvfA7",
+          "field": "aws_secret_access_key",
+          "required": true
+        },
+        {
+          "nodeId": "File-wvfA7",
+          "field": "service_account_key",
+          "required": true
+        },
+        {
+          "nodeId": "Agent-portfolio",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.0"
+    },
+    {
+      "id": "langflow-official:price-deal-finder",
+      "name": "Price Deal Finder",
+      "category": "Research and Analysis",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Price Deal Finder.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Price%20Deal%20Finder.json",
+        "gitBlobSha": "6915f65272d784739e06e172fb16d58641c8130e",
+        "sha256": "f7a871c11b98041919ce897dca9e143d0f48c0ba9a1c6a1a11d1794b40ba3723",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/price-deal-finder.json",
+      "nodeCount": 7,
+      "edgeCount": 5,
+      "componentTypes": [
+        "Agent",
+        "ChatInput",
+        "ChatOutput",
+        "MemoryBase",
+        "URLComponent",
+        "UnifiedWebSearch"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "Agent-4ux6k",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.1"
+    },
+    {
+      "id": "langflow-official:research-translation-loop",
+      "name": "Research Translation Loop",
+      "category": "Research and Analysis",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Research Translation Loop.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Research%20Translation%20Loop.json",
+        "gitBlobSha": "061b5777caf20ea242d15f2c8add0d6234a3abce",
+        "sha256": "db5af7c56dab619aa31bc1c9871df3db56183e04807365cb2cd65b156e7ca6b3",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/research-translation-loop.json",
+      "nodeCount": 7,
+      "edgeCount": 6,
+      "componentTypes": [
+        "ArXivComponent",
+        "ChatInput",
+        "ChatOutput",
+        "LanguageModelComponent",
+        "LoopComponent",
+        "ParserComponent"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "LanguageModelComponent-ps5yd",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.1"
+    },
+    {
+      "id": "langflow-official:saas-pricing",
+      "name": "SaaS Pricing",
+      "category": "Research and Analysis",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/SaaS Pricing.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/SaaS%20Pricing.json",
+        "gitBlobSha": "df81622ac158b498ac978671cdda35c45abd072e",
+        "sha256": "f2fc8b5891193a7927d2a6b353d6b13f6a1ffc4d551232d928a28384bff06ffe",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/saas-pricing.json",
+      "nodeCount": 5,
+      "edgeCount": 3,
+      "componentTypes": [
+        "Agent",
+        "ChatInput",
+        "ChatOutput",
+        "SQLComponent"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "Agent-Zm0pK",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.1"
+    },
+    {
+      "id": "langflow-official:seo-keyword-generator",
+      "name": "SEO Keyword Generator",
+      "category": "Content Production",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/SEO Keyword Generator.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/SEO%20Keyword%20Generator.json",
+        "gitBlobSha": "f2bdd491d0609349c6afc05f55da897b5329b498",
+        "sha256": "4a2c816cd58fc0e2679b2268e7630cc1110055d5ba940554d5f9d9303341885e",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/seo-keyword-generator.json",
+      "nodeCount": 4,
+      "edgeCount": 2,
+      "componentTypes": [
+        "Agent",
+        "ChatOutput",
+        "Prompt"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "Agent-seovA",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.0"
+    },
+    {
+      "id": "langflow-official:sequential-tasks-agents",
+      "name": "Sequential Tasks Agents",
+      "category": "Agent Patterns",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Sequential Tasks Agents.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Sequential%20Tasks%20Agents.json",
+        "gitBlobSha": "bd185c9516e1878aac0fa75ea588627cf3a62a4d",
+        "sha256": "1af1998f2efd72cfdde590d649b4e6c942795acd2d0f09c89779b27c0d83e05a",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/sequential-tasks-agents.json",
+      "nodeCount": 8,
+      "edgeCount": 7,
+      "componentTypes": [
+        "Agent",
+        "ChatInput",
+        "ChatOutput",
+        "Prompt",
+        "UnifiedWebSearch"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "Agent-EQcU8",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "Agent-X1iAT",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "Agent-b7nmW",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.0"
+    },
+    {
+      "id": "langflow-official:simple-agent",
+      "name": "Simple Agent",
+      "category": "Agent Patterns",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Simple Agent.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Simple%20Agent.json",
+        "gitBlobSha": "6d6ea9ed18d8fee52f74d810fbf145bbbe0f01fe",
+        "sha256": "e5e69c90be3f193e1b2dd18a4836585dee91cc3517137fa9c43cfc94939b948a",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/simple-agent.json",
+      "nodeCount": 6,
+      "edgeCount": 4,
+      "componentTypes": [
+        "Agent",
+        "ChatInput",
+        "ChatOutput",
+        "URLComponent",
+        "UnifiedWebSearch"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "Agent-EXpSZ",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.1"
+    },
+    {
+      "id": "langflow-official:social-media-agent",
+      "name": "Social Media Agent",
+      "category": "Content Production",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Social Media Agent.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Social%20Media%20Agent.json",
+        "gitBlobSha": "dc3d189bf7c6c62f66db42a235ac54477ea26f8d",
+        "sha256": "5f84982a9ac32fa8b585dede4c74998a998de700ced3908a099dba38376b8c70",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/social-media-agent.json",
+      "nodeCount": 6,
+      "edgeCount": 4,
+      "componentTypes": [
+        "Agent",
+        "ChatInput",
+        "ChatOutput",
+        "URLComponent",
+        "UnifiedWebSearch"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "Agent-Ngl5n",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.1"
+    },
+    {
+      "id": "langflow-official:text-sentiment-analysis",
+      "name": "Text Sentiment Analysis",
+      "category": "Data Extraction and Classification",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Text Sentiment Analysis.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Text%20Sentiment%20Analysis.json",
+        "gitBlobSha": "87803641f34d64e21395e41da58a279c70387d19",
+        "sha256": "9d2f7f30622ffc7e84238bbc54eab46e9cd8d798b80d075fd17914169254c3de",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/text-sentiment-analysis.json",
+      "nodeCount": 8,
+      "edgeCount": 6,
+      "componentTypes": [
+        "Agent",
+        "ChatOutput",
+        "File",
+        "Prompt"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "File-a3YoT",
+          "field": "aws_access_key_id",
+          "required": true
+        },
+        {
+          "nodeId": "File-a3YoT",
+          "field": "aws_secret_access_key",
+          "required": true
+        },
+        {
+          "nodeId": "File-a3YoT",
+          "field": "service_account_key",
+          "required": true
+        },
+        {
+          "nodeId": "Agent-tsa-a",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "Agent-tsa-b",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "Agent-tsa-c",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.0"
+    },
+    {
+      "id": "langflow-official:travel-planning-agents",
+      "name": "Travel Planning Agents",
+      "category": "Agent Patterns",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Travel Planning Agents.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Travel%20Planning%20Agents.json",
+        "gitBlobSha": "65176cb8e484f843cd4c662201632b9243b596b5",
+        "sha256": "1149a14e2c3df29b2fef8f6641a843b1188ab8e35220548740dfc1678f7aa777",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/travel-planning-agents.json",
+      "nodeCount": 9,
+      "edgeCount": 7,
+      "componentTypes": [
+        "Agent",
+        "CalculatorComponent",
+        "ChatInput",
+        "ChatOutput",
+        "URLComponent",
+        "UnifiedWebSearch"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "Agent-kwDEl",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "Agent-v7SnN",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "Agent-1ON2c",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.1"
+    },
+    {
+      "id": "langflow-official:twitter-thread-generator",
+      "name": "Twitter Thread Generator",
+      "category": "Content Production",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Twitter Thread Generator.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Twitter%20Thread%20Generator.json",
+        "gitBlobSha": "5e9bc63c5d5125647762dfeca4f255191f0ec0b7",
+        "sha256": "aa0559d0c4f350f96cf476501a385643093a04e465436a9eca37cfff319fe181",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/twitter-thread-generator.json",
+      "nodeCount": 5,
+      "edgeCount": 3,
+      "componentTypes": [
+        "Agent",
+        "ChatInput",
+        "ChatOutput",
+        "Prompt"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "Agent-wh9WY",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.1rc3"
+    },
+    {
+      "id": "langflow-official:vector-store-rag",
+      "name": "Vector Store RAG",
+      "category": "Knowledge and Retrieval",
+      "candidatePlane": "Composite Components",
+      "classificationStatus": "unreviewed",
+      "validationStatus": "unverified",
+      "source": {
+        "repository": "https://github.com/langflow-ai/langflow",
+        "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+        "collectionMethod": "local-deep-copy",
+        "path": "src/backend/base/langflow/initial_setup/starter_projects/Vector Store RAG.json",
+        "url": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Vector%20Store%20RAG.json",
+        "gitBlobSha": "f6d7d59c79774afae296936515b58807ad5c5789",
+        "sha256": "c8373ea8baa4f892f877a560afd50a5cabfb3fa06cdaecb50fa6f14830f7e85e",
+        "license": "MIT",
+        "licensePath": "/langflow-templates/official/LICENSE"
+      },
+      "file": "/langflow-templates/official/vector-store-rag.json",
+      "nodeCount": 7,
+      "edgeCount": 6,
+      "componentTypes": [
+        "Agent",
+        "ChatInput",
+        "ChatOutput",
+        "Knowledge",
+        "Prompt",
+        "parser"
+      ],
+      "configurationFields": [
+        {
+          "nodeId": "Knowledge-vLJOb",
+          "field": "api_key",
+          "required": false
+        },
+        {
+          "nodeId": "Agent-F0Dv0",
+          "field": "api_key",
+          "required": false
+        }
+      ],
+      "lastTestedVersion": "1.10.1rc3"
+    }
+  ]
+}

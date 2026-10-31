@@ -1,0 +1,33 @@
+{
+ "schemaVersion":1,
+ "status":"proposed-research-ontology-not-native-taxonomy",
+ "finiteSchema":{
+  "entityKinds":["configuration","component","composite","flow","process"],
+  "entityRequired":["id","kind","status","purpose","members","interfaces","requirements","gates"],
+  "statuses":["proposed","observed-static","open","accepted-static","revoked"],
+  "relationKinds":["contains","wires","control","binds","evidence","realizes","depends_on"],
+  "relationRequired":["id","kind","source","target","status"],
+  "interfaceRequired":["id","direction","nativeNode","nativePort","types","status"],
+  "directions":["input","output","requirement"],
+  "requirementRequired":["id","owner","description","status","realizationLinks"],
+  "gateRequired":["id","description","status","evidence"],
+  "evidenceTiers":["authored-proposal","native-static-assembly","static-catalog","runtime-observation","authorized-human-decision"],
+  "configurationRequired":["targetNode","field","proposedValue","authorization","evidence"],
+  "flowRequired":["entry","controlTransitions","terminalStates","failurePolicy"],
+  "processRequired":["accountableRole","policy","completionCondition","exceptionPolicy"],
+  "unknownFieldPolicy":"Reject or request clarification; no silent satisfaction",
+  "extensionPolicy":"Version contract before accepting new relation predicates"
+ },
+ "invariants":[
+  "Every ID is unique within its namespace; all references resolve or are explicitly open external obligations",
+  "Native occurrence references preserve exact builder IDs",
+  "Containment is acyclic; cross-level references do not clone occurrences",
+  "All native cut edges are exported; open member requirements propagate to containers",
+  "Control, containment, wiring, binding, evidence and realization are distinct relations",
+  "A realization link is not satisfaction unless gate evidence suffices",
+  "Static assembly never satisfies runtime or human policy gates",
+  "Changes require authorization, version history and invalidation of dependent evidence"
+ ],
+ "validationStatus":"Schema vocabulary and invariants proposed; no validator executed",
+ "bounds":{"nativeTypes":["ChatInput","Agent","ChatOutput"],"maxOccurrences":20,"nativeExecutionAllowed":false}
+}

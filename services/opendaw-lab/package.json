@@ -1,0 +1,14 @@
+{
+  "name": "voice-opendaw-qualification",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5201 --strictPort",
+    "predev": "node prepare.mjs"
+  },
+  "dependencies": {
+    "@opendaw/studio-sdk": "0.0.180",
+    "signalsmith-stretch": "1.3.2",
+    "vite": "7.3.7"
+  }
+}

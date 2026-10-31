@@ -1,0 +1,973 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Swift · Template Documentation</title><style>body{margin:0;background:#111419;color:#e0e5ed;font:16px/1.6 system-ui,sans-serif}main{max-width:1080px;margin:auto;padding:40px 24px}h1{font-size:36px;margin-bottom:8px}a{color:#9fc9d5}table{border-collapse:collapse;width:100%;font-size:14px}td,th{text-align:left;padding:12px;border-bottom:1px solid #414b5b;vertical-align:top}.table{overflow:auto}details{border-bottom:1px solid #414b5b;padding:16px 0}summary{cursor:pointer;font-weight:600}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.7 system-ui,sans-serif}a:focus-visible,summary:focus-visible{outline:2px solid #8edbce;outline-offset:4px}</style><main><a href="/prototype-canvas-v3/">Back to V3</a><h1>Swift</h1><p>Template version 0.3.0 · JSON references only</p><p>Swift is a JSON template that references its resources and versioned design documents. The canvas displays that template. A separate assembly script must resolve the references into an instance, and deployment must start it. The separate assembly script resolves native Langflow components; deployment creates an independent backend flow. Chat uses Langflow’s original chat controller. The generator, library tools, Ajv and Harness² integrations remain planned.</p><div class="table"><table><thead><tr><th>Piece</th><th>Type</th><th>Job</th><th>GitHub</th><th>Status</th><th>Tools</th></tr></thead><tbody><tr><td>Instance generator</td><td>Agent</td><td>Propose Instance JSON</td><td>https://github.com/openai/codex</td><td>planned</td><td></td></tr><tr><td>Library tools</td><td>Tool interface</td><td>Find items and resolve definitions</td><td>Our integration</td><td>planned</td><td>List layers, Search items, Inspect definitions, Inspect contracts, Resolve dependencies, Find compatible items, Retrieve assembly recipes, Check available versions</td></tr><tr><td>Ajv</td><td>JSON Schema validator</td><td>Validate structure against our schemas</td><td>https://github.com/ajv-validator/ajv</td><td>planned</td><td></td></tr><tr><td>Harness²</td><td>Optimization framework</td><td>Improve the generator harness</td><td>https://github.com/google-research/harness2</td><td>planned</td><td></td></tr></tbody></table></div><p><a href="definition.json">Download the Swift JSON template</a></p><h2>Design documents</h2><details><summary>Domain Model</summary><pre>---
+schema_version: 1
+id: instance-machine/domain-model
+title: Domain Model
+type: architecture-placeholder
+status: in-progress
+created: 2026-10-25
+updated: 2026-10-25
+tags: [instance-machine, architecture]
+related:
+  - instance-machine/contracts
+  - instance-machine/canonical-specification
+---
+
+# Domain Model
+
+Establish the language and boundaries of the instance machine.
+
+## Starting point
+
+A primitive is a reusable piece treated as indivisible at the current composition level. A composite is assembled from other pieces and can itself be reused. The library&#x27;s layer names are working classifications; the boundaries still need to be defined.
+
+## Define together
+
+- [ ] Definition versus configured instance.
+- [ ] Component, primitive, composite, capability, flow, process, and instance.
+- [ ] The purpose and boundary of each higher layer we actually need.
+- [ ] Relationships: contains, requires, connects to, implements, and satisfies.
+- [ ] What makes a saved assembly reusable at its own layer.
+- [ ] Separate specification, executable artifact, execution run, and evidence.
+
+## Confirmed terms
+
+### Intent
+
+Intent is the starting expression of what an instance should accomplish and why. It sheds initial light on the request; it is not a complete specification and does not imply that the requester has supplied or recognized everything needed.
+
+### Discovery
+
+Discovery is the iterative process of exploring and clarifying intent with the requester throughout design. It investigates unstated needs, challenges assumptions, surfaces contradictions, and records requirements, decisions, constraints, and unanswered questions.
+
+Discovery and assembly develop together. Proposed assemblies can reveal further questions; answers can change requirements and assemblies. Interviewing continues as needed rather than being restricted to one initial intake. Matt Pocock-inspired interviewing and exploration skills are the intended means of guiding this process; their implementation is separate from these domain definitions.
+
+Clarification means sufficient understanding for the next design decision, with remaining unknowns explicit. It does not mean every possible question is answered before design begins.
+
+### Requirement
+
+A requirement is something the instance&#x27;s design must satisfy, even while how to satisfy it is still being explored. Requirements emerge and can be refined through discovery. Exploring possible ways to satisfy a requirement can uncover further questions.
+
+For example, “I want a ticket-triage system” expresses intent; “An urgent ticket must reach the on-call team” expresses a requirement. What counts as urgent, who is on call, and what happens if delivery fails remain questions for discovery.
+
+The requirement&#x27;s metadata fields and formal representation remain open; they have not been confirmed.
+
+### Gap
+
+
+A gap is something needed to satisfy a requirement that the current design cannot yet account for. It links what is needed to what is missing: understanding, capability, a connection, or evidence.
+
+Gaps guide development. When a gap calls for a missing capability, resolving it produces a candidate building block: describe its purpose and boundaries, design its assembly down to available components, and refine the specification until it is buildable. Building and validating that specification establishes a functional item for the instance and a reusable capability for the library. A proposed or buildable item must remain distinguishable from a built and validated item. Gaps in understanding or evidence may instead require clarification or validation rather than a new item.
+
+### Library growth through gap resolution
+
+Day zero begins a growing cycle: requirements reveal gaps; resolving capability gaps grows the library; the growing library helps resolve future gaps. Each resolved capability gap should leave behind a reusable capability so future instances require less invention and more composition.
+
+For recurring needs in a reasonably stable domain, increasing reuse should reduce the amount of new construction per intent. Instances still compose across layers; reuse reduces the need to invent missing items and abstraction layers. Unfamiliar needs can require new or revised items. Discoverability, compatibility, and appropriate scope are necessary for a larger library to remain useful.
+
+The immediate planning target is a buildable JSON specification. Functional execution and validation are subsequent stages, not implied by a completed blueprint.
+
+### Validation
+
+Validation determines whether an item or assembly satisfies its requirements and records the evidence supporting that judgment.
+
+- **Design validation:** checks whether the blueprint is coherent, including required input sources, compatible connections, available dependencies, and defined checks for requirements. Passing the applicable design checks establishes readiness to build, not proven runtime behavior.
+- **Behavior validation:** checks the built assembly&#x27;s results against its requirements under relevant conditions, including failures. Its conclusions are bounded by the checks performed and evidence obtained.
+
+Validation is recursive across the composition hierarchy. At each layer, constituent items must pass their applicable checks, connections and configuration must be valid, and the resulting assembly must satisfy its own requirements. Child results provide supporting evidence for the parent; they do not replace checking the parent&#x27;s combined behavior.
+
+Individually correct pieces can form an incorrect assembly. Every higher-layer assembly therefore needs checks against its own requirements. This principle applies to both design validation and behavior validation.
+
+A failed check exposes a gap and identifies the affected requirement and assembly for refinement. Changes affecting supporting evidence require the dependent validation judgments to be reconsidered; prior passing results are not an unconditional guarantee.
+
+### Instance
+
+An instance is an intent-specific vertical slice of the library stack. It selects, configures, and connects only the pieces needed to satisfy that intent.
+
+An instance spans the layers it needs; it does not have to include every layer. Its assemblies, configuration, connections, and state are specific to that instance. Different instances may reuse the same library items while keeping their instance-specific state isolated.
+
+### Library
+
+The library contains layers, and each layer contains items. It supplies the pieces from which intent-specific instances are composed.
+
+### Layer
+
+A layer is a level within the library that organizes items of a particular kind, such as components, composite components, flows, or processes. The boundaries and meanings of individual layers remain to be defined.
+
+### Item
+
+An item is a building block inside a library layer. Its kind comes from its layer: a component item, composite component item, flow item, process item, and so on. An instance selects and configures items across the layers needed for its intent.
+
+“Template” is not a separate domain concept at this stage; use “item” for the general term and the layer-specific kind when more precision is needed.
+
+### Layer assembly
+
+A layer assembly is an instance&#x27;s particular arrangement of pieces at a given layer.
+
+### Connection
+
+A connection describes horizontal interaction between items, including the passage of information or control. It represents how items work together, not merely a visual line. For example, Chat Input sends a message to an Agent.
+
+### Composition
+
+Composition is the vertical relationship between a higher-layer item and the assembly below that realizes it. It represents what the higher-layer item is built from. For example, a Summarizer composite is realized by an assembly of Chat Input → Agent → Chat Output.
+
+This relationship includes how the higher-layer item&#x27;s exposed inputs and outputs map to its internal items. The formal representation of these mappings remains to be defined.
+
+### Assembly
+
+An assembly is an evolving arrangement of items, their configurations, and their connections, developed to fulfill a purpose. Assembly has two directions:
+
+- **Horizontal assembly:** connect and configure items within a layer to produce a capability.
+- **Vertical assembly:** bundle that arrangement into a single item exposed at the next layer, retaining its internal structure. For example, horizontally assembled components become one composite-component item at the composite components layer.
+
+An instance&#x27;s assemblies are developed iteratively, rather than determined all at once. Design can proceed downward from intent, upward from available components, or between intermediate layers. Proposed arrangements are revised until their internal structure and higher-level purpose fit together. An assembly may contain unresolved parts before it becomes a buildable specification; its existence as a design does not imply implementation or successful execution.
+
+### Instance composition
+
+Instance composition is the selection, configuration, and connection of library pieces into an intent-specific vertical slice.
+
+### Day-zero boundary
+
+At day zero, existing components ground composition, while their required resource configuration underpins operational readiness. Missing higher-layer items remain proposed assemblies until they are developed and validated; naming an assembly does not establish that it exists or works.
+
+### Capability
+
+A capability describes what an item can accomplish, under what conditions, and within what limits. Its boundary includes required inputs and conditions, provided results, and known limitations. Different items or assemblies can provide the same capability through different implementations.
+
+A requirement states what the instance needs; a capability states what an item offers; an assembly describes how items are arranged to provide it. Boundary resolution compares requirements against available capabilities. If a requirement exceeds an item&#x27;s capability boundary, the gap may require different configuration, composition with other items, or a new item.
+
+A capability description makes a claim explicit. Validation and evidence establish how well that claim holds under specific conditions; a proposed capability must remain distinguishable from demonstrated behavior.
+
+### Boundary resolution
+
+Boundary resolution is the capability to locate where requirements above no longer have a supported realization below, and determine the next action needed to close that gap. It directs iteration toward affected parts of the instance rather than repeatedly rebuilding the whole design.
+
+For each unresolved boundary, identify:
+
+- **Where:** the affected requirement, item, assembly, and layer.
+- **Why:** ambiguity, missing capability, incompatibility, configuration needs, or insufficient evidence.
+- **Next action:** clarify, decompose, recompose, configure, or validate. Existing suitable items may resolve a boundary through reuse.
+
+Several unresolved boundaries may exist simultaneously. They must be tracked separately and prioritized for further work. Detection precision, prioritization rules, formal representation, and implementation remain to be defined. This concept does not establish a mathematical entropy measure or imply that the current application implements boundary resolution.
+
+### Dependency
+
+A dependency identifies what an item or assembly relies upon to satisfy its requirements. Composition dependencies descend through the particular lower-layer items used, not the entire lower plane. Horizontal interactions and external resources can introduce additional dependencies. Dependency tracing continues through components into their required configuration and resources.
+
+### Configuration layer
+
+The Configuration layer sits below Components in our library model and exposes the existing Langflow configuration mechanisms that components depend on. It must preserve those mechanisms and their behavior rather than create an independent configuration system. Its scope includes model providers, storage, databases, search, tools, and other resources as supported by the actual components and Langflow installation.
+
+Configuration being present is distinct from a resource being usable. Components may exist while their required configuration or resource access is unresolved. These dependencies propagate into assemblies that use them.
+
+#### Source-backed mapping — local Langflow checkout, 2026-10-25
+
+Inspection identifies multiple existing configuration surfaces rather than a single universal resource manager:
+
+- **Model providers:** the original model-provider modal and configuration hook load provider fields, save variables, validate credentials, and manage model activation. Reuse these mechanisms for supported model providers.
+- **Global variables:** the original settings page manages Generic and Credential variables, including field-application metadata. Reuse the existing variable references and access semantics.
+- **Component-specific settings:** the original parameter renderer handles individual component fields, including password fields and variable selection. Preserve settings owned by components; do not assume storage, search, or tool integrations all have a centralized provider form.
+
+The Configuration layer is our organizational view over these existing surfaces. It is not an upstream Langflow layer or a claim that every integration shares one configuration API. The exact canvas presentation, instance-to-Langflow scope mapping, and readiness checks remain to be defined. No canvas integration or credential changes have been performed as part of this inspection.
+
+Source locations in the inspected checkout:
+
+- `/Users/x/projects/langflow/src/frontend/src/modals/modelProviderModal/hooks/useProviderConfiguration.ts`
+- `/Users/x/projects/langflow/src/frontend/src/controllers/API/queries/models/use-get-model-providers.ts`
+- `/Users/x/projects/langflow/src/frontend/src/pages/SettingsPage/pages/GlobalVariablesPage/index.tsx`
+- `/Users/x/projects/langflow/src/frontend/src/components/core/parameterRenderComponent/components/inputComponent/index.tsx`
+
+### Evidence
+
+Evidence is the recorded basis for a validation judgment. It makes the reason for a passing, failing, or uncertain result inspectable. Validation makes the judgment; evidence supports it.
+
+Evidence identifies what was checked, which version was checked, the conditions, and the observed result. It can support design validation (such as port compatibility), behavior validation (such as a recorded test outcome), or an assembly&#x27;s satisfaction of its own requirements beyond the success of its constituent items.
+
+Evidence has limits: a successful test supports the tested case, not every possible case. Changes to an item or its dependencies may require related evidence to be renewed. The formal evidence record remains to be defined.
+
+### Revision
+
+A revision identifies a particular state of a library item, a layer assembly, or an instance&#x27;s design. These can evolve independently:
+
+- **Library item revision:** a particular definition of a reusable item.
+- **Layer assembly revision:** a particular arrangement and configuration within an instance&#x27;s layer.
+- **Instance revision:** a consistent snapshot identifying the exact assembly revisions used across its layers.
+
+Instances reference the library items they use while preserving their own configurations and history. Updating a shared library item does not silently update existing instance designs. The model must accommodate an open-ended number of independently evolving instances; this is a modeling requirement, not a claim of unlimited runtime capacity.
+
+### Working design and checkpoint
+
+A working design is elastic, potentially incomplete, and continuously editable. A checkpoint identifies a consistent snapshot that can be inspected, compared, validated, or built. Checkpointing does not itself establish that the design passed validation or is ready to build.
+
+Versioning tracks evolving relationships and their consequences, rather than merely numbering files. When a candidate change occurs within a layer, dependency relationships identify affected assemblies above or below that may need adjustment or renewed validation. Unaffected parts need not change merely because another part evolves. Evidence remains associated with the exact revisions and conditions checked.
+
+The composite-component layer may be especially elastic because it explores arrangements of existing components. This remains a hypothesis, not a fixed domain rule. Revision identifiers, checkpoint mechanics, and dependency-impact algorithms remain to be specified.
+
+### Contract
+
+A contract makes explicit what an item accepts, requires, and must produce at its boundary. Our machine inherits Langflow&#x27;s existing component-level structural contracts rather than recreating them: typed inputs and outputs, field definitions and configuration requirements, connection rules, and applicable execution/input validation.
+
+Above this foundation, assembly-level behavioral contracts describe what the combined item must accomplish, under what conditions and limits, and how satisfaction is checked. Structural compatibility alone does not establish semantic compatibility or satisfaction of an intended outcome. Two ports carrying the same data type can still disagree about its meaning.
+
+Source inspection in the local Langflow checkout confirms input definitions in `src/lfx/src/lfx/inputs/inputs.py`, output definitions in `src/lfx/src/lfx/template/field/base.py`, and frontend connection checks in `src/frontend/src/utils/reactflowUtils.ts` (`isValidConnection`). These existing checks must not be treated as universal behavioral guarantees; some input checks warn rather than reject.
+
+The detailed representation and enforcement of assembly-level contracts remain to be developed in [Contracts](contracts.md).
+
+### Lifecycle state
+
+An item or assembly has a lifecycle status profile rather than a single “done” status. Track these dimensions separately:
+
+- **Design readiness:** whether its specification is sufficiently complete to build.
+- **Implementation:** whether the specified item has been built.
+- **Design validation:** judgments and evidence about the blueprint&#x27;s coherence and applicable structural requirements.
+- **Behavior validation:** judgments and evidence about the built item&#x27;s satisfaction of behavioral requirements.
+- **Runtime readiness:** whether the configurations and resources required to operate are currently available and usable.
+
+An item can be fully designed but unbuilt, built but failing behavioral checks, previously validated but unavailable, or available after changes that have not been validated. Availability does not establish correctness, and prior validation does not establish current availability.
+
+Design and validation judgments apply to identified revisions and conditions. Runtime readiness is a current observation and can change without a design revision, for example when credentials expire. Relevant changes require reconsideration of affected judgments and evidence. Boundary resolution uses this profile to distinguish design work, implementation work, validation work, and restoration of readiness.
+
+Exact state names, transition rules, and the formal status representation remain open.
+
+### Decision
+
+A decision is a choice made during discovery or design, together with its rationale and affected parts of the instance. AI proposals remain distinct from confirmed decisions and unresolved questions.
+
+Decisions form a linked history, represented conceptually as a graph rather than only a chronological chain:
+
+- **Backward links:** the intent, requirements, questions, or evidence motivating the choice.
+- **Forward links:** the items, configurations, and assemblies affected by it.
+- **Revision links:** earlier decisions it revises or replaces, preserving their history.
+
+This supports auditing why something exists, who confirmed a choice, and what must be reconsidered when that choice changes. The formal decision record, confirmation mechanism, and graph representation remain to be defined.
+
+### Assumption
+
+An assumption is a claim provisionally treated as true during exploration but not yet confirmed by sufficient evidence and validation. It is distinct from a decision, which records a choice. Approval to explore an assumption does not establish its truth.
+
+Assumptions must remain explicit and linked to the requirements, decisions, items, and assemblies that rely on them. Their records need to identify the claim, how it can be checked, and what must be reconsidered if it proves wrong. Exact fields remain to be defined.
+
+Hypothetical designs may depend on assumptions during exploration. An assumption alone cannot authorize consequential behavior. Before the affected construction or operation proceeds, assumptions material to correctness, permissions, cost, or required outcomes must be resolved through evidence and applicable validation. Boundary resolution marks the affected work as blocked when those prerequisites remain unresolved; unrelated exploration may continue.
+
+Confirmation of a choice and validation of a claim are different judgments. The evidence needed to resolve a claim depends on its scope and consequences, and validation conclusions remain bounded by that evidence.
+
+### Constraint
+
+A constraint is a condition that limits which designs are acceptable: a boundary on the solution space. Requirements describe what must be satisfied; constraints restrict the ways it can be satisfied. For example, classifying tickets is a required outcome, while keeping customer data on the local machine restricts acceptable implementations.
+
+Boundary resolution must consider both requirements and constraints. A candidate that achieves an outcome but violates a constraint is not an acceptable solution. When no suitable assembly can satisfy both, expose the conflict rather than silently relaxing the constraint. Constraint representation and change procedures remain to be defined.
+
+### Conflict
+
+A conflict exists when requirements, constraints, decisions, or available capabilities cannot fit together as currently defined. A gap identifies something missing; a conflict identifies incompatible conditions. The two can coexist.
+
+The machine must identify the conflicting conditions, affected design, and what would need to change to resolve the incompatibility. It must not silently choose between them or relax an accepted condition. Resolution must be explicit and traceable through the decision history. Formal conflict records and resolution procedures remain to be defined.
+
+### Unknown
+
+An unknown is information or a decision that has not been resolved. Record it explicitly and link it to the affected requirement or assembly rather than silently filling it with an assumption.
+
+Blocking is relative to a particular action:
+
+- **Blocking unknown:** prevents the specified next action from proceeding responsibly.
+- **Nonblocking unknown:** can remain explicit while the specified action or independent work proceeds.
+
+For example, missing credentials may block execution without blocking blueprint design. An unknown is not globally blocking simply because it remains unanswered.
+
+Discovery can expose unknowns by examining triggers, required information, expected results, failure behavior, and success checks. Some omissions emerge only during design or testing. Boundary resolution determines which unknowns matter for the next action. Structural omissions can be checked, factual unknowns investigated, and requester-owned choices clarified with the requester. The system does not assume it can detect every missing detail from the initial intent.
+
+### Layer placement
+
+Layer placement is explicit and justified by the responsibility and contract assigned to an item, rather than inferred solely from its name, number of constituent pieces, or diagram complexity. The same underlying behavior may serve as a reusable capability in one context and a complete task in another.
+
+When defining a layer, describe its purpose, permitted contents, exposed and hidden boundaries, and validation responsibility. A composite packages an internal assembly behind a reusable capability; a flow uses capabilities to complete a task. These distinctions guide further definition, but exact composite, flow, and process boundaries remain open. Layer labels alone do not establish execution semantics.
+
+## Term record template
+
+- Term:
+- Meaning:
+- Includes / excludes:
+- Example / counterexample:
+- Relationships:
+- Decision status: open / proposed / confirmed
+- Source or rationale:
+
+## First questions
+
+1. What exactly distinguishes a flow from a process in our system?
+2. Which properties are common to every reusable assembly?
+3. Do layer names change execution semantics, or organize assemblies?
+
+## Implementation that follows
+
+Entity schemas, stable identifiers, relationship definitions, and terminology used by the registry and UI. These have not been specified or implemented by this placeholder.
+
+## Definition gate
+
+- [ ] We can classify one concrete example without contradictory definitions.
+- [ ] The same vocabulary can describe both primitive pieces and nested assemblies.
+
+## Working decisions
+
+- 2026-10-25 — Accepted by the user: justify layer placement through an item&#x27;s assigned responsibility and contract, rather than name, size, or diagram complexity. Reuse boundaries depend on context. Exact definitions for individual layers remain open. Source: the layer-boundary discussion and the user&#x27;s agreement.
+- 2026-10-25 — Confirmed by the user: unknowns remain explicit and linked to affected designs; blocking is relative to a particular action, allowing independent work to continue. Discovery progressively exposes uncertainty rather than presuming completeness from initial intent. Source: the missing-details discussion and explicit acceptance of action-relative blocking.
+- 2026-10-25 — Confirmed by the user: conflict is distinct from a gap and identifies incompatible conditions in the current design. Expose the clash and necessary changes; do not silently choose or relax conditions. Resolution must remain explicit and auditable. Source: the conflict discussion and explicit acceptance.
+- 2026-10-25 — Accepted by the user: constraints limit acceptable solutions; satisfying an outcome does not excuse violating a constraint. Boundary resolution must expose conflicts rather than silently relax the boundaries. Formal representation and change procedures remain open. Source: the constraint discussion and the user&#x27;s acknowledgment.
+- 2026-10-25 — Accepted by the user: assumptions can guide explicit hypothetical exploration but cannot justify consequential behavior without sufficient evidence and validation. Track the dependent design and block affected work when material assumptions remain unresolved. Approval to explore is distinct from validation of the claim. Source: the assumption discussion and the user&#x27;s endorsement.
+- 2026-10-25 — Confirmed by the user: decisions form an auditable linked history with motivating sources, affected designs, and revision/replacement relationships. Preserve attribution and distinguish AI proposals from confirmed decisions. Formal records and confirmation mechanics remain open. Source: the decision-history discussion and explicit acceptance.
+- 2026-10-25 — Confirmed by the user: lifecycle state must distinguish design readiness, implementation, design validation, behavior validation, and current runtime readiness rather than collapse them into one completion badge. Judgments apply to specific revisions and conditions; exact state names and transitions remain open. Source: the lifecycle-state discussion and explicit acceptance.
+- 2026-10-25 — Confirmed by the user: inherit Langflow&#x27;s existing structural component contracts and extend them with behavioral contracts for assemblies. Type-compatible wiring does not establish semantic correctness or satisfaction of requirements. Detailed contract structure and enforcement remain open. Source: the source-backed Langflow contract discussion and explicit acceptance.
+- 2026-10-25 — Accepted by the user: capability describes what an item offers, its required inputs and conditions, results, and limits. These define its offered boundary for comparison with requirements. Capability descriptions are claims; validation and evidence support bounded conclusions about them. Source: the capability discussion and the user&#x27;s endorsement.
+- 2026-10-25 — Confirmed by the user: “boundary resolution” names the key capability that finds the unresolved boundary between requirements above and available realizations below and directs subsequent iteration. Track the affected location, reason, and next action, including multiple simultaneous boundaries. Source: the boundary-resolution discussion and explicit endorsement of the term.
+- 2026-10-25 — Confirmed by the user: introduce Configuration below Components as a faithful organizational view of Langflow&#x27;s existing configuration capabilities. Reuse existing configuration mechanisms rather than reinventing them. Dependencies descend through selected lower-layer items and continue into resource configuration. Source-backed mapping above records the inspected implementation; canvas integration remains pending.
+- 2026-10-25 — Confirmed by the user: support independently evolving library items, per-layer assemblies, and instances through dependency-aware revisions. Distinguish elastic working designs from consistent checkpoints; trace changes to determine affected designs and validation. Instances preserve their own configurations and history while referencing shared library items. Source: the versioning discussion and explicit acceptance.
+- 2026-10-25 — Confirmed by the user: evidence is the recorded basis for a validation judgment, identifying the subject/version, conditions, and observed result. Evidence supports bounded conclusions and may need renewal after relevant changes. The formal record remains open. Source: the evidence discussion and explicit acceptance.
+- 2026-10-25 — Confirmed by the user: distinguish design validation (a coherent blueprint ready to build) from behavior validation (tested behavior after construction). Validation is recursive: constituents, connections/configuration, and each assembly&#x27;s own requirements must pass applicable checks at every relevant layer. Child successes support but do not establish parent correctness. Failures feed gaps back into refinement. Source: the validation discussion, the user&#x27;s recursive clarification, and explicit acceptance.
+- 2026-10-25 — Confirmed by the user: gaps drive a growing capability library. Resolving missing capabilities should yield reusable building blocks for instances and future requests. As recurring needs become covered, the system should require less invention and more composition; cross-layer assembly remains necessary. Proposed specifications remain distinct from functional, validated items. Source: the gap discussion and the user&#x27;s repeated explicit acceptance of the growth-and-reuse principle.
+- 2026-10-25 — Confirmed by the user: use “connection” for horizontal interaction between items and “composition” for the vertical relationship between a higher-layer item and its realizing assembly. Composition includes mappings between exposed inputs/outputs and internal items; their formal representation remains open. Source: the proposed distinction and the user&#x27;s explicit acceptance.
+- 2026-10-25 — Confirmed by the user: a requirement is something the design must satisfy, even while its implementation remains under exploration. Requirements and further questions emerge through discovery and examination of possible assemblies. Metadata fields remain open. Source: the clarified intent-versus-requirement example and the user&#x27;s acceptance.
+- 2026-10-25 — Confirmed by the user: intent is an incomplete starting expression of the request. Ongoing discovery explores unstated needs and repeatedly clarifies the request through interviewing, assumption challenges, and examination of proposed assemblies. Discovery and assembly evolve together; sufficient clarity for the next decision is required while remaining unknowns stay explicit. Source: the user&#x27;s clarification and subsequent acceptance.
+- 2026-10-25 — Confirmed by the user: assembly has horizontal and vertical directions. Items combine horizontally within a layer; that arrangement bundles vertically into one item at the next layer while retaining its internals. Instance assemblies evolve through iteration, working downward, upward, or between layers, and may remain partially unresolved during design. Source: the user&#x27;s clarification and explicit acceptance.
+- 2026-10-25 — Confirmed by the user: an instance is a purposeful vertical slice of the library stack, rather than merely its persistent workspace. Each instance has the assemblies needed for its intent. Shared library items do not imply shared instance state. The slice need not traverse every layer. Source: the user&#x27;s definition and subsequent acceptance of the clarified terms above.
+- 2026-10-25 — Confirmed by the user: library → layers → items. An item&#x27;s kind comes from its layer (component, composite component, flow, process, and so on). An instance selects and configures the items it needs across layers. This terminology replaces the earlier “template” wording; no separate template concept is established. Source: the user&#x27;s correction and explicit acceptance.
+
+## Related records
+
+- [Contracts](contracts.md)
+- [Canonical Specification](canonical-specification.md)
+- [Knowledge index](README.md)
+</pre></details><details><summary>Contracts</summary><pre>---
+schema_version: 1
+id: instance-machine/contracts
+title: Contracts
+type: architecture-placeholder
+status: to-define
+created: 2026-10-25
+updated: 2026-10-25
+tags: [instance-machine, architecture]
+related:
+  - instance-machine/domain-model
+  - instance-machine/canonical-specification
+  - instance-machine/compiler-lifecycle
+---
+
+# Contracts
+
+Define what an assembly promises and what must hold for it to work.
+
+## Define together
+
+- [ ] Input and output types, meanings, required fields, and examples.
+- [ ] Preconditions, postconditions, and invariant constraints.
+- [ ] Configuration, dependencies, permissions, and external effects.
+- [ ] State, memory, concurrency, failures, retries, and stopping conditions.
+- [ ] Version compatibility and how contracts compose across boundaries.
+- [ ] Structural checks versus behavioral tests and their evidence requirements.
+
+## Contract record template
+
+- Capability and version:
+- Inputs:
+- Outputs:
+- Preconditions:
+- Required behavior and constraints:
+- Dependencies and allowed effects:
+- Failure and stopping behavior:
+- Acceptance checks:
+- Evidence and verification scope:
+- Unresolved choices:
+
+## First questions
+
+1. What is the minimum contract every component and composite must expose?
+2. Which compatibility checks can be enforced before execution?
+3. What evidence allows us to label a particular version verified?
+
+## Implementation that follows
+
+Machine-readable contract schemas, compatibility validators, and acceptance tests. A structurally valid connection does not by itself prove correct behavior.
+
+## Definition gate
+
+- [ ] One primitive and one composite have concrete contracts.
+- [ ] We can identify both a compatible connection and an invalid one.
+- [ ] Success, failure, and unsupported requirements have explicit meanings.
+
+## Working decisions
+
+No decisions have been recorded in this placeholder yet. Add a dated entry with its status, rationale, and source when we resolve a question.
+
+## Related records
+
+- [Domain Model](domain-model.md)
+- [Canonical Specification](canonical-specification.md)
+- [Compiler Lifecycle](compiler-lifecycle.md)
+- [Knowledge index](README.md)
+</pre></details><details><summary>Canonical Specification</summary><pre>---
+schema_version: 1
+id: instance-machine/canonical-specification
+title: Canonical Specification
+type: architecture-specification
+status: draft
+created: 2026-10-25
+updated: 2026-10-26
+tags: [instance-machine, architecture, specification]
+related:
+  - instance-machine/domain-model
+  - instance-machine/contracts
+  - instance-machine/compiler-lifecycle
+---
+
+# Canonical Specification
+
+The machine uses two related JSON records: **Library JSON** defines reusable pieces; **Instance JSON** describes the purposeful selection and assembly of those pieces for an intent. The canvas and agents edit these records through the same revision and validation procedure.
+
+**Status:** the two-record direction is accepted in conversation. The field names, examples, editing procedure, and rules below are a concrete design proposal, ready for joint review. They do not implement a registry, compiler, storage API, or canvas synchronization. Contract details remain owned by [Contracts](contracts.md); execution procedures remain owned by [Compiler Lifecycle](compiler-lifecycle.md).
+
+## 1. What is authoritative
+
+| Record | Owns | Does not establish |
+| --- | --- | --- |
+| Library JSON | Layer definitions and exact revisions of reusable items, capability boundaries, contracts, dependency references, and internal assembly definitions | That every catalog entry is implemented, available, or behaviorally validated |
+| Instance JSON | Intent, requirements, selected item revisions, instance-specific configuration and assemblies, unresolved boundaries, decisions, and evidence references | That a structurally valid design can execute or satisfies its intent |
+| Supporting artifacts | Pinned native definitions, executable exports, test records, and evidence addressed by references | A competing editable copy of the design |
+| Canvas/document projections | Layout and readable views of the records | Independent authority over capabilities or relationships |
+
+JSON is the serialization format. A schema checks shape; semantic validators check relationships; behavioral checks supply evidence. None substitutes for the others.
+
+A conversation produces proposed edits. Accepted changes produce a new revision of the owning record. Generated prose must distinguish accepted facts, proposals, assumptions, and unknowns rather than flatten them into one narrative.
+
+## 2. Library JSON
+
+The library is a catalog organized as **library → layers → items**. The logical record may later be stored across indexed files or a database; it does not require loading the whole library for every request.
+
+### Proposed envelope
+
+| Field | Meaning |
+| --- | --- |
+| `schemaVersion` | Version of the JSON format, separate from content revisions |
+| `kind` | `library` |
+| `id`, `revision` | Stable library identity and exact catalog checkpoint |
+| `layers` | Stable layer IDs, labels, and ordering; ordering alone supplies no execution semantics |
+| `items` | Versioned item definitions, each assigned to a layer |
+
+### Proposed item definition
+
+- `id`, `revision`, `name`, `layerId`: identity and placement. References use identity and revision, never the display name alone.
+- `capability`: what the item offers and its explicit limits.
+- `contract`: exposed inputs and outputs, configuration obligations, and behavioral obligations. Draft port descriptions must not be mistaken for complete native type definitions.
+- `definition`: either a pinned native-definition reference or an internal assembly with child references, connections, and boundary mappings.
+- `dependencies`: the exact item revisions and resource bindings required by the definition. The contained child references and resource bindings must agree with this dependency inventory.
+- `lifecycle`: separate design readiness, implementation, design validation, and behavior validation. Current runtime readiness is a scoped observation, not a permanent reusable property.
+- `provenance`: origin and applicable licensing/attribution references for imported pieces. Public availability does not itself establish reuse permission.
+
+A reusable assembly is a definition, not a running instance. It contains no instance&#x27;s chat history, private data, or active execution state. Native artifacts and nested assemblies must resolve transitively; an empty or fabricated artifact reference cannot establish build readiness.
+
+### Configuration below Components
+
+Include Configuration as the organizational layer defined in the Domain Model. Reference existing Langflow provider, variable, and component-setting mechanisms. Do not introduce a parallel credential store. Library definitions declare resource needs; an instance binds them to permitted existing configuration references.
+
+Credentials themselves stay in Langflow&#x27;s configured credential storage. JSON carries references, never secret values. Nonsecret instance configuration is distinct from a credential reference.
+
+## 3. Instance JSON
+
+An instance is an intent-specific slice, not a copy of the catalog. It uses only the layers needed for its intent. It can contain proposed local items when the library lacks a suitable piece.
+
+### Proposed envelope and records
+
+| Field | Meaning |
+| --- | --- |
+| `schemaVersion`, `kind` | Format version and `instance` |
+| `id`, `revision`, `name` | Stable instance identity and exact design checkpoint |
+| `libraryRef` | Library identity and pinned catalog revision used to resolve selections |
+| `intent` | Requester&#x27;s starting description and its provenance; completeness is not assumed |
+| `requirements`, `constraints` | Stable records describing required outcomes and permitted solution boundaries |
+| `decisions`, `assumptions`, `unknowns`, `conflicts` | Separate discovery records linked to the affected design |
+| `localItems` | Proposed instance-owned definitions that are not yet reusable library items |
+| `assemblies` | Versioned arrangements at the layers actually used |
+| `gaps` | Missing understanding, capability, configuration, connections, or evidence and the affected action |
+| `evidenceRefs` | References identifying checked subjects/revisions, observed conditions, and result records |
+| `provenance` | Record origin and the change/decision history references |
+
+### Selections and connections
+
+Each assembly owns placements with stable placement IDs. Each placement selects **either** a pinned library item reference **or** a pinned local-item reference, then adds instance-specific configuration and resource bindings. Two placements of the same definition have different placement identities and isolated state unless sharing is explicitly defined.
+
+A connection names source placement/output and destination placement/input. It describes horizontal interaction. Native connection types and handle definitions must resolve through the Langflow adapter; the machine must not invent a simplified replacement for their actual compatibility rules.
+
+### Decomposition and composition are different relationships
+
+- Requirements may link to more detailed child requirements. This records why lower-level behavior is needed.
+- Assemblies may claim to address identified requirements. A claim is not evidence of satisfaction.
+- A proposed or reusable higher-layer item names the lower assembly that realizes it. Its boundary mappings connect each exposed port to identified internal ports.
+- Layer membership alone does not supply any of these links.
+
+The requirement and composition graphs can evolve independently while retaining traceability. Design can move top down, bottom up, or through an intermediate layer. A lower assembly may be designed before its higher package is settled. Unresolved mappings stay explicit gaps.
+
+Do not force a chain through every layer. When an assembly is packaged, placement at the next applicable layer follows the accepted horizontal/vertical distinction and an explicit responsibility boundary, rather than a node-count heuristic. Exact layer-boundary rules remain to be completed in the Domain Model.
+
+## 4. Concrete day-zero examples
+
+- [Library JSON example](examples/day-zero.library.json)
+- [Instance JSON example](examples/day-zero.instance.json)
+
+These are **illustrative design fixtures**, not exports of the current Langflow catalog or the browser-local Custom library. The library starts with three component descriptions; the instance proposes a local summarizer and leaves its actual native definitions and resource bindings unresolved. It demonstrates that a complete record can truthfully describe an incomplete design.
+
+Read the instance from its requirement down to its component assembly, then back through the proposed composite&#x27;s exposed boundary. The instance does not need an Enterprise or Process record to describe this capability. No successful execution or validation is asserted.
+
+## 5. Schema and validation responsibilities
+
+The first formal schemas should describe these envelopes and common records without pretending to finalize behavioral contract semantics.
+
+### Structural schema rules
+
+- Require stable identities, explicit revisions, known record kinds, and the relevant record collections.
+- Require exactly one of `itemRef` and `localItemRef` on a placement.
+- Require source and destination endpoints on connections and both external/internal endpoints on mappings.
+- Separate authoring/discovery status from implementation and validation judgments.
+- Allow explicitly incomplete designs to be saved. Do not require credentials or a full executable graph merely to record an unresolved intent.
+- Version the schema and make unsupported formats fail explicitly; do not silently drop unknown data during migration.
+
+### Semantic validation rules
+
+These need software beyond JSON Schema:
+
+1. IDs are unique within their stated scope; every reference resolves at its pinned revision.
+2. Layer references exist. Every endpoint names an actual placement and port in the appropriate assembly.
+3. A composite&#x27;s boundary mappings refer to exposed ports and internal ports with compatible native contracts.
+4. Composition dependencies are acyclic. A deliberate control-flow loop is different and requires explicit stopping/failure rules; it must not be rejected merely because it is a graph cycle.
+5. Requirement refinement has no self-justifying cycles. Every build-target requirement has a realization or an explicit unresolved boundary.
+6. Native definitions and transitive dependencies are available and pinned before a design is called buildable.
+7. Configuration bindings preserve Langflow&#x27;s scopes and access semantics. Secret values cannot be serialized into these records.
+8. Evidence names the exact subject revision and relevant dependency/configuration conditions. A changed subject cannot inherit a passing judgment without reconsideration.
+9. Claimed design readiness agrees with unresolved gaps for that action. An execution-only configuration gap need not block unrelated design work.
+10. A candidate must satisfy constraints as well as requirements; a conflict is exposed rather than silently relaxed.
+
+Schemas can reject malformed data. They cannot prove that a claim is true, detect every secret, or judge every behavioral promise. Domain policy, storage boundaries, and tests remain necessary.
+
+## 6. Editing, checkpoints, and conflict handling
+
+Proposed editing procedure:
+
+1. Load the instance and the exact dependency closure from its library checkpoint.
+2. A conversation, agent, document editor, or canvas produces a proposed patch against a known base revision.
+3. Validate structure and references; identify affected requirements, assemblies, dependencies, and evidence. Preserve unresolved gaps rather than substituting invented pieces.
+4. Apply within the user&#x27;s authorized scope. Requester-owned choices requiring clarification remain proposals; routine authorized edits need no blanket confirmation gate.
+5. Persist a new consistent checkpoint with its change provenance. Derived views refresh from that checkpoint.
+6. If the base revision is stale, reject or explicitly reconcile the patch. Do not silently overwrite another editor&#x27;s work.
+
+Layout can be saved as a separate view record keyed to stable placement IDs. Moving a node changes presentation, not its capability or behavioral evidence. Rewiring ports or changing configuration changes the design and may invalidate affected judgments.
+
+A checkpoint pins the exact per-assembly and item revisions used. It can remain incomplete. Successful persistence is not a passed design check.
+
+## 7. Versioning and safe reuse
+
+There are separate revisions for the library checkpoint, individual library items, instance-local items, layer assemblies, and the whole instance. A new catalog checkpoint does not mean all item revisions changed.
+
+Existing instances retain their exact selections. To adopt a newer item revision, propose an upgrade, inspect contract/dependency differences, update affected assemblies, and renew applicable validation. Do not resolve a saved `itemRef` to “latest.”
+
+Retain referenced historical definitions or expose broken resolution explicitly. Reopening an old instance must not silently substitute a newer implementation. Format migrations preserve the original record and record the migration; content upgrades are a separate operation.
+
+Runtime runs reference the design checkpoint but store execution state separately. Current availability can change without a design revision. Reusable definitions never automatically carry prior run memory into a different instance.
+
+## 8. From a gap to a reusable item
+
+1. Record the requirement and the unsupported boundary.
+2. Create or refine an instance-local candidate definition, its proposed contract, and realizing assembly.
+3. Resolve downward to actual components and required resource references. Reuse existing items where suitable.
+4. Validate the design. This establishes build readiness only within the checks performed.
+5. Build and behaviorally validate the capability; retain evidence and limitations.
+6. Publish a reusable item revision with pinned dependencies, boundary mappings, provenance, and bounded validation references.
+7. Explicitly replace the instance-local reference with the published item revision in a new instance checkpoint.
+
+Proposed items can be cataloged as drafts if clearly marked, but publishing their names does not make them operational. Promotion must remove instance-specific data, run identifiers, and secret values. It must retain the contract and exact dependency definition needed for independent reuse.
+
+## 9. Canvas and Langflow integration boundary
+
+Current source inspection shows that V2 saves Custom items as browser-local JSON containing graph snapshots. The native adapter reads and executes a dedicated Langflow flow. Higher-plane placements reference local Custom entries, but this is not yet the canonical cross-layer instance format or an executable nested-composite registry.
+
+The proposed canonical records sit above native Langflow artifacts:
+
+- Import stores or references a pinned native definition/export and records its origin and limits.
+- The adapter translates canonical placements and assembly mappings into native Langflow graphs while preserving native component implementation and fields.
+- The canvas sends semantic edits through the same revision/validation path as an agent.
+- Building emits an executable artifact pinned to a design checkpoint; execution produces separate run and evidence records.
+- Existing browser-local saves need an explicit, nondestructive migration. Their `design-saved` status must not become a verified badge during import.
+
+None of these future interfaces is implemented by this document. Source checked: `frontend/prototype-canvas/v2-canvas.jsx` and `frontend/prototype-canvas/langflow-adapter/README.md`.
+
+## 10. Open choices for joint definition
+
+- Complete contract fields and how inherited native contracts are pinned and exposed.
+- Exact readiness states, action gates, and recursive validation rules.
+- Registry/storage implementation, revision-ID strategy, access scopes, and evidence retention.
+- Instance-to-instance composition: the proposed fifth business instance can reference independently scoped instances, but its interface, revision, and isolation rules are not yet specified. It is not automatically another library layer.
+- Executable expansion of nested composites and explicit control-flow loops.
+
+These do not block describing the proposed record structure. They do block claiming a production-ready compiler or complete executable schema.
+
+## Definition gate
+
+- [x] Library definitions and instance-specific design have separate ownership.
+- [x] Examples show pinned selection, local candidates, horizontal connections, vertical mappings, and explicit gaps.
+- [x] Revision, editing, migration, and evidence responsibilities are described as proposals.
+- [ ] Jointly review the field names and relationship representation.
+- [ ] Formalize JSON Schemas and semantic validator behavior after the relevant contract decisions.
+- [ ] Demonstrate save/reopen, concurrent editing, and recursive build through the actual canvas and storage.
+
+## Working decisions
+
+- 2026-10-26 — Accepted direction: Library JSON organizes reusable items by layer; Instance JSON selects, configures, and connects exact items for an intent. Canvas and agents should use the same authoritative design rather than independent copies. Source: the user&#x27;s library-versus-instance clarification and authorization to develop this specification.
+- 2026-10-26 — Proposed design: pinned revision references, explicit instance-local candidates, action-relative gaps, independent lifecycle dimensions, and a shared patch/checkpoint procedure as described above. These elaborate accepted domain principles; exact fields and enforcement await joint review.
+
+## Related records
+
+- [Domain Model](domain-model.md)
+- [Contracts](contracts.md)
+- [Compiler Lifecycle](compiler-lifecycle.md)
+- [Knowledge index](README.md)
+</pre></details><details><summary>Compiler Lifecycle</summary><pre>---
+schema_version: 1
+id: instance-machine/compiler-lifecycle
+title: Compiler Lifecycle
+type: architecture-placeholder
+status: to-define
+created: 2026-10-25
+updated: 2026-10-25
+tags: [instance-machine, architecture]
+related:
+  - instance-machine/domain-model
+  - instance-machine/contracts
+  - instance-machine/canonical-specification
+  - instance-machine/proof-milestone
+---
+
+# Compiler Lifecycle
+
+Define the executable procedure that decomposes requirements downward and assembles verified capabilities upward.
+
+## Starting point
+
+The saved sequence and compiler algorithm describe the intended direction. This document will turn that direction into explicit states, transitions, interfaces, and recovery behavior. It is not an implemented controller.
+
+## Define together
+
+- [ ] Entry conditions and required records for each stage.
+- [ ] Translation of conversation into a proposed structured specification.
+- [ ] Approval and revision rules for proposed changes.
+- [ ] Library resolution and recursive decomposition into child contracts.
+- [ ] Missing capability handling and bounded implementation work.
+- [ ] Upward assembly, structural validation, execution, and evaluation.
+- [ ] Packaging, registration, versioning, and reuse of successful assemblies.
+- [ ] Budgets, pauses, cancellations, failures, repairs, and restart behavior.
+- [ ] Runtime events that make actual progress visible in the UI.
+
+## Transition template
+
+- From state:
+- Trigger and required inputs:
+- Operation and responsible subsystem:
+- Preconditions and checks:
+- Produced records and events:
+- Success state:
+- Failure / blocked / cancelled state:
+- Retry budget and resume behavior:
+
+## First questions
+
+1. Which decisions belong to the model, and which are deterministic software checks?
+2. What must be true before an assembly may execute or enter the reusable library?
+3. How do we resume safely without repeating completed external effects?
+
+## Implementation that follows
+
+An executable controller, planner/tool interfaces, registry integration, a Langflow adapter, evaluator, and event log. Pi as proposer and Langflow as executor are proposed roles to refine here.
+
+## Definition gate
+
+- [ ] A concrete instance can be walked through every transition.
+- [ ] Every transition has observable inputs, outputs, and failure behavior.
+- [ ] Missing capabilities and exhausted budgets cannot silently become success.
+
+## Working decisions
+
+No decisions have been recorded in this placeholder yet. Add a dated entry with its status, rationale, and source when we resolve a question.
+
+## Related records
+
+- [Domain Model](domain-model.md)
+- [Contracts](contracts.md)
+- [Canonical Specification](canonical-specification.md)
+- [Proof Milestone](proof-milestone.md)
+- [Knowledge index](README.md)
+</pre></details><details><summary>Proof Milestone</summary><pre>---
+schema_version: 1
+id: instance-machine/proof-milestone
+title: Proof Milestone
+type: architecture-placeholder
+status: to-define
+created: 2026-10-25
+updated: 2026-10-25
+tags: [instance-machine, architecture]
+related:
+  - instance-machine/domain-model
+  - instance-machine/contracts
+  - instance-machine/canonical-specification
+  - instance-machine/compiler-lifecycle
+---
+
+# Proof Milestone
+
+Specify the end-to-end demonstration that will establish the first useful implementation.
+
+## Choose together
+
+- [ ] One bounded use case and its intended highest composition layer.
+- [ ] Supplied input data and expected observable outcomes.
+- [ ] Available primitives and permitted external effects.
+- [ ] At least one composite that must be reused in a second assembly.
+- [ ] Runtime, quality, cost, and manual-intervention acceptance limits.
+
+The existing support-ticket triage example is a candidate, not a selected proof case. Prior demonstrations establish bounded flow execution; they do not establish the complete instance compiler.
+
+## Acceptance scenario template
+
+- Given:
+- User intent:
+- Expected structured specification:
+- Expected decomposition and reusable boundaries:
+- Expected executable behavior:
+- Expected failure or gap behavior:
+- Saved artifacts and version references:
+- Reopen and reuse procedure:
+- Evidence required:
+
+## End-to-end acceptance checklist
+
+- [ ] Capture intent and produce a validated structured specification.
+- [ ] Decompose requirements to available components or report explicit gaps.
+- [ ] Assemble and test a composite, then use it in a working flow.
+- [ ] Trace results back to the original acceptance criteria.
+- [ ] Save the specification, assembly, versions, and evidence.
+- [ ] Reopen the instance with equivalent configuration and behavior.
+- [ ] Reuse the saved composite in a second assembly.
+- [ ] Demonstrate rejection of an incompatible connection and an unsupported requirement.
+- [ ] Expose a real execution failure without marking it passed.
+
+## Implementation that follows
+
+A repeatable end-to-end test suite, fixtures, and an evidence report. Pass/fail outcomes stay empty until the relevant checks actually run.
+
+## First questions
+
+1. Which single use case best tests the whole mechanism?
+2. What makes the second use case a meaningful reuse test?
+3. What exact evidence would convince us this milestone is achieved?
+
+## Working decisions
+
+No decisions have been recorded in this placeholder yet. Add a dated entry with its status, rationale, and source when we resolve a question.
+
+## Related records
+
+- [Domain Model](domain-model.md)
+- [Contracts](contracts.md)
+- [Canonical Specification](canonical-specification.md)
+- [Compiler Lifecycle](compiler-lifecycle.md)
+- [Knowledge index](README.md)
+</pre></details><details><summary>Strategy</summary><pre>---
+schema_version: 1
+id: instance-machine/strategy
+title: Instance Machine Strategy
+status: proposed
+created: 2026-10-27
+updated: 2026-10-27
+type: strategy
+tags: [instance-machine, strategy, json, composition]
+related:
+  - instance-machine/domain-model
+  - instance-machine/canonical-specification
+  - instance-machine/contracts
+  - instance-machine/compiler-lifecycle
+  - instance-machine/proof-milestone
+---
+
+# Instance Machine Strategy
+
+## The destination
+
+You describe an outcome. Through conversation, the machine develops an instance: an inspectable, versioned design that explains what is required, how available pieces fit together, what is missing, and what could be built next.
+
+Its first useful output is a grounded, buildable JSON blueprint. Execution is a later capability with its own checks. An incomplete design can still be useful if its unresolved parts are explicit.
+
+The machine must help discover the design. It must not require you to know every requirement, choose every component, or supply a complete architecture before it can help.
+
+**This is a proposed strategy for discussion, not a claim that these capabilities already work.** It follows accepted domain principles but proposes the order of delivery and the example below. It changes no running application or saved instance.
+
+## The central mechanism
+
+**Clarify intent → describe requirements → compare with the library → locate a boundary → refine the affected design → check again.**
+
+At an unsupported boundary, the next action might be to ask one important question, select an existing item, decompose a requirement, combine lower items, configure a resource, or define a check. The machine revisits affected parts until the targeted design is coherent or the remaining blocker is explicit.
+
+This is an iterative loop, not a one-shot prompt. It can work from the top, bottom, or an intermediate layer. It uses only the layers needed for the intent.
+
+```mermaid
+flowchart TD
+    Intent[Intent and ongoing conversation] --&gt; Requirements[Requirements and explicit unknowns]
+    Requirements --&gt; Boundary[Boundary resolution]
+    Library[Versioned library and actual component definitions] --&gt; Boundary
+    Boundary --&gt; Next{What is missing?}
+    Next --&gt; Clarify[Clarify an important unknown]
+    Next --&gt; Reuse[Select or configure an existing item]
+    Next --&gt; Design[Decompose or compose a proposed assembly]
+    Next --&gt; Check[Check a claim or connection]
+    Clarify --&gt; Requirements
+    Reuse --&gt; Instance[Revised Instance JSON]
+    Design --&gt; Instance
+    Check --&gt; Instance
+    Instance --&gt; Boundary
+    Instance --&gt; View[Visual inspection across layers]
+    Instance --&gt; Blueprint[Blueprint with resolved build prerequisites]
+    Blueprint --&gt; Later[Later: build and behaviorally validate]
+    Later --&gt; Growth[Publish suitable validated items for reuse]
+    Growth --&gt; Library
+```
+
+## What each part contributes
+
+| Part | Responsibility |
+| --- | --- |
+| Library JSON | Describes what can be selected, its boundaries, versions, dependencies, and implementation status |
+| Instance JSON | Records the intent-specific design, selections, assemblies, decisions, and unresolved boundaries |
+| Conversation and discovery skills | Help clarify intent and propose meaningful changes without silently treating guesses as facts |
+| Deterministic checks | Resolve references and versions, check structural rules, and identify specifically checkable gaps |
+| Boundary resolution | Chooses the affected location and the next justified action; early versions can use an explicit policy rather than a learned optimizer |
+| Canvas | Makes the same design understandable and editable at different layers |
+| Langflow integration | Supplies native components, configuration mechanisms, and later executable graph construction |
+
+AI proposes meanings and candidate assemblies. Deterministic rules enforce defined structural relationships. Behavioral testing supplies evidence. No one of these can substitute for the others.
+
+The desired long-term loop can learn from reusable successes. DreamCoder integration, automatic abstraction learning, and Harness² tuning are separate research options, not prerequisites for establishing this first loop.
+
+## Where we actually are
+
+Source inspection and recorded project checks establish the following starting point; this strategy does not rerun live services:
+
+- The prototype has layer navigation and a native Langflow component adapter.
+- Named Custom assemblies are saved as browser-local graph snapshots. That is useful storage, but not yet a canonical instance registry.
+- The project contains bounded execution demonstrations and a custom search provider that returns source links and snippets. Search snippets are not full-paper research.
+- The Library JSON and Instance JSON examples are illustrative design fixtures. They are not snapshots of the actual installed component catalog.
+- Higher-layer names do not by themselves provide executable capabilities. General nested-composite execution is still missing.
+- A complete discovery → boundary resolution → canonical design → build/reuse mechanism has not been implemented.
+
+Source references: [native adapter notes](../../frontend/prototype-canvas/langflow-adapter/README.md), [search provider notes](../../frontend/prototype-canvas/components/README.md), [canonical specification](canonical-specification.md).
+
+## Delivery sequence: prove a useful capability at each step
+
+### 1. Establish a truthful JSON foundation
+
+**Purpose:** make the design refer to actual pieces rather than invented catalog entries.
+
+Resolve a bounded selection of real Langflow definitions, their native contracts and configuration needs. Represent them as pinned library items. Describe one intent-specific assembly using those items. Define only the common fields and contract rules needed for this case, keeping wider questions explicit.
+
+**Proof:** an actual component reference resolves; a nonexistent reference fails; a missing resource binding is shown as a configuration gap; incomplete drafts can be saved and reopened without being labeled buildable.
+
+**Deliverables:** first formal schemas, pinned definition artifacts, semantic checks, and a real instance record. Loading an illustrative file alone does not pass this milestone.
+
+### 2. Make the iterative design loop work
+
+**Purpose:** convert a changing conversation into a progressively more grounded design.
+
+Given the intent and the available library, propose requirements, selections, local candidates, and connections. Apply changes through a shared revision procedure. Record why a boundary is unresolved and what action could close it. Start with a bounded decision policy and explicit budgets; stop with a useful unresolved boundary if progress requires information or an unsupported capability.
+
+**Proof:** introduce one missing capability and one meaningful change in the request. The machine identifies the affected part, proposes a justified revision, and retains unaffected work. It must not invent a library item, claim evidence it lacks, or loop indefinitely.
+
+**Deliverables:** discovery-to-patch interface, boundary records, traceable design revisions, and deterministic change checks. This milestone may produce a buildable blueprint without executing it.
+
+### 3. Make that design visually understandable and editable
+
+**Purpose:** let you inspect and shape the machine without reading the full JSON.
+
+Project the canonical records into the library and instance planes. Show proposed versus available pieces, horizontal connections, vertical boundary mappings, and unresolved gaps. Opening a higher item reveals the lower assembly realizing it. Canvas edits and agent edits use the same revision path.
+
+**Proof:** JSON → visual inspection → semantic edit → revised JSON → reopen preserves the design. An invalid connection identifies its reason. A concurrent stale edit cannot silently overwrite another revision. Layout changes remain distinguishable from semantic changes.
+
+**Deliverables:** a synchronized visual design surface, not a second source of truth. Visual exploration can happen alongside step two once the necessary records exist; it need not wait for a general compiler.
+
+### 4. Build, validate, and reuse one capability
+
+**Purpose:** demonstrate that a valid design can become useful behavior.
+
+Translate the resolved assembly into a native Langflow artifact, execute within its configured limits, and attach results and bounded evidence to the exact instance checkpoint. Validate the composite boundary as well as its internal pieces. Package a suitable result as a versioned library item.
+
+**Proof:** the saved item is selected by another assembly or instance, preserving its definition while isolating run state. A real tool failure remains visible as failure. Reopening preserves configuration references and evidence links without carrying unrelated execution history.
+
+**Deliverables:** the first working recursive composition and reuse path. This is where saved higher-plane blocks acquire execution semantics rather than remaining labels.
+
+### 5. Compose independently scoped instances
+
+**Purpose:** support your proposed four specialized instances and a fifth coordinating business instance.
+
+Define the interfaces between instances, version pinning, permitted sharing, independent state, and failure propagation. Reuse the same principles of contracts and validation; do not assume a higher business layer automatically supplies them.
+
+**Proof:** one specialized instance can change through an explicit revision without silently changing its consumers; a failure identifies which dependent behavior is affected. The coordinating instance has its own acceptance checks.
+
+**Deliverables:** a tested instance-composition mechanism. Broader business coverage grows through demonstrated capabilities rather than filling every plane with names.
+
+## One example to react to: Online Research Desk
+
+This is a proposed design example, not a selected commercial strategy or a claim of customer demand or profitability. It fits the preference for digital delivery and written communication.
+
+**Starting intent:** “I want an online service that turns public information into useful research briefs and keeps them up to date, without meetings.”
+
+Your idea of four instances and a fifth coordinator could appear like this:
+
+| Instance | Its independent job | Its output |
+| --- | --- | --- |
+| Research | Investigate a scoped question and record evidence limits | Findings and source references |
+| Product preparation | Turn suitable findings into a consistently structured deliverable | A report or data product candidate |
+| Digital delivery | Manage permitted access and delivery of an approved product | Delivery/access result |
+| Monitoring | Detect meaningful changes in the chosen sources | A change event and a proposed research request |
+| Coordinating business instance | Connect these jobs for one offering and track whether the required outcomes are achieved | A coherent design and later operational results |
+
+These boundaries are proposals. They can change when the example reveals better responsibilities. They are not new mandatory library layers or four kinds of business everyone needs.
+
+### Walk through one piece before building all five
+
+1. You describe the research outcome: “Give me a sourced brief answering this question.”
+2. Discovery clarifies the question and any consequential choice; other unknowns remain recorded.
+3. The machine compares the requirement with available items. Small Search and Synthesize is a candidate capability, subject to exporting and pinning its actual saved definition. Its declared boundary is source snippets and synthesis.
+4. If the requirement only needs snippet-based findings, the candidate might fit. If it requires reading full documents, the machine exposes a precise capability gap. It does not rename the candidate “deep research” to hide the missing behavior.
+5. The instance records a proposed retrieval/reading assembly below the relevant higher capability. Existing components are considered; missing definitions, extraction support, configuration, and checks remain explicit.
+6. The loop refines that part until its blueprint is grounded or a blocker is clearly stated. It does not fill unused Enterprise, Program, or other planes just to complete a tower.
+7. Later construction and validation can establish a reusable source-reading capability. Future research instances can select that validated revision rather than rediscovering it.
+
+**What you would see:** the requested capability above, the available snippet-search item below, and a visible unresolved boundary between them. As that boundary is resolved, the proposed assembly becomes connected and its readiness changes for specific reasons.
+
+The first strategic test is whether the machine can represent and resolve that boundary truthfully—not whether it can draw a large graph or operate a complete business immediately.
+
+## How this uses the existing documents
+
+| Document | Its job in this strategy |
+| --- | --- |
+| [Domain Model](domain-model.md) | Keep meanings and responsibility boundaries consistent |
+| [Contracts](contracts.md) | Define the promises and checks needed for the first real pieces |
+| [Canonical Specification](canonical-specification.md) | Make library/instance records and revisions concrete |
+| [Compiler Lifecycle](compiler-lifecycle.md) | Specify the bounded iterative design procedure and later build procedure |
+| [Proof Milestone](proof-milestone.md) | Turn the chosen demonstration into observable acceptance checks |
+
+This strategy links those documents; it does not replace them or silently finalize their open decisions.
+
+## The immediate next work unit
+
+Map one **requested capability → available capability → explicit gap → proposed assembly → checks** in JSON, grounded in actual native definitions. Use the research example above as a proposal to examine together.
+
+Start by defining the contract boundary and representing the gap. Then implement the smallest record/validation mechanism that supports it. Use a visual view to expose the same relationships. Keep execution and the five-instance business example as later proofs with their own scope.
+
+## How we develop this together
+
+You do not need to invent technical milestones. I propose a concrete shape and show its consequences; you can identify what feels right, wrong, or missing. I translate those reactions into explicit decisions and revise the owning records.
+
+We should avoid two opposite failures: endless documents without a working mechanism, and polished diagrams that imply capabilities we have not built. Each milestone therefore has a concrete proof and leaves unresolved parts visible.
+</pre></details></main></html>

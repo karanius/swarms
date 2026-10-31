@@ -1,0 +1,16 @@
+{
+  "repository": "https://github.com/Blaizzy/mlx-audio",
+  "commit": "0018b2e470224a166cfe5e6a41e79b1d8be9c5e7",
+  "updated_files": [
+    "dia.py",
+    "layers.py"
+  ],
+  "other_files": "Copied from installed mlx-audio 0.5.0 for compatible relative imports",
+  "sha256": {
+    "config.py": "da6cb500668cf5e7076b378c923d2279c3b7d1497dd3374d1a9343011b1e601f",
+    "dia.py": "ac8c8e4a163dee26fdb6ffb4c9582809829441ad537f43e5d49d1c0d33ef129a",
+    "__init__.py": "0f4c31b515e1efe2566e83babdd9e98e0f6f06d489c7790ce0838a10283a7c9b",
+    "audio.py": "4730ba27355ce87d439093258f37562ee8f056a08eb361afcd07e910bcd2b2eb",
+    "layers.py": "846d772ab70bee85d6a488c679306fc5f75c4ed1e6eda4459732f00a7c7fb081"
+  }
+}

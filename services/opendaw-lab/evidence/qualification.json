@@ -1,0 +1,54 @@
+{
+  "metrics": {
+    "deltaRms": 0.03088894183414372,
+    "bypassRms": 0.08787860589183136,
+    "effectPeak": 0.42224007844924927,
+    "maxRepeatDifference": 0,
+    "frames": 115200
+  },
+  "evidence": {
+    "sdk": "0.0.180",
+    "engine": "openDAW WASM",
+    "device": "RevampDeviceBox",
+    "changes": [
+      {
+        "frequency": 1200,
+        "gain": -12,
+        "q": 1,
+        "bypass": false,
+        "playing": true
+      },
+      {
+        "frequency": 1200,
+        "gain": -12,
+        "q": 1,
+        "bypass": true,
+        "playing": false
+      },
+      {
+        "frequency": 1200,
+        "gain": -12,
+        "q": 1,
+        "bypass": false,
+        "playing": false
+      }
+    ],
+    "inputHash": "cfcc7675b349b9ba3d91c2967f52862cd86e14d30acbec6ff3f0c96b634ae7b8",
+    "duration": 2.4,
+    "inputFrames": 115200,
+    "crossOriginIsolated": true,
+    "lastSpectrumPeak": 0,
+    "export": {
+      "frames": 115200,
+      "sampleRate": 48000,
+      "channels": 2,
+      "settings": {
+        "frequency": 1200,
+        "gain": -12,
+        "q": 1,
+        "bypass": false,
+        "playing": true
+      }
+    }
+  }
+}

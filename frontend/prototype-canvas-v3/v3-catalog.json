@@ -1,0 +1,1202 @@
+[
+  {
+    "name": "Agentics",
+    "items": [
+      {
+        "id": "AgenerateComponent",
+        "name": "aGenerate",
+        "legacy": true
+      },
+      {
+        "id": "AMapComponent",
+        "name": "aMap",
+        "legacy": true
+      },
+      {
+        "id": "AreduceComponent",
+        "name": "aReduce",
+        "legacy": true
+      }
+    ]
+  },
+  {
+    "name": "Crewai",
+    "items": [
+      {
+        "id": "CrewAIAgentComponent",
+        "name": "CrewAI Agent",
+        "legacy": true
+      },
+      {
+        "id": "HierarchicalCrewComponent",
+        "name": "Hierarchical Crew",
+        "legacy": true
+      },
+      {
+        "id": "HierarchicalTaskComponent",
+        "name": "Hierarchical Task",
+        "legacy": true
+      },
+      {
+        "id": "SequentialCrewComponent",
+        "name": "Sequential Crew",
+        "legacy": true
+      },
+      {
+        "id": "SequentialTaskComponent",
+        "name": "Sequential Task",
+        "legacy": true
+      },
+      {
+        "id": "SequentialTaskAgentComponent",
+        "name": "Sequential Task Agent",
+        "legacy": true
+      }
+    ]
+  },
+  {
+    "name": "Custom Component",
+    "items": [
+      {
+        "id": "CustomComponent",
+        "name": "Custom Component",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Data Source",
+    "items": [
+      {
+        "id": "APIRequest",
+        "name": "API Request",
+        "legacy": false
+      },
+      {
+        "id": "CSVtoData",
+        "name": "Load CSV",
+        "legacy": true
+      },
+      {
+        "id": "JSONtoData",
+        "name": "Load JSON",
+        "legacy": true
+      },
+      {
+        "id": "MockDataGenerator",
+        "name": "Mock Data",
+        "legacy": false
+      },
+      {
+        "id": "NewsSearch",
+        "name": "News Search",
+        "legacy": true
+      },
+      {
+        "id": "RSSReaderSimple",
+        "name": "RSS Reader",
+        "legacy": true
+      },
+      {
+        "id": "SQLComponent",
+        "name": "SQL Database",
+        "legacy": false
+      },
+      {
+        "id": "URLComponent",
+        "name": "URL",
+        "legacy": false
+      },
+      {
+        "id": "UnifiedWebSearch",
+        "name": "Web Search",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Embeddings",
+    "items": [
+      {
+        "id": "EmbeddingSimilarityComponent",
+        "name": "Embedding Similarity",
+        "legacy": true
+      },
+      {
+        "id": "TextEmbedderComponent",
+        "name": "Text Embedder",
+        "legacy": true
+      }
+    ]
+  },
+  {
+    "name": "Files And Knowledge",
+    "items": [
+      {
+        "id": "Directory",
+        "name": "Directory",
+        "legacy": true
+      },
+      {
+        "id": "FileSystemTool",
+        "name": "File System",
+        "legacy": false
+      },
+      {
+        "id": "Knowledge",
+        "name": "Knowledge",
+        "legacy": false
+      },
+      {
+        "id": "KnowledgeBase",
+        "name": "Knowledge Base",
+        "legacy": true
+      },
+      {
+        "id": "KnowledgeIngestion",
+        "name": "Knowledge Ingestion",
+        "legacy": true
+      },
+      {
+        "id": "MemoryBase",
+        "name": "Memory Base",
+        "legacy": false
+      },
+      {
+        "id": "File",
+        "name": "Read File",
+        "legacy": false
+      },
+      {
+        "id": "SaveToFile",
+        "name": "Write File",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Files Ingestion",
+    "items": [
+      {
+        "id": "FileContentRetriever",
+        "name": "File Content Retriever",
+        "legacy": false
+      },
+      {
+        "id": "FileDescriptionGeneratorComponent",
+        "name": "File Description Generator",
+        "legacy": false
+      },
+      {
+        "id": "MergeFlows",
+        "name": "Merge Flows",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Flow Controls",
+    "items": [
+      {
+        "id": "DataConditionalRouter",
+        "name": "Condition",
+        "legacy": true
+      },
+      {
+        "id": "FlowTool",
+        "name": "Flow as Tool",
+        "legacy": true
+      },
+      {
+        "id": "HumanInput",
+        "name": "Human Input",
+        "legacy": false
+      },
+      {
+        "id": "ConditionalRouter",
+        "name": "If-Else",
+        "legacy": false
+      },
+      {
+        "id": "Listen",
+        "name": "Listen",
+        "legacy": false
+      },
+      {
+        "id": "LoopComponent",
+        "name": "Loop",
+        "legacy": false
+      },
+      {
+        "id": "Notify",
+        "name": "Notify",
+        "legacy": false
+      },
+      {
+        "id": "Pass",
+        "name": "Pass",
+        "legacy": true
+      },
+      {
+        "id": "RunFlow",
+        "name": "Run Flow",
+        "legacy": false
+      },
+      {
+        "id": "SubFlow",
+        "name": "Sub Flow",
+        "legacy": true
+      }
+    ]
+  },
+  {
+    "name": "Input Output",
+    "items": [
+      {
+        "id": "ChatInput",
+        "name": "Chat Input",
+        "legacy": false
+      },
+      {
+        "id": "ChatOutput",
+        "name": "Chat Output",
+        "legacy": false
+      },
+      {
+        "id": "TextInput",
+        "name": "Text Input",
+        "legacy": true
+      },
+      {
+        "id": "TextOutput",
+        "name": "Text Output",
+        "legacy": true
+      },
+      {
+        "id": "Webhook",
+        "name": "Webhook",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Langchain Utilities",
+    "items": [
+      {
+        "id": "CharacterTextSplitter",
+        "name": "Character Text Splitter",
+        "legacy": false
+      },
+      {
+        "id": "ConversationChain",
+        "name": "ConversationChain",
+        "legacy": true
+      },
+      {
+        "id": "CSVAgent",
+        "name": "CSV Agent",
+        "legacy": false
+      },
+      {
+        "id": "LangChainFakeEmbeddings",
+        "name": "Fake Embeddings",
+        "legacy": false
+      },
+      {
+        "id": "HtmlLinkExtractor",
+        "name": "HTML Link Extractor",
+        "legacy": false
+      },
+      {
+        "id": "JsonAgent",
+        "name": "JsonAgent",
+        "legacy": true
+      },
+      {
+        "id": "LanguageRecursiveTextSplitter",
+        "name": "Language Recursive Text Splitter",
+        "legacy": false
+      },
+      {
+        "id": "LLMCheckerChain",
+        "name": "LLMCheckerChain",
+        "legacy": true
+      },
+      {
+        "id": "LLMMathChain",
+        "name": "LLMMathChain",
+        "legacy": true
+      },
+      {
+        "id": "NaturalLanguageTextSplitter",
+        "name": "Natural Language Text Splitter",
+        "legacy": false
+      },
+      {
+        "id": "SQLGenerator",
+        "name": "Natural Language to SQL",
+        "legacy": true
+      },
+      {
+        "id": "OpenAIToolsAgent",
+        "name": "OpenAI Tools Agent",
+        "legacy": false
+      },
+      {
+        "id": "OpenAPIAgent",
+        "name": "OpenAPI Agent",
+        "legacy": false
+      },
+      {
+        "id": "LangChain Hub Prompt",
+        "name": "Prompt Hub",
+        "legacy": false
+      },
+      {
+        "id": "RecursiveCharacterTextSplitter",
+        "name": "Recursive Character Text Splitter",
+        "legacy": false
+      },
+      {
+        "id": "RetrievalQA",
+        "name": "Retrieval QA",
+        "legacy": true
+      },
+      {
+        "id": "RunnableExecutor",
+        "name": "Runnable Executor",
+        "legacy": false
+      },
+      {
+        "id": "SelfQueryRetriever",
+        "name": "Self Query Retriever",
+        "legacy": true
+      },
+      {
+        "id": "SemanticTextSplitter",
+        "name": "Semantic Text Splitter",
+        "legacy": false
+      },
+      {
+        "id": "SQLAgent",
+        "name": "SQLAgent",
+        "legacy": false
+      },
+      {
+        "id": "SQLDatabase",
+        "name": "SQLDatabase",
+        "legacy": false
+      },
+      {
+        "id": "ToolCallingAgent",
+        "name": "Tool Calling Agent",
+        "legacy": false
+      },
+      {
+        "id": "VectorStoreInfo",
+        "name": "VectorStoreInfo",
+        "legacy": true
+      },
+      {
+        "id": "VectorStoreRouterAgent",
+        "name": "VectorStoreRouterAgent",
+        "legacy": true
+      },
+      {
+        "id": "XMLAgent",
+        "name": "XML Agent",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Llm Operations",
+    "items": [
+      {
+        "id": "BatchRunComponent",
+        "name": "Batch Run",
+        "legacy": false
+      },
+      {
+        "id": "GuardrailValidatorV2",
+        "name": "Guardrails",
+        "legacy": false
+      },
+      {
+        "id": "GuardrailValidator",
+        "name": "Guardrails (Legacy)",
+        "legacy": true
+      },
+      {
+        "id": "LLMSelectorComponent",
+        "name": "LLM Selector",
+        "legacy": false
+      },
+      {
+        "id": "SmartRouter",
+        "name": "Smart Router",
+        "legacy": false
+      },
+      {
+        "id": "Smart Transform",
+        "name": "Smart Transform",
+        "legacy": false
+      },
+      {
+        "id": "StructuredOutput",
+        "name": "Structured Output",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Models And Agents",
+    "items": [
+      {
+        "id": "A2AAgent",
+        "name": "A2A Agent",
+        "legacy": false
+      },
+      {
+        "id": "Agent",
+        "name": "Agent",
+        "legacy": false
+      },
+      {
+        "id": "EmbeddingModel",
+        "name": "Embedding Model",
+        "legacy": false
+      },
+      {
+        "id": "LanguageModelComponent",
+        "name": "Language Model",
+        "legacy": false
+      },
+      {
+        "id": "MCPTools",
+        "name": "MCP Tools",
+        "legacy": false
+      },
+      {
+        "id": "Memory",
+        "name": "Message History",
+        "legacy": false
+      },
+      {
+        "id": "Prompt Template",
+        "name": "Prompt Template",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Processing",
+    "items": [
+      {
+        "id": "AlterMetadata",
+        "name": "Alter Metadata",
+        "legacy": true
+      },
+      {
+        "id": "MergeDataComponent",
+        "name": "Combine Data",
+        "legacy": true
+      },
+      {
+        "id": "CombineText",
+        "name": "Combine Text",
+        "legacy": true
+      },
+      {
+        "id": "CreateData",
+        "name": "Create Data",
+        "legacy": true
+      },
+      {
+        "id": "CreateList",
+        "name": "Create List",
+        "legacy": true
+      },
+      {
+        "id": "Operations",
+        "name": "Data Operations",
+        "legacy": false
+      },
+      {
+        "id": "ParseData",
+        "name": "Data to Message",
+        "legacy": true
+      },
+      {
+        "id": "DataToDataFrame",
+        "name": "Data \u2192 DataFrame",
+        "legacy": true
+      },
+      {
+        "id": "DynamicCreateData",
+        "name": "Dynamic Create Data",
+        "legacy": false
+      },
+      {
+        "id": "ExtractaKey",
+        "name": "Extract Key",
+        "legacy": true
+      },
+      {
+        "id": "FilterData",
+        "name": "Filter Data",
+        "legacy": true
+      },
+      {
+        "id": "FilterDataValues",
+        "name": "Filter Values",
+        "legacy": true
+      },
+      {
+        "id": "JSONCleaner",
+        "name": "JSON Cleaner",
+        "legacy": true
+      },
+      {
+        "id": "DataOperations",
+        "name": "JSON Operations",
+        "legacy": true
+      },
+      {
+        "id": "StoreMessage",
+        "name": "Message Store",
+        "legacy": true
+      },
+      {
+        "id": "MessagetoData",
+        "name": "Message to Data",
+        "legacy": true
+      },
+      {
+        "id": "OutputParser",
+        "name": "Output Parser",
+        "legacy": true
+      },
+      {
+        "id": "ParseDataFrame",
+        "name": "Parse DataFrame",
+        "legacy": true
+      },
+      {
+        "id": "ParseJSONData",
+        "name": "Parse JSON",
+        "legacy": true
+      },
+      {
+        "id": "ParserComponent",
+        "name": "Parser",
+        "legacy": false
+      },
+      {
+        "id": "RegexExtractorComponent",
+        "name": "Regex Extractor",
+        "legacy": true
+      },
+      {
+        "id": "SelectData",
+        "name": "Select Data",
+        "legacy": true
+      },
+      {
+        "id": "SplitText",
+        "name": "Split Text",
+        "legacy": false
+      },
+      {
+        "id": "DataFrameOperations",
+        "name": "Table Operations",
+        "legacy": true
+      },
+      {
+        "id": "TextOperations",
+        "name": "Text Operations",
+        "legacy": true
+      },
+      {
+        "id": "TypeConverterComponent",
+        "name": "Type Convert",
+        "legacy": false
+      },
+      {
+        "id": "UpdateData",
+        "name": "Update Data",
+        "legacy": true
+      }
+    ]
+  },
+  {
+    "name": "Prototypes",
+    "items": [
+      {
+        "id": "PythonFunction",
+        "name": "Python Function",
+        "legacy": true
+      }
+    ]
+  },
+  {
+    "name": "Tools",
+    "items": [
+      {
+        "id": "CalculatorTool",
+        "name": "Calculator",
+        "legacy": true
+      },
+      {
+        "id": "GoogleSearchAPI",
+        "name": "Google Search API [DEPRECATED]",
+        "legacy": true
+      },
+      {
+        "id": "GoogleSerperAPI",
+        "name": "Google Serper API [DEPRECATED]",
+        "legacy": true
+      },
+      {
+        "id": "PythonREPLTool",
+        "name": "Python REPL",
+        "legacy": true
+      },
+      {
+        "id": "SearchAPI",
+        "name": "Search API",
+        "legacy": true
+      },
+      {
+        "id": "SearXNGTool",
+        "name": "SearXNG Search",
+        "legacy": true
+      },
+      {
+        "id": "SerpAPI",
+        "name": "Serp Search API",
+        "legacy": true
+      },
+      {
+        "id": "WikidataAPI",
+        "name": "Wikidata API",
+        "legacy": true
+      },
+      {
+        "id": "WikipediaAPI",
+        "name": "Wikipedia API",
+        "legacy": true
+      },
+      {
+        "id": "YahooFinanceTool",
+        "name": "Yahoo! Finance",
+        "legacy": true
+      }
+    ]
+  },
+  {
+    "name": "Triggers",
+    "items": [
+      {
+        "id": "InboundWebhookTrigger",
+        "name": "Inbound Webhook",
+        "legacy": false
+      },
+      {
+        "id": "ScheduleTrigger",
+        "name": "Schedule",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Utilities",
+    "items": [
+      {
+        "id": "CalculatorComponent",
+        "name": "Calculator",
+        "legacy": false
+      },
+      {
+        "id": "CurrentDate",
+        "name": "Current Date",
+        "legacy": false
+      },
+      {
+        "id": "IDGenerator",
+        "name": "ID Generator",
+        "legacy": true
+      },
+      {
+        "id": "PythonREPLComponent",
+        "name": "Python Interpreter",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Amazon",
+    "items": [
+      {
+        "id": "ext:amazon:AmazonBedrockComponent@official",
+        "name": "Amazon Bedrock",
+        "legacy": true
+      },
+      {
+        "id": "ext:amazon:AmazonBedrockConverseComponent@official",
+        "name": "Amazon Bedrock Converse",
+        "legacy": false
+      },
+      {
+        "id": "ext:amazon:AmazonBedrockEmbeddingsComponent@official",
+        "name": "Amazon Bedrock Embeddings",
+        "legacy": false
+      },
+      {
+        "id": "ext:amazon:S3BucketUploaderComponent@official",
+        "name": "S3 Bucket Uploader",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Anthropic",
+    "items": [
+      {
+        "id": "ext:anthropic:AnthropicModelComponent@official",
+        "name": "Anthropic",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Azure",
+    "items": [
+      {
+        "id": "ext:azure:AzureChatOpenAIComponent@official",
+        "name": "Azure OpenAI",
+        "legacy": false
+      },
+      {
+        "id": "ext:azure:AzureOpenAIEmbeddingsComponent@official",
+        "name": "Azure OpenAI Embeddings",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Cohere",
+    "items": [
+      {
+        "id": "ext:cohere:CohereEmbeddingsComponent@official",
+        "name": "Cohere Embeddings",
+        "legacy": false
+      },
+      {
+        "id": "ext:cohere:CohereComponent@official",
+        "name": "Cohere Language Models",
+        "legacy": false
+      },
+      {
+        "id": "ext:cohere:CohereRerankComponent@official",
+        "name": "Cohere Rerank",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Datastax",
+    "items": [
+      {
+        "id": "ext:datastax:AstraDBVectorStoreComponent@official",
+        "name": "Astra DB",
+        "legacy": false
+      },
+      {
+        "id": "ext:datastax:AstraDBChatMemory@official",
+        "name": "Astra DB Chat Memory",
+        "legacy": false
+      },
+      {
+        "id": "ext:datastax:AstraDBCQLToolComponent@official",
+        "name": "Astra DB CQL",
+        "legacy": false
+      },
+      {
+        "id": "ext:datastax:AstraDBDataAPIComponent@official",
+        "name": "Astra DB Data API",
+        "legacy": false
+      },
+      {
+        "id": "ext:datastax:AstraDBGraphVectorStoreComponent@official",
+        "name": "Astra DB Graph",
+        "legacy": true
+      },
+      {
+        "id": "ext:datastax:AstraDBToolComponent@official",
+        "name": "Astra DB Tool",
+        "legacy": true
+      },
+      {
+        "id": "ext:datastax:AstraVectorizeComponent@official",
+        "name": "Astra Vectorize",
+        "legacy": true
+      },
+      {
+        "id": "ext:datastax:Dotenv@official",
+        "name": "Dotenv",
+        "legacy": true
+      },
+      {
+        "id": "ext:datastax:GraphRAGComponent@official",
+        "name": "Graph RAG",
+        "legacy": false
+      },
+      {
+        "id": "ext:datastax:HCDVectorStoreComponent@official",
+        "name": "Hyper-Converged Database",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Cassandra",
+    "items": [
+      {
+        "id": "ext:cassandra:CassandraVectorStoreComponent@official",
+        "name": "Cassandra",
+        "legacy": false
+      },
+      {
+        "id": "ext:cassandra:CassandraChatMemory@official",
+        "name": "Cassandra Chat Memory",
+        "legacy": false
+      },
+      {
+        "id": "ext:cassandra:CassandraGraphVectorStoreComponent@official",
+        "name": "Cassandra Graph",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Docling",
+    "items": [
+      {
+        "id": "ext:docling:ChunkDoclingDocumentComponent@official",
+        "name": "Chunk DoclingDocument",
+        "legacy": false
+      },
+      {
+        "id": "ext:docling:DoclingInlineComponent@official",
+        "name": "Docling",
+        "legacy": false
+      },
+      {
+        "id": "ext:docling:DoclingRemoteComponent@official",
+        "name": "Docling Serve",
+        "legacy": false
+      },
+      {
+        "id": "ext:docling:ExportDoclingDocumentComponent@official",
+        "name": "Export DoclingDocument",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Google",
+    "items": [
+      {
+        "id": "ext:google:BigQueryExecutorComponent@official",
+        "name": "BigQuery",
+        "legacy": false
+      },
+      {
+        "id": "ext:google:GoogleCalendarCreateComponent@official",
+        "name": "Calendar: Create Event",
+        "legacy": false
+      },
+      {
+        "id": "ext:google:GoogleCalendarListComponent@official",
+        "name": "Calendar: List Events",
+        "legacy": false
+      },
+      {
+        "id": "ext:google:GoogleDriveFetchComponent@official",
+        "name": "Drive: Fetch File (app files)",
+        "legacy": false
+      },
+      {
+        "id": "ext:google:GoogleDriveListComponent@official",
+        "name": "Drive: List Files (app files)",
+        "legacy": false
+      },
+      {
+        "id": "ext:google:GmailLoaderComponent@official",
+        "name": "Gmail Loader",
+        "legacy": true
+      },
+      {
+        "id": "ext:google:GoogleOnGmailTriggerComponent@official",
+        "name": "Gmail: On Message",
+        "legacy": false
+      },
+      {
+        "id": "ext:google:GmailSendComponent@official",
+        "name": "Gmail: Send Email",
+        "legacy": false
+      },
+      {
+        "id": "ext:google:GoogleOnCalendarTriggerComponent@official",
+        "name": "Google Calendar: On Event",
+        "legacy": false
+      },
+      {
+        "id": "ext:google:GoogleDriveComponent@official",
+        "name": "Google Drive Loader",
+        "legacy": true
+      },
+      {
+        "id": "ext:google:GoogleDriveSearchComponent@official",
+        "name": "Google Drive Search",
+        "legacy": true
+      },
+      {
+        "id": "ext:google:GoogleOnDriveTriggerComponent@official",
+        "name": "Google Drive: On File",
+        "legacy": false
+      },
+      {
+        "id": "ext:google:GoogleGenerativeAIComponent@official",
+        "name": "Google Generative AI",
+        "legacy": false
+      },
+      {
+        "id": "ext:google:GoogleGenerativeAIEmbeddingsComponent@official",
+        "name": "Google Generative AI Embeddings",
+        "legacy": false
+      },
+      {
+        "id": "ext:google:GoogleOAuthToken@official",
+        "name": "Google OAuth Token",
+        "legacy": true
+      },
+      {
+        "id": "ext:google:GoogleSearchAPICore@official",
+        "name": "Google Search API",
+        "legacy": true
+      },
+      {
+        "id": "ext:google:GoogleSerperAPICore@official",
+        "name": "Google Serper API",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Ibm",
+    "items": [
+      {
+        "id": "ext:ibm:DB2VectorStoreComponent@official",
+        "name": "IBM Db2 Vector Store",
+        "legacy": false
+      },
+      {
+        "id": "ext:ibm:WatsonxAIComponent@official",
+        "name": "IBM watsonx.ai",
+        "legacy": false
+      },
+      {
+        "id": "ext:ibm:WatsonxEmbeddingsComponent@official",
+        "name": "IBM watsonx.ai Embeddings",
+        "legacy": false
+      },
+      {
+        "id": "ext:ibm:WatsonxDataMCPComponent@official",
+        "name": "IBM watsonx.data MCP",
+        "legacy": false
+      },
+      {
+        "id": "ext:ibm:WatsonxDataPrestoComponent@official",
+        "name": "IBM watsonx.data Presto",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Microsoft",
+    "items": [
+      {
+        "id": "ext:microsoft:MicrosoftOnFileTriggerComponent@official",
+        "name": "OneDrive or SharePoint: On File",
+        "legacy": false
+      },
+      {
+        "id": "ext:microsoft:OutlookCalendarCreateComponent@official",
+        "name": "Outlook Calendar: Create Event",
+        "legacy": false
+      },
+      {
+        "id": "ext:microsoft:OutlookCalendarListComponent@official",
+        "name": "Outlook Calendar: List Events",
+        "legacy": false
+      },
+      {
+        "id": "ext:microsoft:MicrosoftOnCalendarTriggerComponent@official",
+        "name": "Outlook: On Calendar Event",
+        "legacy": false
+      },
+      {
+        "id": "ext:microsoft:MicrosoftOnMailTriggerComponent@official",
+        "name": "Outlook: On Message",
+        "legacy": false
+      },
+      {
+        "id": "ext:microsoft:OutlookSearchComponent@official",
+        "name": "Outlook: Search Mail",
+        "legacy": false
+      },
+      {
+        "id": "ext:microsoft:OutlookSendComponent@official",
+        "name": "Outlook: Send Mail",
+        "legacy": false
+      },
+      {
+        "id": "ext:microsoft:SharePointFetchComponent@official",
+        "name": "SharePoint/OneDrive: Fetch Item",
+        "legacy": false
+      },
+      {
+        "id": "ext:microsoft:SharePointListComponent@official",
+        "name": "SharePoint/OneDrive: List Items",
+        "legacy": false
+      },
+      {
+        "id": "ext:microsoft:TeamsChannelPostComponent@official",
+        "name": "Teams: Post Channel Message",
+        "legacy": false
+      },
+      {
+        "id": "ext:microsoft:TeamsChatPostComponent@official",
+        "name": "Teams: Post Chat Message",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Ollama",
+    "items": [
+      {
+        "id": "ext:ollama:ChatOllamaComponent@official",
+        "name": "Ollama",
+        "legacy": false
+      },
+      {
+        "id": "ext:ollama:OllamaEmbeddingsComponent@official",
+        "name": "Ollama Embeddings",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Openai",
+    "items": [
+      {
+        "id": "ext:openai:OpenAIModelComponent@official",
+        "name": "OpenAI",
+        "legacy": false
+      },
+      {
+        "id": "ext:openai:OpenAIEmbeddingsComponent@official",
+        "name": "OpenAI Embeddings",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Oracle",
+    "items": [
+      {
+        "id": "ext:oracle:OracleAutonomousDatabaseLoaderComponent@official",
+        "name": "Oracle Autonomous Database Loader",
+        "legacy": false
+      },
+      {
+        "id": "ext:oracle:OracleDocLoaderComponent@official",
+        "name": "Oracle Doc Loader",
+        "legacy": false
+      },
+      {
+        "id": "ext:oracle:OracleEmbeddingsComponent@official",
+        "name": "Oracle Embeddings",
+        "legacy": false
+      },
+      {
+        "id": "ext:oracle:OracleVectorStoreComponent@official",
+        "name": "Oracle Vector Store",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Slack",
+    "items": [
+      {
+        "id": "ext:slack:SlackAddReactionComponent@official",
+        "name": "Slack: Add Reaction (as app)",
+        "legacy": false
+      },
+      {
+        "id": "ext:slack:SlackCanvasComponent@official",
+        "name": "Slack: Create Canvas (as user)",
+        "legacy": false
+      },
+      {
+        "id": "ext:slack:SlackListChannelMembersComponent@official",
+        "name": "Slack: List Channel Members (as app)",
+        "legacy": false
+      },
+      {
+        "id": "ext:slack:SlackOnMessageTriggerComponent@official",
+        "name": "Slack: On Message",
+        "legacy": false
+      },
+      {
+        "id": "ext:slack:SlackOnReactionTriggerComponent@official",
+        "name": "Slack: On Reaction",
+        "legacy": false
+      },
+      {
+        "id": "ext:slack:SlackPostAsAppComponent@official",
+        "name": "Slack: Post Message (as app)",
+        "legacy": false
+      },
+      {
+        "id": "ext:slack:SlackReadThreadComponent@official",
+        "name": "Slack: Read Thread (as user)",
+        "legacy": false
+      },
+      {
+        "id": "ext:slack:SlackSearchComponent@official",
+        "name": "Slack: Search (as user)",
+        "legacy": false
+      },
+      {
+        "id": "ext:slack:SlackSendAsUserComponent@official",
+        "name": "Slack: Send Message (as user)",
+        "legacy": false
+      }
+    ]
+  },
+  {
+    "name": "Toolguard",
+    "items": [
+      {
+        "id": "ext:toolguard:PoliciesComponent@official",
+        "name": "Policies",
+        "legacy": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,163 @@
+{
+  "name": "Market Intelligence form_claims",
+  "description": "",
+  "data": {
+    "nodes": [
+      {
+        "id": "PythonFunction-rEocp",
+        "type": "genericNode",
+        "position": {
+          "x": 0,
+          "y": 0.0
+        },
+        "selected": false,
+        "data": {
+          "id": "PythonFunction-rEocp",
+          "type": "PythonFunction",
+          "node": {
+            "base_classes": [
+              "Callable",
+              "JSON",
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Define and execute a Python function that returns a Data object or a Message.",
+            "display_name": "Python Function",
+            "documentation": "",
+            "edited": false,
+            "field_order": [
+              "function_code"
+            ],
+            "frozen": false,
+            "icon": "Python",
+            "legacy": true,
+            "metadata": {
+              "code_hash": "d1fbbdc1ff53",
+              "component_class_name": "PythonFunctionComponent",
+              "dependencies": {
+                "dependencies": [
+                  {
+                    "name": "lfx",
+                    "version": null
+                  }
+                ],
+                "total_dependencies": 1
+              },
+              "module": "lfx.components.prototypes.python_function.PythonFunctionComponent"
+            },
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Function Callable",
+                "group_outputs": false,
+                "method": "get_function_callable",
+                "name": "function_output",
+                "selected": "Callable",
+                "tool_mode": true,
+                "types": [
+                  "Callable"
+                ],
+                "value": "__UNDEFINED__",
+                "hidden": false,
+                "options": null,
+                "required_inputs": null
+              },
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Function Output (JSON)",
+                "group_outputs": false,
+                "method": "execute_function_data",
+                "name": "function_output_data",
+                "selected": "JSON",
+                "tool_mode": true,
+                "types": [
+                  "JSON"
+                ],
+                "value": "__UNDEFINED__",
+                "hidden": false,
+                "options": null,
+                "required_inputs": null
+              },
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Function Output (Message)",
+                "group_outputs": false,
+                "method": "execute_function_message",
+                "name": "function_output_str",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__",
+                "hidden": false,
+                "options": null,
+                "required_inputs": null
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "api_editable": false,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from collections.abc import Callable\n\nfrom lfx.custom.custom_component.component import Component\nfrom lfx.custom.utils import get_function\nfrom lfx.io import CodeInput, Output\nfrom lfx.log.logger import logger\nfrom lfx.schema.data import Data\nfrom lfx.schema.dotdict import dotdict\nfrom lfx.schema.message import Message\nfrom lfx.utils.python_repl_security import ensure_code_execution_enabled\n\n\nclass PythonFunctionComponent(Component):\n    display_name = \"Python Function\"\n    description = \"Define and execute a Python function that returns a Data object or a Message.\"\n    icon = \"Python\"\n    name = \"PythonFunction\"\n    legacy = True\n\n    inputs = [\n        CodeInput(\n            name=\"function_code\",\n            display_name=\"Function Code\",\n            info=\"The code for the function.\",\n        ),\n    ]\n\n    outputs = [\n        Output(\n            name=\"function_output\",\n            display_name=\"Function Callable\",\n            method=\"get_function_callable\",\n        ),\n        Output(\n            name=\"function_output_data\",\n            display_name=\"Function Output (JSON)\",\n            method=\"execute_function_data\",\n        ),\n        Output(\n            name=\"function_output_str\",\n            display_name=\"Function Output (Message)\",\n            method=\"execute_function_message\",\n        ),\n    ]\n\n    def get_function_callable(self) -> Callable:\n        function_code = self.function_code\n        self.status = function_code\n        ensure_code_execution_enabled()\n        return get_function(function_code)\n\n    def execute_function(self) -> list[dotdict | str] | dotdict | str:\n        function_code = self.function_code\n\n        if not function_code:\n            return \"No function code provided.\"\n\n        ensure_code_execution_enabled()\n        try:\n            func = get_function(function_code)\n            return func()\n        except Exception as e:  # noqa: BLE001\n            logger.debug(\"Error executing function\", exc_info=True)\n            return f\"Error executing function: {e}\"\n\n    def execute_function_data(self) -> list[Data]:\n        results = self.execute_function()\n        results = results if isinstance(results, list) else [results]\n        return [(Data(text=x) if isinstance(x, str) else Data(**x)) for x in results]\n\n    def execute_function_message(self) -> Message:\n        results = self.execute_function()\n        results = results if isinstance(results, list) else [results]\n        results_list = [str(x) for x in results]\n        results_str = \"\\n\".join(results_list)\n        return Message(text=results_str)\n"
+              },
+              "function_code": {
+                "_input_type": "CodeInput",
+                "advanced": false,
+                "api_editable": false,
+                "display_name": "Function Code",
+                "dynamic": false,
+                "info": "The code for the function.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "function_code",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "track_in_telemetry": false,
+                "type": "code",
+                "value": "def capability():\n    import sys\n    sys.path.insert(0, '/Users/x/projects/swarms/knowledge/research/paper-9-study/implementation')\n    from native_bridge import dispatch\n    return dispatch('RUN_ID_REQUIRED', 'form_claims')"
+              }
+            },
+            "tool_mode": false,
+            "category": "prototypes"
+          },
+          "showNode": true
+        }
+      }
+    ],
+    "edges": [],
+    "viewport": {
+      "x": 0,
+      "y": 0,
+      "zoom": 1
+    }
+  }
+}

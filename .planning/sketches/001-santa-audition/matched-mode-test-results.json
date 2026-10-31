@@ -1,0 +1,38 @@
+[
+  {
+    "id": "9ae5e6b0-bff5-4dad-9985-022d16a3e38e",
+    "state": "saved",
+    "direction": "Neutral, natural conversational delivery, without added emotion.",
+    "reference": "82a4a0db-dfd8-4389-8b9b-c6553ab5d92f",
+    "seed": 65,
+    "exact_words": true,
+    "sha256": "92daca9d356928abf80c072ec9b3bbb2bf3bb54e7e066c4f17e057d055a45ef3"
+  },
+  {
+    "id": "95fcff07-2d85-453d-8a53-84e7e20a752f",
+    "state": "saved",
+    "direction": "Gentle and reassuring, speaking to someone who feels forgotten; warmth and care without sounding cheerful or excited.",
+    "reference": "82a4a0db-dfd8-4389-8b9b-c6553ab5d92f",
+    "seed": 65,
+    "exact_words": true,
+    "sha256": "25077185fef0ae9c8d1a6da4171c3c3ee52dad59bda2290a7c5161f67fe2f17a"
+  },
+  {
+    "id": "4bb1e10b-ebce-48f2-8846-0b78b923792c",
+    "state": "saved",
+    "direction": "Neutral, natural conversational delivery, without added emotion.",
+    "reference": "82a4a0db-dfd8-4389-8b9b-c6553ab5d92f",
+    "seed": 65,
+    "exact_words": true,
+    "sha256": "92daca9d356928abf80c072ec9b3bbb2bf3bb54e7e066c4f17e057d055a45ef3"
+  },
+  {
+    "id": "f171e127-3dd1-4ce0-b5f6-c599794044eb",
+    "state": "saved",
+    "direction": "Genuine delight and bright energy, with a natural smile in the voice.",
+    "reference": "82a4a0db-dfd8-4389-8b9b-c6553ab5d92f",
+    "seed": 65,
+    "exact_words": true,
+    "sha256": "27fca5b7327dbcd38cda614d47ff5920515d2effd57350f6394fe38000b581b5"
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "text": "Just one? A light, a path, and a first step?",
+  "ordered": [
+    {
+      "id": "text",
+      "type": "text",
+      "config": {}
+    },
+    {
+      "id": "voice",
+      "type": "voice",
+      "config": {
+        "reference": "esd:0015:surprise",
+        "steps": 32,
+        "speed": 0.95,
+        "seed": 42,
+        "cross_fade_duration": 0.15,
+        "cfg_strength": 2.0,
+        "sway_sampling_coef": -1.0
+      }
+    },
+    {
+      "id": "master",
+      "type": "master",
+      "config": {
+        "profile": "Balanced"
+      }
+    },
+    {
+      "id": "enhance",
+      "type": "enhance",
+      "config": {
+        "evaluations": 32,
+        "denoise": 0.1
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "text",
+      "target": "voice"
+    },
+    {
+      "source": "voice",
+      "target": "master"
+    },
+    {
+      "source": "master",
+      "target": "enhance"
+    }
+  ]
+}

@@ -20,3 +20,9 @@
 .version-switch{position:fixed;top:20px;left:24px;z-index:50;display:flex;gap:6px}.version-switch button{font:12px system-ui,sans-serif;color:#aab8c9;background:#1b2028;border:1px solid #414b5b;border-radius:5px;padding:7px 14px;cursor:pointer}.version-switch button[aria-pressed="true"]{color:#e8f4ff;border-color:#7fa7c8;background:#263a4b}.version-switch button:focus-visible{outline:2px solid #8edbce;outline-offset:3px}section[hidden]{display:none}
 
 }
+
+.v2-library .official-templates li small{display:inline-block;margin-top:4px}.v2-library .template-source{float:right;color:#9fc9d5;font-size:11px;margin:4px 0}.v2-library .official-templates button:disabled{opacity:.5;cursor:wait}
+
+.v2-library .template-search{box-sizing:border-box;width:100%;margin:0 0 8px;padding:8px;border:1px solid #657183;border-radius:4px;background:#20262f;color:#e0e5ed;font:inherit}.v2-library .template-search:focus-visible{outline:2px solid #8edbce;outline-offset:2px}
+
+.v2-library .tray-stack.library-instance-stack{left:288px}.v2-library .library-instance-stack .stack-label{font-size:10px;letter-spacing:.04em}.v2-library .instance-empty-list{min-height:38px}.v2-library .instance-empty-list ul{margin:0;padding:0}

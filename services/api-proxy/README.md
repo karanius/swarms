@@ -64,6 +64,17 @@ The app checks model and effort choices against the models available to your acc
 
 Your sign-in and settings are stored locally under your home directory with restricted file permissions. They are not part of this repository.
 
+Authentication checks and API requests share the same credential chain: API
+Proxy's own sign-in first, then the current Codex/ChatGPT sign-in under
+`CODEX_HOME` (default `~/.codex`). If no central storage policy is explicitly set,
+the fallback uses Codex's automatic OS credential-store/file discovery. Explicit
+`cli_auth_credentials_store` settings, including `ephemeral`, are respected.
+Credentials are read from their existing store rather than copied into the proxy.
+Requests retry the next source when the upstream rejects a source with HTTP 401;
+rate limits, network failures and other non-authentication errors do not change
+accounts. A local health check confirms usable credentials were found, while a
+successful model request is needed to verify provider acceptance.
+
 ## Current scope
 
 API Proxy serves one selected model at a time on your computer. It supports text requests, streaming, and caller-managed function calls through the routes above. It does not provide remote access or execute model-requested functions for you.

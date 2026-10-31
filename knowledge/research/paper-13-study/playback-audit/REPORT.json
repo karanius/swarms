@@ -1,0 +1,13 @@
+{
+  "symptom": "White video picture while audio and playback metadata remained available",
+  "reproduced": true,
+  "before_white_fraction": 1.0,
+  "seek_alone_restored_picture": false,
+  "playing_restored_picture": false,
+  "fullscreen_restored_picture": false,
+  "clean_notebook_reload_restored_picture": true,
+  "original_video_hash_unchanged": true,
+  "user_confirmed_visible_picture": true,
+  "conclusion": "Stale embedded-player display state; exact trigger or underlying browser renderer cause not isolated",
+  "files_changed": "Audit evidence only; video, audio, pipeline and notebook content not changed"
+}

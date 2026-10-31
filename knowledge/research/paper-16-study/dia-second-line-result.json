@@ -1,0 +1,65 @@
+{
+  "model": "dia",
+  "text": "We can take our time. Tell me what happened, and we will work through it together.",
+  "speaker": "0012",
+  "emotion": "neutral",
+  "settings": {
+    "seed": 11,
+    "use_reference": true
+  },
+  "applied_settings": {
+    "seed": 11,
+    "use_reference": true
+  },
+  "parent_id": null,
+  "reference": {
+    "id": "esd:0012:neutral",
+    "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+    "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+    "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+    "transcript": "I have bunburyed all over goat on two separate occasions."
+  },
+  "created": 1793377692.8528352,
+  "voice_conditioning": "reference",
+  "native_backend": {
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-16-study/runs/take-20261030-232812-b39fe0ed/native.wav",
+    "sample_rate": 44100,
+    "checkpoint": "mlx-community/Dia-1.6B-fp16",
+    "revision": "4575dd9622ffa7dd14cc4342e1aac4bb7841904d",
+    "implementation_commit": "0018b2e470224a166cfe5e6a41e79b1d8be9c5e7",
+    "settings": {
+      "seed": 11,
+      "use_reference": true
+    },
+    "reference_used": true
+  },
+  "path": "/Users/x/projects/swarms/knowledge/research/paper-16-study/runs/take-20261030-232812-b39fe0ed/native.wav",
+  "listening_path": "/Users/x/projects/swarms/knowledge/research/paper-16-study/runs/take-20261030-232812-b39fe0ed/listening.wav",
+  "sha256": "c78cf6e4fed6f10cf674e79e46db0846c294b22eb1094b2d593ba6e4df0d9c98",
+  "duration_seconds": 4.181292517006803,
+  "sample_rate": 44100,
+  "gain": 0.7194489780036996,
+  "loudness": {
+    "input_i": "-20.14",
+    "input_tp": "-1.70",
+    "input_lra": "1.60",
+    "input_thresh": "-30.85",
+    "output_i": "-21.89",
+    "output_tp": "-4.00",
+    "output_lra": "1.70",
+    "output_thresh": "-32.74",
+    "normalization_type": "dynamic",
+    "target_offset": "-1.11"
+  },
+  "id": "take-20261030-232812-b39fe0ed",
+  "elapsed_seconds": 9.355293989181519,
+  "assessment": "Exact words recovered by local ASR; delivery unreviewed",
+  "word_check": {
+    "transcript": "We can take our time, tell me what happened and we will work through it together.",
+    "expected": "We can take our time. Tell me what happened, and we will work through it together.",
+    "exact_words": true,
+    "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+    "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+  },
+  "url": "/research-jupyter/files/paper-16-audio/take-20261030-232812-b39fe0ed.wav"
+}

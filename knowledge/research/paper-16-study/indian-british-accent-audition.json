@@ -1,0 +1,72 @@
+{
+  "experiment": "Two newly designed male voices: Indian English and Standard Southern British English directions. Same words and native settings. Speaker identity is not held fixed; accent authenticity requires listening.",
+  "results": [
+    {
+      "label": "Indian English accent",
+      "id": "05bbcae9-0abf-4645-a1b8-3646839c2ad8",
+      "state": "saved",
+      "audio": {
+        "path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/05bbcae9-0abf-4645-a1b8-3646839c2ad8/voice.wav",
+        "listening_path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/05bbcae9-0abf-4645-a1b8-3646839c2ad8/listening.wav",
+        "sha256": "bda076fa5fda3f7dc6e42d2e4ff0b16026a7731e6e01f49d6485fd6e83c601be",
+        "duration_seconds": 7.04,
+        "sample_rate": 48000,
+        "gain": 0.5747778188455213,
+        "loudness": {
+          "input_i": "-18.19",
+          "input_tp": "-1.32",
+          "input_lra": "1.60",
+          "input_thresh": "-28.64",
+          "output_i": "-22.25",
+          "output_tp": "-5.38",
+          "output_lra": "1.10",
+          "output_thresh": "-32.77",
+          "normalization_type": "dynamic",
+          "target_offset": "-0.75"
+        }
+      },
+      "word_check": {
+        "transcript": "Good morning. I thought we could meet after lunch. Take a walk through the garden and  talk about our plans for the weekend.",
+        "expected": "Good morning. I thought we could meet after lunch, take a walk through the garden, and talk about our plans for the weekend.",
+        "exact_words": true,
+        "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+        "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+      },
+      "error": null
+    },
+    {
+      "label": "British English accent",
+      "id": "32f61b1e-0917-4b8b-a9bb-a7ddd016741d",
+      "state": "saved",
+      "audio": {
+        "path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/32f61b1e-0917-4b8b-a9bb-a7ddd016741d/voice.wav",
+        "listening_path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/32f61b1e-0917-4b8b-a9bb-a7ddd016741d/listening.wav",
+        "sha256": "f1e4ed9b051186c69f875235f0a914b35116a0a80e6afa229215c82c5ad7f368",
+        "duration_seconds": 5.751916666666666,
+        "sample_rate": 48000,
+        "gain": 0.7473086341912761,
+        "loudness": {
+          "input_i": "-20.47",
+          "input_tp": "-5.18",
+          "input_lra": "0.60",
+          "input_thresh": "-30.73",
+          "output_i": "-22.91",
+          "output_tp": "-7.56",
+          "output_lra": "0.30",
+          "output_thresh": "-33.25",
+          "normalization_type": "dynamic",
+          "target_offset": "-0.09"
+        }
+      },
+      "word_check": {
+        "transcript": "Good morning.  I thought we could meet after lunch, take a walk through the garden and talk about  our plans for the weekend.",
+        "expected": "Good morning. I thought we could meet after lunch, take a walk through the garden, and talk about our plans for the weekend.",
+        "exact_words": true,
+        "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+        "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+      },
+      "error": null
+    }
+  ],
+  "listening": "Awaiting user judgment."
+}

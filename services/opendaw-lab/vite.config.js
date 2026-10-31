@@ -1,0 +1,2 @@
+import {defineConfig} from 'vite';
+export default defineConfig({server:{host:'127.0.0.1',port:5201,strictPort:true,headers:{'Cross-Origin-Opener-Policy':'same-origin','Cross-Origin-Embedder-Policy':'require-corp','Cross-Origin-Resource-Policy':'cross-origin'},proxy:{'/voice-source':{target:'http://127.0.0.1:5198',changeOrigin:true,rewrite:(path)=>{const id=new URL(path,'http://localhost').searchParams.get('id')||'4fd82473-16ec-4d49-b03f-756d297686cf';if(!/^[a-f0-9-]{36}$/.test(id))throw Error('Invalid voice asset');return '/designer-media?id='+id+'&original=1'}}}}});

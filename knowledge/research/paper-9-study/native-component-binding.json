@@ -1,0 +1,9 @@
+{
+  "type": "PythonFunction",
+  "class": "lfx.components.prototypes.python_function.PythonFunctionComponent",
+  "source_path": "/Users/x/projects/langflow/src/lfx/src/lfx/components/prototypes/python_function.py",
+  "source_sha256": "d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+  "catalog_sha256": "3b1623a865b6e20063a18308f7db30f4d13bda3caa37e4cc4da70b5761c9d87b",
+  "native_definition_unchanged": true,
+  "resource_boundary": "Native PythonFunction invokes pinned trusted local resource code. It is not an operating-system sandbox."
+}

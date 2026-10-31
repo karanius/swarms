@@ -1,0 +1,3 @@
+# Existing Research environment provides numpy, requests, nbformat, nbclient and IPython.
+# UI dependency installed in that environment during delivery.
+ipywidgets==8.1.9

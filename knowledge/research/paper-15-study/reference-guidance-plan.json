@@ -1,0 +1,31 @@
+{
+  "text": "I need you to stay right here.",
+  "seed": 7,
+  "num_step": 10,
+  "engine": "voxcpm2",
+  "conditions": [
+    {
+      "label": "neutral-reference",
+      "reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "effective_mode": "audio-continuation: reference + transcript, no written or inline instruction"
+    },
+    {
+      "label": "angry-reference",
+      "reference": {
+        "id": "esd:0012:anger",
+        "label": "Voice 0012 \u00b7 male \u00b7 anger \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-anger.wav",
+        "sha256": "2ee717f077a83a09073f65d2b3530ac26225e1fc56c21175097318239ae61285",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "effective_mode": "audio-continuation: reference + transcript, no written or inline instruction"
+    }
+  ],
+  "claim": "Reference effect under continuation mode, not isolation of emotion from all reference-acoustic differences."
+}

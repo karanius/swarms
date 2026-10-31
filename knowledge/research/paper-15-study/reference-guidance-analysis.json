@@ -1,0 +1,111 @@
+{
+  "controls_equal_except_reference": true,
+  "reference_transcripts_equal": true,
+  "mode_mapping_source": "/Users/x/projects/swarms/services/voicestudio/upstream/backend/engines/voxcpm2_subprocess/main.py",
+  "mode_mapping_source_sha256": "a9ed52a2af7d77fa60ba20aeed888c962e9dd44c09343edc5f7f3a2b4f727142",
+  "conditions": [
+    {
+      "condition": "neutral-reference",
+      "request": {
+        "text": "I need you to stay right here.",
+        "engine": "voxcpm2",
+        "seed": "7",
+        "effect_preset": "raw",
+        "wav_bits": "24",
+        "max_chunk_chars": "0",
+        "pronounce": "false",
+        "ref_text": "I have bunburyed all over goat on two separate occasions.",
+        "num_step": "10",
+        "reference": {
+          "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+          "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f"
+        }
+      },
+      "effective_mode": "audio-continuation",
+      "effective_native_parameters": {
+        "text": "I need you to stay right here.",
+        "cfg_value": 2.0,
+        "max_len": 256,
+        "inference_timesteps": 10,
+        "retry_badcase": false,
+        "retry_badcase_max_times": 1,
+        "reference_wav_path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "prompt_wav_path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "prompt_text": "I have bunburyed all over goat on two separate occasions."
+      },
+      "reference_duration_seconds": 5.412041666666667,
+      "raw_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/reference-guidance-neutral-reference-01/native.wav",
+      "raw_sha256": "ded0db12036fd993a25c155b7911e35f41339275856dca314edae893499d370b",
+      "duration_seconds": 2.4,
+      "api_seconds": 15.247084856033325,
+      "pitch_median_hz": 153.46903066165135,
+      "pitch_iqr_hz": 26.492020932485303,
+      "raw_measurement": {
+        "input_i": "-18.7",
+        "input_tp": "-3.2",
+        "meter": "FFmpeg ebur128"
+      },
+      "listening_assessment": null,
+      "matched_measurement": {
+        "input_i": "-23.0",
+        "input_tp": "-7.5",
+        "meter": "FFmpeg ebur128"
+      },
+      "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/reference-guidance-neutral-reference-01.wav",
+      "matched_sha256": "0800aa490ffadbbb596c1f416dbf35d7974c38419bb769695b14df1fd81c7d5a",
+      "target_lufs": -23.0
+    },
+    {
+      "condition": "angry-reference",
+      "request": {
+        "text": "I need you to stay right here.",
+        "engine": "voxcpm2",
+        "seed": "7",
+        "effect_preset": "raw",
+        "wav_bits": "24",
+        "max_chunk_chars": "0",
+        "pronounce": "false",
+        "ref_text": "I have bunburyed all over goat on two separate occasions.",
+        "num_step": "10",
+        "reference": {
+          "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-anger.wav",
+          "sha256": "2ee717f077a83a09073f65d2b3530ac26225e1fc56c21175097318239ae61285"
+        }
+      },
+      "effective_mode": "audio-continuation",
+      "effective_native_parameters": {
+        "text": "I need you to stay right here.",
+        "cfg_value": 2.0,
+        "max_len": 256,
+        "inference_timesteps": 10,
+        "retry_badcase": false,
+        "retry_badcase_max_times": 1,
+        "reference_wav_path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-anger.wav",
+        "prompt_wav_path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-anger.wav",
+        "prompt_text": "I have bunburyed all over goat on two separate occasions."
+      },
+      "reference_duration_seconds": 5.856041666666667,
+      "raw_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/reference-guidance-angry-reference-01/native.wav",
+      "raw_sha256": "578a2e7a1b4448bed70b40d9df7aed7a072a6ff5e154f8c671bcf6d8fa20ff3d",
+      "duration_seconds": 2.4,
+      "api_seconds": 2.5046019554138184,
+      "pitch_median_hz": 280.3761661467338,
+      "pitch_iqr_hz": 98.30580827903955,
+      "raw_measurement": {
+        "input_i": "-17.2",
+        "input_tp": "-2.2",
+        "meter": "FFmpeg ebur128"
+      },
+      "listening_assessment": null,
+      "matched_measurement": {
+        "input_i": "-23.0",
+        "input_tp": "-8.0",
+        "meter": "FFmpeg ebur128"
+      },
+      "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/reference-guidance-angry-reference-01.wav",
+      "matched_sha256": "246f1be08301fd7b9df37d26d6632734ca214884b6bf6ae098a57751e96e9c51",
+      "target_lufs": -23.0
+    }
+  ],
+  "limits": "One speaker, one line, one seed. Reference acoustic properties differ. No listener, transcript or identity-fidelity score. New continuation mode differs from previous instruction-conditioned tests."
+}

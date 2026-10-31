@@ -1,0 +1,6 @@
+{
+  "checks": 49,
+  "passed": true,
+  "issues": [],
+  "scope": "Internal structural interpretation check only, not a complete validator or semantic purpose test"
+}

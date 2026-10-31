@@ -1,0 +1,166 @@
+{
+  "run_dir": "/Users/x/projects/swarms/knowledge/research/paper-16-study/runs/indextts-20261031-002242-db04f7c4",
+  "request": {
+    "text": "I need you to stay right here.",
+    "speaker": "0012",
+    "seed": 7,
+    "conditions": [
+      {
+        "emotion": "anger",
+        "strength": 1.0,
+        "method": "External angry reference"
+      },
+      {
+        "emotion": "anger",
+        "strength": 1.0,
+        "method": "Built-in anger vector",
+        "emo_vector": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "references": {
+      "neutral": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "anger": {
+        "id": "esd:0012:anger",
+        "label": "Voice 0012 \u00b7 male \u00b7 anger \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-anger.wav",
+        "sha256": "2ee717f077a83a09073f65d2b3530ac26225e1fc56c21175097318239ae61285",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "happiness": {
+        "id": "esd:0012:happiness",
+        "label": "Voice 0012 \u00b7 male \u00b7 happiness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-happiness.wav",
+        "sha256": "b5dc06b810118a6616cd2b49ffc4fe6f8e0552757d72fd38efed126979df0444",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "sadness": {
+        "id": "esd:0012:sadness",
+        "label": "Voice 0012 \u00b7 male \u00b7 sadness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-sadness.wav",
+        "sha256": "b548fdacb62075241fdade270b0a06e9256d2fa70e8fceab546bf29a9e0b4791",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "surprise": {
+        "id": "esd:0012:surprise",
+        "label": "Voice 0012 \u00b7 male \u00b7 surprise \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-surprise.wav",
+        "sha256": "f5deb54d6f85d326a5fb1ac2627b0d2257a7b6ff4aa5c7490edc5fd0582996de",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    "code_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+    "model_revision": "c39ce5ba981572cb187443877ff559dfb246ce63",
+    "device": "mps",
+    "native_method": "controlled audio-reference versus native-vector comparison",
+    "use_emo_text": false,
+    "use_random": false,
+    "precision": "float32",
+    "duration_factor": 1.0
+  },
+  "load_seconds": 16.072338104248047,
+  "torch": "2.8.0",
+  "parameter_device": "mps:0",
+  "takes": [
+    {
+      "listening_path": "/Users/x/projects/swarms/knowledge/research/paper-16-study/runs/indextts-20261031-002242-db04f7c4/1-anger-1.0-listening.wav",
+      "listening_gain": 0.46719695117188015,
+      "raw_loudness": {
+        "input_i": "-16.39",
+        "input_tp": "-0.82",
+        "input_lra": "0.00",
+        "input_thresh": "-26.39",
+        "output_i": "-22.99",
+        "output_tp": "-7.42",
+        "output_lra": "0.00",
+        "output_thresh": "-32.99",
+        "normalization_type": "linear",
+        "target_offset": "-0.01"
+      },
+      "target_lufs": -23,
+      "emotion": "anger",
+      "strength": 1.0,
+      "method": "External angry reference",
+      "path": "/Users/x/projects/swarms/knowledge/research/paper-16-study/runs/indextts-20261031-002242-db04f7c4/1-anger-1.0.wav",
+      "url": "/research-jupyter/files/paper-16-audio/indextts-20261031-002242-db04f7c4-1-anger-1.0.wav",
+      "sha256": "05e091027be1ef83bc4f55131dd1b135dbe00dec7e194f131c9c30454b9a5bc6",
+      "sample_rate": 22050,
+      "duration_seconds": 2.995374149659864,
+      "peak": 0.90631103515625,
+      "rms": 0.14201964400903055,
+      "elapsed_seconds": 6.707589864730835,
+      "word_check": {
+        "transcript": "I need you to stay right here.",
+        "expected": "I need you to stay right here.",
+        "exact_words": true,
+        "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+        "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+      }
+    },
+    {
+      "listening_path": "/Users/x/projects/swarms/knowledge/research/paper-16-study/runs/indextts-20261031-002242-db04f7c4/2-anger-1.0-listening.wav",
+      "listening_gain": 0.39400342764474555,
+      "raw_loudness": {
+        "input_i": "-14.91",
+        "input_tp": "0.03",
+        "input_lra": "0.00",
+        "input_thresh": "-25.27",
+        "output_i": "-23.00",
+        "output_tp": "-8.06",
+        "output_lra": "0.00",
+        "output_thresh": "-33.35",
+        "normalization_type": "linear",
+        "target_offset": "-0.00"
+      },
+      "target_lufs": -23,
+      "emotion": "anger",
+      "strength": 1.0,
+      "method": "Built-in anger vector",
+      "emo_vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "path": "/Users/x/projects/swarms/knowledge/research/paper-16-study/runs/indextts-20261031-002242-db04f7c4/2-anger-1.0.wav",
+      "url": "/research-jupyter/files/paper-16-audio/indextts-20261031-002242-db04f7c4-2-anger-1.0.wav",
+      "sha256": "95f574e63ccb32ef77a245c82910c69ed4b2fd66d7e5463a5027d3c2015c15c9",
+      "sample_rate": 22050,
+      "duration_seconds": 2.8328344671201813,
+      "peak": 1.0,
+      "rms": 0.15920962797776936,
+      "elapsed_seconds": 3.8135788440704346,
+      "word_check": {
+        "transcript": "I need you to stay right here.",
+        "expected": "I need you to stay right here.",
+        "exact_words": true,
+        "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+        "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+      }
+    }
+  ],
+  "listening_assessment": "Not yet rated",
+  "mps_fallback_enabled": true,
+  "observed_feature_tensor_devices": [
+    "mps:0"
+  ],
+  "comparison_note": "Same neutral identity reference, words, seed, duration and sampling; emotion method differs. Static-gain listening copies; no acting quality inferred from generation."
+}

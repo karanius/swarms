@@ -1,0 +1,9596 @@
+{
+  "rac4206fb774516d0ba50": [
+    "DataToDataFrame",
+    "dataframe",
+    "DataFrameOperationsComponent",
+    "df"
+  ],
+  "r793ec34dc9feed79025d": [
+    "MessagetoData",
+    "data",
+    "RecursiveCharacterTextSplitter",
+    "data_input"
+  ],
+  "rcfb3a42ac458c7b3406e": [
+    "RecursiveCharacterTextSplitter",
+    "data",
+    "DataToDataFrame",
+    "data_list"
+  ],
+  "r43be64c739f71d0251c3": [
+    "TextInput",
+    "text",
+    "YouTubeTranscripts",
+    "url"
+  ],
+  "r66c8976e304a5cf9e567": [
+    "ChatInput",
+    "message",
+    "AstraDB",
+    "search_query"
+  ],
+  "rd4cc60b824619fd0ab9f": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "question"
+  ],
+  "r6c837beed9b9405ad675": [
+    "Prompt",
+    "prompt",
+    "GroqModel",
+    "input_value"
+  ],
+  "r3a495673c04ed72066a4": [
+    "GroqModel",
+    "text_output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rf29c3d5ac66d095d5282": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt",
+    "context"
+  ],
+  "r68024e9d6bfcfb6cf857": [
+    "AstraDB",
+    "dataframe",
+    "ParserComponent",
+    "input_data"
+  ],
+  "rb688b77f2129355670d7": [
+    "YouTubeTranscripts",
+    "message",
+    "MessagetoData",
+    "message"
+  ],
+  "r39531cefb62b8fc1bac2": [
+    "DataFrameOperationsComponent",
+    "output",
+    "DataFrameOperationsComponent",
+    "df"
+  ],
+  "rf918624d3f737babc992": [
+    "TextInput",
+    "text",
+    "DataFrameOperationsComponent",
+    "new_column_value"
+  ],
+  "r0540cbea61e9d050ff42": [
+    "DataFrameOperationsComponent",
+    "output",
+    "AstraDB",
+    "ingest_data"
+  ],
+  "redcfcd47fb27122bd48d": [
+    "TypeConverterComponent",
+    "data_output",
+    "DataOperations",
+    "data"
+  ],
+  "r1b95316e96203f1e444d": [
+    "DataOperations",
+    "data_output",
+    "ParserComponent",
+    "input_data"
+  ],
+  "ra7cb1c114075484fcfa7": [
+    "ParserComponent",
+    "parsed_text",
+    "Agent",
+    "input_value"
+  ],
+  "rfc348dbc63a59c02010f": [
+    "Agent",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "ree432175d335f7435b0d": [
+    "GoogleSearchAPICore",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r0650274ac9b1fea7f1cb": [
+    "ChatInput",
+    "message",
+    "Agent",
+    "input_value"
+  ],
+  "r6e06113df91e4c6c2d9e": [
+    "Agent",
+    "response",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "r6f6314e7da3418d842c1": [
+    "UnifiedWebSearch",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "re2da99df514f1269be0f": [
+    "Agent",
+    "response",
+    "Agent",
+    "input_value"
+  ],
+  "r8d4b54cdd0bd4a734b44": [
+    "Agent",
+    "response",
+    "Prompt",
+    "research_output"
+  ],
+  "r42b052cfafae21f11366": [
+    "Agent",
+    "response",
+    "Prompt",
+    "analysis_output"
+  ],
+  "r590daa60244fbbaed28e": [
+    "Prompt",
+    "prompt",
+    "Agent",
+    "system_prompt"
+  ],
+  "r93610c20e3970bb72f3c": [
+    "TextInput",
+    "text",
+    "Agent",
+    "system_prompt"
+  ],
+  "rf8901ac05773d09bfa68": [
+    "TavilySearchComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r316f4e1f4922aa38e61e": [
+    "URLComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rd2a6d18027c6a4d40013": [
+    "Prompt Template",
+    "prompt",
+    "Agent",
+    "system_prompt"
+  ],
+  "recd42e95cab342f98a28": [
+    "Prompt Template",
+    "prompt",
+    "GroqModel",
+    "system_message"
+  ],
+  "r728f589c4ec83ccd0c7e": [
+    "GroqModel",
+    "text_output",
+    "ConditionalRouter",
+    "input_text"
+  ],
+  "r77682702fad495f41071": [
+    "GroqModel",
+    "text_output",
+    "ConditionalRouter",
+    "false_case_message"
+  ],
+  "r2d7b95359b1d65b6c48c": [
+    "ChatInput",
+    "message",
+    "Prompt Template",
+    "user_question"
+  ],
+  "rb072fd8e16f81b232723": [
+    "ChatInput",
+    "message",
+    "GroqModel",
+    "input_value"
+  ],
+  "r3211739db92f88f06a2e": [
+    "ChatInput",
+    "message",
+    "ConditionalRouter",
+    "true_case_message"
+  ],
+  "r2210a4f44633b189f57f": [
+    "ConditionalRouter",
+    "true_result",
+    "Agent",
+    "input_value"
+  ],
+  "r748ec94ead7e0988fa7f": [
+    "ConditionalRouter",
+    "false_result",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r873b62829439b4a1052e": [
+    "AssemblyAITranscriptionJobCreator",
+    "transcript_id",
+    "AssemblyAITranscriptionJobPoller",
+    "transcript_id"
+  ],
+  "r3ff9ad4b00a040b5c311": [
+    "AssemblyAITranscriptionJobPoller",
+    "transcription_result",
+    "AssemblyAIGetSubtitles",
+    "transcription_result"
+  ],
+  "rbbc67f20c5bb5b68f6d6": [
+    "AssemblyAITranscriptionJobPoller",
+    "transcription_result",
+    "ParseData",
+    "data"
+  ],
+  "rec53d8373786f0b8e42e": [
+    "Prompt",
+    "prompt",
+    "AssemblyAILeMUR",
+    "prompt"
+  ],
+  "r154d0bf96b11ea426473": [
+    "AssemblyAITranscriptionJobPoller",
+    "transcription_result",
+    "AssemblyAILeMUR",
+    "transcription_result"
+  ],
+  "rdeaa1240ead9e3ba6ab5": [
+    "parser",
+    "parsed_text",
+    "Prompt",
+    "context"
+  ],
+  "rc2bbce001167ff5e5e46": [
+    "File",
+    "message",
+    "SplitText",
+    "data_inputs"
+  ],
+  "r050e47755a493ba1bc06": [
+    "Prompt",
+    "prompt",
+    "LanguageModelComponent",
+    "input_value"
+  ],
+  "r07a74777a4b1bbadfed8": [
+    "LanguageModelComponent",
+    "text_output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rc2e6c53074101c222f0c": [
+    "SplitText",
+    "dataframe",
+    "AstraDB",
+    "ingest_data"
+  ],
+  "r1ecc126dfd5c65ffe488": [
+    "AstraDB",
+    "dataframe",
+    "parser",
+    "input_data"
+  ],
+  "r8b0b43834488a480d1b3": [
+    "OpenAIEmbeddings",
+    "embeddings",
+    "AstraDB",
+    "embedding_model"
+  ],
+  "re650fb3d22b0ad3a8be3": [
+    "DuckDuckGoSearchComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r53581a21ea65697c3d4e": [
+    "LoadTicketsCSV",
+    "tickets_data",
+    "ValidateTickets",
+    "tickets"
+  ],
+  "r7d0a458ed9e397df4aec": [
+    "ValidateTickets",
+    "validated",
+    "FilterClosedTickets",
+    "tickets"
+  ],
+  "r2fb6690526b4f8ca6f4e": [
+    "FilterClosedTickets",
+    "closed_tickets",
+    "SentimentAnalysisVADER",
+    "tickets"
+  ],
+  "raf158bbd5d454157d610": [
+    "AggregateStats",
+    "stats",
+    "FormatMarkdownReport",
+    "stats"
+  ],
+  "r33e8620c2c2f73e6daac": [
+    "FormatMarkdownReport",
+    "report",
+    "SaveReportToFile",
+    "report"
+  ],
+  "rde6df299369544f540ec": [
+    "AggregateStats",
+    "stats",
+    "LogSummary",
+    "stats"
+  ],
+  "r304fbbc05ffa77f18e87": [
+    "SentimentAnalysisVADER",
+    "classified_tickets",
+    "ExtractSentimentExamples",
+    "tickets"
+  ],
+  "rb022a13a1f2ce973bb19": [
+    "SentimentAnalysisVADER",
+    "classified_tickets",
+    "AggregateStats",
+    "tickets"
+  ],
+  "r41e8d900a163fa861895": [
+    "ExtractSentimentExamples",
+    "examples",
+    "FormatMarkdownReport",
+    "examples"
+  ],
+  "rdc4f69641e57595d340e": [
+    "FormatMarkdownReport",
+    "report",
+    "SendReportEmail",
+    "markdown_report"
+  ],
+  "rb693b2057a1edf8618b5": [
+    "File",
+    "message",
+    "Agent",
+    "input_value"
+  ],
+  "r04089afafcfb68836dce": [
+    "Prompt",
+    "prompt",
+    "LanguageModelComponent",
+    "system_message"
+  ],
+  "r1f291d9a89dd7f70d76d": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "input_value"
+  ],
+  "r295e5552b5cf260d5553": [
+    "LanguageModelComponent",
+    "text_output",
+    "Prompt",
+    "previous_response"
+  ],
+  "r17a98beef0dcba7de4c2": [
+    "ChatInput",
+    "message",
+    "LanguageModelComponent",
+    "input_value"
+  ],
+  "r47be129ec9d36faf7663": [
+    "Prompt",
+    "prompt",
+    "Agent",
+    "input_value"
+  ],
+  "rf721059ec0ab5fe193b0": [
+    "Agent",
+    "response",
+    "Prompt",
+    "search_results"
+  ],
+  "r80d40e208348b650a7cf": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "USER_INPUT"
+  ],
+  "rd177d327baf12c8602fb": [
+    "Memory",
+    "messages_text",
+    "Prompt",
+    "CHAT_HISTORY"
+  ],
+  "rcf7032d3d71933c91e32": [
+    "URL",
+    "raw_results",
+    "Prompt",
+    "EXAMPLE_COMPONENTS"
+  ],
+  "r0e56d352e788f4233c74": [
+    "URL",
+    "raw_results",
+    "Prompt",
+    "CUSTOM_COMPONENT_CODE"
+  ],
+  "r3b2342ffb821db7859f4": [
+    "URL",
+    "raw_results",
+    "Prompt",
+    "BASE_COMPONENT_CODE"
+  ],
+  "r1373dec3a33179a1a18f": [
+    "ChatInput",
+    "message",
+    "Cuga",
+    "input_value"
+  ],
+  "rd4498b5ee7d231b13db8": [
+    "Cuga",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r47add9162f2850b48d13": [
+    "ComposioGmailAPIComponent",
+    "component_as_tool",
+    "Cuga",
+    "tools"
+  ],
+  "rd1b60b634bca8e61e883": [
+    "MCPTools",
+    "component_as_tool",
+    "Cuga",
+    "tools"
+  ],
+  "r8dd89883727a8fcc4a66": [
+    "ChatInput",
+    "message",
+    "AstraDB",
+    "search_input"
+  ],
+  "rc4bc8f6471de4f88443b": [
+    "AstraDB",
+    "search_results",
+    "ParseData",
+    "data"
+  ],
+  "rd2f06b01b8ac22edef30": [
+    "ParseData",
+    "text",
+    "Prompt",
+    "results"
+  ],
+  "rd0a3982090ed2f447193": [
+    "File",
+    "data",
+    "SplitText",
+    "data_inputs"
+  ],
+  "r35764c96fac53d2f97f0": [
+    "SplitText",
+    "chunks",
+    "AstraDB",
+    "ingest_data"
+  ],
+  "rbc01d6c9ba62a1538c09": [
+    "AstraDBToolComponent",
+    "api_build_tool",
+    "Agent",
+    "tools"
+  ],
+  "r02fbc0ca3c2dfba2b1f0": [
+    "Agent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r1003c8ed585c675cffdb": [
+    "ChatInput",
+    "out",
+    "LanguageModelComponent",
+    "input_value"
+  ],
+  "r1a6884c44e52b2816b54": [
+    "Prompt",
+    "out",
+    "LanguageModelComponent",
+    "system_message"
+  ],
+  "rbf2ba291ff0a86bb4494": [
+    "LanguageModelComponent",
+    "out",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r6c853225fef5f5e97b82": [
+    "ApifyActors",
+    "tool",
+    "Agent",
+    "tools"
+  ],
+  "r1bcb9e5adc533bc809d5": [
+    "ChatInput",
+    "message",
+    "Translation04",
+    "InputText"
+  ],
+  "r83897bf0450bcfaf053a": [
+    "Translation04",
+    "output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r7782b330b77f8de07738": [
+    "Prompt",
+    "prompt",
+    "GoogleGenerativeAIModel",
+    "input_value"
+  ],
+  "r3a4b0178f76d86aaf4b7": [
+    "File",
+    "data",
+    "ParseData",
+    "data"
+  ],
+  "r9d3fca60025308ad4577": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "json_structure"
+  ],
+  "re1982c830698550992ea": [
+    "Prompt",
+    "prompt",
+    "GoogleGenerativeAIModel",
+    "system_message"
+  ],
+  "rb849a1fb0f290500d40e": [
+    "ParseData",
+    "text",
+    "Prompt",
+    "PDF_TEXT_INPUT"
+  ],
+  "r44cd151a00f448838936": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "OUTPUT_STRUCTURE"
+  ],
+  "r30eee82bdebde46dc8e3": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "QUESTIONS_COUNT"
+  ],
+  "ra4c548253350bb61eddd": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "QUESTIONS_LEVEL"
+  ],
+  "r853248e5f5d819db36f4": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "LEVEL"
+  ],
+  "rc10979b99911b21bb8ca": [
+    "Prompt",
+    "prompt",
+    "APIRequest",
+    "urls"
+  ],
+  "r8e9ada5cbd16b939fceb": [
+    "GoogleGenerativeAIModel",
+    "text_output",
+    "JSONCleaner",
+    "json_str"
+  ],
+  "r860c0b78f42ebaf20ec2": [
+    "JSONCleaner",
+    "output",
+    "Webhook",
+    "data"
+  ],
+  "r05750c70c2ce4d593bf6": [
+    "Webhook",
+    "output_data",
+    "APIRequest",
+    "body"
+  ],
+  "rac8a66da9f7d78c31539": [
+    "Webhook",
+    "output_data",
+    "APIRequest",
+    "headers"
+  ],
+  "rcf77f835a26058524ca3": [
+    "APIRequest",
+    "data",
+    "ParseData",
+    "data"
+  ],
+  "r21d30f62702cbfca1788": [
+    "ParseData",
+    "text",
+    "JSONCleaner",
+    "json_str"
+  ],
+  "rb0c05f3a57eaf1e44b28": [
+    "JSONCleaner",
+    "output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r9edf17a8d79f0be60408": [
+    "ChatInput",
+    "message",
+    "Prompt Template",
+    "URL"
+  ],
+  "rbd767dcf048f422dfc84": [
+    "needle",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r285aa6a4f0053bcdc6bd": [
+    "OpenAIModel",
+    "model_output",
+    "Agent",
+    "model"
+  ],
+  "rff2ce05856a6bf3e6229": [
+    "SAPCodeReader",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rf19ec31aead9e7868ea5": [
+    "ChatInput",
+    "message",
+    "EvidenceReadFields",
+    "mcp_request"
+  ],
+  "re22778b7f6f7b8170526": [
+    "EvidenceReadFields",
+    "request",
+    "ReadEvidence",
+    "payload"
+  ],
+  "r4227aeef8ac99a6ff8cc": [
+    "ReadEvidence",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r00e814d8d3b9d94dab97": [
+    "Directory",
+    "data",
+    "SplitText",
+    "data_inputs"
+  ],
+  "reb161232085bdbed3684": [
+    "OllamaEmbeddings",
+    "embeddings",
+    "Chroma",
+    "embedding"
+  ],
+  "rf50b26b53ce0dc2bfd82": [
+    "SplitText",
+    "chunks",
+    "Chroma",
+    "ingest_data"
+  ],
+  "rdb5724ca0b6f989d2110": [
+    "ChatInput",
+    "message",
+    "PythonREPLComponent",
+    "input_text"
+  ],
+  "rc63c7cbf94eb41949e23": [
+    "PythonREPLComponent",
+    "results",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r93d9fcd075df00408c02": [
+    "ParserComponent",
+    "parsed_text",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r4f2ca63dca7b1f3ba2bd": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "instructions"
+  ],
+  "rb54fd40268d7fc53f249": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt",
+    "references"
+  ],
+  "rddef428ca84838f7e76a": [
+    "URLComponent",
+    "page_results",
+    "ParserComponent",
+    "input_data"
+  ],
+  "rb13db34381a7de637559": [
+    "AstraDB",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rc828862e86b1fa42b1c7": [
+    "IBMwatsonxModel",
+    "model_output",
+    "Agent",
+    "agent_llm"
+  ],
+  "r416b9c6cd9e1e23f9ffb": [
+    "ChatInput",
+    "message",
+    "StructuredOutput",
+    "input_value"
+  ],
+  "ra033871f249c6a1b34cb": [
+    "LanguageModelComponent",
+    "model_output",
+    "StructuredOutput",
+    "llm"
+  ],
+  "r93d9e25f3eef6840eef1": [
+    "StructuredOutput",
+    "dataframe_output",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r395e113870210060f03a": [
+    "LanguageModelComponent",
+    "model_output",
+    "BatchRunComponent",
+    "model"
+  ],
+  "r110a5ad5d92dd2cff673": [
+    "URLComponent",
+    "page_results",
+    "BatchRunComponent",
+    "df"
+  ],
+  "rc5bfb4881d4f4ca8c5cb": [
+    "BatchRunComponent",
+    "batch_results",
+    "DataFrameToToolset",
+    "dataframe"
+  ],
+  "r36cba8ea5544d44828b7": [
+    "DataFrameToToolset",
+    "tools",
+    "Agent",
+    "tools"
+  ],
+  "r3188dc7ec40a51ad03ee": [
+    "CalculatorComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r7648407d8237958e1d3f": [
+    "File",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r96510adbc3f41cadb3a6": [
+    "URLComponent",
+    "data",
+    "SplitText",
+    "data_inputs"
+  ],
+  "raebc37deb54ac4d7b9b1": [
+    "MistalAIEmbeddings",
+    "embeddings",
+    "Chroma",
+    "embedding"
+  ],
+  "rcb58098583a9c8edb8a2": [
+    "Chroma",
+    "dataframe",
+    "parser",
+    "input_data"
+  ],
+  "r1d5d3aeee7b44925b263": [
+    "ChatInput",
+    "message",
+    "Chroma",
+    "search_query"
+  ],
+  "r2e76dc893e2c956787fe": [
+    "Prompt",
+    "prompt",
+    "MistralModel",
+    "input_value"
+  ],
+  "re8b049df4c7f1218d957": [
+    "MistralModel",
+    "text_output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r6dcc520e53afbdd6047b": [
+    "parser",
+    "parsed_text",
+    "Prompt",
+    "source"
+  ],
+  "ra88ed190704335c452b0": [
+    "File",
+    "dataframe",
+    "BatchRunComponent",
+    "df"
+  ],
+  "rfb65bf92c95c8ea3e923": [
+    "BatchRunComponent",
+    "batch_results",
+    "CorrectnessEvaluator",
+    "dataframe"
+  ],
+  "r61b1f3aa6fca17c6eefc": [
+    "AgentQL",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r03349c981975050d73ce": [
+    "RemixDocumentation",
+    "dataframe_output",
+    "FAISS",
+    "ingest_data"
+  ],
+  "r7168bce6930bce298518": [
+    "FAISS",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rb738b54acab93375c29b": [
+    "MCPTools",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r73fc3121bbe79d642687": [
+    "EmbeddingModel",
+    "embeddings",
+    "FAISS",
+    "embedding"
+  ],
+  "r1e0222ed65ee352dca0c": [
+    "ChatInput",
+    "message",
+    "ArXivComponent",
+    "search_query"
+  ],
+  "r7f40915727c462cfe976": [
+    "LoopComponent",
+    "item",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r7bf0be1dc7598fe630a3": [
+    "ParserComponent",
+    "parsed_text",
+    "LanguageModelComponent",
+    "input_value"
+  ],
+  "r64e2222cf1cd15ec5458": [
+    "LanguageModelComponent",
+    "text_output",
+    "LoopComponent",
+    "item"
+  ],
+  "r8caeba19d02fbd03739f": [
+    "ArXivComponent",
+    "dataframe",
+    "LoopComponent",
+    "data"
+  ],
+  "r92330459ba90bb416f85": [
+    "LoopComponent",
+    "done",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r4d1eded45aaae91f4634": [
+    "ParseData",
+    "text",
+    "Prompt",
+    "context"
+  ],
+  "re09334f3b157ec0179b3": [
+    "HuggingFaceInferenceAPIEmbeddings",
+    "embeddings",
+    "Chroma",
+    "embedding"
+  ],
+  "r4cadbb63a783b83443e6": [
+    "Chroma",
+    "search_results",
+    "ParseData",
+    "data"
+  ],
+  "reab580a3af714342adaf": [
+    "AdvancedEmailGenerator",
+    "email_output",
+    "SMTPEmailSender",
+    "email_data"
+  ],
+  "r20ca0194c25b662151ee": [
+    "SMTPEmailSender",
+    "send_result",
+    "EmailStatusRouter",
+    "smtp_result"
+  ],
+  "r2b2299467c9d7fd2ebce": [
+    "FileProcessor",
+    "output",
+    "DataToDataFrame",
+    "data_list"
+  ],
+  "r712b566efd942dff8586": [
+    "DataToDataFrame",
+    "dataframe",
+    "LoopComponent",
+    "data"
+  ],
+  "r4bb97e2e72c1a3c1ad45": [
+    "EmailStatusRouter",
+    "sent_output",
+    "LoopComponent",
+    "item"
+  ],
+  "rd294c6626a5f1b1e38a0": [
+    "LoopComponent",
+    "item",
+    "AdvancedEmailGenerator",
+    "input_data"
+  ],
+  "r17a95aac97064264a367": [
+    "ext:graph_extraction:OntologyManager@extra",
+    "ontology",
+    "ext:graph_extraction:StructuredOutputComponent@extra",
+    "ontology"
+  ],
+  "r3e1a3b2d4f1e5ce8d856": [
+    "LoopComponent",
+    "done",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r9dd5355d459670ceaeb0": [
+    "ParserComponent",
+    "parsed_text",
+    "ext:graph_extraction:StructuredOutputComponent@extra",
+    "input_value"
+  ],
+  "re1d23402e24de985e601": [
+    "ext:graph_extraction:StructuredOutputComponent@extra",
+    "structured_output",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r0db244defc3cd01a65f3": [
+    "ParserComponent",
+    "parsed_text",
+    "SplitText",
+    "data_inputs"
+  ],
+  "r126afe9b3b7f61dba4ef": [
+    "SplitText",
+    "dataframe",
+    "LoopComponent",
+    "data"
+  ],
+  "r1377a10600a92f8388b2": [
+    "ChatOutput",
+    "message",
+    "Prompt Template",
+    "table"
+  ],
+  "r3116f7d8b8582c7a8532": [
+    "ChatInput",
+    "message",
+    "Prompt Template",
+    "question"
+  ],
+  "rf4da81ed4044d742542b": [
+    "Prompt Template",
+    "prompt",
+    "LanguageModelComponent",
+    "input_value"
+  ],
+  "r7554436e009281de0c0f": [
+    "ChatOutput",
+    "message",
+    "ext:graph_extraction:StructuredOutputComponent@extra",
+    "input_value"
+  ],
+  "r136c067e6692893dfbc6": [
+    "ext:graph_extraction:StructuredOutputComponent@extra",
+    "structured_output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "ra2a4b229be919af0e3ea": [
+    "ChatOutput",
+    "message",
+    "LoopComponent",
+    "item"
+  ],
+  "r39f744b96dc376d4dbfc": [
+    "File",
+    "advanced_dataframe",
+    "InputNormalizer",
+    "input_value"
+  ],
+  "rdc90e273829683515f74": [
+    "InputNormalizer",
+    "context",
+    "GraphRetrievalNormalizer",
+    "context"
+  ],
+  "rcb784117f524042d189a": [
+    "ChatInput",
+    "message",
+    "GraphRetrievalNormalizer",
+    "query"
+  ],
+  "rfbea3a54092b119d9701": [
+    "InputNormalizer",
+    "rows",
+    "ParserComponent",
+    "input_data"
+  ],
+  "rde3fb1792424d1e98a42": [
+    "InputNormalizer",
+    "context",
+    "OutputNormalizer",
+    "context"
+  ],
+  "r94d987a6de70e2bdbdec": [
+    "ext:graph_extraction:StructuredOutputComponent@extra",
+    "structured_output",
+    "OutputNormalizer",
+    "input_value"
+  ],
+  "r1dda94060f0c88440d9d": [
+    "TextInput",
+    "text",
+    "MessagetoData",
+    "message"
+  ],
+  "r800eae881e8877ad805e": [
+    "MessagetoData",
+    "data",
+    "SplitText",
+    "data_inputs"
+  ],
+  "r831f2d34acfe9b2f1694": [
+    "GitExtractorComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r1a8e42eebb4790cfbbdb": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "git_source"
+  ],
+  "rb5bc3559b00f99e00434": [
+    "GitLoaderComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rb27365f007e3e14a955d": [
+    "SequentialCrewComponent",
+    "output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r114d2791dc468b379eb3": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "topic"
+  ],
+  "rcf4336861b4743d975a3": [
+    "Prompt",
+    "prompt",
+    "SequentialTaskAgentComponent",
+    "task_description"
+  ],
+  "r2fcb717e9c51ea77ab1e": [
+    "OpenAIModel",
+    "model_output",
+    "SequentialTaskAgentComponent",
+    "llm"
+  ],
+  "r122a94d2c62d53e16ff5": [
+    "SequentialTaskAgentComponent",
+    "task_output",
+    "SequentialTaskAgentComponent",
+    "previous_task"
+  ],
+  "rdf32b75bc0bc9a3cd506": [
+    "SequentialTaskAgentComponent",
+    "task_output",
+    "SequentialCrewComponent",
+    "tasks"
+  ],
+  "ra127e14c103a3bc39887": [
+    "YFinanceTool",
+    "tool",
+    "SequentialTaskAgentComponent",
+    "tools"
+  ],
+  "r062d02afb78ac627a2c4": [
+    "URLComponent",
+    "page_results",
+    "SplitText",
+    "data_inputs"
+  ],
+  "r996d15f5508d8d3b3471": [
+    "SplitText",
+    "dataframe",
+    "KnowledgeIngestion",
+    "input_df"
+  ],
+  "r05d9879e16fabe05491d": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "TRANSCRIPT"
+  ],
+  "r7853a06401622de9abb4": [
+    "NotionUserList",
+    "example_output",
+    "ParseData",
+    "data"
+  ],
+  "r944bcba5b6060c029cc5": [
+    "ParseData",
+    "text",
+    "Prompt",
+    "USERS"
+  ],
+  "rbe37c7b9d4d5da73aed3": [
+    "Prompt",
+    "prompt",
+    "ToolCallingAgent",
+    "system_prompt"
+  ],
+  "rd7171c35312efb957879": [
+    "NotionSearch",
+    "example_tool_output",
+    "ToolCallingAgent",
+    "tools"
+  ],
+  "r17796ac258a0877f0252": [
+    "OpenAIModel",
+    "model_output",
+    "ToolCallingAgent",
+    "llm"
+  ],
+  "rdf000ed5a1353b7b1cf7": [
+    "ToolCallingAgent",
+    "response",
+    "Prompt",
+    "TASK_LIST"
+  ],
+  "rbe0f49203703c1042604": [
+    "AddContentToPage",
+    "example_tool_output",
+    "ToolCallingAgent",
+    "tools"
+  ],
+  "r48574b62748c54cf24af": [
+    "NotionPageCreator",
+    "example_tool_output",
+    "ToolCallingAgent",
+    "tools"
+  ],
+  "r7e3682c18647e8c9e4e9": [
+    "NotionDatabaseProperties",
+    "example_tool_output",
+    "ToolCallingAgent",
+    "tools"
+  ],
+  "r7dd44d4fbbd5a2e5cc3f": [
+    "NotionPageUpdate",
+    "example_tool_output",
+    "ToolCallingAgent",
+    "tools"
+  ],
+  "r8dc181b73de6094731c3": [
+    "NotionSearch",
+    "example_output",
+    "ParseData",
+    "data"
+  ],
+  "r365da4a11fe8da2806e3": [
+    "ParseData",
+    "text",
+    "Prompt",
+    "DATABASES"
+  ],
+  "rc22df42901c2d3284e00": [
+    "ToolCallingAgent",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rf0fe6035702b2de3cb8a": [
+    "CurrentDateComponent",
+    "current_date",
+    "Prompt",
+    "CURRENT_DATE"
+  ],
+  "r63cda58d86e96707de57": [
+    "Agent",
+    "response",
+    "AstraDB",
+    "lexical_terms"
+  ],
+  "r7f7428f1d33338743b31": [
+    "MistalAIEmbeddings",
+    "embeddings",
+    "AstraDB",
+    "embedding"
+  ],
+  "r11ca742a9cce625d4817": [
+    "CreateListOfDiagnosis",
+    "list",
+    "AstraDB",
+    "ingest_data"
+  ],
+  "r307a059422801a01e4fb": [
+    "AstraDB",
+    "search_results",
+    "PermitFilter",
+    "resources"
+  ],
+  "rda020378c0a072c54060": [
+    "PermitFilter",
+    "permitted_resources",
+    "ParseData",
+    "data"
+  ],
+  "r8d84e465b4afcd99bd6f": [
+    "Agent",
+    "response",
+    "SmartRouter",
+    "input_text"
+  ],
+  "r075086ae1d6e3208503b": [
+    "SmartRouter",
+    "category_2_result",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r632350035b74c3e75db8": [
+    "SmartRouter",
+    "category_1_result",
+    "StructuredOutput",
+    "input_value"
+  ],
+  "rf6410ef31a4ff549e9e1": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "platform"
+  ],
+  "rcb2ef7f1450197139f14": [
+    "SmartRouter",
+    "category_1_result",
+    "Prompt Template",
+    "context"
+  ],
+  "r3c48f4a97fdec67a5e30": [
+    "CurrentDate",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r4ed7fd837e459db16f4f": [
+    "Agent",
+    "response",
+    "StructuredOutput",
+    "input_value"
+  ],
+  "r4aa6bec716b300fcbd66": [
+    "StructuredOutput",
+    "structured_output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r6efb84dde1ce671d5da6": [
+    "LanguageModelComponent",
+    "model_output",
+    "StructuredOutput",
+    "model"
+  ],
+  "rc2ea4f4c6b579883b12d": [
+    "LanguageModelComponent",
+    "text_output",
+    "LanguageModelComponent",
+    "input_value"
+  ],
+  "rb663b68073b101781e3d": [
+    "MultiQueryRetriever",
+    "documents",
+    "ParseData",
+    "data"
+  ],
+  "r901e3eac045add1ea600": [
+    "ChatInput",
+    "message",
+    "MultiQueryRetriever",
+    "search_query"
+  ],
+  "r273e395290fe49422959": [
+    "Prompt",
+    "prompt",
+    "MultiQueryRetriever",
+    "prompt"
+  ],
+  "ra0d2a61d6287b1ef0548": [
+    "Tavily",
+    "base_retriever",
+    "MultiQueryRetriever",
+    "retriever"
+  ],
+  "rcb0d66a8f1f471f41bf3": [
+    "ParseData",
+    "text",
+    "Prompt",
+    "insights"
+  ],
+  "r62e635d31698ce605915": [
+    "ChatInput",
+    "message",
+    "QdrantVectorStoreComponent",
+    "search_query"
+  ],
+  "r5e909958be2016c01604": [
+    "QdrantVectorStoreComponent",
+    "base_retriever",
+    "MultiQueryRetriever",
+    "retriever"
+  ],
+  "r7b4e7ed429c211345bd2": [
+    "OllamaModel",
+    "model_output",
+    "MultiQueryRetriever",
+    "llm"
+  ],
+  "r75aaa5a8eefb6f992037": [
+    "Prompt",
+    "prompt",
+    "OllamaModel",
+    "input_value"
+  ],
+  "r495265032dc9690020ae": [
+    "OllamaModel",
+    "text_output",
+    "Prompt",
+    "outline"
+  ],
+  "re67da11cd8bcd2219bfc": [
+    "OllamaModel",
+    "text_output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r4af5e526e8697327044d": [
+    "OllamaModel",
+    "text_output",
+    "Prompt",
+    "response"
+  ],
+  "r706a06f5d0107dc88f99": [
+    "OllamaEmbeddings",
+    "embeddings",
+    "QdrantVectorStoreComponent",
+    "embedding"
+  ],
+  "r534c8f77231d021524ba": [
+    "Prompt Template",
+    "prompt",
+    "OpenRouterComponent",
+    "input_value"
+  ],
+  "rbf49c5c0d25496c52c61": [
+    "OpenRouterComponent",
+    "text_output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r74f77ba94955abd7a97c": [
+    "File",
+    "message",
+    "Prompt Template",
+    "input"
+  ],
+  "r12163de9659972323b72": [
+    "GoogleSerperAPICore",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "re863c2b84956cc5d5d70": [
+    "Webhook",
+    "output_data",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "r166827a2bcc264764f2f": [
+    "TypeConverterComponent",
+    "message_output",
+    "Agent",
+    "input_value"
+  ],
+  "r1b4c3493cc68b19569fb": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "CONTENT_GUIDELINES"
+  ],
+  "ra8e3a08421f7694bf6b0": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "OUTPUT_FORMAT"
+  ],
+  "rd3f86f8f8a40706b37f7": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "OUTPUT_LANGUAGE"
+  ],
+  "r2201a00a45041f92ee2a": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "PROFILE_DETAILS"
+  ],
+  "r94d152c392669dbd8dd5": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "PROFILE_TYPE"
+  ],
+  "r9c0f5d1121a403e315da": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "TONE_AND_STYLE"
+  ],
+  "r2b2d904a5f92c97fb902": [
+    "SplitText",
+    "dataframe",
+    "Chroma",
+    "ingest_data"
+  ],
+  "r26896539aefb12c427d7": [
+    "Chroma",
+    "search_results",
+    "parser",
+    "input_data"
+  ],
+  "r004d6028a32774f07019": [
+    "Prompt Template",
+    "prompt",
+    "GroqModel",
+    "input_value"
+  ],
+  "r94f7e6d2fa16b5bebebc": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "context"
+  ],
+  "r93bf04ce651a2f65c2cf": [
+    "AstraDB",
+    "search_results",
+    "ParserComponent",
+    "input_data"
+  ],
+  "recd0576fd3ffda7e31b3": [
+    "ChatInput",
+    "message",
+    "Knowledge",
+    "search_query"
+  ],
+  "r3ff6e1b6860345cfeda4": [
+    "Knowledge",
+    "retrieve_data",
+    "parser",
+    "input_data"
+  ],
+  "r7b58f1983d31914fc317": [
+    "parser",
+    "parsed_text",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r2c5cd35c6b5e66dc2d12": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "input"
+  ],
+  "r27bfdbe1c62954c3c50b": [
+    "AssemblyAITranscriptionJobPoller",
+    "transcription_result",
+    "parser",
+    "input_data"
+  ],
+  "rb4d3dc5d50ca90bafb73": [
+    "parser",
+    "parsed_text",
+    "Prompt",
+    "transcript"
+  ],
+  "rac67ffb3dd865e49a392": [
+    "Memory",
+    "messages_text",
+    "Prompt",
+    "history"
+  ],
+  "r82746ee9b1651c00ce3b": [
+    "Prompt Template",
+    "prompt",
+    "Agent",
+    "input_value"
+  ],
+  "r842733282fa1c0616587": [
+    "Directory",
+    "dataframe",
+    "SplitText",
+    "data_inputs"
+  ],
+  "rda05a5fab03e0fc63c47": [
+    "SplitText",
+    "dataframe",
+    "FAISS",
+    "ingest_data"
+  ],
+  "r1fbd5fdf173da5baaa40": [
+    "OpenAIEmbeddings",
+    "embeddings",
+    "FAISS",
+    "embedding"
+  ],
+  "r83d4b4e34c393ee3b5b7": [
+    "Agent",
+    "response",
+    "TextOutput",
+    "input_value"
+  ],
+  "r6ecc8effc5d8ee9a2d4d": [
+    "TextOutput",
+    "text",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r1a319aea6314b53a1c94": [
+    "SQLComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r8736c1f0caff93758a22": [
+    "Memory",
+    "messages_text",
+    "Prompt Template",
+    "history"
+  ],
+  "rea7ea7be364c2cba99f0": [
+    "TextInput",
+    "text",
+    "Memory",
+    "session_id"
+  ],
+  "r328de45aaf569ffb6349": [
+    "EmbeddingModel",
+    "embeddings",
+    "AstraDB",
+    "embedding_model"
+  ],
+  "r5577650943581728844d": [
+    "Prompt Template",
+    "prompt",
+    "OllamaModel",
+    "input_value"
+  ],
+  "r9967fd436760c1079af5": [
+    "Prompt",
+    "prompt",
+    "OpenAIModel",
+    "input_value"
+  ],
+  "r89927f13bbed53a373ab": [
+    "OpenAIModel",
+    "text_output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r1e070de2d87c6350002e": [
+    "Agent",
+    "response",
+    "Prompt",
+    "summary"
+  ],
+  "r7def8d02239feac17eb4": [
+    "AzureOpenAIModel",
+    "model_output",
+    "Agent",
+    "agent_llm"
+  ],
+  "r4339171b38f30a4f9d06": [
+    "SQLComponent",
+    "run_sql_query",
+    "LoopComponent",
+    "data"
+  ],
+  "r80d20ef0429bee87c279": [
+    "ParserComponent",
+    "parsed_text",
+    "GoogleSerperAPICore",
+    "input_value"
+  ],
+  "r26cd585e9e3ae85aae67": [
+    "GoogleSerperAPICore",
+    "results",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r398cb6e5c56f0d55a130": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "search_results"
+  ],
+  "rc1e441d5bf6deb46a81a": [
+    "Agent",
+    "response",
+    "LoopComponent",
+    "item"
+  ],
+  "rd521535432285f7a30fb": [
+    "ParseData",
+    "text",
+    "Prompt",
+    "document"
+  ],
+  "r03f47b990b5d542efe08": [
+    "Prompt",
+    "prompt",
+    "GroqModel",
+    "system_message"
+  ],
+  "rd4d14ca3e01345b35722": [
+    "ComposioGoogleCalendarAPIComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r1f4de22ce9956aa95b19": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "timezone"
+  ],
+  "rb5b50a75f0a4b77c3749": [
+    "ChatInput",
+    "message",
+    "AstraVectorStoreComponent",
+    "search_input"
+  ],
+  "r60e9fa6de730d508b2bf": [
+    "SplitText",
+    "chunks",
+    "AstraVectorStoreComponent",
+    "ingest_data"
+  ],
+  "r66ee08a3973f3baf1cc5": [
+    "OpenAIEmbeddings",
+    "embeddings",
+    "AstraVectorStoreComponent",
+    "embedding"
+  ],
+  "r7d7bc844bfdcda5880a6": [
+    "AstraVectorStoreComponent",
+    "search_results",
+    "ParseData",
+    "data"
+  ],
+  "re8cdc9c3cdc889d197ee": [
+    "OpenAIModel",
+    "model_output",
+    "CSVAgent",
+    "llm"
+  ],
+  "rca842464305fffe71668": [
+    "Prompt",
+    "prompt",
+    "CSVAgent",
+    "input_value"
+  ],
+  "r97f6f0597893cb49ef29": [
+    "CSVAgent",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rde592871c8b8a91a64c9": [
+    "FileDescriptionGeneratorComponent",
+    "descriptions",
+    "Chroma",
+    "ingest_data"
+  ],
+  "r1da75a937997f0728bda": [
+    "Chroma",
+    "component_as_tool",
+    "OpenDsStarAgent",
+    "tools"
+  ],
+  "redb40a01ca7c22e7b5fb": [
+    "ChatInput",
+    "message",
+    "OpenDsStarAgent",
+    "input_value"
+  ],
+  "r66afa078472dac635302": [
+    "OpenDsStarAgent",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r95ad29fd22e1b4973263": [
+    "FileContentRetriever",
+    "component_as_tool",
+    "OpenDsStarAgent",
+    "tools"
+  ],
+  "r0d2111e5f5b935c8b8dc": [
+    "Chroma",
+    "search_results",
+    "MergeFlows",
+    "inputs"
+  ],
+  "r5e1480bae15ad109c30c": [
+    "FileContentRetriever",
+    "content",
+    "MergeFlows",
+    "inputs"
+  ],
+  "rf9fdf86cd384a6c3584e": [
+    "OllamaModel",
+    "model_output",
+    "FileDescriptionGeneratorComponent",
+    "llm"
+  ],
+  "r9226ffb9986e4310932c": [
+    "OllamaModel",
+    "model_output",
+    "OpenDsStarAgent",
+    "llm"
+  ],
+  "r56166000bf7e20b5be98": [
+    "File",
+    "message",
+    "FileDescriptionGeneratorComponent",
+    "file_data"
+  ],
+  "r7217c07ad4c71a453b19": [
+    "File",
+    "message",
+    "FileContentRetriever",
+    "file_data"
+  ],
+  "r562cd5b6155a15371487": [
+    "SaveToFile",
+    "component_as_tool",
+    "OpenDsStarAgent",
+    "tools"
+  ],
+  "rb5155c1d57bad421af42": [
+    "SearchComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r95ef220e75f65c2c4538": [
+    "URL",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "ra6085c402e226e55dafe": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "url"
+  ],
+  "re6309ae71eebddace416": [
+    "Agent",
+    "response",
+    "Prompt",
+    "details"
+  ],
+  "rff78af009d801a652ad5": [
+    "Agent",
+    "response",
+    "Prompt",
+    "architecture_and_terraform"
+  ],
+  "re9653c069d224d61dbeb": [
+    "YouTubeCommentsComponent",
+    "comments",
+    "BatchRunComponent",
+    "df"
+  ],
+  "r22bed852edb4cc652d68": [
+    "OpenAIModel",
+    "model_output",
+    "BatchRunComponent",
+    "model"
+  ],
+  "r3c671e3e29fd41e763f6": [
+    "BatchRunComponent",
+    "batch_results",
+    "ParseDataFrame",
+    "df"
+  ],
+  "rfb4180f32320a0c5481f": [
+    "ParseDataFrame",
+    "text",
+    "Prompt",
+    "analysis"
+  ],
+  "r73ac99339ca8b3a68801": [
+    "YouTubeTranscripts",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rdda3f3219fa824c5f653": [
+    "ChatInput",
+    "message",
+    "ConditionalRouter",
+    "input_text"
+  ],
+  "r0ba814aada25a8ce552c": [
+    "ChatInput",
+    "message",
+    "ConditionalRouter",
+    "message"
+  ],
+  "r5fff5475845414c99c9f": [
+    "ConditionalRouter",
+    "true_result",
+    "YouTubeCommentsComponent",
+    "video_url"
+  ],
+  "r421287b6766158046fc6": [
+    "ConditionalRouter",
+    "true_result",
+    "Prompt",
+    "url"
+  ],
+  "rc8140f7c30b32d7b4315": [
+    "ABTestAnalyzer",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r11b5f1ebd1c376585509": [
+    "File",
+    "message",
+    "Prompt Template",
+    "csv_file"
+  ],
+  "r93443c507f7ef207f50e": [
+    "UserSettings",
+    "data",
+    "GoogleDriveValidator",
+    "user_data"
+  ],
+  "rb2f0bae724a857cf4f5a": [
+    "ChatInput",
+    "message",
+    "GoogleDriveValidator",
+    "search_query"
+  ],
+  "rd9117068d1d2c2aaeaa5": [
+    "GoogleDriveValidator",
+    "results",
+    "ChatOutput",
+    "input_value"
+  ],
+  "re0e42f5213115c47f30b": [
+    "AssemblyAITranscriber",
+    "transcript",
+    "Prompt",
+    "transcript"
+  ],
+  "r195adb601959fc6d4fa5": [
+    "MemoryBase",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r1bc4d645fcc98fe36e8c": [
+    "Directory",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rdafb427bc748edb6bfcd": [
+    "ChatInput",
+    "message",
+    "Prompt Template",
+    "input"
+  ],
+  "r25e5698af31eac6dd7d3": [
+    "HypothesisGeneration",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r69e6b0ac631cf7393f91": [
+    "EmbeddingModel",
+    "embeddings",
+    "QdrantVectorStoreComponent",
+    "embedding"
+  ],
+  "rdb2123f649a9c9c1f4c0": [
+    "QdrantVectorStoreComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r77bd10828751a263ae24": [
+    "Agent",
+    "response",
+    "FinalAnswer",
+    "message"
+  ],
+  "rfee413df760f17fcbbb1": [
+    "FinalAnswer",
+    "reply",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r7d98549ce573c3c31048": [
+    "SupportSQLTool",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rfcff09d734614877cea4": [
+    "GmailSender",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r6b734e279565841f3bb5": [
+    "TextInput",
+    "text",
+    "ChatInput",
+    "sender_name"
+  ],
+  "rfa8e7fd99479a93594de": [
+    "TextInput",
+    "text",
+    "RedisChatMemory",
+    "session_id"
+  ],
+  "rb7b723befd4799d2fd22": [
+    "RedisChatMemory",
+    "memory",
+    "Memory",
+    "memory"
+  ],
+  "rbef25b6d6cbec1fa9e0d": [
+    "OllamaEmbeddings",
+    "embeddings",
+    "Milvus",
+    "embedding"
+  ],
+  "r1e768e5713465982afcf": [
+    "ChatInput",
+    "message",
+    "Milvus",
+    "search_query"
+  ],
+  "r4084ea112be42a6570a6": [
+    "SplitText",
+    "dataframe",
+    "Milvus",
+    "ingest_data"
+  ],
+  "rd6a48357cd91871e668d": [
+    "Milvus",
+    "search_results",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "r3dd9c00223d8c6ccd3ea": [
+    "TypeConverterComponent",
+    "message_output",
+    "Prompt Template",
+    "context"
+  ],
+  "rf47b57ab29be4dd07062": [
+    "URLComponent",
+    "text",
+    "Prompt",
+    "langflow_doc"
+  ],
+  "red0dcc065c1fd7548ae5": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "custom_code"
+  ],
+  "r26669e150cbd631bb8bb": [
+    "ChatInput",
+    "message",
+    "OpenSearch",
+    "search_query"
+  ],
+  "r5464f0ad477b68ab1bde": [
+    "OpenAIEmbeddings",
+    "embeddings",
+    "OpenSearch",
+    "embedding"
+  ],
+  "r8b440afbf4848dd8ab95": [
+    "OpenSearch",
+    "search_results",
+    "parser",
+    "input_data"
+  ],
+  "r23b932b1c03e16e9e6ce": [
+    "LanguageModelComponent",
+    "text_output",
+    "OpenSearch",
+    "hybrid_search_query"
+  ],
+  "r994ad41045ba02feaafa": [
+    "Prompt",
+    "prompt",
+    "OpenAIModel",
+    "system_message"
+  ],
+  "re362d08ef7673b7b4961": [
+    "ChatInput",
+    "message",
+    "OpenAIModel",
+    "input_value"
+  ],
+  "radf0a2696a297a7b2afa": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt",
+    "previous_response"
+  ],
+  "rd4c486bfaaa1ab3468e1": [
+    "RSSReaderSimple",
+    "articles",
+    "DataFrameOperations",
+    "df"
+  ],
+  "r35a3f75711208bede18d": [
+    "DataFrameOperations",
+    "output",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r76e1c5b79667c49938a8": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template (7HO1V)",
+    "technology_review"
+  ],
+  "r45b78ab6d0fd759fa431": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template (7HO1V)",
+    "science_daily"
+  ],
+  "r7e3b5edf73ba07618023": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template (7HO1V)",
+    "ai_news"
+  ],
+  "r0a68822d1cbb12ad2cd6": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template (7HO1V)",
+    "techcrunch"
+  ],
+  "rbe52081447d0a9aadc93": [
+    "Prompt Template (7HO1V)",
+    "prompt",
+    "OpenAIModel",
+    "input_value"
+  ],
+  "r5a064850973cd86d018b": [
+    "ChatInput",
+    "message",
+    "MathMCPRetrieveContext",
+    "request_json"
+  ],
+  "r3955ab34f1e75f4bec95": [
+    "MathMCPRetrieveContext",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rf8049dc4482f3a249dd6": [
+    "TextInput",
+    "text",
+    "URLComponent",
+    "urls"
+  ],
+  "r0baf13506f49809c6dae": [
+    "AstraDB",
+    "dataframe",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rd1ea3f925873a6437b79": [
+    "ScrapeGraphSearchApi",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rf220a2d8a0ec3e26ba85": [
+    "ComposioAPI",
+    "tools",
+    "Agent",
+    "tools"
+  ],
+  "r6e1cc7e8007ab513b4f8": [
+    "Memory",
+    "messages_text",
+    "Prompt",
+    "memory"
+  ],
+  "r7853de6f77f7c2d1fb3d": [
+    "ChatInput",
+    "message",
+    "NovitaModel",
+    "input_value"
+  ],
+  "re932a4484b651fb2d1b0": [
+    "Prompt",
+    "prompt",
+    "NovitaModel",
+    "system_message"
+  ],
+  "rae3680fd9b0888407eba": [
+    "NovitaModel",
+    "text_output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rc367fb96b9f7dc48bdf4": [
+    "Agent",
+    "response",
+    "Prompt",
+    "finance_agent_output"
+  ],
+  "rfaf82feaf25a6917fe04": [
+    "Agent",
+    "response",
+    "Prompt",
+    "research_agent_output"
+  ],
+  "r830d9e691e06294c006b": [
+    "YfinanceComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rdb822ef17f31285751cc": [
+    "OpenAIModel",
+    "model_output",
+    "StructuredOutput",
+    "llm"
+  ],
+  "r564de281d9b6b7c5f216": [
+    "OpenAIModel",
+    "text_output",
+    "StructuredOutput",
+    "input_value"
+  ],
+  "r67d7f1f2327a69f2632b": [
+    "StructuredOutput",
+    "structured_output_dataframe",
+    "ParserComponent",
+    "input_data"
+  ],
+  "rb8a9ee377567f26026b0": [
+    "ParserComponent",
+    "parsed_text",
+    "AstraDB",
+    "lexical_terms"
+  ],
+  "r95281e4c4e04f60f4367": [
+    "TextInput",
+    "text",
+    "AstraDB",
+    "search_query"
+  ],
+  "rb8f203fa52c872ffeaa7": [
+    "TextInput",
+    "text",
+    "OpenAIModel",
+    "input_value"
+  ],
+  "r7f349f511ffd9f9ee05a": [
+    "ParserComponent",
+    "parsed_text",
+    "OpenAIModel",
+    "input_value"
+  ],
+  "rbdb3aa67106144936b5b": [
+    "TextInput",
+    "text",
+    "OpenAIModel",
+    "system_message"
+  ],
+  "rdbb12685272ab1b53f20": [
+    "File",
+    "message",
+    "Prompt",
+    "Document"
+  ],
+  "r2e202ad4443aebae4cb2": [
+    "ChatInput",
+    "message",
+    "SentimentAnalysisFromFile",
+    "text_message"
+  ],
+  "rf6f4d0b1823837af8108": [
+    "SentimentAnalysisFromFile",
+    "sentiment_result",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r71537969c2f34b48117c": [
+    "ParserComponent",
+    "parsed_text",
+    "ConditionalRouter",
+    "input_text"
+  ],
+  "r617a7e11d203898e1f9e": [
+    "SambaNovaModel",
+    "text_output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rc44fe0a5d45e2069c5f9": [
+    "Agent",
+    "response",
+    "Prompt",
+    "first_text"
+  ],
+  "rd55ae13f5b99b77903e9": [
+    "Agent",
+    "response",
+    "Prompt",
+    "second_text"
+  ],
+  "ra5f8639ce898737e0df0": [
+    "Prompt",
+    "prompt",
+    "Prompt",
+    "second_text"
+  ],
+  "rcd19ce01fcc9c066003b": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "first_text"
+  ],
+  "r24419017c3bd4508edbc": [
+    "Prompt",
+    "prompt",
+    "SambaNovaModel",
+    "input_value"
+  ],
+  "r3c7def4283b155888a12": [
+    "ChatInput",
+    "message",
+    "AnswerKnowledge",
+    "mcp_request"
+  ],
+  "r71dfa48f73ee0a4338e5": [
+    "AnswerKnowledge",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r796e78ae9042d59d6eec": [
+    "File",
+    "message",
+    "SmartRouter",
+    "input_text"
+  ],
+  "rfc1a587c1a96cf607858": [
+    "LanguageModelComponent",
+    "model_output",
+    "SmartRouter",
+    "model"
+  ],
+  "r3574a0fe3d0d4205380e": [
+    "SmartRouter",
+    "category_1_result",
+    "SplitText",
+    "data_inputs"
+  ],
+  "r993fb88fa9135c6c58cb": [
+    "SmartRouter",
+    "category_2_result",
+    "SplitText",
+    "data_inputs"
+  ],
+  "r985ab39be4c6c6f2ad14": [
+    "LanguageModelComponent",
+    "text_output",
+    "StructuredOutput",
+    "input_value"
+  ],
+  "re908b2bf3c4958d5c489": [
+    "StructuredOutput",
+    "structured_output",
+    "ParserComponent",
+    "input_data"
+  ],
+  "rd231dcbe5c467d086515": [
+    "Prompt",
+    "prompt",
+    "CohereModel",
+    "input_value"
+  ],
+  "ra1efc46fda5c872ceedf": [
+    "CohereModel",
+    "text_output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "ra7b1a58324b1262b9727": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "user_msg"
+  ],
+  "r23cb3fa58d74375cf072": [
+    "CohereEmbeddings",
+    "embeddings",
+    "Chroma",
+    "embedding"
+  ],
+  "rb5100c29288df8ab3e18": [
+    "Directory",
+    "dataframe",
+    "DataFrameKeywordSearch",
+    "dataframe"
+  ],
+  "reb709cff9137e93f5be4": [
+    "DataFrameKeywordSearch",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r1cc93d6cc7ecb382776e": [
+    "EmbeddingModel",
+    "embeddings",
+    "Chroma",
+    "embedding"
+  ],
+  "rb50135c5c29b957ca90b": [
+    "Chroma",
+    "search_results",
+    "ParserComponent",
+    "input_data"
+  ],
+  "rb67ec16edb756f084da5": [
+    "File",
+    "dataframe",
+    "SplitText",
+    "data_inputs"
+  ],
+  "r0b4f5bebd9c9397ad503": [
+    "GitExtractorComponent",
+    "files_content",
+    "CodeFileFilter",
+    "all_repo_files"
+  ],
+  "r2f6c5302ab178ace6320": [
+    "CodeFileFilter",
+    "Code Files",
+    "ParseData",
+    "data"
+  ],
+  "r2a50108a7a9879386ccb": [
+    "ParseData",
+    "data_list",
+    "SplitText",
+    "data_inputs"
+  ],
+  "rddaff87ab4319ba2f96e": [
+    "ParseData",
+    "text",
+    "AnthropicModel",
+    "input_value"
+  ],
+  "r07109390df0099831067": [
+    "TextInput",
+    "text",
+    "AnthropicModel",
+    "system_message"
+  ],
+  "r400306ffdc979ad2eb50": [
+    "AnthropicModel",
+    "text_output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r6fbd9b6b6221b5a66739": [
+    "AnthropicModel",
+    "model_output",
+    "StructuredOutput",
+    "llm"
+  ],
+  "raf7973361da7ac8b0c8c": [
+    "ParseData",
+    "text",
+    "StructuredOutput",
+    "input_value"
+  ],
+  "r43de7e1ced09ad3d04d1": [
+    "StructuredOutput",
+    "structured_output",
+    "ParseData",
+    "data"
+  ],
+  "rbe81704b2c07c93a4ff6": [
+    "Prompt Template",
+    "prompt",
+    "APIRequest",
+    "url_input"
+  ],
+  "r9d9f67861be7ce76bd11": [
+    "APIRequest",
+    "data",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r5236a02b869b84aa7643": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "financials"
+  ],
+  "r294e09d8a7c67a5ca6ec": [
+    "ChatInput",
+    "message",
+    "Prompt Template",
+    "ticker"
+  ],
+  "r91d6caf99e9d26ca87c2": [
+    "LanguageModelComponent",
+    "text_output",
+    "Prompt",
+    "summary"
+  ],
+  "r7ae7168a196f91fa16ae": [
+    "File",
+    "message",
+    "LanguageModelComponent",
+    "input_value"
+  ],
+  "r52028bae007b429cf3e0": [
+    "File",
+    "message",
+    "Prompt",
+    "text"
+  ],
+  "r73f94550aaec39230bee": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "question"
+  ],
+  "rb75b45eb4d2bbc3894f1": [
+    "OpenAIModel",
+    "text_output",
+    "ConditionalRouter",
+    "input_text"
+  ],
+  "r4543950951eff4767da2": [
+    "TextInput",
+    "text",
+    "ConditionalRouter",
+    "message"
+  ],
+  "r8b2df10f6cc66e0626f9": [
+    "ConditionalRouter",
+    "true_result",
+    "ToolCallingAgent",
+    "input_value"
+  ],
+  "r3ddbbaf10afbadcf280f": [
+    "CalculatorTool",
+    "api_build_tool",
+    "ToolCallingAgent",
+    "tools"
+  ],
+  "re8d74d527b8fe919259d": [
+    "ToolCallingAgent",
+    "response",
+    "TextOutput",
+    "input_value"
+  ],
+  "rd52ac5826bc998dafe95": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "profile"
+  ],
+  "r0e00d896aca0cfebb445": [
+    "AstraVectorize",
+    "config",
+    "AstraDB",
+    "embedding"
+  ],
+  "rf9782c3c390fb00756d6": [
+    "TextInput",
+    "text",
+    "AstraDB",
+    "search_input"
+  ],
+  "r5a694046e029abb3dac6": [
+    "ParseData",
+    "text",
+    "Prompt",
+    "notes"
+  ],
+  "r44626b5377cf40de3328": [
+    "ConditionalRouter",
+    "false_result",
+    "Prompt",
+    "user_question"
+  ],
+  "rd241ae6176e3e438a789": [
+    "OpenAIModel",
+    "text_output",
+    "TextOutput",
+    "input_value"
+  ],
+  "r8402f23fb81262a906ac": [
+    "Prompt Template",
+    "prompt",
+    "LanguageModelComponent",
+    "system_message"
+  ],
+  "rd7257187881ecdcb2f32": [
+    "ChatInput",
+    "message",
+    "ToolCallingAgent",
+    "input_value"
+  ],
+  "r4a2c5907946889611a06": [
+    "NotionPageUpdate",
+    "example_tool_output",
+    "ToolkitComponent",
+    "tools"
+  ],
+  "rb8ffa9819961ebcc7fe3": [
+    "NotionPageCreator",
+    "example_tool_output",
+    "ToolkitComponent",
+    "tools"
+  ],
+  "r7f4d268d02918caf7e6b": [
+    "AddContentToPage",
+    "example_tool_output",
+    "ToolkitComponent",
+    "tools"
+  ],
+  "r47496e6be00f23441593": [
+    "NotionDatabaseProperties",
+    "example_tool_output",
+    "ToolkitComponent",
+    "tools"
+  ],
+  "r6e2cf2bba48ec730c0c2": [
+    "NotionListPages",
+    "example_tool_output",
+    "ToolkitComponent",
+    "tools"
+  ],
+  "r9dab9f7547fadbbc3341": [
+    "NotionPageContent",
+    "example_tool_output",
+    "ToolkitComponent",
+    "tools"
+  ],
+  "re4a6bd6dcd133e92193f": [
+    "NotionUserList",
+    "example_tool_output",
+    "ToolkitComponent",
+    "tools"
+  ],
+  "r7f70ecfb1148bc59ff5b": [
+    "NotionSearch",
+    "example_tool_output",
+    "ToolkitComponent",
+    "tools"
+  ],
+  "rf251c5c31bffa89fab81": [
+    "Memory",
+    "dataframe",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "r817dcf49c774ec955bce": [
+    "TypeConverterComponent",
+    "message_output",
+    "OpenAIModel",
+    "input_value"
+  ],
+  "rb3831069cba5ee6716c4": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "user_goal"
+  ],
+  "rc9676db941c098d0bc48": [
+    "AzureOpenAIEmbeddings",
+    "embeddings",
+    "QdrantVectorStoreComponent",
+    "embedding"
+  ],
+  "reb37acb265efe8fd5948": [
+    "TextInput",
+    "text",
+    "GroqModel",
+    "system_message"
+  ],
+  "r24c07553744f9ca3ced4": [
+    "QdrantVectorStoreComponent",
+    "search_results",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r4279eab7eb6606ca508c": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "company_size"
+  ],
+  "r02abb94679e30532bb5b": [
+    "ConditionalRouter",
+    "true_result",
+    "QdrantVectorStoreComponent",
+    "search_query"
+  ],
+  "re7674c8244a39853c187": [
+    "ChatOutput",
+    "message",
+    "SaveToFile",
+    "message"
+  ],
+  "r5ce492a725cf79212d3d": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "text"
+  ],
+  "r6f84c63aba079b6afaff": [
+    "File",
+    "data",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r8103fa8a05ec5f1530c8": [
+    "MistralModel",
+    "text_output",
+    "VerificationAggregator",
+    "llm_verdict"
+  ],
+  "rd0a4e2d99a613a68825c": [
+    "MistralModel",
+    "text_output",
+    "VerificationAggregator",
+    "ambiguity_report"
+  ],
+  "refb00f351cc541260b80": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "requirements"
+  ],
+  "r8d1ec6ffefa20535b195": [
+    "TextInput",
+    "text",
+    "RequirementSanityChecker",
+    "requirements"
+  ],
+  "rfc3bb74f2e4c1320ab39": [
+    "VerificationAggregator",
+    "output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rb941340211e23a0519f5": [
+    "RequirementSanityChecker",
+    "output",
+    "VerificationAggregator",
+    "rule_report"
+  ],
+  "r2e5ae5cb0c0706f8b53d": [
+    "ChatOutput",
+    "message",
+    "TextInput",
+    "input_value"
+  ],
+  "re9bb789a35b30a11cd47": [
+    "ParserComponent",
+    "parsed_text",
+    "MistralModel",
+    "input_value"
+  ],
+  "rcf02af6f7e711f58883e": [
+    "Prompt",
+    "prompt",
+    "MistralModel",
+    "system_message"
+  ],
+  "rf9e3ddc9e492b49f2b5b": [
+    "MistralModel",
+    "text_output",
+    "TextInput",
+    "input_value"
+  ],
+  "rd1baf517bcca363629d1": [
+    "OpenAIEmbeddings",
+    "embeddings",
+    "Chroma",
+    "embedding"
+  ],
+  "r08a7f33882a0579dd9a9": [
+    "Chroma",
+    "dataframe",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "r717bf206a58b78a3ccb8": [
+    "Prompt Template",
+    "prompt",
+    "OpenAIModel",
+    "system_message"
+  ],
+  "r43334a5e93cbd5162e08": [
+    "Directory",
+    "dataframe",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "r4ecf0739ada757844c90": [
+    "TypeConverterComponent",
+    "dataframe_output",
+    "SplitText",
+    "data_inputs"
+  ],
+  "refc4be03d345fa35edf7": [
+    "Chroma",
+    "dataframe",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r0f6a358034d266b84389": [
+    "ChatInput",
+    "message",
+    "SubstantiationFields",
+    "mcp_request"
+  ],
+  "ra83445e6d5e369b880a2": [
+    "SubstantiationFields",
+    "request",
+    "SubstantiateGraphSnapshot",
+    "payload"
+  ],
+  "r2f24043fbead86640a99": [
+    "SubstantiationOntology",
+    "result",
+    "SubstantiateGraphSnapshot",
+    "policy"
+  ],
+  "r59a76815e3cd4c638868": [
+    "SubstantiationRetrieval",
+    "result",
+    "SubstantiateGraphSnapshot",
+    "retrieval_policy"
+  ],
+  "r8943412f297234db32cd": [
+    "SubstantiateGraphSnapshot",
+    "result",
+    "SubstantiationStateView",
+    "payload"
+  ],
+  "r9752502ec612f4063c22": [
+    "SubstantiateGraphSnapshot",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r71e7d5627c6b2cc87fd6": [
+    "ParseData",
+    "text",
+    "Prompt",
+    "text"
+  ],
+  "r45e7ce91495572bdab3b": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt",
+    "summary"
+  ],
+  "r7a69d7fa966c63fd5622": [
+    "ParseData",
+    "text",
+    "OpenAIModel",
+    "input_value"
+  ],
+  "r33253bca7ababd554713": [
+    "Google Generative AI Embeddings",
+    "embeddings",
+    "Chroma",
+    "embedding"
+  ],
+  "r423e87cc7e037278ccce": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt",
+    "document"
+  ],
+  "r49747e08e885f7e96007": [
+    "NVIDIAEmbeddingsComponent",
+    "embeddings",
+    "Chroma",
+    "embedding"
+  ],
+  "r0cfc60f1bc0e22bc0847": [
+    "Chroma",
+    "component_as_tool",
+    "ToolCallingAgent",
+    "tools"
+  ],
+  "r902e207674e7a0a03b96": [
+    "IBMwatsonxModel",
+    "model_output",
+    "ToolCallingAgent",
+    "model"
+  ],
+  "r3823b07c4fec933a547b": [
+    "Prompt Template",
+    "prompt",
+    "ToolCallingAgent",
+    "system_prompt"
+  ],
+  "rbee30dca7c042a8bcfff": [
+    "MistalAIEmbeddings",
+    "embeddings",
+    "MongoDBAtlasVector",
+    "embedding"
+  ],
+  "r266347222b1cb55b818d": [
+    "File",
+    "dataframe",
+    "MongoDBAtlasVector",
+    "ingest_data"
+  ],
+  "rd879f5511ea5ca485522": [
+    "BigQueryExecutor",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r3e7182f5e6ae2777b9bc": [
+    "LanguageModelComponent",
+    "text_output",
+    "Prompt",
+    "sql"
+  ],
+  "r5fbc7385bc0b6e63f50f": [
+    "KnowledgeRetrieval",
+    "retrieve_data",
+    "ChatOutput",
+    "input_value"
+  ],
+  "re6f5e4329db052b2db73": [
+    "TextInput",
+    "text",
+    "KnowledgeRetrieval",
+    "search_query"
+  ],
+  "r8e70f81f7ead999fba3b": [
+    "ChatInput",
+    "message",
+    "RAGAS_Evaluation_Component",
+    "question"
+  ],
+  "r0956cd9c2a4d611a8662": [
+    "Chroma",
+    "search_results",
+    "RAGAS_Evaluation_Component",
+    "context_chunks"
+  ],
+  "rb0be69e9fdd2fe18bd76": [
+    "OpenAIModel",
+    "text_output",
+    "RAGAS_Evaluation_Component",
+    "answer"
+  ],
+  "r9d8d5920dc5cc2ae544c": [
+    "RAGAS_Evaluation_Component",
+    "text",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rb8aa03fb245a407861cf": [
+    "ComposioGitHubAPIComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "ra4989ccf5b0115bcb768": [
+    "TypeConverterComponent",
+    "message_output",
+    "Prompt Template",
+    "conext"
+  ],
+  "r1b79dade39da43b27424": [
+    "AstraDB",
+    "search_results",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "rcfd6e63549c7da9c405f": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "guidelines"
+  ],
+  "rd24055b8a3103b7975a5": [
+    "Prompt",
+    "prompt",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r0e3ba12e42a7e81b49d1": [
+    "LanguageModelComponent",
+    "text_output",
+    "Prompt",
+    "post"
+  ],
+  "r7d47722237bca860e32c": [
+    "LanguageModelComponent",
+    "text_output",
+    "Prompt",
+    "image_description"
+  ],
+  "ra03bf219734b58246fc6": [
+    "Agent",
+    "response",
+    "Prompt",
+    "context"
+  ],
+  "rd0103aa890a405415d41": [
+    "SQLComponent",
+    "run_sql_query",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r88c302a59012660178c3": [
+    "WebSearchNoAPI",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rf21dcfc28b65ae83d1fc": [
+    "File",
+    "advanced_dataframe",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r4559225d54dcdb5fedd6": [
+    "ChatInput",
+    "message",
+    "UnifiedWebSearch",
+    "query"
+  ],
+  "rf9fffec32a041dacc3da": [
+    "UnifiedWebSearch",
+    "results",
+    "BatchRunComponent",
+    "df"
+  ],
+  "r5c3f5c174c9d1ff40578": [
+    "BatchRunComponent",
+    "batch_results",
+    "parser",
+    "input_data"
+  ],
+  "r95a38926fb5e46af8930": [
+    "ChatOutput",
+    "message",
+    "SaveToFile",
+    "input"
+  ],
+  "r0d43bd74d855d4ba6fe3": [
+    "parser",
+    "parsed_text",
+    "Agent",
+    "input_value"
+  ],
+  "rfcd10bfa8ab11cc65860": [
+    "ChatInput",
+    "message",
+    "LoadOntologyFields",
+    "mcp_request"
+  ],
+  "r30b06c8a1b4ed63a696a": [
+    "LoadOntologyFields",
+    "request",
+    "OntologyLoad",
+    "payload"
+  ],
+  "r418cca63466e92b83871": [
+    "OntologyLoad",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r571794e4975834dd2c3b": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "sql_query"
+  ],
+  "rcd96002ba7e866b94b00": [
+    "AssemblyAITranscriptionJobPoller",
+    "transcription_result",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r89c8d789bed1c0210216": [
+    "TextInput",
+    "text",
+    "Webhook",
+    "data"
+  ],
+  "r0754958816e5fead45dd": [
+    "Webhook",
+    "output_data",
+    "ParserComponent",
+    "input_data"
+  ],
+  "rb591ab8bf098447bcfe5": [
+    "ChatInput",
+    "message",
+    "MathMCPSubstantiate",
+    "request_json"
+  ],
+  "rc9fceb8b96e39bd2340b": [
+    "MathMCPSubstantiate",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r0c9aca9d67babebe7907": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "user_input"
+  ],
+  "r2a7b61c4e9e793711cb8": [
+    "URLComponent",
+    "text",
+    "Prompt",
+    "website"
+  ],
+  "r6ff8e9be6f2dcffb9367": [
+    "OpenAIModel",
+    "text_output",
+    "OpenAIModel",
+    "input_value"
+  ],
+  "rb919fcb0b383d291e01a": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "Question"
+  ],
+  "r318f547dd8f087180f40": [
+    "ParseData",
+    "text",
+    "Prompt",
+    "Context"
+  ],
+  "r23c0929ba6698b42ec3f": [
+    "ConditionalRouter",
+    "true_result",
+    "Prompt",
+    "Trigger"
+  ],
+  "r6123e4e7eb261262bfdb": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "Query"
+  ],
+  "ra69e1db928c965680e86": [
+    "Prompt",
+    "prompt",
+    "TavilySearchComponent",
+    "query"
+  ],
+  "r07d5dbd0b4270d9c0fa4": [
+    "TavilySearchComponent",
+    "data",
+    "ParseData",
+    "data"
+  ],
+  "rc17f689b2b7aaf39c63d": [
+    "ConditionalRouter",
+    "false_result",
+    "Prompt",
+    "Trigger"
+  ],
+  "r3924727fe6bc2d2ce299": [
+    "OllamaModel",
+    "text_output",
+    "ConditionalRouter",
+    "input_text"
+  ],
+  "r63a4f15bfd7687e4be62": [
+    "OllamaModel",
+    "text_output",
+    "Prompt",
+    "Response"
+  ],
+  "r70e6be533108fde15539": [
+    "File",
+    "message",
+    "Prompt Template",
+    "weight"
+  ],
+  "rfca15318c9e93aaf5384": [
+    "LanguageModelComponent",
+    "text_output",
+    "Prompt Template",
+    "metrics"
+  ],
+  "r58994ce8a5d0ff2a37f5": [
+    "File",
+    "path",
+    "Prompt Template",
+    "supplier_metrics"
+  ],
+  "r33d58f479a3a697f5273": [
+    "Serp",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r651833ef86d8f0816448": [
+    "ChatInput",
+    "message",
+    "MathMCPFrontier",
+    "request_json"
+  ],
+  "r6a3cfa537ceb69ac3f5c": [
+    "MathMCPFrontier",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r6f8f93e7c536aabedaa1": [
+    "File",
+    "dataframe",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r2e1086d37ee1b72fcbfe": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt",
+    "events"
+  ],
+  "r1ff272073f8d42ebf6d9": [
+    "ChatInput",
+    "message",
+    "ArkonStatusUrl",
+    "trigger"
+  ],
+  "r3491f7bf6861c822d25a": [
+    "ArkonStatusUrl",
+    "request",
+    "ArkonBriefingInput",
+    "request"
+  ],
+  "r1b92ef0fd541b5b2ed0e": [
+    "ArkonOverdueNotes",
+    "notes",
+    "ArkonBriefingInput",
+    "incident_notes"
+  ],
+  "r42429d5e3a6b9fec7528": [
+    "ArkonBriefingInput",
+    "briefing_input",
+    "Agent",
+    "input_value"
+  ],
+  "r8b6352bf9036fe1a890d": [
+    "Agent",
+    "response",
+    "ArkonBriefingAssemble",
+    "note_text"
+  ],
+  "r5df309b8147a484057e7": [
+    "ArkonBriefingAssemble",
+    "briefing",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rfb726ddbcd46264f5144": [
+    "ArkonStatusUrl",
+    "endpoint",
+    "ArkonRetryPlan",
+    "url"
+  ],
+  "rca0a0c3b37777c6e6f5b": [
+    "ArkonRetryPlan",
+    "plan",
+    "LoopComponent",
+    "data"
+  ],
+  "rbb766f39998f79866f71": [
+    "ParserComponent",
+    "parsed_text",
+    "ArkonRetryCounter",
+    "trigger"
+  ],
+  "rddb9eca6e49334e6ae8a": [
+    "ArkonRetryCounter",
+    "passthrough",
+    "APIRequest",
+    "url_input"
+  ],
+  "rfde56ae1b9ae2b80edc6": [
+    "APIRequest",
+    "data",
+    "ArkonStatusGate",
+    "response"
+  ],
+  "r7832527712268cd35724": [
+    "ArkonStatusGate",
+    "payload",
+    "LoopComponent",
+    "item"
+  ],
+  "r645046da15105e51f8ac": [
+    "LoopComponent",
+    "done",
+    "ArkonStatusResolve",
+    "attempts"
+  ],
+  "r621e85e337b540d13d18": [
+    "ArkonStatusResolve",
+    "payload",
+    "ArkonOverdueList",
+    "payload"
+  ],
+  "r04d340c23643a05539e7": [
+    "ArkonStatusResolve",
+    "payload",
+    "ArkonBriefingInput",
+    "status_payload"
+  ],
+  "r3648cb25767e57f8df15": [
+    "ArkonStatusResolve",
+    "payload",
+    "ArkonBriefingAssemble",
+    "status_payload"
+  ],
+  "r1a2be8bdc9eae566c415": [
+    "ArkonStatusResolve",
+    "note",
+    "ArkonBriefingInput",
+    "status_note"
+  ],
+  "r70107efe3f4fee8ca68b": [
+    "ArkonOverdueList",
+    "overdue",
+    "LoopComponent",
+    "data"
+  ],
+  "r7cb4a7cd157eb0b7145b": [
+    "LoopComponent",
+    "done",
+    "ArkonOverdueNotes",
+    "summaries"
+  ],
+  "rfc631d17f91baef723e5": [
+    "ArkonOverdueList",
+    "overdue",
+    "ArkonOverdueNotes",
+    "incidents"
+  ],
+  "r7496399f5dc3955af6e3": [
+    "RecursiveCharacterTextSplitter",
+    "data",
+    "Chroma",
+    "ingest_data"
+  ],
+  "rd06d9602153ac62f31b3": [
+    "CreateListFromFileWithURLParsingAndMetadataExtraction",
+    "list",
+    "RecursiveCharacterTextSplitter",
+    "data_input"
+  ],
+  "r9ab8efc41d1d98bc8238": [
+    "ChatInput",
+    "message",
+    "SourceFields",
+    "mcp_request"
+  ],
+  "r3049439433943e5e9eae": [
+    "SourceFields",
+    "request",
+    "PrepareSources",
+    "payload"
+  ],
+  "r39a513332807ced3a430": [
+    "PrepareSources",
+    "result",
+    "EmbedSourceRegions",
+    "payload"
+  ],
+  "rdefbbb93468d40a5190a": [
+    "EmbedSourceRegions",
+    "result",
+    "BuildSourceProjection",
+    "payload"
+  ],
+  "r03ed1af2759e5067da73": [
+    "BuildSourceProjection",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r7a87ee1cf4ba4b4fb56d": [
+    "BigQueryExecutor",
+    "query_results",
+    "ParserComponent",
+    "input_data"
+  ],
+  "rf9e6be67177ab4627266": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt",
+    "total_pr"
+  ],
+  "r4df4134a46561f96782b": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt",
+    "new_star"
+  ],
+  "reca1ea126d9ee7bf070d": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt",
+    "repo_pr"
+  ],
+  "r55c764bfdfae7d2ac667": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt",
+    "followers"
+  ],
+  "r9f8f84179ec6ee73720d": [
+    "MultiChoiceRouter",
+    "choice2",
+    "Prompt",
+    "Trigger"
+  ],
+  "r8a919135353cd7144ece": [
+    "MultiChoiceRouter",
+    "choice1",
+    "Prompt",
+    "Trigger"
+  ],
+  "rdb2001d7e90b2be5e20c": [
+    "MultiChoiceRouter",
+    "choice3",
+    "Prompt",
+    "Trigger"
+  ],
+  "rb513e03e229468cd5a2f": [
+    "MultiChoiceRouter",
+    "choice4",
+    "Prompt",
+    "Trigger"
+  ],
+  "ra4034628d09b4a162323": [
+    "MultiChoiceRouter",
+    "choice5",
+    "Prompt",
+    "Trigger"
+  ],
+  "r3ecb446ac9fe143fee3e": [
+    "OllamaModel",
+    "text_output",
+    "CalculatorComponent",
+    "expression"
+  ],
+  "rc411c19ed19def3df287": [
+    "CalculatorComponent",
+    "result",
+    "ParseData",
+    "data"
+  ],
+  "r26f795389133b4e030be": [
+    "OllamaModel",
+    "text_output",
+    "ParseData",
+    "template"
+  ],
+  "rdd943a0e24393ed99ed2": [
+    "ChatInput",
+    "message",
+    "OllamaModel",
+    "input_value"
+  ],
+  "r06100e2fb48fc5c88c42": [
+    "Prompt",
+    "prompt",
+    "OllamaModel",
+    "system_message"
+  ],
+  "r65337d70b9c70294b129": [
+    "OllamaModel",
+    "text_output",
+    "MultiChoiceRouter",
+    "input_text"
+  ],
+  "r96484984ad49dfc6f8a1": [
+    "CurrentDate",
+    "current_date",
+    "Prompt",
+    "CDateTime"
+  ],
+  "r62f2027a81f665f6f01c": [
+    "ParseData",
+    "text",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rce10e5ec034333803724": [
+    "MultiChoiceRouter",
+    "choice6",
+    "Prompt",
+    "Trigger"
+  ],
+  "rb3dc76d054b9a4b2be71": [
+    "MultiChoiceRouter",
+    "choice7",
+    "Prompt",
+    "Trigger"
+  ],
+  "r2e6112b146b7529260b9": [
+    "KnowledgeBase",
+    "retrieve_data",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r632bcf29f5b8aae93da7": [
+    "TextInput",
+    "text",
+    "KnowledgeBase",
+    "search_query"
+  ],
+  "r7c59bf5017882549f41b": [
+    "ChatInput",
+    "message",
+    "Prompt Template",
+    "Question"
+  ],
+  "r5312c25534cb0acc12ac": [
+    "TextInput",
+    "text",
+    "Agent",
+    "input_value"
+  ],
+  "rdbcb8d66b6ce354c5cb7": [
+    "APIRequest",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rce52dc9b3fb17052d950": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "thershold"
+  ],
+  "rb247a5aa28fd17c4492d": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "mass"
+  ],
+  "r2f2d609a1201c17f5782": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "specificHeat"
+  ],
+  "r43d8c2b8464faa96f9ee": [
+    "Google Generative AI Embeddings",
+    "embeddings",
+    "AstraDB",
+    "embedding_model"
+  ],
+  "rf5a31bbc8d988e451450": [
+    "OllamaEmbeddings",
+    "embeddings",
+    "AstraDB",
+    "embedding_model"
+  ],
+  "rf7607e2b11e4f0971f0c": [
+    "TextInput",
+    "text",
+    "ZepChatMemory",
+    "session_id"
+  ],
+  "rfca2f4ed3a7ad963162f": [
+    "ZepChatMemory",
+    "memory",
+    "Memory",
+    "memory"
+  ],
+  "r225ae7a5d2233bf02b77": [
+    "ChatInput",
+    "message",
+    "AstraDBGraph",
+    "search_query"
+  ],
+  "r35921bf0c4b9f8f10729": [
+    "OllamaEmbeddings",
+    "embeddings",
+    "AstraDBGraph",
+    "embedding_model"
+  ],
+  "r02ea619733e757e6a491": [
+    "AstraDBGraph",
+    "search_results",
+    "ParseData",
+    "data"
+  ],
+  "rd4a180f366f8cd93871e": [
+    "FileContentRetriever",
+    "content",
+    "SplitText",
+    "data_inputs"
+  ],
+  "r7aac805c766a79a19c8d": [
+    "SplitText",
+    "dataframe",
+    "ext:datastax:AstraDBVectorStoreComponent@official",
+    "ingest_data"
+  ],
+  "r256840b5514da1f9ff7c": [
+    "ext:composio:ComposioGoogleCalendarAPIComponent@official",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rbaaef66c376b13078d2b": [
+    "ext:composio:ComposioGoogleDocsAPIComponent@official",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r7468a993a665fa73e97e": [
+    "ext:datastax:AstraDBVectorStoreComponent@official",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rcae015ca5566c797ab3c": [
+    "ChatInput",
+    "message",
+    "IBMwatsonxModel",
+    "input_value"
+  ],
+  "rfc3476b32b29786979ac": [
+    "IBMwatsonxModel",
+    "text_output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "ra645531478cee9b4ca8b": [
+    "File",
+    "data",
+    "MergeDataComponent",
+    "data_inputs"
+  ],
+  "r5bd1755bb0d76369dcc6": [
+    "MergeDataComponent",
+    "combined_data",
+    "SplitText",
+    "data_inputs"
+  ],
+  "r6d2fb0317afbf19b39ec": [
+    "SplitText",
+    "chunks",
+    "FAISS",
+    "ingest_data"
+  ],
+  "r96395de4f81190463fdc": [
+    "ChatInput",
+    "message",
+    "FAISS",
+    "search_query"
+  ],
+  "ra2ec31fcecd57ccb56b1": [
+    "FAISS",
+    "search_results",
+    "ParseData",
+    "data"
+  ],
+  "re32dc84e0c143470d757": [
+    "WhisperTranscriptionComponent",
+    "transcription",
+    "Agent",
+    "input_value"
+  ],
+  "r816e8d175115597ff545": [
+    "Agent",
+    "response",
+    "TwilioSendComponent",
+    "message_body"
+  ],
+  "rbf86bd58be19b6a18d6e": [
+    "TwilioSendComponent",
+    "text",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r6916af5f105adb5dd7b4": [
+    "ChatInput",
+    "message",
+    "WhisperTranscriptionComponent",
+    "audio_url"
+  ],
+  "r8cec83e0c498c5f2f4de": [
+    "TextInput",
+    "text",
+    "Prompt Template (IADt9)",
+    "modalities"
+  ],
+  "r9a00722f6fea751f75f2": [
+    "TextInput",
+    "text",
+    "Prompt Template (IADt9)",
+    "closing_bracket"
+  ],
+  "rad8de0f56bb4ffe943f9": [
+    "Prompt Template (IADt9)",
+    "prompt",
+    "APIRequest",
+    "url_input"
+  ],
+  "r3cbc352dc52afac2a26d": [
+    "ChatInput",
+    "message",
+    "Prompt Template (IADt9)",
+    "prompt"
+  ],
+  "r990a76024156d543743e": [
+    "parser",
+    "parsed_text",
+    "Prompt",
+    "analysis"
+  ],
+  "r67e21d13819e7ad3f9a5": [
+    "ChatInput",
+    "message",
+    "YouTubeCommentsComponent",
+    "video_url"
+  ],
+  "r0eec3860b0271d2ad37f": [
+    "ParseData",
+    "text",
+    "Prompt",
+    "references"
+  ],
+  "r47c0bb6c199266b72b56": [
+    "URL",
+    "data",
+    "ParseData",
+    "data"
+  ],
+  "r449af630d6364174e09e": [
+    "GoogleSerperAPI",
+    "api_run_model",
+    "ParseData",
+    "data"
+  ],
+  "r48c44e9fcc618bd83443": [
+    "ChatInput",
+    "message",
+    "GoogleSerperAPI",
+    "input_value"
+  ],
+  "r0f33328eecb999be0034": [
+    "ParseData",
+    "text",
+    "Prompt",
+    "information"
+  ],
+  "rebe8bccca4011cae5bb1": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "topic"
+  ],
+  "r538cf6a0733f7f7e7f76": [
+    "DataOperations",
+    "data_output",
+    "MergeBySpecificKeys",
+    "data_2"
+  ],
+  "rf3ddd080c0c47d5bc487": [
+    "DataOperations",
+    "data_output",
+    "MergeBySpecificKeys",
+    "data_1"
+  ],
+  "r595eeddb017bcea18c0c": [
+    "MergeBySpecificKeys",
+    "data_output",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "r7c0042fc322e6c336375": [
+    "TypeConverterComponent",
+    "dataframe_output",
+    "LoopComponent",
+    "data"
+  ],
+  "rb6fa30a3604d99a1fef1": [
+    "LoopComponent",
+    "item",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "rea64cead5d4f3d30bb29": [
+    "TypeConverterComponent",
+    "message_output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r73c246783a0979993c29": [
+    "LoopComponent",
+    "done",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "re31391ddd003a33841e1": [
+    "APIRequest",
+    "data",
+    "DataOperations",
+    "data"
+  ],
+  "rd1f4c2ffbb32ba1d37e9": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "json"
+  ],
+  "r71f82f6669c9119be226": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "working_hours"
+  ],
+  "r420580b38664bbddef64": [
+    "Agent",
+    "response",
+    "Prompt Template",
+    "agent1"
+  ],
+  "r08f9ed6e1b68c5a9056d": [
+    "Agent",
+    "response",
+    "Prompt Template",
+    "agent2"
+  ],
+  "ra494754649efc5c5fca7": [
+    "TypeConverterComponent",
+    "message_output",
+    "LanguageModelComponent",
+    "system_message"
+  ],
+  "raacd7ac52e60570ff325": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "json_schema"
+  ],
+  "r2fdb532bc57caf4063ff": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "business_rule"
+  ],
+  "ra4ad0bc8c893128ae25e": [
+    "StructuredOutput",
+    "structured_output",
+    "parser",
+    "input_data"
+  ],
+  "r57f925f96a8b57f78220": [
+    "ChatInput",
+    "message",
+    "KnowledgeBase",
+    "search_query"
+  ],
+  "r8b281c3ee10478538b0d": [
+    "KnowledgeBase",
+    "retrieve_data",
+    "parser",
+    "input_data"
+  ],
+  "r1c8b6b0e77dab32e3573": [
+    "ToolkitComponent",
+    "generated_tools",
+    "ToolCallingAgent",
+    "tools"
+  ],
+  "re72f9da3c1ecbb8bddac": [
+    "Memory",
+    "messages",
+    "ToolCallingAgent",
+    "chat_history"
+  ],
+  "r8ff5b01111b8b1d89467": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "goals"
+  ],
+  "rb3bb7d5d426644c50f1c": [
+    "StructuredOutput",
+    "structured_output",
+    "APIRequest",
+    "body"
+  ],
+  "ra57507bba9db7e09ac41": [
+    "JSONtoData",
+    "data",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "r1a79a17b618a55b2a33c": [
+    "ParseData",
+    "text",
+    "Prompt",
+    "Document"
+  ],
+  "r5f0bfb04241cb76c0825": [
+    "AstraDB",
+    "search_results",
+    "parser",
+    "input_data"
+  ],
+  "rf385fc607b076a6b7c81": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "component_data"
+  ],
+  "r1a46e14987bf4777e805": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "flow_metadata"
+  ],
+  "rd34c63c2d5af068d606b": [
+    "ChatInput",
+    "message",
+    "Prompt Template",
+    "custom_instructions"
+  ],
+  "recf0520e2083243e92b9": [
+    "MCPTools",
+    "response",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r53d59b6d076a007b95a3": [
+    "GetUserID",
+    "output",
+    "MCPTools",
+    "user_id"
+  ],
+  "rac46275e4a2d03f830cb": [
+    "ChatOutput",
+    "message",
+    "MCPTools",
+    "new_value"
+  ],
+  "r10f48940d6af5aa6d87f": [
+    "Prompt Template",
+    "prompt",
+    "GoogleGenerativeAIModel",
+    "input_value"
+  ],
+  "r79a212f1837ad6ec0fe0": [
+    "GoogleGenerativeAIModel",
+    "text_output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "re12659a6be363dd7c43c": [
+    "ChatInput",
+    "message",
+    "TavilySearchComponent",
+    "message"
+  ],
+  "r291a08bf4f984e64af15": [
+    "TavilySearchComponent",
+    "results",
+    "Prompt",
+    "user_input"
+  ],
+  "r6b09e1a408348815035f": [
+    "ReadFileComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r2c5fc05f835b071c91c7": [
+    "TextInput",
+    "text",
+    "DeepFloRuntimeComponent",
+    "prompt"
+  ],
+  "r0ee60d5017184718d7d2": [
+    "DeepFloRuntimeComponent",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r96203ad58c299b2b321d": [
+    "Prompt",
+    "prompt",
+    "OpenRouterComponent",
+    "system_message"
+  ],
+  "r39dc0f1ae4975116c0ab": [
+    "ChatInput",
+    "message",
+    "WeaviateVectorStore",
+    "query"
+  ],
+  "r82161b13288ac2529deb": [
+    "ChatInput",
+    "message",
+    "CombineText",
+    "text1"
+  ],
+  "r43b4bdeac694970a1c8b": [
+    "CombineText",
+    "combined_text",
+    "OpenRouterComponent",
+    "input_value"
+  ],
+  "r28dc5437395c7b517fc6": [
+    "ParseData",
+    "text",
+    "CombineText",
+    "text2"
+  ],
+  "ra8929a7ba4769ca84405": [
+    "WeaviateVectorStore",
+    "search_results",
+    "ParseData",
+    "data"
+  ],
+  "r55c03e495604143e0564": [
+    "Agent",
+    "structured_response",
+    "ParserComponent",
+    "input_data"
+  ],
+  "re2c56cc21c4a3d50074f": [
+    "NVIDIAModelComponent",
+    "text_output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "re497cd81d4c6f1d53e24": [
+    "TextInput",
+    "text",
+    "NVIDIAModelComponent",
+    "input_value"
+  ],
+  "r9f7c40d68d04d3298d61": [
+    "SQLiteConnectionString",
+    "connection_string",
+    "SQLComponent",
+    "database_url"
+  ],
+  "r573ec9fb56e78b7dffc9": [
+    "ParseData",
+    "text",
+    "SQLiteConnectionString",
+    "path"
+  ],
+  "r826b5e15946554808b12": [
+    "File",
+    "path",
+    "PythonREPLComponent",
+    "dataset2"
+  ],
+  "r0fb3c19c0d24a25bfcaa": [
+    "File",
+    "path",
+    "PythonREPLComponent",
+    "dataset1"
+  ],
+  "ra5071159d078b597a11a": [
+    "PythonREPLComponent",
+    "results",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "rdbde3216cd57031d7e00": [
+    "PythonREPLComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r368605792cb0eb525f32": [
+    "File",
+    "path",
+    "Prompt Template",
+    "REFERENCE_DATA_FILEPATH"
+  ],
+  "r471a35fb4a0c7ece598a": [
+    "File",
+    "path",
+    "Prompt Template",
+    "NEW_DATA_FILEPATH"
+  ],
+  "r339ba54bc44acdc3415c": [
+    "TypeConverterComponent",
+    "message_output",
+    "Prompt Template",
+    "PREPROCESSED_DATA"
+  ],
+  "rffaf6a52d75b688a78b9": [
+    "ComposioGmailAPIComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rf8499a88006c42544ac1": [
+    "ComposioOutlookAPIComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r49c461f4b840fe31d218": [
+    "Prompt",
+    "prompt",
+    "NVIDIAModelComponent",
+    "input_value"
+  ],
+  "r7af27efd0e8c594d5ec6": [
+    "AstraDB",
+    "search_results",
+    "NvidiaRerankComponent",
+    "search_results"
+  ],
+  "r874419a531dd5e365eb2": [
+    "NvidiaRerankComponent",
+    "reranked_documents",
+    "ParseData",
+    "data"
+  ],
+  "r59a13ec3494e656a4ba2": [
+    "HierarchicalCrewComponent",
+    "output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rd79a44801228a9546f10": [
+    "HierarchicalTaskComponent",
+    "task_output",
+    "HierarchicalCrewComponent",
+    "tasks"
+  ],
+  "rc8918fc9258cb376dff7": [
+    "CrewAIAgentComponent",
+    "output",
+    "HierarchicalCrewComponent",
+    "agents"
+  ],
+  "r1a1a89c58f2e045bb556": [
+    "OpenAIModel",
+    "model_output",
+    "CrewAIAgentComponent",
+    "llm"
+  ],
+  "r4ad31c47738f7963122d": [
+    "CrewAIAgentComponent",
+    "output",
+    "HierarchicalCrewComponent",
+    "manager_agent"
+  ],
+  "r9c46adadb267fd75b325": [
+    "Prompt",
+    "prompt",
+    "HierarchicalTaskComponent",
+    "task_description"
+  ],
+  "r4067e7a31058a92d5103": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "query"
+  ],
+  "re2139dd504c102ba4093": [
+    "YFinanceTool",
+    "tool",
+    "CrewAIAgentComponent",
+    "tools"
+  ],
+  "r1fb088d7cdece3bc61af": [
+    "OpenAIModel",
+    "text_output",
+    "CrewAIAgentComponent",
+    "role"
+  ],
+  "rd5dbb926a599dcbbd4ef": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt",
+    "role"
+  ],
+  "rfcf5cab2e2b473430789": [
+    "OpenAIModel",
+    "text_output",
+    "CrewAIAgentComponent",
+    "goal"
+  ],
+  "r310fc556091e78b2e0b6": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt",
+    "goal"
+  ],
+  "rf0f791f65ff929e49d53": [
+    "OpenAIModel",
+    "text_output",
+    "CrewAIAgentComponent",
+    "backstory"
+  ],
+  "r5cc229b111cc6159ab43": [
+    "SearchAPI",
+    "api_build_tool",
+    "CrewAIAgentComponent",
+    "tools"
+  ],
+  "r3410983b7621232ffa09": [
+    "GigaChatModel (rjOuT)",
+    "model_output",
+    "Agent",
+    "agent_llm"
+  ],
+  "r686b78410244d7ce1a71": [
+    "ChatInput",
+    "message",
+    "GraphAnalysisFields",
+    "mcp_request"
+  ],
+  "r18c2235dd366e676374b": [
+    "GraphAnalysisFields",
+    "request",
+    "AnalyzeGraph",
+    "payload"
+  ],
+  "r227e8eb67c7bae1399fa": [
+    "AnalyzeGraph",
+    "result",
+    "GraphAnalysisView",
+    "payload"
+  ],
+  "r17bed50c96fea6378da4": [
+    "GraphAnalysisPolicy",
+    "result",
+    "AnalyzeGraph",
+    "policy"
+  ],
+  "rf7b3354e55a3cd226f0e": [
+    "AnalyzeGraph",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r979d79afa2339109c2e0": [
+    "File",
+    "message",
+    "Prompt Template",
+    "text"
+  ],
+  "race2b0552f96f5eac9ce": [
+    "LanguageModelComponent",
+    "text_output",
+    "Prompt Template",
+    "summary"
+  ],
+  "rc47a4639ba2b05054901": [
+    "ChatInput",
+    "message",
+    "QdrantTfidfSearch",
+    "search_query"
+  ],
+  "rccb60592e191e14c57c2": [
+    "QdrantTfidfSearch",
+    "results",
+    "parser",
+    "input_data"
+  ],
+  "rf9d5f44ed2c2e9f9373c": [
+    "ChatInput",
+    "message",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "r316838171fe13bfdcfd6": [
+    "TypeConverterComponent",
+    "dataframe_output",
+    "DataFrameOperations",
+    "df"
+  ],
+  "r87ac0072a5c68acb7cd3": [
+    "ChatInput",
+    "message",
+    "DataFrameOperations",
+    "new_column_value"
+  ],
+  "r75ea1558804d9c4c6527": [
+    "DataFrameOperations",
+    "output",
+    "DataFrameOperations",
+    "df"
+  ],
+  "r146ab2f5da3d4941dc0c": [
+    "DataFrameOperations",
+    "output",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "rebe644596ab5a84847ee": [
+    "DataOperations",
+    "data_output",
+    "DataOperations",
+    "data"
+  ],
+  "rd625619d731508323d77": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "json"
+  ],
+  "r2e00d703df83edba572f": [
+    "ChatInput",
+    "message",
+    "MathMCPSubstantiateApplication",
+    "request_json"
+  ],
+  "r5269386e4524fa6002c8": [
+    "MathMCPSubstantiateApplication",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r03715d13bbed48e69cfd": [
+    "ChatInput",
+    "message",
+    "SQLAgent",
+    "input_value"
+  ],
+  "r8f1cd86baaedda737cb1": [
+    "GroqModel",
+    "model_output",
+    "SQLAgent",
+    "llm"
+  ],
+  "rf584e6319e49bf2df608": [
+    "SQLAgent",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r1c5971361fd639d5d21e": [
+    "AnthropicModel",
+    "text_output",
+    "MessagetoData",
+    "message"
+  ],
+  "rf74fb5179f3c521d1007": [
+    "MessagetoData",
+    "data",
+    "LoopComponent",
+    "item"
+  ],
+  "ra92a6464b811accba590": [
+    "LoopComponent",
+    "done",
+    "ParseData",
+    "data"
+  ],
+  "r29d36e1018f2e70c6a9a": [
+    "ArXivComponent",
+    "data",
+    "LoopComponent",
+    "data"
+  ],
+  "r0724abbd84ff7fc15b12": [
+    "parser",
+    "parsed_text",
+    "AnthropicModel",
+    "input_value"
+  ],
+  "racffd6984014e52c97e2": [
+    "LoopComponent",
+    "item",
+    "parser",
+    "input_data"
+  ],
+  "rf17c3ae11ddc31b96e97": [
+    "JSONtoData",
+    "data",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r1a0a7b4268c61e7cc71c": [
+    "ConditionalRouter",
+    "true_result",
+    "MessagetoData",
+    "message"
+  ],
+  "r9ceb07ee9c0202af1fed": [
+    "MessagetoData",
+    "data",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r7db626ed4399be5b62a4": [
+    "Agent",
+    "structured_response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "ra0c72b97929f5bece619": [
+    "GmailAPI",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rc1d81561ea488e69da8b": [
+    "ComposioGoogleSheetsAPIComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "ra92f65e8b56f31ca56d8": [
+    "ComposioGoogleTasksAPIComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r69c63e8de16affa58ec8": [
+    "ComposioSlackAPIComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r5b13c4bae3cf593797d9": [
+    "SplitText",
+    "dataframe",
+    "KBIngestion",
+    "input_df"
+  ],
+  "r3a7e778256b7e2a8af27": [
+    "TextInput",
+    "text",
+    "KBRetrieval",
+    "search_query"
+  ],
+  "rd7ead7b41932b16db822": [
+    "KBRetrieval",
+    "chroma_kb_data",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r74cada6611f64919a052": [
+    "ChatInput",
+    "message",
+    "GroqModel",
+    "system_message"
+  ],
+  "ra17b1365ea07300fd901": [
+    "TextInput",
+    "text",
+    "TextOutput",
+    "input_value"
+  ],
+  "re653e48811a2a5efc69b": [
+    "File",
+    "dataframe",
+    "JsonDataFrameSplitter",
+    "df_input"
+  ],
+  "rd2d2e96f1978eeed34cd": [
+    "JsonDataFrameSplitter",
+    "rows",
+    "AstraDB",
+    "ingest_data"
+  ],
+  "rbacc821afb9ceb70d1ed": [
+    "OpenAIModel",
+    "text_output",
+    "CleanlabEvaluator",
+    "response"
+  ],
+  "r10c36702765685041f88": [
+    "Prompt",
+    "prompt",
+    "CleanlabEvaluator",
+    "system_prompt"
+  ],
+  "r672bc65853c2642bde6d": [
+    "ChatInput",
+    "message",
+    "CleanlabEvaluator",
+    "prompt"
+  ],
+  "r18f3a00945e38ead48d5": [
+    "CleanlabEvaluator",
+    "score",
+    "CleanlabRemediator",
+    "score"
+  ],
+  "re852926e804ec64c69cd": [
+    "CleanlabEvaluator",
+    "explanation",
+    "CleanlabRemediator",
+    "explanation"
+  ],
+  "r97645fa1c8c525f3d7da": [
+    "CleanlabEvaluator",
+    "response_passthrough",
+    "CleanlabRemediator",
+    "response"
+  ],
+  "rd3536d1897b5d5e01d74": [
+    "WatsonxEmbeddingsComponent",
+    "embeddings",
+    "AstraDB",
+    "embedding_model"
+  ],
+  "ra7ec0a781dbdb1ea9b87": [
+    "Prompt",
+    "prompt",
+    "IBMwatsonxModel",
+    "input_value"
+  ],
+  "r9cd257bf6578ecd849e1": [
+    "LanguageModelComponent",
+    "text_output",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "r774a0e834a3d697dc556": [
+    "TypeConverterComponent",
+    "data_output",
+    "LoopComponent",
+    "item"
+  ],
+  "r8ccfd73ec34869b42270": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "user_profile"
+  ],
+  "r4fb77e0cd41bfb119931": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "fitness_goal"
+  ],
+  "rd1ff8c38847f6a9d0fa6": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "note"
+  ],
+  "r45edf0252176826e7b17": [
+    "GroqModel",
+    "model_output",
+    "StructuredOutput",
+    "llm"
+  ],
+  "rfd278e48a9be215e0171": [
+    "Prompt",
+    "prompt",
+    "StructuredOutput",
+    "input_value"
+  ],
+  "r4433e772e9b6e93babcf": [
+    "ChatInput",
+    "message",
+    "Prompt Template",
+    "bug_report"
+  ],
+  "r12c28c8f539fa0c676ee": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "issue"
+  ],
+  "rbff1a85730cd33e3da06": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "invoice_feed"
+  ],
+  "r5bdf9ed1c1f831f7c421": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "vendor_master"
+  ],
+  "ra8c50bf5fba230bfc1e4": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "po_register"
+  ],
+  "r4736a3427ac194265012": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "tolerance_rules"
+  ],
+  "r456037b997e748ec6365": [
+    "Prompt Template",
+    "prompt",
+    "OpenAIModel",
+    "input_value"
+  ],
+  "r90d01bf2e56c8b48c621": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "gate_1"
+  ],
+  "rce97d2b97e7ecc1711d3": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "exception_feed"
+  ],
+  "rb210edfbe277374e7962": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt Template",
+    "triage_json"
+  ],
+  "rf0c0920e5ac9dc471d21": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "gate_2"
+  ],
+  "r22d42fc26a0e99a5f475": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "payment_run_feed"
+  ],
+  "r6941bacb9bad79f9b509": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt Template",
+    "exception_json"
+  ],
+  "r293fae792abc9bfa7d2c": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "gl_map"
+  ],
+  "ref434c4b7140daf2af82": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "sma"
+  ],
+  "r91a7f9a7e43d861f5680": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "ema"
+  ],
+  "rbaf217ae7c64d0975ae8": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "macd"
+  ],
+  "rce8751c4f140ddf61d76": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "rsi"
+  ],
+  "r3f95ee57f72f790699fc": [
+    "ChatInput",
+    "message",
+    "ComparisonFields",
+    "mcp_request"
+  ],
+  "rdbf47d544110160172da": [
+    "ComparisonFields",
+    "request",
+    "CompareResearchObjects",
+    "payload"
+  ],
+  "r4aa636d4a823f0842ee6": [
+    "ComparisonOntology",
+    "result",
+    "CompareResearchObjects",
+    "policy"
+  ],
+  "rc7bdeb7424793198e83a": [
+    "ComparisonRetrieval",
+    "result",
+    "CompareResearchObjects",
+    "retrieval_policy"
+  ],
+  "rd3414771a85b7c02b409": [
+    "CompareResearchObjects",
+    "result",
+    "ComparisonStateView",
+    "payload"
+  ],
+  "r3c4ae6dd6212efff987d": [
+    "CompareResearchObjects",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r2278cb6fb67e75a364bb": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "contents"
+  ],
+  "rea0d8a7023dad26168a2": [
+    "ChatInput",
+    "message",
+    "APIRequest",
+    "url_input"
+  ],
+  "r0a55e5488a8b93834681": [
+    "InputNormalizer",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r2a8a6edac4331d263150": [
+    "ComposioCalendlyAPIComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "ra3baa40083f3f2ddcf64": [
+    "QdrantVectorStoreComponent",
+    "search_results",
+    "ParseData",
+    "data"
+  ],
+  "r74150ea3ca64c198708e": [
+    "URLComponent",
+    "page_results",
+    "Knowledge",
+    "input_df"
+  ],
+  "r94160a6a2e11ffb6f14a": [
+    "Knowledge",
+    "dataframe_output",
+    "ParserComponent",
+    "input_data"
+  ],
+  "rd63bacf508b3245c7ed1": [
+    "ParserComponent",
+    "parsed_text",
+    "Agent",
+    "system_prompt"
+  ],
+  "rbd23352c631033582fa2": [
+    "ChatInput",
+    "message",
+    "ResearchRunFields",
+    "mcp_request"
+  ],
+  "r3977b616397edbc38d9d": [
+    "ResearchRunFields",
+    "request",
+    "ResearchRunTool",
+    "payload"
+  ],
+  "rd9147c8508fe2ec7d37d": [
+    "ResearchRunTool",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rd8158587f05703fd2913": [
+    "WikipediaComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r87779196cf8c51f44160": [
+    "File",
+    "message",
+    "StructuredOutput",
+    "input_value"
+  ],
+  "re06bf520b8d8d26b21e7": [
+    "parser",
+    "parsed_text",
+    "LanguageModelComponent",
+    "input_value"
+  ],
+  "rc2f9786c43daaaf2d09b": [
+    "TextInput",
+    "text",
+    "LanguageModelComponent",
+    "system_message"
+  ],
+  "ra742b2adee224c365619": [
+    "ChatInput",
+    "message",
+    "MathMCPEnumerateRecords",
+    "request_json"
+  ],
+  "r9ca572ec6935aea9fa08": [
+    "MathMCPEnumerateRecords",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r21d99f6956c28ddf087b": [
+    "Agent",
+    "response",
+    "Prompt",
+    "previous_response"
+  ],
+  "rbb318605f9619da815c3": [
+    "APIRequest",
+    "data",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "r9b63d79cd6122390ea34": [
+    "LanguageModelComponent",
+    "text_output",
+    "APIRequest",
+    "url_input"
+  ],
+  "rb0df025011b8a3334c28": [
+    "TypeConverterComponent",
+    "message_output",
+    "LanguageModelComponent",
+    "input_value"
+  ],
+  "r7c7e641ed0e34d00edfc": [
+    "LanguageModelComponent",
+    "text_output",
+    "AddContentToPage",
+    "markdown_text"
+  ],
+  "r7d4709128d1b4b78ea51": [
+    "File",
+    "message",
+    "TextOutput",
+    "input_value"
+  ],
+  "re8a76e7d41b896d05eb8": [
+    "TextOutput",
+    "text",
+    "LanguageModelComponent",
+    "input_value"
+  ],
+  "r33f0429525fbd76536ea": [
+    "ChatInput",
+    "message",
+    "MathMCPSubmit",
+    "request_json"
+  ],
+  "red8b246be7b3b4b1e921": [
+    "MathMCPSubmit",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r2b862f617303e7b64d52": [
+    "ChatOutput",
+    "message",
+    "LangWatchEvaluatorComponent",
+    "answer"
+  ],
+  "r17a1a958be6e5adfec88": [
+    "ChatInput",
+    "message",
+    "LangWatchEvaluatorComponent",
+    "question"
+  ],
+  "r174217c453296bf7fff7": [
+    "StructuredOutput",
+    "structured_output",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "rd6abbcf81ba684895038": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "job_description"
+  ],
+  "r350440c8f66bcda9ec12": [
+    "File",
+    "message",
+    "Prompt Template",
+    "candidate_resume"
+  ],
+  "r7bbd3c3b6d6528d399a8": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "candidate_id"
+  ],
+  "r87f1dea99ee1509583ed": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "cultural_fit_requirements"
+  ],
+  "rcdc242cd01c680d22ac1": [
+    "StructuredOutput",
+    "dataframe_output",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "rd522aa00260fbb656e1a": [
+    "TypeConverterComponent",
+    "message_output",
+    "Prompt Template",
+    "structured_resume_data"
+  ],
+  "r58e85beef2878bbb7a68": [
+    "TypeConverterComponent",
+    "message_output",
+    "Prompt Template",
+    "technical_screener"
+  ],
+  "r2a25155e70c273dad54c": [
+    "TypeConverterComponent",
+    "message_output",
+    "Prompt Template",
+    "culture_screener"
+  ],
+  "r27f39e942f2ea2f60524": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "spreadsheet_link"
+  ],
+  "r52e28927b7aa70ef92b2": [
+    "OpenAIModel",
+    "model_output",
+    "StructuredOutputComponent",
+    "llm"
+  ],
+  "re9f5efad6010dd0361e0": [
+    "Agent",
+    "response",
+    "StructuredOutputComponent",
+    "input_value"
+  ],
+  "r4d71c71246cdd0482529": [
+    "StructuredOutputComponent",
+    "structured_output",
+    "APIRequest",
+    "body"
+  ],
+  "r5d8dc7ff44dff680343a": [
+    "WikidataComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rfdd2c8cba24fc1276e45": [
+    "SmtpToKindle",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r7ce3185341d7d0d78858": [
+    "Prompt Template",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r61ac08e097ee8286f21f": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "json_structure"
+  ],
+  "r8ef5e8a2622eb8f05c29": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "important_notes"
+  ],
+  "r1f4e615c05f3439894a5": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "content_requeriments"
+  ],
+  "r957430225642359b53aa": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "email_objective"
+  ],
+  "r35ac99ddffc5589226e9": [
+    "DynamicSelectionComponent",
+    "output",
+    "Prompt Template",
+    "strategy"
+  ],
+  "rec5042f385ef1fba4f01": [
+    "ChatInput",
+    "message",
+    "ext:datastax:AstraDBVectorStoreComponent@official",
+    "search_query"
+  ],
+  "r8541d37a500de61d310f": [
+    "ext:datastax:AstraDBVectorStoreComponent@official",
+    "search_results",
+    "ParserComponent",
+    "input_data"
+  ],
+  "rc368682ce03a9fba6764": [
+    "ChatOutput",
+    "message",
+    "TextOutput",
+    "input_value"
+  ],
+  "r5c09b3ec114ef6353350": [
+    "TextOutput",
+    "text",
+    "StoreMessage",
+    "message"
+  ],
+  "rf5e406219674a909047f": [
+    "ChatInput",
+    "message",
+    "StoreMessage",
+    "message"
+  ],
+  "rdf9f3a20ed3dc1880f6c": [
+    "RedisChatMemory",
+    "memory",
+    "StoreMessage",
+    "memory"
+  ],
+  "r5bdd6cbdc19b79d28ff4": [
+    "ChatInput",
+    "message",
+    "CombineText",
+    "text2"
+  ],
+  "r717ecf43985b289e2bec": [
+    "TextOutput",
+    "text",
+    "CombineText",
+    "text2"
+  ],
+  "reb3c399ff7f692543fbf": [
+    "CombineText",
+    "combined_text",
+    "CombineText",
+    "text1"
+  ],
+  "r135b48c370107d3f8be9": [
+    "CombineText",
+    "combined_text",
+    "CombineText",
+    "text2"
+  ],
+  "rfe2f8327535de66a9e52": [
+    "CombineText",
+    "combined_text",
+    "OllamaModel",
+    "input_value"
+  ],
+  "r146ee55814339e48efc7": [
+    "OllamaModel",
+    "text_output",
+    "LLMJsonExtractor",
+    "message"
+  ],
+  "r78a899c61c428a9915a4": [
+    "LLMJsonExtractor",
+    "data",
+    "WeaviateVectorStore",
+    "ingest_data"
+  ],
+  "r7572d4b8c835b94416f6": [
+    "TextInput",
+    "text",
+    "CustomPromptExternal",
+    "input_value"
+  ],
+  "rdea9eea02a8f0222db6f": [
+    "CustomPromptExternal",
+    "text",
+    "OllamaModel",
+    "system_message"
+  ],
+  "rc9055c366d6bbb34dc11": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "ques"
+  ],
+  "r60b948b20c6eb76cd193": [
+    "RunFlow",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r169d39d9b2b35d65464f": [
+    "TextInput",
+    "text",
+    "ArXivComponent",
+    "search_query"
+  ],
+  "r2a18cb0278209a311536": [
+    "ArXivComponent",
+    "dataframe",
+    "ParserComponent",
+    "input_data"
+  ],
+  "rf14b8261a0d22ce1bee5": [
+    "ChatInput",
+    "message",
+    "MathMCPRunExperiment",
+    "request_json"
+  ],
+  "r408b35d6021568d2a63c": [
+    "MathMCPRunExperiment",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rc3523a7d506dc0b40fb6": [
+    "LanguageModelComponent",
+    "text_output",
+    "StructuredOutput",
+    "system_prompt"
+  ],
+  "r752a4726d7ef99779baa": [
+    "ChatInput",
+    "message",
+    "Prompt Template",
+    "variable_name"
+  ],
+  "rb39971454de1cd73014a": [
+    "ParserComponent",
+    "parsed_text",
+    "AstraDB",
+    "search_query"
+  ],
+  "ra6ec480319eaa537f7c3": [
+    "ChatInput",
+    "message",
+    "MathMCPReadRecord",
+    "request_json"
+  ],
+  "rea0926db77cca1f43d9e": [
+    "MathMCPReadRecord",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r9f5ee38939bf28dd7ece": [
+    "StructuredOutput",
+    "dataframe_output",
+    "parser",
+    "input_data"
+  ],
+  "re83713ad69647838761c": [
+    "TextInput",
+    "text",
+    "APIRequest",
+    "url_input"
+  ],
+  "r28942fddcd4fbc34ca28": [
+    "LanguageModelComponent",
+    "text_output",
+    "Prompt Template",
+    "content"
+  ],
+  "r50f9a3aa0963aeec160b": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "url"
+  ],
+  "rb3a1104f4198c9e7a3a9": [
+    "Prompt Template",
+    "prompt",
+    "AddContentToPage",
+    "markdown_text"
+  ],
+  "r922600a44ad0c7db039f": [
+    "ChatInput",
+    "message",
+    "OpenRouterComponent",
+    "input_value"
+  ],
+  "r8cc8492b74a312b465f5": [
+    "TextInput",
+    "text",
+    "SQLComponent",
+    "query"
+  ],
+  "r752efadc6adf645a885f": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "team"
+  ],
+  "r134cfbd13d27d518e550": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "analysis_subject"
+  ],
+  "r80c6a81fe5e165e1844c": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "risk_classification_rules"
+  ],
+  "r9dd2243ebcb7b91d2cfa": [
+    "MockDataGenerator",
+    "dataframe_output",
+    "BatchRunComponent",
+    "df"
+  ],
+  "rba16bf6eceaea62be0ef": [
+    "BatchRunComponent",
+    "batch_results",
+    "DataFrameOperations",
+    "df"
+  ],
+  "r8690ba24c5e2df6be644": [
+    "Prompt Template",
+    "prompt",
+    "BatchRunComponent",
+    "system_message"
+  ],
+  "r118c39afe830be6847b9": [
+    "CalculatorTool",
+    "api_build_tool",
+    "Agent",
+    "tools"
+  ],
+  "r6d12855f22d3b1ec9db6": [
+    "ConditionalRouter",
+    "false_result",
+    "Prompt",
+    "Question"
+  ],
+  "r07df2415e4290ab5b74d": [
+    "ConditionalRouter",
+    "true_result",
+    "Prompt",
+    "Question"
+  ],
+  "r69ebef8f5c0024345db5": [
+    "DuckDuckGoSearch",
+    "api_build_tool",
+    "Agent",
+    "tools"
+  ],
+  "rbf0e308fa354afcb89ea": [
+    "ChatInput",
+    "message",
+    "DuckDuckGoSearch",
+    "input_value"
+  ],
+  "r53b0e108448df8bbf4a8": [
+    "ParseData",
+    "text",
+    "Prompt",
+    "data"
+  ],
+  "raa103c873bd14e24499d": [
+    "ParseData",
+    "text",
+    "Prompt",
+    "Database"
+  ],
+  "r4826a8a6d754129467bc": [
+    "ParseData",
+    "text",
+    "Prompt",
+    "Data"
+  ],
+  "r7762062c249c52a517a8": [
+    "MCP",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rd30306bf30357526d005": [
+    "ChatInput",
+    "message",
+    "DependencyTraceFields",
+    "mcp_request"
+  ],
+  "r5a578833c0778521de15": [
+    "DependencyTraceFields",
+    "request",
+    "TraceClaimDependencies",
+    "payload"
+  ],
+  "r4f0762267b255d5e417a": [
+    "TraceClaimDependencies",
+    "result",
+    "DependencyTraceView",
+    "payload"
+  ],
+  "r7bb3619e1c9a7bea408b": [
+    "DependencyTracePolicy",
+    "result",
+    "TraceClaimDependencies",
+    "policy"
+  ],
+  "r489089f8bb90bdbe7a94": [
+    "TraceClaimDependencies",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r8591a66d6eca3195efa0": [
+    "TextInput",
+    "text",
+    "PreparePassages",
+    "source_text"
+  ],
+  "r7262714d12066d38bbd6": [
+    "PreparePassages",
+    "passages",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r5d41708105b866b44b6f": [
+    "ResearchOntology",
+    "ontology",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rcc33c7b8de22e00fc7f7": [
+    "StructuredOutputComponent",
+    "structured_output",
+    "ParseData",
+    "data"
+  ],
+  "r4a4a26fb6f8310c9c778": [
+    "OpenAIModel",
+    "text_output",
+    "StructuredOutputComponent",
+    "input_value"
+  ],
+  "r956b601de2d3088a9fc0": [
+    "File",
+    "message",
+    "OpenAIModel",
+    "input_value"
+  ],
+  "r23025503e62529ff1719": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "URL"
+  ],
+  "r1a5f11a18fa504b043d9": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "rule_creation"
+  ],
+  "re719f5fa8d60e2086fab": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "structure"
+  ],
+  "r9e98189ddd2d38668ddd": [
+    "OpenAIModel",
+    "text_output",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "ra6d7e01d9ad99a0255b9": [
+    "TypeConverterComponent",
+    "message_output",
+    "StructuredOutput",
+    "input_value"
+  ],
+  "rf10b8b463464101b92d2": [
+    "YouTubeTranscripts",
+    "dataframe",
+    "LoopComponent",
+    "data"
+  ],
+  "rb812f9c580389a848df6": [
+    "policies",
+    "guarded_tools",
+    "Agent",
+    "tools"
+  ],
+  "rb36cff153bcf610aac5e": [
+    "Flights App",
+    "component_as_tool",
+    "policies",
+    "in_tools"
+  ],
+  "r44496515ab10942c1f51": [
+    "MistralModel",
+    "model_output",
+    "Agent",
+    "agent_llm"
+  ],
+  "rb93ac77c3767d60d746b": [
+    "URL",
+    "text",
+    "Prompt",
+    "EXAMPLE_COMPONENTS"
+  ],
+  "r6f5df6712c8e08282f7b": [
+    "URL",
+    "text",
+    "Prompt",
+    "BASE_COMPONENT_CODE"
+  ],
+  "rc9443793526983ec7eac": [
+    "URL",
+    "text",
+    "Prompt",
+    "CUSTOM_COMPONENT_CODE"
+  ],
+  "r79f2cede4483c2eab318": [
+    "Prompt",
+    "prompt",
+    "AnthropicModel",
+    "input_value"
+  ],
+  "r949bd0308c9e52e8f6bf": [
+    "ChatInput",
+    "message",
+    "VerifyLeanFields",
+    "mcp_request"
+  ],
+  "refa812530c3c709db836": [
+    "VerifyLeanFields",
+    "request",
+    "VerifyLean",
+    "payload"
+  ],
+  "r33c6664ba345a65c0829": [
+    "VerifyLean",
+    "result",
+    "LeanVerificationView",
+    "payload"
+  ],
+  "re5e99f9e05e3a3ef471b": [
+    "VerifyLean",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r8fa0a0616756fe39458d": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "user_question"
+  ],
+  "r95adf4b39de98efdac95": [
+    "GroqModel",
+    "text_output",
+    "StructuredOutput",
+    "input_value"
+  ],
+  "rf0e3b2019f2c1f09cbe2": [
+    "ComposioJiraAPIComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r4fb03ec439ae357bdb5d": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "KPI"
+  ],
+  "raf082267b462cd9e65cc": [
+    "ChatInput",
+    "message",
+    "TextInput",
+    "input_value"
+  ],
+  "r7030fb2eca8b83f5be35": [
+    "ChatInput",
+    "message",
+    "FlexibleDataSource",
+    "trigger"
+  ],
+  "r080b561a20908be2b676": [
+    "FlexibleDataSource",
+    "source",
+    "FlexibleDocProcessor",
+    "source"
+  ],
+  "rd2f1d207f32b51c583d9": [
+    "FlexibleDocProcessor",
+    "documents",
+    "FlexibleTextSplitter",
+    "documents"
+  ],
+  "r94849ba193aca45c50b7": [
+    "FlexibleTextSplitter",
+    "chunks",
+    "FlexibleVectorStore",
+    "chunks"
+  ],
+  "r9490753bccd9916da179": [
+    "FlexibleTextSplitter",
+    "chunks",
+    "FlexibleSearchStore",
+    "chunks"
+  ],
+  "r1f5c7e63a2b9d21c4f0b": [
+    "FlexibleTextSplitter",
+    "chunks",
+    "FlexibleKGExtraction",
+    "chunks"
+  ],
+  "r4960b2a895e310bea4df": [
+    "FlexibleKGExtraction",
+    "kg",
+    "FlexibleGraphStore",
+    "kg"
+  ],
+  "rca95bee6ed4640e1a45f": [
+    "FlexibleKGExtraction",
+    "kg",
+    "FlexibleRDFStore",
+    "kg"
+  ],
+  "r9c6dfb3748583c949ae7": [
+    "FlexibleVectorStore",
+    "result",
+    "FlexibleIngestSummary",
+    "vector"
+  ],
+  "red8fec40f25ba620c8e3": [
+    "FlexibleSearchStore",
+    "result",
+    "FlexibleIngestSummary",
+    "search"
+  ],
+  "re058a19227be8c71674c": [
+    "FlexibleKGExtraction",
+    "kg",
+    "FlexibleIngestSummary",
+    "kg"
+  ],
+  "r9721cf5cfad4aaeeba5f": [
+    "FlexibleGraphStore",
+    "result",
+    "FlexibleIngestSummary",
+    "graph"
+  ],
+  "rb3086c2bb42025cb5ec2": [
+    "FlexibleRDFStore",
+    "result",
+    "FlexibleIngestSummary",
+    "rdf"
+  ],
+  "rcd81ca5b2cf95de0441a": [
+    "FlexibleIngestSummary",
+    "summary",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r885eccd47554e1b626c5": [
+    "SplitText",
+    "chunks",
+    "AlterMetadata",
+    "input_value"
+  ],
+  "r59e4e3eaa8964faa555d": [
+    "CustomComponent",
+    "output",
+    "AlterMetadata",
+    "metadata"
+  ],
+  "r33f9c61567626980fef5": [
+    "AlterMetadata",
+    "data",
+    "CustomComponent",
+    "input_data"
+  ],
+  "rf4c0c7065f98c87ffb4f": [
+    "CustomComponent",
+    "output",
+    "AstraDB",
+    "ingest_data"
+  ],
+  "re51ad7b87cac065d2714": [
+    "ChatInput",
+    "message",
+    "Prompt Template",
+    "prd"
+  ],
+  "r36ca124f90fe79671f41": [
+    "ComposioYoutubeAPIComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "raa670b01499b55b5e61f": [
+    "ComposioRedditAPIComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "re36fb95f162f60716be8": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "days"
+  ],
+  "rf146f178d0cfa8716538": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "product-brand-topic"
+  ],
+  "r40795d1285d715070b84": [
+    "Agent",
+    "response",
+    "Prompt Template",
+    "youtube_agent_response"
+  ],
+  "r3c3983e21483e39cc2a4": [
+    "Agent",
+    "response",
+    "Prompt Template",
+    "reddit_agent_response"
+  ],
+  "rcde32f2ae01955619890": [
+    "OpenRouterEmbeddings",
+    "embeddings",
+    "QdrantVectorStoreComponent",
+    "embedding"
+  ],
+  "rd0b926688c89c6d60487": [
+    "QdrantVectorStoreComponent",
+    "search_results",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r5424f6664cf660c62630": [
+    "SplitText",
+    "dataframe",
+    "DataFrameOperations",
+    "df"
+  ],
+  "r9d93ac3bfbe8f1377910": [
+    "DataFrameOperations",
+    "output",
+    "QdrantVectorStoreComponent",
+    "ingest_data"
+  ],
+  "r1410a82606ad2c103572": [
+    "ChatInput",
+    "message",
+    "Prompt Template",
+    "company_url"
+  ],
+  "rda6778cc4465d992581e": [
+    "OllamaModel",
+    "text_output",
+    "Prompt",
+    "Router"
+  ],
+  "rb3a6d8cc792456d43d18": [
+    "Memory",
+    "messages_text",
+    "Prompt",
+    "ConvHistory"
+  ],
+  "rbe29e40a31d1deed283f": [
+    "ChatInput",
+    "message",
+    "MistralModel",
+    "input_value"
+  ],
+  "r6f68a05cc8ad754a478f": [
+    "QdrantVectorStoreComponent",
+    "dataframe",
+    "parser",
+    "input_data"
+  ],
+  "r2beb36ffb1bb8c82b1b4": [
+    "RecursiveCharacterTextSplitter",
+    "dataframe",
+    "QdrantVectorStoreComponent",
+    "ingest_data"
+  ],
+  "rcb9ce92408679ce1b1c0": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "company_size"
+  ],
+  "r44316d75198fefc6bcd6": [
+    "File",
+    "dataframe",
+    "RecursiveCharacterTextSplitter",
+    "data_inputs"
+  ],
+  "r97f6e89da0edcfe1dc0d": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt",
+    "CHAT_HISTORY"
+  ],
+  "rf693a84b47bd82438bd7": [
+    "OpenAIModel",
+    "text_output",
+    "EnhancedResponseRouter",
+    "conversational_response"
+  ],
+  "r0c7b7450e1da0fe2d433": [
+    "OpenAIModel",
+    "text_output",
+    "EnhancedResponseRouter",
+    "intent_input"
+  ],
+  "r9017eb34c7573ae3516f": [
+    "Memory",
+    "messages_text",
+    "EnhancedResponseRouter",
+    "chat_history"
+  ],
+  "r407e79692c6e205d904b": [
+    "EnhancedResponseRouter",
+    "final_response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r8f48cf6a01d5748d3ed7": [
+    "OpenAIModel",
+    "text_output",
+    "EnhancedResponseRouter",
+    "structured_response"
+  ],
+  "r869549ebefe25771d22e": [
+    "OpenAIModel",
+    "text_output",
+    "EnhancedResponseRouter",
+    "component_generator_response"
+  ],
+  "rec7725824788a399eda7": [
+    "TavilySearchComponent",
+    "dataframe",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r87ba747c48ac252050b4": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template (l62IM)",
+    "articles"
+  ],
+  "r4fecdea3b3468a87b241": [
+    "Prompt Template (l62IM)",
+    "prompt",
+    "Agent",
+    "input_value"
+  ],
+  "r7ea4922e3442a007b7d7": [
+    "ParserComponent",
+    "parsed_text",
+    "TavilySearchComponent",
+    "query"
+  ],
+  "r6db1954f10de870af487": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template (l62IM)",
+    "topic1"
+  ],
+  "r958078d48b48acb5ef04": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template (l62IM)",
+    "research1"
+  ],
+  "r6cc98e4ee13ca392bdbd": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template (l62IM)",
+    "research2"
+  ],
+  "r2c579d61f2971a620c9d": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template (l62IM)",
+    "topic2"
+  ],
+  "re5230e677d05f23817dd": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template (l62IM)",
+    "title"
+  ],
+  "r8bf5a9f68cb10d67eaba": [
+    "Agent",
+    "response",
+    "Prompt Template (l62IM)",
+    "sections"
+  ],
+  "r5fc4334ae8211611de42": [
+    "ChatInput",
+    "message",
+    "TavilySearchComponent",
+    "query"
+  ],
+  "rd74f84e558814d2d5e15": [
+    "ParserComponent",
+    "parsed_text",
+    "GmailAPI",
+    "subject"
+  ],
+  "r70a02967071a915e9971": [
+    "ParserComponent",
+    "parsed_text",
+    "GmailAPI",
+    "body"
+  ],
+  "r84f36d3bc84bd6bac21e": [
+    "ChatInput",
+    "message",
+    "DuckDuckGoSearchComponent",
+    "input_value"
+  ],
+  "r3f1059fbeaf1bdaa62f2": [
+    "DuckDuckGoSearchComponent",
+    "dataframe",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r456831eeb0d5c627c9a9": [
+    "ChatInput",
+    "message",
+    "HypothesisFields",
+    "mcp_request"
+  ],
+  "r7ccabcc3a13c6db3edc5": [
+    "HypothesisFields",
+    "request",
+    "GenerateHypotheses",
+    "payload"
+  ],
+  "r039999802a0b4d7f4109": [
+    "HypothesisOntology",
+    "result",
+    "GenerateHypotheses",
+    "policy"
+  ],
+  "r0a2f64dc62836094839d": [
+    "HypothesisRetrieval",
+    "result",
+    "GenerateHypotheses",
+    "retrieval_policy"
+  ],
+  "r338401ca97f8167b6970": [
+    "GenerateHypotheses",
+    "result",
+    "HypothesisStateView",
+    "payload"
+  ],
+  "r31afc702824ffd594ee5": [
+    "GenerateHypotheses",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r2e5e836584897c79ce75": [
+    "Directory",
+    "dataframe",
+    "BatchRunComponent",
+    "df"
+  ],
+  "r4f341fa8ac295182a1b2": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "desired_skills"
+  ],
+  "r390cbc95065d1e51141c": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "education_requirements"
+  ],
+  "rfae7f995ddea87e85d17": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "job_challenges"
+  ],
+  "r2c2509fe0bf405e7c348": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "job_title"
+  ],
+  "r17ff463898832dbf7993": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "main_activities"
+  ],
+  "r6e934661a1988c720e2e": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "required_skills"
+  ],
+  "re1910718c4ead4e64755": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "seniority_level"
+  ],
+  "r3060bbdf1f6eb0f7f0b7": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "work_model"
+  ],
+  "re9a1bdb1f2e600c959ca": [
+    "BatchRunComponent",
+    "batch_results",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r8bf9a17c1d4cc7012dac": [
+    "ComposioElevenLabsAPIComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r223307ecdd251599984a": [
+    "SaveToFile",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rfc5d174973a3bfc0b15b": [
+    "ParserComponent",
+    "parsed_text",
+    "LanguageModelComponent",
+    "system_message"
+  ],
+  "r9fa1123c23f625b490e5": [
+    "ChatOutput",
+    "message",
+    "Prompt Template",
+    "result_1"
+  ],
+  "r93c5ea7360b6033164dd": [
+    "ChatOutput",
+    "message",
+    "Prompt Template",
+    "result_2"
+  ],
+  "r18c296be6924e1351510": [
+    "ChatOutput",
+    "message",
+    "Prompt Template",
+    "result_3"
+  ],
+  "r02cf71da7f977e7ceba8": [
+    "ParserComponent",
+    "parsed_text",
+    "SQLComponent",
+    "query"
+  ],
+  "r7f0951701d702c610257": [
+    "SQLComponent",
+    "run_sql_query",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rd971d4aa6c57d245316e": [
+    "File",
+    "message",
+    "Prompt Template",
+    "file1"
+  ],
+  "raee34fe728f277f7092c": [
+    "File",
+    "message",
+    "Prompt Template",
+    "file2"
+  ],
+  "rb333fa1d6e0b069a4e3f": [
+    "ParserComponent",
+    "parsed_text",
+    "StructuredOutput",
+    "input_value"
+  ],
+  "rceb17d061b3304c8c65b": [
+    "StructuredOutput",
+    "structured_output_dataframe",
+    "parser",
+    "input_data"
+  ],
+  "rb5bdfa7a77577d657dda": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "quantity"
+  ],
+  "rea1a996d202abcc5784d": [
+    "TypeConverterComponent",
+    "message_output",
+    "ConditionalRouter",
+    "true_case_message"
+  ],
+  "rdd52ed5acb3fcb264c74": [
+    "ConditionalRouter",
+    "false_result",
+    "Agent",
+    "input_value"
+  ],
+  "r7e1ae7570f4b847253b4": [
+    "TypeConverterComponent",
+    "message_output",
+    "ConditionalRouter",
+    "false_case_message"
+  ],
+  "ra25670adf0b1e5cc1965": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "productId"
+  ],
+  "r3a4147245378d71fd37c": [
+    "MockSQLComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "ra925749ba78a5cf110fe": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "prompt1"
+  ],
+  "r8028b52209bf328da102": [
+    "Directory",
+    "data",
+    "RecursiveCharacterTextSplitter",
+    "data_input"
+  ],
+  "r61b12e4948c730bdc35d": [
+    "OpenAIModel",
+    "text_output",
+    "LangWatchEvaluatorComponent",
+    "answer"
+  ],
+  "r69c540888ccc12c548ed": [
+    "LangWatchEvaluatorComponent",
+    "trace_url",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r5c73e21523b95de4de6e": [
+    "File",
+    "data",
+    "RecursiveSplitText_custom",
+    "data_inputs"
+  ],
+  "r108bc48599d7cc60878d": [
+    "RecursiveSplitText_custom",
+    "chunks",
+    "Chroma",
+    "ingest_data"
+  ],
+  "r22f7489c3d754993b473": [
+    "ChatInput",
+    "message",
+    "MathMCPOpen",
+    "request_json"
+  ],
+  "rde6df6e3bb3491110cc2": [
+    "MathMCPOpen",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r7aa4a9ed992e69de8889": [
+    "Agent",
+    "response",
+    "ConditionalRouter",
+    "input_text"
+  ],
+  "r2903979a42d38d450d74": [
+    "Agent",
+    "response",
+    "ConditionalRouter",
+    "true_case_message"
+  ],
+  "r5629c791ec34aea1043a": [
+    "Agent",
+    "response",
+    "ConditionalRouter",
+    "false_case_message"
+  ],
+  "r8ee29f45beb87a9938d1": [
+    "OpenAIEmbeddings",
+    "embeddings",
+    "AstraDBGraph",
+    "embedding_model"
+  ],
+  "rd526abcef81cacf3e410": [
+    "URL",
+    "data",
+    "LanguageRecursiveTextSplitter",
+    "data_input"
+  ],
+  "r74d8399b1d1aebdf80eb": [
+    "LanguageRecursiveTextSplitter",
+    "data",
+    "HtmlLinkExtractor",
+    "data_input"
+  ],
+  "rf5b3918899a5b12fa260": [
+    "HtmlLinkExtractor",
+    "data",
+    "AstraDBGraph",
+    "ingest_data"
+  ],
+  "r689ea0dc01886c2f4430": [
+    "ParserComponent",
+    "parsed_text",
+    "Milvus",
+    "search_query"
+  ],
+  "r9c04172cc171ac9b5255": [
+    "LMStudioEmbeddingsComponent",
+    "embeddings",
+    "Milvus",
+    "embedding"
+  ],
+  "redd3e2b2d14979c8c182": [
+    "Milvus",
+    "dataframe",
+    "parser",
+    "input_data"
+  ],
+  "r927616530f89c8ce1955": [
+    "LoopComponent",
+    "done",
+    "parser",
+    "input_data"
+  ],
+  "r0d3c96d80d85084a88d6": [
+    "ChatInput",
+    "message",
+    "ConditionalRouter",
+    "false_case_message"
+  ],
+  "ra2bfacd33ff643e5d8dc": [
+    "Memory",
+    "messages_text",
+    "RunFlow",
+    "TextInput-ecPrq~input_value"
+  ],
+  "r135b5ac32037872b9db7": [
+    "RunFlow",
+    "flow_outputs_message",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r7fddc663edabbf8fe58f": [
+    "TextInput",
+    "text",
+    "RunFlow",
+    "TextInput-fHMza~input_value"
+  ],
+  "r2735456942ce099aee31": [
+    "TextInput",
+    "text",
+    "RunFlow",
+    "TextInput-ODNox~input_value"
+  ],
+  "r451932264deaf5d224ca": [
+    "Memory",
+    "messages_text",
+    "RunFlow",
+    "TextInput-3oHh2~input_value"
+  ],
+  "rc42db43ba5995ff1a3e4": [
+    "ConditionalRouter",
+    "false_result",
+    "RunFlow",
+    "TextInput-je7Nl~input_value"
+  ],
+  "r3b7250a3ade61f5b61c4": [
+    "ConditionalRouter",
+    "true_result",
+    "RunFlow",
+    "TextInput-Sexsh~input_value"
+  ],
+  "r4d8969f1ecbc9b25148d": [
+    "RunFlow",
+    "flow_outputs_message",
+    "SplitText",
+    "data_inputs"
+  ],
+  "rd883f7d2f9bf3a106ce0": [
+    "TextInput",
+    "text",
+    "RunFlow",
+    "TextInput-5dy00~input_value"
+  ],
+  "r9ba7e0f9218f7db41eef": [
+    "Memory",
+    "messages_text",
+    "RunFlow",
+    "TextInput-M3eoQ~input_value"
+  ],
+  "rb65b2abf603b5d2ba741": [
+    "parser",
+    "parsed_text",
+    "RunFlow",
+    "TextInput-wDq9v~input_value"
+  ],
+  "r6a07cc1a4b712fc0e092": [
+    "ConditionalRouter",
+    "true_result",
+    "RunFlow",
+    "TextInput-p47jm~input_value"
+  ],
+  "r6344a4f2c93253d64035": [
+    "ConditionalRouter",
+    "true_result",
+    "RunFlow",
+    "TextInput-FmBkP~input_value"
+  ],
+  "r78600953c0b644b1f160": [
+    "Memory",
+    "messages_text",
+    "RunFlow",
+    "TextInput-U50eg~input_value"
+  ],
+  "rb99a8ce1dc41f3d55846": [
+    "TextInput",
+    "text",
+    "RunFlow",
+    "TextInput-U7txp~input_value"
+  ],
+  "rc3cdb832bcf0f87fa3b7": [
+    "parser",
+    "parsed_text",
+    "RunFlow",
+    "TextInput-bSOTZ~input_value"
+  ],
+  "r98b28df94659c33b1600": [
+    "RunFlow",
+    "flow_outputs_message",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "r1c81e97dbc699f3bf590": [
+    "Memory",
+    "messages_text",
+    "RunFlow",
+    "TextInput-XTnCT~input_value"
+  ],
+  "r557f087e7fb5f24111f9": [
+    "RunFlow",
+    "flow_outputs_message",
+    "RunFlow",
+    "TextInput-juI4f~input_value"
+  ],
+  "rd399233789faf4cbb63e": [
+    "TextInput",
+    "text",
+    "RunFlow",
+    "TextInput-JpXXT~input_value"
+  ],
+  "r8487201cf072d69e5707": [
+    "ChatInput",
+    "message",
+    "RunFlow",
+    "TextInput-fv4Xh~input_value"
+  ],
+  "re6aa5b0851c474061f87": [
+    "GigaChatModel",
+    "model_output",
+    "Agent",
+    "model"
+  ],
+  "r5be1cc1127511e260e5c": [
+    "UnifiedWebSearch",
+    "results",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r5023a5f34e4cb94314ae": [
+    "ChatInput",
+    "message",
+    "TextOperations",
+    "text_input"
+  ],
+  "r43379c59106a9aad3b7e": [
+    "ParserComponent",
+    "parsed_text",
+    "TextOperations",
+    "text_input_2"
+  ],
+  "rb1585ab060b48ee4f73a": [
+    "TextOperations",
+    "text",
+    "Agent",
+    "input_value"
+  ],
+  "rc16dd70e13be9b8b388a": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "report"
+  ],
+  "r824c6f35e5e2a0f27b8d": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "recipient"
+  ],
+  "rfcb88d2531af52c8bfed": [
+    "Agent",
+    "response",
+    "ConditionalRouter",
+    "match_text"
+  ],
+  "r2a28e2774920eaa971db": [
+    "ConditionalRouter",
+    "true_result",
+    "StructuredOutput",
+    "input_value"
+  ],
+  "r6aeb6aa5da9b2fe7b2cd": [
+    "ChatInput",
+    "message",
+    "SaveOntologyFields",
+    "mcp_request"
+  ],
+  "r697f2c80a864d576474e": [
+    "SaveOntologyFields",
+    "request",
+    "OntologyValidate",
+    "payload"
+  ],
+  "r6324b310e3dd4e029294": [
+    "OntologyValidate",
+    "result",
+    "OntologySave",
+    "payload"
+  ],
+  "r48de4ca98d7646638ac4": [
+    "OntologySave",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r6a5ba2b4466d1e29e7e5": [
+    "AstraDBChatMemory",
+    "memory",
+    "StoreMessage",
+    "memory"
+  ],
+  "r4d23c3d7c1e3397cea24": [
+    "AstraDBChatMemory",
+    "memory",
+    "Memory",
+    "memory"
+  ],
+  "r90c0fb270713cbadd520": [
+    "Agent",
+    "response",
+    "StoreMessage",
+    "message"
+  ],
+  "re56d7426313ccbef1c42": [
+    "Memory",
+    "messages_text",
+    "Agent",
+    "input_value"
+  ],
+  "r890deaef97c2f6c55d49": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "documentation_url"
+  ],
+  "r91b6d90aee4fa959d659": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "pr_number"
+  ],
+  "ra5bd699a783dd414b324": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "repository_url"
+  ],
+  "r9b5cd1b02036926a143e": [
+    "Agent",
+    "response",
+    "Prompt Template",
+    "report"
+  ],
+  "rbfa7866e6c31b5b0afe4": [
+    "ChatInput",
+    "message",
+    "MathMCPOperations",
+    "request_json"
+  ],
+  "rc1759dda654f8870f1d7": [
+    "MathMCPOperations",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "re6cc1b2e3b32cd49d0b1": [
+    "Vault Gemini Secret Fetcher",
+    "message",
+    "Agent",
+    "api_key"
+  ],
+  "r03fdfb0b9563458e87a4": [
+    "Context Builder",
+    "message",
+    "Agent",
+    "system_prompt"
+  ],
+  "r6b9ecee0f96be04d6623": [
+    "Vault Prisma AIRS Secret Fetcher",
+    "message",
+    "APIRequest",
+    "airs_api_key"
+  ],
+  "r020363431b168532e60a": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "user_message"
+  ],
+  "r7d28bbfe66699e462cef": [
+    "Memory",
+    "messages_text",
+    "Prompt",
+    "context"
+  ],
+  "r3f6a8ce22c995081d020": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt Template",
+    "invoice_json"
+  ],
+  "r87935e92f421e9565968": [
+    "ChatInput",
+    "message",
+    "Prompt Template",
+    "raw_message"
+  ],
+  "rb08684194f17862dd0f9": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "nonpo_policy_rules"
+  ],
+  "rabb17b35c1763139e8fe": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "matching_rules"
+  ],
+  "r90cf26464b880dd4e391": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt Template",
+    "route_json"
+  ],
+  "r5a08ff7925c1def167d2": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt Template",
+    "po_resolution_json"
+  ],
+  "r73f45eb449c198229bab": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "approval_matrix"
+  ],
+  "ra8d6f8e59712c247b426": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "gl_coding_hints"
+  ],
+  "r9e1705809f4a5d84d9cc": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt Template",
+    "nonpo_resolution_json"
+  ],
+  "r1c00976ce7c60d1af1d2": [
+    "TypeConverterComponent",
+    "message_output",
+    "Prompt",
+    "chunk"
+  ],
+  "r27ad65084a8486fc4f93": [
+    "StructuredOutput",
+    "structured_output",
+    "LoopComponent",
+    "item"
+  ],
+  "rffee67059e2d30fc81ef": [
+    "Agent",
+    "response",
+    "MessagetoData",
+    "message"
+  ],
+  "r96823bc90f779567137f": [
+    "MessagetoData",
+    "data",
+    "MergeDataComponent",
+    "data_inputs"
+  ],
+  "ree4f716d712139b8ef55": [
+    "MergeDataComponent",
+    "combined_data",
+    "ParserComponent",
+    "input_data"
+  ],
+  "rc5fd09742efdd44dc6b0": [
+    "MessagetoData",
+    "data",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r31cf54f54335ffe31b5b": [
+    "ParserComponent",
+    "parsed_text",
+    "LatexToPdf",
+    "message"
+  ],
+  "r6248aef41bef03622a61": [
+    "LatexToPdf",
+    "pdf_message",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r130d1adc52d11ee7945c": [
+    "LatexToPdf",
+    "resume_out",
+    "MessagetoData",
+    "message"
+  ],
+  "rf17e063a6d2309b9fcc6": [
+    "ChatInput",
+    "message",
+    "MCPURLHTMLFetcher",
+    "text_input"
+  ],
+  "rba207b4be7103800660c": [
+    "MCPURLHTMLFetcher",
+    "messages",
+    "Agent",
+    "input_value"
+  ],
+  "rf7a271758c9372b45458": [
+    "StructuredOutput",
+    "structured_output",
+    "HumanReadableProfileFormatter",
+    "profile_data"
+  ],
+  "re93cdd4d1a029be4e2f4": [
+    "HumanReadableProfileFormatter",
+    "profile_card",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r458dab793cfcd197f049": [
+    "ParseData",
+    "data_list",
+    "LoopComponent",
+    "data"
+  ],
+  "r47ea8744ccceeb272c84": [
+    "ParseData",
+    "data_list",
+    "LoopComponent",
+    "item"
+  ],
+  "rbd5cdcb3db55fab5d860": [
+    "LoopComponent",
+    "item",
+    "ParseData",
+    "data"
+  ],
+  "rfa95a4a643fe949941ad": [
+    "ParseData",
+    "text",
+    "Agent",
+    "input_value"
+  ],
+  "r55ec926097305f5a93d0": [
+    "Agent",
+    "response",
+    "OpenAIModel",
+    "input_value"
+  ],
+  "red3f2c4b377f0cbe4940": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt",
+    "Output"
+  ],
+  "r2c15d9a7930e64b14337": [
+    "Prompt",
+    "prompt",
+    "ParseData",
+    "template"
+  ],
+  "rf2960445679d07f697b9": [
+    "ArXivComponent",
+    "data",
+    "ParseData",
+    "data"
+  ],
+  "rcddbc8fb0b3564f33fa9": [
+    "ChatInput",
+    "message",
+    "ResearchRetrievalFields",
+    "mcp_request"
+  ],
+  "r3f0bcb55ed58b9eaa7ba": [
+    "ResearchRetrievalFields",
+    "request",
+    "RetrieveResearchContext",
+    "payload"
+  ],
+  "ra72aba48faefb4d77bfa": [
+    "RetrieveResearchContext",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r8fa8c611f2e6d95241d1": [
+    "CreateListFromFileWithURLParsing",
+    "list",
+    "RecursiveCharacterTextSplitter",
+    "data_input"
+  ],
+  "rfab9b1129e67bfa8e737": [
+    "File",
+    "data",
+    "RecursiveCharacterTextSplitter",
+    "data_input"
+  ],
+  "r810051a0ef732131d0e9": [
+    "RecursiveCharacterTextSplitter",
+    "data",
+    "AstraDB",
+    "ingest_data"
+  ],
+  "r33059478b0b7020c6377": [
+    "ChatInput",
+    "message",
+    "DraftLeanFields",
+    "mcp_request"
+  ],
+  "r76cf9e8513d04b9cdc15": [
+    "DraftLeanFields",
+    "request",
+    "DraftLean",
+    "payload"
+  ],
+  "r44be1305fd45b44f9e03": [
+    "LeanDraftOntology",
+    "result",
+    "DraftLean",
+    "policy"
+  ],
+  "r25697102eeb7b6e8ce1e": [
+    "LeanDraftRetrieval",
+    "result",
+    "DraftLean",
+    "retrieval_policy"
+  ],
+  "r2d9f3cc77582a228b384": [
+    "LeanSearch",
+    "tool",
+    "DraftLean",
+    "lean_search"
+  ],
+  "r0c29a1f63fad7a0e63df": [
+    "LeanDraftVerification",
+    "backend",
+    "DraftLean",
+    "backend"
+  ],
+  "rc4aab968183f47984592": [
+    "DraftLean",
+    "result",
+    "LeanDraftStateView",
+    "payload"
+  ],
+  "r01fe9ac5f3a46fdbe854": [
+    "DraftLean",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r1a1b045343c33cc9f302": [
+    "Prompt Template",
+    "prompt",
+    "IBMwatsonxModel",
+    "system_message"
+  ],
+  "r11362f7356170cb36cf2": [
+    "ToolGuide",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r360b365948c3decdb0c5": [
+    "GuideFields",
+    "request",
+    "ToolGuide",
+    "payload"
+  ],
+  "rcc8ca5c6e9c64583c382": [
+    "TextInput",
+    "text",
+    "GuideFields",
+    "tool"
+  ],
+  "r3c5d75cb0c30a4f6ded1": [
+    "ChatInput",
+    "message",
+    "GuideFields",
+    "mcp_request"
+  ],
+  "r03d44ac9a0042b5281ec": [
+    "GoogleDriveFolderReader",
+    "documents",
+    "SplitText",
+    "data_inputs"
+  ],
+  "r2731c1066d405dc6273e": [
+    "Prompt",
+    "prompt",
+    "LMStudioModel",
+    "input_value"
+  ],
+  "r70da582f7f0275b91e03": [
+    "LMStudioModel",
+    "text_output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r5b797a23e64984a7569b": [
+    "PythonREPLTool",
+    "api_build_tool",
+    "ToolCallingAgent",
+    "tools"
+  ],
+  "r06aefe407ccf62d6b33f": [
+    "File",
+    "dataframe",
+    "parser",
+    "input_data"
+  ],
+  "rbcac9920154f712cfb30": [
+    "parser",
+    "parsed_text",
+    "Prompt",
+    "Document"
+  ],
+  "r2879490a65ae5b33aa27": [
+    "CohereEmbeddings",
+    "embeddings",
+    "FAISS",
+    "embedding"
+  ],
+  "rc13cbe2361580f2aed11": [
+    "FAISS",
+    "dataframe",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "r4c3f66eeb777b02f34e6": [
+    "TypeConverterComponent",
+    "message_output",
+    "Multilingual Prompt Template",
+    "search_results"
+  ],
+  "r40c7d425dcf96813997f": [
+    "CohereModel",
+    "text_output",
+    "MultilingualSmartTextProcessor",
+    "ai_response"
+  ],
+  "r8650fa514684ca41b5b5": [
+    "LanguageDetector",
+    "language",
+    "Multilingual Prompt Template",
+    "user_question"
+  ],
+  "r26cbb8455d207b590104": [
+    "LanguageDetector",
+    "language",
+    "FAISS",
+    "search_query"
+  ],
+  "r5fbeff4ca3e6aaebb47f": [
+    "ChatInput",
+    "message",
+    "LanguageDetector",
+    "user_input"
+  ],
+  "r55983e11d7dc264232e0": [
+    "MultilingualSmartTextProcessor",
+    "result",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r1abdb4eff157fdb456e3": [
+    "Multilingual Prompt Template",
+    "prompt",
+    "CohereModel",
+    "input_value"
+  ],
+  "r9373140f3757a8b7b8f7": [
+    "ChatInput",
+    "message",
+    "MultilingualSmartTextProcessor",
+    "user_input"
+  ],
+  "r8d127c74c433632b5533": [
+    "ChatInput",
+    "message",
+    "MathMCPExport",
+    "request_json"
+  ],
+  "re6f70c8a006009866485": [
+    "MathMCPExport",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rdf2c9fbf36be119c0992": [
+    "ChatInput",
+    "message",
+    "MongoDBAtlasVector",
+    "search_query"
+  ],
+  "r63e9b93eec155ff040a8": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "testCases"
+  ],
+  "r3e85a41a7e42efaa5963": [
+    "MongoDBAtlasVector",
+    "dataframe",
+    "ParserComponent",
+    "input_data"
+  ],
+  "rbfe6b5b9ea8486c85fc3": [
+    "ChatInput",
+    "message",
+    "MathMCPClose",
+    "request_json"
+  ],
+  "ra93458b638045e384d10": [
+    "MathMCPClose",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r9402165be1855d7ac442": [
+    "ChatInput",
+    "message",
+    "SaveAnalysisFields",
+    "mcp_request"
+  ],
+  "r1bdbfe4ed3dde2f77b5a": [
+    "SaveAnalysisFields",
+    "request",
+    "SaveResearchAnalysis",
+    "payload"
+  ],
+  "rdca25781936f89a29e6a": [
+    "SaveResearchAnalysis",
+    "result",
+    "ResearchAnalysisView",
+    "payload"
+  ],
+  "r24768b909d7f9e22b5e4": [
+    "SaveResearchAnalysis",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r006c0ba47d72b15ee762": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt",
+    "legal_documents"
+  ],
+  "r645a175883fb6e3a5f99": [
+    "ToolCallingAgent",
+    "response",
+    "ToolCallingAgent",
+    "input_value"
+  ],
+  "r67d76242401789cff102": [
+    "SearchAPI",
+    "api_build_tool",
+    "ToolCallingAgent",
+    "tools"
+  ],
+  "r3b66620e8197a04bcd3a": [
+    "url_content_fetcher",
+    "api_build_tool",
+    "ToolCallingAgent",
+    "tools"
+  ],
+  "rc03da5681b51e41872aa": [
+    "ChatInput",
+    "message",
+    "ReviewFields",
+    "mcp_request"
+  ],
+  "re671bb3922ed2cab398e": [
+    "ReviewFields",
+    "request",
+    "ReviewResearch",
+    "payload"
+  ],
+  "r2d8b606ffeef62eff74e": [
+    "ReviewOntology",
+    "result",
+    "ReviewResearch",
+    "policy"
+  ],
+  "ra4babb9d96842b357d62": [
+    "ReviewRetrieval",
+    "result",
+    "ReviewResearch",
+    "retrieval_policy"
+  ],
+  "r321d3d1c95884248a7bf": [
+    "OpenAIModel",
+    "model_output",
+    "ReviewResearch",
+    "model"
+  ],
+  "r2a251cb0a1f4be1d5029": [
+    "ReviewResearch",
+    "result",
+    "ReviewStateView",
+    "payload"
+  ],
+  "r51db5495c02e81434930": [
+    "ReviewResearch",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r6ea5f9491f2a6f06605a": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt",
+    "post"
+  ],
+  "r2d9380dfe5bee07b9006": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt",
+    "image_description"
+  ],
+  "r24284215739096804f5c": [
+    "GoogleGenerativeAIModel",
+    "text_output",
+    "ConditionalRouter",
+    "input_text"
+  ],
+  "rcabd8a76a361d3236c57": [
+    "CalculatorComponent",
+    "component_as_tool",
+    "ToolCallingAgent",
+    "tools"
+  ],
+  "re344207657615c108e40": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt",
+    "notes"
+  ],
+  "r72acce6195b171fce7f8": [
+    "GoogleGenerativeAIModel",
+    "text_output",
+    "TextOutput",
+    "input_value"
+  ],
+  "re94c1166b7db58e7c5c7": [
+    "OpenRouterComponent",
+    "model_output",
+    "ToolCallingAgent",
+    "llm"
+  ],
+  "r63ca0dd49f91a7eda652": [
+    "SyntheticDocumentParser",
+    "document",
+    "DeterministicPIIRedactor",
+    "document"
+  ],
+  "r329a9a89f22b156ad2ff": [
+    "DeterministicPIIRedactor",
+    "redacted",
+    "ExplainableRiskScorer",
+    "document"
+  ],
+  "r307fff960bf42cd2b282": [
+    "ExplainableRiskScorer",
+    "assessment",
+    "ApprovalTaskGateway",
+    "assessment"
+  ],
+  "ra872885c1acffeb591d1": [
+    "ChatInput",
+    "message",
+    "MathMCPRecordStep",
+    "request_json"
+  ],
+  "re8ea81e2b4700fff1102": [
+    "MathMCPRecordStep",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r95f657fa151af7a2678f": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt",
+    "chef_output"
+  ],
+  "rc261601477e2d48c0733": [
+    "ChatInput",
+    "message",
+    "DeepResearchPassFields",
+    "mcp_request"
+  ],
+  "r80d2be886d22c904f895": [
+    "DeepResearchPassFields",
+    "request",
+    "StockArxivHTML",
+    "payload"
+  ],
+  "r32bcf82d55a38898c515": [
+    "DeepResearchPassFields",
+    "request",
+    "ConductPassDeepResearch",
+    "payload"
+  ],
+  "rf7a3e8b4510013be543d": [
+    "PaperDiscovery",
+    "tool",
+    "StockArxivHTML",
+    "paper_discovery"
+  ],
+  "r0cc8871835ba93a0a313": [
+    "StockArxivHTML",
+    "tool",
+    "ConductPassDeepResearch",
+    "stock_arxiv"
+  ],
+  "rfaff34df03884557fb60": [
+    "PaperDiscovery",
+    "tool",
+    "ConductPassDeepResearch",
+    "paper_discovery"
+  ],
+  "r2caf8a0566b8fabd1404": [
+    "ConductPassDeepResearch",
+    "result",
+    "ReviewGraphCommit",
+    "payload"
+  ],
+  "r2d732900f1b3b704b3e5": [
+    "ReviewGraphCommit",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r59a620943c226ba1d2ed": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt Template",
+    "normalized_email_json"
+  ],
+  "r4afece8904148c49385d": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt Template",
+    "invoice_evidence_json"
+  ],
+  "r8960601d27854139df14": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "ap_clerk_directory"
+  ],
+  "rdbea6e1b1e04941271ab": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "case_evidence_db"
+  ],
+  "r15a267810f24d10a9451": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "escalation_rules"
+  ],
+  "rb8f3f19d77232abb9c9b": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "sap_findings_json"
+  ],
+  "r3ec45a01b4f86bbb897d": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "human_decision_json"
+  ],
+  "r3482b379bb4e9877bfd2": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "human_notes"
+  ],
+  "r63ed03192a9f3c1866b3": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "human_review_meta_json"
+  ],
+  "rb8f407b5b4edf9bb9996": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt Template",
+    "canonical_email_json"
+  ],
+  "r8b85e565de5999c2ff41": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "internal_contacts_json"
+  ],
+  "r9cdd4583e8fa281a4575": [
+    "Prompt Template",
+    "prompt",
+    "Prompt Template",
+    "auto_lane_packet"
+  ],
+  "rf96145ee7412b5b8e0d3": [
+    "Prompt Template",
+    "prompt",
+    "Prompt Template",
+    "human_review_pack"
+  ],
+  "re9ceeca0c452a754dc6a": [
+    "Prompt Template",
+    "prompt",
+    "Prompt Template",
+    "human_lane_packet"
+  ],
+  "re1e1b536818e843e93a4": [
+    "Prompt Template",
+    "prompt",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r62b39609f6fef58919cf": [
+    "EmbeddingModel",
+    "embeddings",
+    "AstraDBGraph",
+    "embedding_model"
+  ],
+  "rb53375879950b71cb01b": [
+    "AstraDBGraph",
+    "search_results",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "r57c74b2fabb2ae3b2438": [
+    "TypeConverterComponent",
+    "message_output",
+    "Prompt Template",
+    "semantic_memory"
+  ],
+  "racced0121b183555c6af": [
+    "TypeConverterComponent",
+    "message_output",
+    "Prompt Template",
+    "episodic_memory"
+  ],
+  "rd4ae013f0ec4b0165ce0": [
+    "LanguageModelComponent",
+    "text_output",
+    "SmartRouter",
+    "input_text"
+  ],
+  "r479a82d013b25a38d336": [
+    "LanguageModelComponent",
+    "model_output",
+    "SmartRouter",
+    "llm"
+  ],
+  "r905c6bf3fa97bdd961cf": [
+    "SmartRouter",
+    "category_1_result",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "rcaa36d0116cf54d66bca": [
+    "TypeConverterComponent",
+    "dataframe_output",
+    "AstraDB",
+    "ingest_data"
+  ],
+  "recfc27c8e6a98fb19202": [
+    "SmartRouter",
+    "category_1_result",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r907ae063edb8914efaf3": [
+    "TypeConverterComponent",
+    "dataframe_output",
+    "AstraDBGraph",
+    "ingest_data"
+  ],
+  "r0f74e1cc482acc11845b": [
+    "ParseDataFrame",
+    "text",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r275f1d4787387d9a8aca": [
+    "StructuredOutput",
+    "structured_output_dataframe",
+    "ParseDataFrame",
+    "df"
+  ],
+  "rfe2a231fc1f7aa09d0c1": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "text"
+  ],
+  "rb84cb55e785c9f961bc8": [
+    "parser",
+    "parsed_text",
+    "Prompt",
+    "database"
+  ],
+  "rae1051b684a8bb76fa0c": [
+    "ChatInput",
+    "message",
+    "CounterexampleFields",
+    "mcp_request"
+  ],
+  "ref8136d0451b5bb08a30": [
+    "CounterexampleFields",
+    "request",
+    "SearchForCounterexamples",
+    "payload"
+  ],
+  "rfc86288fca0adea20aa9": [
+    "CounterexampleOntology",
+    "result",
+    "SearchForCounterexamples",
+    "policy"
+  ],
+  "r50af9f0e3417155baa99": [
+    "CounterexampleRetrieval",
+    "result",
+    "SearchForCounterexamples",
+    "retrieval_policy"
+  ],
+  "ra30fd2ded3e11d5fd1e6": [
+    "SearchForCounterexamples",
+    "result",
+    "CounterexampleStateView",
+    "payload"
+  ],
+  "rcd509c224dd136915d85": [
+    "SearchForCounterexamples",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rc46aaf8b8f5d83eee219": [
+    "ConditionalRouter",
+    "true_result",
+    "Prompt Template",
+    "value"
+  ],
+  "rde34da137e762c90b048": [
+    "ChatInput",
+    "message",
+    "Prompt Template",
+    "query"
+  ],
+  "r3d96e020d31290f1fe41": [
+    "ConditionalRouter",
+    "false_result",
+    "Prompt Template",
+    "value"
+  ],
+  "r3f21b1beea8b96581d1b": [
+    "OpenRouterComponent",
+    "text_output",
+    "TextOutput",
+    "input_value"
+  ],
+  "r0918c94035597008e9b0": [
+    "CustomPromptExternal",
+    "text",
+    "OpenRouterComponent",
+    "system_message"
+  ],
+  "ra24fb99bf9f81fbb54aa": [
+    "OpenRouterComponent",
+    "text_output",
+    "LLMJsonExtractor",
+    "message"
+  ],
+  "r0fa33074fd3b5067a53f": [
+    "CombineText",
+    "combined_text",
+    "StoreMessage",
+    "message"
+  ],
+  "r7896dd8ba11f4af3ba5b": [
+    "ChatInput",
+    "message",
+    "GigaChatModel",
+    "input_value"
+  ],
+  "r9f4ebaceafc4341d1c62": [
+    "Prompt",
+    "prompt",
+    "GigaChatModel",
+    "system_message"
+  ],
+  "r3e178600f1398f933b7d": [
+    "GigaChatModel",
+    "text_output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r1d0ea3109adb130d56b6": [
+    "Chroma",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rb767821649a4862e8410": [
+    "ComposioHeygenAPIComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rbee13ab9a6e8773508d2": [
+    "TypeConverterComponent",
+    "message_output",
+    "Prompt Template",
+    "dataframe_head"
+  ],
+  "rd063638214cf83f19ec7": [
+    "File",
+    "message",
+    "Prompt Template",
+    "file_path"
+  ],
+  "r81ae6a6a757ccd460dea": [
+    "File",
+    "dataframe",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "r7adafa0f2d16bde6f072": [
+    "CombineText",
+    "combined_text",
+    "SambaNovaModel",
+    "input_value"
+  ],
+  "rb7132836b9d831febb8c": [
+    "Agent",
+    "response",
+    "CombineText",
+    "text2"
+  ],
+  "rc75a0f17435140762a55": [
+    "Agent",
+    "response",
+    "CombineText",
+    "text1"
+  ],
+  "r05dd8e705e180ff6b70c": [
+    "ChatOutput",
+    "message",
+    "FacebookPostComponent",
+    "message_text"
+  ],
+  "r7482996790f55fe6113d": [
+    "ChatOutput",
+    "message",
+    "LinkedInPostComponent",
+    "caption_text"
+  ],
+  "r3aa1790066690d68b8ae": [
+    "StoreMessage",
+    "stored_messages",
+    "FacebookPostComponent",
+    "image_url_1"
+  ],
+  "r67ffac6a2a47945346c3": [
+    "StoreMessage",
+    "stored_messages",
+    "LinkedInPostComponent",
+    "image_url_1"
+  ],
+  "r697b5ae7ec5e682a5768": [
+    "LanguageModelComponent",
+    "text_output",
+    "TextOutput",
+    "input_value"
+  ],
+  "r7212b8efc7f52838ba42": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "seed_idea"
+  ],
+  "r65e9a2be2f4586e1450a": [
+    "ChatOutput",
+    "message",
+    "Prompt",
+    "prd"
+  ],
+  "r47d6ead573bbe5a07452": [
+    "ChatOutput",
+    "message",
+    "Prompt",
+    "user_research_report"
+  ],
+  "r0b50a9d47af5bc7163c8": [
+    "ChatOutput",
+    "message",
+    "Prompt",
+    "company_strategy"
+  ],
+  "r278e43af561c21e32e52": [
+    "ChatOutput",
+    "message",
+    "Prompt",
+    "user_research"
+  ],
+  "r1768bc4759d744076a24": [
+    "OpenAIModel",
+    "text_output",
+    "SaveToFile",
+    "message"
+  ],
+  "rbf888942e2aa3bfaae9d": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt",
+    "user_research_report"
+  ],
+  "ra3ce3643ea12181b938b": [
+    "ChatOutput",
+    "message",
+    "Prompt",
+    "user_research_plan"
+  ],
+  "r4bdf20bbfa003a6c1c48": [
+    "Agent",
+    "response",
+    "SaveToFile",
+    "message"
+  ],
+  "r1b6042cbb36df60edf71": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt",
+    "business_model"
+  ],
+  "rf7ff112f4be2d3c1870e": [
+    "Agent",
+    "response",
+    "Prompt",
+    "competitor_benckmark"
+  ],
+  "rfec2c0bee13ef6a41923": [
+    "Agent",
+    "response",
+    "Prompt",
+    "marketing_strategy"
+  ],
+  "r51a93e15a9d145986a0e": [
+    "Agent",
+    "response",
+    "Prompt",
+    "sales"
+  ],
+  "r9b2c338422edfb777fa0": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt",
+    "website_information"
+  ],
+  "rae3d8606a17b49337c13": [
+    "OpenAIModel",
+    "text_output",
+    "ExtractHTMLComponent",
+    "input_value"
+  ],
+  "r0e78cf7af83adb97bdf1": [
+    "ExtractHTMLComponent",
+    "output",
+    "SaveToFile",
+    "message"
+  ],
+  "r0cfc82f13e47a4d27f9d": [
+    "ExtractHTMLComponent",
+    "output",
+    "OpenAIModel",
+    "input_value"
+  ],
+  "r15aaba6e86955a8494e1": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt",
+    "startup_idea"
+  ],
+  "r3a5d106cd04514edb238": [
+    "ChatInput",
+    "message",
+    "GoogleGenerativeAIModel",
+    "input_value"
+  ],
+  "r15ca8febeaab95fe60c8": [
+    "GoogleGenerativeAIModel",
+    "text_output",
+    "GoogleGenerativeAIModel",
+    "input_value"
+  ],
+  "re8fc2b9cf10279f7d8f4": [
+    "File",
+    "message",
+    "Prompt",
+    "file"
+  ],
+  "rf6a06db6e5a6dbe21e04": [
+    "ChatInput",
+    "message",
+    "FormulaTranscription",
+    "request_json"
+  ],
+  "r65645895d232669ba81e": [
+    "FormulaTranscription",
+    "result",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rbea3854ca3abbb868e6b": [
+    "ChatInput",
+    "message",
+    "HelloWorldEcho",
+    "input_text"
+  ],
+  "r018d854161d0f51ce00d": [
+    "HelloWorldEcho",
+    "output_message",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rf2cdbfe41801ccd60c5a": [
+    "ChatInput",
+    "message",
+    "Prompt Template",
+    "user_input"
+  ],
+  "r7575d3291205460c821b": [
+    "Prompt Template",
+    "prompt",
+    "IBMwatsonxModel",
+    "input_value"
+  ],
+  "ra3df513e6898f32ea5db": [
+    "TypeConverterComponent",
+    "message_output",
+    "Agent",
+    "system_prompt"
+  ],
+  "r72d198132d8fb336290c": [
+    "Agent",
+    "response",
+    "Prompt Template",
+    "json_data"
+  ],
+  "r68305788951951395e02": [
+    "Prompt Template",
+    "prompt",
+    "AnthropicModel",
+    "input_value"
+  ],
+  "r931c3f83551566f0d745": [
+    "AnthropicModel",
+    "text_output",
+    "ReportToPDFNode",
+    "report_input"
+  ],
+  "r453b171321525ceb987a": [
+    "ReportToPDFNode",
+    "result",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r53486422ec1ebd6baf8e": [
+    "ChatInput",
+    "message",
+    "APIRequest",
+    "curl_input"
+  ],
+  "rbc59fd1d21ea920908f6": [
+    "ParserComponent",
+    "parsed_text",
+    "OpenRouterComponent",
+    "input_value"
+  ],
+  "re0f317825569112b8ccc": [
+    "MergeDataComponent",
+    "merged_data",
+    "ParseData",
+    "data"
+  ],
+  "r2b60639b04207af623a0": [
+    "SplitText",
+    "chunks",
+    "MergeDataComponent",
+    "data_inputs"
+  ],
+  "rc29c2c3902bfcb6f3557": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "number_of_speakers"
+  ],
+  "r88e58d7422051b4e8dd8": [
+    "OpenAIModel",
+    "text_output",
+    "MarkdownDataExtractorComponent",
+    "input_value"
+  ],
+  "r1212792d21e128ae3f1b": [
+    "MarkdownDataExtractorComponent",
+    "output",
+    "MultiSpeakerAudioGenerator",
+    "input_value"
+  ],
+  "rcac5ae3cac04808c4085": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "additional_details"
+  ],
+  "r1a3d8e66384887a7319d": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "output_format"
+  ],
+  "rf13a48357acc36f1b627": [
+    "PackageInstallerComponent",
+    "install_output",
+    "PackageInstallerComponent",
+    "pass_value"
+  ],
+  "r9d89a7cfe5362aae716c": [
+    "TextInput",
+    "text",
+    "MarkdownDataExtractorComponent",
+    "input_value"
+  ],
+  "ra9b715802e7c91653ee6": [
+    "ChatInput",
+    "message",
+    "FlexibleAIQuery",
+    "query"
+  ],
+  "r8f5c36414118239ac2c3": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "Schema"
+  ],
+  "rf741676ecb44bc2418fa": [
+    "Agent",
+    "response",
+    "PythonREPLComponent",
+    "python_code"
+  ],
+  "r510d8ab035082b6ec167": [
+    "DoclingRemote",
+    "dataframe",
+    "ExportDoclingDocument",
+    "data_inputs"
+  ],
+  "rb63983c6c91619c5c10d": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "document"
+  ],
+  "ra4c60f61e68765635ec2": [
+    "ChunkDoclingDocument",
+    "dataframe",
+    "AstraDB",
+    "ingest_data"
+  ],
+  "rce63baece7fa4e89ada4": [
+    "DoclingRemote",
+    "dataframe",
+    "ChunkDoclingDocument",
+    "data_inputs"
+  ],
+  "r14eb496647012e9b7cf5": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "data"
+  ],
+  "r284e836309fea2273b36": [
+    "ExportDoclingDocument",
+    "dataframe",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r680fb8e7c0da62ef1fe2": [
+    "ChatInput",
+    "message",
+    "GoogleVeo2VideoGenerator",
+    "prompt"
+  ],
+  "ra17eb3c2db55278367e6": [
+    "GoogleVeo2VideoGenerator",
+    "video_data",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r3bb05a8a17caa7a29b48": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt",
+    "langflow_json_file"
+  ],
+  "r5cbefafcb832262d6fb6": [
+    "URLComponent",
+    "dataframe",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r52a8549792353e268d37": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt",
+    "langflow_doc"
+  ],
+  "rb5be83d030c07f3dec9e": [
+    "TavilySearchComponent",
+    "dataframe",
+    "LoopComponent",
+    "data"
+  ],
+  "r4519114816842b552ba6": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "naics_input"
+  ],
+  "rb4588f6fda3da92c0c6d": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "naics_code"
+  ],
+  "rfecc32759092c6b4623b": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "industry_description"
+  ],
+  "r59d1e746feb47f28b49f": [
+    "Agent",
+    "response",
+    "TavilySearchComponent",
+    "query"
+  ],
+  "rc1dd649b9d0f3c002372": [
+    "ChatInput",
+    "message",
+    "DeepFloRuntimeComponent",
+    "prompt"
+  ],
+  "r1dbc471f53f41d74ae94": [
+    "Google Generative AI Embeddings",
+    "embeddings",
+    "ChromaIngestNode",
+    "embedding"
+  ],
+  "r519182d2d4fa4569e6bc": [
+    "SplitText",
+    "dataframe",
+    "ChromaIngestNode",
+    "ingest_data"
+  ],
+  "r00020999ed79c33b709b": [
+    "TypeConverterComponent",
+    "message_output",
+    "Prompt Template",
+    "retrieved_data"
+  ],
+  "rcecca3055f7184d95fc1": [
+    "LanguageModelComponent",
+    "model_output",
+    "GraphTripleExtractor",
+    "llm"
+  ],
+  "rd748c7ecf25c94f4cc39": [
+    "File",
+    "message",
+    "GraphTripleExtractor",
+    "data_inputs"
+  ],
+  "rcc8d659ec3de5d678448": [
+    "GraphTripleExtractor",
+    "extracted_triples",
+    "SaveToFile",
+    "input"
+  ],
+  "r6427edf5c20b326dc4f0": [
+    "NERExtractorNode",
+    "entity_names",
+    "Neo4jQueryNode",
+    "ner_entities"
+  ],
+  "radf23c0897c8932fa9da": [
+    "Neo4jQueryNode",
+    "graph_data",
+    "Prompt Template",
+    "graph_knowledge"
+  ],
+  "r12a248cf259d902a6836": [
+    "File",
+    "message",
+    "Neo4jGraphLoader",
+    "entities_json"
+  ],
+  "r925aba496b87607f7e68": [
+    "File",
+    "message",
+    "Neo4jGraphLoader",
+    "relationships_json"
+  ],
+  "rff226d815138937b5583": [
+    "Chroma",
+    "search",
+    "NERExtractorNode",
+    "input_message"
+  ],
+  "r3a2beff71f7501f1df2b": [
+    "Chroma",
+    "search",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "r1968256f9aa2dd280fe1": [
+    "TypeConverterComponent",
+    "data_output",
+    "SemanticTextSplitter",
+    "data_inputs"
+  ],
+  "r8226617cd9fb5dbed8e5": [
+    "SemanticTextSplitter",
+    "chunks",
+    "Chroma",
+    "ingest_data"
+  ],
+  "r8469a61eee2907a56b98": [
+    "OpenAIEmbeddings",
+    "embeddings",
+    "SemanticTextSplitter",
+    "embeddings"
+  ],
+  "r65edbfa207ac0847f4a9": [
+    "Chroma",
+    "search_results",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "r9aef543ceb2994c31e7a": [
+    "TypeConverterComponent",
+    "message_output",
+    "Prompt Template",
+    "Context"
+  ],
+  "rfde4c26cdda177cdb290": [
+    "ChatInput",
+    "message",
+    "InputNormalizer",
+    "input_value"
+  ],
+  "r11c50f5a65615901e998": [
+    "GraphRetrievalNormalizer",
+    "rows",
+    "ParserComponent",
+    "input_data"
+  ],
+  "rfc7b75bfd254bb03cebf": [
+    "GraphRetrievalNormalizer",
+    "context_out",
+    "OutputNormalizer",
+    "context"
+  ],
+  "r6460cb8acd4e7d505627": [
+    "AmazonBedrockModel",
+    "text_output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "ree434625d894ff6d3c68": [
+    "Prompt",
+    "prompt",
+    "AmazonBedrockModel",
+    "input_value"
+  ],
+  "rab2fc939a91ce1d97bcf": [
+    "AmazonBedrockEmbeddings",
+    "embeddings",
+    "AstraDB",
+    "embedding"
+  ],
+  "r0fc93188bbf408ff42a0": [
+    "SkeletonChain",
+    "output",
+    "ParseData",
+    "data"
+  ],
+  "r8486e3547d2a77565c7b": [
+    "ParseData",
+    "text",
+    "Prompt",
+    "specific_topic"
+  ],
+  "rf66cca5dc0745a2f3067": [
+    "OpenAIModel",
+    "model_output",
+    "SkeletonChain",
+    "llm"
+  ],
+  "r44446ad305dbdd2f31ce": [
+    "CombineText",
+    "combined_text",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r5ef673043d2a5c7af57e": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "subject"
+  ],
+  "r933399f33d2e76864883": [
+    "OpenAIModel",
+    "text_output",
+    "CombineText",
+    "text1"
+  ],
+  "r72521d094d797079df34": [
+    "OpenAIModel",
+    "text_output",
+    "CombineText",
+    "text2"
+  ],
+  "r1797433e9de408ae6837": [
+    "ChatInput",
+    "message",
+    "MathMCPCancel",
+    "request_json"
+  ],
+  "r33be000fdc3115ac90e5": [
+    "MathMCPCancel",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r505fa4d7c6896a8b6a84": [
+    "GraphRetrievalNormalizer",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r9b4b9b6708a91dc97ecd": [
+    "ParserComponent",
+    "parsed_text",
+    "GroqModel",
+    "input_value"
+  ],
+  "rd40cb0800110f56b468f": [
+    "GroqModel",
+    "text_output",
+    "SaveToFile",
+    "input"
+  ],
+  "r7f53990137e31e60a514": [
+    "GroqModel",
+    "text_output",
+    "Prompt Template",
+    "text"
+  ],
+  "reb4b9befa32fc4139308": [
+    "File",
+    "dataframe",
+    "DataFrameOperationsComponent",
+    "df"
+  ],
+  "r4bb29f490a7f48d603fb": [
+    "DataFrameOperationsComponent",
+    "output",
+    "ParserComponent",
+    "input_data"
+  ],
+  "rdd24c239de4f519608b6": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt",
+    "df"
+  ],
+  "ra86dee0a1453136e80f9": [
+    "File",
+    "message",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "rbf9eeb41603f6f0ff7dc": [
+    "TypeConverterComponent",
+    "message_output",
+    "Prompt Template",
+    "DATA_HEADER"
+  ],
+  "re022397bd9b24d6ea49d": [
+    "File",
+    "path",
+    "Prompt Template",
+    "DATASET_FILEPATH"
+  ],
+  "r4f6822a978b6d5c8e33e": [
+    "File",
+    "path",
+    "File",
+    "file_path"
+  ],
+  "rb6bead0ab70e5519d212": [
+    "ChatInput",
+    "message",
+    "ProjectUpdateFields",
+    "mcp_request"
+  ],
+  "rbbf59ece6d5a84ccf85a": [
+    "ProjectUpdateFields",
+    "request",
+    "UpdateProjectGraph",
+    "payload"
+  ],
+  "r0971b987aac3ac7de7ea": [
+    "UpdateProjectGraph",
+    "result",
+    "ProjectUpdateView",
+    "payload"
+  ],
+  "ra489f6b0cf0ac4d4f717": [
+    "ProjectUpdatePolicy",
+    "result",
+    "UpdateProjectGraph",
+    "policy"
+  ],
+  "r59173209de5b73702ed6": [
+    "UpdateProjectGraph",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r366cda7621b4030848ee": [
+    "Prompt",
+    "prompt",
+    "LanguageModel",
+    "input_value"
+  ],
+  "r23a346ee2583bb2a6871": [
+    "LanguageModel",
+    "text_output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r5ad3fc4987dbe6d2ba63": [
+    "ComposioSerpAPIComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r8d52e4ea0bdf2fe53511": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "SEED_KEYWORD"
+  ],
+  "rb4bcae151944aab3e7f9": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "TAB_NAME"
+  ],
+  "r79410d6a3fb856e1d43f": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "spreadsheet_ID"
+  ],
+  "r68eec3e1af7d0c93cb45": [
+    "File",
+    "dataframe",
+    "LoopComponent",
+    "data"
+  ],
+  "rf22cb3f04951ab0114b9": [
+    "HypothesisComparison",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rfc94cf8c87d167e8bdab": [
+    "ChatInput",
+    "message",
+    "LMStudioModel",
+    "input_value"
+  ],
+  "rd786e1974d6e795fc52b": [
+    "LMStudioModel",
+    "model_output",
+    "Agent",
+    "agent_llm"
+  ],
+  "r0d487ed03417868fa62d": [
+    "FileMetadataTool",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r78ab97e7e18708d0a927": [
+    "GrepSearchTool",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r35c3dd86740c611b0afa": [
+    "ChunkedFileReader",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r36a7dfe8914de7fd3453": [
+    "CodeRunnerTool",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rc6d7040d5da25df854d8": [
+    "DoclingInline",
+    "dataframe",
+    "ExportDoclingDocument",
+    "data_inputs"
+  ],
+  "r063e6d4d69401a7d7726": [
+    "ExportDoclingDocument",
+    "dataframe",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "r9c7d8a4cd69a2536f305": [
+    "TypeConverterComponent",
+    "data_output",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "raea24a43f46ee55cf876": [
+    "TypeConverterComponent",
+    "message_output",
+    "Prompt Template",
+    "invoice_text"
+  ],
+  "r9833d1a379b5f4674f62": [
+    "Prompt Template",
+    "prompt",
+    "GoogleGenerativeAIModel",
+    "system_message"
+  ],
+  "r49bc21fb5799702d1da3": [
+    "Agent",
+    "response",
+    "sendgrid_mailer",
+    "body"
+  ],
+  "r194b69b41bf07afacede": [
+    "sendgrid_mailer",
+    "status_message",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r39c7d8e78037eba6ca21": [
+    "GoogleDriveIncrementalLoader",
+    "text",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r2eb7a5f3262672bca43b": [
+    "TextInput",
+    "text",
+    "Prompt Template (Ai6vr)",
+    "starting_bracket"
+  ],
+  "raab8a4f1168b28951640": [
+    "TextInput",
+    "text",
+    "Prompt Template (Ai6vr)",
+    "closing_bracket"
+  ],
+  "r3f65406416c8635d84b5": [
+    "ChatInput",
+    "message",
+    "Prompt Template (Ai6vr)",
+    "video_prompt"
+  ],
+  "r7603acc8ef2e2d326b96": [
+    "Prompt Template (Ai6vr)",
+    "prompt",
+    "APIRequest",
+    "curl_input"
+  ],
+  "r6db3a1aa5069ffd8ad87": [
+    "ParseData",
+    "text",
+    "Prompt",
+    "transcript"
+  ],
+  "rb7e81b063abd0cad8a54": [
+    "ArXivComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rd534307a798581b54d90": [
+    "GraphCommit",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r5eaba9857cdae2a01ab2": [
+    "MetricTrendTool",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r6b134367cec34d7e0842": [
+    "DatabaseTool",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r1707c5c0561b6546b0be": [
+    "File",
+    "message",
+    "Prompt Template",
+    "Resume"
+  ],
+  "r648f79902672c861f96b": [
+    "File",
+    "message",
+    "Prompt Template",
+    "JD"
+  ],
+  "r04adfa26f49819d4ee87": [
+    "ComposioTavilyAPIComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r63fba55ee535fb063307": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "topic"
+  ],
+  "r1f5a4597130f8643f8cd": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "memory"
+  ],
+  "r69b69355d40c46ef210e": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "query"
+  ],
+  "ra138fa11c77468d319df": [
+    "LMStudioModel",
+    "text_output",
+    "TextOutput",
+    "input_value"
+  ],
+  "rfa78d369804a2b3790fd": [
+    "Prompt",
+    "prompt",
+    "RunFlow",
+    "TextInput-tFMsA~input_value"
+  ],
+  "r241e5658d80059e59fdf": [
+    "TextInput",
+    "text",
+    "RunFlow",
+    "TextInput-6K2GL~input_value"
+  ],
+  "rec07e66838b3b05f4d5b": [
+    "RunFlow",
+    "flow_outputs_message",
+    "LMStudioModel",
+    "input_value"
+  ],
+  "r18c98294bb8aab951dd0": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "newsletter_example"
+  ],
+  "r923668e8e89582ca3b01": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "newsletter_writing_style"
+  ],
+  "r86b7d186e85d1dd4142e": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "team_name"
+  ],
+  "r8c5f16b6663d3c6a6c10": [
+    "Prompt",
+    "prompt",
+    "ToolCallingAgent",
+    "input_value"
+  ],
+  "r130fee78db263de6ea3d": [
+    "ToolCallingAgent",
+    "response",
+    "Prompt",
+    "newsletter_text"
+  ],
+  "ra9c8032853d6fb90d628": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "sources"
+  ],
+  "rda6034de552ebe23fd50": [
+    "beautifulsoup_scrape_api",
+    "api_build_tool",
+    "ToolCallingAgent",
+    "tools"
+  ],
+  "rb367e9f4297ab1d28293": [
+    "PythonFunction",
+    "function_output_str",
+    "Prompt",
+    "datetime"
+  ],
+  "r99238b30da5e5481603a": [
+    "YouTubeTranscriberComponent",
+    "transcription_tool",
+    "ToolCallingAgent",
+    "tools"
+  ],
+  "r11e68fbcec3fc25cc860": [
+    "MergeDataComponent",
+    "merged_data",
+    "Chroma",
+    "ingest_data"
+  ],
+  "rb7abe155b9175bb8e42a": [
+    "Chroma",
+    "base_retriever",
+    "RetrieverTool",
+    "retriever"
+  ],
+  "r30babee8f4401b246927": [
+    "RetrieverTool",
+    "api_build_tool",
+    "ToolCallingAgent",
+    "tools"
+  ],
+  "rc3dbe98aeb39b22f02a4": [
+    "TextInput",
+    "text",
+    "RetrieverTool",
+    "description"
+  ],
+  "r181bb7c72d1df056fb5d": [
+    "TextInput",
+    "text",
+    "ConditionalRouter",
+    "match_text"
+  ],
+  "r2e18f2a4879117c8d0d6": [
+    "ConditionalRouter",
+    "false_result",
+    "TextOutput",
+    "input_value"
+  ],
+  "r6126760bd0d360d9bad6": [
+    "TextInput",
+    "text",
+    "ConditionalRouter",
+    "input_text"
+  ],
+  "red8dab3bae89fd34c8e1": [
+    "TextInput",
+    "text",
+    "SplitText",
+    "chunk_size"
+  ],
+  "rb47924ac6a255923fa11": [
+    "TextInput",
+    "text",
+    "SplitText",
+    "data_inputs"
+  ],
+  "r29e8d18f020bbfb74efb": [
+    "TextInput",
+    "text",
+    "ConditionalRouter",
+    "true_case_message"
+  ],
+  "rdc9fac199ea51bc3a015": [
+    "ParserComponent",
+    "parsed_text",
+    "ConditionalRouter",
+    "false_case_message"
+  ],
+  "raafdd49782ad8dd7a8ff": [
+    "ConditionalRouter",
+    "true_result",
+    "TextOutput",
+    "input_value"
+  ],
+  "re91d953eb55530dbe2a2": [
+    "ArXivComponent",
+    "dataframe",
+    "DataFrameOperations",
+    "df"
+  ],
+  "rc82fec3e6b9eb47aac3b": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template (4IiG3)",
+    "title_summary"
+  ],
+  "rdb63b3d7d85e5ebe02d7": [
+    "Prompt Template (4IiG3)",
+    "prompt",
+    "LanguageModelComponent",
+    "input_value"
+  ],
+  "re1aac343fe7331deab82": [
+    "ChatInput",
+    "message",
+    "SmartRouter",
+    "input_text"
+  ],
+  "r1d7c3e45dee1bb3959cb": [
+    "SmartRouter",
+    "category_1_result",
+    "Agent",
+    "input_value"
+  ],
+  "re2e7e3d023702e7ae817": [
+    "SmartRouter",
+    "category_2_result",
+    "Agent",
+    "input_value"
+  ],
+  "r45529c67489de3f4ef36": [
+    "SmartRouter",
+    "category_4_result",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r912e14931c9809ffc983": [
+    "SmartRouter",
+    "category_3_result",
+    "HumanInput",
+    "prompt"
+  ],
+  "r29b77ad1f139498edd57": [
+    "HumanInput",
+    "branch_approve",
+    "Agent",
+    "input_value"
+  ],
+  "re461d99e737a42d22016": [
+    "HumanInput",
+    "branch_reject",
+    "Agent",
+    "input_value"
+  ],
+  "re957bae84318be6f9606": [
+    "SmartRouter",
+    "category_5_result",
+    "RunFlow",
+    "ChatInput-brf01~input_value"
+  ],
+  "r411c5f3a67fa42563a75": [
+    "RunFlow",
+    "ChatOutput-brf01~message",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r2557506256ac2c30c3a3": [
+    "SmartRouter",
+    "category_6_result",
+    "ChatOutput",
+    "input_value"
+  ],
+  "redb4e1f7163abbd169d2": [
+    "ParserComponent",
+    "parsed_text",
+    "ModalConverterComponent",
+    "input_text"
+  ],
+  "r5ab1434f2a77e211206b": [
+    "ModalConverterComponent",
+    "audio_output",
+    "DynamicCreateData",
+    "dynamic_audio_data"
+  ],
+  "r1a844c263029630c4ec9": [
+    "ModalConverterComponent",
+    "image_output",
+    "DynamicCreateData",
+    "dynamic_image_data"
+  ],
+  "r9e78e30f7a4879aea8aa": [
+    "DynamicCreateData",
+    "form_data",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r16b85f7ca6f66ddc7cd8": [
+    "Agent",
+    "response",
+    "SQLComponent",
+    "query"
+  ],
+  "r8effef8d28a19e5e351c": [
+    "Agent",
+    "response",
+    "Prompt",
+    "env_and_crop_analysis_agent_output"
+  ],
+  "rd7bc9210ba89625644cd": [
+    "Agent",
+    "response",
+    "Prompt",
+    "pest_and_disease_risk_detection_agent_output"
+  ],
+  "r78aa1c8eda8604739c8e": [
+    "GigaChatEmbeddings",
+    "embeddings",
+    "Chroma",
+    "embedding"
+  ],
+  "r94013a21cc86e2425b3c": [
+    "Prompt",
+    "prompt",
+    "GigaChatModel",
+    "input_value"
+  ],
+  "reabe967ffa3215c199fd": [
+    "File",
+    "the_file_path",
+    "Prompt",
+    "file_path"
+  ],
+  "r522a3d032b2d9dfb1e18": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "context"
+  ],
+  "r8806120300f8ef6bec35": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "history"
+  ],
+  "rdc3aa827e6d5f427b341": [
+    "ChatInput",
+    "message",
+    "ElevenLabsTTS",
+    "text"
+  ],
+  "raca58d1cc1e3bfd864e6": [
+    "BytesToMP3",
+    "confirmation",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rea3d792453608cb5e0bf": [
+    "ElevenLabsTTS",
+    "audio_bytes",
+    "BytesToMP3",
+    "data"
+  ],
+  "r5731cb276e935fc6a181": [
+    "ParseData",
+    "text",
+    "Prompt",
+    "input"
+  ],
+  "r961556b6e258453529c6": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "your-email"
+  ],
+  "r3d3b905aa429a9932126": [
+    "URLComponent",
+    "data",
+    "MergeDataComponent",
+    "data_inputs"
+  ],
+  "re9fe3cbc63db3b318489": [
+    "MergeDataComponent",
+    "combined_data",
+    "parser",
+    "input_data"
+  ],
+  "r01d8e7a34e5110100ce2": [
+    "LanguageModelComponent",
+    "text_output",
+    "Prompt Template",
+    "finance_summary"
+  ],
+  "r0395f8a9df0ff03b1446": [
+    "LanguageModelComponent",
+    "text_output",
+    "Prompt Template",
+    "support_summary"
+  ],
+  "r2a3265fb1788dcbaae21": [
+    "LanguageModelComponent",
+    "text_output",
+    "Prompt Template",
+    "convo_summary"
+  ],
+  "r96fda50679f7723c83ad": [
+    "LMStudioEmbeddingsComponent",
+    "embeddings",
+    "Chroma",
+    "embedding"
+  ],
+  "r814ede3b17d383862d2e": [
+    "GoogleGenerativeAIModel",
+    "model_output",
+    "ToolCallingAgent",
+    "llm"
+  ],
+  "r48c45c1c830dcff8fd78": [
+    "Chroma",
+    "dataframe",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r125c43cfa814bb386022": [
+    "Chroma",
+    "search_results",
+    "NvidiaRerankComponent",
+    "search_results"
+  ],
+  "reaf53057a56fa36f31f3": [
+    "GroqModel",
+    "text_output",
+    "Chroma",
+    "search_query"
+  ],
+  "r5e72d7ac5ce163d8abe2": [
+    "GroqModel",
+    "text_output",
+    "NvidiaRerankComponent",
+    "search_query"
+  ],
+  "rcfbebdbd3ba9521557ab": [
+    "GroqModel",
+    "text_output",
+    "Prompt Template",
+    "context"
+  ],
+  "rfb50b5a2d314f0678f8c": [
+    "File",
+    "dataframe",
+    "ParentDocumentBuilder",
+    "input_table"
+  ],
+  "ra10edd3a1d5129faf34b": [
+    "ParentDocumentBuilder",
+    "parent_documents",
+    "Chroma",
+    "ingest_data"
+  ],
+  "rbdda5cdabfcc5c694104": [
+    "File",
+    "dataframe",
+    "ChildChunkBuilder",
+    "input_table"
+  ],
+  "rca25e948485931faa21d": [
+    "ChildChunkBuilder",
+    "child_chunks",
+    "Chroma",
+    "ingest_data"
+  ],
+  "rd4b3cadcdf514c32e4ad": [
+    "NvidiaRerankComponent",
+    "reranked_documents",
+    "ParentDocumentResolver",
+    "reranked_documents"
+  ],
+  "r2cee7a4e35c2719d614b": [
+    "ParentDocumentResolver",
+    "parent_context",
+    "Prompt Template",
+    "context"
+  ],
+  "r0b4d4eb69ba4046c21a1": [
+    "MockDataGenerator",
+    "dataframe_output",
+    "LoopComponent",
+    "data"
+  ],
+  "rdbf54f22ab7c3bdd6ef8": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "email"
+  ],
+  "r9ef98351cdfe1949dfb1": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "first_name"
+  ],
+  "r48397f504fcb48211737": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "last_name"
+  ],
+  "re029c789a005e1956b4a": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "action_item"
+  ],
+  "rd66d4884967591861fb8": [
+    "ParseData",
+    "text",
+    "Prompt",
+    "relevant_context"
+  ],
+  "rf0d0a1212e0151d1fd13": [
+    "ChatInput",
+    "message",
+    "MathMCPStatus",
+    "request_json"
+  ],
+  "r09f20a2f1bc18de7f573": [
+    "MathMCPStatus",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r04fd79e3a92e46770a17": [
+    "URL",
+    "dataframe",
+    "parser",
+    "input_data"
+  ],
+  "r093815c0ef5396db1e86": [
+    "parser",
+    "parsed_text",
+    "Prompt",
+    "references"
+  ],
+  "r4465c7b26204285fb5d8": [
+    "ChatOutput",
+    "message",
+    "Agent",
+    "input_value"
+  ],
+  "rb8d498a2b17d0fd71d2d": [
+    "ChatOutput",
+    "message",
+    "Prompt Template",
+    "Memo_a"
+  ],
+  "r1039cfb80abe3b73e85f": [
+    "Agent",
+    "response",
+    "Prompt Template",
+    "Memo_b"
+  ],
+  "rbb10496067b37fa34689": [
+    "ChatOutput",
+    "message",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r8fe61fe11054f5959694": [
+    "ChatInput",
+    "message",
+    "WikipediaComponent",
+    "input_value"
+  ],
+  "ra71b9e7186d0da2422e1": [
+    "WikipediaComponent",
+    "dataframe",
+    "DataFrameOperations",
+    "df"
+  ],
+  "r058bd86dc3496628f6ec": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template (4IiG3)",
+    "title_text"
+  ],
+  "r0134cce3ffb69f9937e1": [
+    "ChatInput",
+    "message",
+    "MathMCPRunCalculationGraph",
+    "request_json"
+  ],
+  "r8c1f5de07bdd9681ac6e": [
+    "MathMCPRunCalculationGraph",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r9fb1744cfa03dd262e03": [
+    "DataOperations",
+    "data_output",
+    "TypeConverterComponent",
+    "input_data"
+  ],
+  "r17676f68f7e47cbd41cb": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "features"
+  ],
+  "r54a08ff196f33899bd21": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "feedbacks"
+  ],
+  "r6d1bb19709b843c136d6": [
+    "TextInput",
+    "text",
+    "Prompt Template (TWbl8)",
+    "closing_bracket"
+  ],
+  "r0aa54f24b229f38cb86a": [
+    "TextInput",
+    "text",
+    "Prompt Template (TWbl8)",
+    "prompt"
+  ],
+  "r169b04f6dfbbbd558442": [
+    "Prompt Template (TWbl8)",
+    "prompt",
+    "APIRequest",
+    "curl_input"
+  ],
+  "r8c3d7f78dc9682e57cbb": [
+    "TextInput",
+    "text",
+    "Prompt Template (TWbl8)",
+    "url_modalities"
+  ],
+  "r0a944cda69854114e9e5": [
+    "TextInput",
+    "text",
+    "Prompt Template (TWbl8)",
+    "prompt_modalities"
+  ],
+  "rc91e939a9967b57d0a81": [
+    "TextInput",
+    "text",
+    "Prompt Template (TWbl8)",
+    "image_url"
+  ],
+  "rd9d61d15159d183de193": [
+    "Agent",
+    "response",
+    "Prompt",
+    "Response"
+  ],
+  "r8c175fcdf2c348c680db": [
+    "ParseData",
+    "text",
+    "Prompt",
+    "Docs"
+  ],
+  "r6ecba35c2e4c4f454de4": [
+    "OpenAIModel",
+    "text_output",
+    "Prompt",
+    "DocNames"
+  ],
+  "rfd6ce3a7fbf8ffa1b3f9": [
+    "IDGenerator",
+    "id",
+    "Agent",
+    "session_id"
+  ],
+  "r6d341c717e285dd8ee8c": [
+    "Agent",
+    "response",
+    "Prompt",
+    "input_value"
+  ],
+  "rb3875382fef06a98eadd": [
+    "NotionPageCreator",
+    "api_build_tool",
+    "Agent",
+    "tools"
+  ],
+  "r54fe262b08d184c64eb9": [
+    "IDGenerator",
+    "id",
+    "ChatOutput",
+    "session_id"
+  ],
+  "r5c0aa9e19021001721dc": [
+    "ParserComponent",
+    "parsed_text",
+    "RegexExtractorComponent",
+    "input_text"
+  ],
+  "r2cd2d32c111881c608f6": [
+    "RegexExtractorComponent",
+    "text",
+    "TextOutput",
+    "input_value"
+  ],
+  "readcbda72d682e5bac94": [
+    "TextOutput",
+    "text",
+    "OpenAIModel",
+    "input_value"
+  ],
+  "rc92a0d3c31a3472f080e": [
+    "GroqModel",
+    "text_output",
+    "QdrantVectorStoreComponent",
+    "search_query"
+  ],
+  "r07d047ffccd1bc6e0771": [
+    "OllamaEmbeddings",
+    "embeddings",
+    "AstraDB",
+    "embedding"
+  ],
+  "rf4460c30f475aef5436a": [
+    "Chroma",
+    "search_results",
+    "ContextExtractor",
+    "search_results"
+  ],
+  "ra41325b9a674d102de81": [
+    "ContextExtractor",
+    "context",
+    "Prompt Template",
+    "context"
+  ],
+  "r2a6f87f5bde2e523cdd2": [
+    "ContextExtractor",
+    "context",
+    "GroundednessCheck",
+    "context"
+  ],
+  "r7b3932ae1b80c6c4ba7b": [
+    "LanguageModelComponent",
+    "text_output",
+    "GroundednessCheck",
+    "answer"
+  ],
+  "ra4242664ac0b03bdaa63": [
+    "GroundednessCheck",
+    "result",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r934ca0f793f84bfba3ad": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt",
+    "file_content"
+  ],
+  "r1198102860bd07255eb3": [
+    "ScrapeGraphMarkdownifyApi",
+    "data",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r2cba697bc4d4fca016ff": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "content"
+  ],
+  "rb5cb91aa96cdb6f050ca": [
+    "ChatInput",
+    "message",
+    "ScrapeGraphMarkdownifyApi",
+    "url"
+  ],
+  "re4a0f057616214dc5563": [
+    "AzureOpenAIEmbeddings",
+    "embeddings",
+    "QdrantVectorStoreOutput",
+    "embedding"
+  ],
+  "r081404a77869bdb44196": [
+    "GroqModel",
+    "model_output",
+    "MultiQueryVectorSearch",
+    "llm"
+  ],
+  "r0a6a4c1ff2e6aee4b447": [
+    "ChatInput",
+    "message",
+    "MultiQueryVectorSearch",
+    "query"
+  ],
+  "ra74e0c619cb462306e66": [
+    "QdrantVectorStoreOutput",
+    "vector_store",
+    "MultiQueryVectorSearch",
+    "vector_store"
+  ],
+  "r9e72035de2c449e1a567": [
+    "MultiQueryVectorSearch",
+    "results",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r09499f9e3a1329d28bea": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "query"
+  ],
+  "r9154af0de1060251462d": [
+    "OpenAIModel",
+    "text_output",
+    "SQLExecutor",
+    "sql_query"
+  ],
+  "ra019c547688919dd9362": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "original_query"
+  ],
+  "rc47b0706dfa05b1565ea": [
+    "SQLExecutor",
+    "result",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r228c1239b7c0f612b73f": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template",
+    "json_data"
+  ],
+  "r15a5cb7cea98b75f744c": [
+    "OpenAIModel",
+    "text_output",
+    "ReportToPDFNode",
+    "report_content"
+  ],
+  "r987e75edb09388fe3590": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "query_number"
+  ],
+  "r431fe543f4b0c7aab9b2": [
+    "YouTubeCommentsComponent",
+    "comments",
+    "ParserComponent",
+    "input_data"
+  ],
+  "rc4b5383c12f57cbc610a": [
+    "YouTubeVideoDetailsComponent",
+    "video_data",
+    "ParserComponent",
+    "input_data"
+  ],
+  "r8d0bccad5f1436658452": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template (j7Kq7)",
+    "comments"
+  ],
+  "r163548fde7483682e163": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template (j7Kq7)",
+    "title"
+  ],
+  "r06a48d6672af78941759": [
+    "ParserComponent",
+    "parsed_text",
+    "Prompt Template (j7Kq7)",
+    "description"
+  ],
+  "r780b0fcd016e4936943f": [
+    "Prompt Template (j7Kq7)",
+    "prompt",
+    "Agent",
+    "system_prompt"
+  ],
+  "r0fce576b0d0661cab73f": [
+    "ChatInput",
+    "message",
+    "YouTubeVideoDetailsComponent",
+    "video_url"
+  ],
+  "rf3ad81788732c1360d74": [
+    "ChatInput",
+    "message",
+    "YouTubeTranscripts",
+    "url"
+  ],
+  "rff0f055590c5a28e9f21": [
+    "YouTubeTranscripts",
+    "message",
+    "GroqModel",
+    "input_value"
+  ],
+  "re24f75e6f6301ca13371": [
+    "ComposioGmailAPIComponent",
+    "dataFrame",
+    "LoopComponent",
+    "data"
+  ],
+  "r0e365d3fb08c34155a59": [
+    "ext:ibm:WatsonxEmbeddingsComponent@official",
+    "embeddings",
+    "FAISS",
+    "embedding"
+  ],
+  "r8529420a4f3a37b766b9": [
+    "ext:ibm:WatsonxAIComponent@official",
+    "text_output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "red58cc25c4111563a1b9": [
+    "FAISS",
+    "search_results",
+    "ParserComponent",
+    "input_data"
+  ],
+  "ref21465e6a1e74bff93d": [
+    "ParserComponent",
+    "parsed_text",
+    "ext:ibm:WatsonxAIComponent@official",
+    "input_value"
+  ],
+  "rbc8687f09dcfd322a0f1": [
+    "TextInput",
+    "text",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r8441e8352460305646ec": [
+    "Agent",
+    "response",
+    "Prompt Template",
+    "execution_plan"
+  ],
+  "rfdbb555eae509eb50ead": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "documentacao_url"
+  ],
+  "rfd3652b44b995ce330d9": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "auth"
+  ],
+  "r7745c5ffdcef398ba90e": [
+    "GoogleDriveComponent",
+    "docs",
+    "ParseData",
+    "data"
+  ],
+  "r56449e93a46714d95f8d": [
+    "GoogleOAuthToken",
+    "output",
+    "ParseData",
+    "data"
+  ],
+  "rb2fb8b5340279b141c05": [
+    "JSONCleaner",
+    "output",
+    "GoogleDriveComponent",
+    "json_string"
+  ],
+  "r4ec7a144158dc0f41dab": [
+    "ChatInput",
+    "message",
+    "InspectCorpusFields",
+    "mcp_request"
+  ],
+  "r3ecb29f5b795516a553e": [
+    "InspectCorpusFields",
+    "request",
+    "InspectCorpusMetadata",
+    "payload"
+  ],
+  "r65676dee904e23dc05eb": [
+    "InspectCorpusMetadata",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r7e81fd0f7e76ac113915": [
+    "ChatInput",
+    "message",
+    "ExtractionFields",
+    "mcp_request"
+  ],
+  "ra6599e8f46923a8463b7": [
+    "ExtractionFields",
+    "request",
+    "DeepExtraction",
+    "payload"
+  ],
+  "r47208ebdf786d5e918bf": [
+    "ExtractionOntology",
+    "result",
+    "DeepExtraction",
+    "policy"
+  ],
+  "r043c4331e66888b0d8ba": [
+    "ExtractionRetrieval",
+    "result",
+    "DeepExtraction",
+    "retrieval_policy"
+  ],
+  "ra78e7cd3e5a63b5120fd": [
+    "DeepExtraction",
+    "result",
+    "ExtractionStateView",
+    "payload"
+  ],
+  "r3f33051d1e71a5716cee": [
+    "DeepExtraction",
+    "preview",
+    "ChatOutput",
+    "input_value"
+  ],
+  "rbdab34a96f84ab4ebf24": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "Text"
+  ],
+  "rb4dba563e75536cb1ec4": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "Language"
+  ],
+  "r98248fef0fb74f99d166": [
+    "Prompt Template",
+    "prompt",
+    "RunFlow",
+    "TextInput-tFMsA~input_value"
+  ],
+  "r18a3d41dee89a68d7be7": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "history"
+  ],
+  "ra2d697e43f6f7148426c": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "question"
+  ],
+  "r0cae9a2889bca4087341": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "search_report"
+  ],
+  "rcb9aa26f96d6d1e41782": [
+    "File",
+    "advanced_markdown",
+    "ChatOutput",
+    "input_value"
+  ],
+  "ra0fe8f8dc1f07b27e7dc": [
+    "GetUserID",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "ra7908ebf3628adb2afa4": [
+    "URL",
+    "data",
+    "SplitText",
+    "data_inputs"
+  ],
+  "r2aa3e881363f1cfb7c08": [
+    "OpenAIEmbeddings",
+    "embeddings",
+    "AstraDB",
+    "embedding"
+  ],
+  "rce72a751cfc37619eb89": [
+    "PlaywrightWorkflow",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "rea7dbba85c8c7ec3d03d": [
+    "FileSystemTool",
+    "api_build_tool",
+    "Agent",
+    "tools"
+  ],
+  "rf49391e52d876cf29ed4": [
+    "ChatInput",
+    "message",
+    "Prompt",
+    "json_input"
+  ],
+  "rf753f16757bbce8f28b6": [
+    "ChatInput",
+    "message",
+    "Memory",
+    "message"
+  ],
+  "r85b6d0ad47077a6c4281": [
+    "TextInput",
+    "text",
+    "Memory",
+    "sender_name"
+  ],
+  "r202d14772d1df8094721": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "link"
+  ],
+  "rd2f2658d0afabb282673": [
+    "ComposioOneDriveAPIComponent",
+    "component_as_tool",
+    "Agent",
+    "tools"
+  ],
+  "r600b84d6b552fb165929": [
+    "TextInput",
+    "text",
+    "Prompt Template",
+    "folder_url"
+  ],
+  "r0b68821aaf4d87b9d621": [
+    "ChatInput",
+    "message",
+    "MathMCPInspect",
+    "request_json"
+  ],
+  "rcb7fb18a13c662570322": [
+    "MathMCPInspect",
+    "response",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r0b65e266bc1c052bc789": [
+    "ParseData",
+    "text",
+    "Prompt",
+    "customer_id"
+  ],
+  "r1eacc57324247b76ecfb": [
+    "AstraDBCQLToolComponent",
+    "api_build_tool",
+    "Agent",
+    "tools"
+  ],
+  "r55f0baf6ef0c0e6c6c9b": [
+    "Memory",
+    "messages_text",
+    "Prompt",
+    "message_history"
+  ],
+  "r4f6b67550adfc8c2b0d5": [
+    "Memory",
+    "messages_text",
+    "LanguageModelComponent",
+    "input_value"
+  ],
+  "r46bb3968c09c5fb53af2": [
+    "LanguageModelComponent",
+    "text_output",
+    "Memory",
+    "message"
+  ],
+  "r8eb692153ea0cd3e50f2": [
+    "GroqModel",
+    "text_output",
+    "Prompt Template",
+    "javaCode"
+  ],
+  "r4f81b99dca2cdc02aa52": [
+    "TextInput",
+    "text",
+    "Prompt Template (RJB92)",
+    "starting_bracket"
+  ],
+  "rd74499262663e8dbc5c1": [
+    "TextInput",
+    "text",
+    "Prompt Template (RJB92)",
+    "closing_bracket"
+  ],
+  "rf6e5b0f7561a5aedb03c": [
+    "TextInput",
+    "text",
+    "Prompt Template (RJB92)",
+    "text_prompt"
+  ],
+  "r41f64fb11e0725423203": [
+    "TextInput",
+    "text",
+    "Prompt Template (RJB92)",
+    "image_url"
+  ],
+  "r31ca07ffe1587b1d4739": [
+    "Prompt Template (RJB92)",
+    "prompt",
+    "APIRequest",
+    "curl_input"
+  ],
+  "r70bb3c283736e7f360e2": [
+    "ChatInput",
+    "message",
+    "FlexibleHybridSearch",
+    "query"
+  ],
+  "ra5a4a4e2289a6dea7a96": [
+    "OpenAIModel",
+    "text_output",
+    "KeywordExtractor",
+    "input_value"
+  ],
+  "r0d49fd2054ad0195e1f9": [
+    "KeywordExtractor",
+    "keywords_output",
+    "AstraDB",
+    "search_query"
+  ],
+  "re294a69d3844932796b5": [
+    "KeywordExtractor",
+    "question_output",
+    "Prompt",
+    "question"
+  ],
+  "rf72b6edc94221e8f3358": [
+    "StructuredOutput",
+    "dataframe_output",
+    "ChatOutput",
+    "input_value"
+  ],
+  "r58b11d8e473ce2debb39": [
+    "TextInput",
+    "text",
+    "Prompt",
+    "columns"
+  ],
+  "r45a09952b43ad5c3206f": [
+    "FlexibleHybridSearch",
+    "results",
+    "FlexibleQuerySummary",
+    "search"
+  ],
+  "r723d6405482a5aa7fd16": [
+    "FlexibleAIQuery",
+    "answer",
+    "FlexibleQuerySummary",
+    "answer"
+  ],
+  "r93ecf1d1b12bf5577cc8": [
+    "FlexibleQuerySummary",
+    "summary",
+    "ChatOutput",
+    "input_value"
+  ]
+}

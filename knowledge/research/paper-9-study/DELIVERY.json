@@ -1,0 +1,29 @@
+{
+  "status": "implementation-bound parameterized local tower",
+  "instance_json": "/Users/x/projects/swarms/knowledge/research/paper-9-study/market-intelligence.instance.json",
+  "notebook_sha256": "ea0c045269575a3da4451ba8d83fd2064186a826dbeb5c9188dfe285efe7bf5c",
+  "composite_bindings": 11,
+  "native_occurrences": 11,
+  "contract_checks_passed": 21,
+  "runtime_checks_passed": 24,
+  "executed_notebook_cells": 7,
+  "saved_errors": 0,
+  "all_eleven_native_wrappers_exercised": true,
+  "public_source_probe": "Two official documents and existing local model; insufficient market conclusion",
+  "review": "Coordinator AI accepted an insufficient probe dossier; not external expert review",
+  "consumer_ack": "Controlled local outbox acknowledgment; external Content Strategy not deployed",
+  "paper8_unchanged": true,
+  "external_inputs": [
+    "Research question/audience/language/geography and permitted sources",
+    "Execution limits and accountable reviewer",
+    "Real semantic evidence judgments"
+  ],
+  "not_claimed": [
+    "Universal autonomous market research",
+    "Market demand or profitability",
+    "Full Langflow GUI import/run",
+    "Remote multi-user authentication"
+  ],
+  "total_checks_passed": 45,
+  "closure_audit": "CLOSURE-AUDIT.json"
+}

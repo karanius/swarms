@@ -1,0 +1,223 @@
+{
+  "master": {
+    "audio": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-utterance-01/master/20261030T124231-806188Z/polished.wav",
+    "report": {
+      "status": "passed",
+      "source": "/Users/x/projects/swarms/knowledge/research/paper-14-study/runs/dia-utterance-01/native.wav",
+      "source_sha256": "fa631fb1e109b59b53f0dd6f46b695d40cd6593f708ccd01123749268143c38e",
+      "original_copy_sha256": "fa631fb1e109b59b53f0dd6f46b695d40cd6593f708ccd01123749268143c38e",
+      "master_sha256": "d6f3e4c574534be244f435dc5f5a595fc50a7385905d4d209b655ee68fa969f2",
+      "profile": "Balanced",
+      "settings": {
+        "sample_rate": 48000,
+        "target_lufs": -16.0,
+        "true_peak_db": -1.5,
+        "loudness_range": 11,
+        "profiles": {
+          "Gentle": {
+            "highpass_hz": 60,
+            "mud_db": -1.0,
+            "presence_db": 0.5,
+            "ratio": 1.5,
+            "threshold_db": -18,
+            "attack_ms": 20,
+            "release_ms": 150,
+            "deess_intensity": 0.08
+          },
+          "Balanced": {
+            "highpass_hz": 70,
+            "mud_db": -2.0,
+            "presence_db": 1.5,
+            "ratio": 2.2,
+            "threshold_db": -18,
+            "attack_ms": 15,
+            "release_ms": 120,
+            "deess_intensity": 0.15
+          },
+          "Present": {
+            "highpass_hz": 80,
+            "mud_db": -2.5,
+            "presence_db": 2.0,
+            "ratio": 3.0,
+            "threshold_db": -20,
+            "attack_ms": 10,
+            "release_ms": 100,
+            "deess_intensity": 0.22
+          }
+        }
+      },
+      "pre_gain_db": -5.417091214877612,
+      "pedalboard_version": "0.9.26",
+      "ffmpeg_version": "7.1",
+      "duration_seconds": 4.12325,
+      "sample_rate": 48000,
+      "channels": 1,
+      "original_measurement": {
+        "input_i": "-14.93",
+        "input_tp": "0.01",
+        "input_lra": "3.30",
+        "input_thresh": "-25.63",
+        "output_i": "-16.25",
+        "output_tp": "-2.09",
+        "output_lra": "3.20",
+        "output_thresh": "-26.75",
+        "normalization_type": "dynamic",
+        "target_offset": "0.25"
+      },
+      "master_measurement": {
+        "input_i": "-16.67",
+        "input_tp": "-1.75",
+        "input_lra": "2.80",
+        "input_thresh": "-27.36",
+        "output_i": "-16.09",
+        "output_tp": "-1.84",
+        "output_lra": "2.60",
+        "output_thresh": "-26.70",
+        "normalization_type": "dynamic",
+        "target_offset": "0.09"
+      },
+      "normalization_passes": {
+        "first_pass": {
+          "input_i": "-22.29",
+          "input_tp": "-7.36",
+          "input_lra": "2.80",
+          "input_thresh": "-32.86",
+          "output_i": "-16.09",
+          "output_tp": "-1.84",
+          "output_lra": "2.60",
+          "output_thresh": "-26.70",
+          "normalization_type": "dynamic",
+          "target_offset": "0.09"
+        },
+        "second_pass": {
+          "input_i": "-22.29",
+          "input_tp": "-7.36",
+          "input_lra": "2.80",
+          "input_thresh": "-32.86",
+          "output_i": "-15.99",
+          "output_tp": "-1.75",
+          "output_lra": "2.60",
+          "output_thresh": "-26.60",
+          "normalization_type": "dynamic",
+          "target_offset": "-0.01"
+        }
+      },
+      "comparison_lufs": -21.0,
+      "comparison_loudness_difference_lu": 0.0,
+      "before_measurement": {
+        "input_i": "-21.0",
+        "input_tp": "-6.9",
+        "meter": "FFmpeg ebur128"
+      },
+      "after_measurement": {
+        "input_i": "-21.0",
+        "input_tp": "-6.7",
+        "meter": "FFmpeg ebur128"
+      },
+      "before": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-utterance-01/master/20261030T124231-806188Z/before-matched.wav",
+      "after": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-utterance-01/master/20261030T124231-806188Z/after-matched.wav",
+      "master": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-utterance-01/master/20261030T124231-806188Z/polished.wav",
+      "original": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-utterance-01/master/20261030T124231-806188Z/original.wav",
+      "comparison": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-utterance-01/master/20261030T124231-806188Z/before-then-after.wav",
+      "elapsed_seconds": 0.376,
+      "tts_rerun": false,
+      "limits": "No denoising or neural restoration. Mono output. 48 kHz conversion does not create missing detail. Listening determines quality; loudness target is our preset, not a platform requirement."
+    },
+    "before": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-utterance-01/master/20261030T124231-806188Z/before-matched.wav",
+    "after": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-utterance-01/master/20261030T124231-806188Z/after-matched.wav",
+    "comparison": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-utterance-01/master/20261030T124231-806188Z/before-then-after.wav",
+    "original": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-utterance-01/master/20261030T124231-806188Z/original.wav"
+  },
+  "enhance": {
+    "audio": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-utterance-01/enhance/20261030T124232-549905Z/enhanced.wav",
+    "report": {
+      "status": "passed",
+      "source": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-utterance-01/master/20261030T124231-806188Z/polished.wav",
+      "source_sha256": "d6f3e4c574534be244f435dc5f5a595fc50a7385905d4d209b655ee68fa969f2",
+      "original_copy_sha256": "d6f3e4c574534be244f435dc5f5a595fc50a7385905d4d209b655ee68fa969f2",
+      "original": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-utterance-01/enhance/20261030T124232-549905Z/mastered-input.wav",
+      "output": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-utterance-01/enhance/20261030T124232-549905Z/enhanced.wav",
+      "output_sha256": "5a018389f4f2c350f47c921b07fffb0b780762a0e5a076c1cf8a2e20764eb837",
+      "before": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-utterance-01/enhance/20261030T124232-549905Z/mastered-matched.wav",
+      "after": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-utterance-01/enhance/20261030T124232-549905Z/enhanced-matched.wav",
+      "comparison": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-utterance-01/enhance/20261030T124232-549905Z/mastered-then-enhanced.wav",
+      "settings": {
+        "device": "cpu",
+        "threads": 8,
+        "nfe": 32,
+        "solver": "midpoint",
+        "denoise_strength": 0.1,
+        "temperature": 0.5,
+        "seed": 42,
+        "max_seconds": 120
+      },
+      "model": {
+        "source_repo": "https://github.com/resemble-ai/resemble-enhance.git",
+        "source_revision": "8e978149bfe8abab3eb77d965d579a111afdb0ff",
+        "model_repo": "ResembleAI/resemble-enhance",
+        "model_revision": "4e3510ce4a8391159f665903544c5150bee7b2cb",
+        "files": {
+          "enhancer_stage2/hparams.yaml": {
+            "bytes": 717,
+            "sha256": "80c3f15bc5a5b2cacf2c698699a0f6599d62911c0d53e1d6dee895c0d7cbaeac"
+          },
+          "enhancer_stage2/ds/G/latest": {
+            "bytes": 7,
+            "sha256": "37a8eec1ce19687d132fe29051dca629d164e2c4958ba141d5f4133a33f0688f"
+          },
+          "enhancer_stage2/ds/G/default/mp_rank_00_model_states.pt": {
+            "bytes": 713176232,
+            "sha256": "f9d035f318de3e6d919bc70cf7ad7d32b4fe92ec5cbe0b30029a27f5db07d9d6"
+          }
+        }
+      },
+      "inference_evidence": {
+        "forward_calls": 1,
+        "parameter_devices": [
+          "cpu"
+        ],
+        "input_devices": [
+          "cpu"
+        ]
+      },
+      "inference_seconds": 6.079,
+      "elapsed_seconds": 9.658,
+      "duration_seconds": 4.123265306122449,
+      "sample_rate": 44100,
+      "raw_peak": 0.7100859880447388,
+      "output_gain": 1.0,
+      "source_measurement": {
+        "input_i": "-16.67",
+        "input_tp": "-1.74",
+        "input_lra": "2.80",
+        "input_thresh": "-27.36",
+        "output_i": "-16.09",
+        "output_tp": "-1.84",
+        "output_lra": "2.60",
+        "output_thresh": "-26.70",
+        "normalization_type": "dynamic",
+        "target_offset": "0.09"
+      },
+      "enhanced_measurement": {
+        "input_i": "-17.70",
+        "input_tp": "-2.25",
+        "input_lra": "4.40",
+        "input_thresh": "-28.26",
+        "output_i": "-16.25",
+        "output_tp": "-1.86",
+        "output_lra": "4.10",
+        "output_thresh": "-26.74",
+        "normalization_type": "dynamic",
+        "target_offset": "0.25"
+      },
+      "comparison_loudness_difference_lu": 0.0,
+      "comparison_lufs": -21.0,
+      "tts_rerun": false,
+      "limits": "CPU inference; no claim of MPS acceleration. Neural reconstruction may change voice texture or introduce artifacts. Output has peak headroom but is not remastered to -16 LUFS. Quality must be judged by listening."
+    },
+    "before": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-utterance-01/enhance/20261030T124232-549905Z/mastered-matched.wav",
+    "after": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-utterance-01/enhance/20261030T124232-549905Z/enhanced-matched.wav",
+    "comparison": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-utterance-01/enhance/20261030T124232-549905Z/mastered-then-enhanced.wav",
+    "original": "/Users/x/projects/swarms/knowledge/research/paper-14-study/processing/dia-utterance-01/enhance/20261030T124232-549905Z/mastered-input.wav"
+  }
+}

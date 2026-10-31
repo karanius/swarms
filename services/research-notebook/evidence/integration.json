@@ -1,0 +1,28 @@
+{
+  "scope": "Native Jupyter Notebook migration and integration functionality; no research-algorithm experiments",
+  "date": "2026-10-29T15:41:05.303105+00:00",
+  "interface": "Upstream Jupyter Notebook 7.6.3; no custom styling or replacement notebook controls",
+  "papers": 3,
+  "migration_checks": 6,
+  "browser_checks": {
+    "all_papers_selectable": true,
+    "paper2_figures_loaded": "4/4",
+    "editable_code_execution": {
+      "status": "ready",
+      "total": 17
+    },
+    "native_interrupt": "KeyboardInterrupt displayed",
+    "native_restart": "marker survives restart: False",
+    "save_and_reopen": "source, execution count 3, and total 17 retained without rerunning",
+    "return_to_collection": "native logo after saving; local navigation retained in iframe"
+  },
+  "screenshots": [
+    "/tmp/research-native-jupyter-papers.png",
+    "/tmp/research-native-jupyter-paper3.png"
+  ],
+  "limits": [
+    "Checks cover notebook functionality, not the instance generation algorithm.",
+    "Notebook Python has local-user permissions; notebook directory is not an OS sandbox.",
+    "Git push failures preserve disk files and retry after a later save."
+  ]
+}

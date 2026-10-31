@@ -1,0 +1,66 @@
+{
+  "request_envelopes": [
+    {
+      "started_unix": 1793367361.719367,
+      "path": "/generate",
+      "torch_forward_calls": 153,
+      "torch_devices": [
+        "cpu"
+      ],
+      "rss_before": 627589120,
+      "mlx_before": {
+        "default_device": "Device(gpu, 0)",
+        "active_bytes": 0,
+        "peak_bytes": 0
+      },
+      "response_bytes": 345644,
+      "status": 200,
+      "elapsed_seconds": 15.230250542001158,
+      "rss_after": 537477120,
+      "mlx_after": {
+        "default_device": "Device(gpu, 0)",
+        "active_bytes": 0,
+        "peak_bytes": 0
+      }
+    },
+    {
+      "started_unix": 1793367376.955627,
+      "path": "/generate",
+      "torch_forward_calls": 153,
+      "torch_devices": [
+        "cpu"
+      ],
+      "rss_before": 537477120,
+      "mlx_before": {
+        "default_device": "Device(gpu, 0)",
+        "active_bytes": 0,
+        "peak_bytes": 0
+      },
+      "response_bytes": 345644,
+      "status": 200,
+      "elapsed_seconds": 2.499472125000466,
+      "rss_after": 537493504,
+      "mlx_after": {
+        "default_device": "Device(gpu, 0)",
+        "active_bytes": 0,
+        "peak_bytes": 0
+      }
+    }
+  ],
+  "sidecar_process_sample": {
+    "pid": 15662,
+    "started_unix": 1793367362.216152,
+    "forward_calls": 65000,
+    "observed_parameter_devices": [
+      "mps:0"
+    ],
+    "observed_tensor_devices": [
+      "mps:0"
+    ],
+    "observed_unix": 1793367379.33481,
+    "process_maxrss_bytes": 15325577216,
+    "mps_allocated_bytes": 10894843648,
+    "mps_driver_bytes": 11662229504
+  },
+  "scope_limit": "Process-level cumulative device observation, not per-take peak memory."
+}

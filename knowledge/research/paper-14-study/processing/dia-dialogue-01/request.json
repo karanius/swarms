@@ -1,0 +1,54 @@
+{
+  "text": "[S1] I keep collecting ideas, but none of them feels ready to begin. [S2] Then let\u2019s choose one small thing we can finish together, today. [S1] Just one? A light, a path, and a first step? [S2] Exactly. We don\u2019t need the whole bridge. We need somewhere safe to start.",
+  "ordered": [
+    {
+      "id": "text",
+      "type": "text",
+      "config": {}
+    },
+    {
+      "id": "voice",
+      "type": "voice",
+      "config": {
+        "reference": "esd:0015:sadness",
+        "steps": 32,
+        "speed": 0.95,
+        "seed": 42,
+        "cross_fade_duration": 0.15,
+        "cfg_strength": 2.0,
+        "sway_sampling_coef": -1.0
+      }
+    },
+    {
+      "id": "master",
+      "type": "master",
+      "config": {
+        "profile": "Balanced"
+      }
+    },
+    {
+      "id": "enhance",
+      "type": "enhance",
+      "config": {
+        "evaluations": 32,
+        "denoise": 0.1
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "text",
+      "target": "voice"
+    },
+    {
+      "source": "voice",
+      "target": "master"
+    },
+    {
+      "source": "master",
+      "target": "enhance"
+    }
+  ],
+  "start_at": "master",
+  "input_audio": "/Users/x/projects/swarms/knowledge/research/paper-14-study/runs/dia-dialogue-01/native.wav"
+}

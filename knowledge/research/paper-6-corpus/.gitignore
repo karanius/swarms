@@ -1,0 +1,12 @@
+# Immutable collected source/download artifacts stay local. Derived indexes are reviewable.
+collectors/**/raw/
+collectors/**/artifacts/
+collectors/**/scratch/
+collectors/**/downloads/
+collectors/**/.git/
+methods/*.pdf
+__pycache__/
+methods/*.txt
+collectors/**/evidence/
+collectors/**/checkout*/
+collectors/**/repos/

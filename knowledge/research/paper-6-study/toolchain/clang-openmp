@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+"""Build-only Apple Clang adapter for upstream PyClause's Unix -fopenmp flags."""
+import os,sys
+args=[]
+for a in sys.argv[1:]:
+ if a=='-fopenmp':args+=['-Xpreprocessor','-fopenmp'] if '-c' in sys.argv else ['-L/opt/homebrew/opt/libomp/lib','-lomp','-Wl,-rpath,/opt/homebrew/opt/libomp/lib']
+ else:args.append(a)
+args+=['-I/opt/homebrew/opt/libomp/include']
+os.execv('/usr/bin/clang++',['/usr/bin/clang++',*args])

@@ -1,0 +1,20 @@
+{
+  "scope": "Native wrapper execution plus real public retrieval/local model and coordinator acceptance of an insufficient dossier; handoff acknowledgment and refresh trigger are explicitly controlled tests",
+  "run_id": "1e20e277ead34b028caf5bfcf06985c8",
+  "review": {
+    "review": "9061bdac083843018bd6e6aab4fcf213@1"
+  },
+  "handoff": {
+    "receipt": "b6c9ff3f0a4942c18283d314666e7071@1"
+  },
+  "refresh_run": "79f847320c9f4d869fe631e624ad8c86",
+  "refresh": {
+    "impact": "f3cf85dae9ca4185832bd05268760eed@1",
+    "revision": "0eadbbae10dc4bab92181bbda2df9c32@1"
+  },
+  "all_eleven_capability_wrappers_exercised": true,
+  "market_conclusion": "insufficient; no market validation",
+  "consumer_acknowledgment": "controlled local outbox acknowledgment, not live external Content Strategy",
+  "review_disclosure": "Coordinator AI review, separate from local-model author; not external expert review",
+  "raw_probe": "tower-native-probe.json"
+}

@@ -1,0 +1,73 @@
+{
+  "previous_feedback": "User heard little difference between the first baby-boy and baby-girl auditions. They are not qualified as a distinct pair.",
+  "experiment": "Two contrasting child-character designs; same text and native settings. These are not realistic infant speech or proof of gender.",
+  "results": [
+    {
+      "label": "Rounded, steady child character",
+      "id": "4d4143b6-8bb3-4e4b-8f56-b1ea51c6338f",
+      "state": "saved",
+      "audio": {
+        "path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/4d4143b6-8bb3-4e4b-8f56-b1ea51c6338f/voice.wav",
+        "listening_path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/4d4143b6-8bb3-4e4b-8f56-b1ea51c6338f/listening.wav",
+        "sha256": "4808ed86e0e27a0b3dc2a36e3627227b854b7019f45284ac2610b4ee531bb0ba",
+        "duration_seconds": 7.04,
+        "sample_rate": 48000,
+        "gain": 0.502342589522387,
+        "loudness": {
+          "input_i": "-17.02",
+          "input_tp": "-3.19",
+          "input_lra": "3.70",
+          "input_thresh": "-27.35",
+          "output_i": "-21.81",
+          "output_tp": "-7.98",
+          "output_lra": "2.50",
+          "output_thresh": "-32.08",
+          "normalization_type": "dynamic",
+          "target_offset": "-1.19"
+        }
+      },
+      "word_check": {
+        "transcript": "I still remember the morning we planted that tree.  It was no taller than you are now.  Look at it today.",
+        "expected": "I still remember the morning we planted that tree. It was no taller than you are now. Look at it today.",
+        "exact_words": true,
+        "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+        "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+      },
+      "error": null
+    },
+    {
+      "label": "Bright, lilting child character",
+      "id": "6c5900e1-72de-4b3e-88c8-046e0bbfbf79",
+      "state": "saved",
+      "audio": {
+        "path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/6c5900e1-72de-4b3e-88c8-046e0bbfbf79/voice.wav",
+        "listening_path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/6c5900e1-72de-4b3e-88c8-046e0bbfbf79/listening.wav",
+        "sha256": "c587aecf7ece699d50fbb17164b0e0598b73008fbf99fd320fa31500ff7c6657",
+        "duration_seconds": 6.08,
+        "sample_rate": 48000,
+        "gain": 0.4764309868054156,
+        "loudness": {
+          "input_i": "-16.56",
+          "input_tp": "-3.36",
+          "input_lra": "1.70",
+          "input_thresh": "-26.71",
+          "output_i": "-22.11",
+          "output_tp": "-8.16",
+          "output_lra": "1.50",
+          "output_thresh": "-32.25",
+          "normalization_type": "dynamic",
+          "target_offset": "-0.89"
+        }
+      },
+      "word_check": {
+        "transcript": "I still remember the morning we planted that tree.  It was no taller than you are now.  Look at it today.",
+        "expected": "I still remember the morning we planted that tree. It was no taller than you are now. Look at it today.",
+        "exact_words": true,
+        "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+        "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+      },
+      "error": null
+    }
+  ],
+  "listening": "Awaiting user judgment; no automatic quality approval."
+}

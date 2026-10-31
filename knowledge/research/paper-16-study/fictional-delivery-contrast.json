@@ -1,0 +1,72 @@
+{
+  "experiment": "Assured public presentation versus tired guarded private conversation. Same target words and native settings; individual fictional performances, not socioeconomic voice classifications.",
+  "results": [
+    {
+      "label": "Assured business presentation",
+      "id": "081d3853-e85e-48e8-8985-7fec7955eceb",
+      "state": "saved",
+      "audio": {
+        "path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/081d3853-e85e-48e8-8985-7fec7955eceb/voice.wav",
+        "listening_path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/081d3853-e85e-48e8-8985-7fec7955eceb/listening.wav",
+        "sha256": "6eaaa3274d7abc2afb38f6a84dd546253b7471f4c600d7ed9bf69297fcd7412a",
+        "duration_seconds": 5.92,
+        "sample_rate": 48000,
+        "gain": 0.47097732639695294,
+        "loudness": {
+          "input_i": "-16.46",
+          "input_tp": "-1.48",
+          "input_lra": "0.90",
+          "input_thresh": "-26.73",
+          "output_i": "-23.11",
+          "output_tp": "-8.13",
+          "output_lra": "1.00",
+          "output_thresh": "-33.35",
+          "normalization_type": "dynamic",
+          "target_offset": "0.11"
+        }
+      },
+      "word_check": {
+        "transcript": "I have spent a long time thinking about what comes next.  Today, I am ready to take the first step.",
+        "expected": "I have spent a long time thinking about what comes next. Today, I am ready to take the first step.",
+        "exact_words": true,
+        "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+        "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+      },
+      "error": null
+    },
+    {
+      "label": "Tired, guarded conversation",
+      "id": "ea8854f2-964e-4f55-b04c-b998a510b91e",
+      "state": "saved",
+      "audio": {
+        "path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/ea8854f2-964e-4f55-b04c-b998a510b91e/voice.wav",
+        "listening_path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/ea8854f2-964e-4f55-b04c-b998a510b91e/listening.wav",
+        "sha256": "de7456c9d02af665f42ecccd95ab3dbea414510a722f032718e4c6db0f364f74",
+        "duration_seconds": 6.24,
+        "sample_rate": 48000,
+        "gain": 0.6523790409982091,
+        "loudness": {
+          "input_i": "-19.29",
+          "input_tp": "-2.27",
+          "input_lra": "0.50",
+          "input_thresh": "-29.82",
+          "output_i": "-22.48",
+          "output_tp": "-5.47",
+          "output_lra": "0.60",
+          "output_thresh": "-32.87",
+          "normalization_type": "dynamic",
+          "target_offset": "-0.52"
+        }
+      },
+      "word_check": {
+        "transcript": "I have spent a long time thinking about what comes next.  Today, I am ready to take the first step.",
+        "expected": "I have spent a long time thinking about what comes next. Today, I am ready to take the first step.",
+        "exact_words": true,
+        "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+        "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+      },
+      "error": null
+    }
+  ],
+  "listening": "Awaiting user judgment."
+}

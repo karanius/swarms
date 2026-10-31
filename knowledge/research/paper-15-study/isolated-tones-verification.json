@@ -1,0 +1,37 @@
+{
+  "conditions": [
+    {
+      "condition": "neutral",
+      "matched_sha256": "be11c31c2027f107941caf2f862ba91de9802e5a7ebb71eb01240661b4b05120",
+      "meter": {
+        "input_i": "-23.0",
+        "input_tp": "-7.9",
+        "meter": "FFmpeg ebur128"
+      }
+    },
+    {
+      "condition": "controlled-anger",
+      "matched_sha256": "68244f55ba092ef663278e379c27f670cec77b8db3f07403b2b4b653eeb9002c",
+      "meter": {
+        "input_i": "-23.0",
+        "input_tp": "-7.8",
+        "meter": "FFmpeg ebur128"
+      }
+    },
+    {
+      "condition": "tender-reassurance",
+      "matched_sha256": "51b5dd19646184d9ea712d9b235690bd409962f47c349f7c50cea4e453fa402a",
+      "meter": {
+        "input_i": "-23.0",
+        "input_tp": "-7.4",
+        "meter": "FFmpeg ebur128"
+      }
+    }
+  ],
+  "notebook_embedded_payloads_match_distinct_files": true,
+  "all_prior_raw_api_audio_hashes_preserved": true,
+  "papers_1_through_14_preserved": true,
+  "notebook_has_no_execution_errors": true,
+  "device_evidence_recorded": true,
+  "perceptual_result": "Not yet assessed; no switching sequence assembled or success claimed."
+}

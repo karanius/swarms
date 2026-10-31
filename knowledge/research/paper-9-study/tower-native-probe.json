@@ -1,0 +1,81 @@
+{
+  "run_id": "1e20e277ead34b028caf5bfcf06985c8",
+  "store": "/Users/x/projects/swarms/knowledge/research/paper-9-study/.runtime/tower",
+  "state": "in_review",
+  "stages": [
+    {
+      "node": "intake",
+      "status": "executed",
+      "artifact_refs": {
+        "plan": "41429d6be06649d78936eb0278b59825@1",
+        "obligations": "98990e30b22c477e84fb4abd38d36ec2@1"
+      }
+    },
+    {
+      "node": "discover",
+      "status": "executed",
+      "artifact_refs": {
+        "candidates": "83c09969198449ea9eadd591884ff203@1"
+      }
+    },
+    {
+      "node": "retrieve",
+      "status": "executed",
+      "artifact_refs": {
+        "sources": "8b8a91ab55aa474d8a9eac0bb7f0880e@1"
+      }
+    },
+    {
+      "node": "normalize",
+      "status": "executed",
+      "artifact_refs": {
+        "evidence": "0806e6b0d21c4d83b09edb1a104b64d9@1"
+      }
+    },
+    {
+      "node": "compare",
+      "status": "executed",
+      "artifact_refs": {
+        "alternatives": "2d8b03cf080c4330982946ccb6f7faf4@1"
+      }
+    },
+    {
+      "node": "form_claims",
+      "status": "executed",
+      "artifact_refs": {
+        "candidates": "8b595632ca6c4b9aa7b315fe2b44860e@1"
+      }
+    },
+    {
+      "node": "assess",
+      "status": "executed",
+      "artifact_refs": {
+        "assessments": "bdd799e0ff7443279d33c6a40fe8abe5@1"
+      }
+    },
+    {
+      "node": "assemble",
+      "status": "executed",
+      "artifact_refs": {
+        "dossier": "3ebe02ff9ffb44c68692232aed242a38@1"
+      }
+    },
+    {
+      "node": "review",
+      "status": "expected_review_gate",
+      "native_output": [
+        {
+          "text": "Error executing function: Independent review required for 3ebe02ff9ffb44c68692232aed242a38@1"
+        }
+      ]
+    }
+  ],
+  "profile": "bounded-public-document/local-model probe; no business validation",
+  "native_type": "PythonFunction",
+  "no_active_canvas_changes": true,
+  "limitations": [
+    "Independent review pending",
+    "No real consumer instance connected; outbox contract has controlled tests",
+    "No market demand or profitability evidence"
+  ]
+}

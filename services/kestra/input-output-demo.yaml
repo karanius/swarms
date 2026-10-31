@@ -1,0 +1,23 @@
+id: input_output_demo
+namespace: local.playground
+description: Edit the input, run the workflow, and inspect its declared output.
+inputs:
+  - id: message
+    type: STRING
+    defaults: Build workflows quickly
+  - id: uppercase
+    type: BOOL
+    defaults: true
+tasks:
+  - id: transform
+    type: io.kestra.plugin.core.output.OutputValues
+    values:
+      original: "{{ inputs.message }}"
+      result: "{{ inputs.uppercase ? (inputs.message | upper) : inputs.message }}"
+  - id: inspect
+    type: io.kestra.plugin.core.log.Log
+    message: "Result: {{ outputs.transform.values.result }}"
+outputs:
+  - id: result
+    type: STRING
+    value: "{{ outputs.transform.values.result }}"

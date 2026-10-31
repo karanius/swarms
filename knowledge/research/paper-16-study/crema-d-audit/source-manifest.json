@@ -1,0 +1,41 @@
+{
+  "repository": "https://github.com/CheyneyComputerScience/CREMA-D",
+  "revision": "1658cd342dff90010aa843eaeebd53610a08b1dc",
+  "files": {
+    "processedResults/tabulatedVotes.csv": {
+      "url": "https://raw.githubusercontent.com/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/processedResults/tabulatedVotes.csv",
+      "sha256": "774d9d759cb5caf2542758a39eca8c0f1d2777f9987ff5d5adf8066d192f377b",
+      "bytes": 4057953
+    },
+    "processedResults/summaryTable.csv": {
+      "url": "https://raw.githubusercontent.com/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/processedResults/summaryTable.csv",
+      "sha256": "fb0e382700d32c0d9adc0c6815292215a36bcf912f2657048862c91e3bd2b317",
+      "bytes": 449048
+    },
+    "SentenceFilenames.csv": {
+      "url": "https://raw.githubusercontent.com/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/SentenceFilenames.csv",
+      "sha256": "d88cb50e84bbc30b2e159cdfc25e1cf87777ad97c7c41d6ab8f75d3383b8f740",
+      "bytes": 170087
+    },
+    "VideoDemographics.csv": {
+      "url": "https://raw.githubusercontent.com/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/VideoDemographics.csv",
+      "sha256": "e33ddc8b60bedf98541735801127cbb67098b5957271adbdd5dea8a44294eec3",
+      "bytes": 4033
+    },
+    "tabulateVotesV2.r": {
+      "url": "https://raw.githubusercontent.com/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/tabulateVotesV2.r",
+      "sha256": "cace74d8ddb9bc7073c8167a28f63cac0dac751069ce407f65afcc4854b9cc5b",
+      "bytes": 11677
+    },
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/README.md",
+      "sha256": "bf3d3a070bf3dfb8eaceb0378fdb007388796bd24924e71fb17d0f65564136da",
+      "bytes": 13316
+    },
+    "LICENSE.txt": {
+      "url": "https://raw.githubusercontent.com/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/LICENSE.txt",
+      "sha256": "e76747a4efa4b338914bb3f930b5d3d3c3ac15b886bbabf897f6a19731f987f8",
+      "bytes": 312
+    }
+  }
+}

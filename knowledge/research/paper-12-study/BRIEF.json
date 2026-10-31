@@ -1,0 +1,7 @@
+{
+  "request": "Make a short original educational video explaining how a request becomes a proposed design, then a tested system. Use two scenes, locally generated narration, original diagram illustrations, synchronized scene captions and one playable MP4.",
+  "visual_mode": "locally generated structured diagram illustrations, not diffusion images or generated motion footage",
+  "constraints": {"local_only": true, "paid_apis": false, "publish": false},
+  "acceptance": ["Local model produces two validated scene specifications", "Each scene has a generated illustration and real local neural narration", "Caption timing follows measured scene audio durations", "Final file contains video and audio and fully decodes", "A second changed-input case and negative tests exercise the pipeline", "Provenance distinguishes source-template references from actual reused code and new adapters"],
+  "not_established": ["General-purpose image or motion generation", "Commercial voice rights", "Word-level subtitle alignment", "Revenue or audience value", "Automatic Langflow template composition"]
+}

@@ -1,0 +1,23 @@
+{
+  "text": "You're here. I wasn't sure you would come.",
+  "ordered": [
+    {
+      "id": "text",
+      "type": "text",
+      "config": {}
+    },
+    {
+      "id": "voice",
+      "type": "voice",
+      "config": {
+        "reference": "esd:0012:anger",
+        "steps": 32,
+        "speed": 1.0,
+        "seed": 42,
+        "cross_fade_duration": 0.15,
+        "cfg_strength": 2.0,
+        "sway_sampling_coef": -1.0
+      }
+    }
+  ]
+}

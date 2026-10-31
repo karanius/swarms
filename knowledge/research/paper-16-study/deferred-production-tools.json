@@ -1,0 +1,21 @@
+{
+  "saved_date": "2026-10-31",
+  "decision": "User requested saving for later. Do not adopt, install or reuse these tools in the approved scene-comparison implementation.",
+  "tools": [
+    {
+      "name": "TTS-Story",
+      "url": "https://github.com/Xerophayze/TTS-Story",
+      "status": "Documentation inspected; not runtime-tested"
+    },
+    {
+      "name": "Draft to Take",
+      "url": "https://github.com/JaySpiffy/draft-to-take",
+      "status": "Documentation inspected; not runtime-tested"
+    },
+    {
+      "name": "Spotify Pedalboard",
+      "url": "https://github.com/spotify/pedalboard",
+      "status": "Documentation inspected; not runtime-tested"
+    }
+  ]
+}

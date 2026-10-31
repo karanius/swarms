@@ -1,0 +1,45 @@
+{
+  "algorithm_revision": 2,
+  "status": "upgraded retrieval-only question answering; live Jupyter verified",
+  "checks_passed": 39,
+  "earlier_papers_preserved": 9,
+  "notebook_sha256": "0545e1f04031ba68a863d066de0781f41447cf69c257e4e8510ccd46c2d24011",
+  "before_sections": [
+    "requested capability"
+  ],
+  "after_capabilities": {
+    "script_input": "partial",
+    "image_generation": "partial",
+    "video_generation": "partial",
+    "narration": "partial",
+    "subtitles": "partial",
+    "video_assembly": "not_found"
+  },
+  "browser_verified": {
+    "original_query_reexecuted": true,
+    "recognized_capabilities": 6,
+    "qualified_candidates": 15,
+    "external_service_conflicts_visible": true,
+    "mac_hardware_unknown_visible": true,
+    "alternatives_preserved": true,
+    "video_assembly_not_found_visible": true
+  },
+  "screenshot": "/tmp/paper10-query-upgrade.png",
+  "limitations": [
+    "Versioned rule vocabulary, not universal intent understanding",
+    "Supported is an archived declaration, not runtime proof",
+    "Not found is bounded retrieval, not impossibility",
+    "No pricing, memory fit or Apple Silicon execution inferred",
+    "No build plan, instance assembly or Paper 11 created"
+  ],
+  "files": {
+    "request_analysis.py": "84e602d9b1bafcdf1dd8d94d9bce61c19f3d77878d755a4d2a6f5cd18348b195",
+    "test_search.py": "741f67ee88ebc4ddf13da7ee22d06ea5b99fe837cb58eab7606833256d8bc23b",
+    "search_engine.py": "e596ab01f69e44d14511cefb0d605f44a9a57f8d60969190847b9416672a1d9c",
+    "test_upgrade.py": "d7ad2ad3019c7cc50165bdc46fc0530e8f5f341b80b6d92230778084ab83f73b",
+    "build_paper.py": "fe8943bf863fd625bdd9a0d7afe831a223446da6dfc5f0d7ff99e58005bf2780",
+    "evaluate_upgrade.py": "4b2d26a4c44fd70bc4fe0bb01958ba4777774e885160429ac15c4ccf69393d58",
+    "evaluate.py": "7eed28783c2113598b68a82d2178c2ad15b93ea73cdd2db00b0ed24877e7b84c",
+    "notebook_ui.py": "1ddaf9786335eea4fe056bc1e988aaa9422a6f5a7a1cadc0059f2002c2cd86f1"
+  }
+}

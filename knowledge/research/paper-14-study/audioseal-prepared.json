@@ -1,0 +1,10 @@
+{
+  "repo": "facebook/audioseal",
+  "revision": "3c19eba53390776cf2cc9ed5f6c9ac67ce72ecba",
+  "url": "https://huggingface.co/facebook/audioseal/resolve/3c19eba53390776cf2cc9ed5f6c9ac67ce72ecba/generator_base.pth",
+  "path": "/Users/x/.local/share/swarms/voicestudio/cache/audioseal/0f195d476dd87ca1bd7b09e6",
+  "sha256": "7a845b5fbe9364a63a3909d8ab3fe064d13a76ae4c2e983573e08c69b7b51748",
+  "bytes": 58805980,
+  "gated": false,
+  "license_metadata": "mit"
+}

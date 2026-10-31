@@ -1,0 +1,35 @@
+{
+  "paper11": "Explicit component/group/template references, source/search details, unverified obligations and missing implementation explanations verified in browser; 38 tests pass.",
+  "paper12_notebook": "/Users/x/projects/swarms/knowledge/research/notebooks/Paper 12 - From Proposed Capabilities to a Verified Local Video.ipynb",
+  "runtime_results": [
+    {
+      "duration_seconds": 13.13,
+      "final": "/Users/x/projects/swarms/knowledge/research/paper-12-study/.runtime/first-proof-fixed/final.mp4",
+      "sha256": "d0a3f54cb6639ef45f2cb96ba5a162b934448efbe33f73ce07519cc0c497e995"
+    },
+    {
+      "duration_seconds": 17.13,
+      "final": "/Users/x/projects/swarms/knowledge/research/paper-12-study/.runtime/notebook-change-48d14c9d28/final.mp4",
+      "sha256": "0c62c97cb9917c3df04b3ba3eccfcfa08c6f2f0475bfe75324e3897124fe3099"
+    }
+  ],
+  "contract_tests_passed": 9,
+  "corruption_checks_rejected": 2,
+  "browser_playback": {
+    "first_duration": 13.125325,
+    "second_duration": 17.125325,
+    "both_ready_state": 4,
+    "both_media_error": null,
+    "both_observed_playing": true
+  },
+  "earlier_notebooks_unchanged": true,
+  "scope": [
+    "F5 pretrained weights have noncommercial license restrictions; not a monetization-ready voice",
+    "Upstream voice sample rights are not commercially cleared",
+    "Two-scene diagram-video prototype; not general video generation",
+    "Caption boundaries follow generated scene audio; no word-level alignment",
+    "No automatic Langflow graph assembly or execution",
+    "Local calls/offline asset loading are not OS-level network-isolation proof"
+  ],
+  "completion_note": "End-to-end bounded implementation demonstrated; no broader template composition, general video generation or commercial readiness claimed."
+}

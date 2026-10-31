@@ -430,3 +430,8 @@ flycheck_*.el
 # network security
 /network-security.data
 
+
+# Local execution and browser inspection state
+/.runtime/
+/.playwright-mcp/
+/frontend/dist-*/

@@ -1,0 +1,2528 @@
+{
+  "esd": {
+    "id": "esd",
+    "name": "ESD \u00b7 existing baseline",
+    "state": "ready_for_generation",
+    "comparison": "two-role",
+    "terms": "Research-only source; perceptual qualification remains open.",
+    "roles": {
+      "A": {
+        "speaker_id": "0012",
+        "identity": {
+          "id": "esd:0012:neutral",
+          "label": "0012 \u00b7 neutral \u00b7 research reference",
+          "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+          "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+          "transcript": "I have bunburyed all over goat on two separate occasions.",
+          "annotation_id": "esd:0012:neutral",
+          "annotation_status": "candidate_unrated"
+        },
+        "performances": {
+          "anger": {
+            "id": "esd:0012:anger",
+            "label": "0012 \u00b7 anger \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-anger.wav",
+            "sha256": "2ee717f077a83a09073f65d2b3530ac26225e1fc56c21175097318239ae61285",
+            "transcript": "I have bunburyed all over goat on two separate occasions.",
+            "annotation_id": "esd:0012:anger",
+            "annotation_status": "candidate_unrated"
+          },
+          "sadness": {
+            "id": "esd:0012:sadness",
+            "label": "0012 \u00b7 sadness \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-sadness.wav",
+            "sha256": "b548fdacb62075241fdade270b0a06e9256d2fa70e8fceab546bf29a9e0b4791",
+            "transcript": "I have bunburyed all over goat on two separate occasions.",
+            "annotation_id": "esd:0012:sadness",
+            "annotation_status": "candidate_unrated"
+          },
+          "neutral": {
+            "id": "esd:0012:neutral",
+            "label": "0012 \u00b7 neutral \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+            "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+            "transcript": "I have bunburyed all over goat on two separate occasions.",
+            "annotation_id": "esd:0012:neutral",
+            "annotation_status": "candidate_unrated"
+          },
+          "happiness": {
+            "id": "esd:0012:happiness",
+            "label": "0012 \u00b7 happiness \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-happiness.wav",
+            "sha256": "b5dc06b810118a6616cd2b49ffc4fe6f8e0552757d72fd38efed126979df0444",
+            "transcript": "I have bunburyed all over goat on two separate occasions.",
+            "annotation_id": "esd:0012:happiness",
+            "annotation_status": "candidate_unrated"
+          }
+        }
+      },
+      "B": {
+        "speaker_id": "0015",
+        "identity": {
+          "id": "esd:0015:neutral",
+          "label": "0015 \u00b7 neutral \u00b7 research reference",
+          "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+          "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+          "transcript": "This was the twenty fifth of november, seventeen eighty three.",
+          "annotation_id": "esd:0015:neutral",
+          "annotation_status": "candidate_unrated"
+        },
+        "performances": {
+          "anger": {
+            "id": "esd:0015:anger",
+            "label": "0015 \u00b7 anger \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-anger.wav",
+            "sha256": "21c19d49142b6db9ba96bb6d5ffcbf55132a77183e71d31a877a36bc9d9ce887",
+            "transcript": "This was the twenty fifth of november, seventeen eighty three.",
+            "annotation_id": "esd:0015:anger",
+            "annotation_status": "candidate_unrated"
+          },
+          "sadness": {
+            "id": "esd:0015:sadness",
+            "label": "0015 \u00b7 sadness \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-sadness.wav",
+            "sha256": "04ce66ee24099fac28d82dbb23441e90083601cce577755353cc410b066ffcf6",
+            "transcript": "This was the twenty fifth of november, seventeen eighty three.",
+            "annotation_id": "esd:0015:sadness",
+            "annotation_status": "candidate_unrated"
+          },
+          "neutral": {
+            "id": "esd:0015:neutral",
+            "label": "0015 \u00b7 neutral \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+            "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+            "transcript": "This was the twenty fifth of november, seventeen eighty three.",
+            "annotation_id": "esd:0015:neutral",
+            "annotation_status": "candidate_unrated"
+          },
+          "happiness": {
+            "id": "esd:0015:happiness",
+            "label": "0015 \u00b7 happiness \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-happiness.wav",
+            "sha256": "17ea58ac011f19b3bc3ab2eb83a55e944b5f4f0020d42b64d4f5a94aa287a83b",
+            "transcript": "This was the twenty fifth of november, seventeen eighty three.",
+            "annotation_id": "esd:0015:happiness",
+            "annotation_status": "candidate_unrated"
+          }
+        }
+      }
+    },
+    "voices": {
+      "0012": {
+        "speaker_id": "0012",
+        "identity": {
+          "id": "esd:0012:neutral",
+          "label": "0012 \u00b7 neutral \u00b7 research reference",
+          "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+          "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+          "transcript": "I have bunburyed all over goat on two separate occasions.",
+          "annotation_id": "esd:0012:neutral",
+          "annotation_status": "candidate_unrated"
+        },
+        "performances": {
+          "anger": {
+            "id": "esd:0012:anger",
+            "label": "0012 \u00b7 anger \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-anger.wav",
+            "sha256": "2ee717f077a83a09073f65d2b3530ac26225e1fc56c21175097318239ae61285",
+            "transcript": "I have bunburyed all over goat on two separate occasions.",
+            "annotation_id": "esd:0012:anger",
+            "annotation_status": "candidate_unrated"
+          },
+          "sadness": {
+            "id": "esd:0012:sadness",
+            "label": "0012 \u00b7 sadness \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-sadness.wav",
+            "sha256": "b548fdacb62075241fdade270b0a06e9256d2fa70e8fceab546bf29a9e0b4791",
+            "transcript": "I have bunburyed all over goat on two separate occasions.",
+            "annotation_id": "esd:0012:sadness",
+            "annotation_status": "candidate_unrated"
+          },
+          "neutral": {
+            "id": "esd:0012:neutral",
+            "label": "0012 \u00b7 neutral \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+            "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+            "transcript": "I have bunburyed all over goat on two separate occasions.",
+            "annotation_id": "esd:0012:neutral",
+            "annotation_status": "candidate_unrated"
+          },
+          "happiness": {
+            "id": "esd:0012:happiness",
+            "label": "0012 \u00b7 happiness \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-happiness.wav",
+            "sha256": "b5dc06b810118a6616cd2b49ffc4fe6f8e0552757d72fd38efed126979df0444",
+            "transcript": "I have bunburyed all over goat on two separate occasions.",
+            "annotation_id": "esd:0012:happiness",
+            "annotation_status": "candidate_unrated"
+          }
+        },
+        "source_sex": "Unverified",
+        "presentation_review": "Not yet judged by listening"
+      },
+      "0015": {
+        "speaker_id": "0015",
+        "identity": {
+          "id": "esd:0015:neutral",
+          "label": "0015 \u00b7 neutral \u00b7 research reference",
+          "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+          "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+          "transcript": "This was the twenty fifth of november, seventeen eighty three.",
+          "annotation_id": "esd:0015:neutral",
+          "annotation_status": "candidate_unrated"
+        },
+        "performances": {
+          "anger": {
+            "id": "esd:0015:anger",
+            "label": "0015 \u00b7 anger \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-anger.wav",
+            "sha256": "21c19d49142b6db9ba96bb6d5ffcbf55132a77183e71d31a877a36bc9d9ce887",
+            "transcript": "This was the twenty fifth of november, seventeen eighty three.",
+            "annotation_id": "esd:0015:anger",
+            "annotation_status": "candidate_unrated"
+          },
+          "sadness": {
+            "id": "esd:0015:sadness",
+            "label": "0015 \u00b7 sadness \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-sadness.wav",
+            "sha256": "04ce66ee24099fac28d82dbb23441e90083601cce577755353cc410b066ffcf6",
+            "transcript": "This was the twenty fifth of november, seventeen eighty three.",
+            "annotation_id": "esd:0015:sadness",
+            "annotation_status": "candidate_unrated"
+          },
+          "neutral": {
+            "id": "esd:0015:neutral",
+            "label": "0015 \u00b7 neutral \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+            "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+            "transcript": "This was the twenty fifth of november, seventeen eighty three.",
+            "annotation_id": "esd:0015:neutral",
+            "annotation_status": "candidate_unrated"
+          },
+          "happiness": {
+            "id": "esd:0015:happiness",
+            "label": "0015 \u00b7 happiness \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-happiness.wav",
+            "sha256": "17ea58ac011f19b3bc3ab2eb83a55e944b5f4f0020d42b64d4f5a94aa287a83b",
+            "transcript": "This was the twenty fifth of november, seventeen eighty three.",
+            "annotation_id": "esd:0015:happiness",
+            "annotation_status": "candidate_unrated"
+          }
+        },
+        "source_sex": "Unverified",
+        "presentation_review": "Not yet judged by listening"
+      }
+    },
+    "casting_note": "Only the two existing baseline profiles are enabled here. Their sex/presentation has not been verified in this catalog; no masculine/feminine label is inferred."
+  },
+  "crema": {
+    "id": "crema",
+    "name": "CREMA-D \u00b7 selectable cast",
+    "state": "ready_for_generation",
+    "comparison": "two-role",
+    "terms": "ODbL database / DbCL contents. Research comparison; no unrestricted commercial identity-use claim.",
+    "roles": {
+      "A": {
+        "speaker_id": "crema:1006",
+        "identity": {
+          "id": "crema:1006_ITH_NEU_XX",
+          "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1006/1006_ITH_NEU_XX.wav",
+          "sha256": "941697403343e3dcc1a3244e8c848ac7d74450ace14208662cfacf48b7818bda",
+          "transcript": "I think I have a doctor's appointment.",
+          "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_ITH_NEU_XX.wav",
+          "annotations": {
+            "intended_emotion": "N",
+            "intended_intensity": "XX",
+            "audio_only_votes": {
+              "A": 0,
+              "D": 0,
+              "F": 0,
+              "H": 0,
+              "N": 10,
+              "S": 0
+            },
+            "n": 10,
+            "target_share": 1.0,
+            "conditional_intensity": {
+              "A": null,
+              "D": null,
+              "F": null,
+              "H": null,
+              "N": 76.4,
+              "S": null
+            },
+            "selection": "Top source-metadata candidate, not listener-approved"
+          },
+          "qc": {
+            "duration_seconds": 3.43675,
+            "sample_rate": 16000,
+            "near_full_scale_samples": 0
+          },
+          "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+        },
+        "performances": {
+          "neutral": {
+            "id": "crema:1006_ITH_NEU_XX",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1006/1006_ITH_NEU_XX.wav",
+            "sha256": "941697403343e3dcc1a3244e8c848ac7d74450ace14208662cfacf48b7818bda",
+            "transcript": "I think I have a doctor's appointment.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_ITH_NEU_XX.wav",
+            "annotations": {
+              "intended_emotion": "N",
+              "intended_intensity": "XX",
+              "audio_only_votes": {
+                "A": 0,
+                "D": 0,
+                "F": 0,
+                "H": 0,
+                "N": 10,
+                "S": 0
+              },
+              "n": 10,
+              "target_share": 1.0,
+              "conditional_intensity": {
+                "A": null,
+                "D": null,
+                "F": null,
+                "H": null,
+                "N": 76.4,
+                "S": null
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 3.43675,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "anger": {
+            "id": "crema:1006_MTI_ANG_XX",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1006/1006_MTI_ANG_XX.wav",
+            "sha256": "d8a324371c17b8a9371e79c02642f1c7f1782b3c838de3346dc2904c482d27a9",
+            "transcript": "Maybe tomorrow it will be cold.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_MTI_ANG_XX.wav",
+            "annotations": {
+              "intended_emotion": "A",
+              "intended_intensity": "XX",
+              "audio_only_votes": {
+                "A": 10,
+                "D": 0,
+                "F": 0,
+                "H": 0,
+                "N": 0,
+                "S": 0
+              },
+              "n": 10,
+              "target_share": 1.0,
+              "conditional_intensity": {
+                "A": 66.5,
+                "D": null,
+                "F": null,
+                "H": null,
+                "N": null,
+                "S": null
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 3.7704375,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 20
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "sadness": {
+            "id": "crema:1006_TAI_SAD_XX",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1006/1006_TAI_SAD_XX.wav",
+            "sha256": "81abd830581823e4f8f7e9ed6401d7810030cb923f1bb401cf42dc99af8749d3",
+            "transcript": "The airplane is almost full.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_TAI_SAD_XX.wav",
+            "annotations": {
+              "intended_emotion": "S",
+              "intended_intensity": "XX",
+              "audio_only_votes": {
+                "A": 0,
+                "D": 0,
+                "F": 1,
+                "H": 0,
+                "N": 1,
+                "S": 8
+              },
+              "n": 10,
+              "target_share": 0.8,
+              "conditional_intensity": {
+                "A": null,
+                "D": null,
+                "F": 36.0,
+                "H": null,
+                "N": 37.0,
+                "S": 66.375
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 3.6369375,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "happiness": {
+            "id": "crema:1006_DFA_HAP_XX",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1006/1006_DFA_HAP_XX.wav",
+            "sha256": "2dc2fcf35696175951c9039af94255b90ea2fcd3609f5e26ad4973df103dca2a",
+            "transcript": "Don't forget a jacket.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_DFA_HAP_XX.wav",
+            "annotations": {
+              "intended_emotion": "H",
+              "intended_intensity": "XX",
+              "audio_only_votes": {
+                "A": 0,
+                "D": 0,
+                "F": 0,
+                "H": 8,
+                "N": 1,
+                "S": 0
+              },
+              "n": 9,
+              "target_share": 0.8888888888888888,
+              "conditional_intensity": {
+                "A": null,
+                "D": null,
+                "F": null,
+                "H": 59.625,
+                "N": 72.0,
+                "S": null
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 2.3023125,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          }
+        }
+      },
+      "B": {
+        "speaker_id": "crema:1058",
+        "identity": {
+          "id": "crema:1058_IEO_NEU_XX",
+          "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1058/1058_IEO_NEU_XX.wav",
+          "sha256": "23cccc3d3501ec2f79e5a0ad5e843cee8d5af37103a18d1f9a6e881cb7683cec",
+          "transcript": "It's eleven o'clock.",
+          "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1058_IEO_NEU_XX.wav",
+          "annotations": {
+            "intended_emotion": "N",
+            "intended_intensity": "XX",
+            "audio_only_votes": {
+              "A": 0,
+              "D": 0,
+              "F": 0,
+              "H": 0,
+              "N": 10,
+              "S": 0
+            },
+            "n": 10,
+            "target_share": 1.0,
+            "conditional_intensity": {
+              "A": null,
+              "D": null,
+              "F": null,
+              "H": null,
+              "N": 83.7,
+              "S": null
+            },
+            "selection": "Top source-metadata candidate, not listener-approved"
+          },
+          "qc": {
+            "duration_seconds": 1.968625,
+            "sample_rate": 16000,
+            "near_full_scale_samples": 0
+          },
+          "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+        },
+        "performances": {
+          "neutral": {
+            "id": "crema:1058_IEO_NEU_XX",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1058/1058_IEO_NEU_XX.wav",
+            "sha256": "23cccc3d3501ec2f79e5a0ad5e843cee8d5af37103a18d1f9a6e881cb7683cec",
+            "transcript": "It's eleven o'clock.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1058_IEO_NEU_XX.wav",
+            "annotations": {
+              "intended_emotion": "N",
+              "intended_intensity": "XX",
+              "audio_only_votes": {
+                "A": 0,
+                "D": 0,
+                "F": 0,
+                "H": 0,
+                "N": 10,
+                "S": 0
+              },
+              "n": 10,
+              "target_share": 1.0,
+              "conditional_intensity": {
+                "A": null,
+                "D": null,
+                "F": null,
+                "H": null,
+                "N": 83.7,
+                "S": null
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 1.968625,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "anger": {
+            "id": "crema:1058_IEO_ANG_HI",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1058/1058_IEO_ANG_HI.wav",
+            "sha256": "827fade66fd53a8837965dae803c70fb9c341cad117c05871d8d868a015b1797",
+            "transcript": "It's eleven o'clock.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1058_IEO_ANG_HI.wav",
+            "annotations": {
+              "intended_emotion": "A",
+              "intended_intensity": "HI",
+              "audio_only_votes": {
+                "A": 8,
+                "D": 0,
+                "F": 0,
+                "H": 0,
+                "N": 0,
+                "S": 0
+              },
+              "n": 8,
+              "target_share": 1.0,
+              "conditional_intensity": {
+                "A": 82.375,
+                "D": null,
+                "F": null,
+                "H": null,
+                "N": null,
+                "S": null
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 2.2021875,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 268
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "sadness": {
+            "id": "crema:1058_IEO_SAD_HI",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1058/1058_IEO_SAD_HI.wav",
+            "sha256": "2c0525349bb2b4dcbfb8cb5e12f8c53f707a0af71b1a789589f9a994aeb2f252",
+            "transcript": "It's eleven o'clock.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1058_IEO_SAD_HI.wav",
+            "annotations": {
+              "intended_emotion": "S",
+              "intended_intensity": "HI",
+              "audio_only_votes": {
+                "A": 0,
+                "D": 0,
+                "F": 0,
+                "H": 0,
+                "N": 0,
+                "S": 9
+              },
+              "n": 9,
+              "target_share": 1.0,
+              "conditional_intensity": {
+                "A": null,
+                "D": null,
+                "F": null,
+                "H": null,
+                "N": null,
+                "S": 91.2222222222222
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 2.8695,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "happiness": {
+            "id": "crema:1058_ITS_HAP_XX",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1058/1058_ITS_HAP_XX.wav",
+            "sha256": "31657d6f2e0f7316b6072b31a7feeed6d318da32152638d8d845ec28b487e411",
+            "transcript": "I think I've seen this before.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1058_ITS_HAP_XX.wav",
+            "annotations": {
+              "intended_emotion": "H",
+              "intended_intensity": "XX",
+              "audio_only_votes": {
+                "A": 0,
+                "D": 0,
+                "F": 1,
+                "H": 6,
+                "N": 0,
+                "S": 0
+              },
+              "n": 7,
+              "target_share": 0.8571428571428571,
+              "conditional_intensity": {
+                "A": null,
+                "D": null,
+                "F": 46.0,
+                "H": 49.6666666666667,
+                "N": null,
+                "S": null
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 2.535875,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          }
+        }
+      }
+    },
+    "voices": {
+      "crema:1006": {
+        "speaker_id": "crema:1006",
+        "identity": {
+          "id": "crema:1006_ITH_NEU_XX",
+          "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1006/1006_ITH_NEU_XX.wav",
+          "sha256": "941697403343e3dcc1a3244e8c848ac7d74450ace14208662cfacf48b7818bda",
+          "transcript": "I think I have a doctor's appointment.",
+          "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_ITH_NEU_XX.wav",
+          "annotations": {
+            "intended_emotion": "N",
+            "intended_intensity": "XX",
+            "audio_only_votes": {
+              "A": 0,
+              "D": 0,
+              "F": 0,
+              "H": 0,
+              "N": 10,
+              "S": 0
+            },
+            "n": 10,
+            "target_share": 1.0,
+            "conditional_intensity": {
+              "A": null,
+              "D": null,
+              "F": null,
+              "H": null,
+              "N": 76.4,
+              "S": null
+            },
+            "selection": "Top source-metadata candidate, not listener-approved"
+          },
+          "qc": {
+            "duration_seconds": 3.43675,
+            "sample_rate": 16000,
+            "near_full_scale_samples": 0
+          },
+          "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+        },
+        "performances": {
+          "neutral": {
+            "id": "crema:1006_ITH_NEU_XX",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1006/1006_ITH_NEU_XX.wav",
+            "sha256": "941697403343e3dcc1a3244e8c848ac7d74450ace14208662cfacf48b7818bda",
+            "transcript": "I think I have a doctor's appointment.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_ITH_NEU_XX.wav",
+            "annotations": {
+              "intended_emotion": "N",
+              "intended_intensity": "XX",
+              "audio_only_votes": {
+                "A": 0,
+                "D": 0,
+                "F": 0,
+                "H": 0,
+                "N": 10,
+                "S": 0
+              },
+              "n": 10,
+              "target_share": 1.0,
+              "conditional_intensity": {
+                "A": null,
+                "D": null,
+                "F": null,
+                "H": null,
+                "N": 76.4,
+                "S": null
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 3.43675,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "anger": {
+            "id": "crema:1006_MTI_ANG_XX",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1006/1006_MTI_ANG_XX.wav",
+            "sha256": "d8a324371c17b8a9371e79c02642f1c7f1782b3c838de3346dc2904c482d27a9",
+            "transcript": "Maybe tomorrow it will be cold.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_MTI_ANG_XX.wav",
+            "annotations": {
+              "intended_emotion": "A",
+              "intended_intensity": "XX",
+              "audio_only_votes": {
+                "A": 10,
+                "D": 0,
+                "F": 0,
+                "H": 0,
+                "N": 0,
+                "S": 0
+              },
+              "n": 10,
+              "target_share": 1.0,
+              "conditional_intensity": {
+                "A": 66.5,
+                "D": null,
+                "F": null,
+                "H": null,
+                "N": null,
+                "S": null
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 3.7704375,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 20
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "sadness": {
+            "id": "crema:1006_TAI_SAD_XX",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1006/1006_TAI_SAD_XX.wav",
+            "sha256": "81abd830581823e4f8f7e9ed6401d7810030cb923f1bb401cf42dc99af8749d3",
+            "transcript": "The airplane is almost full.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_TAI_SAD_XX.wav",
+            "annotations": {
+              "intended_emotion": "S",
+              "intended_intensity": "XX",
+              "audio_only_votes": {
+                "A": 0,
+                "D": 0,
+                "F": 1,
+                "H": 0,
+                "N": 1,
+                "S": 8
+              },
+              "n": 10,
+              "target_share": 0.8,
+              "conditional_intensity": {
+                "A": null,
+                "D": null,
+                "F": 36.0,
+                "H": null,
+                "N": 37.0,
+                "S": 66.375
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 3.6369375,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "happiness": {
+            "id": "crema:1006_DFA_HAP_XX",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1006/1006_DFA_HAP_XX.wav",
+            "sha256": "2dc2fcf35696175951c9039af94255b90ea2fcd3609f5e26ad4973df103dca2a",
+            "transcript": "Don't forget a jacket.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_DFA_HAP_XX.wav",
+            "annotations": {
+              "intended_emotion": "H",
+              "intended_intensity": "XX",
+              "audio_only_votes": {
+                "A": 0,
+                "D": 0,
+                "F": 0,
+                "H": 8,
+                "N": 1,
+                "S": 0
+              },
+              "n": 9,
+              "target_share": 0.8888888888888888,
+              "conditional_intensity": {
+                "A": null,
+                "D": null,
+                "F": null,
+                "H": 59.625,
+                "N": 72.0,
+                "S": null
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 2.3023125,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          }
+        },
+        "source_sex": "Female",
+        "presentation_review": "Not yet judged by listening",
+        "metadata_source": "CREMA-D VideoDemographics.csv"
+      },
+      "crema:1058": {
+        "speaker_id": "crema:1058",
+        "identity": {
+          "id": "crema:1058_IEO_NEU_XX",
+          "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1058/1058_IEO_NEU_XX.wav",
+          "sha256": "23cccc3d3501ec2f79e5a0ad5e843cee8d5af37103a18d1f9a6e881cb7683cec",
+          "transcript": "It's eleven o'clock.",
+          "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1058_IEO_NEU_XX.wav",
+          "annotations": {
+            "intended_emotion": "N",
+            "intended_intensity": "XX",
+            "audio_only_votes": {
+              "A": 0,
+              "D": 0,
+              "F": 0,
+              "H": 0,
+              "N": 10,
+              "S": 0
+            },
+            "n": 10,
+            "target_share": 1.0,
+            "conditional_intensity": {
+              "A": null,
+              "D": null,
+              "F": null,
+              "H": null,
+              "N": 83.7,
+              "S": null
+            },
+            "selection": "Top source-metadata candidate, not listener-approved"
+          },
+          "qc": {
+            "duration_seconds": 1.968625,
+            "sample_rate": 16000,
+            "near_full_scale_samples": 0
+          },
+          "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+        },
+        "performances": {
+          "neutral": {
+            "id": "crema:1058_IEO_NEU_XX",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1058/1058_IEO_NEU_XX.wav",
+            "sha256": "23cccc3d3501ec2f79e5a0ad5e843cee8d5af37103a18d1f9a6e881cb7683cec",
+            "transcript": "It's eleven o'clock.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1058_IEO_NEU_XX.wav",
+            "annotations": {
+              "intended_emotion": "N",
+              "intended_intensity": "XX",
+              "audio_only_votes": {
+                "A": 0,
+                "D": 0,
+                "F": 0,
+                "H": 0,
+                "N": 10,
+                "S": 0
+              },
+              "n": 10,
+              "target_share": 1.0,
+              "conditional_intensity": {
+                "A": null,
+                "D": null,
+                "F": null,
+                "H": null,
+                "N": 83.7,
+                "S": null
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 1.968625,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "anger": {
+            "id": "crema:1058_IEO_ANG_HI",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1058/1058_IEO_ANG_HI.wav",
+            "sha256": "827fade66fd53a8837965dae803c70fb9c341cad117c05871d8d868a015b1797",
+            "transcript": "It's eleven o'clock.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1058_IEO_ANG_HI.wav",
+            "annotations": {
+              "intended_emotion": "A",
+              "intended_intensity": "HI",
+              "audio_only_votes": {
+                "A": 8,
+                "D": 0,
+                "F": 0,
+                "H": 0,
+                "N": 0,
+                "S": 0
+              },
+              "n": 8,
+              "target_share": 1.0,
+              "conditional_intensity": {
+                "A": 82.375,
+                "D": null,
+                "F": null,
+                "H": null,
+                "N": null,
+                "S": null
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 2.2021875,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 268
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "sadness": {
+            "id": "crema:1058_IEO_SAD_HI",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1058/1058_IEO_SAD_HI.wav",
+            "sha256": "2c0525349bb2b4dcbfb8cb5e12f8c53f707a0af71b1a789589f9a994aeb2f252",
+            "transcript": "It's eleven o'clock.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1058_IEO_SAD_HI.wav",
+            "annotations": {
+              "intended_emotion": "S",
+              "intended_intensity": "HI",
+              "audio_only_votes": {
+                "A": 0,
+                "D": 0,
+                "F": 0,
+                "H": 0,
+                "N": 0,
+                "S": 9
+              },
+              "n": 9,
+              "target_share": 1.0,
+              "conditional_intensity": {
+                "A": null,
+                "D": null,
+                "F": null,
+                "H": null,
+                "N": null,
+                "S": 91.2222222222222
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 2.8695,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "happiness": {
+            "id": "crema:1058_ITS_HAP_XX",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1058/1058_ITS_HAP_XX.wav",
+            "sha256": "31657d6f2e0f7316b6072b31a7feeed6d318da32152638d8d845ec28b487e411",
+            "transcript": "I think I've seen this before.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1058_ITS_HAP_XX.wav",
+            "annotations": {
+              "intended_emotion": "H",
+              "intended_intensity": "XX",
+              "audio_only_votes": {
+                "A": 0,
+                "D": 0,
+                "F": 1,
+                "H": 6,
+                "N": 0,
+                "S": 0
+              },
+              "n": 7,
+              "target_share": 0.8571428571428571,
+              "conditional_intensity": {
+                "A": null,
+                "D": null,
+                "F": 46.0,
+                "H": 49.6666666666667,
+                "N": null,
+                "S": null
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 2.535875,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          }
+        },
+        "source_sex": "Female",
+        "presentation_review": "Not yet judged by listening",
+        "metadata_source": "CREMA-D VideoDemographics.csv"
+      },
+      "crema:1059": {
+        "speaker_id": "crema:1059",
+        "identity": {
+          "id": "crema:1059_MTI_NEU_XX",
+          "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1059/1059_MTI_NEU_XX.wav",
+          "sha256": "289404ab84290562b4b0ce088e637c1cc9f1b9fca4677ffc21030851b5fba4aa",
+          "transcript": "Maybe tomorrow it will be cold.",
+          "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1059_MTI_NEU_XX.wav",
+          "annotations": {
+            "intended_emotion": "N",
+            "intended_intensity": "XX",
+            "audio_only_votes": {
+              "A": 0,
+              "D": 0,
+              "F": 0,
+              "H": 0,
+              "N": 9,
+              "S": 1
+            },
+            "n": 10,
+            "target_share": 0.9,
+            "conditional_intensity": {
+              "A": null,
+              "D": null,
+              "F": null,
+              "H": null,
+              "N": 81.3333333333333,
+              "S": 69.0
+            },
+            "selection": "Top source-metadata candidate, not listener-approved"
+          },
+          "qc": {
+            "duration_seconds": 2.93625,
+            "sample_rate": 16000,
+            "near_full_scale_samples": 0
+          },
+          "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+        },
+        "performances": {
+          "neutral": {
+            "id": "crema:1059_MTI_NEU_XX",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1059/1059_MTI_NEU_XX.wav",
+            "sha256": "289404ab84290562b4b0ce088e637c1cc9f1b9fca4677ffc21030851b5fba4aa",
+            "transcript": "Maybe tomorrow it will be cold.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1059_MTI_NEU_XX.wav",
+            "annotations": {
+              "intended_emotion": "N",
+              "intended_intensity": "XX",
+              "audio_only_votes": {
+                "A": 0,
+                "D": 0,
+                "F": 0,
+                "H": 0,
+                "N": 9,
+                "S": 1
+              },
+              "n": 10,
+              "target_share": 0.9,
+              "conditional_intensity": {
+                "A": null,
+                "D": null,
+                "F": null,
+                "H": null,
+                "N": 81.3333333333333,
+                "S": 69.0
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 2.93625,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "anger": {
+            "id": "crema:1059_TAI_ANG_XX",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1059/1059_TAI_ANG_XX.wav",
+            "sha256": "d2638b62bcdc67886391b849dc6a6bdd9f161043013818f01535a17842a82423",
+            "transcript": "The airplane is almost full.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1059_TAI_ANG_XX.wav",
+            "annotations": {
+              "intended_emotion": "A",
+              "intended_intensity": "XX",
+              "audio_only_votes": {
+                "A": 11,
+                "D": 0,
+                "F": 0,
+                "H": 0,
+                "N": 0,
+                "S": 0
+              },
+              "n": 11,
+              "target_share": 1.0,
+              "conditional_intensity": {
+                "A": 75.0,
+                "D": null,
+                "F": null,
+                "H": null,
+                "N": null,
+                "S": null
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 2.8695625,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 596
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "sadness": {
+            "id": "crema:1059_IEO_SAD_HI",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1059/1059_IEO_SAD_HI.wav",
+            "sha256": "29747ed2fccae1f7f5f77041927c52f44feac7d998c7cfe60586da7ef385b684",
+            "transcript": "It's eleven o'clock.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1059_IEO_SAD_HI.wav",
+            "annotations": {
+              "intended_emotion": "S",
+              "intended_intensity": "HI",
+              "audio_only_votes": {
+                "A": 0,
+                "D": 0,
+                "F": 0,
+                "H": 0,
+                "N": 1,
+                "S": 7
+              },
+              "n": 8,
+              "target_share": 0.875,
+              "conditional_intensity": {
+                "A": null,
+                "D": null,
+                "F": null,
+                "H": null,
+                "N": 100.0,
+                "S": 63.8571428571429
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 2.6693125,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "happiness": {
+            "id": "crema:1059_IEO_HAP_MD",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1059/1059_IEO_HAP_MD.wav",
+            "sha256": "2ff09ce2d686defd0b8d754fa380ad0d760c555900d89263060d2097cf184877",
+            "transcript": "It's eleven o'clock.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1059_IEO_HAP_MD.wav",
+            "annotations": {
+              "intended_emotion": "H",
+              "intended_intensity": "MD",
+              "audio_only_votes": {
+                "A": 0,
+                "D": 0,
+                "F": 0,
+                "H": 7,
+                "N": 2,
+                "S": 0
+              },
+              "n": 9,
+              "target_share": 0.7777777777777778,
+              "conditional_intensity": {
+                "A": null,
+                "D": null,
+                "F": null,
+                "H": 61.8571428571429,
+                "N": 59.5,
+                "S": null
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 2.1688125,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          }
+        },
+        "source_sex": "Male",
+        "metadata_source": "CREMA-D VideoDemographics.csv",
+        "presentation_review": "Not yet judged by listening"
+      },
+      "crema:1064": {
+        "speaker_id": "crema:1064",
+        "identity": {
+          "id": "crema:1064_IOM_NEU_XX",
+          "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1064/1064_IOM_NEU_XX.wav",
+          "sha256": "569cf4e0406984d2127d2f2be320c045c2a9d96291c610a5de2cbb1933b49866",
+          "transcript": "I'm on my way to the meeting.",
+          "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1064_IOM_NEU_XX.wav",
+          "annotations": {
+            "intended_emotion": "N",
+            "intended_intensity": "XX",
+            "audio_only_votes": {
+              "A": 0,
+              "D": 1,
+              "F": 0,
+              "H": 0,
+              "N": 9,
+              "S": 0
+            },
+            "n": 10,
+            "target_share": 0.9,
+            "conditional_intensity": {
+              "A": null,
+              "D": 19.0,
+              "F": null,
+              "H": null,
+              "N": 77.8888888888889,
+              "S": null
+            },
+            "selection": "Top source-metadata candidate, not listener-approved"
+          },
+          "qc": {
+            "duration_seconds": 2.8028125,
+            "sample_rate": 16000,
+            "near_full_scale_samples": 0
+          },
+          "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+        },
+        "performances": {
+          "neutral": {
+            "id": "crema:1064_IOM_NEU_XX",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1064/1064_IOM_NEU_XX.wav",
+            "sha256": "569cf4e0406984d2127d2f2be320c045c2a9d96291c610a5de2cbb1933b49866",
+            "transcript": "I'm on my way to the meeting.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1064_IOM_NEU_XX.wav",
+            "annotations": {
+              "intended_emotion": "N",
+              "intended_intensity": "XX",
+              "audio_only_votes": {
+                "A": 0,
+                "D": 1,
+                "F": 0,
+                "H": 0,
+                "N": 9,
+                "S": 0
+              },
+              "n": 10,
+              "target_share": 0.9,
+              "conditional_intensity": {
+                "A": null,
+                "D": 19.0,
+                "F": null,
+                "H": null,
+                "N": 77.8888888888889,
+                "S": null
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 2.8028125,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "anger": {
+            "id": "crema:1064_WSI_ANG_XX",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1064/1064_WSI_ANG_XX.wav",
+            "sha256": "235af95e282e5ac6245f5dbbf1669a2dac8f88e7abd71276a05b9d65ebf675f2",
+            "transcript": "We'll stop in a couple of minutes.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1064_WSI_ANG_XX.wav",
+            "annotations": {
+              "intended_emotion": "A",
+              "intended_intensity": "XX",
+              "audio_only_votes": {
+                "A": 10,
+                "D": 0,
+                "F": 0,
+                "H": 0,
+                "N": 0,
+                "S": 0
+              },
+              "n": 10,
+              "target_share": 1.0,
+              "conditional_intensity": {
+                "A": 73.9,
+                "D": null,
+                "F": null,
+                "H": null,
+                "N": null,
+                "S": null
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 2.7360625,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 168
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "sadness": {
+            "id": "crema:1064_ITS_SAD_XX",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1064/1064_ITS_SAD_XX.wav",
+            "sha256": "7ea00b88b37e06c88a7999456531afc94f4433a890d87afb3c660914355e1e51",
+            "transcript": "I think I've seen this before.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1064_ITS_SAD_XX.wav",
+            "annotations": {
+              "intended_emotion": "S",
+              "intended_intensity": "XX",
+              "audio_only_votes": {
+                "A": 0,
+                "D": 1,
+                "F": 0,
+                "H": 0,
+                "N": 1,
+                "S": 9
+              },
+              "n": 11,
+              "target_share": 0.8181818181818182,
+              "conditional_intensity": {
+                "A": null,
+                "D": 66.0,
+                "F": null,
+                "H": null,
+                "N": 22.0,
+                "S": 64.0
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 3.603625,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "happiness": {
+            "id": "crema:1064_ITS_HAP_XX",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1064/1064_ITS_HAP_XX.wav",
+            "sha256": "be17e22f7c407fdcf3790328e59a370ba4e44fbecca30c0bf36d645231a0a7b0",
+            "transcript": "I think I've seen this before.",
+            "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1064_ITS_HAP_XX.wav",
+            "annotations": {
+              "intended_emotion": "H",
+              "intended_intensity": "XX",
+              "audio_only_votes": {
+                "A": 0,
+                "D": 0,
+                "F": 0,
+                "H": 10,
+                "N": 0,
+                "S": 0
+              },
+              "n": 10,
+              "target_share": 1.0,
+              "conditional_intensity": {
+                "A": null,
+                "D": null,
+                "F": null,
+                "H": 52.7,
+                "N": null,
+                "S": null
+              },
+              "selection": "Top source-metadata candidate, not listener-approved"
+            },
+            "qc": {
+              "duration_seconds": 2.8695,
+              "sample_rate": 16000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          }
+        },
+        "source_sex": "Male",
+        "metadata_source": "CREMA-D VideoDemographics.csv",
+        "presentation_review": "Not yet judged by listening"
+      }
+    },
+    "casting_note": "Two source-listed male and two source-listed female actors. Audition the voice: source sex is not a guarantee of perceived presentation or generated speaker similarity."
+  },
+  "ravdess": {
+    "id": "ravdess",
+    "name": "RAVDESS \u00b7 selectable cast",
+    "state": "ready_for_generation",
+    "comparison": "two-role",
+    "terms": "CC BY-NC-SA 4.0, non-commercial research. Livingstone & Russo (2018), https://zenodo.org/records/1188976. Member CRCs verified; full archive checksum not verified by selective retrieval.",
+    "roles": {
+      "A": {
+        "speaker_id": "ravdess:01",
+        "identity": {
+          "id": "ravdess:03-01-01-01-01-01-01.wav",
+          "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-01-01-01-01-01.wav",
+          "sha256": "c467aad2ca80b089dbd4c2ba0dd16be508e4ce08230f46d36a208b859dc7fbac",
+          "transcript": "Kids are talking by the door.",
+          "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_01/03-01-01-01-01-01-01.wav",
+          "annotations": {
+            "emotion_code": "01",
+            "intensity_code": "01",
+            "statement": "01",
+            "repetition": "01",
+            "actor": "01",
+            "selection": "Fixed first statement/repetition; no claim these are the best takes",
+            "zip_crc32": 2177243984
+          },
+          "qc": {
+            "duration_seconds": 3.3032916666666665,
+            "sample_rate": 48000,
+            "near_full_scale_samples": 0
+          },
+          "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+        },
+        "performances": {
+          "neutral": {
+            "id": "ravdess:03-01-01-01-01-01-01.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-01-01-01-01-01.wav",
+            "sha256": "c467aad2ca80b089dbd4c2ba0dd16be508e4ce08230f46d36a208b859dc7fbac",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_01/03-01-01-01-01-01-01.wav",
+            "annotations": {
+              "emotion_code": "01",
+              "intensity_code": "01",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "01",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 2177243984
+            },
+            "qc": {
+              "duration_seconds": 3.3032916666666665,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "anger": {
+            "id": "ravdess:03-01-05-02-01-01-01.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-05-02-01-01-01.wav",
+            "sha256": "ba4d1f678784d9656239885413edd9699696f08f9a6e800619eed975ad7a98d6",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_01/03-01-05-02-01-01-01.wav",
+            "annotations": {
+              "emotion_code": "05",
+              "intensity_code": "02",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "01",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 1053629059
+            },
+            "qc": {
+              "duration_seconds": 4.104104166666667,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "sadness": {
+            "id": "ravdess:03-01-04-02-01-01-01.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-04-02-01-01-01.wav",
+            "sha256": "a617ba3cf207d2f22742a0b180c864c6311dc82b00944b7dab110b7ebf99e292",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_01/03-01-04-02-01-01-01.wav",
+            "annotations": {
+              "emotion_code": "04",
+              "intensity_code": "02",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "01",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 604670294
+            },
+            "qc": {
+              "duration_seconds": 3.8037916666666667,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "happiness": {
+            "id": "ravdess:03-01-03-02-01-01-01.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-03-02-01-01-01.wav",
+            "sha256": "1bc1ae2f36d7fa7314a42f7d250cc346723e2ed3d455a3b0dc4a1dbb50917044",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_01/03-01-03-02-01-01-01.wav",
+            "annotations": {
+              "emotion_code": "03",
+              "intensity_code": "02",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "01",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 1405998336
+            },
+            "qc": {
+              "duration_seconds": 3.6703333333333332,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          }
+        }
+      },
+      "B": {
+        "speaker_id": "ravdess:02",
+        "identity": {
+          "id": "ravdess:03-01-01-01-01-01-02.wav",
+          "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-01-01-01-01-02.wav",
+          "sha256": "e343477557ff71c099c7a71ef70ff65158fcab232a56ee23bd231319a0f2c845",
+          "transcript": "Kids are talking by the door.",
+          "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_02/03-01-01-01-01-01-02.wav",
+          "annotations": {
+            "emotion_code": "01",
+            "intensity_code": "01",
+            "statement": "01",
+            "repetition": "01",
+            "actor": "02",
+            "selection": "Fixed first statement/repetition; no claim these are the best takes",
+            "zip_crc32": 31001591
+          },
+          "qc": {
+            "duration_seconds": 3.6369583333333333,
+            "sample_rate": 48000,
+            "near_full_scale_samples": 0
+          },
+          "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+        },
+        "performances": {
+          "neutral": {
+            "id": "ravdess:03-01-01-01-01-01-02.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-01-01-01-01-02.wav",
+            "sha256": "e343477557ff71c099c7a71ef70ff65158fcab232a56ee23bd231319a0f2c845",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_02/03-01-01-01-01-01-02.wav",
+            "annotations": {
+              "emotion_code": "01",
+              "intensity_code": "01",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "02",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 31001591
+            },
+            "qc": {
+              "duration_seconds": 3.6369583333333333,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "anger": {
+            "id": "ravdess:03-01-05-02-01-01-02.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-05-02-01-01-02.wav",
+            "sha256": "2f8cafdb522aec17a940ee829e6a42b46b53817fa626d65da6beab33c5bdfbfc",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_02/03-01-05-02-01-01-02.wav",
+            "annotations": {
+              "emotion_code": "05",
+              "intensity_code": "02",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "02",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 1175408503
+            },
+            "qc": {
+              "duration_seconds": 3.9039166666666665,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "sadness": {
+            "id": "ravdess:03-01-04-02-01-01-02.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-04-02-01-01-02.wav",
+            "sha256": "c164e43034a28da0d81f97b6ca0df91b6d1970def189de9542af7c999af166a3",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_02/03-01-04-02-01-01-02.wav",
+            "annotations": {
+              "emotion_code": "04",
+              "intensity_code": "02",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "02",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 814620300
+            },
+            "qc": {
+              "duration_seconds": 3.7370833333333335,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "happiness": {
+            "id": "ravdess:03-01-03-02-01-01-02.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-03-02-01-01-02.wav",
+            "sha256": "5269349f2129a0d1d1bb44262c6976e6629db2f258456af3d21014c1e9e2a681",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_02/03-01-03-02-01-01-02.wav",
+            "annotations": {
+              "emotion_code": "03",
+              "intensity_code": "02",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "02",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 2339628277
+            },
+            "qc": {
+              "duration_seconds": 3.703708333333333,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          }
+        }
+      }
+    },
+    "voices": {
+      "ravdess:01": {
+        "speaker_id": "ravdess:01",
+        "identity": {
+          "id": "ravdess:03-01-01-01-01-01-01.wav",
+          "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-01-01-01-01-01.wav",
+          "sha256": "c467aad2ca80b089dbd4c2ba0dd16be508e4ce08230f46d36a208b859dc7fbac",
+          "transcript": "Kids are talking by the door.",
+          "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_01/03-01-01-01-01-01-01.wav",
+          "annotations": {
+            "emotion_code": "01",
+            "intensity_code": "01",
+            "statement": "01",
+            "repetition": "01",
+            "actor": "01",
+            "selection": "Fixed first statement/repetition; no claim these are the best takes",
+            "zip_crc32": 2177243984
+          },
+          "qc": {
+            "duration_seconds": 3.3032916666666665,
+            "sample_rate": 48000,
+            "near_full_scale_samples": 0
+          },
+          "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+        },
+        "performances": {
+          "neutral": {
+            "id": "ravdess:03-01-01-01-01-01-01.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-01-01-01-01-01.wav",
+            "sha256": "c467aad2ca80b089dbd4c2ba0dd16be508e4ce08230f46d36a208b859dc7fbac",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_01/03-01-01-01-01-01-01.wav",
+            "annotations": {
+              "emotion_code": "01",
+              "intensity_code": "01",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "01",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 2177243984
+            },
+            "qc": {
+              "duration_seconds": 3.3032916666666665,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "anger": {
+            "id": "ravdess:03-01-05-02-01-01-01.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-05-02-01-01-01.wav",
+            "sha256": "ba4d1f678784d9656239885413edd9699696f08f9a6e800619eed975ad7a98d6",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_01/03-01-05-02-01-01-01.wav",
+            "annotations": {
+              "emotion_code": "05",
+              "intensity_code": "02",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "01",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 1053629059
+            },
+            "qc": {
+              "duration_seconds": 4.104104166666667,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "sadness": {
+            "id": "ravdess:03-01-04-02-01-01-01.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-04-02-01-01-01.wav",
+            "sha256": "a617ba3cf207d2f22742a0b180c864c6311dc82b00944b7dab110b7ebf99e292",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_01/03-01-04-02-01-01-01.wav",
+            "annotations": {
+              "emotion_code": "04",
+              "intensity_code": "02",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "01",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 604670294
+            },
+            "qc": {
+              "duration_seconds": 3.8037916666666667,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "happiness": {
+            "id": "ravdess:03-01-03-02-01-01-01.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-03-02-01-01-01.wav",
+            "sha256": "1bc1ae2f36d7fa7314a42f7d250cc346723e2ed3d455a3b0dc4a1dbb50917044",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_01/03-01-03-02-01-01-01.wav",
+            "annotations": {
+              "emotion_code": "03",
+              "intensity_code": "02",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "01",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 1405998336
+            },
+            "qc": {
+              "duration_seconds": 3.6703333333333332,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          }
+        },
+        "source_sex": "Male",
+        "presentation_review": "Not yet judged by listening",
+        "metadata_source": "https://zenodo.org/records/1188976#file-naming-convention"
+      },
+      "ravdess:02": {
+        "speaker_id": "ravdess:02",
+        "identity": {
+          "id": "ravdess:03-01-01-01-01-01-02.wav",
+          "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-01-01-01-01-02.wav",
+          "sha256": "e343477557ff71c099c7a71ef70ff65158fcab232a56ee23bd231319a0f2c845",
+          "transcript": "Kids are talking by the door.",
+          "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_02/03-01-01-01-01-01-02.wav",
+          "annotations": {
+            "emotion_code": "01",
+            "intensity_code": "01",
+            "statement": "01",
+            "repetition": "01",
+            "actor": "02",
+            "selection": "Fixed first statement/repetition; no claim these are the best takes",
+            "zip_crc32": 31001591
+          },
+          "qc": {
+            "duration_seconds": 3.6369583333333333,
+            "sample_rate": 48000,
+            "near_full_scale_samples": 0
+          },
+          "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+        },
+        "performances": {
+          "neutral": {
+            "id": "ravdess:03-01-01-01-01-01-02.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-01-01-01-01-02.wav",
+            "sha256": "e343477557ff71c099c7a71ef70ff65158fcab232a56ee23bd231319a0f2c845",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_02/03-01-01-01-01-01-02.wav",
+            "annotations": {
+              "emotion_code": "01",
+              "intensity_code": "01",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "02",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 31001591
+            },
+            "qc": {
+              "duration_seconds": 3.6369583333333333,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "anger": {
+            "id": "ravdess:03-01-05-02-01-01-02.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-05-02-01-01-02.wav",
+            "sha256": "2f8cafdb522aec17a940ee829e6a42b46b53817fa626d65da6beab33c5bdfbfc",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_02/03-01-05-02-01-01-02.wav",
+            "annotations": {
+              "emotion_code": "05",
+              "intensity_code": "02",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "02",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 1175408503
+            },
+            "qc": {
+              "duration_seconds": 3.9039166666666665,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "sadness": {
+            "id": "ravdess:03-01-04-02-01-01-02.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-04-02-01-01-02.wav",
+            "sha256": "c164e43034a28da0d81f97b6ca0df91b6d1970def189de9542af7c999af166a3",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_02/03-01-04-02-01-01-02.wav",
+            "annotations": {
+              "emotion_code": "04",
+              "intensity_code": "02",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "02",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 814620300
+            },
+            "qc": {
+              "duration_seconds": 3.7370833333333335,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "happiness": {
+            "id": "ravdess:03-01-03-02-01-01-02.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-03-02-01-01-02.wav",
+            "sha256": "5269349f2129a0d1d1bb44262c6976e6629db2f258456af3d21014c1e9e2a681",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_02/03-01-03-02-01-01-02.wav",
+            "annotations": {
+              "emotion_code": "03",
+              "intensity_code": "02",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "02",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 2339628277
+            },
+            "qc": {
+              "duration_seconds": 3.703708333333333,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          }
+        },
+        "source_sex": "Female",
+        "presentation_review": "Not yet judged by listening",
+        "metadata_source": "https://zenodo.org/records/1188976#file-naming-convention"
+      },
+      "ravdess:03": {
+        "speaker_id": "ravdess:03",
+        "identity": {
+          "id": "ravdess:03-01-01-01-01-01-03.wav",
+          "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-01-01-01-01-03.wav",
+          "sha256": "d61bd344a100e9ba43b2e589912e0ce4b8c4f8be14e7e9a5b618a51728faf34f",
+          "transcript": "Kids are talking by the door.",
+          "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_03/03-01-01-01-01-01-03.wav",
+          "annotations": {
+            "emotion_code": "01",
+            "intensity_code": "01",
+            "statement": "01",
+            "repetition": "01",
+            "actor": "03",
+            "selection": "Fixed first statement/repetition; no claim these are the best takes",
+            "zip_crc32": 1218943661
+          },
+          "qc": {
+            "duration_seconds": 3.4367708333333336,
+            "sample_rate": 48000,
+            "near_full_scale_samples": 0
+          },
+          "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+        },
+        "performances": {
+          "neutral": {
+            "id": "ravdess:03-01-01-01-01-01-03.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-01-01-01-01-03.wav",
+            "sha256": "d61bd344a100e9ba43b2e589912e0ce4b8c4f8be14e7e9a5b618a51728faf34f",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_03/03-01-01-01-01-01-03.wav",
+            "annotations": {
+              "emotion_code": "01",
+              "intensity_code": "01",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "03",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 1218943661
+            },
+            "qc": {
+              "duration_seconds": 3.4367708333333336,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "anger": {
+            "id": "ravdess:03-01-05-02-01-01-03.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-05-02-01-01-03.wav",
+            "sha256": "03ea4d9345729ee654b9a18742d2285daec33534bbb0f041c52b69d417ff08df",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_03/03-01-05-02-01-01-03.wav",
+            "annotations": {
+              "emotion_code": "05",
+              "intensity_code": "02",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "03",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 151894307
+            },
+            "qc": {
+              "duration_seconds": 4.404395833333333,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "sadness": {
+            "id": "ravdess:03-01-04-02-01-01-03.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-04-02-01-01-03.wav",
+            "sha256": "bdf16fd457fed2f6e5de374c7dac4fbd25cfd831b09edc38846f9c90d58c35c1",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_03/03-01-04-02-01-01-03.wav",
+            "annotations": {
+              "emotion_code": "04",
+              "intensity_code": "02",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "03",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 1543113133
+            },
+            "qc": {
+              "duration_seconds": 3.7704375,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "happiness": {
+            "id": "ravdess:03-01-03-02-01-01-03.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-03-02-01-01-03.wav",
+            "sha256": "ccb0b650d178b4ce33dd0b5d28e16db2a30f5fb5680d4196454a59bc45d05b40",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_03/03-01-03-02-01-01-03.wav",
+            "annotations": {
+              "emotion_code": "03",
+              "intensity_code": "02",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "03",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 3511995117
+            },
+            "qc": {
+              "duration_seconds": 4.3043125,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          }
+        },
+        "source_sex": "Male",
+        "metadata_source": "https://zenodo.org/records/1188976#file-naming-convention",
+        "presentation_review": "Not yet judged by listening"
+      },
+      "ravdess:04": {
+        "speaker_id": "ravdess:04",
+        "identity": {
+          "id": "ravdess:03-01-01-01-01-01-04.wav",
+          "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-01-01-01-01-04.wav",
+          "sha256": "30ed5827386c30840f93ec49e4cf5689597a6d48412d79c94a171e71495ccee2",
+          "transcript": "Kids are talking by the door.",
+          "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_04/03-01-01-01-01-01-04.wav",
+          "annotations": {
+            "emotion_code": "01",
+            "intensity_code": "01",
+            "statement": "01",
+            "repetition": "01",
+            "actor": "04",
+            "selection": "Fixed first statement/repetition; no claim these are the best takes",
+            "zip_crc32": 567818940
+          },
+          "qc": {
+            "duration_seconds": 3.3032916666666665,
+            "sample_rate": 48000,
+            "near_full_scale_samples": 0
+          },
+          "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+        },
+        "performances": {
+          "neutral": {
+            "id": "ravdess:03-01-01-01-01-01-04.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-01-01-01-01-04.wav",
+            "sha256": "30ed5827386c30840f93ec49e4cf5689597a6d48412d79c94a171e71495ccee2",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_04/03-01-01-01-01-01-04.wav",
+            "annotations": {
+              "emotion_code": "01",
+              "intensity_code": "01",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "04",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 567818940
+            },
+            "qc": {
+              "duration_seconds": 3.3032916666666665,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "anger": {
+            "id": "ravdess:03-01-05-02-01-01-04.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-05-02-01-01-04.wav",
+            "sha256": "126f749914b9e498039b8daf1c3a1ef28fa0bef8934af12535101da5ec5a6d39",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_04/03-01-05-02-01-01-04.wav",
+            "annotations": {
+              "emotion_code": "05",
+              "intensity_code": "02",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "04",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 3719865790
+            },
+            "qc": {
+              "duration_seconds": 3.7704375,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "sadness": {
+            "id": "ravdess:03-01-04-02-01-01-04.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-04-02-01-01-04.wav",
+            "sha256": "8346608176061cdcced8950fda2399df15c3b024eb87540041f55999c4995f61",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_04/03-01-04-02-01-01-04.wav",
+            "annotations": {
+              "emotion_code": "04",
+              "intensity_code": "02",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "04",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 3858291290
+            },
+            "qc": {
+              "duration_seconds": 3.6703333333333332,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "happiness": {
+            "id": "ravdess:03-01-03-02-01-01-04.wav",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/ravdess/03-01-03-02-01-01-04.wav",
+            "sha256": "c7fbcb4405381013e2fb4b761f570db69392452f895f98b33f5b3eb57a6ab03f",
+            "transcript": "Kids are talking by the door.",
+            "source": "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1#Actor_04/03-01-03-02-01-01-04.wav",
+            "annotations": {
+              "emotion_code": "03",
+              "intensity_code": "02",
+              "statement": "01",
+              "repetition": "01",
+              "actor": "04",
+              "selection": "Fixed first statement/repetition; no claim these are the best takes",
+              "zip_crc32": 288276371
+            },
+            "qc": {
+              "duration_seconds": 3.8705416666666665,
+              "sample_rate": 48000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          }
+        },
+        "source_sex": "Female",
+        "metadata_source": "https://zenodo.org/records/1188976#file-naming-convention",
+        "presentation_review": "Not yet judged by listening"
+      }
+    },
+    "casting_note": "Actors 01/03 are source-listed male; 02/04 female. Listen to confirm the presentation you want."
+  },
+  "emns": {
+    "id": "emns",
+    "name": "EMNS \u00b7 role A swap / fixed ESD role B",
+    "state": "ready_for_generation",
+    "comparison": "one-role-swap",
+    "terms": "OpenSLR lists Apache 2.0. EMNS source speaker 3 replaces A; B remains ESD 0015 with research-only terms. Not a two-actor EMNS dataset.",
+    "roles": {
+      "A": {
+        "speaker_id": "emns:3",
+        "identity": {
+          "id": "emns:28",
+          "path": "/Users/x/.local/share/swarms/scene-datasets/emns/recorded_audio_167fAwe.wav",
+          "sha256": "e3acc0306ccc79d6194257f19cd5d03b56f4e2410ca1b4bd160aaae547b5b9ff",
+          "transcript": "After retirement, he functioned as Chairman of the Hyderabad State Railway Company.",
+          "source": "https://www.openslr.org/136/",
+          "annotations": {
+            "original_row": {
+              "id": "28",
+              "utterance": "After retirement, he functioned as Chairman of the Hyderabad State Railway Company.",
+              "description": "{user_id} said {transcription} With a {emotion} voice.",
+              "emotion": "Neutral",
+              "date_created": "2022-05-13 13:50:56.842715",
+              "status": "Complete",
+              "gender": "Female",
+              "age": "20s",
+              "level": "0",
+              "audio_recording": "wavs/recorded_audio_167fAwe.webm",
+              "user_id": "3"
+            },
+            "original_path": "/Users/x/.local/share/swarms/scene-datasets/emns/recorded_audio_167fAwe.webm",
+            "original_sha256": "736f05d15aa5492c0aecd99b97038d9c04f572a9f2f24f6fd698ff066d775d74",
+            "conversion": "mono 24 kHz PCM; no mastering",
+            "level_note": "Source numeric level retained; not equated to any model strength",
+            "selection": "First complete source row with >54 characters and 5\u201312 second audio, not a listening-quality ranking"
+          },
+          "qc": {
+            "duration_seconds": 5.8375,
+            "sample_rate": 24000,
+            "near_full_scale_samples": 0
+          },
+          "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+        },
+        "performances": {
+          "neutral": {
+            "id": "emns:28",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/emns/recorded_audio_167fAwe.wav",
+            "sha256": "e3acc0306ccc79d6194257f19cd5d03b56f4e2410ca1b4bd160aaae547b5b9ff",
+            "transcript": "After retirement, he functioned as Chairman of the Hyderabad State Railway Company.",
+            "source": "https://www.openslr.org/136/",
+            "annotations": {
+              "original_row": {
+                "id": "28",
+                "utterance": "After retirement, he functioned as Chairman of the Hyderabad State Railway Company.",
+                "description": "{user_id} said {transcription} With a {emotion} voice.",
+                "emotion": "Neutral",
+                "date_created": "2022-05-13 13:50:56.842715",
+                "status": "Complete",
+                "gender": "Female",
+                "age": "20s",
+                "level": "0",
+                "audio_recording": "wavs/recorded_audio_167fAwe.webm",
+                "user_id": "3"
+              },
+              "original_path": "/Users/x/.local/share/swarms/scene-datasets/emns/recorded_audio_167fAwe.webm",
+              "original_sha256": "736f05d15aa5492c0aecd99b97038d9c04f572a9f2f24f6fd698ff066d775d74",
+              "conversion": "mono 24 kHz PCM; no mastering",
+              "level_note": "Source numeric level retained; not equated to any model strength",
+              "selection": "First complete source row with >54 characters and 5\u201312 second audio, not a listening-quality ranking"
+            },
+            "qc": {
+              "duration_seconds": 5.8375,
+              "sample_rate": 24000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "anger": {
+            "id": "emns:59",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/emns/recorded_audio_nX535py.wav",
+            "sha256": "4ba9b1753a3cbd0ee80ae28fbd164a5cd72b0a43adeea09ad88ac52d3b808714",
+            "transcript": "He represented Queensland and played in the English county scene at first class level.",
+            "source": "https://www.openslr.org/136/",
+            "annotations": {
+              "original_row": {
+                "id": "59",
+                "utterance": "He represented Queensland and played in the English county scene at first class level.",
+                "description": "{transcription} said {user_id} in a {emotion} voice. Placing emphasis on {He}, {Queensland}, {English} and {first class level}.",
+                "emotion": "Angry",
+                "date_created": "2022-06-03 11:07:06.127212",
+                "status": "Complete",
+                "gender": "Female",
+                "age": "20s",
+                "level": "8",
+                "audio_recording": "wavs/recorded_audio_nX535py.webm",
+                "user_id": "3"
+              },
+              "original_path": "/Users/x/.local/share/swarms/scene-datasets/emns/recorded_audio_nX535py.webm",
+              "original_sha256": "acaf0cb175d1c5528c82c22a5053c7edd9125c83311e0331c273c99021f3ef0b",
+              "conversion": "mono 24 kHz PCM; no mastering",
+              "level_note": "Source numeric level retained; not equated to any model strength",
+              "selection": "First complete source row with >54 characters and 5\u201312 second audio, not a listening-quality ranking"
+            },
+            "qc": {
+              "duration_seconds": 6.0775,
+              "sample_rate": 24000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "sadness": {
+            "id": "emns:13",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/emns/recorded_audio_vmvzVZk.wav",
+            "sha256": "369e1fd0003d06d81aaf4a38f9d52439f2cf525529c1e2d8b351252dfab9cf6e",
+            "transcript": "Abraham also played for the Atlanta Falcons and Arizona Cardinals.",
+            "source": "https://www.openslr.org/136/",
+            "annotations": {
+              "original_row": {
+                "id": "13",
+                "utterance": "Abraham also played for the Atlanta Falcons and Arizona Cardinals.",
+                "description": "{user_id} said {transcription} With a {emotion} voice.",
+                "emotion": "Sad",
+                "date_created": "2022-05-11 10:45:52.463386",
+                "status": "Complete",
+                "gender": "Female",
+                "age": "20s",
+                "level": "6",
+                "audio_recording": "wavs/recorded_audio_vmvzVZk.webm",
+                "user_id": "3"
+              },
+              "original_path": "/Users/x/.local/share/swarms/scene-datasets/emns/recorded_audio_vmvzVZk.webm",
+              "original_sha256": "f06210f28232b0609510c2df7d92498d9775be7879834ceb0bf73832074ac5c5",
+              "conversion": "mono 24 kHz PCM; no mastering",
+              "level_note": "Source numeric level retained; not equated to any model strength",
+              "selection": "First complete source row with >54 characters and 5\u201312 second audio, not a listening-quality ranking"
+            },
+            "qc": {
+              "duration_seconds": 6.5875,
+              "sample_rate": 24000,
+              "near_full_scale_samples": 1
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "happiness": {
+            "id": "emns:21",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/emns/recorded_audio_fCBtcy4.wav",
+            "sha256": "0e4061863580f08bc18420102c40d1e2cf941ab1c1633c35c3188ae84c4b15c5",
+            "transcript": "They are lacy, net-like wrappers typically used for deep-fried cha gio rolls.",
+            "source": "https://www.openslr.org/136/",
+            "annotations": {
+              "original_row": {
+                "id": "21",
+                "utterance": "They are lacy, net-like wrappers typically used for deep-fried cha gio rolls.",
+                "description": "{user_id} said {transcription}.",
+                "emotion": "Happy",
+                "date_created": "2022-05-13 13:35:01.260602",
+                "status": "Complete",
+                "gender": "Female",
+                "age": "20s",
+                "level": "5",
+                "audio_recording": "wavs/recorded_audio_fCBtcy4.webm",
+                "user_id": "3"
+              },
+              "original_path": "/Users/x/.local/share/swarms/scene-datasets/emns/recorded_audio_fCBtcy4.webm",
+              "original_sha256": "b4191b612abadc6ddac4d7732c2e704f2b041bf7c93d926eb3fc8b0ba54fcaa8",
+              "conversion": "mono 24 kHz PCM; no mastering",
+              "level_note": "Source numeric level retained; not equated to any model strength",
+              "selection": "First complete source row with >54 characters and 5\u201312 second audio, not a listening-quality ranking"
+            },
+            "qc": {
+              "duration_seconds": 6.2375,
+              "sample_rate": 24000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          }
+        }
+      },
+      "B": {
+        "speaker_id": "0015",
+        "identity": {
+          "id": "esd:0015:neutral",
+          "label": "0015 \u00b7 neutral \u00b7 research reference",
+          "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+          "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+          "transcript": "This was the twenty fifth of november, seventeen eighty three.",
+          "annotation_id": "esd:0015:neutral",
+          "annotation_status": "candidate_unrated"
+        },
+        "performances": {
+          "anger": {
+            "id": "esd:0015:anger",
+            "label": "0015 \u00b7 anger \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-anger.wav",
+            "sha256": "21c19d49142b6db9ba96bb6d5ffcbf55132a77183e71d31a877a36bc9d9ce887",
+            "transcript": "This was the twenty fifth of november, seventeen eighty three.",
+            "annotation_id": "esd:0015:anger",
+            "annotation_status": "candidate_unrated"
+          },
+          "sadness": {
+            "id": "esd:0015:sadness",
+            "label": "0015 \u00b7 sadness \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-sadness.wav",
+            "sha256": "04ce66ee24099fac28d82dbb23441e90083601cce577755353cc410b066ffcf6",
+            "transcript": "This was the twenty fifth of november, seventeen eighty three.",
+            "annotation_id": "esd:0015:sadness",
+            "annotation_status": "candidate_unrated"
+          },
+          "neutral": {
+            "id": "esd:0015:neutral",
+            "label": "0015 \u00b7 neutral \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+            "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+            "transcript": "This was the twenty fifth of november, seventeen eighty three.",
+            "annotation_id": "esd:0015:neutral",
+            "annotation_status": "candidate_unrated"
+          },
+          "happiness": {
+            "id": "esd:0015:happiness",
+            "label": "0015 \u00b7 happiness \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-happiness.wav",
+            "sha256": "17ea58ac011f19b3bc3ab2eb83a55e944b5f4f0020d42b64d4f5a94aa287a83b",
+            "transcript": "This was the twenty fifth of november, seventeen eighty three.",
+            "annotation_id": "esd:0015:happiness",
+            "annotation_status": "candidate_unrated"
+          }
+        }
+      }
+    },
+    "voices": {
+      "emns:3": {
+        "speaker_id": "emns:3",
+        "identity": {
+          "id": "emns:28",
+          "path": "/Users/x/.local/share/swarms/scene-datasets/emns/recorded_audio_167fAwe.wav",
+          "sha256": "e3acc0306ccc79d6194257f19cd5d03b56f4e2410ca1b4bd160aaae547b5b9ff",
+          "transcript": "After retirement, he functioned as Chairman of the Hyderabad State Railway Company.",
+          "source": "https://www.openslr.org/136/",
+          "annotations": {
+            "original_row": {
+              "id": "28",
+              "utterance": "After retirement, he functioned as Chairman of the Hyderabad State Railway Company.",
+              "description": "{user_id} said {transcription} With a {emotion} voice.",
+              "emotion": "Neutral",
+              "date_created": "2022-05-13 13:50:56.842715",
+              "status": "Complete",
+              "gender": "Female",
+              "age": "20s",
+              "level": "0",
+              "audio_recording": "wavs/recorded_audio_167fAwe.webm",
+              "user_id": "3"
+            },
+            "original_path": "/Users/x/.local/share/swarms/scene-datasets/emns/recorded_audio_167fAwe.webm",
+            "original_sha256": "736f05d15aa5492c0aecd99b97038d9c04f572a9f2f24f6fd698ff066d775d74",
+            "conversion": "mono 24 kHz PCM; no mastering",
+            "level_note": "Source numeric level retained; not equated to any model strength",
+            "selection": "First complete source row with >54 characters and 5\u201312 second audio, not a listening-quality ranking"
+          },
+          "qc": {
+            "duration_seconds": 5.8375,
+            "sample_rate": 24000,
+            "near_full_scale_samples": 0
+          },
+          "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+        },
+        "performances": {
+          "neutral": {
+            "id": "emns:28",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/emns/recorded_audio_167fAwe.wav",
+            "sha256": "e3acc0306ccc79d6194257f19cd5d03b56f4e2410ca1b4bd160aaae547b5b9ff",
+            "transcript": "After retirement, he functioned as Chairman of the Hyderabad State Railway Company.",
+            "source": "https://www.openslr.org/136/",
+            "annotations": {
+              "original_row": {
+                "id": "28",
+                "utterance": "After retirement, he functioned as Chairman of the Hyderabad State Railway Company.",
+                "description": "{user_id} said {transcription} With a {emotion} voice.",
+                "emotion": "Neutral",
+                "date_created": "2022-05-13 13:50:56.842715",
+                "status": "Complete",
+                "gender": "Female",
+                "age": "20s",
+                "level": "0",
+                "audio_recording": "wavs/recorded_audio_167fAwe.webm",
+                "user_id": "3"
+              },
+              "original_path": "/Users/x/.local/share/swarms/scene-datasets/emns/recorded_audio_167fAwe.webm",
+              "original_sha256": "736f05d15aa5492c0aecd99b97038d9c04f572a9f2f24f6fd698ff066d775d74",
+              "conversion": "mono 24 kHz PCM; no mastering",
+              "level_note": "Source numeric level retained; not equated to any model strength",
+              "selection": "First complete source row with >54 characters and 5\u201312 second audio, not a listening-quality ranking"
+            },
+            "qc": {
+              "duration_seconds": 5.8375,
+              "sample_rate": 24000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "anger": {
+            "id": "emns:59",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/emns/recorded_audio_nX535py.wav",
+            "sha256": "4ba9b1753a3cbd0ee80ae28fbd164a5cd72b0a43adeea09ad88ac52d3b808714",
+            "transcript": "He represented Queensland and played in the English county scene at first class level.",
+            "source": "https://www.openslr.org/136/",
+            "annotations": {
+              "original_row": {
+                "id": "59",
+                "utterance": "He represented Queensland and played in the English county scene at first class level.",
+                "description": "{transcription} said {user_id} in a {emotion} voice. Placing emphasis on {He}, {Queensland}, {English} and {first class level}.",
+                "emotion": "Angry",
+                "date_created": "2022-06-03 11:07:06.127212",
+                "status": "Complete",
+                "gender": "Female",
+                "age": "20s",
+                "level": "8",
+                "audio_recording": "wavs/recorded_audio_nX535py.webm",
+                "user_id": "3"
+              },
+              "original_path": "/Users/x/.local/share/swarms/scene-datasets/emns/recorded_audio_nX535py.webm",
+              "original_sha256": "acaf0cb175d1c5528c82c22a5053c7edd9125c83311e0331c273c99021f3ef0b",
+              "conversion": "mono 24 kHz PCM; no mastering",
+              "level_note": "Source numeric level retained; not equated to any model strength",
+              "selection": "First complete source row with >54 characters and 5\u201312 second audio, not a listening-quality ranking"
+            },
+            "qc": {
+              "duration_seconds": 6.0775,
+              "sample_rate": 24000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "sadness": {
+            "id": "emns:13",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/emns/recorded_audio_vmvzVZk.wav",
+            "sha256": "369e1fd0003d06d81aaf4a38f9d52439f2cf525529c1e2d8b351252dfab9cf6e",
+            "transcript": "Abraham also played for the Atlanta Falcons and Arizona Cardinals.",
+            "source": "https://www.openslr.org/136/",
+            "annotations": {
+              "original_row": {
+                "id": "13",
+                "utterance": "Abraham also played for the Atlanta Falcons and Arizona Cardinals.",
+                "description": "{user_id} said {transcription} With a {emotion} voice.",
+                "emotion": "Sad",
+                "date_created": "2022-05-11 10:45:52.463386",
+                "status": "Complete",
+                "gender": "Female",
+                "age": "20s",
+                "level": "6",
+                "audio_recording": "wavs/recorded_audio_vmvzVZk.webm",
+                "user_id": "3"
+              },
+              "original_path": "/Users/x/.local/share/swarms/scene-datasets/emns/recorded_audio_vmvzVZk.webm",
+              "original_sha256": "f06210f28232b0609510c2df7d92498d9775be7879834ceb0bf73832074ac5c5",
+              "conversion": "mono 24 kHz PCM; no mastering",
+              "level_note": "Source numeric level retained; not equated to any model strength",
+              "selection": "First complete source row with >54 characters and 5\u201312 second audio, not a listening-quality ranking"
+            },
+            "qc": {
+              "duration_seconds": 6.5875,
+              "sample_rate": 24000,
+              "near_full_scale_samples": 1
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          },
+          "happiness": {
+            "id": "emns:21",
+            "path": "/Users/x/.local/share/swarms/scene-datasets/emns/recorded_audio_fCBtcy4.wav",
+            "sha256": "0e4061863580f08bc18420102c40d1e2cf941ab1c1633c35c3188ae84c4b15c5",
+            "transcript": "They are lacy, net-like wrappers typically used for deep-fried cha gio rolls.",
+            "source": "https://www.openslr.org/136/",
+            "annotations": {
+              "original_row": {
+                "id": "21",
+                "utterance": "They are lacy, net-like wrappers typically used for deep-fried cha gio rolls.",
+                "description": "{user_id} said {transcription}.",
+                "emotion": "Happy",
+                "date_created": "2022-05-13 13:35:01.260602",
+                "status": "Complete",
+                "gender": "Female",
+                "age": "20s",
+                "level": "5",
+                "audio_recording": "wavs/recorded_audio_fCBtcy4.webm",
+                "user_id": "3"
+              },
+              "original_path": "/Users/x/.local/share/swarms/scene-datasets/emns/recorded_audio_fCBtcy4.webm",
+              "original_sha256": "b4191b612abadc6ddac4d7732c2e704f2b041bf7c93d926eb3fc8b0ba54fcaa8",
+              "conversion": "mono 24 kHz PCM; no mastering",
+              "level_note": "Source numeric level retained; not equated to any model strength",
+              "selection": "First complete source row with >54 characters and 5\u201312 second audio, not a listening-quality ranking"
+            },
+            "qc": {
+              "duration_seconds": 6.2375,
+              "sample_rate": 24000,
+              "near_full_scale_samples": 0
+            },
+            "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+          }
+        },
+        "source_sex": "Unverified",
+        "presentation_review": "Not yet judged by listening",
+        "allowed_roles": [
+          "A"
+        ]
+      },
+      "0015": {
+        "speaker_id": "0015",
+        "identity": {
+          "id": "esd:0015:neutral",
+          "label": "0015 \u00b7 neutral \u00b7 research reference",
+          "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+          "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+          "transcript": "This was the twenty fifth of november, seventeen eighty three.",
+          "annotation_id": "esd:0015:neutral",
+          "annotation_status": "candidate_unrated"
+        },
+        "performances": {
+          "anger": {
+            "id": "esd:0015:anger",
+            "label": "0015 \u00b7 anger \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-anger.wav",
+            "sha256": "21c19d49142b6db9ba96bb6d5ffcbf55132a77183e71d31a877a36bc9d9ce887",
+            "transcript": "This was the twenty fifth of november, seventeen eighty three.",
+            "annotation_id": "esd:0015:anger",
+            "annotation_status": "candidate_unrated"
+          },
+          "sadness": {
+            "id": "esd:0015:sadness",
+            "label": "0015 \u00b7 sadness \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-sadness.wav",
+            "sha256": "04ce66ee24099fac28d82dbb23441e90083601cce577755353cc410b066ffcf6",
+            "transcript": "This was the twenty fifth of november, seventeen eighty three.",
+            "annotation_id": "esd:0015:sadness",
+            "annotation_status": "candidate_unrated"
+          },
+          "neutral": {
+            "id": "esd:0015:neutral",
+            "label": "0015 \u00b7 neutral \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+            "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+            "transcript": "This was the twenty fifth of november, seventeen eighty three.",
+            "annotation_id": "esd:0015:neutral",
+            "annotation_status": "candidate_unrated"
+          },
+          "happiness": {
+            "id": "esd:0015:happiness",
+            "label": "0015 \u00b7 happiness \u00b7 research reference",
+            "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-happiness.wav",
+            "sha256": "17ea58ac011f19b3bc3ab2eb83a55e944b5f4f0020d42b64d4f5a94aa287a83b",
+            "transcript": "This was the twenty fifth of november, seventeen eighty three.",
+            "annotation_id": "esd:0015:happiness",
+            "annotation_status": "candidate_unrated"
+          }
+        },
+        "source_sex": "Unverified",
+        "presentation_review": "Not yet judged by listening",
+        "allowed_roles": [
+          "B"
+        ]
+      }
+    },
+    "casting_note": "This remains a one-role swap: EMNS for Robin, fixed ESD for Casey. It cannot supply arbitrary two-actor casting."
+  }
+}

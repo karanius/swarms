@@ -1,0 +1,46 @@
+{
+  "model": "dia",
+  "text": "I need you to stay right here.",
+  "speaker": "0012",
+  "emotion": "neutral",
+  "settings": {
+    "seed": 7,
+    "use_reference": false
+  },
+  "applied_settings": {
+    "seed": 7,
+    "use_reference": false
+  },
+  "parent_id": null,
+  "reference": {
+    "id": "esd:0012:neutral",
+    "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+    "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+    "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+    "transcript": "I have bunburyed all over goat on two separate occasions."
+  },
+  "created": 1793377288.982344,
+  "voice_conditioning": "uncontrolled",
+  "path": "/Users/x/projects/swarms/knowledge/research/paper-16-study/runs/take-20261030-232128-4e4b71f2/native.wav",
+  "listening_path": "/Users/x/projects/swarms/knowledge/research/paper-16-study/runs/take-20261030-232128-4e4b71f2/listening.wav",
+  "sha256": "b076b16cde285dbc4f22127bd5c0ddc7bbcfdb018e2811792a5b999a0492295f",
+  "duration_seconds": 3.449875,
+  "sample_rate": 24000,
+  "gain": 112.8495937527761,
+  "loudness": {
+    "input_i": "-64.55",
+    "input_tp": "-43.05",
+    "input_lra": "0.00",
+    "input_thresh": "-74.55",
+    "output_i": "-64.55",
+    "output_tp": "-43.05",
+    "output_lra": "0.00",
+    "output_thresh": "-74.55",
+    "normalization_type": "dynamic",
+    "target_offset": "41.55"
+  },
+  "id": "take-20261030-232128-4e4b71f2",
+  "elapsed_seconds": 11.429741144180298,
+  "assessment": "Unrated; generation is not validation",
+  "url": "/research-jupyter/files/paper-16-audio/take-20261030-232128-4e4b71f2.wav"
+}

@@ -5,3 +5,5 @@ settings-*.png
 
 # Generated native Langflow adapter (rebuild from original source)
 public/langflow-native/
+
+public/langflow-native-v3/

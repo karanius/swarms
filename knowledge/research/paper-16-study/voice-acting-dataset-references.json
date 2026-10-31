@@ -1,0 +1,50 @@
+{
+  "purpose": "Reusable acted speech references for Paper 16; discovery is separate from qualification",
+  "references": [
+    {
+      "name": "voice_datasets directory",
+      "url": "https://github.com/jim-schwoebel/voice_datasets",
+      "role": "User-provided discovery reference",
+      "status": "Directory inspected; individual listings are not independently qualified",
+      "saved_date": "2026-10-31"
+    },
+    {
+      "name": "EMNS",
+      "url": "https://www.openslr.org/136/",
+      "role": "First audition candidate: single-speaker expressive narrative speech",
+      "status": "Official documentation checked; audio not auditioned in this investigation",
+      "documented_features": [
+        "transcripts",
+        "emotion",
+        "intensity",
+        "acted delivery descriptions"
+      ],
+      "documented_license": "Apache 2.0 listed by OpenSLR"
+    },
+    {
+      "name": "CREMA-D",
+      "url": "https://github.com/CheyneyComputerScience/CREMA-D",
+      "role": "Alternative: actor-specific emotion and intensity comparisons",
+      "status": "Official documentation checked; audio not auditioned in this investigation",
+      "documented_license": "ODbL database / DbCL individual contents; review scope before reuse"
+    },
+    {
+      "name": "EmoV-DB",
+      "url": "https://www.openslr.org/115/",
+      "role": "Alternative: emotional speech synthesis recordings",
+      "status": "Official summary checked; licence and samples need further review"
+    },
+    {
+      "name": "JL Corpus",
+      "url": "https://github.com/jim-schwoebel/voice_datasets",
+      "role": "Directory lead for nuanced acted English emotions",
+      "status": "Discovery lead only; original source, licence and audio unverified"
+    },
+    {
+      "name": "GEMEP",
+      "url": "https://github.com/jim-schwoebel/voice_datasets",
+      "role": "Directory lead for nuanced acted emotional states",
+      "status": "Discovery lead only; original source, licence and audio unverified"
+    }
+  ]
+}

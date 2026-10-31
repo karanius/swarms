@@ -1,0 +1,75 @@
+{
+  "access_date": "2026-10-30",
+  "sources": [
+    {
+      "url": "https://github.com/ml-explore/mlx-lm",
+      "license_observation": "MIT",
+      "claim_and_limit": "Apple Silicon text generation; no local inference tested"
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "license_observation": "Apache-2.0",
+      "claim_and_limit": "Original model weights; converted variant not audited"
+    },
+    {
+      "url": "https://github.com/Blaizzy/mlx-audio",
+      "license_observation": "MIT",
+      "claim_and_limit": "Apple Silicon audio implementation, Kokoro support"
+    },
+    {
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M",
+      "license_observation": "Apache-2.0",
+      "claim_and_limit": "Original TTS weights; voice/output rights still separate"
+    },
+    {
+      "url": "https://github.com/SWivid/F5-TTS",
+      "license_observation": "code MIT; pretrained weights CC-BY-NC",
+      "claim_and_limit": "Exclude default pretrained weights from commercial plan"
+    },
+    {
+      "url": "https://github.com/SWivid/F5-TTS/blob/main/src/f5_tts/infer/SHARED.md",
+      "license_observation": "checkpoint-specific CC-BY-NC-4.0 entries",
+      "claim_and_limit": "Exact checkpoint verification required"
+    },
+    {
+      "url": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+      "license_observation": "Apache-2.0",
+      "claim_and_limit": "Optional still image weights; no host benchmark"
+    },
+    {
+      "url": "https://huggingface.co/docs/diffusers/main/en/optimization/mps",
+      "license_observation": "documentation",
+      "claim_and_limit": "MPS backend support, not model-specific throughput proof"
+    },
+    {
+      "url": "https://github.com/Wan-Video/Wan2.1",
+      "license_observation": "not approved for selected production checkpoint",
+      "claim_and_limit": "NVIDIA guidance does not establish Mac readiness; defer"
+    },
+    {
+      "url": "https://ffmpeg.org/legal.html",
+      "license_observation": "LGPL2.1+ with optional GPL components",
+      "claim_and_limit": "Actual build not verified"
+    }
+  ],
+  "host": {
+    "method": "sysctl read-only",
+    "model": "Mac15,8",
+    "chip": "Apple M3 Max",
+    "memory_bytes": 68719476736
+  },
+  "local_observations": {
+    "ollama": "/opt/homebrew/bin/ollama",
+    "uv": "/opt/homebrew/bin/uv",
+    "ffmpeg_on_PATH": false,
+    "ffprobe_on_PATH": false,
+    "documentation_read": "/Users/x/projects/money/runtimes/daily-video/README.md"
+  },
+  "operations_not_performed": [
+    "downloads",
+    "installs",
+    "inference",
+    "service changes",
+    "publishing"
+  ]
+}

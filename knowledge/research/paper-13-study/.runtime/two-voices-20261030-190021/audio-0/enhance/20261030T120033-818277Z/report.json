@@ -1,0 +1,85 @@
+{
+  "status": "passed",
+  "source": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190021/audio-0/master/20261030T120032-838282Z/polished.wav",
+  "source_sha256": "895e6ca33d1b8a15e60753b284ed0beaa3d0e9ccb34f9c7cd1c415f4eefa3031",
+  "original_copy_sha256": "895e6ca33d1b8a15e60753b284ed0beaa3d0e9ccb34f9c7cd1c415f4eefa3031",
+  "original": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190021/audio-0/enhance/20261030T120033-818277Z/mastered-input.wav",
+  "output": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190021/audio-0/enhance/20261030T120033-818277Z/enhanced.wav",
+  "output_sha256": "f9cd98eb6a1c14d0717cf7e94ac61a2796bf9929cd58f68c458a1d0ff2aa1969",
+  "before": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190021/audio-0/enhance/20261030T120033-818277Z/mastered-matched.wav",
+  "after": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190021/audio-0/enhance/20261030T120033-818277Z/enhanced-matched.wav",
+  "comparison": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190021/audio-0/enhance/20261030T120033-818277Z/mastered-then-enhanced.wav",
+  "settings": {
+    "device": "cpu",
+    "threads": 8,
+    "nfe": 32,
+    "solver": "midpoint",
+    "denoise_strength": 0.1,
+    "temperature": 0.5,
+    "seed": 42,
+    "max_seconds": 120
+  },
+  "model": {
+    "source_repo": "https://github.com/resemble-ai/resemble-enhance.git",
+    "source_revision": "8e978149bfe8abab3eb77d965d579a111afdb0ff",
+    "model_repo": "ResembleAI/resemble-enhance",
+    "model_revision": "4e3510ce4a8391159f665903544c5150bee7b2cb",
+    "files": {
+      "enhancer_stage2/hparams.yaml": {
+        "bytes": 717,
+        "sha256": "80c3f15bc5a5b2cacf2c698699a0f6599d62911c0d53e1d6dee895c0d7cbaeac"
+      },
+      "enhancer_stage2/ds/G/latest": {
+        "bytes": 7,
+        "sha256": "37a8eec1ce19687d132fe29051dca629d164e2c4958ba141d5f4133a33f0688f"
+      },
+      "enhancer_stage2/ds/G/default/mp_rank_00_model_states.pt": {
+        "bytes": 713176232,
+        "sha256": "f9d035f318de3e6d919bc70cf7ad7d32b4fe92ec5cbe0b30029a27f5db07d9d6"
+      }
+    }
+  },
+  "inference_evidence": {
+    "forward_calls": 1,
+    "parameter_devices": [
+      "cpu"
+    ],
+    "input_devices": [
+      "cpu"
+    ]
+  },
+  "inference_seconds": 6.435,
+  "elapsed_seconds": 8.289,
+  "duration_seconds": 4.91734693877551,
+  "sample_rate": 44100,
+  "raw_peak": 0.820004940032959,
+  "output_gain": 1.0,
+  "source_measurement": {
+    "input_i": "-15.96",
+    "input_tp": "-1.50",
+    "input_lra": "1.40",
+    "input_thresh": "-26.21",
+    "output_i": "-15.10",
+    "output_tp": "-1.50",
+    "output_lra": "1.20",
+    "output_thresh": "-25.31",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.90"
+  },
+  "enhanced_measurement": {
+    "input_i": "-17.34",
+    "input_tp": "-1.71",
+    "input_lra": "2.00",
+    "input_thresh": "-27.65",
+    "output_i": "-15.05",
+    "output_tp": "-1.50",
+    "output_lra": "1.70",
+    "output_thresh": "-25.35",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.95"
+  },
+  "comparison_loudness_difference_lu": 0.0,
+  "comparison_lufs": -21.0,
+  "tts_rerun": false,
+  "limits": "CPU inference; no claim of MPS acceleration. Neural reconstruction may change voice texture or introduce artifacts. Output has peak headroom but is not remastered to -16 LUFS. Quality must be judged by listening."
+}

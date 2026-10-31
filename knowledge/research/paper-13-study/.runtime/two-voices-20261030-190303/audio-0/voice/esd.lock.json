@@ -1,0 +1,23 @@
+{
+  "repo": "jspaulsen/esd",
+  "revision": "dc57273e5872666a110e68dd9e0eee11d5efad60",
+  "language": "en",
+  "expected_rows": 17500,
+  "expected_speakers": 10,
+  "emotions": [
+    "neutral",
+    "happiness",
+    "anger",
+    "sadness",
+    "surprise"
+  ],
+  "shards": [
+    "data/train-00003-of-00007.parquet",
+    "data/train-00004-of-00007.parquet",
+    "data/train-00005-of-00007.parquet",
+    "data/train-00006-of-00007.parquet"
+  ],
+  "source": "https://huggingface.co/datasets/jspaulsen/esd",
+  "original_source": "https://github.com/HLTSingapore/Emotional-Speech-Data",
+  "usage": "Research evaluation only. Mirror labels CC-BY-NC-4.0; original authors state research use and request a licence form. Consult original terms before broader use."
+}

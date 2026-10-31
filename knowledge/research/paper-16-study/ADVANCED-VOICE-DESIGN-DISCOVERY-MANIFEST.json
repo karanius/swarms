@@ -1,0 +1,169 @@
+{
+  "audit_date": "2026-10-31",
+  "scope": "Static official-source discovery only; no installs, upstream execution, model downloads, generation, remote uploads or service/UI changes",
+  "source_root": "/tmp/advanced-voice-design-source-audit",
+  "repositories": {
+    "CosyVoice": {
+      "repository": "FunAudioLLM/CosyVoice",
+      "revision": "074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc",
+      "folder": "/tmp/advanced-voice-design-source-audit/CosyVoice",
+      "inspected_files": {
+        "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "README.md": "66436370172c2830ed98aa643b31898c65e16eee14ade68f00828d21fae602e0",
+        "example.py": "5285fe12f5a71a5225dcd06072496a8e31772d8e7fb0af5fe428c72c637691ec",
+        "cosyvoice/cli/cosyvoice.py": "4b2a605f129d172cd031286a14a591396c2e8ed0bf53258acc7445525fdaa65b"
+      }
+    },
+    "mlx-audio": {
+      "repository": "Blaizzy/mlx-audio",
+      "revision": "7a0986280fe295f4cf40f64164bb23abed416a22",
+      "folder": "/tmp/advanced-voice-design-source-audit/mlx-audio",
+      "inspected_files": {
+        "LICENSE": "11d27e0259dec3a323fa6c04c330621d0950ab96c6760d5aac3e2e97229e6f22",
+        "README.md": "42705c33001cb76570db55baf2196031a118606037ffbfb4a7eebb8b6c1bb8af",
+        "mlx_audio/tts/models/qwen3_tts/qwen3_tts.py": "cf264ff51fa16c232cca5ded3ce052af6f4f1137d1371b86ba9f4e2a1a526f0a",
+        "mlx_audio/tts/models/spark/spark.py": "27c2bf3cf15ead6eb1a72e0fbce51747f6a9390daace4c4ec0a50a5194be040d"
+      }
+    },
+    "OpenVoice": {
+      "repository": "myshell-ai/OpenVoice",
+      "revision": "74a1d147b17a8c3092dd5430504bd83ef6c7eb23",
+      "folder": "/tmp/advanced-voice-design-source-audit/OpenVoice",
+      "inspected_files": {
+        "demo_part3.ipynb": "b60a930f422c0a39908142f10d769e7c7afeeea5b1010b50dda55c269cdd0843",
+        "LICENSE": "bb3541f421e6273d3a3e3dd5bdba2bd3b79a3c2eadca65cde9c62c2467903ac0",
+        "demo_part1.ipynb": "52e27e90cb6d37453041527a781400939a9f06614751b638df019a04f4181337",
+        "demo_part2.ipynb": "4c0ff1de8cf17f362af40154b61ab5fb3964eb28fac3494aeebc968599755693",
+        "README.md": "3c6f5d24798763ebb9ca5fea8a1cbd21b935a140300ba531138b5518cd297dfc",
+        "openvoice/api.py": "6830abaf9b0ea6023fe7e3df3d9a0a1fd9b73a7dbbc13f8a892da009052637b9",
+        "docs/QA.md": "e982bf60b0351c311738e7d367666f8d8e6f7fb2d7e55cc7f988cc648a66904b",
+        "docs/USAGE.md": "8dc88ad1a938a4fa07b5cad8d6950030444e4d1a1c4626fd3998b2cb121fc2f0"
+      }
+    },
+    "Spark-TTS": {
+      "repository": "SparkAudio/Spark-TTS",
+      "revision": "2f1ea9082400547242641f5271b6f941c9f439d1",
+      "folder": "/tmp/advanced-voice-design-source-audit/Spark-TTS",
+      "inspected_files": {
+        "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "webui.py": "a67424a9940433b5f9d41e5265b79985cb2ddcee3e1345854dbe05753d269871",
+        "README.md": "37f5c5000cbb7c740cb5693fde39d1aef4513c4fe1f96a9522286ab080ea1d0b",
+        "cli/SparkTTS.py": "aab22cfba0504bebcbc5dc572b026298c58c10b2be221a7ce3f0f7659182923f",
+        "cli/inference.py": "6676cbdd28e45e4606f1367f151b66bb7a713606a7605ba80f4f44b2dbcc9a28",
+        "sparktts/utils/token_parser.py": "c864ed59380998947c8b46f85785e34c5c8155153323be41c96e343d45bce502"
+      }
+    },
+    "Qwen3-TTS": {
+      "repository": "QwenLM/Qwen3-TTS",
+      "revision": "022e286b98fbec7e1e916cb940cdf532cd9f488e",
+      "folder": "/tmp/advanced-voice-design-source-audit/Qwen3-TTS",
+      "inspected_files": {
+        "LICENSE": "a44a6081c73ad75f0255bb2bb5cab74ef1829565a895a24e53a4f11290ab7655",
+        "README.md": "51f4497e70e9ae024b10ee4bbcb470366f10592edeab56c58d2194ba2dadb745",
+        "finetuning/README.md": "7a0bb1d3396ff4a41ff5958ba5db0b87547ac05df91874208d530e73e8be476f",
+        "qwen_tts/inference/qwen3_tts_model.py": "e1da450732857c1f5fe3e36ebab85db2f6dc6a48caaff6973f463384e30275e4"
+      }
+    },
+    "fish-speech": {
+      "repository": "fishaudio/fish-speech",
+      "revision": "0f8a12e8a651062fdee9c33a894bdccd3a8513f1",
+      "folder": "/tmp/advanced-voice-design-source-audit/fish-speech",
+      "inspected_files": {
+        "LICENSE": "733a32442087acbda12ecafe8e71eb8ee5890c89b50ce7ac4ea3777faa3c823e",
+        "README.md": "baa129fac0b9d32c55b3972bf8ccabeab3ebba1ca435e313e20c0adea5a7088d",
+        "docs/en/inference.md": "454e72a373544c0299bccca0e3ae634043d26d49303106d852b1a79c4694b1f7"
+      }
+    },
+    "VoxCPM": {
+      "repository": "OpenBMB/VoxCPM",
+      "revision": "cce58a5b59303c9bd63d12f23afe6a49a4a80c59",
+      "folder": "/tmp/advanced-voice-design-source-audit/VoxCPM",
+      "inspected_files": {
+        "LICENSE": "4f10acc209addacfad28293315c74c4cd648f771ee1263a748f1781d1e0265e4",
+        "README.md": "f670fdf5f3faea03a71f717d25057b3bc100742edd9feb24d375443b091cc61f",
+        "app.py": "4c193030680d51240be8726f192faa15966b51407d14a62653058da89bf3d80e",
+        "src/voxcpm/core.py": "fb7162a6c8bb9b29a8cf32f0e97344f55761e5bafda4193a13476cc78ab5a8ba",
+        "src/voxcpm/model/voxcpm2.py": "31ad554bc15a4da18cf820c6fda97a5b2c56ac8e9a5e66031a264d363661575c"
+      }
+    },
+    "VoiceSculptor": {
+      "repository": "ASLP-lab/VoiceSculptor",
+      "revision": "db7aeac78da0c65c328996c4eab9f83295acf708",
+      "folder": "/tmp/advanced-voice-design-source-audit/VoiceSculptor",
+      "inspected_files": {
+        "README.md": "09ba549f6c1f09bf2e65ffb3ab322be391308dcb4d4636246693c8eba88c9146",
+        "infer.py": "7a47c6d9eab85729fa56e96859f2e4faee7fbfdfdc41e2a0c84043e04ed21ec5",
+        "LICENSE.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "docs/voice_design_en.md": "0e4075b3df6a6ff0f6537650c37109c9531f8119c0fdcd561f46afae5f91df95",
+        "rag/server.py": "72e89dd62fd3b5508f0f6671937b01a488f221f2b9095b2bc16d5e02d41f7f19",
+        "rag/client.py": "a078bc293e9dcc798d7b97e4b7701aeef679743cced3cc4db3355a4b1aa900e8",
+        "gradio/webui.py": "5cade2f709200faccb9095e9b7a116a679b625a64e1246d99ee35bce8e6ba245"
+      }
+    }
+  },
+  "model_metadata": [
+    {
+      "model": "fishaudio/s2-pro",
+      "revision": "1de9996b6be38b745688de084d87a5633f714e4e",
+      "license": "other",
+      "gated": false,
+      "model_card": "https://huggingface.co/fishaudio/s2-pro"
+    },
+    {
+      "model": "FunAudioLLM/Fun-CosyVoice3-0.5B",
+      "revision": "29e01c4e8d000f4bcd70751be16fa94bf3d85a18",
+      "license": "apache-2.0",
+      "gated": false,
+      "model_card": "https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B"
+    },
+    {
+      "model": "fishaudio/drama-3",
+      "revision": "78e5ab79e49aa9a25abe8799eff2c4d73a1c3216",
+      "license": "other",
+      "gated": false,
+      "model_card": "https://huggingface.co/fishaudio/drama-3"
+    },
+    {
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+      "license": "apache-2.0",
+      "gated": false,
+      "model_card": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign"
+    },
+    {
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "license": "apache-2.0",
+      "gated": false,
+      "model_card": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base"
+    },
+    {
+      "model": "SparkAudio/Spark-TTS-0.5B",
+      "revision": "642071559bfc6346c2359d19dcb6be3f9dd8a05d",
+      "license": "cc-by-nc-sa-4.0",
+      "gated": false,
+      "model_card": "https://huggingface.co/SparkAudio/Spark-TTS-0.5B"
+    },
+    {
+      "model": "openbmb/VoxCPM2",
+      "revision": "32279effe8c19989596f05d353d1447f51d9e915",
+      "license": "apache-2.0",
+      "gated": false,
+      "model_card": "https://huggingface.co/openbmb/VoxCPM2"
+    },
+    {
+      "model": "ASLP-lab/VoiceSculptor-VD",
+      "revision": "6d7a5573960727b00a5b8f3de032a22dfee7f16e",
+      "license": "apache-2.0",
+      "gated": false,
+      "model_card": "https://huggingface.co/ASLP-lab/VoiceSculptor-VD"
+    },
+    {
+      "model": "myshell-ai/OpenVoiceV2",
+      "revision": "f36e7edfe1684461a8343844af60babc2efbb727",
+      "license": "mit",
+      "gated": false,
+      "model_card": "https://huggingface.co/myshell-ai/OpenVoiceV2"
+    }
+  ]
+}

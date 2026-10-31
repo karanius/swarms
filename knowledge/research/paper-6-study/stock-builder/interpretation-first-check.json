@@ -1,0 +1,8 @@
+{
+  "checks": 49,
+  "passed": false,
+  "issues": [
+    "flow retains all composite obligations"
+  ],
+  "scope": "Internal structural interpretation check only, not a complete validator or semantic purpose test"
+}

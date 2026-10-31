@@ -1,0 +1,26 @@
+[
+  {
+    "engine": "voxcpm",
+    "file": "/Users/x/projects/swarms/knowledge/research/paper-14-study/voxcpm-dialogue-native.wav",
+    "parts": [
+      "/Users/x/projects/swarms/knowledge/research/paper-14-study/runs/voxcpm-turn-0-01/native.wav",
+      "/Users/x/projects/swarms/knowledge/research/paper-14-study/runs/voxcpm-turn-1-01/native.wav",
+      "/Users/x/projects/swarms/knowledge/research/paper-14-study/runs/voxcpm-turn-2-01/native.wav",
+      "/Users/x/projects/swarms/knowledge/research/paper-14-study/runs/voxcpm-turn-3-01/native.wav"
+    ],
+    "gap_seconds": 0.2,
+    "sha256": "016a2c3aff96d86d7e06a16b568caca5c135adebaf77bb6ad314b4c1575589d8"
+  },
+  {
+    "engine": "f5",
+    "file": "/Users/x/projects/swarms/knowledge/research/paper-14-study/f5-dialogue-native.wav",
+    "parts": [
+      "/Users/x/projects/swarms/knowledge/research/paper-14-study/baseline/f5-turn-0-voice.wav",
+      "/Users/x/projects/swarms/knowledge/research/paper-14-study/baseline/f5-turn-1-voice.wav",
+      "/Users/x/projects/swarms/knowledge/research/paper-14-study/baseline/f5-turn-2-voice.wav",
+      "/Users/x/projects/swarms/knowledge/research/paper-14-study/baseline/f5-turn-3-voice.wav"
+    ],
+    "gap_seconds": 0.2,
+    "sha256": "cde627c5300dec5f38e131433cb4d3fa9a064af93033b4244c4517681a2c2f13"
+  }
+]

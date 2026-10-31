@@ -1,0 +1,27 @@
+{
+  "full_run": "0263d5e85b5ba4b677c673b1",
+  "uploaded_recording_run": "671ee65839cc34a7165143d9",
+  "enhance_only_run": "828f8585a1eb3a5f42b2ce95",
+  "preset_count": 100,
+  "custom_reference": true,
+  "session_isolation": true,
+  "advanced_settings_observed": true,
+  "session_defaults_round_trip": true,
+  "automated_tests": 20,
+  "browser": {
+    "speech_only": "dd9523a0d151305768c017d4",
+    "master_only": "8ea0f7a44d3cd238426e1bb6",
+    "enhance_only": "ea61cec2597abafd971eb730",
+    "custom_reference_upload": true,
+    "graph_export_and_validated_reload": true,
+    "defaults_restore_steps": 19,
+    "actual_volume_playback_completed": true
+  },
+  "independent_checks": [
+    "0263d5e85b5ba4b677c673b1",
+    "671ee65839cc34a7165143d9",
+    "dd9523a0d151305768c017d4",
+    "8ea0f7a44d3cd238426e1bb6",
+    "ea61cec2597abafd971eb730"
+  ]
+}

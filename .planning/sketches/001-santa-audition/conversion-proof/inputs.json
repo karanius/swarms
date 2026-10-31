@@ -1,0 +1,40 @@
+{
+  "actor": {
+    "id": "crema:1006_MTI_ANG_XX",
+    "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1006/1006_MTI_ANG_XX.wav",
+    "sha256": "d8a324371c17b8a9371e79c02642f1c7f1782b3c838de3346dc2904c482d27a9",
+    "transcript": "Maybe tomorrow it will be cold.",
+    "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_MTI_ANG_XX.wav",
+    "annotations": {
+      "intended_emotion": "A",
+      "intended_intensity": "XX",
+      "audio_only_votes": {
+        "A": 10,
+        "D": 0,
+        "F": 0,
+        "H": 0,
+        "N": 0,
+        "S": 0
+      },
+      "n": 10,
+      "target_share": 1.0,
+      "conditional_intensity": {
+        "A": 66.5,
+        "D": null,
+        "F": null,
+        "H": null,
+        "N": null,
+        "S": null
+      },
+      "selection": "Top source-metadata candidate, not listener-approved"
+    },
+    "qc": {
+      "duration_seconds": 3.7704375,
+      "sample_rate": 16000,
+      "near_full_scale_samples": 20
+    },
+    "qualification": "Candidate; source annotations retained, acting and transcript unreviewed"
+  },
+  "target": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/82a4a0db-dfd8-4389-8b9b-c6553ab5d92f/voice.wav",
+  "revision": "51383efd921027683c89e5348211d93ff12ac2a8"
+}

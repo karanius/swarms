@@ -1,0 +1,52 @@
+{
+  "artifact_checks": [
+    {
+      "emotion": "neutral",
+      "strength": 1.0,
+      "listening_lufs": -23.01,
+      "valid": true
+    },
+    {
+      "emotion": "anger",
+      "strength": 0.5,
+      "listening_lufs": -23.01,
+      "valid": true
+    },
+    {
+      "emotion": "anger",
+      "strength": 1.0,
+      "listening_lufs": -23.0,
+      "valid": true
+    }
+  ],
+  "earlier_papers_unchanged": true,
+  "reference_files_unchanged": true,
+  "observed_feature_devices": [
+    "mps:0"
+  ],
+  "listening_judgment": null,
+  "browser_media_loaded": 5,
+  "browser_playback_started": true,
+  "browser_screenshot": "review/indextts-comparison.png",
+  "conditions": [
+    {
+      "emotion": "neutral",
+      "strength": 1.0,
+      "duration": 2.75156462585034
+    },
+    {
+      "emotion": "anger",
+      "strength": 0.5,
+      "duration": 2.948934240362812
+    },
+    {
+      "emotion": "anger",
+      "strength": 1.0,
+      "duration": 2.995374149659864
+    }
+  ],
+  "native_api": "IndexTTS2.infer(spk_audio_prompt=neutral, emo_audio_prompt=selected, emo_alpha=strength)",
+  "notebook_reopened": true,
+  "notebook_trusted": true,
+  "original_recording_player_preserved": true
+}

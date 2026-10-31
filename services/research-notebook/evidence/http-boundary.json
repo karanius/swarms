@@ -1,0 +1,14 @@
+[
+  {
+    "check": "cross-origin proxy request rejected",
+    "status": 403
+  },
+  {
+    "check": "native Notebook page available",
+    "status": 200
+  },
+  {
+    "check": "direct unauthenticated API rejected",
+    "status": 403
+  }
+]

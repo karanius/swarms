@@ -1,0 +1,50 @@
+[
+  {
+    "run": "dia-utterance-01",
+    "seconds": 4.12325,
+    "api_seconds": 61.5760760307312,
+    "sample_rate": 24000,
+    "peak": 0.9992251396179199,
+    "integrity_passed": true
+  },
+  {
+    "run": "dia-dialogue-01",
+    "seconds": 9.916625,
+    "api_seconds": 21.86178684234619,
+    "sample_rate": 24000,
+    "peak": 1.0,
+    "integrity_passed": true
+  },
+  {
+    "run": "voxcpm-turn-0-01",
+    "seconds": 4.32,
+    "api_seconds": 50.9280960559845,
+    "sample_rate": 48000,
+    "peak": 0.27540671825408936,
+    "integrity_passed": true
+  },
+  {
+    "run": "voxcpm-turn-1-01",
+    "seconds": 5.12,
+    "api_seconds": 5.305459976196289,
+    "sample_rate": 48000,
+    "peak": 0.8355463743209839,
+    "integrity_passed": true
+  },
+  {
+    "run": "voxcpm-turn-2-01",
+    "seconds": 4.48,
+    "api_seconds": 4.44834303855896,
+    "sample_rate": 48000,
+    "peak": 0.22764968872070312,
+    "integrity_passed": true
+  },
+  {
+    "run": "voxcpm-turn-3-01",
+    "seconds": 4.16,
+    "api_seconds": 4.241223096847534,
+    "sample_rate": 48000,
+    "peak": 0.7136601209640503,
+    "integrity_passed": true
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "light": {
+    "body": 13.85,
+    "secondary": 5.12,
+    "helper": 5.5,
+    "button": 5.19,
+    "active_navigation": 5.62,
+    "input_placeholder": 5.5
+  },
+  "dark": {
+    "body": 14.95,
+    "secondary": 7.27,
+    "helper": 6.64,
+    "button": 7.73,
+    "active_navigation": 6.96,
+    "input_placeholder": 6.64
+  }
+}

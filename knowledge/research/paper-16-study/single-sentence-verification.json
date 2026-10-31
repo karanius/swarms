@@ -1,0 +1,134 @@
+{
+  "contract_tests_passed": 53,
+  "browser_multi_sentence_submission_rejected": true,
+  "direct_api_multi_sentence_rejected": true,
+  "boundary_cases": [
+    {
+      "valid": true,
+      "text": "Dr. Smith lives in the U.S. and works here.",
+      "sentence_count": 1,
+      "sentences": [
+        "Dr. Smith lives in the U.S. and works here."
+      ],
+      "error": null,
+      "policy": "one-sentence-v1",
+      "method": "pySBD 0.3.4, English sentence-boundary detection",
+      "limitation": "Detects sentence boundaries; it does not certify grammar or infer missing punctuation."
+    },
+    {
+      "valid": true,
+      "text": "The price is $3.50 today.",
+      "sentence_count": 1,
+      "sentences": [
+        "The price is $3.50 today."
+      ],
+      "error": null,
+      "policy": "one-sentence-v1",
+      "method": "pySBD 0.3.4, English sentence-boundary detection",
+      "limitation": "Detects sentence boundaries; it does not certify grammar or infer missing punctuation."
+    },
+    {
+      "valid": false,
+      "text": "I need you to stay right here. Listen to me for a moment.",
+      "sentence_count": 2,
+      "sentences": [
+        "I need you to stay right here.",
+        "Listen to me for a moment."
+      ],
+      "error": "Use exactly one sentence per take; found 2. Generate each sentence separately.",
+      "policy": "one-sentence-v1",
+      "method": "pySBD 0.3.4, English sentence-boundary detection",
+      "limitation": "Detects sentence boundaries; it does not certify grammar or infer missing punctuation."
+    }
+  ],
+  "perceptual_result": "Pending listening to the new per-sentence take; earlier multi-sentence recordings preserved.",
+  "project_id": "da2312a0-20b9-4633-bd90-67c0803ac43c",
+  "native_recordings": [
+    {
+      "id": "b55604e7-0ddc-4b9a-8a1c-5061743c7e1d",
+      "engine": "IndexTTS 2.5",
+      "text": "I need you to stay right here.",
+      "exact_words": true,
+      "audio": {
+        "path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/b55604e7-0ddc-4b9a-8a1c-5061743c7e1d/voice.wav",
+        "listening_path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/b55604e7-0ddc-4b9a-8a1c-5061743c7e1d/listening.wav",
+        "sha256": "a31a3ca0d5118113d46cc5ab11266bbec5033fa85cf56d8f9e7d1946c61571fc",
+        "duration_seconds": 2.670294784580499,
+        "sample_rate": 22050,
+        "gain": 0.45341929777901396,
+        "loudness": {
+          "input_i": "-16.13",
+          "input_tp": "-0.10",
+          "input_lra": "0.00",
+          "input_thresh": "-26.53",
+          "output_i": "-23.00",
+          "output_tp": "-6.97",
+          "output_lra": "0.00",
+          "output_thresh": "-33.39",
+          "normalization_type": "linear",
+          "target_offset": "-0.00"
+        }
+      }
+    },
+    {
+      "id": "5f779cb8-7df9-445d-849e-72b530c0c153",
+      "engine": "VoxCPM2",
+      "text": "The door was open when I arrived.",
+      "exact_words": true,
+      "audio": {
+        "path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/5f779cb8-7df9-445d-849e-72b530c0c153/voice.wav",
+        "listening_path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/5f779cb8-7df9-445d-849e-72b530c0c153/listening.wav",
+        "sha256": "6d85b74ecc870f65a5eb81d8f6b0ab9e32d2f55e12efb0bba581953aaefa2a59",
+        "duration_seconds": 2.4,
+        "sample_rate": 48000,
+        "gain": 0.38194427084004656,
+        "loudness": {
+          "input_i": "-14.64",
+          "input_tp": "-1.47",
+          "input_lra": "0.00",
+          "input_thresh": "-24.88",
+          "output_i": "-23.01",
+          "output_tp": "-9.84",
+          "output_lra": "0.00",
+          "output_thresh": "-33.25",
+          "normalization_type": "linear",
+          "target_offset": "0.01"
+        }
+      }
+    },
+    {
+      "id": "9a2d1a3f-102f-4492-bc95-b4e2abbd5453",
+      "engine": "VoxCPM2",
+      "text": "We can talk about the details tomorrow.",
+      "exact_words": true,
+      "audio": {
+        "path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/9a2d1a3f-102f-4492-bc95-b4e2abbd5453/voice.wav",
+        "listening_path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/9a2d1a3f-102f-4492-bc95-b4e2abbd5453/listening.wav",
+        "sha256": "1b20f6c7a19cdc513c929102848985cd66925455af695ec4f3ff53e075122c14",
+        "duration_seconds": 2.08,
+        "sample_rate": 48000,
+        "gain": 0.42121128675406666,
+        "loudness": {
+          "input_i": "-15.49",
+          "input_tp": "-1.36",
+          "input_lra": "0.00",
+          "input_thresh": "-25.49",
+          "output_i": "-22.99",
+          "output_tp": "-8.87",
+          "output_lra": "0.00",
+          "output_thresh": "-32.99",
+          "normalization_type": "linear",
+          "target_offset": "-0.01"
+        }
+      }
+    }
+  ],
+  "identity_and_emotion_reapplied_for_one_sentence": true,
+  "two_separate_one_sentence_continuations": true,
+  "old_anger_versions_preserved": true,
+  "paper16_saved": true,
+  "browser_playback": {
+    "duration_seconds": 2.670295,
+    "error": null
+  }
+}

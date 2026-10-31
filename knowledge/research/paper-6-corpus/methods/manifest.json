@@ -1,0 +1,34 @@
+[
+  {
+    "file": "gspan-original.pdf",
+    "title": "gSpan: Graph-Based Substructure Pattern Mining",
+    "sourceUrl": "https://sites.cs.ucsb.edu/~xyan/papers/gSpan.pdf",
+    "sha256": "2ebacfc0869404fa1e12b70e807239819d0910b0bffee0056544a8d3ff54ea53",
+    "bytes": 537879,
+    "collectedAt": "2026-10-29T17:35:42.091972+00:00",
+    "license": "Primary author-hosted research copy; reuse rights not determined",
+    "authors": [
+      "Xifeng Yan",
+      "Jiawei Han"
+    ],
+    "displayedDate": "2002-09-03",
+    "pages": 26,
+    "notes": "gspan-reading-notes.md"
+  },
+  {
+    "file": "amie3-author.pdf",
+    "title": "Fast and Exact Rule Mining with AMIE 3",
+    "sourceUrl": "https://www.luisgalarraga.de/docs/amie3.pdf",
+    "sha256": "6c0f4748ee97f03bd914de44f2de4949d5e4600f403f16519fb60bd5945f0d08",
+    "bytes": 429497,
+    "collectedAt": "2026-10-29T17:35:44.224990+00:00",
+    "license": "Primary author-hosted research copy; reuse rights not determined",
+    "authors": [
+      "Jonathan Lajus",
+      "Luis Gal\u00e1rraga",
+      "Fabian Suchanek"
+    ],
+    "pages": 16,
+    "notes": "amie3-reading-notes.md"
+  }
+]

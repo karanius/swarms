@@ -1,0 +1,9 @@
+{
+  "reported_symptom": "Listen to reference appeared to do nothing",
+  "reproduced": "Click created a reference player in paused state; stale Audio generated status remained",
+  "cause": "IPython Audio was constructed without autoplay=True",
+  "fix": "Request autoplay and show a reference-specific status with manual Play fallback",
+  "regression": "test_reference_preview.py: failed before fix, passed after fix",
+  "browser_verification": "After only clicking Listen to reference, reference player exposed Pause, demonstrating active playback",
+  "scope": "Current browser allowed autoplay; future browser policies can still require the displayed Play button. No model or emotion-reference changes."
+}

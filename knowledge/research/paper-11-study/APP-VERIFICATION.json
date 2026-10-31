@@ -1,0 +1,14 @@
+{
+  "app_url": "http://127.0.0.1:5193/",
+  "engine_tests_passed": 22,
+  "live_http_tests_passed": 2,
+  "browser_verified": [
+    "submit request",
+    "expand evidence and source links",
+    "exclude candidate and revise",
+    "download two revisions as JSON",
+    "notebook app link visible"
+  ],
+  "earlier_notebooks_unchanged": true,
+  "scope": "Design proposal tool; no source template execution or generated system runtime proof"
+}

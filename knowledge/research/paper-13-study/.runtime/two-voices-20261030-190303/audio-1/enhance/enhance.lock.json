@@ -1,0 +1,20 @@
+{
+  "source_repo": "https://github.com/resemble-ai/resemble-enhance.git",
+  "source_revision": "8e978149bfe8abab3eb77d965d579a111afdb0ff",
+  "model_repo": "ResembleAI/resemble-enhance",
+  "model_revision": "4e3510ce4a8391159f665903544c5150bee7b2cb",
+  "files": {
+    "enhancer_stage2/hparams.yaml": {
+      "bytes": 717,
+      "sha256": "80c3f15bc5a5b2cacf2c698699a0f6599d62911c0d53e1d6dee895c0d7cbaeac"
+    },
+    "enhancer_stage2/ds/G/latest": {
+      "bytes": 7,
+      "sha256": "37a8eec1ce19687d132fe29051dca629d164e2c4958ba141d5f4133a33f0688f"
+    },
+    "enhancer_stage2/ds/G/default/mp_rank_00_model_states.pt": {
+      "bytes": 713176232,
+      "sha256": "f9d035f318de3e6d919bc70cf7ad7d32b4fe92ec5cbe0b30029a27f5db07d9d6"
+    }
+  }
+}

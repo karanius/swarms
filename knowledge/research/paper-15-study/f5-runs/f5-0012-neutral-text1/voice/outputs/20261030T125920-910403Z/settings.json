@@ -1,0 +1,13 @@
+{
+  "model": "F5TTS_v1_Base",
+  "device": "mps",
+  "seed": 42,
+  "steps": 32,
+  "speed": 1.0,
+  "cross_fade_duration": 0.15,
+  "cfg_strength": 2.0,
+  "sway_sampling_coef": -1.0,
+  "reference_audio": "esd:0012:neutral",
+  "reference_text": "I have bunburyed all over goat on two separate occasions.",
+  "text": "That's what you decided. Tell me what happens next."
+}

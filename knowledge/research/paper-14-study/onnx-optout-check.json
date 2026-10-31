@@ -1,0 +1,7 @@
+{
+  "opt_out_before_initialization": true,
+  "exit_code": 0,
+  "output": "ONNX_IMPORTED_WITH_OPTOUT=1",
+  "observed_tcp_sockets": [],
+  "scope": "Own-process socket snapshots during import and three seconds after; not exhaustive packet capture"
+}

@@ -1,0 +1,10 @@
+{
+  "observedNonsecretProcessEnvironment": {
+    "LANGFLOW_CONFIG_DIR": "/Users/x/projects/swarms/services/paper6-assistant/.runtime/stock-builder",
+    "LANGFLOW_DATABASE_URL": "sqlite:////Users/x/projects/swarms/services/paper6-assistant/.runtime/stock-builder/langflow.db",
+    "LANGFLOW_FS_TOOL_BASE_DIR": "/Users/x/projects/swarms/services/paper6-assistant/.runtime/stock-builder/fs",
+    "OPENAI_BASE_URL": "http://127.0.0.1:8787/v1"
+  },
+  "phase": "Retained backend after first two observations; explicit private FS base now configured. Initial setting preserved separately.",
+  "algorithm": "Stock source/prompt/toolkit unchanged"
+}

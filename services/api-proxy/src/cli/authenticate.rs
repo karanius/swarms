@@ -83,10 +83,16 @@ pub(crate) struct ResolvedAuth {
     identity: String,
 }
 
-#[derive(Default, serde::Deserialize)]
+#[derive(serde::Deserialize)]
 struct CentralConfig {
-    #[serde(default)]
+    #[serde(default = "default_central_store")]
     cli_auth_credentials_store: AuthCredentialsStoreMode,
+}
+
+fn default_central_store() -> AuthCredentialsStoreMode {
+    // The desktop app may use the OS credential store without a CLI override.
+    // Use Codex's loader to discover that sign-in, retaining file fallback.
+    AuthCredentialsStoreMode::Auto
 }
 
 fn central_store(home: &Path) -> io::Result<AuthCredentialsStoreMode> {
@@ -94,7 +100,7 @@ fn central_store(home: &Path) -> io::Result<AuthCredentialsStoreMode> {
         Ok(text) => toml::from_str::<CentralConfig>(&text)
             .map(|config| config.cli_auth_credentials_store)
             .map_err(|_| io::Error::other("central Codex authentication configuration is invalid")),
-        Err(error) if error.kind() == io::ErrorKind::NotFound => Ok(AuthCredentialsStoreMode::File),
+        Err(error) if error.kind() == io::ErrorKind::NotFound => Ok(default_central_store()),
         Err(_) => Err(io::Error::other("central Codex authentication configuration could not be read")),
     }
 }
@@ -271,6 +277,27 @@ mod fallback_tests {
         };
         save_auth(home,&auth,STORE_MODE,AuthKeyringBackendKind::default()).unwrap();
     }
+    #[test]
+    fn central_store_discovers_keyring_and_file_when_not_explicitly_configured() {
+        let central = tempfile::tempdir().unwrap();
+        assert_eq!(central_store(central.path()).unwrap(), AuthCredentialsStoreMode::Auto);
+        std::fs::write(central.path().join("config.toml"), "model = 'gpt-6.1-sol'").unwrap();
+        assert_eq!(central_store(central.path()).unwrap(), AuthCredentialsStoreMode::Auto);
+    }
+    #[test]
+    fn explicit_central_store_policy_is_preserved() {
+        let central = tempfile::tempdir().unwrap();
+        for (name, expected) in [
+            ("file", AuthCredentialsStoreMode::File),
+            ("keyring", AuthCredentialsStoreMode::Keyring),
+            ("auto", AuthCredentialsStoreMode::Auto),
+            ("ephemeral", AuthCredentialsStoreMode::Ephemeral),
+        ] {
+            std::fs::write(central.path().join("config.toml"),
+                format!("cli_auth_credentials_store = '{name}'")).unwrap();
+            assert_eq!(central_store(central.path()).unwrap(), expected);
+        }
+    }
     #[tokio::test]
     async fn own_usable_credentials_win_without_reading_central_configuration() {
         let own=tempfile::tempdir().unwrap();let central=tempfile::tempdir().unwrap();
@@ -287,6 +314,19 @@ mod fallback_tests {
         assert_eq!(resolved.index,1);assert_eq!(resolved.identity," as central@example.test");
         assert!(!own.path().join("auth.json").exists());
         assert_eq!(before,std::fs::read(central.path().join("auth.json")).unwrap());
+    }
+    #[tokio::test]
+    async fn fallback_reloads_a_changed_central_login_without_copying_it() {
+        let own = tempfile::tempdir().unwrap();
+        let central = tempfile::tempdir().unwrap();
+        // Keep this fixture file-only so it does not depend on the host keyring.
+        std::fs::write(central.path().join("config.toml"), "cli_auth_credentials_store = 'file'").unwrap();
+        assert!(resolve_paths(own.path(), central.path(), 0).await.unwrap().is_none());
+        save(central.path(), "first@example.test", (Utc::now() + Duration::hours(1)).timestamp());
+        assert_eq!(resolve_paths(own.path(), central.path(), 0).await.unwrap().unwrap().identity, " as first@example.test");
+        save(central.path(), "current@example.test", (Utc::now() + Duration::hours(1)).timestamp());
+        assert_eq!(resolve_paths(own.path(), central.path(), 0).await.unwrap().unwrap().identity, " as current@example.test");
+        assert!(!own.path().join("auth.json").exists());
     }
     #[tokio::test]
     async fn expired_own_uses_central_and_rejected_source_can_be_skipped() {

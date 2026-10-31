@@ -1,0 +1,73 @@
+{
+  "requirements": [
+    {
+      "requirement": "Pinned native backend; isolated Python, data/cache; preserve existing work",
+      "evidence": [
+        "services/voicestudio/runtime.json",
+        "services/voicestudio/launch.py",
+        "completion-checks.json",
+        "backend-packages.txt",
+        "voxcpm-packages.txt"
+      ],
+      "result": "verified; named services respond, audio backend 5195 enforces authentication (401)"
+    },
+    {
+      "requirement": "Preflight selected model requirements and terms; no accepted gated agreements",
+      "evidence": [
+        "model-preflight.json",
+        "dia-metadata.json",
+        "voxcpm-metadata.json",
+        "audioseal-metadata.json",
+        "downloads.json",
+        "audioseal-prepared.json",
+        "tokenizer-review.json"
+      ],
+      "result": "selected models ungated; explicit pinned assets/hash records; no agreement acceptance performed; no commercial clearance claimed"
+    },
+    {
+      "requirement": "Real API utterance plus bounded Dia/VoxCPM2/F5 comparison",
+      "evidence": [
+        "runs/dia-utterance-01/result.json",
+        "runs/dia-dialogue-01/result.json",
+        "baseline.json",
+        "dialogue-plan.json",
+        "assembled-dialogues.json",
+        "measured-results.json"
+      ],
+      "result": "seven native requests returned validated WAVs; Dia conversation completeness unverified and flagged"
+    },
+    {
+      "requirement": "Direct versus existing mastering/enhancement conditions",
+      "evidence": [
+        "processing/dia-utterance-01/independent-verification.json",
+        "processing/dia-dialogue-01/independent-verification.json",
+        "processing/voxcpm-dialogue-01/independent-verification.json"
+      ],
+      "result": "verified signal/provenance/loudness checks; human preference not scored"
+    },
+    {
+      "requirement": "Actual settings, device, timing, memory, integrity, failures and listening limits",
+      "evidence": [
+        "runs/*/request.json",
+        "runs/*/result.json",
+        "inference-events.jsonl",
+        "voxcpm-device-evidence.json",
+        "NETWORK-NOTE.md"
+      ],
+      "result": "recorded with sampling/instrumentation and casting/timing limitations; no superior-quality claim"
+    },
+    {
+      "requirement": "Runnable code, executed notebook, embedded audio and browser verification",
+      "evidence": [
+        "knowledge/research/notebooks/Paper 14 - VoiceStudio Native Mac Voice Evaluation.ipynb",
+        "api_experiment.py",
+        "notebook-playback.png"
+      ],
+      "result": "all code cells executed without errors; generation functions explicitly invokable; browser player reached 0:04/0:04"
+    }
+  ],
+  "verified_api_runs": 7,
+  "executed_code_cells": 10,
+  "notebook_sha256": "1393cd75825171cd10481ee515fd59c2f0c983a1408059b86f3492cd48442fba",
+  "scope": "Bounded implementation and evaluation complete; subjective quality and Dia text completeness remain explicitly unverified outcomes, not successful claims."
+}

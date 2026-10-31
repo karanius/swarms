@@ -1,0 +1,14 @@
+{
+  "observedNonsecretProcessEnvironment": {
+    "LANGFLOW_CONFIG_DIR": "/Users/x/projects/swarms/services/paper6-assistant/.runtime/stock-builder",
+    "LANGFLOW_DATABASE_URL": "sqlite:////Users/x/projects/swarms/services/paper6-assistant/.runtime/stock-builder/langflow.db",
+    "LANGFLOW_FS_TOOL_BASE_DIR": "[not observed in process environment]",
+    "OPENAI_BASE_URL": "http://127.0.0.1:8787/v1",
+    "LANGFLOW_DO_NOT_TRACK": "true",
+    "DO_NOT_TRACK": "1"
+  },
+  "listener": "127.0.0.1:7861",
+  "isolation": "Private application database/configuration/user workspace, not the deny-default notebook OS policy",
+  "providerModel": "Request/terminal record pins OpenAI and model; actual model endpoint configured via existing proxy",
+  "sourceScope": "Local existing checkout, unchanged during experiment, not pristine upstream"
+}

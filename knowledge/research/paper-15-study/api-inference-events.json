@@ -1,0 +1,370 @@
+[
+  {
+    "started_unix": 1793365130.807212,
+    "path": "/generate",
+    "torch_forward_calls": 153,
+    "torch_devices": [
+      "cpu"
+    ],
+    "rss_before": 605536256,
+    "mlx_before": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    },
+    "response_bytes": 368684,
+    "status": 200,
+    "elapsed_seconds": 14.321647582997684,
+    "rss_after": 652197888,
+    "mlx_after": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    }
+  },
+  {
+    "started_unix": 1793365157.52156,
+    "path": "/generate",
+    "torch_forward_calls": 153,
+    "torch_devices": [
+      "cpu"
+    ],
+    "rss_before": 652197888,
+    "mlx_before": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    },
+    "response_bytes": 391724,
+    "status": 200,
+    "elapsed_seconds": 2.803069500001584,
+    "rss_after": 699891712,
+    "mlx_after": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    }
+  },
+  {
+    "started_unix": 1793365171.3811631,
+    "path": "/generate",
+    "torch_forward_calls": 153,
+    "torch_devices": [
+      "cpu"
+    ],
+    "rss_before": 699924480,
+    "mlx_before": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    },
+    "response_bytes": 345644,
+    "status": 200,
+    "elapsed_seconds": 2.5795634590031113,
+    "rss_after": 699973632,
+    "mlx_after": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    }
+  },
+  {
+    "started_unix": 1793365184.830464,
+    "path": "/generate",
+    "torch_forward_calls": 153,
+    "torch_devices": [
+      "cpu"
+    ],
+    "rss_before": 699973632,
+    "mlx_before": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    },
+    "response_bytes": 391724,
+    "status": 200,
+    "elapsed_seconds": 2.870979167000769,
+    "rss_after": 699990016,
+    "mlx_after": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    }
+  },
+  {
+    "started_unix": 1793365198.7690408,
+    "path": "/generate",
+    "torch_forward_calls": 153,
+    "torch_devices": [
+      "cpu"
+    ],
+    "rss_before": 699990016,
+    "mlx_before": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    },
+    "response_bytes": 483884,
+    "status": 200,
+    "elapsed_seconds": 3.4726361659995746,
+    "rss_after": 755613696,
+    "mlx_after": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    }
+  },
+  {
+    "started_unix": 1793365213.151386,
+    "path": "/generate",
+    "torch_forward_calls": 153,
+    "torch_devices": [
+      "cpu"
+    ],
+    "rss_before": 755613696,
+    "mlx_before": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    },
+    "response_bytes": 460844,
+    "status": 200,
+    "elapsed_seconds": 3.367223124998418,
+    "rss_after": 764559360,
+    "mlx_after": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    }
+  },
+  {
+    "started_unix": 1793365228.0422962,
+    "path": "/generate",
+    "torch_forward_calls": 153,
+    "torch_devices": [
+      "cpu"
+    ],
+    "rss_before": 764559360,
+    "mlx_before": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    },
+    "response_bytes": 460844,
+    "status": 200,
+    "elapsed_seconds": 3.3509855839984084,
+    "rss_after": 764575744,
+    "mlx_after": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    }
+  },
+  {
+    "started_unix": 1793365242.3209531,
+    "path": "/generate",
+    "torch_forward_calls": 153,
+    "torch_devices": [
+      "cpu"
+    ],
+    "rss_before": 764575744,
+    "mlx_before": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    },
+    "response_bytes": 553004,
+    "status": 200,
+    "elapsed_seconds": 4.020203207997838,
+    "rss_after": 819642368,
+    "mlx_after": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    }
+  },
+  {
+    "started_unix": 1793365258.353895,
+    "path": "/generate",
+    "torch_forward_calls": 153,
+    "torch_devices": [
+      "cpu"
+    ],
+    "rss_before": 819642368,
+    "mlx_before": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    },
+    "response_bytes": 414764,
+    "status": 200,
+    "elapsed_seconds": 4.130517582998436,
+    "rss_after": 837353472,
+    "mlx_after": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    }
+  },
+  {
+    "started_unix": 1793365274.5457149,
+    "path": "/generate",
+    "torch_forward_calls": 153,
+    "torch_devices": [
+      "cpu"
+    ],
+    "rss_before": 837353472,
+    "mlx_before": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    },
+    "response_bytes": 460844,
+    "status": 200,
+    "elapsed_seconds": 4.725490417000401,
+    "rss_after": 774569984,
+    "mlx_after": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    }
+  },
+  {
+    "started_unix": 1793365293.138019,
+    "path": "/generate",
+    "torch_forward_calls": 153,
+    "torch_devices": [
+      "cpu"
+    ],
+    "rss_before": 680247296,
+    "mlx_before": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    },
+    "response_bytes": 414764,
+    "status": 200,
+    "elapsed_seconds": 5.001672124999459,
+    "rss_after": 726204416,
+    "mlx_after": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    }
+  },
+  {
+    "started_unix": 1793365311.934061,
+    "path": "/generate",
+    "torch_forward_calls": 153,
+    "torch_devices": [
+      "cpu"
+    ],
+    "rss_before": 632160256,
+    "mlx_before": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    },
+    "response_bytes": 414764,
+    "status": 200,
+    "elapsed_seconds": 5.471039166000992,
+    "rss_after": 673464320,
+    "mlx_after": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    }
+  },
+  {
+    "started_unix": 1793365332.562762,
+    "path": "/generate",
+    "torch_forward_calls": 153,
+    "torch_devices": [
+      "cpu"
+    ],
+    "rss_before": 673464320,
+    "mlx_before": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    },
+    "response_bytes": 483884,
+    "status": 200,
+    "elapsed_seconds": 7.2979720000003,
+    "rss_after": 745717760,
+    "mlx_after": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    }
+  },
+  {
+    "started_unix": 1793365357.26999,
+    "path": "/generate",
+    "torch_forward_calls": 153,
+    "torch_devices": [
+      "cpu"
+    ],
+    "rss_before": 661323776,
+    "mlx_before": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    },
+    "response_bytes": 460844,
+    "status": 200,
+    "elapsed_seconds": 8.492433082999923,
+    "rss_after": 736722944,
+    "mlx_after": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    }
+  },
+  {
+    "started_unix": 1793365388.695319,
+    "path": "/generate",
+    "torch_forward_calls": 153,
+    "torch_devices": [
+      "cpu"
+    ],
+    "rss_before": 620675072,
+    "mlx_before": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    },
+    "response_bytes": 460844,
+    "status": 200,
+    "elapsed_seconds": 9.478748749999795,
+    "rss_after": 688078848,
+    "mlx_after": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    }
+  },
+  {
+    "started_unix": 1793365417.623712,
+    "path": "/generate",
+    "torch_forward_calls": 153,
+    "torch_devices": [
+      "cpu"
+    ],
+    "rss_before": 688078848,
+    "mlx_before": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    },
+    "response_bytes": 460844,
+    "status": 200,
+    "elapsed_seconds": 7.262833333999879,
+    "rss_after": 688078848,
+    "mlx_after": {
+      "default_device": "Device(gpu, 0)",
+      "active_bytes": 0,
+      "peak_bytes": 0
+    }
+  }
+]

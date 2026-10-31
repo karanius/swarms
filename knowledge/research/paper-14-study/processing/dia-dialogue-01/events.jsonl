@@ -1,0 +1,5 @@
+{"event": "stage_started", "elapsed_seconds": 0.0, "node": "master", "kind": "master"}
+{"event": "stage_finished", "elapsed_seconds": 0.927, "node": "master", "kind": "master", "audio_sha256": "379dace34844cc9a832fb92a66589a26187a02117fffce5b763f8b5647ae109f"}
+{"event": "stage_started", "elapsed_seconds": 0.927, "node": "enhance", "kind": "enhance"}
+{"event": "stage_finished", "elapsed_seconds": 15.726, "node": "enhance", "kind": "enhance", "audio_sha256": "e577192bb43a70248f82bc9fa4d8f3154066a5b3421d100527509cd3da2e0b6d"}
+{"event": "finished", "elapsed_seconds": 15.727, "audio_sha256": "e577192bb43a70248f82bc9fa4d8f3154066a5b3421d100527509cd3da2e0b6d"}

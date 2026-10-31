@@ -1,0 +1,79 @@
+[
+  {
+    "full_name": "langflow-ai/langflow",
+    "html_url": "https://github.com/langflow-ai/langflow",
+    "description": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+    "default_branch": "main",
+    "archived": false
+  },
+  {
+    "full_name": "langflow-ai/.github",
+    "html_url": "https://github.com/langflow-ai/.github",
+    "description": "Front page",
+    "default_branch": "main",
+    "archived": false
+  },
+  {
+    "full_name": "langflow-ai/langflow-embedded-chat",
+    "html_url": "https://github.com/langflow-ai/langflow-embedded-chat",
+    "description": "The Langflow Embedded Chat is a powerful web component that enables seamless communication with Langflow",
+    "default_branch": "main",
+    "archived": false
+  },
+  {
+    "full_name": "langflow-ai/langflow-railway",
+    "html_url": "https://github.com/langflow-ai/langflow-railway",
+    "description": "A template to deploy langflow in Railway",
+    "default_branch": "main",
+    "archived": false
+  },
+  {
+    "full_name": "langflow-ai/langflow-helm-charts",
+    "html_url": "https://github.com/langflow-ai/langflow-helm-charts",
+    "description": "Langflow Helm Charts",
+    "default_branch": "main",
+    "archived": false
+  },
+  {
+    "full_name": "langflow-ai/mcp-sse-shim",
+    "html_url": "https://github.com/langflow-ai/mcp-sse-shim",
+    "description": null,
+    "default_branch": "main",
+    "archived": false
+  },
+  {
+    "full_name": "langflow-ai/langflow-bundles",
+    "html_url": "https://github.com/langflow-ai/langflow-bundles",
+    "description": null,
+    "default_branch": "main",
+    "archived": false
+  },
+  {
+    "full_name": "langflow-ai/langflow-client-ts",
+    "html_url": "https://github.com/langflow-ai/langflow-client-ts",
+    "description": "A TypeScript client for running flows via the Langflow API",
+    "default_branch": "main",
+    "archived": false
+  },
+  {
+    "full_name": "langflow-ai/desktop-updates",
+    "html_url": "https://github.com/langflow-ai/desktop-updates",
+    "description": null,
+    "default_branch": "main",
+    "archived": false
+  },
+  {
+    "full_name": "langflow-ai/langflow-twilio-voice",
+    "html_url": "https://github.com/langflow-ai/langflow-twilio-voice",
+    "description": "An example application that combines Twilio ConversationRelay with Langflow to create an AI powered voice chat.",
+    "default_branch": "main",
+    "archived": false
+  },
+  {
+    "full_name": "langflow-ai/openrag",
+    "html_url": "https://github.com/langflow-ai/openrag",
+    "description": "OpenRAG is a comprehensive, single package Retrieval-Augmented Generation platform built on Langflow, Docling, and Opensearch. ",
+    "default_branch": "main",
+    "archived": false
+  }
+]

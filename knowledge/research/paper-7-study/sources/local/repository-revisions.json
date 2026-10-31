@@ -1,0 +1,26 @@
+[
+  {
+    "repository": "Blaizzy/mlx-audio",
+    "commit": "b80c4edb4181c102f72b56bbf6ce9438a2050354",
+    "source": "https://github.com/Blaizzy/mlx-audio",
+    "access_date": "2026-10-30"
+  },
+  {
+    "repository": "ml-explore/mlx-lm",
+    "commit": "6b572ab1b531dd8fd2d13f6f36a89c2eccda18ea",
+    "source": "https://github.com/ml-explore/mlx-lm",
+    "access_date": "2026-10-30"
+  },
+  {
+    "repository": "SWivid/F5-TTS",
+    "commit": "45868abaabd74aabf03cd673d6dd00cc9d9c01ae",
+    "source": "https://github.com/SWivid/F5-TTS",
+    "access_date": "2026-10-30"
+  },
+  {
+    "repository": "Wan-Video/Wan2.1",
+    "commit": "9737cba9c1c3c4d04b33fcad41c111989865d315",
+    "source": "https://github.com/Wan-Video/Wan2.1",
+    "access_date": "2026-10-30"
+  }
+]

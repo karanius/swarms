@@ -1,0 +1,1538 @@
+[
+  {
+    "name": "voxcpm2-0012-neutral-text0",
+    "engine": "voxcpm2",
+    "condition": {
+      "id": "0012-neutral-text0",
+      "speaker": "0012",
+      "style": "neutral",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak naturally in a neutral conversational tone, without dramatic emphasis.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/voxcpm2-0012-neutral-text0/native.wav",
+    "sha256": "62c4145d9ddfe755ac54e4fbfb38dc59a7b86d7f7416e976f2ea8a3df02b2a48",
+    "sample_rate": 48000,
+    "duration_seconds": 2.56,
+    "reported_generation_seconds": 14.336811065673828,
+    "peak": 0.8759504556655884,
+    "loudness": {
+      "input_i": "-16.8",
+      "input_tp": "-1.1",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.25465838509316774,
+    "estimated_pitch_median_hz": 151.95162662007877,
+    "estimated_pitch_iqr_hz": 59.44070083912926,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-13.7",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/voxcpm2-0012-neutral-text0.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "41364f4f41a1152a76b6c9b5b762d33f4a2be37b13f7099fe89cd3d8690a0e39"
+  },
+  {
+    "name": "f5-0012-neutral-text0",
+    "engine": "f5",
+    "condition": {
+      "id": "0012-neutral-text0",
+      "speaker": "0012",
+      "style": "neutral",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak naturally in a neutral conversational tone, without dramatic emphasis.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/f5-runs/f5-0012-neutral-text0/voice/outputs/20261030T125905-867381Z/speech.wav",
+    "sha256": "323b22c747a14b755d13c46f1030d1c03193a4563ec2f5106b4715aae03bcfd2",
+    "sample_rate": 24000,
+    "duration_seconds": 2.816,
+    "reported_generation_seconds": 10.77,
+    "peak": 0.78546142578125,
+    "loudness": {
+      "input_i": "-17.2",
+      "input_tp": "-2.1",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.423728813559322,
+    "estimated_pitch_median_hz": 174.80188756527374,
+    "estimated_pitch_iqr_hz": 78.83617132447225,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.5",
+      "input_tp": "-14.3",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/f5-0012-neutral-text0.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "0e667942c502d00b66313fde9d3336bd16b81fb27149fd44b712338dafc3bb08"
+  },
+  {
+    "name": "voxcpm2-0012-neutral-text1",
+    "engine": "voxcpm2",
+    "condition": {
+      "id": "0012-neutral-text1",
+      "speaker": "0012",
+      "style": "neutral",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak naturally in a neutral conversational tone, without dramatic emphasis.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/voxcpm2-0012-neutral-text1/native.wav",
+    "sha256": "2cfe81b3e441064d619bf0516260c1b091933a14d78be2127324e335c2a16927",
+    "sample_rate": 48000,
+    "duration_seconds": 2.72,
+    "reported_generation_seconds": 2.8074889183044434,
+    "peak": 0.8411399126052856,
+    "loudness": {
+      "input_i": "-16.0",
+      "input_tp": "-1.5",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.2573099415204678,
+    "estimated_pitch_median_hz": 163.36175460660812,
+    "estimated_pitch_iqr_hz": 69.32633693176989,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-14.9",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/voxcpm2-0012-neutral-text1.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "da6a0b15296ae534f5cd941d0a089bc195ab5bd24beb5ba0b62886eac0f45a9c"
+  },
+  {
+    "name": "f5-0012-neutral-text1",
+    "engine": "f5",
+    "condition": {
+      "id": "0012-neutral-text1",
+      "speaker": "0012",
+      "style": "neutral",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak naturally in a neutral conversational tone, without dramatic emphasis.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/f5-runs/f5-0012-neutral-text1/voice/outputs/20261030T125920-910403Z/speech.wav",
+    "sha256": "0a2ce96b1c1d66e8730b14e9407588ff02ed0f8d63b5a29f19388878643128b0",
+    "sample_rate": 24000,
+    "duration_seconds": 3.424,
+    "reported_generation_seconds": 9.631,
+    "peak": 0.895263671875,
+    "loudness": {
+      "input_i": "-17.4",
+      "input_tp": "-1.0",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.34883720930232553,
+    "estimated_pitch_median_hz": 152.53547769046241,
+    "estimated_pitch_iqr_hz": 60.05712698274809,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-13.0",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/f5-0012-neutral-text1.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "99d882dece6d85ce8b22538264a52fa4f11c49ab4c0dea6fc014594c79daaaad"
+  },
+  {
+    "name": "voxcpm2-0012-excited-text0",
+    "engine": "voxcpm2",
+    "condition": {
+      "id": "0012-excited-text0",
+      "speaker": "0012",
+      "style": "excited",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak with delighted excitement and lively pitch variation, keeping the words clear.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:happiness",
+        "label": "Voice 0012 \u00b7 male \u00b7 happiness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-happiness.wav",
+        "sha256": "b5dc06b810118a6616cd2b49ffc4fe6f8e0552757d72fd38efed126979df0444",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/voxcpm2-0012-excited-text0/native.wav",
+    "sha256": "27946bce508a75d1abcd12b9c5df21dfe139f31578d7ef81481baa5c507f1b85",
+    "sample_rate": 48000,
+    "duration_seconds": 2.4,
+    "reported_generation_seconds": 2.5846190452575684,
+    "peak": 0.8518878221511841,
+    "loudness": {
+      "input_i": "-16.0",
+      "input_tp": "-1.4",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.1920529801324503,
+    "estimated_pitch_median_hz": 166.56070702052514,
+    "estimated_pitch_iqr_hz": 61.176305152687604,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-14.8",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/voxcpm2-0012-excited-text0.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "7242ea056bdf37c6ecc1f21eff562622142329013a81e1b8c9761e7fd8bbd48d"
+  },
+  {
+    "name": "f5-0012-excited-text0",
+    "engine": "f5",
+    "condition": {
+      "id": "0012-excited-text0",
+      "speaker": "0012",
+      "style": "excited",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak with delighted excitement and lively pitch variation, keeping the words clear.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:happiness",
+        "label": "Voice 0012 \u00b7 male \u00b7 happiness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-happiness.wav",
+        "sha256": "b5dc06b810118a6616cd2b49ffc4fe6f8e0552757d72fd38efed126979df0444",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/f5-runs/f5-0012-excited-text0/voice/outputs/20261030T125934-527562Z/speech.wav",
+    "sha256": "4a1a5125a67fb5cf89891507b04a7c7d2500312159ce1fba45d28208a77a130a",
+    "sample_rate": 24000,
+    "duration_seconds": 2.72,
+    "reported_generation_seconds": 9.388,
+    "peak": 0.831451416015625,
+    "loudness": {
+      "input_i": "-17.7",
+      "input_tp": "-1.4",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.39766081871345027,
+    "estimated_pitch_median_hz": 210.14923659492598,
+    "estimated_pitch_iqr_hz": 74.02049304620422,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-13.1",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/f5-0012-excited-text0.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "5ebd84dd5dd9dda38e8c6171ec152d3f309f8053143508184a824c6ab8e36975"
+  },
+  {
+    "name": "voxcpm2-0012-excited-text1",
+    "engine": "voxcpm2",
+    "condition": {
+      "id": "0012-excited-text1",
+      "speaker": "0012",
+      "style": "excited",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak with delighted excitement and lively pitch variation, keeping the words clear.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:happiness",
+        "label": "Voice 0012 \u00b7 male \u00b7 happiness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-happiness.wav",
+        "sha256": "b5dc06b810118a6616cd2b49ffc4fe6f8e0552757d72fd38efed126979df0444",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/voxcpm2-0012-excited-text1/native.wav",
+    "sha256": "af045f13f720ad3f2ad261acbedce50db8983dda033c769cee08fdf214fe35ae",
+    "sample_rate": 48000,
+    "duration_seconds": 2.72,
+    "reported_generation_seconds": 2.875645875930786,
+    "peak": 0.8422874212265015,
+    "loudness": {
+      "input_i": "-15.6",
+      "input_tp": "-1.5",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.2573099415204678,
+    "estimated_pitch_median_hz": 163.38798510116,
+    "estimated_pitch_iqr_hz": 69.0288705906136,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-15.3",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/voxcpm2-0012-excited-text1.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "1a4e31fb8b5fa8f163bf12913519118202a516475c04d74e46f18acace943a44"
+  },
+  {
+    "name": "f5-0012-excited-text1",
+    "engine": "f5",
+    "condition": {
+      "id": "0012-excited-text1",
+      "speaker": "0012",
+      "style": "excited",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak with delighted excitement and lively pitch variation, keeping the words clear.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:happiness",
+        "label": "Voice 0012 \u00b7 male \u00b7 happiness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-happiness.wav",
+        "sha256": "b5dc06b810118a6616cd2b49ffc4fe6f8e0552757d72fd38efed126979df0444",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/f5-runs/f5-0012-excited-text1/voice/outputs/20261030T125948-328953Z/speech.wav",
+    "sha256": "acc23df5130333fb9bb967b2ec7da3d6cf291e108346c59a9bb37260ddec083a",
+    "sample_rate": 24000,
+    "duration_seconds": 3.3173333333333335,
+    "reported_generation_seconds": 9.581,
+    "peak": 0.9000244140625,
+    "loudness": {
+      "input_i": "-18.7",
+      "input_tp": "-0.9",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.36057692307692313,
+    "estimated_pitch_median_hz": 163.58993763713613,
+    "estimated_pitch_iqr_hz": 76.36873385974329,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-11.6",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/f5-0012-excited-text1.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "fcf72d26378a2898c53599b0ec2f1c7aec8997eee510bc3288c744de4349a3ba"
+  },
+  {
+    "name": "voxcpm2-0012-restrained_anger-text0",
+    "engine": "voxcpm2",
+    "condition": {
+      "id": "0012-restrained_anger-text0",
+      "speaker": "0012",
+      "style": "restrained_anger",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak with restrained frustration, controlled tension and firm emphasis. Do not shout.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:anger",
+        "label": "Voice 0012 \u00b7 male \u00b7 anger \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-anger.wav",
+        "sha256": "2ee717f077a83a09073f65d2b3530ac26225e1fc56c21175097318239ae61285",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/voxcpm2-0012-restrained_anger-text0/native.wav",
+    "sha256": "0019e5d4fde204ef294168370df2689e27845c4c45f6dc6f7380cf5764e82f1d",
+    "sample_rate": 48000,
+    "duration_seconds": 3.36,
+    "reported_generation_seconds": 3.477756977081299,
+    "peak": 0.9037452936172485,
+    "loudness": {
+      "input_i": "-17.5",
+      "input_tp": "-0.9",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.40284360189573465,
+    "estimated_pitch_median_hz": 142.71605226217207,
+    "estimated_pitch_iqr_hz": 97.98678974693573,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-12.8",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/voxcpm2-0012-restrained_anger-text0.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "bd44129a421352808066ec05b7dcf3b54b3a13412e42107192244656e1162831"
+  },
+  {
+    "name": "f5-0012-restrained_anger-text0",
+    "engine": "f5",
+    "condition": {
+      "id": "0012-restrained_anger-text0",
+      "speaker": "0012",
+      "style": "restrained_anger",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak with restrained frustration, controlled tension and firm emphasis. Do not shout.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:anger",
+        "label": "Voice 0012 \u00b7 male \u00b7 anger \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-anger.wav",
+        "sha256": "2ee717f077a83a09073f65d2b3530ac26225e1fc56c21175097318239ae61285",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/f5-runs/f5-0012-restrained_anger-text0/voice/outputs/20261030T130002-768273Z/speech.wav",
+    "sha256": "4a6f2f31a251375c3ab5357bf0cadbbca79a5dd5c5e8911a0e7dc733d15e1efa",
+    "sample_rate": 24000,
+    "duration_seconds": 3.0933333333333333,
+    "reported_generation_seconds": 9.547,
+    "peak": 0.908416748046875,
+    "loudness": {
+      "input_i": "-17.0",
+      "input_tp": "-0.8",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.4329896907216495,
+    "estimated_pitch_median_hz": 191.9273836385645,
+    "estimated_pitch_iqr_hz": 119.94467496551073,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.5",
+      "input_tp": "-13.2",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/f5-0012-restrained_anger-text0.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "2abaec467c9529a2329c8ef5ecb9805e6f2071f059e0d2486f6a8085e4bcd2b9"
+  },
+  {
+    "name": "voxcpm2-0012-restrained_anger-text1",
+    "engine": "voxcpm2",
+    "condition": {
+      "id": "0012-restrained_anger-text1",
+      "speaker": "0012",
+      "style": "restrained_anger",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak with restrained frustration, controlled tension and firm emphasis. Do not shout.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:anger",
+        "label": "Voice 0012 \u00b7 male \u00b7 anger \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-anger.wav",
+        "sha256": "2ee717f077a83a09073f65d2b3530ac26225e1fc56c21175097318239ae61285",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/voxcpm2-0012-restrained_anger-text1/native.wav",
+    "sha256": "540690aafa127b8bd9d83b36bdf45c35a793d06dd7a9644e2c381a704fdfc4ea",
+    "sample_rate": 48000,
+    "duration_seconds": 3.2,
+    "reported_generation_seconds": 3.371760845184326,
+    "peak": 0.6929514408111572,
+    "loudness": {
+      "input_i": "-16.8",
+      "input_tp": "-3.1",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.34328358208955223,
+    "estimated_pitch_median_hz": 183.3730637716992,
+    "estimated_pitch_iqr_hz": 41.086261303375636,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-15.7",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/voxcpm2-0012-restrained_anger-text1.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "68660415cc3a784d98c2eb161b86a8f2ab45bb5677c11f5368ae5edc0bcb68ad"
+  },
+  {
+    "name": "f5-0012-restrained_anger-text1",
+    "engine": "f5",
+    "condition": {
+      "id": "0012-restrained_anger-text1",
+      "speaker": "0012",
+      "style": "restrained_anger",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak with restrained frustration, controlled tension and firm emphasis. Do not shout.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:anger",
+        "label": "Voice 0012 \u00b7 male \u00b7 anger \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-anger.wav",
+        "sha256": "2ee717f077a83a09073f65d2b3530ac26225e1fc56c21175097318239ae61285",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/f5-runs/f5-0012-restrained_anger-text1/voice/outputs/20261030T130017-050468Z/speech.wav",
+    "sha256": "a52f354a9b06e3e770f0b3a2daf1f58f7da16cab1b601accb04e195c81216121",
+    "sample_rate": 24000,
+    "duration_seconds": 3.7546666666666666,
+    "reported_generation_seconds": 10.003,
+    "peak": 0.818695068359375,
+    "loudness": {
+      "input_i": "-16.8",
+      "input_tp": "-1.7",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.3872340425531915,
+    "estimated_pitch_median_hz": 252.78464224748788,
+    "estimated_pitch_iqr_hz": 110.24155975742485,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.5",
+      "input_tp": "-14.3",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/f5-0012-restrained_anger-text1.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "1062a62dc2889042bc59c07743fa1bddd86fe5b0632f5dd4ed6e007c39c0f646"
+  },
+  {
+    "name": "voxcpm2-0012-reflective_sadness-text0",
+    "engine": "voxcpm2",
+    "condition": {
+      "id": "0012-reflective_sadness-text0",
+      "speaker": "0012",
+      "style": "reflective_sadness",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak with quiet sadness, reflective pauses and subdued energy. Keep speech intelligible.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:sadness",
+        "label": "Voice 0012 \u00b7 male \u00b7 sadness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-sadness.wav",
+        "sha256": "b548fdacb62075241fdade270b0a06e9256d2fa70e8fceab546bf29a9e0b4791",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/voxcpm2-0012-reflective_sadness-text0/native.wav",
+    "sha256": "78e0cfff7ce36e716d3c9bb44c4e44cf06eb6d9ea521cb74872dda8b65f43bf1",
+    "sample_rate": 48000,
+    "duration_seconds": 3.2,
+    "reported_generation_seconds": 3.3553872108459473,
+    "peak": 0.5318195819854736,
+    "loudness": {
+      "input_i": "-20.9",
+      "input_tp": "-5.5",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.2736318407960199,
+    "estimated_pitch_median_hz": 144.41471682055027,
+    "estimated_pitch_iqr_hz": 43.30087288323516,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-14.0",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/voxcpm2-0012-reflective_sadness-text0.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "bea23166d0662054a57466f5f0d5baff0f6704a675df97878264cef5104fa306"
+  },
+  {
+    "name": "f5-0012-reflective_sadness-text0",
+    "engine": "f5",
+    "condition": {
+      "id": "0012-reflective_sadness-text0",
+      "speaker": "0012",
+      "style": "reflective_sadness",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak with quiet sadness, reflective pauses and subdued energy. Keep speech intelligible.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:sadness",
+        "label": "Voice 0012 \u00b7 male \u00b7 sadness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-sadness.wav",
+        "sha256": "b548fdacb62075241fdade270b0a06e9256d2fa70e8fceab546bf29a9e0b4791",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/f5-runs/f5-0012-reflective_sadness-text0/voice/outputs/20261030T130031-930892Z/speech.wav",
+    "sha256": "d8f323018ae2c7a1cb3dd2e16fab32f2c0880c232481345b00f241846e03398e",
+    "sample_rate": 24000,
+    "duration_seconds": 2.752,
+    "reported_generation_seconds": 9.488,
+    "peak": 0.80889892578125,
+    "loudness": {
+      "input_i": "-16.3",
+      "input_tp": "-1.8",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.4046242774566474,
+    "estimated_pitch_median_hz": 198.6314251041891,
+    "estimated_pitch_iqr_hz": 32.80543537841393,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-14.9",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/f5-0012-reflective_sadness-text0.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "09d92257fa713ebe5b445134088abb8bfc18c7fc37dcca30a1b9afdc469e0166"
+  },
+  {
+    "name": "voxcpm2-0012-reflective_sadness-text1",
+    "engine": "voxcpm2",
+    "condition": {
+      "id": "0012-reflective_sadness-text1",
+      "speaker": "0012",
+      "style": "reflective_sadness",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak with quiet sadness, reflective pauses and subdued energy. Keep speech intelligible.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:sadness",
+        "label": "Voice 0012 \u00b7 male \u00b7 sadness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-sadness.wav",
+        "sha256": "b548fdacb62075241fdade270b0a06e9256d2fa70e8fceab546bf29a9e0b4791",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/voxcpm2-0012-reflective_sadness-text1/native.wav",
+    "sha256": "a4ae02253561c6310a7cd87298ed1da5710c7eca0c36a126279a5ca21cea1047",
+    "sample_rate": 48000,
+    "duration_seconds": 3.84,
+    "reported_generation_seconds": 4.025484085083008,
+    "peak": 0.8405110836029053,
+    "loudness": {
+      "input_i": "-20.2",
+      "input_tp": "-1.5",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.3526970954356846,
+    "estimated_pitch_median_hz": 168.28685307741364,
+    "estimated_pitch_iqr_hz": 77.4427508886711,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-10.7",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/voxcpm2-0012-reflective_sadness-text1.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "337ec93442731c77ee23fd822d56f799616aa4f41278bb2d3b64effc672304a5"
+  },
+  {
+    "name": "f5-0012-reflective_sadness-text1",
+    "engine": "f5",
+    "condition": {
+      "id": "0012-reflective_sadness-text1",
+      "speaker": "0012",
+      "style": "reflective_sadness",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak with quiet sadness, reflective pauses and subdued energy. Keep speech intelligible.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:sadness",
+        "label": "Voice 0012 \u00b7 male \u00b7 sadness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-sadness.wav",
+        "sha256": "b548fdacb62075241fdade270b0a06e9256d2fa70e8fceab546bf29a9e0b4791",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/f5-runs/f5-0012-reflective_sadness-text1/voice/outputs/20261030T130046-889683Z/speech.wav",
+    "sha256": "f5f939bb8f3a390e73ef39ad0d7dd2fa7dcac03c36a015c4798a846c3b9ae56a",
+    "sample_rate": 24000,
+    "duration_seconds": 3.3493333333333335,
+    "reported_generation_seconds": 10.438,
+    "peak": 0.949981689453125,
+    "loudness": {
+      "input_i": "-17.5",
+      "input_tp": "-0.3",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.32380952380952377,
+    "estimated_pitch_median_hz": 187.62630597765377,
+    "estimated_pitch_iqr_hz": 52.82709683880128,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-12.2",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/f5-0012-reflective_sadness-text1.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "06dba0e020f7ba26032b472971027d355f7221a7250c60965f1496a2659b5a0b"
+  },
+  {
+    "name": "voxcpm2-0015-neutral-text0",
+    "engine": "voxcpm2",
+    "condition": {
+      "id": "0015-neutral-text0",
+      "speaker": "0015",
+      "style": "neutral",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak naturally in a neutral conversational tone, without dramatic emphasis.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/voxcpm2-0015-neutral-text0/native.wav",
+    "sha256": "42a0731606813b572b3310e66c48224a0f6a8d075c9a05b10373e01cc1196d26",
+    "sample_rate": 48000,
+    "duration_seconds": 2.88,
+    "reported_generation_seconds": 4.134698152542114,
+    "peak": 0.7887405157089233,
+    "loudness": {
+      "input_i": "-15.4",
+      "input_tp": "-2.1",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.2596685082872928,
+    "estimated_pitch_median_hz": 217.5114882200553,
+    "estimated_pitch_iqr_hz": 32.77964772930369,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-16.1",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/voxcpm2-0015-neutral-text0.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "9e0813517f744b9c94b33143b9ff9618e8ea0adbde645db52d231636647bf56b"
+  },
+  {
+    "name": "f5-0015-neutral-text0",
+    "engine": "f5",
+    "condition": {
+      "id": "0015-neutral-text0",
+      "speaker": "0015",
+      "style": "neutral",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak naturally in a neutral conversational tone, without dramatic emphasis.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/f5-runs/f5-0015-neutral-text0/voice/outputs/20261030T130102-965178Z/speech.wav",
+    "sha256": "4295701aa1f33b8c7506e7081ffbd2403e5b119be275004b5f5718bf69d7b840",
+    "sample_rate": 24000,
+    "duration_seconds": 2.8053333333333335,
+    "reported_generation_seconds": 10.665,
+    "peak": 0.921142578125,
+    "loudness": {
+      "input_i": "-15.1",
+      "input_tp": "-0.7",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.30113636363636365,
+    "estimated_pitch_median_hz": 224.19236109491456,
+    "estimated_pitch_iqr_hz": 72.86438160881968,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-15.0",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/f5-0015-neutral-text0.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "de4364be8363d4e9b0df10970a9cd513ed624d91ea1939e67c52a6ce833828ec"
+  },
+  {
+    "name": "voxcpm2-0015-neutral-text1",
+    "engine": "voxcpm2",
+    "condition": {
+      "id": "0015-neutral-text1",
+      "speaker": "0015",
+      "style": "neutral",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak naturally in a neutral conversational tone, without dramatic emphasis.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/voxcpm2-0015-neutral-text1/native.wav",
+    "sha256": "ce381a2d699819c16c2f2b53e5e463cbb9e43a84f92a7be22c702a3c5c6b3385",
+    "sample_rate": 48000,
+    "duration_seconds": 3.2,
+    "reported_generation_seconds": 4.730155944824219,
+    "peak": 0.8395407199859619,
+    "loudness": {
+      "input_i": "-16.4",
+      "input_tp": "-1.5",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.36318407960199006,
+    "estimated_pitch_median_hz": 218.859713443831,
+    "estimated_pitch_iqr_hz": 62.590692948114224,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-14.5",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/voxcpm2-0015-neutral-text1.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "b2437688eb77344914a59c30096932832a1c6d477c95830f429b4df1bf094ae9"
+  },
+  {
+    "name": "f5-0015-neutral-text1",
+    "engine": "f5",
+    "condition": {
+      "id": "0015-neutral-text1",
+      "speaker": "0015",
+      "style": "neutral",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak naturally in a neutral conversational tone, without dramatic emphasis.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/f5-runs/f5-0015-neutral-text1/voice/outputs/20261030T130119-734850Z/speech.wav",
+    "sha256": "2d127ff07ac0bab860270bbf1bb0f433a339713b490d0df6c175368164d935e3",
+    "sample_rate": 24000,
+    "duration_seconds": 3.4133333333333336,
+    "reported_generation_seconds": 12.495,
+    "peak": 0.949981689453125,
+    "loudness": {
+      "input_i": "-17.4",
+      "input_tp": "-0.3",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.2710280373831776,
+    "estimated_pitch_median_hz": 206.14132627335397,
+    "estimated_pitch_iqr_hz": 67.72076222448447,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-12.3",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/f5-0015-neutral-text1.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "08498c165b1dcaef1a4b096f659d6bc64341f354f07b69cec8c414e1a608d20a"
+  },
+  {
+    "name": "voxcpm2-0015-excited-text0",
+    "engine": "voxcpm2",
+    "condition": {
+      "id": "0015-excited-text0",
+      "speaker": "0015",
+      "style": "excited",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak with delighted excitement and lively pitch variation, keeping the words clear.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:happiness",
+        "label": "Voice 0015 \u00b7 female \u00b7 happiness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-happiness.wav",
+        "sha256": "17ea58ac011f19b3bc3ab2eb83a55e944b5f4f0020d42b64d4f5a94aa287a83b",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/voxcpm2-0015-excited-text0/native.wav",
+    "sha256": "80f3eb6a3bcd05b971b8575f2da6c5206385839f4c33ca157c0ef0be067e0308",
+    "sample_rate": 48000,
+    "duration_seconds": 2.88,
+    "reported_generation_seconds": 5.006698131561279,
+    "peak": 0.8214511871337891,
+    "loudness": {
+      "input_i": "-15.8",
+      "input_tp": "-1.7",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.26519337016574585,
+    "estimated_pitch_median_hz": 219.29927336143794,
+    "estimated_pitch_iqr_hz": 32.731503731365024,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-15.3",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/voxcpm2-0015-excited-text0.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "e64290cb9663ba50507e4746088345d8b71500152344f5c0775e289547d4daf2"
+  },
+  {
+    "name": "f5-0015-excited-text0",
+    "engine": "f5",
+    "condition": {
+      "id": "0015-excited-text0",
+      "speaker": "0015",
+      "style": "excited",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak with delighted excitement and lively pitch variation, keeping the words clear.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:happiness",
+        "label": "Voice 0015 \u00b7 female \u00b7 happiness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-happiness.wav",
+        "sha256": "17ea58ac011f19b3bc3ab2eb83a55e944b5f4f0020d42b64d4f5a94aa287a83b",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/f5-runs/f5-0015-excited-text0/voice/outputs/20261030T130138-598918Z/speech.wav",
+    "sha256": "f7283fbe8db521d00cc1c98d0307aacda2474720e184638a560207d57a4833e9",
+    "sample_rate": 24000,
+    "duration_seconds": 2.752,
+    "reported_generation_seconds": 12.48,
+    "peak": 0.784454345703125,
+    "loudness": {
+      "input_i": "-16.0",
+      "input_tp": "-2.1",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.36416184971098264,
+    "estimated_pitch_median_hz": 234.96653888238694,
+    "estimated_pitch_iqr_hz": 74.29040370842782,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.5",
+      "input_tp": "-15.5",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/f5-0015-excited-text0.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "b8d43ba602ac81aceeb6f353f54046a550b320a620274785a80392994589247e"
+  },
+  {
+    "name": "voxcpm2-0015-excited-text1",
+    "engine": "voxcpm2",
+    "condition": {
+      "id": "0015-excited-text1",
+      "speaker": "0015",
+      "style": "excited",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak with delighted excitement and lively pitch variation, keeping the words clear.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:happiness",
+        "label": "Voice 0015 \u00b7 female \u00b7 happiness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-happiness.wav",
+        "sha256": "17ea58ac011f19b3bc3ab2eb83a55e944b5f4f0020d42b64d4f5a94aa287a83b",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/voxcpm2-0015-excited-text1/native.wav",
+    "sha256": "c7b4f6fb06485c4b85f606da5ebd9f29c8aeaa360dc4df303fea9c6116852bf8",
+    "sample_rate": 48000,
+    "duration_seconds": 2.88,
+    "reported_generation_seconds": 5.476799011230469,
+    "peak": 0.8601386547088623,
+    "loudness": {
+      "input_i": "-19.7",
+      "input_tp": "-1.3",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.3425414364640884,
+    "estimated_pitch_median_hz": 270.04940942737244,
+    "estimated_pitch_iqr_hz": 140.09200551151196,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-11.0",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/voxcpm2-0015-excited-text1.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "752ffe03107f6d05dc139f6e36a34bfbee38765b83d36b52d28a3ddf631066cc"
+  },
+  {
+    "name": "f5-0015-excited-text1",
+    "engine": "f5",
+    "condition": {
+      "id": "0015-excited-text1",
+      "speaker": "0015",
+      "style": "excited",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak with delighted excitement and lively pitch variation, keeping the words clear.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:happiness",
+        "label": "Voice 0015 \u00b7 female \u00b7 happiness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-happiness.wav",
+        "sha256": "17ea58ac011f19b3bc3ab2eb83a55e944b5f4f0020d42b64d4f5a94aa287a83b",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/f5-runs/f5-0015-excited-text1/voice/outputs/20261030T130157-890543Z/speech.wav",
+    "sha256": "b2a4d151ca97640f1913950e6698ddc56e933b380d661e9ee432f57b1299823e",
+    "sample_rate": 24000,
+    "duration_seconds": 3.3493333333333335,
+    "reported_generation_seconds": 13.945,
+    "peak": 0.84991455078125,
+    "loudness": {
+      "input_i": "-16.7",
+      "input_tp": "-1.4",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.33333333333333337,
+    "estimated_pitch_median_hz": 224.44943989710882,
+    "estimated_pitch_iqr_hz": 122.03010759098419,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-14.1",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/f5-0015-excited-text1.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "72960fc7e852f24eab01e170679f8f68870144d4e2c2c427d2bf04526a5bf0d6"
+  },
+  {
+    "name": "voxcpm2-0015-restrained_anger-text0",
+    "engine": "voxcpm2",
+    "condition": {
+      "id": "0015-restrained_anger-text0",
+      "speaker": "0015",
+      "style": "restrained_anger",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak with restrained frustration, controlled tension and firm emphasis. Do not shout.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:anger",
+        "label": "Voice 0015 \u00b7 female \u00b7 anger \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-anger.wav",
+        "sha256": "21c19d49142b6db9ba96bb6d5ffcbf55132a77183e71d31a877a36bc9d9ce887",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/voxcpm2-0015-restrained_anger-text0/native.wav",
+    "sha256": "5966fbf5f55ac41d0aee959fed0c15b8e4dd2f2d600951af777db360d8ff5835",
+    "sample_rate": 48000,
+    "duration_seconds": 3.36,
+    "reported_generation_seconds": 7.3027870655059814,
+    "peak": 0.8691525459289551,
+    "loudness": {
+      "input_i": "-15.7",
+      "input_tp": "-1.2",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.30805687203791465,
+    "estimated_pitch_median_hz": 210.04553970506333,
+    "estimated_pitch_iqr_hz": 45.59679383423378,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-14.9",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/voxcpm2-0015-restrained_anger-text0.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "0c6215607fe9887885609b90718bccc1ec3a121e8f24f8570d25c010a4705258"
+  },
+  {
+    "name": "f5-0015-restrained_anger-text0",
+    "engine": "f5",
+    "condition": {
+      "id": "0015-restrained_anger-text0",
+      "speaker": "0015",
+      "style": "restrained_anger",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak with restrained frustration, controlled tension and firm emphasis. Do not shout.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:anger",
+        "label": "Voice 0015 \u00b7 female \u00b7 anger \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-anger.wav",
+        "sha256": "21c19d49142b6db9ba96bb6d5ffcbf55132a77183e71d31a877a36bc9d9ce887",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/f5-runs/f5-0015-restrained_anger-text0/voice/outputs/20261030T130220-322617Z/speech.wav",
+    "sha256": "792f0d070c0cae54a779d2e55cfcff73368aa91549f6c1dce977289713346798",
+    "sample_rate": 24000,
+    "duration_seconds": 3.1573333333333333,
+    "reported_generation_seconds": 16.188,
+    "peak": 0.737518310546875,
+    "loudness": {
+      "input_i": "-18.8",
+      "input_tp": "-2.6",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.4494949494949495,
+    "estimated_pitch_median_hz": 277.513708591534,
+    "estimated_pitch_iqr_hz": 94.9908693626891,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-13.2",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/f5-0015-restrained_anger-text0.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "e0166b24d05e263e7654a4def7de211a123d072c9ad575e1c47db26f6d29a353"
+  },
+  {
+    "name": "voxcpm2-0015-restrained_anger-text1",
+    "engine": "voxcpm2",
+    "condition": {
+      "id": "0015-restrained_anger-text1",
+      "speaker": "0015",
+      "style": "restrained_anger",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak with restrained frustration, controlled tension and firm emphasis. Do not shout.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:anger",
+        "label": "Voice 0015 \u00b7 female \u00b7 anger \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-anger.wav",
+        "sha256": "21c19d49142b6db9ba96bb6d5ffcbf55132a77183e71d31a877a36bc9d9ce887",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/voxcpm2-0015-restrained_anger-text1/native.wav",
+    "sha256": "bedcb306fed2b70c2c73670764f291ded38ea6386610b3345db7289766ba5b9b",
+    "sample_rate": 48000,
+    "duration_seconds": 3.2,
+    "reported_generation_seconds": 8.497210025787354,
+    "peak": 0.8298417329788208,
+    "loudness": {
+      "input_i": "-17.4",
+      "input_tp": "-1.6",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.3233830845771144,
+    "estimated_pitch_median_hz": 229.21596721948458,
+    "estimated_pitch_iqr_hz": 63.85357429031242,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-13.6",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/voxcpm2-0015-restrained_anger-text1.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "699554a538af82cc6d5aeb68a5e99be5788a31f5f4fe8c488354f942689223cf"
+  },
+  {
+    "name": "f5-0015-restrained_anger-text1",
+    "engine": "f5",
+    "condition": {
+      "id": "0015-restrained_anger-text1",
+      "speaker": "0015",
+      "style": "restrained_anger",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak with restrained frustration, controlled tension and firm emphasis. Do not shout.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:anger",
+        "label": "Voice 0015 \u00b7 female \u00b7 anger \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-anger.wav",
+        "sha256": "21c19d49142b6db9ba96bb6d5ffcbf55132a77183e71d31a877a36bc9d9ce887",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/f5-runs/f5-0015-restrained_anger-text1/voice/outputs/20261030T130246-224681Z/speech.wav",
+    "sha256": "7af5b94d1136d0e747a1461ec6afca16cd5a9d967bb6419c80b58ce468027b4a",
+    "sample_rate": 24000,
+    "duration_seconds": 3.84,
+    "reported_generation_seconds": 21.555,
+    "peak": 0.949981689453125,
+    "loudness": {
+      "input_i": "-17.4",
+      "input_tp": "-0.4",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.39004149377593356,
+    "estimated_pitch_median_hz": 254.0463429375886,
+    "estimated_pitch_iqr_hz": 62.39453709851065,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.5",
+      "input_tp": "-12.4",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/f5-0015-restrained_anger-text1.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "829a9cc9b8867ead8f094dbe251d5c42ec65bf239903bb1da65ba0c7bab6c4cf"
+  },
+  {
+    "name": "voxcpm2-0015-reflective_sadness-text0",
+    "engine": "voxcpm2",
+    "condition": {
+      "id": "0015-reflective_sadness-text0",
+      "speaker": "0015",
+      "style": "reflective_sadness",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak with quiet sadness, reflective pauses and subdued energy. Keep speech intelligible.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:sadness",
+        "label": "Voice 0015 \u00b7 female \u00b7 sadness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-sadness.wav",
+        "sha256": "04ce66ee24099fac28d82dbb23441e90083601cce577755353cc410b066ffcf6",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/voxcpm2-0015-reflective_sadness-text0/native.wav",
+    "sha256": "49d1087706aaebe5ce8b941156c781836067088f3c14439d35c02c24bcdb49f5",
+    "sample_rate": 48000,
+    "duration_seconds": 3.2,
+    "reported_generation_seconds": 9.48497200012207,
+    "peak": 0.5055863857269287,
+    "loudness": {
+      "input_i": "-19.3",
+      "input_tp": "-5.9",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.31840796019900497,
+    "estimated_pitch_median_hz": 193.42047445932062,
+    "estimated_pitch_iqr_hz": 51.48695230932799,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-16.0",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/voxcpm2-0015-reflective_sadness-text0.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "faf5bbfd8c13df10ea08b7139bf1a555afd645f60f562e31cfceaf686b096473"
+  },
+  {
+    "name": "f5-0015-reflective_sadness-text0",
+    "engine": "f5",
+    "condition": {
+      "id": "0015-reflective_sadness-text0",
+      "speaker": "0015",
+      "style": "reflective_sadness",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak with quiet sadness, reflective pauses and subdued energy. Keep speech intelligible.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:sadness",
+        "label": "Voice 0015 \u00b7 female \u00b7 sadness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-sadness.wav",
+        "sha256": "04ce66ee24099fac28d82dbb23441e90083601cce577755353cc410b066ffcf6",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/f5-runs/f5-0015-reflective_sadness-text0/voice/outputs/20261030T130318-717755Z/speech.wav",
+    "sha256": "fe8185eebe2f666bc070e8ed65993f953b16fb8faa50101f560c2f4bb1dbfd83",
+    "sample_rate": 24000,
+    "duration_seconds": 3.104,
+    "reported_generation_seconds": 18.089,
+    "peak": 0.8179931640625,
+    "loudness": {
+      "input_i": "-16.5",
+      "input_tp": "-1.7",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.3589743589743589,
+    "estimated_pitch_median_hz": 199.27218905698967,
+    "estimated_pitch_iqr_hz": 43.34576740269782,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-14.6",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/f5-0015-reflective_sadness-text0.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "ce401812e9f30d7a605c77ed25d61052db39c0ba14155bb9a95a5e8040ef968a"
+  },
+  {
+    "name": "voxcpm2-0015-reflective_sadness-text1",
+    "engine": "voxcpm2",
+    "condition": {
+      "id": "0015-reflective_sadness-text1",
+      "speaker": "0015",
+      "style": "reflective_sadness",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak with quiet sadness, reflective pauses and subdued energy. Keep speech intelligible.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:sadness",
+        "label": "Voice 0015 \u00b7 female \u00b7 sadness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-sadness.wav",
+        "sha256": "04ce66ee24099fac28d82dbb23441e90083601cce577755353cc410b066ffcf6",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/voxcpm2-0015-reflective_sadness-text1/native.wav",
+    "sha256": "83bc91bb313e431fe373bf52bf5a1ef1d8d8ad1e5c0884757bbc67b4560dfd63",
+    "sample_rate": 48000,
+    "duration_seconds": 3.2,
+    "reported_generation_seconds": 7.267336130142212,
+    "peak": 0.27402985095977783,
+    "loudness": {
+      "input_i": "-29.4",
+      "input_tp": "-11.2",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.3233830845771144,
+    "estimated_pitch_median_hz": 200.01088663673528,
+    "estimated_pitch_iqr_hz": 54.86864671447972,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-11.2",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/voxcpm2-0015-reflective_sadness-text1.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "a0dd88ba4b20fa386adc2cff87502e8a556ea5cf90ca6a0efd0be39868189ebe"
+  },
+  {
+    "name": "f5-0015-reflective_sadness-text1",
+    "engine": "f5",
+    "condition": {
+      "id": "0015-reflective_sadness-text1",
+      "speaker": "0015",
+      "style": "reflective_sadness",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak with quiet sadness, reflective pauses and subdued energy. Keep speech intelligible.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:sadness",
+        "label": "Voice 0015 \u00b7 female \u00b7 sadness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-sadness.wav",
+        "sha256": "04ce66ee24099fac28d82dbb23441e90083601cce577755353cc410b066ffcf6",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/f5-runs/f5-0015-reflective_sadness-text1/voice/outputs/20261030T130345-392275Z/speech.wav",
+    "sha256": "70a0d888a0d2f3d25fc1ddd0842986348c1197d0485dfd0135e1c5f22c831829",
+    "sample_rate": 24000,
+    "duration_seconds": 3.776,
+    "reported_generation_seconds": 16.205,
+    "peak": 0.88934326171875,
+    "loudness": {
+      "input_i": "-15.0",
+      "input_tp": "-1.0",
+      "meter": "FFmpeg ebur128"
+    },
+    "low_energy_frame_fraction": 0.3291139240506329,
+    "estimated_pitch_median_hz": 217.5053134886638,
+    "estimated_pitch_iqr_hz": 71.75276654840704,
+    "listening_scores": null,
+    "matched_measurement": {
+      "input_i": "-29.4",
+      "input_tp": "-15.4",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/f5-0015-reflective_sadness-text1.wav",
+    "matched_target_lufs": -29.4,
+    "matched_sha256": "d82d0537c4e24278b2c0be9be6698d53d99823a3a79e2196c6ee93634a851900"
+  }
+]

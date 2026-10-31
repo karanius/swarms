@@ -1,0 +1,365 @@
+{
+  "status": "passed",
+  "events": [
+    {
+      "stage": "start",
+      "seconds": 0.0
+    },
+    {
+      "stage": "audio_started",
+      "seconds": 0.0,
+      "scene": 0,
+      "speaker": "Mira",
+      "emotion": "sadness"
+    },
+    {
+      "stage": "audio_finished",
+      "seconds": 20.92,
+      "scene": 0,
+      "duration": 4.917354166666667
+    },
+    {
+      "stage": "scene_rendered",
+      "seconds": 24.19,
+      "scene": 0,
+      "frames": 139
+    },
+    {
+      "stage": "audio_started",
+      "seconds": 24.2,
+      "scene": 1,
+      "speaker": "Rowan",
+      "emotion": "neutral"
+    },
+    {
+      "stage": "audio_finished",
+      "seconds": 43.73,
+      "scene": 1,
+      "duration": 4.672020833333334
+    },
+    {
+      "stage": "scene_rendered",
+      "seconds": 46.7,
+      "scene": 1,
+      "frames": 133
+    },
+    {
+      "stage": "audio_started",
+      "seconds": 46.71,
+      "scene": 2,
+      "speaker": "Mira",
+      "emotion": "surprise"
+    },
+    {
+      "stage": "audio_finished",
+      "seconds": 62.59,
+      "scene": 2,
+      "duration": 2.7093541666666665
+    },
+    {
+      "stage": "scene_rendered",
+      "seconds": 64.48,
+      "scene": 2,
+      "frames": 86
+    },
+    {
+      "stage": "audio_started",
+      "seconds": 64.48,
+      "scene": 3,
+      "speaker": "Rowan",
+      "emotion": "happiness"
+    },
+    {
+      "stage": "audio_finished",
+      "seconds": 84.19,
+      "scene": 3,
+      "duration": 5.141354166666667
+    },
+    {
+      "stage": "scene_rendered",
+      "seconds": 87.43,
+      "scene": 3,
+      "frames": 144
+    },
+    {
+      "stage": "finished",
+      "seconds": 87.88,
+      "duration": 20.916666666666668
+    }
+  ],
+  "scenes": [
+    {
+      "start": 0,
+      "duration": 5.791666666666667,
+      "speech_start": 0.35,
+      "speech_end": 5.267354166666666,
+      "frames": 139,
+      "audio": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190021/audio-0/enhance/20261030T120033-818277Z/enhanced.wav",
+      "audio_sha256": "f9cd98eb6a1c14d0717cf7e94ac61a2796bf9929cd58f68c458a1d0ff2aa1969",
+      "request": {
+        "text": "I keep collecting ideas, but none of them feels ready to begin.",
+        "ordered": [
+          {
+            "id": "text",
+            "type": "text",
+            "config": {}
+          },
+          {
+            "id": "voice",
+            "type": "voice",
+            "config": {
+              "reference": "esd:0015:sadness",
+              "steps": 32,
+              "speed": 0.95,
+              "seed": 42,
+              "cross_fade_duration": 0.15,
+              "cfg_strength": 2.0,
+              "sway_sampling_coef": -1.0
+            }
+          },
+          {
+            "id": "master",
+            "type": "master",
+            "config": {
+              "profile": "Balanced"
+            }
+          },
+          {
+            "id": "enhance",
+            "type": "enhance",
+            "config": {
+              "evaluations": 32,
+              "denoise": 0.1
+            }
+          }
+        ],
+        "edges": [
+          {
+            "source": "text",
+            "target": "voice"
+          },
+          {
+            "source": "voice",
+            "target": "master"
+          },
+          {
+            "source": "master",
+            "target": "enhance"
+          }
+        ]
+      },
+      "scene": {
+        "speaker": "Mira",
+        "emotion": "sadness",
+        "headline": "Too many possibilities",
+        "text": "I keep collecting ideas, but none of them feels ready to begin."
+      }
+    },
+    {
+      "start": 5.791666666666667,
+      "duration": 5.541666666666667,
+      "speech_start": 6.141666666666667,
+      "speech_end": 10.8136875,
+      "frames": 133,
+      "audio": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190021/audio-1/enhance/20261030T120057-290515Z/enhanced.wav",
+      "audio_sha256": "99b0b711445a2e022062bcab45f66dac16c7152f27eb36997fa3bec0daa80107",
+      "request": {
+        "text": "Then let\u2019s choose one small thing we can finish together, today.",
+        "ordered": [
+          {
+            "id": "text",
+            "type": "text",
+            "config": {}
+          },
+          {
+            "id": "voice",
+            "type": "voice",
+            "config": {
+              "reference": "esd:0012:neutral",
+              "steps": 32,
+              "speed": 0.95,
+              "seed": 42,
+              "cross_fade_duration": 0.15,
+              "cfg_strength": 2.0,
+              "sway_sampling_coef": -1.0
+            }
+          },
+          {
+            "id": "master",
+            "type": "master",
+            "config": {
+              "profile": "Balanced"
+            }
+          },
+          {
+            "id": "enhance",
+            "type": "enhance",
+            "config": {
+              "evaluations": 32,
+              "denoise": 0.1
+            }
+          }
+        ],
+        "edges": [
+          {
+            "source": "text",
+            "target": "voice"
+          },
+          {
+            "source": "voice",
+            "target": "master"
+          },
+          {
+            "source": "master",
+            "target": "enhance"
+          }
+        ]
+      },
+      "scene": {
+        "speaker": "Rowan",
+        "emotion": "neutral",
+        "headline": "Choose one small thing",
+        "text": "Then let\u2019s choose one small thing we can finish together, today."
+      }
+    },
+    {
+      "start": 11.333333333333334,
+      "duration": 3.5833333333333335,
+      "speech_start": 11.683333333333334,
+      "speech_end": 14.392687500000001,
+      "frames": 86,
+      "audio": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190021/audio-2/enhance/20261030T120118-145086Z/enhanced.wav",
+      "audio_sha256": "a015656145c339106879822ba418b2e7f6487e33498e89ecb9f11aec302d5a71",
+      "request": {
+        "text": "Just one? A light, a path, and a first step?",
+        "ordered": [
+          {
+            "id": "text",
+            "type": "text",
+            "config": {}
+          },
+          {
+            "id": "voice",
+            "type": "voice",
+            "config": {
+              "reference": "esd:0015:surprise",
+              "steps": 32,
+              "speed": 0.95,
+              "seed": 42,
+              "cross_fade_duration": 0.15,
+              "cfg_strength": 2.0,
+              "sway_sampling_coef": -1.0
+            }
+          },
+          {
+            "id": "master",
+            "type": "master",
+            "config": {
+              "profile": "Balanced"
+            }
+          },
+          {
+            "id": "enhance",
+            "type": "enhance",
+            "config": {
+              "evaluations": 32,
+              "denoise": 0.1
+            }
+          }
+        ],
+        "edges": [
+          {
+            "source": "text",
+            "target": "voice"
+          },
+          {
+            "source": "voice",
+            "target": "master"
+          },
+          {
+            "source": "master",
+            "target": "enhance"
+          }
+        ]
+      },
+      "scene": {
+        "speaker": "Mira",
+        "emotion": "surprise",
+        "headline": "A light. A path. A first step.",
+        "text": "Just one? A light, a path, and a first step?"
+      }
+    },
+    {
+      "start": 14.916666666666668,
+      "duration": 6.0,
+      "speech_start": 15.266666666666667,
+      "speech_end": 20.408020833333335,
+      "frames": 144,
+      "audio": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190021/audio-3/enhance/20261030T120137-365609Z/enhanced.wav",
+      "audio_sha256": "0a3abd06bd9e4106d52e4b789a4c83b845b9f99a113660445b4a560485927e5d",
+      "request": {
+        "text": "Exactly. We don\u2019t need the whole bridge. We need somewhere safe to start.",
+        "ordered": [
+          {
+            "id": "text",
+            "type": "text",
+            "config": {}
+          },
+          {
+            "id": "voice",
+            "type": "voice",
+            "config": {
+              "reference": "esd:0012:happiness",
+              "steps": 32,
+              "speed": 0.95,
+              "seed": 42,
+              "cross_fade_duration": 0.15,
+              "cfg_strength": 2.0,
+              "sway_sampling_coef": -1.0
+            }
+          },
+          {
+            "id": "master",
+            "type": "master",
+            "config": {
+              "profile": "Balanced"
+            }
+          },
+          {
+            "id": "enhance",
+            "type": "enhance",
+            "config": {
+              "evaluations": 32,
+              "denoise": 0.1
+            }
+          }
+        ],
+        "edges": [
+          {
+            "source": "text",
+            "target": "voice"
+          },
+          {
+            "source": "voice",
+            "target": "master"
+          },
+          {
+            "source": "master",
+            "target": "enhance"
+          }
+        ]
+      },
+      "scene": {
+        "speaker": "Rowan",
+        "emotion": "happiness",
+        "headline": "Somewhere safe to start",
+        "text": "Exactly. We don\u2019t need the whole bridge. We need somewhere safe to start."
+      }
+    }
+  ],
+  "final": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190021/One Small Light.mp4",
+  "duration_seconds": 20.916666666666668,
+  "output_sha256": "9852da8621680116deaae6ed7f7bf804a2e28b11d91f86851982a01231fa10a3",
+  "soundtrack": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190021/soundtrack.wav",
+  "scope": "Authored procedural motion short, locally generated synthetic dialogue; intended emotion is not guaranteed emotional transfer or commercial clearance."
+}

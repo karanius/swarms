@@ -1,0 +1,16 @@
+{
+  "change": "Separate reference and generated Output widgets; retain generated player while previewing; retain successful take until next success",
+  "regression": "test_separate_players.py passed; test_reference_preview.py passed",
+  "live_browser": {
+    "two_audio_players": true,
+    "reference_duration": 5.412042,
+    "generated_duration": 2.4,
+    "both_ready_state": 4,
+    "media_errors": null,
+    "reference_autoplay_observed": true,
+    "preserved_user_run": "interactive-20261030-210825-34a6d5ef",
+    "new_generation_required": false
+  },
+  "preservation": "Live panel migrated script, speaker, emotion, seed, steps and latest saved result; notebook saved through UI",
+  "screenshot": "review/separate-players.png"
+}

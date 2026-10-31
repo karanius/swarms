@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/debpalash/VoiceStudio",
+  "tag": "v0.5.7",
+  "revision": "beeaae08204f0de5f49d4a087ef2b0ea8fecfcb9",
+  "python": "/Users/x/.local/share/swarms/voicestudio/venv/bin/python",
+  "runtime": "/Users/x/.local/share/swarms/voicestudio",
+  "port": 5196,
+  "host": "127.0.0.1",
+  "initial_engine": "mlx-audio",
+  "initial_model": "dia"
+}

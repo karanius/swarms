@@ -1,0 +1,23 @@
+[
+  {
+    "id": "take-20261030-222057-b6d70665",
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-16-study/runs/take-20261030-222057-b6d70665/native.wav",
+    "expected": "I need you to stay right here.",
+    "transcript": "",
+    "exact_words": false
+  },
+  {
+    "id": "take-20261030-232128-4e4b71f2",
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-16-study/runs/take-20261030-232128-4e4b71f2/native.wav",
+    "expected": "I need you to stay right here.",
+    "transcript": "",
+    "exact_words": false
+  },
+  {
+    "id": "take-20261030-232612-8e399239",
+    "path": "/Users/x/projects/swarms/knowledge/research/paper-16-study/runs/take-20261030-232612-8e399239/native.wav",
+    "expected": "[S1] I need you to stay right here. Take a slow breath and listen to me. We have plenty of time, and I will explain exactly what happens next. [S2]",
+    "transcript": "I need you to stay right here.  Take a slow breath and listen to me.  We have plenty of time,  and I will explain exactly what happens next.",
+    "exact_words": true
+  }
+]

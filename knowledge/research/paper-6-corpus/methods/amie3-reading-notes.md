@@ -1,0 +1,13 @@
+# AMIE 3 reading notes
+
+Primary author copy: [Fast and Exact Rule Mining with AMIE 3](https://www.luisgalarraga.de/docs/amie3.pdf), Jonathan Lajus, Luis Galárraga, and Fabian Suchanek. Downloaded PDF: 16 pages; its metadata reports creation in March 2020. Local file: `amie3-author.pdf`; exact SHA256 and collection timestamp are in `manifest.json`.
+
+The paper mines Horn rules over relational knowledge bases. Its opening sections define rules as a conjunction of body atoms implying a head atom, support as the count of true head predictions, and head coverage as support divided by the number of existing head-relation facts. Confidence depends on the chosen counterexample policy. The Partial Completeness Assumption (PCA) assumes completeness for one relation direction once at least one relevant fact exists; that is a modeling assumption, not observed completeness.
+
+Section 4 describes breadth-first refinement of closed rules within a maximum rule length, head-coverage and confidence thresholds, and confidence improvement against parent rules. AMIE 3 accelerates evaluation with existential-variable detection, lazy denominator evaluation, variable-order choices, and other query/pruning optimizations. The paper describes exact operation and also discusses an approximation mode that can be enabled or disabled; exactness claims require recording the actual options, search bounds, and thresholds. Its benchmark speedup is specific to its reported KBs and configurations, not a workflow-corpus performance prediction.
+
+For a future workflow KB, candidate predicates might encode graph membership, component type, typed port relationships, and directed edges. That representation would be a new modeling decision. A learned association does not establish causation, safe execution, a reusable component boundary, or a universally valid design rule. Corpus incompleteness, tutorial copies, test fixtures, and public-source selection bias can distort confidence. PCA should not be transferred to workflow data without checking whether its completeness assumptions make sense.
+
+Potential use: propose relational constraints or recurring associations after a carefully specified, provenance-aware graph-to-triples transformation. This is separate from gSpan's subgraph-frequency objective. Train/validation separation should group copies, revisions, forks, and probable families to reduce leakage. No triples, rules, executions, or validated composites were produced in this collection task.
+
+Inspection scope: title/abstract, definitions in Section 3, and the AMIE/AMIE 3 discussion and pseudocode in Section 4 were read from extracted PDF text. These are initial reading notes, not a complete algorithm implementation or benchmark replication.

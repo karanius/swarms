@@ -1,0 +1,21 @@
+{
+  "parent": "3070df21-245c-4977-812c-e68e525d7fbc",
+  "child": "57deb3e8-8efb-47b2-b05f-e6f84b834058",
+  "new_line": "01",
+  "parent_seed": 7,
+  "child_seed": 8,
+  "unchanged_lines": [
+    "02",
+    "03",
+    "04"
+  ],
+  "parent_files_preserved": true,
+  "word_check": {
+    "transcript": "I kept the seat for you. When the lights went down, I thought you had decided not to come.",
+    "expected": "I kept a seat for you. When the lights went down, I thought you had decided not to come.",
+    "exact_words": false,
+    "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+    "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+  },
+  "method": "Browser changed seed to 8 and clicked the first Regenerate this line button; saved manifests checked independently."
+}

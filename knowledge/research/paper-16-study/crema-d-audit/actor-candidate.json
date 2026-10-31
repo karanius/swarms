@@ -1,0 +1,1030 @@
+{
+  "schema_version": 1,
+  "dataset": "CREMA-D",
+  "actor": "1006",
+  "revision": "1658cd342dff90010aa843eaeebd53610a08b1dc",
+  "state": "candidate_not_approved",
+  "selection_policy": {
+    "minimum_votes": 7,
+    "minimum_target_share": 0.6,
+    "unique_majority_matches_intended": true,
+    "ranking": "maximise weakest-emotion best candidate Wilson lower bound; then eligible count",
+    "qualification": "NOT a validated quality threshold or emotion probability"
+  },
+  "conditioning_modes": {
+    "index": {
+      "identity": "neutral candidate, not yet selected",
+      "emotion": "same actor selected emotional candidate"
+    },
+    "vox": {
+      "performance": "selected candidate"
+    },
+    "f5": {
+      "performance": "selected candidate"
+    },
+    "dia": {
+      "performance": "selected candidate; short-reference limitation"
+    }
+  },
+  "references": [
+    {
+      "file": "1006_MTI_ANG_XX",
+      "actor": "1006",
+      "sentence": "MTI",
+      "intended": "A",
+      "intended_intensity": "XX",
+      "modality": 1,
+      "clip_number": 453,
+      "counts": {
+        "A": 10,
+        "D": 0,
+        "F": 0,
+        "H": 0,
+        "N": 0,
+        "S": 0
+      },
+      "n": 10,
+      "majority": [
+        "A"
+      ],
+      "agreement": 1.0,
+      "target_share": 1.0,
+      "target_wilson_lower": 0.7224598312333834,
+      "perceived_intensity_given_emotion": {
+        "A": 66.5,
+        "D": null,
+        "F": null,
+        "H": null,
+        "N": null,
+        "S": null
+      },
+      "overall_intensity": 66.5,
+      "eligible_candidate": true,
+      "path": "/Users/x/.local/share/swarms/crema-d/1658cd342dff90010aa843eaeebd53610a08b1dc/1006/1006_MTI_ANG_XX.wav",
+      "sha256": "d8a324371c17b8a9371e79c02642f1c7f1782b3c838de3346dc2904c482d27a9",
+      "source_url": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_MTI_ANG_XX.wav",
+      "transcript": {
+        "text": "Maybe tomorrow it will be cold.",
+        "status": "official_sentence_code_mapping_not_independently_transcribed"
+      },
+      "audio_qc": {
+        "duration_seconds": 3.7704375,
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "rms": 0.1263956908511823,
+        "peak": 1.0,
+        "near_full_scale_samples": 20,
+        "non_silent": true
+      },
+      "qualification": "metadata_candidate; listening and generation-transfer tests pending",
+      "engine_fit": {
+        "index": "candidate; audition identity/performance independently",
+        "vox": "short-reference candidate; test before adoption",
+        "f5": "short-reference candidate; test before adoption",
+        "dia": "short reference; documented guidance recommends longer conditioning"
+      }
+    },
+    {
+      "file": "1006_WSI_ANG_XX",
+      "actor": "1006",
+      "sentence": "WSI",
+      "intended": "A",
+      "intended_intensity": "XX",
+      "modality": 1,
+      "clip_number": 489,
+      "counts": {
+        "A": 10,
+        "D": 0,
+        "F": 0,
+        "H": 0,
+        "N": 0,
+        "S": 0
+      },
+      "n": 10,
+      "majority": [
+        "A"
+      ],
+      "agreement": 1.0,
+      "target_share": 1.0,
+      "target_wilson_lower": 0.7224598312333834,
+      "perceived_intensity_given_emotion": {
+        "A": 60.4,
+        "D": null,
+        "F": null,
+        "H": null,
+        "N": null,
+        "S": null
+      },
+      "overall_intensity": 60.4,
+      "eligible_candidate": true,
+      "path": "/Users/x/.local/share/swarms/crema-d/1658cd342dff90010aa843eaeebd53610a08b1dc/1006/1006_WSI_ANG_XX.wav",
+      "sha256": "e700f79e56ee2404b685878960ba38c567de28b0d5af7e5eeb2c5b07e783bf2d",
+      "source_url": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_WSI_ANG_XX.wav",
+      "transcript": {
+        "text": "We'll stop in a couple of minutes.",
+        "status": "official_sentence_code_mapping_not_independently_transcribed"
+      },
+      "audio_qc": {
+        "duration_seconds": 2.7360625,
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "rms": 0.05355789617682651,
+        "peak": 0.455963134765625,
+        "near_full_scale_samples": 0,
+        "non_silent": true
+      },
+      "qualification": "metadata_candidate; listening and generation-transfer tests pending",
+      "engine_fit": {
+        "index": "candidate; audition identity/performance independently",
+        "vox": "short-reference candidate; test before adoption",
+        "f5": "short-reference candidate; test before adoption",
+        "dia": "short reference; documented guidance recommends longer conditioning"
+      }
+    },
+    {
+      "file": "1006_IOM_ANG_XX",
+      "actor": "1006",
+      "sentence": "IOM",
+      "intended": "A",
+      "intended_intensity": "XX",
+      "modality": 1,
+      "clip_number": 435,
+      "counts": {
+        "A": 9,
+        "D": 1,
+        "F": 0,
+        "H": 0,
+        "N": 0,
+        "S": 0
+      },
+      "n": 10,
+      "majority": [
+        "A"
+      ],
+      "agreement": 0.9,
+      "target_share": 0.9,
+      "target_wilson_lower": 0.5958436145024278,
+      "perceived_intensity_given_emotion": {
+        "A": 71.5555555555556,
+        "D": 65.0,
+        "F": null,
+        "H": null,
+        "N": null,
+        "S": null
+      },
+      "overall_intensity": 70.9,
+      "eligible_candidate": true,
+      "path": "/Users/x/.local/share/swarms/crema-d/1658cd342dff90010aa843eaeebd53610a08b1dc/1006/1006_IOM_ANG_XX.wav",
+      "sha256": "ad35a7ee6f6674b8c9b5abf4237761ea7ea52656c24792c936943c04ca53b989",
+      "source_url": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_IOM_ANG_XX.wav",
+      "transcript": {
+        "text": "I'm on my way to the meeting.",
+        "status": "official_sentence_code_mapping_not_independently_transcribed"
+      },
+      "audio_qc": {
+        "duration_seconds": 3.2699375,
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "rms": 0.09772993782096247,
+        "peak": 0.6588134765625,
+        "near_full_scale_samples": 0,
+        "non_silent": true
+      },
+      "qualification": "metadata_candidate; listening and generation-transfer tests pending",
+      "engine_fit": {
+        "index": "candidate; audition identity/performance independently",
+        "vox": "short-reference candidate; test before adoption",
+        "f5": "short-reference candidate; test before adoption",
+        "dia": "short reference; documented guidance recommends longer conditioning"
+      }
+    },
+    {
+      "file": "1006_TAI_DIS_XX",
+      "actor": "1006",
+      "sentence": "TAI",
+      "intended": "D",
+      "intended_intensity": "XX",
+      "modality": 1,
+      "clip_number": 449,
+      "counts": {
+        "A": 0,
+        "D": 9,
+        "F": 0,
+        "H": 0,
+        "N": 0,
+        "S": 1
+      },
+      "n": 10,
+      "majority": [
+        "D"
+      ],
+      "agreement": 0.9,
+      "target_share": 0.9,
+      "target_wilson_lower": 0.5958436145024278,
+      "perceived_intensity_given_emotion": {
+        "A": null,
+        "D": 62.6666666666667,
+        "F": null,
+        "H": null,
+        "N": null,
+        "S": 14.0
+      },
+      "overall_intensity": 57.8,
+      "eligible_candidate": true,
+      "path": "/Users/x/.local/share/swarms/crema-d/1658cd342dff90010aa843eaeebd53610a08b1dc/1006/1006_TAI_DIS_XX.wav",
+      "sha256": "34279dea23d6a1b753c25656b89a5cad4f6d03fe6625940c5d87ecaa8deadd63",
+      "source_url": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_TAI_DIS_XX.wav",
+      "transcript": {
+        "text": "The airplane is almost full.",
+        "status": "official_sentence_code_mapping_not_independently_transcribed"
+      },
+      "audio_qc": {
+        "duration_seconds": 3.536875,
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "rms": 0.0221009401647348,
+        "peak": 0.242919921875,
+        "near_full_scale_samples": 0,
+        "non_silent": true
+      },
+      "qualification": "metadata_candidate; listening and generation-transfer tests pending",
+      "engine_fit": {
+        "index": "candidate; audition identity/performance independently",
+        "vox": "short-reference candidate; test before adoption",
+        "f5": "short-reference candidate; test before adoption",
+        "dia": "short reference; documented guidance recommends longer conditioning"
+      }
+    },
+    {
+      "file": "1006_IEO_DIS_MD",
+      "actor": "1006",
+      "sentence": "IEO",
+      "intended": "D",
+      "intended_intensity": "MD",
+      "modality": 1,
+      "clip_number": 424,
+      "counts": {
+        "A": 0,
+        "D": 8,
+        "F": 0,
+        "H": 0,
+        "N": 1,
+        "S": 0
+      },
+      "n": 9,
+      "majority": [
+        "D"
+      ],
+      "agreement": 0.8888888888888888,
+      "target_share": 0.8888888888888888,
+      "target_wilson_lower": 0.5649937852319398,
+      "perceived_intensity_given_emotion": {
+        "A": null,
+        "D": 60.0,
+        "F": null,
+        "H": null,
+        "N": 61.0,
+        "S": null
+      },
+      "overall_intensity": 60.1111111111111,
+      "eligible_candidate": true,
+      "path": "/Users/x/.local/share/swarms/crema-d/1658cd342dff90010aa843eaeebd53610a08b1dc/1006/1006_IEO_DIS_MD.wav",
+      "sha256": "414a20671b3c5c7e46ea58f61ab6330c5e3fb3e86b6067e687e0fa842ce27793",
+      "source_url": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_IEO_DIS_MD.wav",
+      "transcript": {
+        "text": "It's eleven o'clock.",
+        "status": "official_sentence_code_mapping_not_independently_transcribed"
+      },
+      "audio_qc": {
+        "duration_seconds": 3.003,
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "rms": 0.026728212509764003,
+        "peak": 0.210784912109375,
+        "near_full_scale_samples": 0,
+        "non_silent": true
+      },
+      "qualification": "metadata_candidate; listening and generation-transfer tests pending",
+      "engine_fit": {
+        "index": "candidate; audition identity/performance independently",
+        "vox": "short-reference candidate; test before adoption",
+        "f5": "short-reference candidate; test before adoption",
+        "dia": "short reference; documented guidance recommends longer conditioning"
+      }
+    },
+    {
+      "file": "1006_DFA_DIS_XX",
+      "actor": "1006",
+      "sentence": "DFA",
+      "intended": "D",
+      "intended_intensity": "XX",
+      "modality": 1,
+      "clip_number": 473,
+      "counts": {
+        "A": 0,
+        "D": 6,
+        "F": 0,
+        "H": 0,
+        "N": 4,
+        "S": 0
+      },
+      "n": 10,
+      "majority": [
+        "D"
+      ],
+      "agreement": 0.6,
+      "target_share": 0.6,
+      "target_wilson_lower": 0.3126695474501863,
+      "perceived_intensity_given_emotion": {
+        "A": null,
+        "D": 55.1666666666667,
+        "F": null,
+        "H": null,
+        "N": 50.0,
+        "S": null
+      },
+      "overall_intensity": 53.1,
+      "eligible_candidate": true,
+      "path": "/Users/x/.local/share/swarms/crema-d/1658cd342dff90010aa843eaeebd53610a08b1dc/1006/1006_DFA_DIS_XX.wav",
+      "sha256": "35f083676b49be4ca2216124764ea65d4e1d1d8bd3ae86ea9202a73b39d0602a",
+      "source_url": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_DFA_DIS_XX.wav",
+      "transcript": {
+        "text": "Don't forget a jacket.",
+        "status": "official_sentence_code_mapping_not_independently_transcribed"
+      },
+      "audio_qc": {
+        "duration_seconds": 2.7694375,
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "rms": 0.009914932886981673,
+        "peak": 0.081787109375,
+        "near_full_scale_samples": 0,
+        "non_silent": true
+      },
+      "qualification": "metadata_candidate; listening and generation-transfer tests pending",
+      "engine_fit": {
+        "index": "candidate; audition identity/performance independently",
+        "vox": "short-reference candidate; test before adoption",
+        "f5": "short-reference candidate; test before adoption",
+        "dia": "short reference; documented guidance recommends longer conditioning"
+      }
+    },
+    {
+      "file": "1006_IWW_FEA_XX",
+      "actor": "1006",
+      "sentence": "IWW",
+      "intended": "F",
+      "intended_intensity": "XX",
+      "modality": 1,
+      "clip_number": 442,
+      "counts": {
+        "A": 0,
+        "D": 0,
+        "F": 9,
+        "H": 0,
+        "N": 1,
+        "S": 0
+      },
+      "n": 10,
+      "majority": [
+        "F"
+      ],
+      "agreement": 0.9,
+      "target_share": 0.9,
+      "target_wilson_lower": 0.5958436145024278,
+      "perceived_intensity_given_emotion": {
+        "A": null,
+        "D": null,
+        "F": 69.0,
+        "H": null,
+        "N": 76.0,
+        "S": null
+      },
+      "overall_intensity": 69.7,
+      "eligible_candidate": true,
+      "path": "/Users/x/.local/share/swarms/crema-d/1658cd342dff90010aa843eaeebd53610a08b1dc/1006/1006_IWW_FEA_XX.wav",
+      "sha256": "061ba997a46f26b74c30914289d669755cb61d978e6042a753bc9a19a8c8bf2f",
+      "source_url": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_IWW_FEA_XX.wav",
+      "transcript": {
+        "text": "I wonder what this is about.",
+        "status": "official_sentence_code_mapping_not_independently_transcribed"
+      },
+      "audio_qc": {
+        "duration_seconds": 3.536875,
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "rms": 0.011235973852342623,
+        "peak": 0.0767822265625,
+        "near_full_scale_samples": 0,
+        "non_silent": true
+      },
+      "qualification": "metadata_candidate; listening and generation-transfer tests pending",
+      "engine_fit": {
+        "index": "candidate; audition identity/performance independently",
+        "vox": "short-reference candidate; test before adoption",
+        "f5": "short-reference candidate; test before adoption",
+        "dia": "short reference; documented guidance recommends longer conditioning"
+      }
+    },
+    {
+      "file": "1006_TIE_FEA_XX",
+      "actor": "1006",
+      "sentence": "TIE",
+      "intended": "F",
+      "intended_intensity": "XX",
+      "modality": 1,
+      "clip_number": 430,
+      "counts": {
+        "A": 0,
+        "D": 0,
+        "F": 6,
+        "H": 1,
+        "N": 0,
+        "S": 3
+      },
+      "n": 10,
+      "majority": [
+        "F"
+      ],
+      "agreement": 0.6,
+      "target_share": 0.6,
+      "target_wilson_lower": 0.3126695474501863,
+      "perceived_intensity_given_emotion": {
+        "A": null,
+        "D": null,
+        "F": 53.0,
+        "H": 81.0,
+        "N": null,
+        "S": 63.6666666666667
+      },
+      "overall_intensity": 59.0,
+      "eligible_candidate": true,
+      "path": "/Users/x/.local/share/swarms/crema-d/1658cd342dff90010aa843eaeebd53610a08b1dc/1006/1006_TIE_FEA_XX.wav",
+      "sha256": "d5ce61bc8cba76311b5f88c80ce091f563de58ab8a3cbc496db408deb4d6a9a5",
+      "source_url": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_TIE_FEA_XX.wav",
+      "transcript": {
+        "text": "That is exactly what happened.",
+        "status": "official_sentence_code_mapping_not_independently_transcribed"
+      },
+      "audio_qc": {
+        "duration_seconds": 3.1698125,
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "rms": 0.048321238356406775,
+        "peak": 0.414215087890625,
+        "near_full_scale_samples": 0,
+        "non_silent": true
+      },
+      "qualification": "metadata_candidate; listening and generation-transfer tests pending",
+      "engine_fit": {
+        "index": "candidate; audition identity/performance independently",
+        "vox": "short-reference candidate; test before adoption",
+        "f5": "short-reference candidate; test before adoption",
+        "dia": "short reference; documented guidance recommends longer conditioning"
+      }
+    },
+    {
+      "file": "1006_DFA_HAP_XX",
+      "actor": "1006",
+      "sentence": "DFA",
+      "intended": "H",
+      "intended_intensity": "XX",
+      "modality": 1,
+      "clip_number": 469,
+      "counts": {
+        "A": 0,
+        "D": 0,
+        "F": 0,
+        "H": 8,
+        "N": 1,
+        "S": 0
+      },
+      "n": 9,
+      "majority": [
+        "H"
+      ],
+      "agreement": 0.8888888888888888,
+      "target_share": 0.8888888888888888,
+      "target_wilson_lower": 0.5649937852319398,
+      "perceived_intensity_given_emotion": {
+        "A": null,
+        "D": null,
+        "F": null,
+        "H": 59.625,
+        "N": 72.0,
+        "S": null
+      },
+      "overall_intensity": 61.0,
+      "eligible_candidate": true,
+      "path": "/Users/x/.local/share/swarms/crema-d/1658cd342dff90010aa843eaeebd53610a08b1dc/1006/1006_DFA_HAP_XX.wav",
+      "sha256": "2dc2fcf35696175951c9039af94255b90ea2fcd3609f5e26ad4973df103dca2a",
+      "source_url": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_DFA_HAP_XX.wav",
+      "transcript": {
+        "text": "Don't forget a jacket.",
+        "status": "official_sentence_code_mapping_not_independently_transcribed"
+      },
+      "audio_qc": {
+        "duration_seconds": 2.3023125,
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "rms": 0.02900749957039022,
+        "peak": 0.290740966796875,
+        "near_full_scale_samples": 0,
+        "non_silent": true
+      },
+      "qualification": "metadata_candidate; listening and generation-transfer tests pending",
+      "engine_fit": {
+        "index": "candidate; audition identity/performance independently",
+        "vox": "short-reference candidate; test before adoption",
+        "f5": "short-reference candidate; test before adoption",
+        "dia": "short reference; documented guidance recommends longer conditioning"
+      }
+    },
+    {
+      "file": "1006_ITS_HAP_XX",
+      "actor": "1006",
+      "sentence": "ITS",
+      "intended": "H",
+      "intended_intensity": "XX",
+      "modality": 1,
+      "clip_number": 475,
+      "counts": {
+        "A": 0,
+        "D": 0,
+        "F": 0,
+        "H": 8,
+        "N": 1,
+        "S": 0
+      },
+      "n": 9,
+      "majority": [
+        "H"
+      ],
+      "agreement": 0.8888888888888888,
+      "target_share": 0.8888888888888888,
+      "target_wilson_lower": 0.5649937852319398,
+      "perceived_intensity_given_emotion": {
+        "A": null,
+        "D": null,
+        "F": null,
+        "H": 67.625,
+        "N": 100.0,
+        "S": null
+      },
+      "overall_intensity": 71.2222222222222,
+      "eligible_candidate": true,
+      "path": "/Users/x/.local/share/swarms/crema-d/1658cd342dff90010aa843eaeebd53610a08b1dc/1006/1006_ITS_HAP_XX.wav",
+      "sha256": "fa411c2661a31d7228d19f4a682c640d441a07bfc803f74b93ac52eee82acde6",
+      "source_url": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_ITS_HAP_XX.wav",
+      "transcript": {
+        "text": "I think I've seen this before.",
+        "status": "official_sentence_code_mapping_not_independently_transcribed"
+      },
+      "audio_qc": {
+        "duration_seconds": 2.7694375,
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "rms": 0.0257898003928417,
+        "peak": 0.203948974609375,
+        "near_full_scale_samples": 0,
+        "non_silent": true
+      },
+      "qualification": "metadata_candidate; listening and generation-transfer tests pending",
+      "engine_fit": {
+        "index": "candidate; audition identity/performance independently",
+        "vox": "short-reference candidate; test before adoption",
+        "f5": "short-reference candidate; test before adoption",
+        "dia": "short reference; documented guidance recommends longer conditioning"
+      }
+    },
+    {
+      "file": "1006_TAI_HAP_XX",
+      "actor": "1006",
+      "sentence": "TAI",
+      "intended": "H",
+      "intended_intensity": "XX",
+      "modality": 1,
+      "clip_number": 445,
+      "counts": {
+        "A": 0,
+        "D": 0,
+        "F": 1,
+        "H": 7,
+        "N": 1,
+        "S": 0
+      },
+      "n": 9,
+      "majority": [
+        "H"
+      ],
+      "agreement": 0.7777777777777778,
+      "target_share": 0.7777777777777778,
+      "target_wilson_lower": 0.4525833436728054,
+      "perceived_intensity_given_emotion": {
+        "A": null,
+        "D": null,
+        "F": 17.0,
+        "H": 53.1428571428571,
+        "N": 65.0,
+        "S": null
+      },
+      "overall_intensity": 50.4444444444444,
+      "eligible_candidate": true,
+      "path": "/Users/x/.local/share/swarms/crema-d/1658cd342dff90010aa843eaeebd53610a08b1dc/1006/1006_TAI_HAP_XX.wav",
+      "sha256": "63d0ef53414663f16ec98779ff9035ac2c9915475a7b1b5b1a3646661d2de74d",
+      "source_url": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_TAI_HAP_XX.wav",
+      "transcript": {
+        "text": "The airplane is almost full.",
+        "status": "official_sentence_code_mapping_not_independently_transcribed"
+      },
+      "audio_qc": {
+        "duration_seconds": 3.903875,
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "rms": 0.04018694885732954,
+        "peak": 0.315399169921875,
+        "near_full_scale_samples": 0,
+        "non_silent": true
+      },
+      "qualification": "metadata_candidate; listening and generation-transfer tests pending",
+      "engine_fit": {
+        "index": "candidate; audition identity/performance independently",
+        "vox": "short-reference candidate; test before adoption",
+        "f5": "short-reference candidate; test before adoption",
+        "dia": "short reference; documented guidance recommends longer conditioning"
+      }
+    },
+    {
+      "file": "1006_ITH_NEU_XX",
+      "actor": "1006",
+      "sentence": "ITH",
+      "intended": "N",
+      "intended_intensity": "XX",
+      "modality": 1,
+      "clip_number": 462,
+      "counts": {
+        "A": 0,
+        "D": 0,
+        "F": 0,
+        "H": 0,
+        "N": 10,
+        "S": 0
+      },
+      "n": 10,
+      "majority": [
+        "N"
+      ],
+      "agreement": 1.0,
+      "target_share": 1.0,
+      "target_wilson_lower": 0.7224598312333834,
+      "perceived_intensity_given_emotion": {
+        "A": null,
+        "D": null,
+        "F": null,
+        "H": null,
+        "N": 76.4,
+        "S": null
+      },
+      "overall_intensity": 76.4,
+      "eligible_candidate": true,
+      "path": "/Users/x/.local/share/swarms/crema-d/1658cd342dff90010aa843eaeebd53610a08b1dc/1006/1006_ITH_NEU_XX.wav",
+      "sha256": "941697403343e3dcc1a3244e8c848ac7d74450ace14208662cfacf48b7818bda",
+      "source_url": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_ITH_NEU_XX.wav",
+      "transcript": {
+        "text": "I think I have a doctor's appointment.",
+        "status": "official_sentence_code_mapping_not_independently_transcribed"
+      },
+      "audio_qc": {
+        "duration_seconds": 3.43675,
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "rms": 0.014245570119179906,
+        "peak": 0.108154296875,
+        "near_full_scale_samples": 0,
+        "non_silent": true
+      },
+      "qualification": "metadata_candidate; listening and generation-transfer tests pending",
+      "engine_fit": {
+        "index": "candidate; audition identity/performance independently",
+        "vox": "short-reference candidate; test before adoption",
+        "f5": "short-reference candidate; test before adoption",
+        "dia": "short reference; documented guidance recommends longer conditioning"
+      }
+    },
+    {
+      "file": "1006_ITS_NEU_XX",
+      "actor": "1006",
+      "sentence": "ITS",
+      "intended": "N",
+      "intended_intensity": "XX",
+      "modality": 1,
+      "clip_number": 474,
+      "counts": {
+        "A": 0,
+        "D": 0,
+        "F": 0,
+        "H": 0,
+        "N": 10,
+        "S": 0
+      },
+      "n": 10,
+      "majority": [
+        "N"
+      ],
+      "agreement": 1.0,
+      "target_share": 1.0,
+      "target_wilson_lower": 0.7224598312333834,
+      "perceived_intensity_given_emotion": {
+        "A": null,
+        "D": null,
+        "F": null,
+        "H": null,
+        "N": 68.7,
+        "S": null
+      },
+      "overall_intensity": 68.7,
+      "eligible_candidate": true,
+      "path": "/Users/x/.local/share/swarms/crema-d/1658cd342dff90010aa843eaeebd53610a08b1dc/1006/1006_ITS_NEU_XX.wav",
+      "sha256": "eebae40b5aa152238b8054e38ccedeb4f9b396e46d616c402a63f1b3356daa09",
+      "source_url": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_ITS_NEU_XX.wav",
+      "transcript": {
+        "text": "I think I've seen this before.",
+        "status": "official_sentence_code_mapping_not_independently_transcribed"
+      },
+      "audio_qc": {
+        "duration_seconds": 3.003,
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "rms": 0.015120457224263667,
+        "peak": 0.106414794921875,
+        "near_full_scale_samples": 0,
+        "non_silent": true
+      },
+      "qualification": "metadata_candidate; listening and generation-transfer tests pending",
+      "engine_fit": {
+        "index": "candidate; audition identity/performance independently",
+        "vox": "short-reference candidate; test before adoption",
+        "f5": "short-reference candidate; test before adoption",
+        "dia": "short reference; documented guidance recommends longer conditioning"
+      }
+    },
+    {
+      "file": "1006_TAI_NEU_XX",
+      "actor": "1006",
+      "sentence": "TAI",
+      "intended": "N",
+      "intended_intensity": "XX",
+      "modality": 1,
+      "clip_number": 444,
+      "counts": {
+        "A": 0,
+        "D": 0,
+        "F": 0,
+        "H": 0,
+        "N": 9,
+        "S": 0
+      },
+      "n": 9,
+      "majority": [
+        "N"
+      ],
+      "agreement": 1.0,
+      "target_share": 1.0,
+      "target_wilson_lower": 0.7008472464490406,
+      "perceived_intensity_given_emotion": {
+        "A": null,
+        "D": null,
+        "F": null,
+        "H": null,
+        "N": 85.2222222222222,
+        "S": null
+      },
+      "overall_intensity": 85.2222222222222,
+      "eligible_candidate": true,
+      "path": "/Users/x/.local/share/swarms/crema-d/1658cd342dff90010aa843eaeebd53610a08b1dc/1006/1006_TAI_NEU_XX.wav",
+      "sha256": "9ad9724c4bbf48f86ab71c1b21c9eaa573acc4129ad4900970ec28ab96a8bfa2",
+      "source_url": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_TAI_NEU_XX.wav",
+      "transcript": {
+        "text": "The airplane is almost full.",
+        "status": "official_sentence_code_mapping_not_independently_transcribed"
+      },
+      "audio_qc": {
+        "duration_seconds": 3.1698125,
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "rms": 0.015299992137871338,
+        "peak": 0.103546142578125,
+        "near_full_scale_samples": 0,
+        "non_silent": true
+      },
+      "qualification": "metadata_candidate; listening and generation-transfer tests pending",
+      "engine_fit": {
+        "index": "candidate; audition identity/performance independently",
+        "vox": "short-reference candidate; test before adoption",
+        "f5": "short-reference candidate; test before adoption",
+        "dia": "short reference; documented guidance recommends longer conditioning"
+      }
+    },
+    {
+      "file": "1006_TAI_SAD_XX",
+      "actor": "1006",
+      "sentence": "TAI",
+      "intended": "S",
+      "intended_intensity": "XX",
+      "modality": 1,
+      "clip_number": 446,
+      "counts": {
+        "A": 0,
+        "D": 0,
+        "F": 1,
+        "H": 0,
+        "N": 1,
+        "S": 8
+      },
+      "n": 10,
+      "majority": [
+        "S"
+      ],
+      "agreement": 0.8,
+      "target_share": 0.8,
+      "target_wilson_lower": 0.49015684672072346,
+      "perceived_intensity_given_emotion": {
+        "A": null,
+        "D": null,
+        "F": 36.0,
+        "H": null,
+        "N": 37.0,
+        "S": 66.375
+      },
+      "overall_intensity": 60.4,
+      "eligible_candidate": true,
+      "path": "/Users/x/.local/share/swarms/crema-d/1658cd342dff90010aa843eaeebd53610a08b1dc/1006/1006_TAI_SAD_XX.wav",
+      "sha256": "81abd830581823e4f8f7e9ed6401d7810030cb923f1bb401cf42dc99af8749d3",
+      "source_url": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_TAI_SAD_XX.wav",
+      "transcript": {
+        "text": "The airplane is almost full.",
+        "status": "official_sentence_code_mapping_not_independently_transcribed"
+      },
+      "audio_qc": {
+        "duration_seconds": 3.6369375,
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "rms": 0.010582857568940562,
+        "peak": 0.0870361328125,
+        "near_full_scale_samples": 0,
+        "non_silent": true
+      },
+      "qualification": "metadata_candidate; listening and generation-transfer tests pending",
+      "engine_fit": {
+        "index": "candidate; audition identity/performance independently",
+        "vox": "short-reference candidate; test before adoption",
+        "f5": "short-reference candidate; test before adoption",
+        "dia": "short reference; documented guidance recommends longer conditioning"
+      }
+    },
+    {
+      "file": "1006_DFA_SAD_XX",
+      "actor": "1006",
+      "sentence": "DFA",
+      "intended": "S",
+      "intended_intensity": "XX",
+      "modality": 1,
+      "clip_number": 470,
+      "counts": {
+        "A": 0,
+        "D": 0,
+        "F": 2,
+        "H": 0,
+        "N": 0,
+        "S": 8
+      },
+      "n": 10,
+      "majority": [
+        "S"
+      ],
+      "agreement": 0.8,
+      "target_share": 0.8,
+      "target_wilson_lower": 0.49015684672072346,
+      "perceived_intensity_given_emotion": {
+        "A": null,
+        "D": null,
+        "F": 46.5,
+        "H": null,
+        "N": null,
+        "S": 43.25
+      },
+      "overall_intensity": 43.9,
+      "eligible_candidate": true,
+      "path": "/Users/x/.local/share/swarms/crema-d/1658cd342dff90010aa843eaeebd53610a08b1dc/1006/1006_DFA_SAD_XX.wav",
+      "sha256": "78bcfe4b5321e88ed051cf4d4a6d4bf19858b064b0584f775835b35784dc26d0",
+      "source_url": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_DFA_SAD_XX.wav",
+      "transcript": {
+        "text": "Don't forget a jacket.",
+        "status": "official_sentence_code_mapping_not_independently_transcribed"
+      },
+      "audio_qc": {
+        "duration_seconds": 2.6693125,
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "rms": 0.01267675358510501,
+        "peak": 0.09735107421875,
+        "near_full_scale_samples": 0,
+        "non_silent": true
+      },
+      "qualification": "metadata_candidate; listening and generation-transfer tests pending",
+      "engine_fit": {
+        "index": "candidate; audition identity/performance independently",
+        "vox": "short-reference candidate; test before adoption",
+        "f5": "short-reference candidate; test before adoption",
+        "dia": "short reference; documented guidance recommends longer conditioning"
+      }
+    },
+    {
+      "file": "1006_TIE_SAD_XX",
+      "actor": "1006",
+      "sentence": "TIE",
+      "intended": "S",
+      "intended_intensity": "XX",
+      "modality": 1,
+      "clip_number": 428,
+      "counts": {
+        "A": 0,
+        "D": 0,
+        "F": 1,
+        "H": 0,
+        "N": 1,
+        "S": 7
+      },
+      "n": 9,
+      "majority": [
+        "S"
+      ],
+      "agreement": 0.7777777777777778,
+      "target_share": 0.7777777777777778,
+      "target_wilson_lower": 0.4525833436728054,
+      "perceived_intensity_given_emotion": {
+        "A": null,
+        "D": null,
+        "F": 28.0,
+        "H": null,
+        "N": 36.0,
+        "S": 62.2857142857143
+      },
+      "overall_intensity": 55.5555555555556,
+      "eligible_candidate": true,
+      "path": "/Users/x/.local/share/swarms/crema-d/1658cd342dff90010aa843eaeebd53610a08b1dc/1006/1006_TIE_SAD_XX.wav",
+      "sha256": "293fefa8ccaa1188fae2757686cd7da532751cf8a660bf2370d15df486d50325",
+      "source_url": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_TIE_SAD_XX.wav",
+      "transcript": {
+        "text": "That is exactly what happened.",
+        "status": "official_sentence_code_mapping_not_independently_transcribed"
+      },
+      "audio_qc": {
+        "duration_seconds": 3.6703125,
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2,
+        "rms": 0.00919276364478673,
+        "peak": 0.04931640625,
+        "near_full_scale_samples": 0,
+        "non_silent": true
+      },
+      "qualification": "metadata_candidate; listening and generation-transfer tests pending",
+      "engine_fit": {
+        "index": "candidate; audition identity/performance independently",
+        "vox": "short-reference candidate; test before adoption",
+        "f5": "short-reference candidate; test before adoption",
+        "dia": "short reference; documented guidance recommends longer conditioning"
+      }
+    }
+  ],
+  "limitations": [
+    "Metadata only; audio not downloaded or auditioned",
+    "Intensity values are conditional rater judgments, not TTS controls",
+    "Wilson intervals assume independent binomial votes; shared raters and selection limit interpretation",
+    "Audio-only perception ratings do not prove transfer to novel speech",
+    "No actor/voice imitation commercial clearance asserted"
+  ],
+  "licence_files": [
+    "LICENSE.txt"
+  ],
+  "identity_anchor": null,
+  "listening_ratings": [],
+  "generation_transfer_results": []
+}

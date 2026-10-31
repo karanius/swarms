@@ -1,0 +1,77 @@
+{
+  "notebook": "/Users/x/projects/swarms/knowledge/research/notebooks/Paper 13 - Two Voices One Integrated Local Video.ipynb",
+  "run": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303",
+  "video": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/One Small Light.mp4",
+  "verification": {
+    "passed": true,
+    "full_decode": true,
+    "scenes": [
+      {
+        "speaker": "Mira",
+        "gender": "female",
+        "intended_emotion": "sadness",
+        "reference": "esd:0015:sadness",
+        "enhanced_seconds": 4.917354166666667,
+        "on_screen_seconds": 5.791666666666667,
+        "mixed_dialogue_max_difference": 0.003680109977722168,
+        "decoded_motion_mean_difference": 1.4744104146957397,
+        "lineage_and_independent_meter": true
+      },
+      {
+        "speaker": "Rowan",
+        "gender": "male",
+        "intended_emotion": "neutral",
+        "reference": "esd:0012:neutral",
+        "enhanced_seconds": 4.672020833333334,
+        "on_screen_seconds": 5.541666666666667,
+        "mixed_dialogue_max_difference": 0.0036801700480282307,
+        "decoded_motion_mean_difference": 2.0991365909576416,
+        "lineage_and_independent_meter": true
+      },
+      {
+        "speaker": "Mira",
+        "gender": "female",
+        "intended_emotion": "surprise",
+        "reference": "esd:0015:surprise",
+        "enhanced_seconds": 2.7093541666666665,
+        "on_screen_seconds": 3.5833333333333335,
+        "mixed_dialogue_max_difference": 0.0036801970563828945,
+        "decoded_motion_mean_difference": 2.0216548442840576,
+        "lineage_and_independent_meter": true
+      },
+      {
+        "speaker": "Rowan",
+        "gender": "male",
+        "intended_emotion": "happiness",
+        "reference": "esd:0012:happiness",
+        "enhanced_seconds": 5.141354166666667,
+        "on_screen_seconds": 6.0,
+        "mixed_dialogue_max_difference": 0.003680284833535552,
+        "decoded_motion_mean_difference": 1.6417118310928345,
+        "lineage_and_independent_meter": true
+      }
+    ],
+    "decoded_video_frames": 502,
+    "delivery_soundtrack_correlation": 0.9999630415479801,
+    "prior_papers_unchanged": true,
+    "dialogue_source": "enhanced outputs, with a quiet original tone bed",
+    "duration_seconds": 20.928,
+    "output_sha256": "a5d555b4712feec8a7d88322c118c5552d5e6bcbb7af52c0da1dce7b24f6ee0e",
+    "not_established": [
+      "perceived emotional fidelity",
+      "perfect pronunciation or speaker consistency",
+      "commercial licensing clearance",
+      "general video generation",
+      "audience appeal"
+    ]
+  },
+  "earlier_attempt": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190021",
+  "browser_playback": {
+    "notebook_trusted": true,
+    "ready_state": 4,
+    "played_to_end": true,
+    "duration_seconds": 20.916667,
+    "media_error": null,
+    "left_paused_on_final_scene": true
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "run_dir": "/Users/x/projects/swarms/knowledge/research/paper-16-study/runs/indextts-20261031-210911-a0b2cf20",
+  "request": {
+    "text": "I told you to leave those presents alone, and I expect you to listen.",
+    "speaker": "designed-character",
+    "seed": 65,
+    "conditions": [
+      {
+        "emotion": "guide",
+        "strength": 1.0
+      }
+    ],
+    "references": {
+      "neutral": {
+        "id": "crema:1006_MTI_ANG_XX",
+        "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1006/1006_MTI_ANG_XX.wav",
+        "sha256": "d8a324371c17b8a9371e79c02642f1c7f1782b3c838de3346dc2904c482d27a9",
+        "transcript": "Maybe tomorrow it will be cold.",
+        "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_MTI_ANG_XX.wav",
+        "annotations": {
+          "intended_emotion": "A",
+          "intended_intensity": "XX",
+          "audio_only_votes": {
+            "A": 10,
+            "D": 0,
+            "F": 0,
+            "H": 0,
+            "N": 0,
+            "S": 0
+          },
+          "n": 10,
+          "target_share": 1.0,
+          "conditional_intensity": {
+            "A": 66.5,
+            "D": null,
+            "F": null,
+            "H": null,
+            "N": null,
+            "S": null
+          },
+          "selection": "Top source-metadata candidate, not listener-approved"
+        },
+        "qc": {
+          "duration_seconds": 3.7704375,
+          "sample_rate": 16000,
+          "near_full_scale_samples": 20
+        },
+        "qualification": "Candidate; source annotations retained, acting and transcript unreviewed",
+        "emotion": "anger",
+        "speaker": "crema:1006",
+        "library": "crema",
+        "label": "CREMA-D \u00b7 crema:1006 \u00b7 anger",
+        "terms": "ODbL database / DbCL contents. Research comparison; no unrestricted commercial identity-use claim."
+      },
+      "guide": {
+        "id": "crema:1006_MTI_ANG_XX",
+        "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1006/1006_MTI_ANG_XX.wav",
+        "sha256": "d8a324371c17b8a9371e79c02642f1c7f1782b3c838de3346dc2904c482d27a9",
+        "transcript": "Maybe tomorrow it will be cold.",
+        "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_MTI_ANG_XX.wav",
+        "annotations": {
+          "intended_emotion": "A",
+          "intended_intensity": "XX",
+          "audio_only_votes": {
+            "A": 10,
+            "D": 0,
+            "F": 0,
+            "H": 0,
+            "N": 0,
+            "S": 0
+          },
+          "n": 10,
+          "target_share": 1.0,
+          "conditional_intensity": {
+            "A": 66.5,
+            "D": null,
+            "F": null,
+            "H": null,
+            "N": null,
+            "S": null
+          },
+          "selection": "Top source-metadata candidate, not listener-approved"
+        },
+        "qc": {
+          "duration_seconds": 3.7704375,
+          "sample_rate": 16000,
+          "near_full_scale_samples": 20
+        },
+        "qualification": "Candidate; source annotations retained, acting and transcript unreviewed",
+        "emotion": "anger",
+        "speaker": "crema:1006",
+        "library": "crema",
+        "label": "CREMA-D \u00b7 crema:1006 \u00b7 anger",
+        "terms": "ODbL database / DbCL contents. Research comparison; no unrestricted commercial identity-use claim."
+      }
+    },
+    "code_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+    "model_revision": "c39ce5ba981572cb187443877ff559dfb246ce63",
+    "device": "mps",
+    "native_method": "per-condition emotion audio reference or native emotion vector",
+    "use_emo_text": false,
+    "use_random": false,
+    "precision": "float32",
+    "duration_factor": 1.0
+  },
+  "load_seconds": 45.136658906936646,
+  "torch": "2.8.0",
+  "parameter_device": "mps:0",
+  "takes": [
+    {
+      "listening_path": "/Users/x/projects/swarms/knowledge/research/paper-16-study/runs/indextts-20261031-210911-a0b2cf20/1-guide-1.0-listening.wav",
+      "listening_gain": 0.3560409900359572,
+      "raw_loudness": {
+        "input_i": "-14.03",
+        "input_tp": "0.19",
+        "input_lra": "0.90",
+        "input_thresh": "-24.87",
+        "output_i": "-22.01",
+        "output_tp": "-7.46",
+        "output_lra": "0.00",
+        "output_thresh": "-32.73",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.99"
+      },
+      "target_lufs": -23,
+      "emotion": "guide",
+      "strength": 1.0,
+      "path": "/Users/x/projects/swarms/knowledge/research/paper-16-study/runs/indextts-20261031-210911-a0b2cf20/1-guide-1.0.wav",
+      "url": "/research-jupyter/files/paper-16-audio/indextts-20261031-210911-a0b2cf20-1-guide-1.0.wav",
+      "sha256": "ca64153a6439466749dd9f05d572199d968fe12628ed10844f2392eb69f52d3f",
+      "sample_rate": 22050,
+      "duration_seconds": 4.272471655328798,
+      "peak": 1.0,
+      "rms": 0.18776278898450868,
+      "elapsed_seconds": 274.43252515792847
+    }
+  ],
+  "listening_assessment": "Not yet rated",
+  "mps_fallback_enabled": true,
+  "observed_feature_tensor_devices": [
+    "mps:0"
+  ]
+}

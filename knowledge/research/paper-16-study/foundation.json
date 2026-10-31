@@ -1,0 +1,14 @@
+{
+  "source_study": "Paper 15: reference-guided continuation comparison",
+  "evidence_file": "/Users/x/projects/swarms/knowledge/research/paper-15-study/reference-guidance-analysis.json",
+  "user_listening_feedback": "User explicitly reported that the final reference-guided generation conveyed the tonalities/emotions and worked.",
+  "scope": "Positive qualitative feedback for one speaker, one line and one seed; not a complete library validation.",
+  "current_categories": [
+    "neutral",
+    "anger",
+    "happiness",
+    "sadness",
+    "surprise"
+  ],
+  "planned_first_speaker": "Existing male reference speaker 0012; preserve current identity anchor and approved production default."
+}

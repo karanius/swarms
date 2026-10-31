@@ -1,0 +1,13 @@
+{
+  "run_id": "09fb92467439428f9c9d4c15c67517ff",
+  "state": "in_review",
+  "dossier_ref": "372afb112b3c43a8bc1d0289fb9b5223@1",
+  "final_cost_ledger": "fc30456530bb4f149d5d73bd21c3d532@1",
+  "source_count": 2,
+  "retrieved": 2,
+  "candidate_count": 3,
+  "model_failure": null,
+  "evidence_scope": "bounded implementation probe; no market validity or autonomous review claim",
+  "store": "/Users/x/projects/swarms/knowledge/research/paper-9-study/.runtime/probe-20261030T071415Z",
+  "probe_not_market_validation": true
+}

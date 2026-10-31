@@ -1,0 +1,36 @@
+{
+  "real_browser_button_runs": [
+    {
+      "run": "interactive-20261030-205004-19709668",
+      "speaker": "0012",
+      "emotion": "anger",
+      "mode": "audio-continuation",
+      "duration_seconds": 2.4,
+      "audio_sha256": "578a2e7a1b4448bed70b40d9df7aed7a072a6ff5e154f8c671bcf6d8fa20ff3d"
+    },
+    {
+      "run": "interactive-20261030-205200-bc1aad09",
+      "speaker": "0012",
+      "emotion": "neutral",
+      "mode": "audio-continuation",
+      "duration_seconds": 2.4,
+      "audio_sha256": "ded0db12036fd993a25c155b7911e35f41339275856dca314edae893499d370b"
+    },
+    {
+      "run": "interactive-20261030-205545-34202be8",
+      "speaker": "0012",
+      "emotion": "neutral",
+      "mode": "audio-continuation",
+      "duration_seconds": 2.4,
+      "audio_sha256": "ded0db12036fd993a25c155b7911e35f41339275856dca314edae893499d370b"
+    }
+  ],
+  "input_validation_checks": "controls-checks.json",
+  "download_verification": "download-http-verification.json",
+  "browser_download_retrieval": "Browser downloadMedia returned /Users/x/Downloads/interactive-20261030-205545-34202be8.wav",
+  "prior_papers_preserved": true,
+  "money_configuration_preserved": true,
+  "notebook_control_cell_executed_and_input_collapsed": true,
+  "review_disposition": "ship; no required fixes; desktop notebook controls scope",
+  "limitation": "Interactive controls require a live Research Python kernel; run the control cell after a kernel restart. Available emotions are reference categories, not guaranteed emotional performance."
+}

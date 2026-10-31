@@ -1,0 +1,13 @@
+APERION Shield for Langflow
+Copyright 2026 Aperion AI
+
+This product includes software developed by Aperion AI.
+
+The enforcement engine is the standalone APERION Shield project
+(https://github.com/AperionAI/shield), Apache-2.0. This repository packages
+that engine as a Langflow integration; it does not reimplement the rule
+engine in Python.
+
+This product depends on third-party software under their own licenses,
+including the Model Context Protocol SDK, the cryptography library,
+LangChain Core, and Pydantic. See each project for its license terms.

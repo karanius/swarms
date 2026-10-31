@@ -1,0 +1,8 @@
+{
+  "/Users/x/projects/swarms/services/audio-workbench/worker.py": "58f356a7626d2e84cd961da407e532e3ce564c41dcb0c6a08f19e99704473b54",
+  "/Users/x/projects/swarms/services/audio-workbench/verify_audio.py": "5090bb0ef65a6bde1dc46066b6a45cfefa595f4331fcf2304b227e414c11002f",
+  "/Users/x/projects/swarms/services/voicestudio/runtime.json": "f2f1e69c6b942d32b4fa2f5c8cf1d30283a2a0edef4ce9005575a90fa582e071",
+  "/Users/x/projects/swarms/services/voicestudio/launch.py": "da04d36d0cb6c591ffb5a496d7fd984f2b244378cc199cbe70fc1c7e49dfafaa",
+  "/Users/x/projects/swarms/services/voicestudio/instrumented_server.py": "23277289b05cf14da50e032dc0aa40776d512260a7bb76e5c79c54f4cb4170c4",
+  "/Users/x/projects/swarms/services/voicestudio/instrumentation/sitecustomize.py": "44453512374aa77646d6b8a7d2d4df40a27247393e3fcd1d763f4b3806c41fe5"
+}

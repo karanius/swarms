@@ -1,0 +1,675 @@
+{
+  "scope": "Exposed development comparison with eight authored queries. Same template search space and top-six cutoff. Type-presence is a weak retrieval relevance proxy, not semantic correctness, independent evaluation, execution success or measured assembly acceleration.",
+  "cases": 8,
+  "hits": {
+    "filename": 2,
+    "field_lexical": 7,
+    "hybrid": 8
+  },
+  "rows": [
+    {
+      "case": "video speech",
+      "question": "Which pieces extract spoken words from a video URL?",
+      "arm": "filename",
+      "reference_type_present_at_6": true,
+      "seconds": 0.0058,
+      "returned": 6,
+      "titles": [
+        "Image 2 Video Generation",
+        "Video-to-Article AI Editor",
+        "url + google search",
+        "Text 2 Video Generation",
+        "YT Video QA",
+        "OpenSearch URL Ingestion Flow"
+      ],
+      "ids": [
+        "template:1008cf1d382fd14d6cbeef28aa3adccaba201ebba9d02cafb8e59150f4aab50e:0",
+        "template:1bf53b8575c28935d3b485b68df2676ae822d675c93f8a14fddc851120dc9fa9:0",
+        "template:68813decc7e67b43cfc83b499b33d26fa8d346d47e1fd1b865db9e72341215a8:0",
+        "template:81b161d9748e250f5e5609bf78a79210b844dc943be855f4ec7c20577c6966dc:0",
+        "template:e8d9eab9b55e6ccdff85fe50e32a1475ec960d91eff899c8cafda0b63f47b9cf:0",
+        "template:f98f2f2cf566fb44c0e84978886881b968ff1738be5729707af6bf0a378ce3d1:0"
+      ],
+      "expected_types": [
+        "YouTubeTranscriptComponent",
+        "YouTubeTranscripts"
+      ]
+    },
+    {
+      "case": "video speech",
+      "question": "Which pieces extract spoken words from a video URL?",
+      "arm": "field_lexical",
+      "reference_type_present_at_6": true,
+      "seconds": 0.004,
+      "returned": 6,
+      "titles": [
+        "YouTube Analysis",
+        "YouTube Analysis",
+        "Youtube Analysis",
+        "Youtube Analysis",
+        "YouTube Analysis",
+        "Video-to-Article AI Editor"
+      ],
+      "ids": [
+        "template:3b632665c5fc312df71a1f9fce0056320d2d62cb4874badcce9e77ecbfbf93cd:0",
+        "template:0ada6e1be64cdbc83010f96f81b14264e460924fdf557991eb8e14b3c948d9d6:0",
+        "template:ed6ef07d2fe07c84e8018109ac479dcd0428a4eba1d86bbfcf292006c385a5a9:0",
+        "template:d6a99331c0b524afbe400d0c85aca49727714955208357570196f8cb55432eba:0",
+        "template:956c9b79902762a5d38d23eea6914b8d7c47075d8ba4283fe4308d5f283b8b71:0",
+        "template:1bf53b8575c28935d3b485b68df2676ae822d675c93f8a14fddc851120dc9fa9:0"
+      ],
+      "expected_types": [
+        "YouTubeTranscriptComponent",
+        "YouTubeTranscripts"
+      ]
+    },
+    {
+      "case": "video speech",
+      "question": "Which pieces extract spoken words from a video URL?",
+      "arm": "hybrid",
+      "reference_type_present_at_6": true,
+      "seconds": 0.0293,
+      "returned": 6,
+      "titles": [
+        "YouTube Analysis",
+        "YouTube Analysis",
+        "Youtube Analysis",
+        "Youtube Analysis",
+        "YouTube Analysis",
+        "YT Video QA"
+      ],
+      "ids": [
+        "template:3b632665c5fc312df71a1f9fce0056320d2d62cb4874badcce9e77ecbfbf93cd:0",
+        "template:288b20fe957920b6b4c6e4ba74908a31076c468901efa7699d9fa12441758f5d:0",
+        "template:ed6ef07d2fe07c84e8018109ac479dcd0428a4eba1d86bbfcf292006c385a5a9:0",
+        "template:d6a99331c0b524afbe400d0c85aca49727714955208357570196f8cb55432eba:0",
+        "template:956c9b79902762a5d38d23eea6914b8d7c47075d8ba4283fe4308d5f283b8b71:0",
+        "template:e8d9eab9b55e6ccdff85fe50e32a1475ec960d91eff899c8cafda0b63f47b9cf:0"
+      ],
+      "expected_types": [
+        "YouTubeTranscriptComponent",
+        "YouTubeTranscripts"
+      ]
+    },
+    {
+      "case": "audience reactions",
+      "question": "Which pieces collect viewer comments to understand audience feedback?",
+      "arm": "filename",
+      "reference_type_present_at_6": true,
+      "seconds": 0.0061,
+      "returned": 5,
+      "titles": [
+        "youtube_comments_monitoring",
+        "survey_feedback_analytics",
+        "Customer Feedback Sentiment Analyze",
+        "Customer Feedback Insight Generator",
+        "Customer Feedback sentiment analizer"
+      ],
+      "ids": [
+        "template:3334fd4f3bf6e32926ecf4c45097a9fc05c73846846b0f88cd5a5e19280999a5:0",
+        "template:8cb5f94f15d0359bb71f4892f8dc6327a64a4aee8f4b972c8529ab138832a873:0",
+        "template:b6a22d2e1bc8bdc969df001437cb5cb9848664ec84404cbe166c51e2f4a02608:0",
+        "template:b9af09c360840dc132394e513e07d2c5e0e341ea153bb739afbf73e9275950b5:0",
+        "template:bc2796cc81af621547ff0d9dfef76e4ab6cc14645e456424b1d0782ee763da63:0"
+      ],
+      "expected_types": [
+        "YouTubeCommentsComponent"
+      ]
+    },
+    {
+      "case": "audience reactions",
+      "question": "Which pieces collect viewer comments to understand audience feedback?",
+      "arm": "field_lexical",
+      "reference_type_present_at_6": true,
+      "seconds": 0.0035,
+      "returned": 6,
+      "titles": [
+        "YouTube Analysis",
+        "YouTube Analysis",
+        "Youtube Analysis",
+        "Voice Of Customer Report Generator",
+        "Youtube Analysis",
+        "CommentIQ"
+      ],
+      "ids": [
+        "template:3b632665c5fc312df71a1f9fce0056320d2d62cb4874badcce9e77ecbfbf93cd:0",
+        "template:0ada6e1be64cdbc83010f96f81b14264e460924fdf557991eb8e14b3c948d9d6:0",
+        "template:ed6ef07d2fe07c84e8018109ac479dcd0428a4eba1d86bbfcf292006c385a5a9:0",
+        "template:065b6b223cf26b2e1ca5f7a3ef1802a790a837754b93fdd06a0915ff7cfeab3a:0",
+        "template:d6a99331c0b524afbe400d0c85aca49727714955208357570196f8cb55432eba:0",
+        "template:596dbba9919f38d93239225f563b40aaff4bc59d7035b600c6b445e98d7ba57a:0"
+      ],
+      "expected_types": [
+        "YouTubeCommentsComponent"
+      ]
+    },
+    {
+      "case": "audience reactions",
+      "question": "Which pieces collect viewer comments to understand audience feedback?",
+      "arm": "hybrid",
+      "reference_type_present_at_6": true,
+      "seconds": 0.0147,
+      "returned": 6,
+      "titles": [
+        "Youtube Analysis",
+        "YouTube Analysis",
+        "YouTube Analysis",
+        "Voice Of Customer Report Generator",
+        "Youtube Analysis",
+        "CommentIQ"
+      ],
+      "ids": [
+        "template:d6a99331c0b524afbe400d0c85aca49727714955208357570196f8cb55432eba:0",
+        "template:2aa97aef3feb7814451922825c0f49d3fbdaed3396c91e98d64e9cef5c14587e:0",
+        "template:3b632665c5fc312df71a1f9fce0056320d2d62cb4874badcce9e77ecbfbf93cd:0",
+        "template:065b6b223cf26b2e1ca5f7a3ef1802a790a837754b93fdd06a0915ff7cfeab3a:0",
+        "template:ed6ef07d2fe07c84e8018109ac479dcd0428a4eba1d86bbfcf292006c385a5a9:0",
+        "template:596dbba9919f38d93239225f563b40aaff4bc59d7035b600c6b445e98d7ba57a:0"
+      ],
+      "expected_types": [
+        "YouTubeCommentsComponent"
+      ]
+    },
+    {
+      "case": "competitor profiles",
+      "question": "Find company pricing tiers, free trials, target industries and API offerings",
+      "arm": "filename",
+      "reference_type_present_at_6": false,
+      "seconds": 0.0052,
+      "returned": 6,
+      "titles": [
+        "SaaS Pricing",
+        "SaaS Pricing",
+        "SaaS Pricing",
+        "SaaS Pricing",
+        "Company Research",
+        "SaaS Pricing"
+      ],
+      "ids": [
+        "template:115dc6239b6c998f29798061ab7919f1a657ce4517261a5a3ce116b38eb74f87:0",
+        "template:33961e1ccd09ac3bb0ad390bb18c4f84f078fced7a9d5ca3fcd39b10666e9bde:0",
+        "template:34f604aaba106a65f42956801b7532553faec857fadd1db66c00736e8a934ec0:0",
+        "template:4df587a9a7130b2cb9bdb97e398a66093feabd3aec92ed933c45c7e4cdd38c81:0",
+        "template:69a09fd49a361dda0290139eed1d079936c9d06c67a2375e2518260526f9869a:0",
+        "template:72b0475cdd88746f9857190bbcfd0db31d153c1de448cf6aed6ee93296b93a92:0"
+      ],
+      "expected_types": [
+        "StructuredOutput",
+        "StructuredOutputComponent"
+      ]
+    },
+    {
+      "case": "competitor profiles",
+      "question": "Find company pricing tiers, free trials, target industries and API offerings",
+      "arm": "field_lexical",
+      "reference_type_present_at_6": true,
+      "seconds": 0.0061,
+      "returned": 6,
+      "titles": [
+        "Market Research",
+        "Market Research",
+        "Market Research",
+        "Market Research",
+        "Market Research",
+        "Market Research"
+      ],
+      "ids": [
+        "template:fcc3821707e2ed72b98fb4f6dd8e6b7bbcb553f4630f7b4be9f5cc7d25d2572e:0",
+        "template:cfbd9c57e4c255ca16efdced8cc7d3e787532e8185cd77abf383f95ac353fda6:0",
+        "template:6350bdfeb5b7b7dc91473a8c19381c550aeed2a1cf90469e64d0de25a39a8807:0",
+        "template:400b25488f8a2277742e0216b0da90b6bfe60e5f29517eed595f540aab20e1b0:0",
+        "template:8b72196da5da5f034bfe5db6dac8a42b89026ed5639bf254f311ebb3e293148d:0",
+        "template:27e740871297a7ddda9b6ca1601c4eaea02e5506ad54082fef98b197dac4b615:0"
+      ],
+      "expected_types": [
+        "StructuredOutput",
+        "StructuredOutputComponent"
+      ]
+    },
+    {
+      "case": "competitor profiles",
+      "question": "Find company pricing tiers, free trials, target industries and API offerings",
+      "arm": "hybrid",
+      "reference_type_present_at_6": true,
+      "seconds": 0.0224,
+      "returned": 6,
+      "titles": [
+        "Market Research",
+        "Market Research",
+        "Market Research",
+        "Prospect Intel",
+        "Market Research",
+        "Market Research"
+      ],
+      "ids": [
+        "template:fcc3821707e2ed72b98fb4f6dd8e6b7bbcb553f4630f7b4be9f5cc7d25d2572e:0",
+        "template:cfbd9c57e4c255ca16efdced8cc7d3e787532e8185cd77abf383f95ac353fda6:0",
+        "template:6350bdfeb5b7b7dc91473a8c19381c550aeed2a1cf90469e64d0de25a39a8807:0",
+        "template:f196dfb9ef5c05cffc104867df854649f3f5bf1929b5e24e4bd53bf5dfb9c86f:0",
+        "template:8b72196da5da5f034bfe5db6dac8a42b89026ed5639bf254f311ebb3e293148d:0",
+        "template:400b25488f8a2277742e0216b0da90b6bfe60e5f29517eed595f540aab20e1b0:0"
+      ],
+      "expected_types": [
+        "StructuredOutput",
+        "StructuredOutputComponent"
+      ]
+    },
+    {
+      "case": "page content",
+      "question": "Read a webpage address and turn its contents into usable text",
+      "arm": "filename",
+      "reference_type_present_at_6": false,
+      "seconds": 0.0056,
+      "returned": 6,
+      "titles": [
+        "Text 2 Image Generation",
+        "Calculate Mathematics \u00b7 Read Record",
+        "Text Sentiment Analysis",
+        "voice_notes_to_structured_text",
+        "quantification_from_text",
+        "Text Sentiment Analysis"
+      ],
+      "ids": [
+        "template:1734039ead59709f40727e86690f0689eb2f03b02f23d386cbeb17e61509d4b2:0",
+        "template:21441f65ce5dff6a74bdfd2f2c6b3a8367c52b8d857c715ff4b2740fdda88734:0",
+        "template:31595a9801d3067f880a28b3a4bf67d3ff5d1eb8ffa25ce533234f07f1dc0415:0",
+        "template:3b56f989937d4a1d2c695be17747c6c6f79b639634876ba854e4b6b6b71c6afa:0",
+        "template:3e4eab3e1c58e505cb2820a94ced8d40b469da9d3bf1e357731eb70b945b1ef6:0",
+        "template:439874b318afde9b05d86512a9fdebbecf86e23fe0ba7fa03233b2219ba8ee50:0"
+      ],
+      "expected_types": [
+        "FirecrawlScrapeApi",
+        "URLComponent",
+        "WebBaseLoader"
+      ]
+    },
+    {
+      "case": "page content",
+      "question": "Read a webpage address and turn its contents into usable text",
+      "arm": "field_lexical",
+      "reference_type_present_at_6": true,
+      "seconds": 0.0032,
+      "returned": 5,
+      "titles": [
+        "Calculate Mathematics \u00b7 Read Record",
+        "Ingest Content",
+        "Calculate Mathematics \u00b7 Frontier",
+        "Data Extraction",
+        "LinkedIn Vector Store Rag Updated"
+      ],
+      "ids": [
+        "template:21441f65ce5dff6a74bdfd2f2c6b3a8367c52b8d857c715ff4b2740fdda88734:0",
+        "template:3f075837ac113d09ea4f5c8b78912b7da3c39781227a35b90a5fa3848f96434c:0",
+        "template:8ad725444429ddba74d632477f0d43a21d9a60b2d9a994be259903678ace6dbc:0",
+        "template:2bd0ecb2a5985c279cda00afaa93cf6ebc19e15061018eb62a5746ed66031122:0",
+        "template:9851f752ecf24ae62edfb38fa0a94c717170634fe3f622a811df87669f4e2e9d:0"
+      ],
+      "expected_types": [
+        "FirecrawlScrapeApi",
+        "URLComponent",
+        "WebBaseLoader"
+      ]
+    },
+    {
+      "case": "page content",
+      "question": "Read a webpage address and turn its contents into usable text",
+      "arm": "hybrid",
+      "reference_type_present_at_6": true,
+      "seconds": 0.0203,
+      "returned": 6,
+      "titles": [
+        "Ingest Content",
+        "LinkedIn Vector Store Rag Updated",
+        "RAG article in web with Agent",
+        "Calculate Mathematics \u00b7 Read Record",
+        "RAG",
+        "Calculate Mathematics \u00b7 Frontier"
+      ],
+      "ids": [
+        "template:3f075837ac113d09ea4f5c8b78912b7da3c39781227a35b90a5fa3848f96434c:0",
+        "template:9851f752ecf24ae62edfb38fa0a94c717170634fe3f622a811df87669f4e2e9d:0",
+        "template:ac32abf27ebf6ad9ce43a98c3ead842a850b5a782d227e7fad521dbf5bef7516:0",
+        "template:21441f65ce5dff6a74bdfd2f2c6b3a8367c52b8d857c715ff4b2740fdda88734:0",
+        "template:067e7de18697bbbce3234ca3e011df1ce6af901087e76b6687b0059e73c9653f:0",
+        "template:8ad725444429ddba74d632477f0d43a21d9a60b2d9a994be259903678ace6dbc:0"
+      ],
+      "expected_types": [
+        "FirecrawlScrapeApi",
+        "URLComponent",
+        "WebBaseLoader"
+      ]
+    },
+    {
+      "case": "document chunks",
+      "question": "Split a long document into smaller chunks for retrieval",
+      "arm": "filename",
+      "reference_type_present_at_6": false,
+      "seconds": 0.0056,
+      "returned": 6,
+      "titles": [
+        "Knowledge Base",
+        "Knowledge Retrieval",
+        "Langflow_Retrieval",
+        "Document Q&A",
+        "Document Relevance Ranking",
+        "Document QA"
+      ],
+      "ids": [
+        "template:0327112011d1cd7349e332af64893c3fa8428539e64555ecbadbc3f7b094e6b0:0",
+        "template:09ea87b8118c8807bb3786eb727403c11fbd7e313d72fb7559cc7b7873bc72a3:0",
+        "template:0ebe48cdd7fc36363f97063db4cebb12ffa428dde61340c3434556217348eee4:0",
+        "template:0ec460841ed7cc77f189bcebccffd08c2e396e8cb8ad662740c7bf0fb939faad:0",
+        "template:138134a6526e715efe3da21c1110a587f4c5a37932bbe234322160777673aa02:0",
+        "template:14611a67b93965621c13aa44b9ee0431b2159eed962c7613fd33b9a67cc9595f:0"
+      ],
+      "expected_types": [
+        "RecursiveCharacterTextSplitter",
+        "SplitText"
+      ]
+    },
+    {
+      "case": "document chunks",
+      "question": "Split a long document into smaller chunks for retrieval",
+      "arm": "field_lexical",
+      "reference_type_present_at_6": true,
+      "seconds": 0.0021,
+      "returned": 3,
+      "titles": [
+        "RAG-langchain",
+        "RAG article in web",
+        "RAG article in web with Agent"
+      ],
+      "ids": [
+        "template:62830a560f8c51f9b6066d42731c971ac1708518521061b9d13e350cdecaf0c8:0",
+        "template:33d2912b0089076aa5f43cd2c68209f3f54a8675f42bbd0c53b00080ee248f31:0",
+        "template:ac32abf27ebf6ad9ce43a98c3ead842a850b5a782d227e7fad521dbf5bef7516:0"
+      ],
+      "expected_types": [
+        "RecursiveCharacterTextSplitter",
+        "SplitText"
+      ]
+    },
+    {
+      "case": "document chunks",
+      "question": "Split a long document into smaller chunks for retrieval",
+      "arm": "hybrid",
+      "reference_type_present_at_6": true,
+      "seconds": 0.0153,
+      "returned": 6,
+      "titles": [
+        "RAG-langchain",
+        "RAG article in web with Agent",
+        "RAG article in web",
+        "Hybrid Search RAG",
+        "Document Formatter & Cleaner",
+        "Chunk Classification"
+      ],
+      "ids": [
+        "template:62830a560f8c51f9b6066d42731c971ac1708518521061b9d13e350cdecaf0c8:0",
+        "template:ac32abf27ebf6ad9ce43a98c3ead842a850b5a782d227e7fad521dbf5bef7516:0",
+        "template:33d2912b0089076aa5f43cd2c68209f3f54a8675f42bbd0c53b00080ee248f31:0",
+        "template:2ff3d8167e7b54397d688b6a8e4eea4544b5f7183c9e2d726278288a7482a917:0",
+        "template:356e41e8b5e0bf2b2e0e10f78165f7b8723b01c0b47c356b324b7ef30490a50d:0",
+        "template:8cffee315fbac29f29514fb087964b3d0b5e7a2e915c12a26d2de01022d8239b:0"
+      ],
+      "expected_types": [
+        "RecursiveCharacterTextSplitter",
+        "SplitText"
+      ]
+    },
+    {
+      "case": "typed output",
+      "question": "Turn an answer into typed JSON fields instead of free-form prose",
+      "arm": "filename",
+      "reference_type_present_at_6": false,
+      "seconds": 0.0054,
+      "returned": 6,
+      "titles": [
+        "Answer Knowledge",
+        "Audio_Signal_Processing_Assistant_Agent.json",
+        "nl_to_sql_json_to_pdf_report",
+        "Json agent",
+        "nl to sql json to pdf report (1)",
+        "JSON Agent"
+      ],
+      "ids": [
+        "template:128ea3be242120d18f4a29d79d8b86038e698fc0e34db811e8d15f769a0b94ec:0",
+        "template:50114c09b85615ab99cb3ca1f095f1b73576918d144afec5512015046358b77d:0",
+        "template:6a4b82a9b5b0409085feb607b8bbfb47da3845d413e5eed5b29d96f507eb12a9:0",
+        "template:8eee55cdb0efbc0a5601ae328175e6f3194f619e3948b631f65610c305d0af1c:0",
+        "template:cb96716235572c59c4d92f7ccbf02b4a0266ab6546f43bfe2f446221a25608cd:0",
+        "template:d726cdb995894560d911462e7ab0e42bce87ca036e628227fb1f6d9beff2ccd1:0"
+      ],
+      "expected_types": [
+        "StructuredOutput",
+        "StructuredOutputComponent"
+      ]
+    },
+    {
+      "case": "typed output",
+      "question": "Turn an answer into typed JSON fields instead of free-form prose",
+      "arm": "field_lexical",
+      "reference_type_present_at_6": false,
+      "seconds": 0.005,
+      "returned": 6,
+      "titles": [
+        "Json agent",
+        "Hypothesis Generation Reference",
+        "Graph Commit Reference",
+        "Hypothesis Comparison Reference",
+        "Input Normalizer Reference",
+        "Graph Retrieval Normalizer Reference"
+      ],
+      "ids": [
+        "template:8eee55cdb0efbc0a5601ae328175e6f3194f619e3948b631f65610c305d0af1c:0",
+        "template:0af76e47e57991525bdd6aa5045ff3d1699ccc415d0ea86fdcb568d81ba9f867:0",
+        "template:3d0968fa9e8bda5004a2fab6d02bd3c17dae55d5718254c65be8e6e3fde9ba90:0",
+        "template:be41d05eaf3f2aadcac0057fc5e297159af7058c71eae03431e4913bda4197bb:0",
+        "template:d6f62c4a3ba460897650bc0781dad1731a670c9cc68e65e75cf7e2c2d1888031:0",
+        "template:fe46fb092c65076c20e85adf5e87ac874a8bf3b1fc7abef4176293e944a8bd87:0"
+      ],
+      "expected_types": [
+        "StructuredOutput",
+        "StructuredOutputComponent"
+      ]
+    },
+    {
+      "case": "typed output",
+      "question": "Turn an answer into typed JSON fields instead of free-form prose",
+      "arm": "hybrid",
+      "reference_type_present_at_6": true,
+      "seconds": 0.0263,
+      "returned": 6,
+      "titles": [
+        "Quiz Generator",
+        "Hybrid Search RAG",
+        "Hybrid Search RAG",
+        "Json agent",
+        "Hybrid Search RAG",
+        "Chunk Classification"
+      ],
+      "ids": [
+        "template:4499851a5548ccace6e930b691cc615d02d8d26ebd1cda918dc0ced110715714:0",
+        "template:d3ab5b57046f34b641bdc701008397698fb0ca3386ed216896a6ec25f00a7e05:0",
+        "template:50bbab8d110d1254653223158eac39d5c9855328d55dfe0531b697b8bb6128eb:0",
+        "template:8eee55cdb0efbc0a5601ae328175e6f3194f619e3948b631f65610c305d0af1c:0",
+        "template:b92bf82cc96a66227c665cde73f8f24be98bee6aae1dadf99d4a60344d4f8a5c:0",
+        "template:8cffee315fbac29f29514fb087964b3d0b5e7a2e915c12a26d2de01022d8239b:0"
+      ],
+      "expected_types": [
+        "StructuredOutput",
+        "StructuredOutputComponent"
+      ]
+    },
+    {
+      "case": "relational query",
+      "question": "Query relational tables and return SQL results",
+      "arm": "filename",
+      "reference_type_present_at_6": false,
+      "seconds": 0.0056,
+      "returned": 6,
+      "titles": [
+        "Ask Your Documents for Insights",
+        "query-creator",
+        "Multi-Query Retriever",
+        "MultiQueryRetriever",
+        "A/B Test Results Analyzer",
+        "Query Rewriting"
+      ],
+      "ids": [
+        "template:001786a4d9e43c1cf39265dcb139abbf64fa04579d1b5c8847046e65db07f46b:0",
+        "template:0a6552daca65638fe96b8d131815b2d81fdf2cddd5f56db9e959e55071162024:0",
+        "template:24f0206bce9245b4a5af43ea253753eb4f10afd0552bb429b599ab21b6c39bcc:0",
+        "template:285a9f51f72a7876eb975094a3c71da381b8007039bd483ac2e8592f18d74af6:0",
+        "template:3944939c24a48897895ce42f92ad8972c51d042a6ee04475f668a661272ae854:0",
+        "template:544352ff62f7700ff34e13f5269b04ea35f2c8b032195211e3d0f0d431d86b48:0"
+      ],
+      "expected_types": [
+        "SQLComponent",
+        "SQLDatabase"
+      ]
+    },
+    {
+      "case": "relational query",
+      "question": "Query relational tables and return SQL results",
+      "arm": "field_lexical",
+      "reference_type_present_at_6": true,
+      "seconds": 0.0038,
+      "returned": 6,
+      "titles": [
+        "data_pipeline_scripting",
+        "Exam results tables",
+        "nl_to_sql_json_to_pdf_report",
+        "nl to sql json to pdf report (1)",
+        "SaaS Pricing",
+        "dashboard_chart_generation"
+      ],
+      "ids": [
+        "template:2a3a5e8c3e9bb4f2a35437a94a9774a14c63bc4b02f9d954e929e30b75089273:0",
+        "template:c478ec428f287796f863dadf872e90fdc172c09aec850e392e6af66c28266af9:0",
+        "template:6a4b82a9b5b0409085feb607b8bbfb47da3845d413e5eed5b29d96f507eb12a9:0",
+        "template:cb96716235572c59c4d92f7ccbf02b4a0266ab6546f43bfe2f446221a25608cd:0",
+        "template:81f757b261a1a243fefd1aa31fa6a6761ac6f989e58d5b4d3f79978acb7207b7:0",
+        "template:c7d5930c7575508ea1b455ce34d9516134d0fe4e93d5f9a4386609d9184945d5:0"
+      ],
+      "expected_types": [
+        "SQLComponent",
+        "SQLDatabase"
+      ]
+    },
+    {
+      "case": "relational query",
+      "question": "Query relational tables and return SQL results",
+      "arm": "hybrid",
+      "reference_type_present_at_6": true,
+      "seconds": 0.0181,
+      "returned": 6,
+      "titles": [
+        "Exam results tables",
+        "data_pipeline_scripting",
+        "nl to sql json to pdf report (1)",
+        "nl_to_sql_json_to_pdf_report",
+        "dashboard_chart_generation",
+        "survey_feedback_analytics"
+      ],
+      "ids": [
+        "template:c478ec428f287796f863dadf872e90fdc172c09aec850e392e6af66c28266af9:0",
+        "template:2a3a5e8c3e9bb4f2a35437a94a9774a14c63bc4b02f9d954e929e30b75089273:0",
+        "template:cb96716235572c59c4d92f7ccbf02b4a0266ab6546f43bfe2f446221a25608cd:0",
+        "template:6a4b82a9b5b0409085feb607b8bbfb47da3845d413e5eed5b29d96f507eb12a9:0",
+        "template:c7d5930c7575508ea1b455ce34d9516134d0fe4e93d5f9a4386609d9184945d5:0",
+        "template:8cb5f94f15d0359bb71f4892f8dc6327a64a4aee8f4b972c8529ab138832a873:0"
+      ],
+      "expected_types": [
+        "SQLComponent",
+        "SQLDatabase"
+      ]
+    },
+    {
+      "case": "web evidence",
+      "question": "Search the current web for evidence and cite pages",
+      "arm": "filename",
+      "reference_type_present_at_6": false,
+      "seconds": 0.0059,
+      "returned": 4,
+      "titles": [
+        "test-web-search",
+        "RAG article in web",
+        "Read Evidence",
+        "RAG article in web with Agent"
+      ],
+      "ids": [
+        "template:081648f0e62d02c43615e631243ea5eb1e69300116985f7f7cba72755881cf82:0",
+        "template:33d2912b0089076aa5f43cd2c68209f3f54a8675f42bbd0c53b00080ee248f31:0",
+        "template:4d8ee2b01f4ce3baa08dbe3a90a89d6c3876eeecbd72160641d2e1a5aa7b0e4c:0",
+        "template:ac32abf27ebf6ad9ce43a98c3ead842a850b5a782d227e7fad521dbf5bef7516:0"
+      ],
+      "expected_types": [
+        "GoogleSerperAPICore",
+        "Serp",
+        "TavilySearchComponent",
+        "UnifiedWebSearch"
+      ]
+    },
+    {
+      "case": "web evidence",
+      "question": "Search the current web for evidence and cite pages",
+      "arm": "field_lexical",
+      "reference_type_present_at_6": true,
+      "seconds": 0.006,
+      "returned": 6,
+      "titles": [
+        "Social Media Agent",
+        "Company Research",
+        "Sequential Tasks Agents",
+        "rag-chroma-ollama",
+        "rag-milvus-ollama",
+        "rag-chroma-lm-studio"
+      ],
+      "ids": [
+        "template:0150723f4a8148509831ea62d48c4506402a93eea1b43023234acdab4e8bd91d:0",
+        "template:69a09fd49a361dda0290139eed1d079936c9d06c67a2375e2518260526f9869a:0",
+        "template:1af1998f2efd72cfdde590d649b4e6c942795acd2d0f09c89779b27c0d83e05a:0",
+        "template:1ed25309d45e4046ffb3fe8e8b0dc3300111c3ffe7c1a0f226d32bd41237e15b:0",
+        "template:749f33f1147894852756b86b2f4364cab6b990ed3d7755df2473fb141377da77:0",
+        "template:e5d1b45531b82916df91393eee19807d26912096f739d930b6fdf4657c8fe720:0"
+      ],
+      "expected_types": [
+        "GoogleSerperAPICore",
+        "Serp",
+        "TavilySearchComponent",
+        "UnifiedWebSearch"
+      ]
+    },
+    {
+      "case": "web evidence",
+      "question": "Search the current web for evidence and cite pages",
+      "arm": "hybrid",
+      "reference_type_present_at_6": true,
+      "seconds": 0.0215,
+      "returned": 6,
+      "titles": [
+        "Social Media Agent",
+        "Deeply Research Agent",
+        "Deep Research Agent",
+        "Company Research",
+        "Sequential Tasks Agents",
+        "Document Relevance Ranking"
+      ],
+      "ids": [
+        "template:0150723f4a8148509831ea62d48c4506402a93eea1b43023234acdab4e8bd91d:0",
+        "template:f88639b161cc79fcfc00b8c9ee4e7b6be4a27d3a3c51dc21b669c8c58148f56c:0",
+        "template:8942bcdcc503ca5c984fa8a776457a7a79d614c56c2d028b5525304319657eb7:0",
+        "template:69a09fd49a361dda0290139eed1d079936c9d06c67a2375e2518260526f9869a:0",
+        "template:1af1998f2efd72cfdde590d649b4e6c942795acd2d0f09c89779b27c0d83e05a:0",
+        "template:138134a6526e715efe3da21c1110a587f4c5a37932bbe234322160777673aa02:0"
+      ],
+      "expected_types": [
+        "GoogleSerperAPICore",
+        "Serp",
+        "TavilySearchComponent",
+        "UnifiedWebSearch"
+      ]
+    }
+  ]
+}

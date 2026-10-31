@@ -1,0 +1,1334 @@
+{
+  "schemaVersion": 1,
+  "authorship": "Coordinator-authored conformance cases following jointly debated blueprint; not held-out real tasks",
+  "catalogSha256": "aa54672f51053b7403d5b6a9d1ba063f1ce9ed54d55eda31539757c8da44b6ed",
+  "cases": [
+    {
+      "case_id": "C01",
+      "family": "F1",
+      "description": "Required model declaration absent",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "a",
+          "type": "Agent"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "i",
+          "output": "message",
+          "target": "a",
+          "input": "input_value"
+        },
+        {
+          "id": "e2",
+          "source": "a",
+          "output": "response",
+          "target": "o",
+          "input": "input_value"
+        }
+      ],
+      "bindings": [],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "through_agent",
+        "required_agent": "a",
+        "route_assertions": [],
+        "capabilities": [],
+        "certify_active_ports": false,
+        "selected_provider": null
+      },
+      "revision": null
+    },
+    {
+      "case_id": "C02",
+      "family": "F1",
+      "description": "Model interface attested as an authored assumption",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "a",
+          "type": "Agent"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "i",
+          "output": "message",
+          "target": "a",
+          "input": "input_value"
+        },
+        {
+          "id": "e2",
+          "source": "a",
+          "output": "response",
+          "target": "o",
+          "input": "input_value"
+        }
+      ],
+      "bindings": [
+        {
+          "id": "model-a",
+          "node": "a",
+          "field": "model",
+          "kind": "LanguageModel",
+          "state": "attested",
+          "tier": "synthetic-assumption"
+        }
+      ],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "through_agent",
+        "required_agent": "a",
+        "route_assertions": [],
+        "capabilities": [],
+        "certify_active_ports": false,
+        "selected_provider": null
+      },
+      "revision": null
+    },
+    {
+      "case_id": "C03",
+      "family": "F1",
+      "description": "Model evidence revoked by authorized revision",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "a",
+          "type": "Agent"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "i",
+          "output": "message",
+          "target": "a",
+          "input": "input_value"
+        },
+        {
+          "id": "e2",
+          "source": "a",
+          "output": "response",
+          "target": "o",
+          "input": "input_value"
+        }
+      ],
+      "bindings": [
+        {
+          "id": "model-a",
+          "node": "a",
+          "field": "model",
+          "kind": "LanguageModel",
+          "state": "attested",
+          "tier": "synthetic-assumption"
+        }
+      ],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "through_agent",
+        "required_agent": "a",
+        "route_assertions": [],
+        "capabilities": [],
+        "certify_active_ports": false,
+        "selected_provider": null
+      },
+      "revision": {
+        "op": "revoke_model",
+        "node": "a",
+        "authorized": true
+      }
+    },
+    {
+      "case_id": "C04",
+      "family": "F2",
+      "description": "Required output input has no incoming witness",
+      "nodes": [
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [],
+      "bindings": [],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "any",
+        "required_agent": null,
+        "route_assertions": [],
+        "capabilities": [],
+        "certify_active_ports": false,
+        "selected_provider": null
+      },
+      "revision": null
+    },
+    {
+      "case_id": "C05",
+      "family": "F2",
+      "description": "Annotation-compatible direct route",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [
+        {
+          "id": "direct",
+          "source": "i",
+          "output": "message",
+          "target": "o",
+          "input": "input_value"
+        }
+      ],
+      "bindings": [],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "direct",
+        "required_agent": null,
+        "route_assertions": [],
+        "capabilities": [],
+        "certify_active_ports": false,
+        "selected_provider": null
+      },
+      "revision": null
+    },
+    {
+      "case_id": "C06",
+      "family": "F2",
+      "description": "Message output conflicts with LanguageModel input",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "a",
+          "type": "Agent"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "i",
+          "output": "message",
+          "target": "a",
+          "input": "input_value"
+        },
+        {
+          "id": "e2",
+          "source": "a",
+          "output": "response",
+          "target": "o",
+          "input": "input_value"
+        },
+        {
+          "id": "bad",
+          "source": "i",
+          "output": "message",
+          "target": "a",
+          "input": "model"
+        }
+      ],
+      "bindings": [
+        {
+          "id": "model-a",
+          "node": "a",
+          "field": "model",
+          "kind": "LanguageModel",
+          "state": "attested",
+          "tier": "synthetic-assumption"
+        }
+      ],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "through_agent",
+        "required_agent": "a",
+        "route_assertions": [],
+        "capabilities": [],
+        "certify_active_ports": false,
+        "selected_provider": null
+      },
+      "revision": null
+    },
+    {
+      "case_id": "C07",
+      "family": "F3",
+      "description": "Capability absent from the scoped alphabet: vector_retrieval",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "a",
+          "type": "Agent"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "i",
+          "output": "message",
+          "target": "a",
+          "input": "input_value"
+        },
+        {
+          "id": "e2",
+          "source": "a",
+          "output": "response",
+          "target": "o",
+          "input": "input_value"
+        }
+      ],
+      "bindings": [
+        {
+          "id": "model-a",
+          "node": "a",
+          "field": "model",
+          "kind": "LanguageModel",
+          "state": "attested",
+          "tier": "synthetic-assumption"
+        }
+      ],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "through_agent",
+        "required_agent": "a",
+        "route_assertions": [],
+        "capabilities": [
+          "vector_retrieval"
+        ],
+        "certify_active_ports": false,
+        "selected_provider": null
+      },
+      "revision": null
+    },
+    {
+      "case_id": "C08",
+      "family": "F3",
+      "description": "Capability absent from the scoped alphabet: database_write",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "a",
+          "type": "Agent"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "i",
+          "output": "message",
+          "target": "a",
+          "input": "input_value"
+        },
+        {
+          "id": "e2",
+          "source": "a",
+          "output": "response",
+          "target": "o",
+          "input": "input_value"
+        }
+      ],
+      "bindings": [
+        {
+          "id": "model-a",
+          "node": "a",
+          "field": "model",
+          "kind": "LanguageModel",
+          "state": "attested",
+          "tier": "synthetic-assumption"
+        }
+      ],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "through_agent",
+        "required_agent": "a",
+        "route_assertions": [],
+        "capabilities": [
+          "database_write"
+        ],
+        "certify_active_ports": false,
+        "selected_provider": null
+      },
+      "revision": null
+    },
+    {
+      "case_id": "C09",
+      "family": "F3",
+      "description": "Capability absent from the scoped alphabet: email_transmission",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "a",
+          "type": "Agent"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "i",
+          "output": "message",
+          "target": "a",
+          "input": "input_value"
+        },
+        {
+          "id": "e2",
+          "source": "a",
+          "output": "response",
+          "target": "o",
+          "input": "input_value"
+        }
+      ],
+      "bindings": [
+        {
+          "id": "model-a",
+          "node": "a",
+          "field": "model",
+          "kind": "LanguageModel",
+          "state": "attested",
+          "tier": "synthetic-assumption"
+        }
+      ],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "through_agent",
+        "required_agent": "a",
+        "route_assertions": [],
+        "capabilities": [
+          "email_transmission"
+        ],
+        "certify_active_ports": false,
+        "selected_provider": null
+      },
+      "revision": null
+    },
+    {
+      "case_id": "C10",
+      "family": "F4",
+      "description": "Conflicting type assertions for one identity",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "a",
+          "type": "Agent"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "i",
+          "output": "message",
+          "target": "a",
+          "input": "input_value"
+        },
+        {
+          "id": "e2",
+          "source": "a",
+          "output": "response",
+          "target": "o",
+          "input": "input_value"
+        }
+      ],
+      "bindings": [
+        {
+          "id": "model-a",
+          "node": "a",
+          "field": "model",
+          "kind": "LanguageModel",
+          "state": "attested",
+          "tier": "synthetic-assumption"
+        }
+      ],
+      "node_type_assertions": [
+        {
+          "node": "a",
+          "type": "Agent"
+        },
+        {
+          "node": "a",
+          "type": "ChatInput"
+        }
+      ],
+      "intent": {
+        "id": "intent",
+        "route": "through_agent",
+        "required_agent": "a",
+        "route_assertions": [],
+        "capabilities": [],
+        "certify_active_ports": false,
+        "selected_provider": null
+      },
+      "revision": null
+    },
+    {
+      "case_id": "C11",
+      "family": "F4",
+      "description": "Model evidence both attested and revoked",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "a",
+          "type": "Agent"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "i",
+          "output": "message",
+          "target": "a",
+          "input": "input_value"
+        },
+        {
+          "id": "e2",
+          "source": "a",
+          "output": "response",
+          "target": "o",
+          "input": "input_value"
+        }
+      ],
+      "bindings": [
+        {
+          "id": "model-a",
+          "node": "a",
+          "field": "model",
+          "kind": "LanguageModel",
+          "state": "attested",
+          "tier": "synthetic-assumption"
+        },
+        {
+          "id": "model-a",
+          "node": "a",
+          "field": "model",
+          "kind": "LanguageModel",
+          "state": "revoked",
+          "tier": "synthetic-assumption"
+        }
+      ],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "through_agent",
+        "required_agent": "a",
+        "route_assertions": [],
+        "capabilities": [],
+        "certify_active_ports": false,
+        "selected_provider": null
+      },
+      "revision": null
+    },
+    {
+      "case_id": "C12",
+      "family": "F4",
+      "description": "Intent both requires and forbids Agent route",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "a",
+          "type": "Agent"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "i",
+          "output": "message",
+          "target": "a",
+          "input": "input_value"
+        },
+        {
+          "id": "e2",
+          "source": "a",
+          "output": "response",
+          "target": "o",
+          "input": "input_value"
+        }
+      ],
+      "bindings": [
+        {
+          "id": "model-a",
+          "node": "a",
+          "field": "model",
+          "kind": "LanguageModel",
+          "state": "attested",
+          "tier": "synthetic-assumption"
+        }
+      ],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "through_agent",
+        "required_agent": "a",
+        "route_assertions": [
+          "through_agent",
+          "forbid_agent"
+        ],
+        "capabilities": [],
+        "certify_active_ports": false,
+        "selected_provider": null
+      },
+      "revision": null
+    },
+    {
+      "case_id": "C13",
+      "family": "F5",
+      "description": "Model evidence references an absent node",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "a",
+          "type": "Agent"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "i",
+          "output": "message",
+          "target": "a",
+          "input": "input_value"
+        },
+        {
+          "id": "e2",
+          "source": "a",
+          "output": "response",
+          "target": "o",
+          "input": "input_value"
+        }
+      ],
+      "bindings": [
+        {
+          "id": "model-a",
+          "node": "ghost",
+          "field": "model",
+          "kind": "LanguageModel",
+          "state": "attested",
+          "tier": "synthetic-assumption"
+        }
+      ],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "through_agent",
+        "required_agent": "a",
+        "route_assertions": [],
+        "capabilities": [],
+        "certify_active_ports": false,
+        "selected_provider": null
+      },
+      "revision": null
+    },
+    {
+      "case_id": "C14",
+      "family": "F5",
+      "description": "Authorized identity-preserving rename",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "a",
+          "type": "Agent"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "i",
+          "output": "message",
+          "target": "a",
+          "input": "input_value"
+        },
+        {
+          "id": "e2",
+          "source": "a",
+          "output": "response",
+          "target": "o",
+          "input": "input_value"
+        }
+      ],
+      "bindings": [
+        {
+          "id": "model-a",
+          "node": "a",
+          "field": "model",
+          "kind": "LanguageModel",
+          "state": "attested",
+          "tier": "synthetic-assumption"
+        }
+      ],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "through_agent",
+        "required_agent": "a",
+        "route_assertions": [],
+        "capabilities": [],
+        "certify_active_ports": false,
+        "selected_provider": null
+      },
+      "revision": {
+        "op": "rename_node",
+        "old": "a",
+        "new": "renamed",
+        "authorized": true
+      }
+    },
+    {
+      "case_id": "C15",
+      "family": "F5",
+      "description": "Through-Agent identity not selected among alternatives",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "a",
+          "type": "Agent"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        },
+        {
+          "id": "a2",
+          "type": "Agent"
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "i",
+          "output": "message",
+          "target": "a",
+          "input": "input_value"
+        },
+        {
+          "id": "e2",
+          "source": "a",
+          "output": "response",
+          "target": "o",
+          "input": "input_value"
+        }
+      ],
+      "bindings": [
+        {
+          "id": "model-a",
+          "node": "a",
+          "field": "model",
+          "kind": "LanguageModel",
+          "state": "attested",
+          "tier": "synthetic-assumption"
+        },
+        {
+          "id": "model-a2",
+          "node": "a2",
+          "field": "model",
+          "kind": "LanguageModel",
+          "state": "attested",
+          "tier": "synthetic-assumption"
+        }
+      ],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "through_agent",
+        "required_agent": null,
+        "route_assertions": [],
+        "capabilities": [],
+        "certify_active_ports": false,
+        "selected_provider": null
+      },
+      "revision": null
+    },
+    {
+      "case_id": "C16",
+      "family": "F6",
+      "description": "Output compatibility supported by return annotation only",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "a",
+          "type": "Agent"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "i",
+          "output": "message",
+          "target": "a",
+          "input": "input_value"
+        },
+        {
+          "id": "e2",
+          "source": "a",
+          "output": "response",
+          "target": "o",
+          "input": "input_value"
+        }
+      ],
+      "bindings": [
+        {
+          "id": "model-a",
+          "node": "a",
+          "field": "model",
+          "kind": "LanguageModel",
+          "state": "attested",
+          "tier": "synthetic-assumption"
+        }
+      ],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "through_agent",
+        "required_agent": "a",
+        "route_assertions": [],
+        "capabilities": [],
+        "certify_active_ports": false,
+        "selected_provider": null
+      },
+      "revision": null
+    },
+    {
+      "case_id": "C17",
+      "family": "F6",
+      "description": "Request active-port certification from static metadata",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "a",
+          "type": "Agent"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "i",
+          "output": "message",
+          "target": "a",
+          "input": "input_value"
+        },
+        {
+          "id": "e2",
+          "source": "a",
+          "output": "response",
+          "target": "o",
+          "input": "input_value"
+        }
+      ],
+      "bindings": [
+        {
+          "id": "model-a",
+          "node": "a",
+          "field": "model",
+          "kind": "LanguageModel",
+          "state": "attested",
+          "tier": "synthetic-assumption"
+        }
+      ],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "through_agent",
+        "required_agent": "a",
+        "route_assertions": [],
+        "capabilities": [],
+        "certify_active_ports": true,
+        "selected_provider": null
+      },
+      "revision": null
+    },
+    {
+      "case_id": "C18",
+      "family": "F6",
+      "description": "Provider-specific requirements have no supporting metadata",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "a",
+          "type": "Agent"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "i",
+          "output": "message",
+          "target": "a",
+          "input": "input_value"
+        },
+        {
+          "id": "e2",
+          "source": "a",
+          "output": "response",
+          "target": "o",
+          "input": "input_value"
+        }
+      ],
+      "bindings": [
+        {
+          "id": "model-a",
+          "node": "a",
+          "field": "model",
+          "kind": "LanguageModel",
+          "state": "attested",
+          "tier": "synthetic-assumption"
+        }
+      ],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "through_agent",
+        "required_agent": "a",
+        "route_assertions": [],
+        "capabilities": [],
+        "certify_active_ports": false,
+        "selected_provider": {
+          "node": "a",
+          "name": "synthetic-provider"
+        }
+      },
+      "revision": null
+    },
+    {
+      "case_id": "C19",
+      "family": "F7",
+      "description": "Direct route violates explicit through-Agent intent",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "a",
+          "type": "Agent"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [
+        {
+          "id": "direct",
+          "source": "i",
+          "output": "message",
+          "target": "o",
+          "input": "input_value"
+        }
+      ],
+      "bindings": [
+        {
+          "id": "model-a",
+          "node": "a",
+          "field": "model",
+          "kind": "LanguageModel",
+          "state": "attested",
+          "tier": "synthetic-assumption"
+        }
+      ],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "through_agent",
+        "required_agent": "a",
+        "route_assertions": [],
+        "capabilities": [],
+        "certify_active_ports": false,
+        "selected_provider": null
+      },
+      "revision": null
+    },
+    {
+      "case_id": "C20",
+      "family": "F7",
+      "description": "Explicit unique authorization to insert existing Agent in route",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "a",
+          "type": "Agent"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [
+        {
+          "id": "direct",
+          "source": "i",
+          "output": "message",
+          "target": "o",
+          "input": "input_value"
+        }
+      ],
+      "bindings": [
+        {
+          "id": "model-a",
+          "node": "a",
+          "field": "model",
+          "kind": "LanguageModel",
+          "state": "attested",
+          "tier": "synthetic-assumption"
+        }
+      ],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "through_agent",
+        "required_agent": "a",
+        "route_assertions": [],
+        "capabilities": [],
+        "certify_active_ports": false,
+        "selected_provider": null
+      },
+      "revision": {
+        "op": "route_through_agent",
+        "node": "a",
+        "authorized": true
+      }
+    },
+    {
+      "case_id": "C21",
+      "family": "F7",
+      "description": "Removal request conflicts with retained mandatory intent",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "a",
+          "type": "Agent"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "i",
+          "output": "message",
+          "target": "a",
+          "input": "input_value"
+        },
+        {
+          "id": "e2",
+          "source": "a",
+          "output": "response",
+          "target": "o",
+          "input": "input_value"
+        }
+      ],
+      "bindings": [
+        {
+          "id": "model-a",
+          "node": "a",
+          "field": "model",
+          "kind": "LanguageModel",
+          "state": "attested",
+          "tier": "synthetic-assumption"
+        }
+      ],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "through_agent",
+        "required_agent": "a",
+        "route_assertions": [],
+        "capabilities": [],
+        "certify_active_ports": false,
+        "selected_provider": null
+      },
+      "revision": {
+        "op": "remove_node",
+        "node": "a",
+        "authorized": true
+      }
+    },
+    {
+      "case_id": "C22",
+      "family": "F8",
+      "description": "Statically grounded control under assumption-tier model witness",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "a",
+          "type": "Agent"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "i",
+          "output": "message",
+          "target": "a",
+          "input": "input_value"
+        },
+        {
+          "id": "e2",
+          "source": "a",
+          "output": "response",
+          "target": "o",
+          "input": "input_value"
+        }
+      ],
+      "bindings": [
+        {
+          "id": "model-a",
+          "node": "a",
+          "field": "model",
+          "kind": "LanguageModel",
+          "state": "attested",
+          "tier": "synthetic-assumption"
+        }
+      ],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "through_agent",
+        "required_agent": "a",
+        "route_assertions": [],
+        "capabilities": [],
+        "certify_active_ports": false,
+        "selected_provider": null
+      },
+      "revision": null
+    },
+    {
+      "case_id": "C23",
+      "family": "F8",
+      "description": "Unsupported capability and missing model both retained",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "a",
+          "type": "Agent"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "i",
+          "output": "message",
+          "target": "a",
+          "input": "input_value"
+        },
+        {
+          "id": "e2",
+          "source": "a",
+          "output": "response",
+          "target": "o",
+          "input": "input_value"
+        }
+      ],
+      "bindings": [],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "through_agent",
+        "required_agent": "a",
+        "route_assertions": [],
+        "capabilities": [
+          "vector_retrieval"
+        ],
+        "certify_active_ports": false,
+        "selected_provider": null
+      },
+      "revision": null
+    },
+    {
+      "case_id": "C24",
+      "family": "F8",
+      "description": "Changed evidence target invalidates previous model grounding",
+      "nodes": [
+        {
+          "id": "i",
+          "type": "ChatInput"
+        },
+        {
+          "id": "a",
+          "type": "Agent"
+        },
+        {
+          "id": "o",
+          "type": "ChatOutput"
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "i",
+          "output": "message",
+          "target": "a",
+          "input": "input_value"
+        },
+        {
+          "id": "e2",
+          "source": "a",
+          "output": "response",
+          "target": "o",
+          "input": "input_value"
+        }
+      ],
+      "bindings": [
+        {
+          "id": "model-a",
+          "node": "wrong",
+          "field": "model",
+          "kind": "LanguageModel",
+          "state": "attested",
+          "tier": "synthetic-assumption"
+        }
+      ],
+      "node_type_assertions": [],
+      "intent": {
+        "id": "intent",
+        "route": "through_agent",
+        "required_agent": "a",
+        "route_assertions": [],
+        "capabilities": [],
+        "certify_active_ports": false,
+        "selected_provider": null
+      },
+      "revision": null
+    }
+  ]
+}

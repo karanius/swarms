@@ -1,0 +1,10 @@
+export function analyse(channels, sampleRate) {
+  let sum=0,peak=0,clipped=0,n=0,quiet=0,frames=channels[0]?.length||0;
+  const envelope=[]; const window=Math.max(1,Math.round(sampleRate*.02));
+  for(let start=0;start<frames;start+=window){let energy=0,count=0;
+    for(const ch of channels)for(let i=start;i<Math.min(frames,start+window);i++){const x=ch[i];if(!Number.isFinite(x))throw Error('Invalid audio samples');sum+=x*x;energy+=x*x;peak=Math.max(peak,Math.abs(x));clipped+=Math.abs(x)>=.999?1:0;n++;count++;}
+    const rms=Math.sqrt(energy/count);if(rms<.01)quiet++;envelope.push({time:start/sampleRate,db:20*Math.log10(Math.max(rms,1e-6))});
+  }
+  return {duration:frames/sampleRate,channels:channels.length,sampleRate,peakDb:20*Math.log10(Math.max(peak,1e-6)),rmsDb:20*Math.log10(Math.max(Math.sqrt(sum/Math.max(n,1)),1e-6)),clipped,quietPercent:100*quiet/Math.max(envelope.length,1),envelope};
+}
+export function analyseWav(buffer){const v=new DataView(buffer);const tag=i=>String.fromCharCode(...new Uint8Array(buffer,i,4));if(tag(0)!=='RIFF'||tag(8)!=='WAVE')throw Error('Expected WAV audio');let fmt,data,size;for(let i=12;i+8<=v.byteLength;){const n=v.getUint32(i+4,true);if(tag(i)==='fmt ')fmt=i+8;if(tag(i)==='data'){data=i+8;size=n;break;}i+=8+n+(n%2);}if(fmt===undefined||data===undefined)throw Error('Incomplete WAV');let type=v.getUint16(fmt,true);const count=v.getUint16(fmt+2,true),rate=v.getUint32(fmt+4,true),bits=v.getUint16(fmt+14,true),bytes=bits/8;if(type===65534)type=v.getUint16(fmt+24,true);if(![1,3].includes(type)||![16,24,32].includes(bits))throw Error('Unsupported WAV format');const frames=Math.floor(size/(bytes*count)),channels=Array.from({length:count},()=>new Float32Array(frames));for(let i=0;i<frames;i++)for(let c=0;c<count;c++){const p=data+(i*count+c)*bytes;let x;if(type===3)x=v.getFloat32(p,true);else if(bits===16)x=v.getInt16(p,true)/32768;else if(bits===32)x=v.getInt32(p,true)/2147483648;else{let z=v.getUint8(p)|(v.getUint8(p+1)<<8)|(v.getUint8(p+2)<<16);if(z&8388608)z-=16777216;x=z/8388608;}channels[c][i]=x;}return analyse(channels,rate);}

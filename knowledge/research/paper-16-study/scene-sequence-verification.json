@@ -1,0 +1,763 @@
+{
+  "plan": "Three IndexTTS library scenes, three full ESD model scenes, held-out ESD scene, then custom-reference single-line adapter checks. Technical proof only.",
+  "runs": [
+    {
+      "key": "0:crema:index:None",
+      "id": "433bd1f9-7b80-4a31-a30a-86b2d9f6f1e3",
+      "library": "crema",
+      "model": "index",
+      "kind": "complete_scene",
+      "state": "complete",
+      "mix": true,
+      "lines": {
+        "01": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "You promised me it was safe.  Please tell me we have not lost everything.",
+            "expected": "You promised me it was safe. Please tell me we have not lost everything.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "02": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "I checked twice. I really thought the copy was there. I'm sorry.",
+            "expected": "I checked twice. I really thought the copy was there. I am sorry.",
+            "exact_words": false,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "03": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "Wait, look at the date on that folder that is yesterday, not today.",
+            "expected": "Wait. Look at the date on that folder. That is yesterday, not today.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "04": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "There's another folder underneath it.  Let me open it before we say anything else.",
+            "expected": "There is another folder underneath it. Let me open it before we say anything else.",
+            "exact_words": false,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "05": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "It is here. Every single recording, we have it all.  Casey, we have it all.",
+            "expected": "It is here. Every single recording. We have it all, Casey. We have it all.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "06": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "Oh, thank goodness, I thought I'd let you down.  Come on, let us hear it.",
+            "expected": "Oh, thank goodness. I thought I had let you down. Come on, let us hear it.",
+            "exact_words": false,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        }
+      }
+    },
+    {
+      "key": "1:ravdess:index:None",
+      "id": "4e3af77e-b063-4af7-84da-7a691b592601",
+      "library": "ravdess",
+      "model": "index",
+      "kind": "complete_scene",
+      "state": "complete",
+      "mix": true,
+      "lines": {
+        "01": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "You promised me it was safe.  Please, tell me we have not lost everything.",
+            "expected": "You promised me it was safe. Please tell me we have not lost everything.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "02": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "I checked twice. I really thought the copy was there. I am sorry.",
+            "expected": "I checked twice. I really thought the copy was there. I am sorry.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "03": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "Wait, look at the data on that folder.  That is yesterday, not today.",
+            "expected": "Wait. Look at the date on that folder. That is yesterday, not today.",
+            "exact_words": false,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "04": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "There is another folder underneath it.  Let me open it before we say anything else.",
+            "expected": "There is another folder underneath it. Let me open it before we say anything else.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "05": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "It is here.  Every single recording, we have it all.  Casey, we have it all.",
+            "expected": "It is here. Every single recording. We have it all, Casey. We have it all.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "06": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "Oh, thank goodness, I thought I had let you down.  Come on, let us hear it.",
+            "expected": "Oh, thank goodness. I thought I had let you down. Come on, let us hear it.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        }
+      }
+    },
+    {
+      "key": "2:emns:index:None",
+      "id": "401e9266-dfff-4ec5-83ef-a8773106c111",
+      "library": "emns",
+      "model": "index",
+      "kind": "complete_scene",
+      "state": "complete",
+      "mix": true,
+      "lines": {
+        "01": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "You promised me it was safe.  Please tell me we have not lost everything.",
+            "expected": "You promised me it was safe. Please tell me we have not lost everything.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "02": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "I checked twice. I really thought the copy was there. I am sorry.",
+            "expected": "I checked twice. I really thought the copy was there. I am sorry.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "03": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "Wait, look at the date on that folder that is yesterday, not today.",
+            "expected": "Wait. Look at the date on that folder. That is yesterday, not today.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "04": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "There is another folder underneath it.  Let me open it before we say anything else.",
+            "expected": "There is another folder underneath it. Let me open it before we say anything else.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "05": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "It is here, every single recording, we have it all.  Casey, we have it all.",
+            "expected": "It is here. Every single recording. We have it all, Casey. We have it all.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "06": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "Oh, thank goodness. I thought I had let you down. Come on. Let us hear it.",
+            "expected": "Oh, thank goodness. I thought I had let you down. Come on, let us hear it.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        }
+      }
+    },
+    {
+      "key": "3:esd:vox:None:wrong-interpreter-failed",
+      "id": "afc6ca31-d893-439e-9291-9e92e899fede",
+      "library": "esd",
+      "model": "vox",
+      "kind": "complete_scene",
+      "state": "partial",
+      "mix": false,
+      "lines": {
+        "01": {
+          "state": "failed",
+          "error": "No module named 'requests'",
+          "word_check": null
+        },
+        "02": {
+          "state": "failed",
+          "error": "No module named 'requests'",
+          "word_check": null
+        },
+        "03": {
+          "state": "failed",
+          "error": "No module named 'requests'",
+          "word_check": null
+        },
+        "04": {
+          "state": "failed",
+          "error": "No module named 'requests'",
+          "word_check": null
+        },
+        "05": {
+          "state": "failed",
+          "error": "No module named 'requests'",
+          "word_check": null
+        },
+        "06": {
+          "state": "failed",
+          "error": "No module named 'requests'",
+          "word_check": null
+        }
+      },
+      "retry_reason": "Initial server used system Python without requests. Restarted using the Research Python launcher; original failure retained."
+    },
+    {
+      "key": "4:esd:f5:None",
+      "id": "f98cd92c-14b9-4a2b-857c-e3015a5e3985",
+      "library": "esd",
+      "model": "f5",
+      "kind": "complete_scene",
+      "state": "complete",
+      "mix": true,
+      "lines": {
+        "01": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "You promised me it was safe.  Please tell me we have not lost everything.",
+            "expected": "You promised me it was safe. Please tell me we have not lost everything.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "02": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "I checked twice. I really thought the copy was there. I am sorry.",
+            "expected": "I checked twice. I really thought the copy was there. I am sorry.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "03": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "Wait, look at the date on that folder. That is yesterday, not today.",
+            "expected": "Wait. Look at the date on that folder. That is yesterday, not today.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "04": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "There is another folder underneath it. Let me open it before we say anything else.",
+            "expected": "There is another folder underneath it. Let me open it before we say anything else.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "05": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "It is here, every single recording, we have it all Casey, we have it all.",
+            "expected": "It is here. Every single recording. We have it all, Casey. We have it all.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "06": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "Oh, thank goodness. I thought I had let you down. Come on, let us hear it.",
+            "expected": "Oh, thank goodness. I thought I had let you down. Come on, let us hear it.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        }
+      }
+    },
+    {
+      "key": "3:esd:vox:None",
+      "id": "d6da9c0b-7471-4f38-9a75-72c9bb3e6122",
+      "library": "esd",
+      "model": "vox",
+      "kind": "complete_scene",
+      "state": "complete",
+      "mix": true,
+      "lines": {
+        "01": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "You promised me it was safe. Please tell me we have not lost everything.",
+            "expected": "You promised me it was safe. Please tell me we have not lost everything.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "02": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "I checked twice. I really thought the copy was there. I am sorry.",
+            "expected": "I checked twice. I really thought the copy was there. I am sorry.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "03": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "Wait, look at the date on that folder. That is yesterday, not today.",
+            "expected": "Wait. Look at the date on that folder. That is yesterday, not today.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "04": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "There is another folder underneath it. Let me open it before we say anything else.",
+            "expected": "There is another folder underneath it. Let me open it before we say anything else.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "05": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "It is here, every single recording. We have it all, Casey. We have it all.",
+            "expected": "It is here. Every single recording. We have it all, Casey. We have it all.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "06": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "Oh, thank goodness. I thought I had let you down. Come on. Let us hear it.",
+            "expected": "Oh, thank goodness. I thought I had let you down. Come on, let us hear it.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        }
+      }
+    },
+    {
+      "key": "5:esd:dia:None",
+      "id": "aebe436d-6550-40fe-8397-7e3bf1dad1f7",
+      "library": "esd",
+      "model": "dia",
+      "kind": "complete_scene",
+      "state": "complete",
+      "mix": true,
+      "lines": {
+        "01": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "You promised me it was safe.  Please tell me we have not lost everything.",
+            "expected": "You promised me it was safe. Please tell me we have not lost everything.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "02": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "I checked twice. I really thought the copy was there. I am sorry.",
+            "expected": "I checked twice. I really thought the copy was there. I am sorry.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "03": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "Wait, look at the date on that folder. That is yesterday, not today.",
+            "expected": "Wait. Look at the date on that folder. That is yesterday, not today.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "04": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "There is another folder underneath it. Let me open it before we say anything else.",
+            "expected": "There is another folder underneath it. Let me open it before we say anything else.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "05": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "It is here. Every single recording. We have it all Casey. We have it all.",
+            "expected": "It is here. Every single recording. We have it all, Casey. We have it all.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "06": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "Oh, thank goodness, I thought I had let you down.  Come on, let us hear it.",
+            "expected": "Oh, thank goodness. I thought I had let you down. Come on, let us hear it.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        }
+      }
+    },
+    {
+      "key": "6:esd:index:the-empty-seat-v1",
+      "id": "3070df21-245c-4977-812c-e68e525d7fbc",
+      "library": "esd",
+      "model": "index",
+      "kind": "complete_scene",
+      "state": "complete",
+      "mix": true,
+      "lines": {
+        "01": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "I kept this seed for you, when the lights went down, I thought you had decided not to come.",
+            "expected": "I kept a seat for you. When the lights went down, I thought you had decided not to come.",
+            "exact_words": false,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "02": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "I would never do that.  The train stopped, my phone died, and nobody could tell me what was happening.",
+            "expected": "I would never do that. The train stopped, my phone died, and nobody could tell me what was happening.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "03": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "Are you alright? There is still time. They have not started the final part yet.",
+            "expected": "Are you all right? There is still time. They have not started the final part yet.",
+            "exact_words": false,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        },
+        "04": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "Then let us go in together.  I have been waiting all week to share this with you.",
+            "expected": "Then let us go in together. I have been waiting all week to share this with you.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        }
+      }
+    },
+    {
+      "key": "7:crema:vox:None",
+      "id": "30c63eeb-e958-40e6-85bd-98ff94fc0cdf",
+      "library": "crema",
+      "model": "vox",
+      "kind": "single_line_adapter_check",
+      "state": "partial",
+      "mix": false,
+      "lines": {
+        "01": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "You promised me it was safe. Please tell me we have not lost everything.",
+            "expected": "You promised me it was safe. Please tell me we have not lost everything.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        }
+      }
+    },
+    {
+      "key": "8:ravdess:vox:None",
+      "id": "000f6dc7-8207-4996-a2c6-6dca59ddfaca",
+      "library": "ravdess",
+      "model": "vox",
+      "kind": "single_line_adapter_check",
+      "state": "partial",
+      "mix": false,
+      "lines": {
+        "01": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "You promised me it was safe!  Please tell me we have not lost everything!",
+            "expected": "You promised me it was safe. Please tell me we have not lost everything.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        }
+      }
+    },
+    {
+      "key": "9:emns:vox:None",
+      "id": "48a3b235-9c60-48aa-9071-50ca45220f79",
+      "library": "emns",
+      "model": "vox",
+      "kind": "single_line_adapter_check",
+      "state": "partial",
+      "mix": false,
+      "lines": {
+        "01": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "You promised me it was safe.  Please tell me we have not lost everything.",
+            "expected": "You promised me it was safe. Please tell me we have not lost everything.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        }
+      }
+    },
+    {
+      "key": "10:crema:f5:None",
+      "id": "76013b19-b2c3-4a72-8fee-f06e926a7e87",
+      "library": "crema",
+      "model": "f5",
+      "kind": "single_line_adapter_check",
+      "state": "partial",
+      "mix": false,
+      "lines": {
+        "01": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "You promised me it was safe.  Please tell me we have not lost everything.",
+            "expected": "You promised me it was safe. Please tell me we have not lost everything.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        }
+      }
+    },
+    {
+      "key": "11:ravdess:f5:None",
+      "id": "4dd0547a-10fb-4573-a607-b2950a426a17",
+      "library": "ravdess",
+      "model": "f5",
+      "kind": "single_line_adapter_check",
+      "state": "partial",
+      "mix": false,
+      "lines": {
+        "01": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "You promised me it was safe.  Please tell me we have not lost everything.",
+            "expected": "You promised me it was safe. Please tell me we have not lost everything.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        }
+      }
+    },
+    {
+      "key": "12:emns:f5:None",
+      "id": "20118cd6-a691-4d49-9663-bc4ca98f8b74",
+      "library": "emns",
+      "model": "f5",
+      "kind": "single_line_adapter_check",
+      "state": "partial",
+      "mix": false,
+      "lines": {
+        "01": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "You promised me it was safe.  Please tell me we have not lost everything.",
+            "expected": "You promised me it was safe. Please tell me we have not lost everything.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        }
+      }
+    },
+    {
+      "key": "13:crema:dia:None",
+      "id": "243ead06-8c8d-4afc-8b41-1bdd11c4a805",
+      "library": "crema",
+      "model": "dia",
+      "kind": "single_line_adapter_check",
+      "state": "partial",
+      "mix": false,
+      "lines": {
+        "01": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "You promised me it was safe.  Please tell me we have not lost everything.",
+            "expected": "You promised me it was safe. Please tell me we have not lost everything.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        }
+      }
+    },
+    {
+      "key": "14:ravdess:dia:None",
+      "id": "88abf007-aff9-4d7e-a820-498295ef14c3",
+      "library": "ravdess",
+      "model": "dia",
+      "kind": "single_line_adapter_check",
+      "state": "partial",
+      "mix": false,
+      "lines": {
+        "01": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "You promised me it was safe.  Please tell me we have not lost everything.",
+            "expected": "You promised me it was safe. Please tell me we have not lost everything.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        }
+      }
+    },
+    {
+      "key": "15:emns:dia:None",
+      "id": "46ac0820-949f-4e51-9f8a-f3c1d919fb4c",
+      "library": "emns",
+      "model": "dia",
+      "kind": "single_line_adapter_check",
+      "state": "partial",
+      "mix": false,
+      "lines": {
+        "01": {
+          "state": "saved",
+          "error": null,
+          "word_check": {
+            "transcript": "You promised me it was safe, please tell me we have not lost everything.",
+            "expected": "You promised me it was safe. Please tell me we have not lost everything.",
+            "exact_words": true,
+            "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+            "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+          }
+        }
+      }
+    }
+  ],
+  "listening": "Unrated; no library winner selected."
+}

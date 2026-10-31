@@ -1,0 +1,28 @@
+{
+  "voice": {
+    "seconds": 4.672,
+    "sample_rate": 24000,
+    "peak": 0.8984375,
+    "sha256": "1a7d5a67a9d6080103e69d3eb784cb3158ccaddb2b18148d2c9434a619248472"
+  },
+  "master": {
+    "seconds": 4.672,
+    "sample_rate": 48000,
+    "peak": 0.8414008617401123,
+    "sha256": "daf418629641efb4b02f2cc1df3fed5dd1656b28b6468a16710c6e7c97952f48",
+    "independent_matched_difference_lu": 0.0,
+    "independent_master_measurement": {
+      "input_i": "-15.9",
+      "input_tp": "-1.5",
+      "meter": "FFmpeg ebur128"
+    }
+  },
+  "enhance": {
+    "seconds": 4.672018140589569,
+    "sample_rate": 44100,
+    "peak": 0.7790399789810181,
+    "sha256": "99b0b711445a2e022062bcab45f66dac16c7152f27eb36997fa3bec0daa80107",
+    "independent_matched_difference_lu": 0.0
+  },
+  "money_settings_and_latest_pointers_unchanged": true
+}

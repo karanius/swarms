@@ -1,0 +1,55 @@
+{
+  "scope": "UI-only redesign; no generation integration",
+  "dials": {
+    "DESIGN_VARIANCE": 6,
+    "MOTION_INTENSITY": 3,
+    "VISUAL_DENSITY": 4
+  },
+  "stack": "Existing HTML service, native CSS/JS, self-hosted Geist, pre-rendered official Phosphor icons",
+  "browser": {
+    "normal_width": 1018,
+    "narrow_width": 390,
+    "horizontal_overflow": false,
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "h1_count": 1,
+    "brief_save_reload_clear": true,
+    "audio_players": 0,
+    "create_audition_disabled": true,
+    "console_errors": []
+  },
+  "contrast": {
+    "light": {
+      "body": 13.85,
+      "secondary": 5.12,
+      "helper": 5.5,
+      "button": 5.19,
+      "active_navigation": 5.62,
+      "input_placeholder": 5.5
+    },
+    "dark": {
+      "body": 14.95,
+      "secondary": 7.27,
+      "helper": 6.64,
+      "button": 7.73,
+      "active_navigation": 6.96,
+      "input_placeholder": 6.64
+    }
+  },
+  "lighthouse": "Not run; no permitted-browser Lighthouse capability available",
+  "preserved": [
+    "existing local-storage key and draft",
+    "routes",
+    "legacy experiment links",
+    "native recording and generation code"
+  ],
+  "screenshots": [
+    "final-design-dark.png",
+    "final-design-light.png",
+    "final-mobile-dark.png",
+    "final-mobile-light.png"
+  ],
+  "routes_respond_200": true
+}

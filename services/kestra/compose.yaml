@@ -1,0 +1,76 @@
+name: swarms-kestra
+
+volumes:
+  postgres-data:
+    driver: local
+  kestra-data:
+    driver: local
+  kestra-work:
+    driver: local
+
+services:
+  postgres:
+    image: postgres:18
+    volumes:
+      - postgres-data:/var/lib/postgresql
+    environment:
+      POSTGRES_DB: kestra
+      POSTGRES_USER: kestra
+      POSTGRES_PASSWORD: k3str4
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -d $${POSTGRES_DB} -U $${POSTGRES_USER}"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+
+  kestra:
+    image: kestra/kestra:v2.0.7-no-plugins
+    restart: unless-stopped
+    # Kestra, by default, has a termination grace period of 5m. We need to wait a little more to be sure no active tasks are running.
+    stop_grace_period: 6m
+    # Local development instance; no host Docker socket is mounted.
+    user: "root"
+    command: server standalone
+    volumes:
+      - kestra-data:/app/storage
+      - kestra-work:/tmp/kestra-wd
+    environment:
+      KESTRA_CONFIGURATION: |
+        datasources:
+          postgres:
+            url: jdbc:postgresql://postgres:5432/kestra
+            driverClassName: org.postgresql.Driver
+            username: kestra
+            password: k3str4
+        kestra:
+          server:
+            basic-auth:
+              username: ${KESTRA_ADMIN_USER}
+              password: ${KESTRA_ADMIN_PASSWORD}
+          repository:
+            type: postgres
+          storage:
+            type: local
+            local:
+              base-path: "/app/storage"
+          queue:
+            type: postgres
+          tasks:
+            tmp-dir:
+              path: /tmp/kestra-wd/tmp
+          url: http://localhost:8080/
+    ports:
+      - "127.0.0.1:8080:8080"
+      # The following is the management port, not exposed by default.
+      # Note that exposing the management port is intended for development purpose as this port is un-authenticated by default
+      # and expose sensitive information and actions.
+      # - "8081:8081"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: 10.243.19.0/24

@@ -1,0 +1,46 @@
+{
+  "status": "delivered-finite-layer-contracts-and-native-static-construction",
+  "paper": "knowledge/research/notebooks/Paper 6 - Rule Mining from Langflow Templates.ipynb",
+  "paperSha256": "204f1b97432919c7bf34c8e7aeea42eb2c089aa45546c4cda96b1fd836242ca0",
+  "at": "2026-10-30T03:46:21Z",
+  "nativeWitness": "assistant-workspace/artifacts/tower-native-v1-compact.json",
+  "actualNativeOccurrences": 4,
+  "actualNativeEdges": 3,
+  "proposedPlanes": [
+    "Configuration",
+    "Components",
+    "Composite",
+    "Flows",
+    "Processes"
+  ],
+  "proposedGrouping": {
+    "composites": 2,
+    "flows": 1,
+    "processes": 1
+  },
+  "revisions": 2,
+  "structuralChecksPerRevision": 139,
+  "openObligations": 10,
+  "corruptedArtifactVariantsDetected": 19,
+  "testMethods": 4,
+  "serviceTestsPassed": 13,
+  "constructionTrace": "layers/construction-trace.json",
+  "stop": "ask_for_missing_evidence",
+  "preservation": "Original abstract and12prior executed cells/outputs preserved;4new executed StudyE cells",
+  "nativeProvenance": "Pinned registry hash matched and4embedded native component definitions matched snapshot; no component execution",
+  "review": "Assistant authored/critically reviewed; separate internal source reviewer confirmed scoped fixes",
+  "operationalFailures": [
+    "Prose supplied where compact native spec expected; canceled/retried with corrected tool grammar",
+    "Existing artifact overwrite rejected; fresh graph path used",
+    "One writing turn reached18-call budget; resumed narrowly; runtime now reports budget limit distinctly"
+  ],
+  "limits": [
+    "Upper packaging is authored, not autonomous generation",
+    "No task/model/provider/native component execution",
+    "No human approval or approved triage policy",
+    "No evidence of mined-rule benefit for this construction",
+    "Finite static checks, not complete validator or behavioral success"
+  ],
+  "browserScreenshot": "/tmp/paper6-tower-in-jupyter.png",
+  "githubPush": "not performed by this task"
+}

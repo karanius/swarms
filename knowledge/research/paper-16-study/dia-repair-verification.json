@@ -1,0 +1,45 @@
+{
+  "original": {
+    "id": "take-20261030-222057-b6d70665",
+    "raw_hash_unchanged": true,
+    "word_check": {
+      "expected": "I need you to stay right here.",
+      "transcript": "",
+      "exact_words": false
+    }
+  },
+  "corrected": {
+    "id": "take-20261030-232748-34082d34",
+    "word_check": {
+      "transcript": "I need you to stay right here.",
+      "expected": "I need you to stay right here.",
+      "exact_words": true,
+      "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+      "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+    },
+    "backend": {
+      "path": "/Users/x/projects/swarms/knowledge/research/paper-16-study/runs/take-20261030-232748-34082d34/native.wav",
+      "sample_rate": 44100,
+      "checkpoint": "mlx-community/Dia-1.6B-fp16",
+      "revision": "4575dd9622ffa7dd14cc4342e1aac4bb7841904d",
+      "implementation_commit": "0018b2e470224a166cfe5e6a41e79b1d8be9c5e7",
+      "settings": {
+        "seed": 7,
+        "use_reference": true
+      },
+      "reference_used": true
+    }
+  },
+  "second_line": {
+    "id": "take-20261030-232812-b39fe0ed",
+    "word_check": {
+      "transcript": "We can take our time, tell me what happened and we will work through it together.",
+      "expected": "We can take our time. Tell me what happened, and we will work through it together.",
+      "exact_words": true,
+      "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+      "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+    }
+  },
+  "scope": "Two sentences and seeds; no emotion/identity quality claim",
+  "upstream_revision_unchanged": "beeaae08204f0de5f49d4a087ef2b0ea8fecfcb9"
+}

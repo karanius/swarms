@@ -1,0 +1,194 @@
+{
+  "scope": "Internal authored acceptance manifest, withheld from implementation agent until source freeze",
+  "expected": {
+    "C01": {
+      "action": "ASK",
+      "requiredBlockerKinds": [
+        "required_model"
+      ],
+      "allowedPatchKinds": [],
+      "runtimeMustRemainUnknown": true
+    },
+    "C02": {
+      "action": "SPEC_GROUNDED",
+      "requiredBlockerKinds": [],
+      "allowedPatchKinds": [],
+      "runtimeMustRemainUnknown": true
+    },
+    "C03": {
+      "action": "ASK",
+      "requiredBlockerKinds": [
+        "required_model"
+      ],
+      "allowedPatchKinds": [
+        "revoke_model"
+      ],
+      "runtimeMustRemainUnknown": true
+    },
+    "C04": {
+      "action": "ASK",
+      "requiredBlockerKinds": [
+        "required_input"
+      ],
+      "allowedPatchKinds": [],
+      "runtimeMustRemainUnknown": true
+    },
+    "C05": {
+      "action": "SPEC_GROUNDED",
+      "requiredBlockerKinds": [],
+      "allowedPatchKinds": [],
+      "runtimeMustRemainUnknown": true
+    },
+    "C06": {
+      "action": "ASK",
+      "requiredBlockerKinds": [
+        "edge_type_conflict"
+      ],
+      "allowedPatchKinds": [],
+      "runtimeMustRemainUnknown": true
+    },
+    "C07": {
+      "action": "REJECT_SCOPE",
+      "requiredBlockerKinds": [
+        "unsupported_capability"
+      ],
+      "allowedPatchKinds": [],
+      "runtimeMustRemainUnknown": true
+    },
+    "C08": {
+      "action": "REJECT_SCOPE",
+      "requiredBlockerKinds": [
+        "unsupported_capability"
+      ],
+      "allowedPatchKinds": [],
+      "runtimeMustRemainUnknown": true
+    },
+    "C09": {
+      "action": "REJECT_SCOPE",
+      "requiredBlockerKinds": [
+        "unsupported_capability"
+      ],
+      "allowedPatchKinds": [],
+      "runtimeMustRemainUnknown": true
+    },
+    "C10": {
+      "action": "ASK",
+      "requiredBlockerKinds": [
+        "node_type_conflict"
+      ],
+      "allowedPatchKinds": [],
+      "runtimeMustRemainUnknown": true
+    },
+    "C11": {
+      "action": "ASK",
+      "requiredBlockerKinds": [
+        "model_conflict"
+      ],
+      "allowedPatchKinds": [],
+      "runtimeMustRemainUnknown": true
+    },
+    "C12": {
+      "action": "ASK",
+      "requiredBlockerKinds": [
+        "intent_conflict"
+      ],
+      "allowedPatchKinds": [],
+      "runtimeMustRemainUnknown": true
+    },
+    "C13": {
+      "action": "ASK",
+      "requiredBlockerKinds": [
+        "orphan_binding",
+        "required_model"
+      ],
+      "allowedPatchKinds": [],
+      "runtimeMustRemainUnknown": true
+    },
+    "C14": {
+      "action": "REVISE",
+      "requiredBlockerKinds": [],
+      "allowedPatchKinds": [
+        "rename_node"
+      ],
+      "runtimeMustRemainUnknown": true
+    },
+    "C15": {
+      "action": "ASK",
+      "requiredBlockerKinds": [
+        "ambiguous_identity"
+      ],
+      "allowedPatchKinds": [],
+      "runtimeMustRemainUnknown": true
+    },
+    "C16": {
+      "action": "SPEC_GROUNDED",
+      "requiredBlockerKinds": [],
+      "allowedPatchKinds": [],
+      "runtimeMustRemainUnknown": true
+    },
+    "C17": {
+      "action": "REJECT_SCOPE",
+      "requiredBlockerKinds": [
+        "runtime_certification"
+      ],
+      "allowedPatchKinds": [],
+      "runtimeMustRemainUnknown": true
+    },
+    "C18": {
+      "action": "ASK",
+      "requiredBlockerKinds": [
+        "provider_requirements_unknown"
+      ],
+      "allowedPatchKinds": [],
+      "runtimeMustRemainUnknown": true
+    },
+    "C19": {
+      "action": "ASK",
+      "requiredBlockerKinds": [
+        "intent_route"
+      ],
+      "allowedPatchKinds": [],
+      "runtimeMustRemainUnknown": true
+    },
+    "C20": {
+      "action": "REVISE",
+      "requiredBlockerKinds": [],
+      "allowedPatchKinds": [
+        "route_through_agent"
+      ],
+      "runtimeMustRemainUnknown": true
+    },
+    "C21": {
+      "action": "ASK",
+      "requiredBlockerKinds": [
+        "revision_intent_conflict"
+      ],
+      "allowedPatchKinds": [],
+      "runtimeMustRemainUnknown": true
+    },
+    "C22": {
+      "action": "SPEC_GROUNDED",
+      "requiredBlockerKinds": [],
+      "allowedPatchKinds": [],
+      "runtimeMustRemainUnknown": true
+    },
+    "C23": {
+      "action": "REJECT_SCOPE",
+      "requiredBlockerKinds": [
+        "required_model",
+        "unsupported_capability"
+      ],
+      "allowedPatchKinds": [],
+      "runtimeMustRemainUnknown": true
+    },
+    "C24": {
+      "action": "ASK",
+      "requiredBlockerKinds": [
+        "orphan_binding",
+        "required_model"
+      ],
+      "allowedPatchKinds": [],
+      "runtimeMustRemainUnknown": true
+    }
+  }
+}

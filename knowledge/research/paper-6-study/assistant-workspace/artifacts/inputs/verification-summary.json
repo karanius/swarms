@@ -1,0 +1,27 @@
+{
+  "checks": 899,
+  "failures": [
+    {
+      "case": "C17:base",
+      "reason": "action expected REJECT_SCOPE observed ASK"
+    },
+    {
+      "case": "C17:rename",
+      "reason": "action expected REJECT_SCOPE observed ASK"
+    },
+    {
+      "case": "C17:permutation",
+      "reason": "action expected REJECT_SCOPE observed ASK"
+    },
+    {
+      "case": "C17:duplicate",
+      "reason": "action expected REJECT_SCOPE observed ASK"
+    }
+  ],
+  "passed": false,
+  "authorship": "coordinator-authored internal acceptance, not external or unseen generalization",
+  "resultSha256": "1960ab762f9912b67def5bfd50b2956e25d1f4a69bff6a416986e2fbfdcdbb9d",
+  "oracleSha256": "df28e9ad055ff332086c1d1c907b7bcf544531a899c73ce832afad6976979400",
+  "checkerSource": "verify_assistant_experiment.py",
+  "checkerNotes": "Source path mapping corrected before recount. Malformed patch handling corrected following fault injection. Seven corrupted result variants each produced additional failures; no ledger predicates or first results changed."
+}

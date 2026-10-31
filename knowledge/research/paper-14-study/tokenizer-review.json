@@ -1,0 +1,6 @@
+{
+  "file": "/Users/x/.local/share/swarms/voicestudio/cache/models--openbmb--VoxCPM2/snapshots/32279effe8c19989596f05d353d1447f51d9e915/tokenization_voxcpm2.py",
+  "sha256": "84489ea32b6ee0cae22ed5480cacb6df85c46624c3119be9a2021c3649a12729",
+  "review": "Read complete 76-line module: extends LlamaTokenizerFast to split CJK vocabulary tokens. No additional network, subprocess, filesystem-write, eval or exec operations observed in this file. Base dependency behavior is outside this narrow review.",
+  "revision": "32279effe8c19989596f05d353d1447f51d9e915"
+}

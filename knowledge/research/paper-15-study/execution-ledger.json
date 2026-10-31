@@ -1,0 +1,162 @@
+[
+  {
+    "name": "voxcpm2-0012-neutral-text0",
+    "state": "completed",
+    "elapsed_seconds": 14.337541818618774
+  },
+  {
+    "name": "f5-0012-neutral-text0",
+    "state": "completed",
+    "elapsed_seconds": 12.385799884796143
+  },
+  {
+    "name": "voxcpm2-0012-neutral-text1",
+    "state": "completed",
+    "elapsed_seconds": 2.8080368041992188
+  },
+  {
+    "name": "f5-0012-neutral-text1",
+    "state": "completed",
+    "elapsed_seconds": 11.051005840301514
+  },
+  {
+    "name": "voxcpm2-0012-excited-text0",
+    "state": "completed",
+    "elapsed_seconds": 2.5852842330932617
+  },
+  {
+    "name": "f5-0012-excited-text0",
+    "state": "completed",
+    "elapsed_seconds": 10.863308668136597
+  },
+  {
+    "name": "voxcpm2-0012-excited-text1",
+    "state": "completed",
+    "elapsed_seconds": 2.876286268234253
+  },
+  {
+    "name": "f5-0012-excited-text1",
+    "state": "completed",
+    "elapsed_seconds": 11.061568975448608
+  },
+  {
+    "name": "voxcpm2-0012-restrained_anger-text0",
+    "state": "completed",
+    "elapsed_seconds": 3.478422164916992
+  },
+  {
+    "name": "f5-0012-restrained_anger-text0",
+    "state": "completed",
+    "elapsed_seconds": 10.90348219871521
+  },
+  {
+    "name": "voxcpm2-0012-restrained_anger-text1",
+    "state": "completed",
+    "elapsed_seconds": 3.3724007606506348
+  },
+  {
+    "name": "f5-0012-restrained_anger-text1",
+    "state": "completed",
+    "elapsed_seconds": 11.51822805404663
+  },
+  {
+    "name": "voxcpm2-0012-reflective_sadness-text0",
+    "state": "completed",
+    "elapsed_seconds": 3.356156826019287
+  },
+  {
+    "name": "f5-0012-reflective_sadness-text0",
+    "state": "completed",
+    "elapsed_seconds": 10.921564817428589
+  },
+  {
+    "name": "voxcpm2-0012-reflective_sadness-text1",
+    "state": "completed",
+    "elapsed_seconds": 4.026853084564209
+  },
+  {
+    "name": "f5-0012-reflective_sadness-text1",
+    "state": "completed",
+    "elapsed_seconds": 12.004581212997437
+  },
+  {
+    "name": "voxcpm2-0015-neutral-text0",
+    "state": "completed",
+    "elapsed_seconds": 4.135891914367676
+  },
+  {
+    "name": "f5-0015-neutral-text0",
+    "state": "completed",
+    "elapsed_seconds": 12.055965185165405
+  },
+  {
+    "name": "voxcpm2-0015-neutral-text1",
+    "state": "completed",
+    "elapsed_seconds": 4.730731964111328
+  },
+  {
+    "name": "f5-0015-neutral-text1",
+    "state": "completed",
+    "elapsed_seconds": 13.860261917114258
+  },
+  {
+    "name": "voxcpm2-0015-excited-text0",
+    "state": "completed",
+    "elapsed_seconds": 5.007292985916138
+  },
+  {
+    "name": "f5-0015-excited-text0",
+    "state": "completed",
+    "elapsed_seconds": 13.78729510307312
+  },
+  {
+    "name": "voxcpm2-0015-excited-text1",
+    "state": "completed",
+    "elapsed_seconds": 5.47744607925415
+  },
+  {
+    "name": "f5-0015-excited-text1",
+    "state": "completed",
+    "elapsed_seconds": 15.151669979095459
+  },
+  {
+    "name": "voxcpm2-0015-restrained_anger-text0",
+    "state": "completed",
+    "elapsed_seconds": 7.303371906280518
+  },
+  {
+    "name": "f5-0015-restrained_anger-text0",
+    "state": "completed",
+    "elapsed_seconds": 17.402915954589844
+  },
+  {
+    "name": "voxcpm2-0015-restrained_anger-text1",
+    "state": "completed",
+    "elapsed_seconds": 8.497730016708374
+  },
+  {
+    "name": "f5-0015-restrained_anger-text1",
+    "state": "completed",
+    "elapsed_seconds": 22.926343202590942
+  },
+  {
+    "name": "voxcpm2-0015-reflective_sadness-text0",
+    "state": "completed",
+    "elapsed_seconds": 9.48562502861023
+  },
+  {
+    "name": "f5-0015-reflective_sadness-text0",
+    "state": "completed",
+    "elapsed_seconds": 19.443472146987915
+  },
+  {
+    "name": "voxcpm2-0015-reflective_sadness-text1",
+    "state": "completed",
+    "elapsed_seconds": 7.267932176589966
+  },
+  {
+    "name": "f5-0015-reflective_sadness-text1",
+    "state": "completed",
+    "elapsed_seconds": 17.565897941589355
+  }
+]

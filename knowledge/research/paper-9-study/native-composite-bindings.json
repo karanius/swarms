@@ -1,0 +1,112 @@
+[
+  {
+    "composite": "K01",
+    "node": "intake",
+    "native_type": "PythonFunction",
+    "graph_path": "native-composites/K01.json",
+    "graph_sha256": "8feead7eaa9e8786da0d933e54b4fb4034fb362dcef2d6d3f692b14bc766fda3",
+    "input_binding": "Controller resolves typed artifact ports from run state; factory supplies validated run_id",
+    "code_template": "def capability():\n    import sys\n    sys.path.insert(0, '/Users/x/projects/swarms/knowledge/research/paper-9-study/implementation')\n    from native_bridge import dispatch\n    return dispatch({run_id!r}, 'intake')",
+    "native_graph_compiled": true
+  },
+  {
+    "composite": "K02",
+    "node": "discover",
+    "native_type": "PythonFunction",
+    "graph_path": "native-composites/K02.json",
+    "graph_sha256": "f851ac3eb0429d5019b694dc56ab3e1e2e4a895536d6797f50b2d2b311501644",
+    "input_binding": "Controller resolves typed artifact ports from run state; factory supplies validated run_id",
+    "code_template": "def capability():\n    import sys\n    sys.path.insert(0, '/Users/x/projects/swarms/knowledge/research/paper-9-study/implementation')\n    from native_bridge import dispatch\n    return dispatch({run_id!r}, 'discover')",
+    "native_graph_compiled": true
+  },
+  {
+    "composite": "K03",
+    "node": "retrieve",
+    "native_type": "PythonFunction",
+    "graph_path": "native-composites/K03.json",
+    "graph_sha256": "cea6dc1ee4387557836d3a1b6035543a3b6620964708a45b9c946560d498a78e",
+    "input_binding": "Controller resolves typed artifact ports from run state; factory supplies validated run_id",
+    "code_template": "def capability():\n    import sys\n    sys.path.insert(0, '/Users/x/projects/swarms/knowledge/research/paper-9-study/implementation')\n    from native_bridge import dispatch\n    return dispatch({run_id!r}, 'retrieve')",
+    "native_graph_compiled": true
+  },
+  {
+    "composite": "K04",
+    "node": "normalize",
+    "native_type": "PythonFunction",
+    "graph_path": "native-composites/K04.json",
+    "graph_sha256": "358fbdade941c8f0cef94eea6c12b4b2ef5b5178a94581c27fb425e047632f1a",
+    "input_binding": "Controller resolves typed artifact ports from run state; factory supplies validated run_id",
+    "code_template": "def capability():\n    import sys\n    sys.path.insert(0, '/Users/x/projects/swarms/knowledge/research/paper-9-study/implementation')\n    from native_bridge import dispatch\n    return dispatch({run_id!r}, 'normalize')",
+    "native_graph_compiled": true
+  },
+  {
+    "composite": "K05",
+    "node": "compare",
+    "native_type": "PythonFunction",
+    "graph_path": "native-composites/K05.json",
+    "graph_sha256": "8b781693a9d0aa5bee87a165133556c0b814440451101d22eafedf0ece9383b7",
+    "input_binding": "Controller resolves typed artifact ports from run state; factory supplies validated run_id",
+    "code_template": "def capability():\n    import sys\n    sys.path.insert(0, '/Users/x/projects/swarms/knowledge/research/paper-9-study/implementation')\n    from native_bridge import dispatch\n    return dispatch({run_id!r}, 'compare')",
+    "native_graph_compiled": true
+  },
+  {
+    "composite": "K06",
+    "node": "form_claims",
+    "native_type": "PythonFunction",
+    "graph_path": "native-composites/K06.json",
+    "graph_sha256": "9e485d730c77377fb8872a8e81883fa99800a101bfa0f3cd16ee5df451e14349",
+    "input_binding": "Controller resolves typed artifact ports from run state; factory supplies validated run_id",
+    "code_template": "def capability():\n    import sys\n    sys.path.insert(0, '/Users/x/projects/swarms/knowledge/research/paper-9-study/implementation')\n    from native_bridge import dispatch\n    return dispatch({run_id!r}, 'form_claims')",
+    "native_graph_compiled": true
+  },
+  {
+    "composite": "K07",
+    "node": "assess",
+    "native_type": "PythonFunction",
+    "graph_path": "native-composites/K07.json",
+    "graph_sha256": "9995e974b314cfd7bb7b46f1317581987d632874f16950527abc60726498c21a",
+    "input_binding": "Controller resolves typed artifact ports from run state; factory supplies validated run_id",
+    "code_template": "def capability():\n    import sys\n    sys.path.insert(0, '/Users/x/projects/swarms/knowledge/research/paper-9-study/implementation')\n    from native_bridge import dispatch\n    return dispatch({run_id!r}, 'assess')",
+    "native_graph_compiled": true
+  },
+  {
+    "composite": "K08",
+    "node": "assemble",
+    "native_type": "PythonFunction",
+    "graph_path": "native-composites/K08.json",
+    "graph_sha256": "34c6be6ea3c2f10a75e766b6c6530dec440ea82eb6529b61913a727dd79e373d",
+    "input_binding": "Controller resolves typed artifact ports from run state; factory supplies validated run_id",
+    "code_template": "def capability():\n    import sys\n    sys.path.insert(0, '/Users/x/projects/swarms/knowledge/research/paper-9-study/implementation')\n    from native_bridge import dispatch\n    return dispatch({run_id!r}, 'assemble')",
+    "native_graph_compiled": true
+  },
+  {
+    "composite": "K09",
+    "node": "review",
+    "native_type": "PythonFunction",
+    "graph_path": "native-composites/K09.json",
+    "graph_sha256": "dbe5bc1ed5ecc92d91ab7cb1671b9cf8cda3773f3dd39d7f0562ae5214af3306",
+    "input_binding": "Controller resolves typed artifact ports from run state; factory supplies validated run_id",
+    "code_template": "def capability():\n    import sys\n    sys.path.insert(0, '/Users/x/projects/swarms/knowledge/research/paper-9-study/implementation')\n    from native_bridge import dispatch\n    return dispatch({run_id!r}, 'review')",
+    "native_graph_compiled": true
+  },
+  {
+    "composite": "K10",
+    "node": "handoff",
+    "native_type": "PythonFunction",
+    "graph_path": "native-composites/K10.json",
+    "graph_sha256": "1c79c953d9b8bc45325dce15a647d2efb62d63e89b0e070853e9d627d7be7654",
+    "input_binding": "Controller resolves typed artifact ports from run state; factory supplies validated run_id",
+    "code_template": "def capability():\n    import sys\n    sys.path.insert(0, '/Users/x/projects/swarms/knowledge/research/paper-9-study/implementation')\n    from native_bridge import dispatch\n    return dispatch({run_id!r}, 'handoff')",
+    "native_graph_compiled": true
+  },
+  {
+    "composite": "K11",
+    "node": "impact",
+    "native_type": "PythonFunction",
+    "graph_path": "native-composites/K11.json",
+    "graph_sha256": "00d5bc4f4a2c9101cba13b8b5cddf094cc4d7f281c0894d680da07e900e1c3ea",
+    "input_binding": "Controller resolves typed artifact ports from run state; factory supplies validated run_id",
+    "code_template": "def capability():\n    import sys\n    sys.path.insert(0, '/Users/x/projects/swarms/knowledge/research/paper-9-study/implementation')\n    from native_bridge import dispatch\n    return dispatch({run_id!r}, 'impact')",
+    "native_graph_compiled": true
+  }
+]

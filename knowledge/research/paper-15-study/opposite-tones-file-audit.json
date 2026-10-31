@@ -1,0 +1,28 @@
+{
+  "files": [
+    {
+      "label": "neutral",
+      "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/opposite-tones-neutral-01.wav",
+      "bytes": 783462,
+      "sha256": "9e5f7d99b2d0c859caea88eede1c2f1cb53eca30943895404ac8759389379123",
+      "frames": 261120,
+      "seconds": 5.44,
+      "rate": 48000
+    },
+    {
+      "label": "switching",
+      "path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/opposite-tones-switching-01.wav",
+      "bytes": 760422,
+      "sha256": "1fe468e87a34b7d61dabde985b1f9d57396dbd7b5e1fdf44bdc4b0bb0a8f2ac3",
+      "frames": 253440,
+      "seconds": 5.28,
+      "rate": 48000
+    }
+  ],
+  "distinct_contents": true,
+  "notebook_embedded_hashes": [
+    "9e5f7d99b2d0c859caea88eede1c2f1cb53eca30943895404ac8759389379123",
+    "1fe468e87a34b7d61dabde985b1f9d57396dbd7b5e1fdf44bdc4b0bb0a8f2ac3"
+  ],
+  "notebook_audio_matches_distinct_files": true
+}

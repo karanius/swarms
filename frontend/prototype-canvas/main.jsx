@@ -120,6 +120,6 @@ function VersionOne(){
 function Playground(){
  const [version,setVersion]=useState(()=>new URLSearchParams(window.location.search).get('version')==='2'?2:1);
  const switchVersion=value=>{setVersion(value);const url=new URL(window.location.href);url.searchParams.set('version',String(value));window.history.replaceState(null,'',url);};
- return <><nav className="version-switch" aria-label="Canvas version">{[1,2].map(value=><button key={value} aria-pressed={version===value} onClick={()=>switchVersion(value)}>V{value}</button>)}</nav><section hidden={version!==1}><VersionOne/></section><section hidden={version!==2}><VersionTwo/></section></>;
+ return <><nav className="version-switch" aria-label="Canvas version">{[1,2].map(value=><button key={value} aria-pressed={version===value} onClick={()=>switchVersion(value)}>V{value}</button>)}<button onClick={()=>window.location.assign('/prototype-canvas-v3/')}>V3</button></nav><section hidden={version!==1}><VersionOne/></section><section hidden={version!==2}><VersionTwo/></section></>;
 }
 createRoot(document.getElementById('root')).render(<Playground/>);

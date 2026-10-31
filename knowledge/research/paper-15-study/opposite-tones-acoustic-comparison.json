@@ -1,0 +1,32 @@
+{
+  "individual": [
+    {
+      "condition": "neutral",
+      "duration_seconds": 5.44,
+      "pitch_median_hz": 174.9305985448393,
+      "pitch_iqr_hz": 55.14907637719182,
+      "pitch_p10_p90_hz": [
+        141.99170965068387,
+        241.8750496955303
+      ],
+      "rms_dynamic_range_p10_p90_db": 11.267206192016602,
+      "low_energy_fraction": 0.23119266055045873
+    },
+    {
+      "condition": "switching",
+      "duration_seconds": 5.28,
+      "pitch_median_hz": 181.58821426110683,
+      "pitch_iqr_hz": 58.015518998623605,
+      "pitch_p10_p90_hz": [
+        144.97714058249795,
+        260.9072322170748
+      ],
+      "rms_dynamic_range_p10_p90_db": 11.788227081298828,
+      "low_energy_fraction": 0.21739130434782605
+    }
+  ],
+  "lag_aligned_waveform_correlation": 0.2975605207136753,
+  "best_lag_seconds": 0.0,
+  "dtw_aligned_mfcc_cosine_similarity": 0.9544841890130041,
+  "interpretation_limits": "Pitch is amplitude-gated Yin and can contain octave errors. MFCC alignment follows acoustic similarity, not transcript timing. Correlation and pitch differences cannot establish recognizable emotion or acting quality."
+}

@@ -1,0 +1,46 @@
+{
+  "status": "delivered local notebook capability search",
+  "notebook": "/Users/x/projects/swarms/knowledge/research/notebooks/Paper 10 - Capability Search for Instance Building.ipynb",
+  "index": {
+    "template": 1148,
+    "connected_group": 4954,
+    "component": 2280
+  },
+  "unique_eligible_contents": 1148,
+  "index_failures": [],
+  "checks_passed": 39,
+  "exposed_development_comparison": {
+    "filename": 2,
+    "field_lexical": 7,
+    "hybrid": 8
+  },
+  "comparison_scope": "Exposed development comparison with eight authored queries. Same template search space and top-six cutoff. Type-presence is a weak retrieval relevance proxy, not semantic correctness, independent evaluation, execution success or measured assembly acceleration.",
+  "prior_papers_preserved": 9,
+  "browser_verification": {
+    "live_search": "Which pieces collect viewer comments to understand audience feedback?",
+    "observed_result": "Three source-checked candidates, including YouTube Analysis and a connected group with a declared YouTube API component",
+    "expanded_details_verified": true,
+    "native_jupyter_widget_button_verified": true,
+    "reopening_requires_setup_cells": "documented; live kernel restored with Run All",
+    "reopened_and_live_search_reexecuted": true
+  },
+  "source_hashes": {
+    "test_search.py": "741f67ee88ebc4ddf13da7ee22d06ea5b99fe837cb58eab7606833256d8bc23b",
+    "search_engine.py": "cd5c155bacd32da49da4c17cd5d8b7127e5631ac47c09e12dc821262a73d62dd",
+    "build_paper.py": "e2dd13af89edf5cd8479aff93661d38d246e10539d5750c807b8be62072a8794",
+    "evaluate.py": "7eed28783c2113598b68a82d2178c2ad15b93ea73cdd2db00b0ed24877e7b84c",
+    "notebook_ui.py": "d86f338c32b67f9d470e6f02cba497a6ae12346e859206b7b571043ace523b68"
+  },
+  "notebook_saved_errors": 0,
+  "not_claimed": [
+    "Validated composites",
+    "Current component compatibility",
+    "Instance assembly or deployment",
+    "Profitable opportunity discovery",
+    "Independent relevance or assembly-speed evaluation"
+  ],
+  "notebook_sha256": "0545e1f04031ba68a863d066de0781f41447cf69c257e4e8510ccd46c2d24011",
+  "screenshot": "/tmp/paper10-capability-search.png",
+  "algorithm_revision": 2,
+  "upgrade_report": "UPGRADE-DELIVERY.json"
+}

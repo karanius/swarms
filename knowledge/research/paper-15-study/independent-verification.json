@@ -1,0 +1,199 @@
+{
+  "verified_takes": [
+    {
+      "take": "voxcpm2-0012-neutral-text0",
+      "matched_lufs": -29.4,
+      "true_peak_db": -13.7,
+      "preserved_raw_sha256": "62c4145d9ddfe755ac54e4fbfb38dc59a7b86d7f7416e976f2ea8a3df02b2a48"
+    },
+    {
+      "take": "f5-0012-neutral-text0",
+      "matched_lufs": -29.5,
+      "true_peak_db": -14.3,
+      "preserved_raw_sha256": "323b22c747a14b755d13c46f1030d1c03193a4563ec2f5106b4715aae03bcfd2"
+    },
+    {
+      "take": "voxcpm2-0012-neutral-text1",
+      "matched_lufs": -29.4,
+      "true_peak_db": -14.9,
+      "preserved_raw_sha256": "2cfe81b3e441064d619bf0516260c1b091933a14d78be2127324e335c2a16927"
+    },
+    {
+      "take": "f5-0012-neutral-text1",
+      "matched_lufs": -29.4,
+      "true_peak_db": -13.0,
+      "preserved_raw_sha256": "0a2ce96b1c1d66e8730b14e9407588ff02ed0f8d63b5a29f19388878643128b0"
+    },
+    {
+      "take": "voxcpm2-0012-excited-text0",
+      "matched_lufs": -29.4,
+      "true_peak_db": -14.8,
+      "preserved_raw_sha256": "27946bce508a75d1abcd12b9c5df21dfe139f31578d7ef81481baa5c507f1b85"
+    },
+    {
+      "take": "f5-0012-excited-text0",
+      "matched_lufs": -29.4,
+      "true_peak_db": -13.1,
+      "preserved_raw_sha256": "4a1a5125a67fb5cf89891507b04a7c7d2500312159ce1fba45d28208a77a130a"
+    },
+    {
+      "take": "voxcpm2-0012-excited-text1",
+      "matched_lufs": -29.4,
+      "true_peak_db": -15.3,
+      "preserved_raw_sha256": "af045f13f720ad3f2ad261acbedce50db8983dda033c769cee08fdf214fe35ae"
+    },
+    {
+      "take": "f5-0012-excited-text1",
+      "matched_lufs": -29.4,
+      "true_peak_db": -11.6,
+      "preserved_raw_sha256": "acc23df5130333fb9bb967b2ec7da3d6cf291e108346c59a9bb37260ddec083a"
+    },
+    {
+      "take": "voxcpm2-0012-restrained_anger-text0",
+      "matched_lufs": -29.4,
+      "true_peak_db": -12.8,
+      "preserved_raw_sha256": "0019e5d4fde204ef294168370df2689e27845c4c45f6dc6f7380cf5764e82f1d"
+    },
+    {
+      "take": "f5-0012-restrained_anger-text0",
+      "matched_lufs": -29.5,
+      "true_peak_db": -13.2,
+      "preserved_raw_sha256": "4a6f2f31a251375c3ab5357bf0cadbbca79a5dd5c5e8911a0e7dc733d15e1efa"
+    },
+    {
+      "take": "voxcpm2-0012-restrained_anger-text1",
+      "matched_lufs": -29.4,
+      "true_peak_db": -15.7,
+      "preserved_raw_sha256": "540690aafa127b8bd9d83b36bdf45c35a793d06dd7a9644e2c381a704fdfc4ea"
+    },
+    {
+      "take": "f5-0012-restrained_anger-text1",
+      "matched_lufs": -29.5,
+      "true_peak_db": -14.3,
+      "preserved_raw_sha256": "a52f354a9b06e3e770f0b3a2daf1f58f7da16cab1b601accb04e195c81216121"
+    },
+    {
+      "take": "voxcpm2-0012-reflective_sadness-text0",
+      "matched_lufs": -29.4,
+      "true_peak_db": -14.0,
+      "preserved_raw_sha256": "78e0cfff7ce36e716d3c9bb44c4e44cf06eb6d9ea521cb74872dda8b65f43bf1"
+    },
+    {
+      "take": "f5-0012-reflective_sadness-text0",
+      "matched_lufs": -29.4,
+      "true_peak_db": -14.9,
+      "preserved_raw_sha256": "d8f323018ae2c7a1cb3dd2e16fab32f2c0880c232481345b00f241846e03398e"
+    },
+    {
+      "take": "voxcpm2-0012-reflective_sadness-text1",
+      "matched_lufs": -29.4,
+      "true_peak_db": -10.7,
+      "preserved_raw_sha256": "a4ae02253561c6310a7cd87298ed1da5710c7eca0c36a126279a5ca21cea1047"
+    },
+    {
+      "take": "f5-0012-reflective_sadness-text1",
+      "matched_lufs": -29.4,
+      "true_peak_db": -12.2,
+      "preserved_raw_sha256": "f5f939bb8f3a390e73ef39ad0d7dd2fa7dcac03c36a015c4798a846c3b9ae56a"
+    },
+    {
+      "take": "voxcpm2-0015-neutral-text0",
+      "matched_lufs": -29.4,
+      "true_peak_db": -16.1,
+      "preserved_raw_sha256": "42a0731606813b572b3310e66c48224a0f6a8d075c9a05b10373e01cc1196d26"
+    },
+    {
+      "take": "f5-0015-neutral-text0",
+      "matched_lufs": -29.4,
+      "true_peak_db": -15.0,
+      "preserved_raw_sha256": "4295701aa1f33b8c7506e7081ffbd2403e5b119be275004b5f5718bf69d7b840"
+    },
+    {
+      "take": "voxcpm2-0015-neutral-text1",
+      "matched_lufs": -29.4,
+      "true_peak_db": -14.5,
+      "preserved_raw_sha256": "ce381a2d699819c16c2f2b53e5e463cbb9e43a84f92a7be22c702a3c5c6b3385"
+    },
+    {
+      "take": "f5-0015-neutral-text1",
+      "matched_lufs": -29.4,
+      "true_peak_db": -12.3,
+      "preserved_raw_sha256": "2d127ff07ac0bab860270bbf1bb0f433a339713b490d0df6c175368164d935e3"
+    },
+    {
+      "take": "voxcpm2-0015-excited-text0",
+      "matched_lufs": -29.4,
+      "true_peak_db": -15.3,
+      "preserved_raw_sha256": "80f3eb6a3bcd05b971b8575f2da6c5206385839f4c33ca157c0ef0be067e0308"
+    },
+    {
+      "take": "f5-0015-excited-text0",
+      "matched_lufs": -29.5,
+      "true_peak_db": -15.5,
+      "preserved_raw_sha256": "f7283fbe8db521d00cc1c98d0307aacda2474720e184638a560207d57a4833e9"
+    },
+    {
+      "take": "voxcpm2-0015-excited-text1",
+      "matched_lufs": -29.4,
+      "true_peak_db": -11.0,
+      "preserved_raw_sha256": "c7b4f6fb06485c4b85f606da5ebd9f29c8aeaa360dc4df303fea9c6116852bf8"
+    },
+    {
+      "take": "f5-0015-excited-text1",
+      "matched_lufs": -29.4,
+      "true_peak_db": -14.1,
+      "preserved_raw_sha256": "b2a4d151ca97640f1913950e6698ddc56e933b380d661e9ee432f57b1299823e"
+    },
+    {
+      "take": "voxcpm2-0015-restrained_anger-text0",
+      "matched_lufs": -29.4,
+      "true_peak_db": -14.9,
+      "preserved_raw_sha256": "5966fbf5f55ac41d0aee959fed0c15b8e4dd2f2d600951af777db360d8ff5835"
+    },
+    {
+      "take": "f5-0015-restrained_anger-text0",
+      "matched_lufs": -29.4,
+      "true_peak_db": -13.2,
+      "preserved_raw_sha256": "792f0d070c0cae54a779d2e55cfcff73368aa91549f6c1dce977289713346798"
+    },
+    {
+      "take": "voxcpm2-0015-restrained_anger-text1",
+      "matched_lufs": -29.4,
+      "true_peak_db": -13.6,
+      "preserved_raw_sha256": "bedcb306fed2b70c2c73670764f291ded38ea6386610b3345db7289766ba5b9b"
+    },
+    {
+      "take": "f5-0015-restrained_anger-text1",
+      "matched_lufs": -29.5,
+      "true_peak_db": -12.4,
+      "preserved_raw_sha256": "7af5b94d1136d0e747a1461ec6afca16cd5a9d967bb6419c80b58ce468027b4a"
+    },
+    {
+      "take": "voxcpm2-0015-reflective_sadness-text0",
+      "matched_lufs": -29.4,
+      "true_peak_db": -16.0,
+      "preserved_raw_sha256": "49d1087706aaebe5ce8b941156c781836067088f3c14439d35c02c24bcdb49f5"
+    },
+    {
+      "take": "f5-0015-reflective_sadness-text0",
+      "matched_lufs": -29.4,
+      "true_peak_db": -14.6,
+      "preserved_raw_sha256": "fe8185eebe2f666bc070e8ed65993f953b16fb8faa50101f560c2f4bb1dbfd83"
+    },
+    {
+      "take": "voxcpm2-0015-reflective_sadness-text1",
+      "matched_lufs": -29.4,
+      "true_peak_db": -11.2,
+      "preserved_raw_sha256": "83bc91bb313e431fe373bf52bf5a1ef1d8d8ad1e5c0884757bbc67b4560dfd63"
+    },
+    {
+      "take": "f5-0015-reflective_sadness-text1",
+      "matched_lufs": -29.4,
+      "true_peak_db": -15.4,
+      "preserved_raw_sha256": "70a0d888a0d2f3d25fc1ddd0842986348c1197d0485dfd0135e1c5f22c831829"
+    }
+  ],
+  "all_14_previous_papers_preserved": true,
+  "money_settings_and_latest_preserved": true,
+  "no_listener_scores_invented": true
+}

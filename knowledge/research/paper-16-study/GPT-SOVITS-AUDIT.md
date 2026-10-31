@@ -1,0 +1,90 @@
+# GPT-SoVITS — Paper 16 source audit
+
+Original user-supplied reference: **https://github.com/RVC-Boss/GPT-SoVITS**.
+
+Audited 31 October 2026 against pinned source `b4570b876f5c086819ba84e3215472733c6a7b70`. This is static implementation and documentation evidence, not a local inference, training, performance or comprehensive security certification. The source was cloned read-only to a temporary audit checkout; no upstream code was run, no environment installed and no model weights downloaded for this audit. The existing VoiceStudio integration was inspected separately. All subjective quality claims below remain claims or test hypotheses.
+
+## Verdict for our actual problem
+
+**Worth a controlled audition, particularly for building a trained profile from one actor’s expressive recordings. It is not a demonstrated fix for transferring a different actor’s anger into an independently designed character.** It already supplies a dataset-preparation/training WebUI and an inference WebUI/API, so we should not recreate those before testing them. Its native public interface is reference-conditioned voice cloning and fine-tuning, rather than a text-description voice designer. A fine-tuned voice can be a stronger profile than one saved reference WAV, but neither training nor a convincing published demo establishes that our English character will preserve identity and anger together. [Official feature claims and demo benchmark](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/README.md#L30-L47), [Dataset and inference workflow](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/README.md#L269-L298).
+
+There is no exposed native anger-intensity parameter or separate named identity and emotion inputs in the inspected TTS API. The README still lists enhanced emotion control as unfinished and suggests emotion-specific fine-tuned GPT presets as a possible route. Therefore we must not present this as a ready-made acting control system. [Actual request schema](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/api_v2.py#L180-L213), [Emotion-control roadmap](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/README.md#L392-L410).
+
+## What it actually takes and produces
+
+| Capability | Source-backed observation | Meaning for Paper 16 |
+|---|---|---|
+| Zero-shot speech | README advertises a five-second voice sample. Native semantic-reference code enforces **3–10 seconds**. | Use clean, contiguous, transcribed speech in that window. A short generated clip is not automatically a valid prompt. |
+| Few-shot profile | README advertises fine-tuning from about one minute. WebUI workflow slices, optionally denoises, transcribes, proofreads and then fine-tunes. | A small-data training experiment is possible; one minute is a claim about feasibility, not a guarantee of expressive range. |
+| Multilingual | README lists English, Japanese, Korean, Cantonese and Chinese. | A multilingual demo is relevant, but we still test our English lines separately. |
+| Voice design from words | The inspected inference form requires reference information and target text; no voice-description input exists in the API schema. | This is not a substitute for our description-to-audition design stage. |
+| Emotional guidance | Primary recording becomes semantic and acoustic reference; no native emotion text/strength field was found in the public schema. | Test expressive references or trained presets, not invented “anger=1” controls. |
+| Extra references | Optional auxiliary files are described by the UI as averaged **timbre** fusion. | These are not a second, independent emotion lane. Mixing an angry actor and a neutral character can mix identities. |
+| Repeatability | API exposes seed, sampler settings and batch controls. | Save those plus actual code/model revisions and request/audio hashes. This does not guarantee identical floating-point audio or consistent acting. |
+
+Sources: [Feature list](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/README.md#L30-L38); [Training workflow](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/README.md#L269-L278); [Reference duration and semantic extraction](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/GPT_SoVITS/TTS_infer_pack/TTS.py#L917-L943); [Actual reference and auxiliary UI](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/GPT_SoVITS/inference_webui.py#L1296-L1342); [Actual API fields](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/api_v2.py#L180-L213).
+
+### Identity and emotion are not cleanly separated
+
+`set_ref_audio()` initializes both the prompt semantics and the reference spectrogram from the primary file. Auxiliary files are added to the same spectrogram-reference list; they do not replace the primary identity conditioning with an isolated identity-only reference. For the v2Pro family, speaker embeddings are calculated for those references too. This gives useful conditioning machinery, but does not implement the same two-role contract as IndexTTS’s explicit identity-plus-emotion inputs. [Primary reference conditioning](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/GPT_SoVITS/TTS_infer_pack/TTS.py#L859-L878), [Auxiliary reference list](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/GPT_SoVITS/TTS_infer_pack/TTS.py#L1265-L1286), [Semantics and speaker embeddings](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/GPT_SoVITS/TTS_infer_pack/TTS.py#L1396-L1411).
+
+The inference UI hides auxiliary references for the v3/v4/v5 vocoder family. The API schema still accepts the field, so presence in the schema alone is not proof that every model variant implements useful multi-reference fusion. The model/version must be part of each recorded capability. [Version-dependent controls](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/GPT_SoVITS/inference_webui.py#L1328-L1357), [Decoder and vocoder branch differences](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/GPT_SoVITS/TTS_infer_pack/TTS.py#L1478-L1524).
+
+`prompt_text` is the transcript of the reference recording, **not acting instructions**. Supplying “furious, betrayed, intense” there instead of the recording’s actual words would not be a legitimate emotion-control experiment. Reference language and generated-text language are separate. [Reference transcript/language controls](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/GPT_SoVITS/inference_webui.py#L1315-L1326), [API text and prompt fields](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/api_v2.py#L180-L196).
+
+### Native UI and automation controls
+
+Native API fields include target text/language; primary reference path and transcript/language; auxiliary reference paths; `top_k`, `top_p`, `temperature`; sentence-splitting method; batch size/threshold and bucketing; speed; fragment interval; seed; repetition penalty; media format; sampling steps/CFG where applicable; supersampling; and streaming/acceleration controls. Neither sampler temperature nor CFG is an emotion-strength dial. Exact control support is version-dependent. [Native schema](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/api_v2.py#L180-L213).
+
+The WebUI includes reference playback/upload, model selectors, target script, language, segmentation, speed, inter-sentence pause, sampling controls, and a freeze option for changing speed/timbre without resampling the semantic result. These are production aids, not listener qualification. [Inference interface](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/GPT_SoVITS/inference_webui.py#L1288-L1420).
+
+The API defaults to loopback and port 9880. Its request paths refer to files readable by the service, not arbitrary browser uploads. For an isolated local benchmark, keep this loopback-only, use explicit request-local references, and avoid sharing a mutable reference cache across parallel character jobs. The source uses an API pipeline lock; our own queue should still serialize trials and preserve every request. [Binding and configuration](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/api_v2.py#L159-L175), [Request and pipeline lock](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/api_v2.py#L180-L216).
+
+## Which version matters?
+
+| Family | Official claim / implementation distinction | Audit implication |
+|---|---|---|
+| v2 | Broader language support, a larger pretraining set and more tolerant low-quality reference handling. | Historical baseline, not evidence of strongest acting. |
+| v3 | Improved timbre similarity and fewer repetition/omission problems; README claims richer emotion. Native output described as 24 kHz. | Expressiveness is a hypothesis to test. Not the same model as v2Pro. |
+| v4 | README says it fixes v3 metallic/upsampling artifacts and natively outputs 48 kHz. | Preserve original sample rate for a fair quality comparison. Higher rate alone does not mean stronger anger. |
+| v2Pro / v2ProPlus | README positions the family near v2 hardware/speed with higher quality; model config selects different SoVITS weights and a speaker-embedding path. ProPlus is the variant used in the README’s M4 CPU timing claim. | A reasonable first Mac feasibility candidate. The published timing is not a measurement on our M3 Max or our script. |
+| v5dev / v5turbo | Source names two actual variants; README claims stronger similarity without SoVITS fine-tuning, a changed vocoder and CUDA Graph/Flash Attention acceleration. | Do not conflate an unqualified “v5” label with a reproducible checkpoint. CUDA acceleration is not Apple Metal acceleration. Start one variant at a time if the first benchmark justifies it. |
+
+Sources: [Version claims](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/README.md#L300-L390); [Author-reported timing](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/README.md#L46-L47); [Checkpoint names and base-model selections](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/config.py#L12-L41); [Pro-family speaker embeddings](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/GPT_SoVITS/TTS_infer_pack/TTS.py#L1396-L1411). These are repository claims and code-path distinctions; none ranks our local output quality yet.
+
+The README explicitly distinguishes v3/v4’s stronger dependence on the prompt’s tone/timbre from v1/v2/v2Pro’s greater tolerance of average-quality training material. That makes model choice relevant to acting transfer, but also means “use the latest” is not a sufficiently specified experiment. [Family trade-off stated by maintainers](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/README.md#L359-L366).
+
+## Mac readiness
+
+- Apple Silicon appears in the official tested-environment table. The macOS installer accepts MPS or CPU. **The README warns that models trained with Mac GPUs have substantially lower quality and says CPU is being used instead.** This warning concerns training; it is not evidence that all Mac inference fails. [Mac environments and caveat](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/README.md#L62-L108).
+- The inspected WebUI global device selector chooses CUDA or CPU, not MPS. The API configuration separately accepts a device, and the checked-in configuration has a CUDA `custom` block while named model blocks default to CPU/float32. On a machine without CUDA, the API code falls back from a CUDA setting to CPU and disables CPU half precision. Therefore the default launch should not be described as proven Metal inference. [Actual device selection](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/config.py#L163-L209), [Checked-in model configuration](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/GPT_SoVITS/configs/tts_infer.yaml#L1-L56), [Device and precision handling](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/GPT_SoVITS/TTS_infer_pack/TTS.py#L395-L418).
+- We have not measured setup compatibility, memory use, speed, training quality or generated English acting on this laptop. A CPU/float32 inference smoke test is the least ambiguous baseline; an MPS experiment can follow separately, with device and numerical results recorded.
+
+## Existing VoiceStudio adapter: useful but narrower
+
+Our existing VoiceStudio checkout already contains a GPT-SoVITS adapter that calls an external `api_v2.py` service. It does not install or start that model runtime merely by existing. At the inspected VoiceStudio revision `beeaae08204f0de5f49d4a087ef2b0ea8fecfcb9`, the adapter explicitly declares `supports_voice_design=False` and forwards target text/language, one reference path/transcript/language, no-split/WAV/nonstreaming, and optional speed. It does **not** forward native seed, auxiliary-reference, emotion-instruction or sampler controls. It also converts outputs to 32 kHz mono, which would obscure native-rate comparisons unless originals are retained. [Pinned VoiceStudio adapter](https://github.com/debpalash/VoiceStudio/blob/beeaae08204f0de5f49d4a087ef2b0ea8fecfcb9/backend/services/tts_backend.py#L3278-L3442).
+
+Recommendation: benchmark the native API first so we can verify every relevant field and retain original WAVs. Consider the VoiceStudio adapter only after that benchmark; do not assume it exposes the full native controls or that a saved VoiceStudio description can design a GPT-SoVITS voice.
+
+## Licence and assets
+
+The repository software is MIT-licensed, requiring its copyright/permission notice in substantial distributed copies and carrying an as-is warranty disclaimer. [Pinned licence](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/LICENSE#L1-L21).
+
+This does not establish the terms of every separately downloaded checkpoint, demo recording, training set or a performer’s voice. The README downloads model assets from separate repositories. Keep their model-card/licence and recording provenance with the experiment; the software’s MIT licence cannot be used as evidence that every demo voice or our CREMA-D reference has unrestricted production rights. This audit did not audit every linked model artefact’s licence. [Separate model downloads and variant assets](https://github.com/RVC-Boss/GPT-SoVITS/blob/b4570b876f5c086819ba84e3215472733c6a7b70/README.md#L344-L390).
+
+## Narrow next experiment, before integration
+
+1. **Preserve the current result.** Our existing actor-versus-character anger pair is the comparator, not a test to overwrite. No current character becomes approved because a new service starts.
+2. **Pin one candidate.** Start with a matched GPT and v2ProPlus SoVITS checkpoint pair, explicit CPU/float32, serial inference and native API. Keep a repository launcher/config and external removable runtime/weights; do not alter the existing environment or make global engine switches.
+3. **Use two valid performances from one speaker.** Select clean neutral and convincing angry references, each 3–10 seconds with verified exact transcripts. Our previously generated approximately 2.67-second character take is below the native semantic-prompt minimum; do not pad it with silence and call that extra acting evidence. The existing approximately 3.77-second CREMA-D anger source is within the duration window, subject to actual file/QC verification.
+4. **Freeze a small target set.** Use “I need you to stay right here.” and the existing two held-out, one-sentence checks. Same language, checkpoint pair, target text, seed, sampler and speed across neutral/anger conditions. Two seeds gives 12 outputs: two references × three target lines × two seeds. This tests whether the engine carries an existing actor’s delivery before attempting another speaker’s identity.
+5. **Judge the result separately.** Check file integrity, actual request fields and words; then blind matched-level listening for anger, speaker consistency and naturalness. Compare raw outputs as well as matched playback. ASR, pitch or duration differences do not approve emotion. Log time/memory and whether the device was really CPU or MPS.
+6. **Gate training and mixed identity.** Only if zero-shot transfer is promising, try a small correctly transcribed actor dataset through native preparation/fine-tuning, with held-out performance/text splits. If independent identity and emotion remain required, explicitly test that constraint; do not label auxiliary timbre fusion as an established solution. Keep our current designed character unqualified until it passes the same listening checks.
+
+**Advance condition:** angry-reference generations convey more convincing anger on new words than the neutral condition, keep the same speaker, and remain correct across both seeds. **Stop condition:** better similarity without acting, identity drift, unstable wording, unacceptable Mac runtime, or no clear listener preference. A showcase demo is a reason to run this audition, not proof the advance condition is met.
+
+## Saved evidence
+
+- Original reference and pinned source: this document and `GPT-SOVITS-SOURCE-MANIFEST.json`.
+- Inspected source: official README, public API schema, native inference UI/core, device/config paths and software licence.
+- Not performed: installation, model download, inference, fine-tuning, source-demo listening assessment, or modification of the working studio pipeline.

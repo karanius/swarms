@@ -1,0 +1,2424 @@
+{
+  "collector": "official",
+  "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+  "sources": [
+    {
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "candidateFilesScanned": 2162,
+      "artifactsCollected": 122,
+      "licenses": [
+        "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      ]
+    },
+    {
+      "repository": "https://github.com/langflow-ai/.github",
+      "revision": "e190cbcbe692e24467e1db5a1b0d2230a22cf279",
+      "collectionMethod": "github-exact-commit-tarball",
+      "candidateFilesScanned": 2,
+      "artifactsCollected": 0,
+      "licenses": []
+    },
+    {
+      "repository": "https://github.com/langflow-ai/langflow-embedded-chat",
+      "revision": "2c412cd047afc25681c2c4fe4c3a1c80a479a953",
+      "collectionMethod": "github-exact-commit-tarball",
+      "candidateFilesScanned": 4,
+      "artifactsCollected": 0,
+      "licenses": []
+    },
+    {
+      "repository": "https://github.com/langflow-ai/langflow-railway",
+      "revision": "d335be57e16cf2209d0732bc0d1dee2fbb2f5368",
+      "collectionMethod": "github-exact-commit-tarball",
+      "candidateFilesScanned": 2,
+      "artifactsCollected": 0,
+      "licenses": []
+    },
+    {
+      "repository": "https://github.com/langflow-ai/langflow-helm-charts",
+      "revision": "91508ee3bc5d3b86de3b8d08eaba3541ba87d387",
+      "collectionMethod": "github-exact-commit-tarball",
+      "candidateFilesScanned": 5,
+      "artifactsCollected": 1,
+      "licenses": [
+        "licenses/langflow-helm-charts/91508ee3bc5d3b86de3b8d08eaba3541ba87d387/LICENSE"
+      ]
+    },
+    {
+      "repository": "https://github.com/langflow-ai/mcp-sse-shim",
+      "revision": "b2fb43660c0b7e5dec85d10cc900a7cceb7bc83f",
+      "collectionMethod": "github-exact-commit-tarball",
+      "candidateFilesScanned": 1,
+      "artifactsCollected": 0,
+      "licenses": []
+    },
+    {
+      "repository": "https://github.com/langflow-ai/langflow-bundles",
+      "revision": "68428ce16729a385fe1bcc0f1ec91fd5f5f420b9",
+      "collectionMethod": "github-exact-commit-tarball",
+      "candidateFilesScanned": 1,
+      "artifactsCollected": 1,
+      "licenses": []
+    },
+    {
+      "repository": "https://github.com/langflow-ai/langflow-client-ts",
+      "revision": "41cf45dbf2de016cd6bc80b033256028e68cb8ad",
+      "collectionMethod": "github-exact-commit-tarball",
+      "candidateFilesScanned": 9,
+      "artifactsCollected": 0,
+      "licenses": [
+        "licenses/langflow-client-ts/41cf45dbf2de016cd6bc80b033256028e68cb8ad/LICENSE.md"
+      ]
+    },
+    {
+      "repository": "https://github.com/langflow-ai/langflow-twilio-voice",
+      "revision": "f717cb34e1b0d744a534a4bfb5c6092fc9dc853d",
+      "collectionMethod": "github-exact-commit-tarball",
+      "candidateFilesScanned": 4,
+      "artifactsCollected": 1,
+      "licenses": [
+        "licenses/langflow-twilio-voice/f717cb34e1b0d744a534a4bfb5c6092fc9dc853d/LICENSE"
+      ]
+    },
+    {
+      "repository": "https://github.com/langflow-ai/openrag",
+      "revision": "8ca47268c9a21b3a33656580a5b8e8ef13e46423",
+      "collectionMethod": "github-exact-commit-tarball",
+      "candidateFilesScanned": 118,
+      "artifactsCollected": 4,
+      "licenses": [
+        "licenses/openrag/8ca47268c9a21b3a33656580a5b8e8ef13e46423/LICENSE"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/docs/static/files/AssemblyAI_Flow.json",
+      "sha256": "8ac242c4536903e4f52f7b878a7f1bdfe4383733fa6d3a32b4fa66d31fd87a55",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/docs/static/files/AssemblyAI_Flow.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "docs/static/files/AssemblyAI_Flow.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "documentation-example",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 97568
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/docs/static/files/Conversational_Notion_Agent.json",
+      "sha256": "9c9ffa79e6b3bb9b2957f82eb356e166ed083782958ad293ba2f2f6710313294",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/docs/static/files/Conversational_Notion_Agent.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "docs/static/files/Conversational_Notion_Agent.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "documentation-example",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 208682
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/docs/static/files/Meeting_Notes_Agent.json",
+      "sha256": "15113bb0c401bf1e56ec26f1a470e176ea4a7f1b49f8d78ce880a5987ed560b2",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/docs/static/files/Meeting_Notes_Agent.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "docs/static/files/Meeting_Notes_Agent.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "documentation-example",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 279762
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/docs/static/files/eval_and_remediate_cleanlab.json",
+      "sha256": "06f3657d2cc4cef359da638201bb90c93b892fe13e99a2f9bfd4f262066c0e85",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/docs/static/files/eval_and_remediate_cleanlab.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "docs/static/files/eval_and_remediate_cleanlab.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "documentation-example",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 98185
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/agentic/flows/LangflowAssistant.json",
+      "sha256": "1516971591fd24f3702b50a338798bb373b730846bd2157c6f19f1d49196b769",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/agentic/flows/LangflowAssistant.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/agentic/flows/LangflowAssistant.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "repository-graph",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 287165
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/agentic/flows/TranslationFlow.json",
+      "sha256": "e73f57f02c053a7ac5617194389e1e3218bc2139545f42e908017aa121bf8fbc",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/agentic/flows/TranslationFlow.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/agentic/flows/TranslationFlow.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "repository-graph",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 76715
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Basic Prompting.json",
+      "sha256": "60d9ad4dc4ffd1d41579dbc73e862397413fd388321ddab2eeba628e4892304b",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Basic%20Prompting.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Basic Prompting.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 73337
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Blog Writer.json",
+      "sha256": "36aa281ff641ebf9948b354848d6c9efd4b5e66eba2a808e4006a2167e9ee7e6",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Blog%20Writer.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Blog Writer.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 200223
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Content Aggregator.json",
+      "sha256": "cdbd5f76d71f94051e78e6eb3ed3853ccfaa6bd146943ce5dc382931f354e2a9",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Content%20Aggregator.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Content Aggregator.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 262172
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Custom Component Generator.json",
+      "sha256": "b46ffc6ec566f2e433454781b2e7d4ce30f2c9b6a28088be64da5c5061193965",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Custom%20Component%20Generator.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Custom Component Generator.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 207868
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Deep Research Agent.json",
+      "sha256": "be16e3e5bb5a901eea8272e5b4841754e49a26f7cd65db3b359df4454d833cc2",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Deep%20Research%20Agent.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Deep Research Agent.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 355684
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Document Q&A.json",
+      "sha256": "c6a3bfd8e9dc72277b00452f2eb30c4c6246efa64c55356650eed47c30dcdab9",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Document%20Q%26A.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Document Q&A.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 258207
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Financial Report Parser.json",
+      "sha256": "4bcb392572bc694fe681634c14c41aec2956d7cb0adb06fb5241705bdde466ef",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Financial%20Report%20Parser.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Financial Report Parser.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 223602
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Hybrid Search RAG.json",
+      "sha256": "2ff3d8167e7b54397d688b6a8e4eea4544b5f7183c9e2d726278288a7482a917",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Hybrid%20Search%20RAG.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Hybrid Search RAG.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 382681
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Image Sentiment Analysis.json",
+      "sha256": "e6adcf4d947ee29e168f3c66a3a2ecdecf8278d58adb37906eca3003e525bb1f",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Image%20Sentiment%20Analysis.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Image Sentiment Analysis.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 63298
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Instagram Copywriter.json",
+      "sha256": "c3308a544f8359998ea22001fa8ba3de4d483d94d9d5d6adc1766dbecc0fcd51",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Instagram%20Copywriter.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Instagram Copywriter.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 242595
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Knowledge Retrieval.json",
+      "sha256": "2eed43f8ef7dee66653b12bdc1437686646257a6410eccf54b0d53bcd3dba23c",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Knowledge%20Retrieval.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Knowledge Retrieval.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 155832
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Market Research.json",
+      "sha256": "abf556c2e976ecaea0a451090ea247c4c076fe891baa6614582a8eb857d52955",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Market%20Research.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Market Research.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 203749
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Meeting Summary.json",
+      "sha256": "473952ccdc183d9ef7196a002de0a43e5ba70a2c54c63ff0611bf091eaccb709",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Meeting%20Summary.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Meeting Summary.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 180747
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Memory Chatbot.json",
+      "sha256": "e0fca48307fefcff7739a4e559414485a153cbbee016c31d09b29e81fe99396c",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Memory%20Chatbot.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Memory Chatbot.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 157483
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Multi Agent Flow.json",
+      "sha256": "0c8904af765e22f06f4c1112b2fd95a9661bfe3cb1c79003cc049e1cc80b75ba",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Multi%20Agent%20Flow.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Multi Agent Flow.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 289913
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Portfolio Website Code Generator.json",
+      "sha256": "b34a2bbdb61ccf7f61bbacc999bcae9059a91bf7f367282472af588c32bc64b8",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Portfolio%20Website%20Code%20Generator.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Portfolio Website Code Generator.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 210126
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Price Deal Finder.json",
+      "sha256": "f7a871c11b98041919ce897dca9e143d0f48c0ba9a1c6a1a11d1794b40ba3723",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Price%20Deal%20Finder.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Price Deal Finder.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 243709
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Research Translation Loop.json",
+      "sha256": "db5af7c56dab619aa31bc1c9871df3db56183e04807365cb2cd65b156e7ca6b3",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Research%20Translation%20Loop.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Research Translation Loop.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 104561
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/SEO Keyword Generator.json",
+      "sha256": "4a2c816cd58fc0e2679b2268e7630cc1110055d5ba940554d5f9d9303341885e",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/SEO%20Keyword%20Generator.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/SEO Keyword Generator.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 127609
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/SaaS Pricing.json",
+      "sha256": "f2fc8b5891193a7927d2a6b353d6b13f6a1ffc4d551232d928a28384bff06ffe",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/SaaS%20Pricing.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/SaaS Pricing.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 131952
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Sequential Tasks Agents.json",
+      "sha256": "1af1998f2efd72cfdde590d649b4e6c942795acd2d0f09c89779b27c0d83e05a",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Sequential%20Tasks%20Agents.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Sequential Tasks Agents.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 344901
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Simple Agent.json",
+      "sha256": "e5e69c90be3f193e1b2dd18a4836585dee91cc3517137fa9c43cfc94939b948a",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Simple%20Agent.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Simple Agent.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 211312
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Social Media Agent.json",
+      "sha256": "5f84982a9ac32fa8b585dede4c74998a998de700ced3908a099dba38376b8c70",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Social%20Media%20Agent.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Social Media Agent.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 210367
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Text Sentiment Analysis.json",
+      "sha256": "9d2f7f30622ffc7e84238bbc54eab46e9cd8d798b80d075fd17914169254c3de",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Text%20Sentiment%20Analysis.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Text Sentiment Analysis.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 420757
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Travel Planning Agents.json",
+      "sha256": "1149a14e2c3df29b2fef8f6641a843b1188ab8e35220548740dfc1678f7aa777",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Travel%20Planning%20Agents.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Travel Planning Agents.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 382780
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Twitter Thread Generator.json",
+      "sha256": "aa0559d0c4f350f96cf476501a385643093a04e465436a9eca37cfff319fe181",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Twitter%20Thread%20Generator.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Twitter Thread Generator.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 146003
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Vector Store RAG.json",
+      "sha256": "c8373ea8baa4f892f877a560afd50a5cabfb3fa06cdaecb50fa6f14830f7e85e",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/base/langflow/initial_setup/starter_projects/Vector%20Store%20RAG.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Vector Store RAG.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 259496
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/BasicChatwithPromptandHistory.json",
+      "sha256": "6ef8e27247640cd2885099228b1c627334688dfad25f924bda95871e77cd803f",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/BasicChatwithPromptandHistory.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/tests/data/BasicChatwithPromptandHistory.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 15060
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/ChatInputTest.json",
+      "sha256": "cd511ccb9c73e95fe031344ab11b3549b14be7986e52fbf823dd80f4e7e2e062",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/ChatInputTest.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/tests/data/ChatInputTest.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 44033
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/LoopTest.json",
+      "sha256": "75d5d9bf6e5643d6568b9c34420266b6290bad234c0101df3fd2106b68488b95",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/LoopTest.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/tests/data/LoopTest.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 56096
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/MemoryChatbotNoLLM.json",
+      "sha256": "7d58163451bf4ed47678c87db1f68d78b8f67d5558fec049002a348fc3a1b063",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/MemoryChatbotNoLLM.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/tests/data/MemoryChatbotNoLLM.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 73958
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/Openapi.json",
+      "sha256": "5fb4363efb749816d228dc6674d37a38b2dcb38c4e18ba874bc4bffba30b068b",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/Openapi.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/tests/data/Openapi.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 18674
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/SimpleAPITest.json",
+      "sha256": "25e96b824b3211b6ce94b12bd010d11cca4a90ef6f2b438e1b7ad737bb926abe",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/SimpleAPITest.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/tests/data/SimpleAPITest.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 33634
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/TwoOutputsTest.json",
+      "sha256": "24b886d03b82ee92511d7230ea9dfa9a35f4442fd6d554c580c3b00da18c12b4",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/TwoOutputsTest.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/tests/data/TwoOutputsTest.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 34097
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/Vector_store.json",
+      "sha256": "075dd4686c4356c517af3c9de4d198fbf8685165e6382223d60445534e680b28",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/Vector_store.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/tests/data/Vector_store.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 60327
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/WebhookTest.json",
+      "sha256": "495949f6d315ac129615571f4beb06f653bbb27d75e7b34cf6d5bef1da59233d",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/WebhookTest.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/tests/data/WebhookTest.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 43954
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/basic_example.json",
+      "sha256": "88a995df07b3b14e237e4b67f80b151a8df91d19543fe35d12af746667388216",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/basic_example.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/tests/data/basic_example.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 15824
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/chat_echo_no_llm.json",
+      "sha256": "60aa81bd3dff77127ad415a8051a8a3b64ec5f754f8784366f024615d3ac6339",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/chat_echo_no_llm.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/tests/data/chat_echo_no_llm.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 41241
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/complex_example.json",
+      "sha256": "8d6c1045176d09e4a226ba5d318aad4c534f5ad8de68bc96fcdb269e8617258f",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/complex_example.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/tests/data/complex_example.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 17791
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/env_variable_test.json",
+      "sha256": "54ec5fbe63bb56d371c01ab3a197fc0e17f02c035eac0d7bacbc50ba5688d9e3",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/env_variable_test.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/tests/data/env_variable_test.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 18756
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/grouped_chat.json",
+      "sha256": "ccff0752a51b2fd0bcbc226427b2cef40a78dbbc192d8cbded907a4bba920831",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/grouped_chat.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/tests/data/grouped_chat.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 20497
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/human_input_flow.json",
+      "sha256": "989f358449da8110a732c60bcb122da1b1bda14b0f34457a771deea5ad64d6d4",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/human_input_flow.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/tests/data/human_input_flow.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 25937
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/loop_csv_test.json",
+      "sha256": "eb30b2d9f5ac846a079aef0bfbb4b201b86e6352266ed7a23c06efd8fbdba24f",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/loop_csv_test.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/tests/data/loop_csv_test.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 193157
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/one_group_chat.json",
+      "sha256": "7f1532e743a6edae96def643cd017d208a1ebea607b525d11e1394495dae757e",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/one_group_chat.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/tests/data/one_group_chat.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 86166
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/vector_store_grouped.json",
+      "sha256": "5416f8f34c354519b1a4c5dc0ef507d6e197f43fd0e48dfa09676a213f657081",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/backend/tests/data/vector_store_grouped.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/backend/tests/data/vector_store_grouped.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 40539
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/bundles/google/tests/fixtures/flows/gmail_loader_1.12.json",
+      "sha256": "39be550c8225c1945a9529b37139af45bfa26d3d4c6ac4c0f161e8347fef0ee3",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/bundles/google/tests/fixtures/flows/gmail_loader_1.12.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/bundles/google/tests/fixtures/flows/gmail_loader_1.12.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 20865
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/bundles/lfx-bundles/src/lfx_bundles/youtube/starter_projects/Youtube Analysis.json",
+      "sha256": "a4080db11100b803e92ce4e74c23aace2cdd3325892b8244ff13b4fa74b426ba",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/bundles/lfx-bundles/src/lfx_bundles/youtube/starter_projects/Youtube%20Analysis.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/bundles/lfx-bundles/src/lfx_bundles/youtube/starter_projects/Youtube Analysis.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "starter-template",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 220933
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/src/utils/__tests__/fixtures/canonical_loop.json",
+      "sha256": "61d8c1407b22a97a09af50365eb7afe49db45ee8db2114f223afd343de26ad65",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/src/utils/__tests__/fixtures/canonical_loop.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/frontend/src/utils/__tests__/fixtures/canonical_loop.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 83545
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/src/utils/__tests__/fixtures/generated_component_loop.json",
+      "sha256": "421f3bccb1ada5de3e6567173005d0c9c4ccd9c21c5c14566e9dd2261855277f",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/src/utils/__tests__/fixtures/generated_component_loop.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/frontend/src/utils/__tests__/fixtures/generated_component_loop.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 71931
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/src/utils/__tests__/fixtures/variant_loop.json",
+      "sha256": "15283ceb3f74edbe0e8f9ec7acf4050d09fb36d46edfdc880f6ce5d2c5199bdb",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/src/utils/__tests__/fixtures/variant_loop.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/frontend/src/utils/__tests__/fixtures/variant_loop.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 68807
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/src/utils/__tests__/upgradeComponentEdgeLoss.fixture.json",
+      "sha256": "32b3d6bc12d453642e5c13bc03b541a0ab20d588670e7caf585fffe2e00cc935",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/src/utils/__tests__/upgradeComponentEdgeLoss.fixture.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/frontend/src/utils/__tests__/upgradeComponentEdgeLoss.fixture.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "repository-graph",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 132141
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/tests/assets/ChatTest.json",
+      "sha256": "c5f3918e8e9b5e4c76866da2b3788b0e9284b120bbd532bdd27595946f4fc4ea",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/tests/assets/ChatTest.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/frontend/tests/assets/ChatTest.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 14748
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/tests/assets/a2a/echo-agent.json",
+      "sha256": "9b35081c6cf722baca17f0477ff84df86158db7f598799c39b5a517e810b12e5",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/tests/assets/a2a/echo-agent.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/frontend/tests/assets/a2a/echo-agent.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 32016
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/tests/assets/a2a/human-input-agent.json",
+      "sha256": "7a9234026a26aaf15d079a2bb3e801b78bd21f0619491d7bd918ced2a26fd6dd",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/tests/assets/a2a/human-input-agent.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/frontend/tests/assets/a2a/human-input-agent.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 33214
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/tests/assets/collection.json",
+      "sha256": "f755289e76acbb97428bed94ea163647b84dedd81e255d0086bdaaa7d106ac61",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/tests/assets/collection.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/frontend/tests/assets/collection.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 109162
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/tests/assets/flow.json",
+      "sha256": "17ce279410d19b669dfa6ec15f1c1b674ea2ff010bc72769782a7bb4d2ed46a5",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/tests/assets/flow.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/frontend/tests/assets/flow.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 13630
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/tests/assets/flow_group_test.json",
+      "sha256": "525f12f44d3ce1977b54a5fe43bdd76a6ad7d75918267ab523e00d3e43659e40",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/tests/assets/flow_group_test.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/frontend/tests/assets/flow_group_test.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 22975
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/tests/assets/flow_test_drag_and_drop.json",
+      "sha256": "e329c47a607c9897ed788780003abd12899d4bf90bb0f343562595978019f15c",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/tests/assets/flow_test_drag_and_drop.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/frontend/tests/assets/flow_test_drag_and_drop.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 53421
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/tests/assets/flowtest.json",
+      "sha256": "6daa9f17f8f14ce669a853213fca6af9d52480f7210499b65421f676a58e2a66",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/tests/assets/flowtest.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/frontend/tests/assets/flowtest.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 11567
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/tests/assets/group_test_iadevs.json",
+      "sha256": "e695c0c20b61372a546af79386bed2a5ee7e952a1265c9a850187c56cfca4d69",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/tests/assets/group_test_iadevs.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/frontend/tests/assets/group_test_iadevs.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 168173
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/tests/assets/outdated_flow.json",
+      "sha256": "b2a146b1d4f033d04c2a1de7dac413ec83f861ba052d6cc12c82c63e4e4c6b54",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/frontend/tests/assets/outdated_flow.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/frontend/tests/assets/outdated_flow.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 58538
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/src/lfx/templates/flows/hello-world.json",
+      "sha256": "556d27eb79e88c60caf9b3fb1d9fa9aa8ef881821259665428319efe1bb566f2",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/src/lfx/templates/flows/hello-world.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/src/lfx/templates/flows/hello-world.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "repository-graph",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 26130
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/BasicChatwithPromptandHistory.json",
+      "sha256": "6ef8e27247640cd2885099228b1c627334688dfad25f924bda95871e77cd803f",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/BasicChatwithPromptandHistory.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/BasicChatwithPromptandHistory.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 15060
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/ChatInputTest.json",
+      "sha256": "cd511ccb9c73e95fe031344ab11b3549b14be7986e52fbf823dd80f4e7e2e062",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/ChatInputTest.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/ChatInputTest.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 44033
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/LoopTest.json",
+      "sha256": "c1b85a4c8394f8089e0101cb2b82b69f080850d37e569bd0e9338c7adead90c5",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/LoopTest.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/LoopTest.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 56073
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/MemoryChatbotNoLLM.json",
+      "sha256": "7d58163451bf4ed47678c87db1f68d78b8f67d5558fec049002a348fc3a1b063",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/MemoryChatbotNoLLM.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/MemoryChatbotNoLLM.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 73958
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/Openapi.json",
+      "sha256": "5fb4363efb749816d228dc6674d37a38b2dcb38c4e18ba874bc4bffba30b068b",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/Openapi.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/Openapi.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 18674
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/SimpleAPITest.json",
+      "sha256": "25e96b824b3211b6ce94b12bd010d11cca4a90ef6f2b438e1b7ad737bb926abe",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/SimpleAPITest.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/SimpleAPITest.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 33634
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/TwoOutputsTest.json",
+      "sha256": "24b886d03b82ee92511d7230ea9dfa9a35f4442fd6d554c580c3b00da18c12b4",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/TwoOutputsTest.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/TwoOutputsTest.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 34097
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/Vector_store.json",
+      "sha256": "075dd4686c4356c517af3c9de4d198fbf8685165e6382223d60445534e680b28",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/Vector_store.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/Vector_store.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 60327
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/WebhookTest.json",
+      "sha256": "495949f6d315ac129615571f4beb06f653bbb27d75e7b34cf6d5bef1da59233d",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/WebhookTest.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/WebhookTest.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 43954
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/basic_example.json",
+      "sha256": "88a995df07b3b14e237e4b67f80b151a8df91d19543fe35d12af746667388216",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/basic_example.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/basic_example.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 15824
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/complex_example.json",
+      "sha256": "8d6c1045176d09e4a226ba5d318aad4c534f5ad8de68bc96fcdb269e8617258f",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/complex_example.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/complex_example.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 17791
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/env_variable_test.json",
+      "sha256": "54ec5fbe63bb56d371c01ab3a197fc0e17f02c035eac0d7bacbc50ba5688d9e3",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/env_variable_test.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/env_variable_test.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 18756
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/grouped_chat.json",
+      "sha256": "ccff0752a51b2fd0bcbc226427b2cef40a78dbbc192d8cbded907a4bba920831",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/grouped_chat.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/grouped_chat.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 20497
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/one_group_chat.json",
+      "sha256": "7f1532e743a6edae96def643cd017d208a1ebea607b525d11e1394495dae757e",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/one_group_chat.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/one_group_chat.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 86166
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/simple_chat_no_llm.json",
+      "sha256": "60aa81bd3dff77127ad415a8051a8a3b64ec5f754f8784366f024615d3ac6339",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/simple_chat_no_llm.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/simple_chat_no_llm.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 41241
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Basic Prompt Chaining.json",
+      "sha256": "9763b3317630e41caead12efd854593599ae26bbd6bfded9547561d6da058163",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Basic%20Prompt%20Chaining.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Basic Prompt Chaining.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 107697
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Basic Prompting.json",
+      "sha256": "57623b359153aae5d28fd0e35c0298510ed2f746316a439673ed3049709e07e1",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Basic%20Prompting.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Basic Prompting.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 54421
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Blog Writer.json",
+      "sha256": "99ee2f7c8bde49d61765d6473528e265d8f18dd5e9f3c1dca900009c6cb3526b",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Blog%20Writer.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Blog Writer.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 86473
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Custom Component Generator.json",
+      "sha256": "4b3c5519975c905c23821dd3652a0a55b93ebbf3441d891c337e51e766d65159",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Custom%20Component%20Generator.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Custom Component Generator.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 159767
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Document Q&A.json",
+      "sha256": "d5aa889f0e4d37051fb90dc611ad8a307232dd5e6c28dc8b3b9f194c7650e3da",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Document%20Q%26A.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Document Q&A.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 99130
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Financial Report Parser.json",
+      "sha256": "18256a7904a5b75287b21a1b4feebb0441a991f44fb17ad28f8fa8048362b22e",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Financial%20Report%20Parser.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Financial Report Parser.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 82078
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Hybrid Search RAG.json",
+      "sha256": "7bae8b9a96d52453cd78c94a7f39582b00a357a843c924464417a6215c5ac5ba",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Hybrid%20Search%20RAG.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Hybrid Search RAG.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 198863
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Image Sentiment Analysis.json",
+      "sha256": "ca361024a1980b00f3438298bead9a6629d17240631cca88e8e964f6f63233eb",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Image%20Sentiment%20Analysis.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Image Sentiment Analysis.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 106296
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Instagram Copywriter.json",
+      "sha256": "20c6cace134937ae15969144502b725c1f79cb2d8d6b0afb2844f562ee8a56fd",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Instagram%20Copywriter.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Instagram Copywriter.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 178810
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Invoice Summarizer.json",
+      "sha256": "83bb94b038e50c4dcf013203fd715bbaf2068592700f795f52a58d5fa86d1579",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Invoice%20Summarizer.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Invoice Summarizer.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 104402
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Knowledge Ingestion.json",
+      "sha256": "9b68283edeffaf0281e23e52d4e677a0c744b2283042a240622eb5ccbd687593",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Knowledge%20Ingestion.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Knowledge Ingestion.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 85104
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Knowledge Retrieval.json",
+      "sha256": "f724d0a7270c08d4979ec9f0c6383df6a1b3b4cc07a9de7779e2eb0563511892",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Knowledge%20Retrieval.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Knowledge Retrieval.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 40099
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Market Research.json",
+      "sha256": "aafd81b21e5356696ffa609b03e7ef0092fb630a56a75e6de2ead01b735e5191",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Market%20Research.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Market Research.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 160447
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Meeting Summary.json",
+      "sha256": "d54c66c802bb0673cd39964aee2acb8843b5af8a83bfe2ae1a28b610f71c786c",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Meeting%20Summary.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Meeting Summary.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 179833
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Memory Chatbot.json",
+      "sha256": "fa7e93d5567f6addb60218631b8416613933161fa2c10e08b72ff4d78b16bd93",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Memory%20Chatbot.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Memory Chatbot.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 78094
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/News Aggregator.json",
+      "sha256": "c0a9418711687a0efdb40acbc405573ec3a86294f8a8f6cee7912c7969e06d6e",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/News%20Aggregator.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/News Aggregator.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 121909
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Nvidia Remix.json",
+      "sha256": "91dfccae423d5e174cade2056b42f54673a4ee2da2d2f4d98594ef0e155d27c8",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Nvidia%20Remix.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Nvidia Remix.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 318977
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Pok\u00e9dex Agent.json",
+      "sha256": "569c38b541e9f3982abbf733647eb7f5a71a5abfedd1d8cae459ad81f10f2c74",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Pok%C3%A9dex%20Agent.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Pok\u00e9dex Agent.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 121210
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Portfolio Website Code Generator.json",
+      "sha256": "ffe43183ef95c20eb92e31eef1268512bf1ed5f84d31cc987022d37b35926017",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Portfolio%20Website%20Code%20Generator.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Portfolio Website Code Generator.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 146792
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Price Deal Finder.json",
+      "sha256": "b996311a5491a930603bdbda6df1a0e3715eb924b4c23422137af12b91e756db",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Price%20Deal%20Finder.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Price Deal Finder.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 131205
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Research Agent.json",
+      "sha256": "a6c45aa9ea7921c3b55906cecd0cf15ba19e0045d0f6cf8286666c692da688cf",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Research%20Agent.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Research Agent.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 178307
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Research Translation Loop.json",
+      "sha256": "4e926a2408220113c110b7502e7522a59495d9bfe7f42cabdfbbce791f95f140",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Research%20Translation%20Loop.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Research Translation Loop.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 93435
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/SEO Keyword Generator.json",
+      "sha256": "a00c2e315a643bffd844fb6a810f2e39038b8f5a1657caec9f1c8ae9985665cb",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/SEO%20Keyword%20Generator.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/SEO Keyword Generator.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 60210
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/SaaS Pricing.json",
+      "sha256": "fbc7316b8b9eb223c12e150c7603d379b610d6952648d69bfe9c6fa2aa829fb4",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/SaaS%20Pricing.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/SaaS Pricing.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 94708
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Search agent.json",
+      "sha256": "88c4c356e6a0f57e9ed199484f2eeb94bef0ff042eec0969ef67ecdae27da5a0",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Search%20agent.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Search agent.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 91800
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Sequential Tasks Agents.json",
+      "sha256": "967f7fac40497c9df429b07114848ae5110eb3c0d21eb5c10745dc9a58f27cf0",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Sequential%20Tasks%20Agents.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Sequential Tasks Agents.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 276413
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Simple Agent.json",
+      "sha256": "3debef1262849667f62b2ccfc78c6bb8deac61bfd06c8d1c7d22a1678fc08d0f",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Simple%20Agent.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Simple Agent.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 119335
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Social Media Agent.json",
+      "sha256": "0f420912cbe9bd18766380ef6a2454a1805043b83cb3195f920a0430a7525eda",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Social%20Media%20Agent.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Social Media Agent.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 128392
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Text Sentiment Analysis.json",
+      "sha256": "0d6a893d2635591e9d92682d330fa865e063498ca4f65b37d512b661da6046de",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Text%20Sentiment%20Analysis.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Text Sentiment Analysis.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 162090
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Travel Planning Agents.json",
+      "sha256": "f70fe47ef04b4a38e613ff997112bb40274cdbf73888e9a2da96101c99abd6b1",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Travel%20Planning%20Agents.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Travel Planning Agents.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 239520
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Twitter Thread Generator.json",
+      "sha256": "4ec4b995a5b95341393999e9c99c15bf27a3212da0e9a28669a565973c90b3ff",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Twitter%20Thread%20Generator.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Twitter Thread Generator.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 94862
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Vector Store RAG.json",
+      "sha256": "83b914e7474269d2ba3587e2d9dd4dac4850ea13e46e61047c47424aa5ce88ff",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Vector%20Store%20RAG.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Vector Store RAG.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 357923
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Youtube Analysis.json",
+      "sha256": "22b4ab23721741847d4afa90b28a7bed5aa474db006a9b128783cf8860029409",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/starter_projects_1_6_0/Youtube%20Analysis.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/starter_projects_1_6_0/Youtube Analysis.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 175932
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/vector_store_grouped.json",
+      "sha256": "5416f8f34c354519b1a4c5dc0ef507d6e197f43fd0e48dfa09676a213f657081",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/data/vector_store_grouped.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/data/vector_store_grouped.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 40539
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/fixtures/starter_flows/v1.9.0/basic_prompting.json",
+      "sha256": "dce10f1528570ccb3f2eca159b1db89dafcada6c90a6ac3bdeeb972c021e1ca6",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/fixtures/starter_flows/v1.9.0/basic_prompting.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/fixtures/starter_flows/v1.9.0/basic_prompting.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 71219
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/fixtures/starter_flows/v1.9.0/meeting_summary.json",
+      "sha256": "eb2c08ac7aa6655d11930ff4209caba0cd0cff2cb07b55dc29a57fe9d7a88ac4",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/fixtures/starter_flows/v1.9.0/meeting_summary.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/fixtures/starter_flows/v1.9.0/meeting_summary.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 210590
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/fixtures/starter_flows/v1.9.0/research_agent.json",
+      "sha256": "99946cff3708e62d32fc1dec5af7f117c679c0bfaeaa3b4b596d201a38c08774",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/fixtures/starter_flows/v1.9.0/research_agent.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/fixtures/starter_flows/v1.9.0/research_agent.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 205991
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/fixtures/starter_flows/v1.9.0/sequential_tasks_agents.json",
+      "sha256": "c3324008a800f30a1dfaad7e710a85e876521071e35d17ea6640fe152610f6cc",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/fixtures/starter_flows/v1.9.0/sequential_tasks_agents.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/fixtures/starter_flows/v1.9.0/sequential_tasks_agents.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 284800
+    },
+    {
+      "file": "raw/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/unit/utils/fixtures/structured_data_analysis_agent.json",
+      "sha256": "cccf9f02edf9647897f775c7d876bacb73051df09674536c2b40d9b93b8de9ee",
+      "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/src/lfx/tests/unit/utils/fixtures/structured_data_analysis_agent.json",
+      "repository": "https://github.com/langflow-ai/langflow",
+      "revision": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+      "sourcePath": "src/lfx/tests/unit/utils/fixtures/structured_data_analysis_agent.json",
+      "license": {
+        "references": [
+          "licenses/langflow/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow/blob/aeb10d96bb2ea797696613af931e91ddf51f3320/LICENSE"
+      },
+      "collectionKind": "test-fixture",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "clean-local-git-object-archive; verified-against-live-main",
+      "bytes": 12510
+    },
+    {
+      "file": "raw/langflow-helm-charts/91508ee3bc5d3b86de3b8d08eaba3541ba87d387/examples/flows/basic-prompting-hello-world.json",
+      "sha256": "911c6c5ee825d0582820753550aa4d0cfb5d2ca6d29875d9350726b56a012d79",
+      "sourceUrl": "https://github.com/langflow-ai/langflow-helm-charts/blob/91508ee3bc5d3b86de3b8d08eaba3541ba87d387/examples/flows/basic-prompting-hello-world.json",
+      "repository": "https://github.com/langflow-ai/langflow-helm-charts",
+      "revision": "91508ee3bc5d3b86de3b8d08eaba3541ba87d387",
+      "sourcePath": "examples/flows/basic-prompting-hello-world.json",
+      "license": {
+        "references": [
+          "licenses/langflow-helm-charts/91508ee3bc5d3b86de3b8d08eaba3541ba87d387/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow-helm-charts/blob/91508ee3bc5d3b86de3b8d08eaba3541ba87d387/LICENSE"
+      },
+      "collectionKind": "repository-graph",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "github-exact-commit-tarball",
+      "bytes": 42371
+    },
+    {
+      "file": "raw/langflow-bundles/68428ce16729a385fe1bcc0f1ec91fd5f5f420b9/flows/c54f9130-f2fa-4a3e-b22a-3856d946351b.json",
+      "sha256": "dd73e1d5b41172f06193949b08c5b6c111d2794beeaf31361b4765551ff84831",
+      "sourceUrl": "https://github.com/langflow-ai/langflow-bundles/blob/68428ce16729a385fe1bcc0f1ec91fd5f5f420b9/flows/c54f9130-f2fa-4a3e-b22a-3856d946351b.json",
+      "repository": "https://github.com/langflow-ai/langflow-bundles",
+      "revision": "68428ce16729a385fe1bcc0f1ec91fd5f5f420b9",
+      "sourcePath": "flows/c54f9130-f2fa-4a3e-b22a-3856d946351b.json",
+      "license": {
+        "references": [],
+        "sourceUrl": "https://github.com/langflow-ai/langflow-bundles/blob/68428ce16729a385fe1bcc0f1ec91fd5f5f420b9/LICENSE"
+      },
+      "collectionKind": "repository-graph",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "github-exact-commit-tarball",
+      "bytes": 54827
+    },
+    {
+      "file": "raw/langflow-twilio-voice/f717cb34e1b0d744a534a4bfb5c6092fc9dc853d/langflow/hackathon_bot.json",
+      "sha256": "f2b8e56a5ac69c46ed317d803e42078327a2efaaa08307204ce0f96387b8535a",
+      "sourceUrl": "https://github.com/langflow-ai/langflow-twilio-voice/blob/f717cb34e1b0d744a534a4bfb5c6092fc9dc853d/langflow/hackathon_bot.json",
+      "repository": "https://github.com/langflow-ai/langflow-twilio-voice",
+      "revision": "f717cb34e1b0d744a534a4bfb5c6092fc9dc853d",
+      "sourcePath": "langflow/hackathon_bot.json",
+      "license": {
+        "references": [
+          "licenses/langflow-twilio-voice/f717cb34e1b0d744a534a4bfb5c6092fc9dc853d/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/langflow-twilio-voice/blob/f717cb34e1b0d744a534a4bfb5c6092fc9dc853d/LICENSE"
+      },
+      "collectionKind": "repository-graph",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "github-exact-commit-tarball",
+      "bytes": 79586
+    },
+    {
+      "file": "raw/openrag/8ca47268c9a21b3a33656580a5b8e8ef13e46423/flows/ingestion_flow.json",
+      "sha256": "b6139284c478d970b4c26a876415eaeca1220cbdca6c6495504b224137c2e31c",
+      "sourceUrl": "https://github.com/langflow-ai/openrag/blob/8ca47268c9a21b3a33656580a5b8e8ef13e46423/flows/ingestion_flow.json",
+      "repository": "https://github.com/langflow-ai/openrag",
+      "revision": "8ca47268c9a21b3a33656580a5b8e8ef13e46423",
+      "sourcePath": "flows/ingestion_flow.json",
+      "license": {
+        "references": [
+          "licenses/openrag/8ca47268c9a21b3a33656580a5b8e8ef13e46423/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/openrag/blob/8ca47268c9a21b3a33656580a5b8e8ef13e46423/LICENSE"
+      },
+      "collectionKind": "repository-graph",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "github-exact-commit-tarball",
+      "bytes": 468475
+    },
+    {
+      "file": "raw/openrag/8ca47268c9a21b3a33656580a5b8e8ef13e46423/flows/openrag_agent.json",
+      "sha256": "f09346761229b9dd46ebca2508797152f8fa5833a4ba87f182a8046788f72270",
+      "sourceUrl": "https://github.com/langflow-ai/openrag/blob/8ca47268c9a21b3a33656580a5b8e8ef13e46423/flows/openrag_agent.json",
+      "repository": "https://github.com/langflow-ai/openrag",
+      "revision": "8ca47268c9a21b3a33656580a5b8e8ef13e46423",
+      "sourcePath": "flows/openrag_agent.json",
+      "license": {
+        "references": [
+          "licenses/openrag/8ca47268c9a21b3a33656580a5b8e8ef13e46423/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/openrag/blob/8ca47268c9a21b3a33656580a5b8e8ef13e46423/LICENSE"
+      },
+      "collectionKind": "repository-graph",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "github-exact-commit-tarball",
+      "bytes": 429629
+    },
+    {
+      "file": "raw/openrag/8ca47268c9a21b3a33656580a5b8e8ef13e46423/flows/openrag_nudges.json",
+      "sha256": "552939f0447898ba88b7ddd044617d2eb55786248d272b8b101255fdbd7426a7",
+      "sourceUrl": "https://github.com/langflow-ai/openrag/blob/8ca47268c9a21b3a33656580a5b8e8ef13e46423/flows/openrag_nudges.json",
+      "repository": "https://github.com/langflow-ai/openrag",
+      "revision": "8ca47268c9a21b3a33656580a5b8e8ef13e46423",
+      "sourcePath": "flows/openrag_nudges.json",
+      "license": {
+        "references": [
+          "licenses/openrag/8ca47268c9a21b3a33656580a5b8e8ef13e46423/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/openrag/blob/8ca47268c9a21b3a33656580a5b8e8ef13e46423/LICENSE"
+      },
+      "collectionKind": "repository-graph",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "github-exact-commit-tarball",
+      "bytes": 267868
+    },
+    {
+      "file": "raw/openrag/8ca47268c9a21b3a33656580a5b8e8ef13e46423/flows/openrag_url_mcp.json",
+      "sha256": "f98f2f2cf566fb44c0e84978886881b968ff1738be5729707af6bf0a378ce3d1",
+      "sourceUrl": "https://github.com/langflow-ai/openrag/blob/8ca47268c9a21b3a33656580a5b8e8ef13e46423/flows/openrag_url_mcp.json",
+      "repository": "https://github.com/langflow-ai/openrag",
+      "revision": "8ca47268c9a21b3a33656580a5b8e8ef13e46423",
+      "sourcePath": "flows/openrag_url_mcp.json",
+      "license": {
+        "references": [
+          "licenses/openrag/8ca47268c9a21b3a33656580a5b8e8ef13e46423/LICENSE"
+        ],
+        "sourceUrl": "https://github.com/langflow-ai/openrag/blob/8ca47268c9a21b3a33656580a5b8e8ef13e46423/LICENSE"
+      },
+      "collectionKind": "repository-graph",
+      "collectedAt": "2026-10-29T17:32:21.498562+00:00",
+      "collectionMethod": "github-exact-commit-tarball",
+      "bytes": 604099
+    }
+  ],
+  "failures": [
+    {
+      "repository": "https://github.com/langflow-ai/langflow-examples",
+      "error": "Repository not found via git ls-remote; no collection claimed."
+    }
+  ]
+}

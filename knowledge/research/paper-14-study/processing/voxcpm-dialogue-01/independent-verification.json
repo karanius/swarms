@@ -1,0 +1,22 @@
+{
+  "master": {
+    "seconds": 18.68,
+    "sample_rate": 48000,
+    "peak": 0.8432407379150391,
+    "sha256": "a5fd08f5c9c2f9cf6d0fe463f03cdf2147f66a0c5df250ab1002a90a288835de",
+    "independent_matched_difference_lu": 0.10000000000000142,
+    "independent_master_measurement": {
+      "input_i": "-15.9",
+      "input_tp": "-1.5",
+      "meter": "FFmpeg ebur128"
+    }
+  },
+  "enhance": {
+    "seconds": 18.68,
+    "sample_rate": 44100,
+    "peak": 0.8351937532424927,
+    "sha256": "a03d8d45732897451897d069497353505aef80cc819cdd440b35b8853fa01754",
+    "independent_matched_difference_lu": 0.0
+  },
+  "money_settings_and_latest_pointers_unchanged": true
+}

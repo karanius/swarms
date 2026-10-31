@@ -1,0 +1,13 @@
+{
+  "format": 3,
+  "channels": 2,
+  "sampleRate": 48000,
+  "byteRate": 384000,
+  "blockAlign": 8,
+  "bits": 32,
+  "frames": 115200,
+  "ageAmount": 100,
+  "liveUpdateWhilePlaying": true,
+  "renderVerified": true,
+  "limitation": "DSP age impression; perceived age requires listener evaluation."
+}

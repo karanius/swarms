@@ -1,0 +1,1558 @@
+{
+  "schema_version": "1.0-contract",
+  "business_id": "local-content-business",
+  "instance_id": "market-intelligence",
+  "revision": 2,
+  "status": "implementation-bound-parameterized",
+  "operations_plane": {
+    "ref": "local-content-business/operations",
+    "role": "enclosing coordination plane"
+  },
+  "instance_contract": {
+    "purpose": "Source-grounded audience problem and existing-solution intelligence for Content Strategy",
+    "external_inputs": {
+      "brief": "brief",
+      "feedback": "review_feedback"
+    },
+    "external_outputs": {
+      "dossier": "assemble.dossier",
+      "review": "review.review",
+      "handoff": "handoff.receipt",
+      "obligations": "observer.obligations",
+      "costs": "observer.costs"
+    },
+    "completion_outcomes": [
+      "accepted_and_acknowledged",
+      "accepted_delivery_pending",
+      "rejected_with_reason",
+      "insufficient_with_evidence_limits",
+      "blocked_with_obligations",
+      "cancelled_with_costs"
+    ],
+    "forbidden_decisions": [
+      "choose the entire business without owner decision",
+      "publish content",
+      "spend money",
+      "open/change accounts",
+      "claim demand or profitability from source counts"
+    ]
+  },
+  "processes": [
+    {
+      "id": "P1",
+      "name": "Govern investigation",
+      "flow_refs": [
+        "investigate"
+      ],
+      "owns_nodes": [
+        "intake"
+      ],
+      "owner_role": "intelligence_owner"
+    },
+    {
+      "id": "P2",
+      "name": "Investigate opportunity",
+      "flow_refs": [
+        "investigate"
+      ],
+      "owns_nodes": [
+        "discover",
+        "retrieve",
+        "normalize",
+        "compare",
+        "form_claims",
+        "assess"
+      ],
+      "owner_role": "intelligence_owner"
+    },
+    {
+      "id": "P3",
+      "name": "Review and handoff",
+      "flow_refs": [
+        "investigate"
+      ],
+      "owns_nodes": [
+        "assemble",
+        "review",
+        "handoff"
+      ],
+      "owner_role": "evidence_reviewer"
+    },
+    {
+      "id": "P4",
+      "name": "Refresh and revise",
+      "flow_refs": [
+        "refresh"
+      ],
+      "owns_nodes": [
+        "impact"
+      ],
+      "owner_role": "intelligence_owner"
+    },
+    {
+      "id": "P5",
+      "name": "Cost, access and privacy stewardship",
+      "flow_refs": [
+        "investigate",
+        "refresh"
+      ],
+      "owns_nodes": [],
+      "observer_refs": [
+        "attempt-observer"
+      ],
+      "owner_role": "operations_owner"
+    }
+  ],
+  "flows": [
+    {
+      "id": "investigate",
+      "external_inputs": {
+        "brief": "brief",
+        "feedback": "review_feedback"
+      },
+      "nodes": [
+        {
+          "id": "intake",
+          "composite_ref": "K01",
+          "bindings": {
+            "brief": "input.brief"
+          },
+          "observer_ref": "attempt-observer",
+          "failure_route": "record_then_block_or_bounded_retry",
+          "entry_gate": "runtime_ready",
+          "additional_gate": null,
+          "runtime_binding": {
+            "controller": "implementation/controller.py:Tower.step",
+            "native_adapter": "implementation/native_bridge.py:dispatch",
+            "capability": "brief_to_plan"
+          }
+        },
+        {
+          "id": "discover",
+          "composite_ref": "K02",
+          "bindings": {
+            "plan": "intake.plan"
+          },
+          "observer_ref": "attempt-observer",
+          "failure_route": "record_then_block_or_bounded_retry",
+          "entry_gate": "dependencies_accepted",
+          "additional_gate": null,
+          "runtime_binding": {
+            "controller": "implementation/controller.py:Tower.step",
+            "native_adapter": "implementation/native_bridge.py:dispatch",
+            "capability": "discover"
+          }
+        },
+        {
+          "id": "retrieve",
+          "composite_ref": "K03",
+          "bindings": {
+            "plan": "intake.plan",
+            "candidates": "discover.candidates"
+          },
+          "observer_ref": "attempt-observer",
+          "failure_route": "record_then_block_or_bounded_retry",
+          "entry_gate": "dependencies_accepted",
+          "additional_gate": null,
+          "runtime_binding": {
+            "controller": "implementation/controller.py:Tower.step",
+            "native_adapter": "implementation/native_bridge.py:dispatch",
+            "capability": "retrieve"
+          }
+        },
+        {
+          "id": "normalize",
+          "composite_ref": "K04",
+          "bindings": {
+            "sources": "retrieve.sources"
+          },
+          "observer_ref": "attempt-observer",
+          "failure_route": "record_then_block_or_bounded_retry",
+          "entry_gate": "dependencies_accepted",
+          "additional_gate": null,
+          "runtime_binding": {
+            "controller": "implementation/controller.py:Tower.step",
+            "native_adapter": "implementation/native_bridge.py:dispatch",
+            "capability": "normalize"
+          }
+        },
+        {
+          "id": "compare",
+          "composite_ref": "K05",
+          "bindings": {
+            "brief": "input.brief",
+            "evidence": "normalize.evidence"
+          },
+          "observer_ref": "attempt-observer",
+          "failure_route": "record_then_block_or_bounded_retry",
+          "entry_gate": "dependencies_accepted",
+          "additional_gate": null,
+          "runtime_binding": {
+            "controller": "implementation/controller.py:Tower.step",
+            "native_adapter": "implementation/native_bridge.py:dispatch",
+            "capability": "compare"
+          }
+        },
+        {
+          "id": "form_claims",
+          "composite_ref": "K06",
+          "bindings": {
+            "brief": "input.brief",
+            "evidence": "normalize.evidence",
+            "alternatives": "compare.alternatives"
+          },
+          "observer_ref": "attempt-observer",
+          "failure_route": "record_then_block_or_bounded_retry",
+          "entry_gate": "dependencies_accepted",
+          "additional_gate": null,
+          "runtime_binding": {
+            "controller": "implementation/controller.py:Tower.step",
+            "native_adapter": "implementation/native_bridge.py:dispatch",
+            "capability": "form_claims"
+          }
+        },
+        {
+          "id": "assess",
+          "composite_ref": "K07",
+          "bindings": {
+            "candidates": "form_claims.candidates",
+            "evidence": "normalize.evidence",
+            "alternatives": "compare.alternatives",
+            "feedback": "input.feedback"
+          },
+          "observer_ref": "attempt-observer",
+          "failure_route": "record_then_block_or_bounded_retry",
+          "entry_gate": "dependencies_accepted",
+          "additional_gate": null,
+          "runtime_binding": {
+            "controller": "implementation/controller.py:Tower.step",
+            "native_adapter": "implementation/native_bridge.py:dispatch",
+            "capability": "assess"
+          }
+        },
+        {
+          "id": "assemble",
+          "composite_ref": "K08",
+          "bindings": {
+            "brief": "input.brief",
+            "plan": "intake.plan",
+            "evidence": "normalize.evidence",
+            "alternatives": "compare.alternatives",
+            "assessments": "assess.assessments",
+            "obligations": "observer.obligations",
+            "costs": "observer.costs",
+            "feedback": "input.feedback"
+          },
+          "observer_ref": "attempt-observer",
+          "failure_route": "record_then_block_or_bounded_retry",
+          "entry_gate": "dependencies_accepted",
+          "additional_gate": null,
+          "runtime_binding": {
+            "controller": "implementation/controller.py:Tower.step",
+            "native_adapter": "implementation/native_bridge.py:dispatch",
+            "capability": "assemble"
+          }
+        },
+        {
+          "id": "review",
+          "composite_ref": "K09",
+          "bindings": {
+            "brief": "input.brief",
+            "plan": "intake.plan",
+            "candidates": "discover.candidates",
+            "sources": "retrieve.sources",
+            "alternatives": "compare.alternatives",
+            "dossier": "assemble.dossier",
+            "evidence": "normalize.evidence",
+            "assessments": "assess.assessments"
+          },
+          "observer_ref": "attempt-observer",
+          "failure_route": "record_then_block_or_bounded_retry",
+          "entry_gate": "dependencies_accepted",
+          "additional_gate": null,
+          "runtime_binding": {
+            "controller": "implementation/controller.py:Tower.step",
+            "native_adapter": "implementation/native_bridge.py:dispatch",
+            "capability": "review"
+          }
+        },
+        {
+          "id": "handoff",
+          "composite_ref": "K10",
+          "bindings": {
+            "dossier": "assemble.dossier",
+            "review": "review.review"
+          },
+          "observer_ref": "attempt-observer",
+          "failure_route": "record_then_block_or_bounded_retry",
+          "entry_gate": "dependencies_accepted",
+          "additional_gate": "review_accepts_exact_revision",
+          "runtime_binding": {
+            "controller": "implementation/controller.py:Tower.step",
+            "native_adapter": "implementation/native_bridge.py:dispatch",
+            "capability": "handoff"
+          }
+        }
+      ],
+      "result_bindings": {
+        "dossier": "assemble.dossier",
+        "review": "review.review",
+        "receipt": "handoff.receipt"
+      }
+    },
+    {
+      "id": "refresh",
+      "external_inputs": {
+        "notice": "change_notice",
+        "parent": "dossier"
+      },
+      "nodes": [
+        {
+          "id": "impact",
+          "composite_ref": "K11",
+          "bindings": {
+            "notice": "input.notice",
+            "parent": "input.parent"
+          },
+          "observer_ref": "attempt-observer",
+          "entry_gate": "runtime_ready",
+          "failure_route": "record_then_block_or_bounded_retry",
+          "additional_gate": null,
+          "runtime_binding": {
+            "controller": "implementation/controller.py:Tower.step",
+            "native_adapter": "implementation/native_bridge.py:dispatch",
+            "capability": "impact"
+          }
+        }
+      ],
+      "result_bindings": {
+        "impact": "impact.impact",
+        "revision": "impact.revision"
+      },
+      "next_flow": {
+        "ref": "investigate",
+        "condition": "owner approves revised brief based on impact",
+        "revision_boundary": true,
+        "input_construction": "New brief explicitly records parent dossier and amendment; never reuse a stale accepted plan implicitly"
+      }
+    }
+  ],
+  "composites": [
+    {
+      "id": "K01",
+      "name": "Brief-to-plan",
+      "input_ports": {
+        "brief": "brief"
+      },
+      "output_ports": {
+        "plan": "plan",
+        "obligations": "obligation_set"
+      },
+      "responsibility": "Frame a research plan without inventing limits",
+      "acceptance_policy": "brief_schema_and_authority",
+      "internal_graph": {
+        "format": "native-langflow-flow",
+        "path": "native-composites/K01.json",
+        "sha256": "8feead7eaa9e8786da0d933e54b4fb4034fb362dcef2d6d3f692b14bc766fda3",
+        "node_count": 1,
+        "factory": "implementation/ground_native.py",
+        "request_binding": "Validated run_id supplied by trusted controller; exported placeholder refuses execution"
+      },
+      "native_occurrence_refs": [
+        "K01-native-function"
+      ],
+      "status": "implementation-bound",
+      "resource_binding": {
+        "module": "tasks",
+        "callable": "brief_to_plan",
+        "path": "implementation/tasks.py",
+        "source_sha256": "c4b33a609aaaefb621e7fe5702d2fc8ff2989ca94b891956afcabd9a0d7b6ea4",
+        "input_resolution": "Typed JSON flow bindings resolved by controller.step",
+        "native_output": "JSON artifact references in Data.data.artifacts"
+      }
+    },
+    {
+      "id": "K02",
+      "name": "Source discovery",
+      "input_ports": {
+        "plan": "plan"
+      },
+      "output_ports": {
+        "candidates": "discovery_batch"
+      },
+      "responsibility": "Translate declared queries into screened candidate source locations",
+      "acceptance_policy": "discovery_scope_and_coverage",
+      "internal_graph": {
+        "format": "native-langflow-flow",
+        "path": "native-composites/K02.json",
+        "sha256": "f851ac3eb0429d5019b694dc56ab3e1e2e4a895536d6797f50b2d2b311501644",
+        "node_count": 1,
+        "factory": "implementation/ground_native.py",
+        "request_binding": "Validated run_id supplied by trusted controller; exported placeholder refuses execution"
+      },
+      "native_occurrence_refs": [
+        "K02-native-function"
+      ],
+      "status": "implementation-bound",
+      "resource_binding": {
+        "module": "tasks",
+        "callable": "discover",
+        "path": "implementation/tasks.py",
+        "source_sha256": "c4b33a609aaaefb621e7fe5702d2fc8ff2989ca94b891956afcabd9a0d7b6ea4",
+        "input_resolution": "Typed JSON flow bindings resolved by controller.step",
+        "native_output": "JSON artifact references in Data.data.artifacts"
+      }
+    },
+    {
+      "id": "K03",
+      "name": "Evidence retrieval",
+      "input_ports": {
+        "plan": "plan",
+        "candidates": "discovery_batch"
+      },
+      "output_ports": {
+        "sources": "source_batch"
+      },
+      "responsibility": "Retrieve permitted original evidence and preserve failures",
+      "acceptance_policy": "retrieval_provenance",
+      "internal_graph": {
+        "format": "native-langflow-flow",
+        "path": "native-composites/K03.json",
+        "sha256": "cea6dc1ee4387557836d3a1b6035543a3b6620964708a45b9c946560d498a78e",
+        "node_count": 1,
+        "factory": "implementation/ground_native.py",
+        "request_binding": "Validated run_id supplied by trusted controller; exported placeholder refuses execution"
+      },
+      "native_occurrence_refs": [
+        "K03-native-function"
+      ],
+      "status": "implementation-bound",
+      "resource_binding": {
+        "module": "tasks",
+        "callable": "retrieve",
+        "path": "implementation/tasks.py",
+        "source_sha256": "c4b33a609aaaefb621e7fe5702d2fc8ff2989ca94b891956afcabd9a0d7b6ea4",
+        "input_resolution": "Typed JSON flow bindings resolved by controller.step",
+        "native_output": "JSON artifact references in Data.data.artifacts"
+      }
+    },
+    {
+      "id": "K04",
+      "name": "Normalize and group evidence",
+      "input_ports": {
+        "sources": "source_batch"
+      },
+      "output_ports": {
+        "evidence": "evidence_set"
+      },
+      "responsibility": "Preserve observations, transformations and uncertain source-family dependence",
+      "acceptance_policy": "normalization_and_independence",
+      "internal_graph": {
+        "format": "native-langflow-flow",
+        "path": "native-composites/K04.json",
+        "sha256": "358fbdade941c8f0cef94eea6c12b4b2ef5b5178a94581c27fb425e047632f1a",
+        "node_count": 1,
+        "factory": "implementation/ground_native.py",
+        "request_binding": "Validated run_id supplied by trusted controller; exported placeholder refuses execution"
+      },
+      "native_occurrence_refs": [
+        "K04-native-function"
+      ],
+      "status": "implementation-bound",
+      "resource_binding": {
+        "module": "tasks",
+        "callable": "normalize",
+        "path": "implementation/tasks.py",
+        "source_sha256": "c4b33a609aaaefb621e7fe5702d2fc8ff2989ca94b891956afcabd9a0d7b6ea4",
+        "input_resolution": "Typed JSON flow bindings resolved by controller.step",
+        "native_output": "JSON artifact references in Data.data.artifacts"
+      }
+    },
+    {
+      "id": "K05",
+      "name": "Existing-solution comparison",
+      "input_ports": {
+        "brief": "brief",
+        "evidence": "evidence_set"
+      },
+      "output_ports": {
+        "alternatives": "alternative_set"
+      },
+      "responsibility": "Find strong competing solutions and explanations",
+      "acceptance_policy": "alternative_fairness",
+      "internal_graph": {
+        "format": "native-langflow-flow",
+        "path": "native-composites/K05.json",
+        "sha256": "8b781693a9d0aa5bee87a165133556c0b814440451101d22eafedf0ece9383b7",
+        "node_count": 1,
+        "factory": "implementation/ground_native.py",
+        "request_binding": "Validated run_id supplied by trusted controller; exported placeholder refuses execution"
+      },
+      "native_occurrence_refs": [
+        "K05-native-function"
+      ],
+      "status": "implementation-bound",
+      "resource_binding": {
+        "module": "tasks",
+        "callable": "compare",
+        "path": "implementation/tasks.py",
+        "source_sha256": "c4b33a609aaaefb621e7fe5702d2fc8ff2989ca94b891956afcabd9a0d7b6ea4",
+        "input_resolution": "Typed JSON flow bindings resolved by controller.step",
+        "native_output": "JSON artifact references in Data.data.artifacts"
+      }
+    },
+    {
+      "id": "K06",
+      "name": "Candidate claim formation",
+      "input_ports": {
+        "brief": "brief",
+        "evidence": "evidence_set",
+        "alternatives": "alternative_set"
+      },
+      "output_ports": {
+        "candidates": "candidate_claims"
+      },
+      "responsibility": "Explicitly separate observation, inference and hypothesis",
+      "acceptance_policy": "candidate_scope",
+      "internal_graph": {
+        "format": "native-langflow-flow",
+        "path": "native-composites/K06.json",
+        "sha256": "9e485d730c77377fb8872a8e81883fa99800a101bfa0f3cd16ee5df451e14349",
+        "node_count": 1,
+        "factory": "implementation/ground_native.py",
+        "request_binding": "Validated run_id supplied by trusted controller; exported placeholder refuses execution"
+      },
+      "native_occurrence_refs": [
+        "K06-native-function"
+      ],
+      "status": "implementation-bound",
+      "resource_binding": {
+        "module": "tasks",
+        "callable": "form_claims",
+        "path": "implementation/tasks.py",
+        "source_sha256": "c4b33a609aaaefb621e7fe5702d2fc8ff2989ca94b891956afcabd9a0d7b6ea4",
+        "input_resolution": "Typed JSON flow bindings resolved by controller.step",
+        "native_output": "JSON artifact references in Data.data.artifacts"
+      }
+    },
+    {
+      "id": "K07",
+      "name": "Evidence judgment",
+      "input_ports": {
+        "candidates": "candidate_claims",
+        "evidence": "evidence_set",
+        "alternatives": "alternative_set",
+        "feedback": "review_feedback"
+      },
+      "output_ports": {
+        "assessments": "assessment_set"
+      },
+      "responsibility": "Judge support, contradiction, scope and missing evidence",
+      "acceptance_policy": "evidence_judgment",
+      "internal_graph": {
+        "format": "native-langflow-flow",
+        "path": "native-composites/K07.json",
+        "sha256": "9995e974b314cfd7bb7b46f1317581987d632874f16950527abc60726498c21a",
+        "node_count": 1,
+        "factory": "implementation/ground_native.py",
+        "request_binding": "Validated run_id supplied by trusted controller; exported placeholder refuses execution"
+      },
+      "native_occurrence_refs": [
+        "K07-native-function"
+      ],
+      "status": "implementation-bound",
+      "resource_binding": {
+        "module": "tasks",
+        "callable": "assess",
+        "path": "implementation/tasks.py",
+        "source_sha256": "c4b33a609aaaefb621e7fe5702d2fc8ff2989ca94b891956afcabd9a0d7b6ea4",
+        "input_resolution": "Typed JSON flow bindings resolved by controller.step",
+        "native_output": "JSON artifact references in Data.data.artifacts"
+      }
+    },
+    {
+      "id": "K08",
+      "name": "Dossier assembly",
+      "input_ports": {
+        "brief": "brief",
+        "plan": "plan",
+        "evidence": "evidence_set",
+        "alternatives": "alternative_set",
+        "assessments": "assessment_set",
+        "obligations": "obligation_set",
+        "costs": "cost_ledger",
+        "feedback": "review_feedback"
+      },
+      "output_ports": {
+        "dossier": "dossier"
+      },
+      "responsibility": "Assemble a traceable recommendation without replacing evidence",
+      "acceptance_policy": "dossier_completeness",
+      "internal_graph": {
+        "format": "native-langflow-flow",
+        "path": "native-composites/K08.json",
+        "sha256": "34c6be6ea3c2f10a75e766b6c6530dec440ea82eb6529b61913a727dd79e373d",
+        "node_count": 1,
+        "factory": "implementation/ground_native.py",
+        "request_binding": "Validated run_id supplied by trusted controller; exported placeholder refuses execution"
+      },
+      "native_occurrence_refs": [
+        "K08-native-function"
+      ],
+      "status": "implementation-bound",
+      "resource_binding": {
+        "module": "tasks",
+        "callable": "assemble",
+        "path": "implementation/tasks.py",
+        "source_sha256": "c4b33a609aaaefb621e7fe5702d2fc8ff2989ca94b891956afcabd9a0d7b6ea4",
+        "input_resolution": "Typed JSON flow bindings resolved by controller.step",
+        "native_output": "JSON artifact references in Data.data.artifacts"
+      }
+    },
+    {
+      "id": "K09",
+      "name": "Independent review",
+      "input_ports": {
+        "brief": "brief",
+        "plan": "plan",
+        "candidates": "discovery_batch",
+        "sources": "source_batch",
+        "alternatives": "alternative_set",
+        "dossier": "dossier",
+        "evidence": "evidence_set",
+        "assessments": "assessment_set"
+      },
+      "output_ports": {
+        "review": "review_decision"
+      },
+      "responsibility": "Accept, reject or request rework against declared criteria",
+      "acceptance_policy": "review_acceptance",
+      "internal_graph": {
+        "format": "native-langflow-flow",
+        "path": "native-composites/K09.json",
+        "sha256": "dbe5bc1ed5ecc92d91ab7cb1671b9cf8cda3773f3dd39d7f0562ae5214af3306",
+        "node_count": 1,
+        "factory": "implementation/ground_native.py",
+        "request_binding": "Validated run_id supplied by trusted controller; exported placeholder refuses execution"
+      },
+      "native_occurrence_refs": [
+        "K09-native-function"
+      ],
+      "status": "implementation-bound",
+      "resource_binding": {
+        "module": "tasks",
+        "callable": "review",
+        "path": "implementation/tasks.py",
+        "source_sha256": "c4b33a609aaaefb621e7fe5702d2fc8ff2989ca94b891956afcabd9a0d7b6ea4",
+        "input_resolution": "Typed JSON flow bindings resolved by controller.step",
+        "native_output": "JSON artifact references in Data.data.artifacts"
+      }
+    },
+    {
+      "id": "K10",
+      "name": "Versioned handoff",
+      "input_ports": {
+        "dossier": "dossier",
+        "review": "review_decision"
+      },
+      "output_ports": {
+        "receipt": "handoff_receipt"
+      },
+      "responsibility": "Deliver accepted exact revision and record acknowledgment or failure",
+      "acceptance_policy": "handoff_authority",
+      "internal_graph": {
+        "format": "native-langflow-flow",
+        "path": "native-composites/K10.json",
+        "sha256": "1c79c953d9b8bc45325dce15a647d2efb62d63e89b0e070853e9d627d7be7654",
+        "node_count": 1,
+        "factory": "implementation/ground_native.py",
+        "request_binding": "Validated run_id supplied by trusted controller; exported placeholder refuses execution"
+      },
+      "native_occurrence_refs": [
+        "K10-native-function"
+      ],
+      "status": "implementation-bound",
+      "resource_binding": {
+        "module": "tasks",
+        "callable": "handoff",
+        "path": "implementation/tasks.py",
+        "source_sha256": "c4b33a609aaaefb621e7fe5702d2fc8ff2989ca94b891956afcabd9a0d7b6ea4",
+        "input_resolution": "Typed JSON flow bindings resolved by controller.step",
+        "native_output": "JSON artifact references in Data.data.artifacts"
+      }
+    },
+    {
+      "id": "K11",
+      "name": "Change-impact analysis",
+      "input_ports": {
+        "notice": "change_notice",
+        "parent": "dossier"
+      },
+      "output_ports": {
+        "impact": "impact_report",
+        "revision": "revision_request"
+      },
+      "responsibility": "Trace changed evidence and request a new revision",
+      "acceptance_policy": "revision_fidelity",
+      "internal_graph": {
+        "format": "native-langflow-flow",
+        "path": "native-composites/K11.json",
+        "sha256": "00d5bc4f4a2c9101cba13b8b5cddf094cc4d7f281c0894d680da07e900e1c3ea",
+        "node_count": 1,
+        "factory": "implementation/ground_native.py",
+        "request_binding": "Validated run_id supplied by trusted controller; exported placeholder refuses execution"
+      },
+      "native_occurrence_refs": [
+        "K11-native-function"
+      ],
+      "status": "implementation-bound",
+      "resource_binding": {
+        "module": "tasks",
+        "callable": "impact",
+        "path": "implementation/tasks.py",
+        "source_sha256": "c4b33a609aaaefb621e7fe5702d2fc8ff2989ca94b891956afcabd9a0d7b6ea4",
+        "input_resolution": "Typed JSON flow bindings resolved by controller.step",
+        "native_output": "JSON artifact references in Data.data.artifacts"
+      }
+    }
+  ],
+  "components": {
+    "native_occurrences": [
+      {
+        "id": "K01-native-function",
+        "definition_ref": "langflow:PythonFunction@d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+        "source_path": "/Users/x/projects/langflow/src/lfx/src/lfx/components/prototypes/python_function.py",
+        "source_sha256": "d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+        "graph_ref": "native-composites/K01.json",
+        "configuration_factory": "ground_native.py code_template bound to run_id",
+        "unchanged_native_definition": true
+      },
+      {
+        "id": "K02-native-function",
+        "definition_ref": "langflow:PythonFunction@d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+        "source_path": "/Users/x/projects/langflow/src/lfx/src/lfx/components/prototypes/python_function.py",
+        "source_sha256": "d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+        "graph_ref": "native-composites/K02.json",
+        "configuration_factory": "ground_native.py code_template bound to run_id",
+        "unchanged_native_definition": true
+      },
+      {
+        "id": "K03-native-function",
+        "definition_ref": "langflow:PythonFunction@d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+        "source_path": "/Users/x/projects/langflow/src/lfx/src/lfx/components/prototypes/python_function.py",
+        "source_sha256": "d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+        "graph_ref": "native-composites/K03.json",
+        "configuration_factory": "ground_native.py code_template bound to run_id",
+        "unchanged_native_definition": true
+      },
+      {
+        "id": "K04-native-function",
+        "definition_ref": "langflow:PythonFunction@d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+        "source_path": "/Users/x/projects/langflow/src/lfx/src/lfx/components/prototypes/python_function.py",
+        "source_sha256": "d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+        "graph_ref": "native-composites/K04.json",
+        "configuration_factory": "ground_native.py code_template bound to run_id",
+        "unchanged_native_definition": true
+      },
+      {
+        "id": "K05-native-function",
+        "definition_ref": "langflow:PythonFunction@d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+        "source_path": "/Users/x/projects/langflow/src/lfx/src/lfx/components/prototypes/python_function.py",
+        "source_sha256": "d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+        "graph_ref": "native-composites/K05.json",
+        "configuration_factory": "ground_native.py code_template bound to run_id",
+        "unchanged_native_definition": true
+      },
+      {
+        "id": "K06-native-function",
+        "definition_ref": "langflow:PythonFunction@d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+        "source_path": "/Users/x/projects/langflow/src/lfx/src/lfx/components/prototypes/python_function.py",
+        "source_sha256": "d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+        "graph_ref": "native-composites/K06.json",
+        "configuration_factory": "ground_native.py code_template bound to run_id",
+        "unchanged_native_definition": true
+      },
+      {
+        "id": "K07-native-function",
+        "definition_ref": "langflow:PythonFunction@d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+        "source_path": "/Users/x/projects/langflow/src/lfx/src/lfx/components/prototypes/python_function.py",
+        "source_sha256": "d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+        "graph_ref": "native-composites/K07.json",
+        "configuration_factory": "ground_native.py code_template bound to run_id",
+        "unchanged_native_definition": true
+      },
+      {
+        "id": "K08-native-function",
+        "definition_ref": "langflow:PythonFunction@d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+        "source_path": "/Users/x/projects/langflow/src/lfx/src/lfx/components/prototypes/python_function.py",
+        "source_sha256": "d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+        "graph_ref": "native-composites/K08.json",
+        "configuration_factory": "ground_native.py code_template bound to run_id",
+        "unchanged_native_definition": true
+      },
+      {
+        "id": "K09-native-function",
+        "definition_ref": "langflow:PythonFunction@d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+        "source_path": "/Users/x/projects/langflow/src/lfx/src/lfx/components/prototypes/python_function.py",
+        "source_sha256": "d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+        "graph_ref": "native-composites/K09.json",
+        "configuration_factory": "ground_native.py code_template bound to run_id",
+        "unchanged_native_definition": true
+      },
+      {
+        "id": "K10-native-function",
+        "definition_ref": "langflow:PythonFunction@d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+        "source_path": "/Users/x/projects/langflow/src/lfx/src/lfx/components/prototypes/python_function.py",
+        "source_sha256": "d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+        "graph_ref": "native-composites/K10.json",
+        "configuration_factory": "ground_native.py code_template bound to run_id",
+        "unchanged_native_definition": true
+      },
+      {
+        "id": "K11-native-function",
+        "definition_ref": "langflow:PythonFunction@d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+        "source_path": "/Users/x/projects/langflow/src/lfx/src/lfx/components/prototypes/python_function.py",
+        "source_sha256": "d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+        "graph_ref": "native-composites/K11.json",
+        "configuration_factory": "ground_native.py code_template bound to run_id",
+        "unchanged_native_definition": true
+      }
+    ],
+    "resource_adapters": [
+      {
+        "id": "store",
+        "path": "implementation/store.py",
+        "sha256": "dcab8c4cbf431167c1cbb4a6f0d718f17bb57fa8618a3f99a40267e5cf531c4f",
+        "kind": "trusted-local-resource",
+        "authority": "local user process; no remote service or OS sandbox"
+      },
+      {
+        "id": "engine",
+        "path": "implementation/engine.py",
+        "sha256": "d0f141ddd113c0008e4ae6062b133c072db1bb7e90351b261a2568b54260eab6",
+        "kind": "trusted-local-resource",
+        "authority": "local user process; no remote service or OS sandbox"
+      },
+      {
+        "id": "tasks",
+        "path": "implementation/tasks.py",
+        "sha256": "c4b33a609aaaefb621e7fe5702d2fc8ff2989ca94b891956afcabd9a0d7b6ea4",
+        "kind": "trusted-local-resource",
+        "authority": "local user process; no remote service or OS sandbox"
+      },
+      {
+        "id": "controller",
+        "path": "implementation/controller.py",
+        "sha256": "a97adaaac2ae090bcb8c5ae90faac7f87d41ffe56dc07f9380dadabc2de8e8e3",
+        "kind": "trusted-local-resource",
+        "authority": "local user process; no remote service or OS sandbox"
+      },
+      {
+        "id": "native_bridge",
+        "path": "implementation/native_bridge.py",
+        "sha256": "a0ecb2f89464e3e90cc224a6f60e16ed8039cabd6c0af77fd1cae3e6ee2b643e",
+        "kind": "trusted-local-resource",
+        "authority": "local user process; no remote service or OS sandbox"
+      },
+      {
+        "id": "cli",
+        "path": "implementation/cli.py",
+        "sha256": "eb2411a9ce8a7e0032faad3ae7fe89d6b71269a3f036b51cd1b7d25aaa0a2f8a",
+        "kind": "trusted-local-resource",
+        "authority": "local user process; no remote service or OS sandbox"
+      },
+      {
+        "id": "configuration",
+        "path": "implementation/configuration.py",
+        "sha256": "a659f72e534011f31edf11ffead60dd27001d272fce34e84919d219ad8d4e11e",
+        "kind": "trusted-local-resource",
+        "authority": "local user process; no remote service or OS sandbox"
+      }
+    ],
+    "grounding_status": "pinned-native-and-resource-bound",
+    "native_definition": {
+      "type": "PythonFunction",
+      "class": "lfx.components.prototypes.python_function.PythonFunctionComponent",
+      "source_path": "/Users/x/projects/langflow/src/lfx/src/lfx/components/prototypes/python_function.py",
+      "source_sha256": "d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+      "catalog_sha256": "3b1623a865b6e20063a18308f7db30f4d13bda3caa37e4cc4da70b5761c9d87b",
+      "native_definition_unchanged": true,
+      "resource_boundary": "Native PythonFunction invokes pinned trusted local resource code. It is not an operating-system sandbox."
+    },
+    "execution_boundary": "Native PythonFunction invokes named trusted resource code, not model-generated code; custom resources are explicit and not misrepresented as native blocks"
+  },
+  "observers": [
+    {
+      "id": "attempt-observer",
+      "output_bindings": {
+        "costs": "cost_ledger",
+        "obligations": "obligation_set"
+      },
+      "coverage": "Every node attempt in every flow, including failure, rejection, retry and cancellation",
+      "event_schema_ref": "cost_ledger",
+      "obligation_rule": "Merge intake obligations and all later stage exceptions into a versioned obligation set; resolved items retain resolution history",
+      "persistence": "append to immutable event log with unique attempt/event identities",
+      "cost_rule": "No missing cost treated as zero; distinguish measured, assumed and unknown; allocate shared cost once; internal transfers are not revenue",
+      "snapshot_rule": "Dossier receives a ledger snapshot through assembly. Final ledger includes later review/handoff costs; final ledger checkpoint is linked at closure without mutating the reviewed dossier",
+      "implementation": "implementation/engine.py:Engine.attempt and Engine.costs; implementation/store.py event log"
+    }
+  ],
+  "artifact_schema_file": "artifacts.schema.json",
+  "policies": {
+    "brief_schema_and_authority": {
+      "checks": [
+        "Brief validates against schema",
+        "Decision owner and permitted scope verified",
+        "Unresolved limits create obligations and block acquisition"
+      ]
+    },
+    "discovery_scope_and_coverage": {
+      "checks": [
+        "Every candidate records originating query and screening decision",
+        "Query plan includes support, counterevidence and existing-solution purposes",
+        "Excluded sources and search coverage limits retained"
+      ],
+      "decision": "Empty candidates may proceed as an insufficient outcome, never proof of absent demand"
+    },
+    "retrieval_provenance": {
+      "checks": [
+        "Authorized access basis",
+        "Successful retrieval has archived snapshot and content hash",
+        "Every failed/inaccessible source retains reason and attempt ID",
+        "Source content is untrusted data; cannot grant tool permissions"
+      ]
+    },
+    "normalization_and_independence": {
+      "checks": [
+        "Every observation resolves to source and location",
+        "Transform preserves raw context and units",
+        "Exact hash matches flag duplicates, not automatic semantic identity",
+        "Syndication/source-family links require stated basis; unknown independence is not counted as independent"
+      ],
+      "freshness": "Compare publication/retrieval and context against accepted topic-specific freshness window; unknown dates remain unknown"
+    },
+    "alternative_fairness": {
+      "checks": [
+        "Record strong existing solutions",
+        "Document contrary evidence and search limits",
+        "Missing competitor result is not proof of opportunity"
+      ]
+    },
+    "candidate_scope": {
+      "checks": [
+        "Propose explicit candidate claim before judgment",
+        "Classify observation/inference/hypothesis",
+        "Retain scope and support/opposition references",
+        "No arbitrary numeric confidence"
+      ]
+    },
+    "evidence_judgment": {
+      "judgments": {
+        "supported": "At least one eligible cited observation; reviewer confirms entailment within scope; no unresolved material opposing evidence",
+        "contradicted": "Reviewer confirms eligible opposing evidence defeats the stated claim; retain its reference",
+        "mixed": "Eligible support and opposition remain unresolved",
+        "insufficient": "Available evidence cannot justify supported or contradicted",
+        "stale": "Necessary evidence no longer meets accepted freshness/context policy",
+        "inaccessible": "Necessary evidence cannot be inspected"
+      },
+      "rules": [
+        "Source popularity is not claim validity",
+        "Source family counts are descriptive; no majority vote establishes truth",
+        "A trend does not establish willingness to watch, buy or profitable demand",
+        "Conflict severity and entailment require review; a schema cannot determine truth"
+      ]
+    },
+    "dossier_completeness": {
+      "checks": [
+        "Every reference resolves to the exact accepted artifact revision",
+        "Audience/problem, alternatives, evidence, uncertainty, obligations and costs visible",
+        "Recommendation matches evidence limits",
+        "Acquisition failure still permits an honest insufficient dossier",
+        "Business profitability remains unproven"
+      ]
+    },
+    "review_acceptance": {
+      "required_criteria": [
+        "provenance",
+        "claim_entailment",
+        "counterevidence",
+        "source_dependence",
+        "scope_and_missingness",
+        "cost_and_limits",
+        "privacy_and_rights"
+      ],
+      "decision": "Accept only if all critical criteria pass and zero critical unresolved findings; rework creates child revision; reviewer may be human or separately authorized assistant with accountable human acceptance owner",
+      "independence": "No self-approval; separate reviewer occurrence/context; disclose shared-model bias"
+    },
+    "handoff_authority": {
+      "checks": [
+        "Accepted review references exact dossier revision",
+        "Recipient and access classification authorized",
+        "Idempotency key is business+instance+artifact+revision+recipient",
+        "Acknowledgment distinguishes delivered from accepted",
+        "Failed delivery does not erase accepted dossier"
+      ]
+    },
+    "revision_fidelity": {
+      "checks": [
+        "Parent revision immutable",
+        "Impact lists affected claims and consumers",
+        "New brief/attempt references parent and amendment reason",
+        "Consumer notifications have acknowledgment records",
+        "Unrelated artifacts do not change"
+      ]
+    }
+  },
+  "configuration": {
+    "design_mode": false,
+    "required_before_activation": {
+      "audience_job": {
+        "binding": "validated request or explicit profile policy",
+        "resolver": "implementation/configuration.py:resolve",
+        "field": "audience_job"
+      },
+      "language": {
+        "binding": "validated request or explicit profile policy",
+        "resolver": "implementation/configuration.py:resolve",
+        "field": "language"
+      },
+      "geography": {
+        "binding": "validated request or explicit profile policy",
+        "resolver": "implementation/configuration.py:resolve",
+        "field": "geography"
+      },
+      "time_window": {
+        "binding": "validated request or explicit profile policy",
+        "resolver": "implementation/configuration.py:resolve",
+        "field": "time_window"
+      },
+      "source_connectors": {
+        "binding": "validated request or explicit profile policy",
+        "resolver": "implementation/configuration.py:resolve",
+        "field": "source_connectors"
+      },
+      "allowed_sources": {
+        "binding": "validated request or explicit profile policy",
+        "resolver": "implementation/configuration.py:resolve",
+        "field": "allowed_sources"
+      },
+      "freshness_window": {
+        "binding": "validated request or explicit profile policy",
+        "resolver": "implementation/configuration.py:resolve",
+        "field": "freshness_window"
+      },
+      "time_cap_seconds": {
+        "binding": "validated request or explicit profile policy",
+        "resolver": "implementation/configuration.py:resolve",
+        "field": "time_cap_seconds"
+      },
+      "cash_cap_amount": {
+        "binding": "validated request or explicit profile policy",
+        "resolver": "implementation/configuration.py:resolve",
+        "field": "cash_cap_amount"
+      },
+      "currency": {
+        "binding": "validated request or explicit profile policy",
+        "resolver": "implementation/configuration.py:resolve",
+        "field": "currency"
+      },
+      "max_attempts_per_node": {
+        "binding": "validated request or explicit profile policy",
+        "resolver": "implementation/configuration.py:resolve",
+        "field": "max_attempts_per_node"
+      },
+      "max_concurrent_retrievals": {
+        "binding": "validated request or explicit profile policy",
+        "resolver": "implementation/configuration.py:resolve",
+        "field": "max_concurrent_retrievals"
+      },
+      "retention_policy": {
+        "binding": "validated request or explicit profile policy",
+        "resolver": "implementation/configuration.py:resolve",
+        "field": "retention_policy"
+      },
+      "storage_binding": {
+        "binding": "validated request or explicit profile policy",
+        "resolver": "implementation/configuration.py:resolve",
+        "field": "storage_binding"
+      },
+      "review_acceptance_owner": {
+        "binding": "validated request or explicit profile policy",
+        "resolver": "implementation/configuration.py:resolve",
+        "field": "review_acceptance_owner"
+      }
+    },
+    "role_bindings": {
+      "intelligence_owner": "local-research-engine",
+      "evidence_reviewer": {
+        "binding": "profile.reviewer"
+      },
+      "operations_owner": {
+        "binding": "brief.decision_owner"
+      }
+    },
+    "runtime_bindings": {
+      "model_revision": "llama3.2:3b (default installed profile; selected model recorded per run)",
+      "runtime": "/Users/x/projects/langflow/.venv/bin/python",
+      "secret_refs": []
+    },
+    "side_effects": {
+      "publication": false,
+      "spending": false,
+      "account_changes": false
+    },
+    "local_generation": "Local synthesis requirement must be verified at runtime; source retrieval and other services may be online",
+    "unknown_gate": "Parameterized instance: resolve and validate each request through configuration.resolve before acquisition; missing input is a rejected request, not an unimplemented tower field"
+  },
+  "persistence_contract": {
+    "artifacts": "Immutable artifact ID+revision; content hash plus schema version",
+    "events": "Append-only attempt log; causal run/attempt IDs and real timestamps",
+    "checkpoints": "Persist accepted node outputs; resume only when input hashes, configuration revision and permissions match",
+    "concurrency": "Per-run revision compare-and-swap and idempotency keys; bounded worker leases; rejected stale writes recorded",
+    "reference_resolution": "Artifact ID+revision+type resolves to stored record; no source URL substitutes for immutable content",
+    "retention": "Each run is isolated under .runtime/tower. No automatic deletion; deletion/export requires owner policy. Deleted external sources remain captured as availability status; no claim of automated retention service.",
+    "implementation": "implementation/store.py:Store; SQLite WAL, immutable artifacts, CAS updates, unique events, stage leases, review ledger and local outbox"
+  },
+  "handoffs": [
+    {
+      "sender": "operations",
+      "recipient": "market-intelligence",
+      "artifact": "brief",
+      "rule": "Authenticated scope/limits and acceptance authority"
+    },
+    {
+      "sender": "audience-care",
+      "recipient": "market-intelligence",
+      "artifact": "change_notice",
+      "rule": "Deidentified evidence with authority and source limits"
+    },
+    {
+      "sender": "finance-performance",
+      "recipient": "market-intelligence",
+      "artifact": "change_notice",
+      "rule": "Metrics retain cohort, period, denominator and uncertainty; invalid evidence is rejected"
+    },
+    {
+      "sender": "market-intelligence",
+      "recipient": "content-strategy",
+      "artifact": "dossier",
+      "rule": "Exact revision plus review; recipient acknowledgment required"
+    },
+    {
+      "sender": "market-intelligence",
+      "recipient": "finance-performance",
+      "artifact": "cost_ledger",
+      "rule": "Final costs including review/handoff; snapshot vs final distinguished"
+    },
+    {
+      "sender": "market-intelligence",
+      "recipient": "operations",
+      "artifact": "obligation_set",
+      "rule": "Blocked scope/access/budget or policy decisions escalated"
+    }
+  ],
+  "readiness": {
+    "tower_definition": "implementation-bound",
+    "resources": "concrete files and hashes",
+    "native_components": "11 real pinned occurrences; private graphs compiled",
+    "local_execution": "native stage probe and controlled runtime tests recorded",
+    "activation": "per-run inputs and review required",
+    "market_evidence": "implementation probe only",
+    "business_value": "not validated",
+    "claim_boundary": "Complete parameterized local implementation package is the target; not universal autonomous market research or production multi-user security"
+  },
+  "guards": {
+    "runtime_ready": {
+      "all": [
+        "configuration_resolved",
+        "roles_authorized",
+        "components_grounded",
+        "access_authorized",
+        "budget_reserved"
+      ]
+    },
+    "dependencies_accepted": {
+      "all": [
+        "inputs_schema_valid",
+        "references_resolved",
+        "upstream_accepted",
+        "budget_remaining"
+      ]
+    },
+    "review_accepts_exact_revision": {
+      "all": [
+        "review_accepted",
+        "review_matches_dossier_revision",
+        "recipient_authorized",
+        "critical_checks_passed"
+      ]
+    },
+    "may_review": {
+      "all": [
+        "dossier_schema_valid",
+        "references_resolved",
+        "reviewer_authorized",
+        "reviewer_separate_from_author"
+      ]
+    },
+    "may_accept": {
+      "all": [
+        "critical_checks_passed",
+        "zero_critical_findings",
+        "reviewer_authorized"
+      ]
+    },
+    "may_revise": {
+      "all": [
+        "parent_record_preserved",
+        "new_revision_assigned",
+        "amendment_recorded",
+        "owner_approved"
+      ]
+    },
+    "may_acknowledge": {
+      "all": [
+        "recipient_authorized",
+        "ack_matches_revision",
+        "idempotency_checked"
+      ]
+    }
+  },
+  "guard_context_contract": {
+    "default": "Missing or unknown inputs evaluate false; no truth inferred from model text",
+    "producers": {
+      "configuration_resolved": "validated activation configuration",
+      "roles_authorized": "authority registry",
+      "components_grounded": "pinned catalog and runtime qualification",
+      "access_authorized": "allowed source/account policy",
+      "budget_reserved": "time/cash reservation ledger",
+      "inputs_schema_valid": "JSON Schema validator",
+      "references_resolved": "artifact registry",
+      "upstream_accepted": "checkpoint registry",
+      "budget_remaining": "live time/cash ledger",
+      "review_accepted": "review_decision",
+      "review_matches_dossier_revision": "artifact reference comparison",
+      "recipient_authorized": "authority registry",
+      "critical_checks_passed": "complete review rubric",
+      "dossier_schema_valid": "JSON Schema validator",
+      "reviewer_authorized": "authority registry",
+      "reviewer_separate_from_author": "actor and context separation record",
+      "zero_critical_findings": "review_decision",
+      "parent_record_preserved": "artifact registry",
+      "new_revision_assigned": "revision allocator",
+      "amendment_recorded": "revision record",
+      "owner_approved": "approval record",
+      "ack_matches_revision": "handoff_receipt",
+      "idempotency_checked": "delivery registry"
+    }
+  },
+  "lifecycle": {
+    "states": [
+      "draft",
+      "needs_clarification",
+      "planned",
+      "collecting",
+      "assessing",
+      "in_review",
+      "accepted",
+      "rework_requested",
+      "rejected",
+      "insufficient",
+      "blocked",
+      "cancelled",
+      "delivery_pending",
+      "delivery_failed",
+      "acknowledged",
+      "superseded",
+      "revision_requested"
+    ],
+    "transitions": [
+      {
+        "from": "draft",
+        "event": "plan",
+        "to": "planned",
+        "guard": "runtime_ready",
+        "actor_role": "intelligence_owner",
+        "record_required": true
+      },
+      {
+        "from": "planned",
+        "event": "collect",
+        "to": "collecting",
+        "guard": "dependencies_accepted",
+        "actor_role": "intelligence_owner",
+        "record_required": true
+      },
+      {
+        "from": "collecting",
+        "event": "assess",
+        "to": "assessing",
+        "guard": "dependencies_accepted",
+        "actor_role": "intelligence_owner",
+        "record_required": true
+      },
+      {
+        "from": "assessing",
+        "event": "submit",
+        "to": "in_review",
+        "guard": "may_review",
+        "actor_role": "intelligence_owner",
+        "record_required": true
+      },
+      {
+        "from": "in_review",
+        "event": "accept",
+        "to": "accepted",
+        "guard": "may_accept",
+        "actor_role": "evidence_reviewer",
+        "record_required": true
+      },
+      {
+        "from": "in_review",
+        "event": "rework",
+        "to": "rework_requested",
+        "guard": null,
+        "actor_role": "evidence_reviewer",
+        "record_required": true
+      },
+      {
+        "from": "in_review",
+        "event": "reject",
+        "to": "rejected",
+        "guard": null,
+        "actor_role": "evidence_reviewer",
+        "record_required": true
+      },
+      {
+        "from": "assessing",
+        "event": "insufficient",
+        "to": "insufficient",
+        "guard": null,
+        "actor_role": "intelligence_owner",
+        "record_required": true
+      },
+      {
+        "from": "accepted",
+        "event": "deliver",
+        "to": "delivery_pending",
+        "guard": "review_accepts_exact_revision",
+        "actor_role": "intelligence_owner",
+        "record_required": true
+      },
+      {
+        "from": "delivery_pending",
+        "event": "acknowledge",
+        "to": "acknowledged",
+        "guard": "may_acknowledge",
+        "actor_role": "intelligence_owner",
+        "record_required": true
+      },
+      {
+        "from": "delivery_pending",
+        "event": "delivery_failed",
+        "to": "delivery_failed",
+        "guard": null,
+        "actor_role": "intelligence_owner",
+        "record_required": true
+      },
+      {
+        "from": "delivery_failed",
+        "event": "retry_delivery",
+        "to": "delivery_pending",
+        "guard": "review_accepts_exact_revision",
+        "actor_role": "intelligence_owner",
+        "record_required": true
+      }
+    ],
+    "cross_cutting_transitions": [
+      {
+        "from": [
+          "draft",
+          "planned"
+        ],
+        "event": "missing_scope",
+        "to": "needs_clarification",
+        "record": "obligation_set"
+      },
+      {
+        "from": "active",
+        "event": "cap_or_access_failure",
+        "to": "blocked",
+        "record": "obligation_set"
+      },
+      {
+        "from": "active",
+        "event": "cancel",
+        "to": "cancelled",
+        "record": "cost_ledger"
+      },
+      {
+        "from": [
+          "blocked",
+          "needs_clarification",
+          "rework_requested",
+          "insufficient"
+        ],
+        "event": "revise",
+        "to": "draft",
+        "guard": "may_revise",
+        "new_revision": true
+      },
+      {
+        "from": [
+          "accepted",
+          "acknowledged"
+        ],
+        "event": "refresh_approved",
+        "to": "superseded",
+        "guard": "may_revise",
+        "new_revision": true,
+        "next": "draft"
+      }
+    ],
+    "terminal_states": [
+      "rejected",
+      "cancelled",
+      "superseded"
+    ],
+    "active_states": [
+      "draft",
+      "needs_clarification",
+      "planned",
+      "collecting",
+      "assessing",
+      "in_review",
+      "rework_requested",
+      "blocked",
+      "delivery_pending",
+      "delivery_failed"
+    ],
+    "retry_policy": "Bounded attempts and total active deadline are enforced. CLI resume reuses hash-checked accepted outputs. Review waiting pauses remaining active budget; review never replenishes it. Cancellation blocks further work; in-flight blocking calls end by configured timeout.",
+    "implementation": "implementation/controller.py:Tower with immutable checkpoints, review stop/resume and bounded execution; trusted local callers only",
+    "authority_binding": "CLI is a trusted local-user interface. Actor/role and exact-revision review checks are logical workflow controls, not remote authentication. No network listener exists."
+  },
+  "implementation_profile": {
+    "id": "local-review-gated-research",
+    "scope": "A bounded public-source investigation, with real local synthesis, explicit semantic review and durable local outbox",
+    "business_validation": false,
+    "parameterization": "A complete request is required per investigation; unset business choices are input parameters, not guessed facts",
+    "entrypoint": "implementation/cli.py",
+    "runtime_interpreter": "/Users/x/projects/langflow/.venv/bin/python",
+    "request_example": "implementation/request.example.json",
+    "resource_manifest": [
+      {
+        "id": "store",
+        "path": "implementation/store.py",
+        "sha256": "dcab8c4cbf431167c1cbb4a6f0d718f17bb57fa8618a3f99a40267e5cf531c4f",
+        "kind": "trusted-local-resource",
+        "authority": "local user process; no remote service or OS sandbox"
+      },
+      {
+        "id": "engine",
+        "path": "implementation/engine.py",
+        "sha256": "d0f141ddd113c0008e4ae6062b133c072db1bb7e90351b261a2568b54260eab6",
+        "kind": "trusted-local-resource",
+        "authority": "local user process; no remote service or OS sandbox"
+      },
+      {
+        "id": "tasks",
+        "path": "implementation/tasks.py",
+        "sha256": "c4b33a609aaaefb621e7fe5702d2fc8ff2989ca94b891956afcabd9a0d7b6ea4",
+        "kind": "trusted-local-resource",
+        "authority": "local user process; no remote service or OS sandbox"
+      },
+      {
+        "id": "controller",
+        "path": "implementation/controller.py",
+        "sha256": "a97adaaac2ae090bcb8c5ae90faac7f87d41ffe56dc07f9380dadabc2de8e8e3",
+        "kind": "trusted-local-resource",
+        "authority": "local user process; no remote service or OS sandbox"
+      },
+      {
+        "id": "native_bridge",
+        "path": "implementation/native_bridge.py",
+        "sha256": "a0ecb2f89464e3e90cc224a6f60e16ed8039cabd6c0af77fd1cae3e6ee2b643e",
+        "kind": "trusted-local-resource",
+        "authority": "local user process; no remote service or OS sandbox"
+      },
+      {
+        "id": "cli",
+        "path": "implementation/cli.py",
+        "sha256": "eb2411a9ce8a7e0032faad3ae7fe89d6b71269a3f036b51cd1b7d25aaa0a2f8a",
+        "kind": "trusted-local-resource",
+        "authority": "local user process; no remote service or OS sandbox"
+      },
+      {
+        "id": "configuration",
+        "path": "implementation/configuration.py",
+        "sha256": "a659f72e534011f31edf11ffead60dd27001d272fce34e84919d219ad8d4e11e",
+        "kind": "trusted-local-resource",
+        "authority": "local user process; no remote service or OS sandbox"
+      }
+    ],
+    "catalog_binding": "native-component-binding.json",
+    "native_execution_evidence": "tower-native-probe.json",
+    "local_model_metadata": "local-model-binding.json",
+    "operating_notes": "implementation/README.md"
+  },
+  "input_parameter_contract": {
+    "required_request_fields": [
+      "brief",
+      "profile",
+      "source_catalog"
+    ],
+    "brief_schema": "artifacts.schema.json#/$defs/brief/properties/payload",
+    "profile_validation": "implementation/engine.py:Engine.__init__",
+    "source_catalog_fields": [
+      "url",
+      "reason"
+    ],
+    "supported_discovery_modes": [
+      "bounded supplied source catalog",
+      "bounded public search when explicitly enabled"
+    ],
+    "source_scope": "HTTPS exact-host allowlist, no redirects, native SSRF-pinned transport, capped sources/bytes/time",
+    "model_output_policy": "No tools or code authority; exact quotations must match captured text; semantics require independent review",
+    "default_market_choices": "none; question, audience, language, geography and owner supplied in brief",
+    "missing_input_behavior": "Reject invalid request or expose review/insufficiency; never invent business values"
+  },
+  "deferred_external_dependencies": [
+    {
+      "dependency": "Selected audience/problem and permitted source set",
+      "kind": "per-run input",
+      "handled_by": "Validated request interface"
+    },
+    {
+      "dependency": "Independent evidence judgment",
+      "kind": "review decision",
+      "handled_by": "Review submission and exact-revision rubric; no autonomous self-approval"
+    },
+    {
+      "dependency": "Future Content Strategy instance",
+      "kind": "external consumer",
+      "handled_by": "Durable local outbox and explicit acknowledgment contract; external instance not deployed here"
+    }
+  ],
+  "operating_policy_defaults": {
+    "discovery": "bounded supplied source catalog or optional public search",
+    "review": "required; no self-approval",
+    "spending": "no paid inference, publishing, accounts or purchases",
+    "retention": "explicit owner cleanup only",
+    "freshness": "default seven-day policy window is authored, not evidence that source age is known",
+    "cash_and_currency": "zero direct paid-service spending permitted; USD default is an accounting label only; electricity/human cost remain unknown unless measured"
+  },
+  "schema_bindings": [
+    {
+      "path": "artifacts.schema.json",
+      "sha256": "e1066804ed0acf3ffbf399f567fbd9eb59790d2d552f41991977d2509352d69d"
+    },
+    {
+      "path": "activation.schema.json",
+      "sha256": "a7ae657996ebbcf8d47060b065cfd73a268cc94b64b8fbfafbe9f8340b518419"
+    }
+  ],
+  "validator_binding": {
+    "path": "validate_contract.py",
+    "sha256": "f67b75ad5f0c576836fe27eccf74fbcd36bdba74ac49a925566bbd7a3477f080"
+  }
+}

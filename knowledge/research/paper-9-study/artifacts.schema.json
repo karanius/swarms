@@ -1,0 +1,2514 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/paper9/artifacts.schema.json",
+  "$defs": {
+    "brief": {
+      "type": "object",
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schema_version": {
+          "const": "1.0-contract"
+        },
+        "business_id": {
+          "const": "local-content-business"
+        },
+        "instance_id": {
+          "const": "market-intelligence"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "access_classification": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "restricted"
+          ]
+        },
+        "source_lineage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "artifact_type": {
+          "const": "brief"
+        },
+        "payload": {
+          "type": "object",
+          "properties": {
+            "question": {
+              "type": "string",
+              "minLength": 1
+            },
+            "audience_job": {
+              "type": "string",
+              "minLength": 1
+            },
+            "language": {
+              "type": "string",
+              "minLength": 1
+            },
+            "geography": {
+              "type": "string",
+              "minLength": 1
+            },
+            "time_window": {
+              "type": "string",
+              "minLength": 1
+            },
+            "decision_owner": {
+              "type": "string",
+              "minLength": 1
+            },
+            "allowed_source_classes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "question",
+            "audience_job",
+            "language",
+            "geography",
+            "time_window",
+            "decision_owner",
+            "allowed_source_classes"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "artifact_id",
+        "schema_version",
+        "business_id",
+        "instance_id",
+        "revision",
+        "owner_ref",
+        "created_at",
+        "access_classification",
+        "source_lineage",
+        "artifact_type",
+        "payload"
+      ],
+      "additionalProperties": false
+    },
+    "plan": {
+      "type": "object",
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schema_version": {
+          "const": "1.0-contract"
+        },
+        "business_id": {
+          "const": "local-content-business"
+        },
+        "instance_id": {
+          "const": "market-intelligence"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "access_classification": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "restricted"
+          ]
+        },
+        "source_lineage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "artifact_type": {
+          "const": "plan"
+        },
+        "payload": {
+          "type": "object",
+          "properties": {
+            "brief_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "queries": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "query_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "query": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "purpose": {
+                    "type": "string",
+                    "enum": [
+                      "support",
+                      "counterevidence",
+                      "existing_solution"
+                    ]
+                  },
+                  "source_class": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "query_id",
+                  "query",
+                  "purpose",
+                  "source_class"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "inclusion_rules": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "exclusion_rules": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "stop_policy_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "amendment_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "brief_ref",
+            "queries",
+            "inclusion_rules",
+            "exclusion_rules",
+            "stop_policy_ref",
+            "amendment_reason"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "artifact_id",
+        "schema_version",
+        "business_id",
+        "instance_id",
+        "revision",
+        "owner_ref",
+        "created_at",
+        "access_classification",
+        "source_lineage",
+        "artifact_type",
+        "payload"
+      ],
+      "additionalProperties": false
+    },
+    "discovery_batch": {
+      "type": "object",
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schema_version": {
+          "const": "1.0-contract"
+        },
+        "business_id": {
+          "const": "local-content-business"
+        },
+        "instance_id": {
+          "const": "market-intelligence"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "access_classification": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "restricted"
+          ]
+        },
+        "source_lineage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "artifact_type": {
+          "const": "discovery_batch"
+        },
+        "payload": {
+          "type": "object",
+          "properties": {
+            "plan_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "candidates": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "locator": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "query_ref": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "source_class": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "screening": {
+                    "type": "string",
+                    "enum": [
+                      "eligible",
+                      "excluded",
+                      "needs_review"
+                    ]
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "locator",
+                  "query_ref",
+                  "source_class",
+                  "screening",
+                  "reason"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "coverage_limits": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "plan_ref",
+            "candidates",
+            "coverage_limits"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "artifact_id",
+        "schema_version",
+        "business_id",
+        "instance_id",
+        "revision",
+        "owner_ref",
+        "created_at",
+        "access_classification",
+        "source_lineage",
+        "artifact_type",
+        "payload"
+      ],
+      "additionalProperties": false
+    },
+    "source_batch": {
+      "type": "object",
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schema_version": {
+          "const": "1.0-contract"
+        },
+        "business_id": {
+          "const": "local-content-business"
+        },
+        "instance_id": {
+          "const": "market-intelligence"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "access_classification": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "restricted"
+          ]
+        },
+        "source_lineage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "artifact_type": {
+          "const": "source_batch"
+        },
+        "payload": {
+          "type": "object",
+          "properties": {
+            "discovery_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sources": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "source_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "locator": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "publisher": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "retrieved_at": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "status": {
+                    "type": "string",
+                    "enum": [
+                      "retrieved",
+                      "inaccessible",
+                      "excluded",
+                      "failed"
+                    ]
+                  },
+                  "snapshot_ref": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "content_hash": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "published_at": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "access_basis": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "license_status": {
+                    "type": "string",
+                    "enum": [
+                      "verified",
+                      "unknown",
+                      "restricted"
+                    ]
+                  },
+                  "failure_reason": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "source_id",
+                  "locator",
+                  "publisher",
+                  "retrieved_at",
+                  "status",
+                  "snapshot_ref",
+                  "content_hash",
+                  "published_at",
+                  "access_basis",
+                  "license_status",
+                  "failure_reason"
+                ],
+                "additionalProperties": false,
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "status": {
+                          "const": "retrieved"
+                        }
+                      }
+                    },
+                    "then": {
+                      "properties": {
+                        "snapshot_ref": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "content_hash": {
+                          "type": "string",
+                          "pattern": "^[a-f0-9]{64}$"
+                        },
+                        "failure_reason": {
+                          "type": "null"
+                        }
+                      }
+                    },
+                    "else": {
+                      "properties": {
+                        "failure_reason": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "attempt_refs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "discovery_ref",
+            "sources",
+            "attempt_refs"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "artifact_id",
+        "schema_version",
+        "business_id",
+        "instance_id",
+        "revision",
+        "owner_ref",
+        "created_at",
+        "access_classification",
+        "source_lineage",
+        "artifact_type",
+        "payload"
+      ],
+      "additionalProperties": false
+    },
+    "evidence_set": {
+      "type": "object",
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schema_version": {
+          "const": "1.0-contract"
+        },
+        "business_id": {
+          "const": "local-content-business"
+        },
+        "instance_id": {
+          "const": "market-intelligence"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "access_classification": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "restricted"
+          ]
+        },
+        "source_lineage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "artifact_type": {
+          "const": "evidence_set"
+        },
+        "payload": {
+          "type": "object",
+          "properties": {
+            "sources_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "observations": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "observation_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "source_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "location": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "raw_observation": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "normalized_value": {
+                    "type": [
+                      "string",
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "unit": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "period": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "family_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "independence": {
+                    "type": "string",
+                    "enum": [
+                      "independent",
+                      "dependent",
+                      "unknown"
+                    ]
+                  },
+                  "freshness": {
+                    "type": "string",
+                    "enum": [
+                      "current",
+                      "stale",
+                      "unknown"
+                    ]
+                  },
+                  "relevance": {
+                    "type": "string",
+                    "enum": [
+                      "in_scope",
+                      "out_of_scope",
+                      "uncertain"
+                    ]
+                  },
+                  "transform_ref": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "observation_id",
+                  "source_id",
+                  "location",
+                  "raw_observation",
+                  "normalized_value",
+                  "unit",
+                  "period",
+                  "family_id",
+                  "independence",
+                  "freshness",
+                  "relevance",
+                  "transform_ref"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "family_decisions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "family_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "source_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "basis": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "review_status": {
+                    "type": "string",
+                    "enum": [
+                      "reviewed",
+                      "unreviewed",
+                      "uncertain"
+                    ]
+                  }
+                },
+                "required": [
+                  "family_id",
+                  "source_ids",
+                  "basis",
+                  "review_status"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "sources_ref",
+            "observations",
+            "family_decisions"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "artifact_id",
+        "schema_version",
+        "business_id",
+        "instance_id",
+        "revision",
+        "owner_ref",
+        "created_at",
+        "access_classification",
+        "source_lineage",
+        "artifact_type",
+        "payload"
+      ],
+      "additionalProperties": false
+    },
+    "alternative_set": {
+      "type": "object",
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schema_version": {
+          "const": "1.0-contract"
+        },
+        "business_id": {
+          "const": "local-content-business"
+        },
+        "instance_id": {
+          "const": "market-intelligence"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "access_classification": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "restricted"
+          ]
+        },
+        "source_lineage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "artifact_type": {
+          "const": "alternative_set"
+        },
+        "payload": {
+          "type": "object",
+          "properties": {
+            "brief_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "alternatives": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "alternative_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "description": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "strengths": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "limits": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "observation_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                },
+                "required": [
+                  "alternative_id",
+                  "description",
+                  "strengths",
+                  "limits",
+                  "observation_refs"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "search_limits": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "brief_ref",
+            "alternatives",
+            "search_limits"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "artifact_id",
+        "schema_version",
+        "business_id",
+        "instance_id",
+        "revision",
+        "owner_ref",
+        "created_at",
+        "access_classification",
+        "source_lineage",
+        "artifact_type",
+        "payload"
+      ],
+      "additionalProperties": false
+    },
+    "candidate_claims": {
+      "type": "object",
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schema_version": {
+          "const": "1.0-contract"
+        },
+        "business_id": {
+          "const": "local-content-business"
+        },
+        "instance_id": {
+          "const": "market-intelligence"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "access_classification": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "restricted"
+          ]
+        },
+        "source_lineage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "artifact_type": {
+          "const": "candidate_claims"
+        },
+        "payload": {
+          "type": "object",
+          "properties": {
+            "claims": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "claim_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "statement": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "claim_kind": {
+                    "type": "string",
+                    "enum": [
+                      "observation",
+                      "inference",
+                      "hypothesis"
+                    ]
+                  },
+                  "support_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "opposing_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "scope_limits": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                },
+                "required": [
+                  "claim_id",
+                  "statement",
+                  "claim_kind",
+                  "support_refs",
+                  "opposing_refs",
+                  "scope_limits"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "claims"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "artifact_id",
+        "schema_version",
+        "business_id",
+        "instance_id",
+        "revision",
+        "owner_ref",
+        "created_at",
+        "access_classification",
+        "source_lineage",
+        "artifact_type",
+        "payload"
+      ],
+      "additionalProperties": false
+    },
+    "assessment_set": {
+      "type": "object",
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schema_version": {
+          "const": "1.0-contract"
+        },
+        "business_id": {
+          "const": "local-content-business"
+        },
+        "instance_id": {
+          "const": "market-intelligence"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "access_classification": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "restricted"
+          ]
+        },
+        "source_lineage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "artifact_type": {
+          "const": "assessment_set"
+        },
+        "payload": {
+          "type": "object",
+          "properties": {
+            "candidate_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "judgments": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "claim_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "status": {
+                    "type": "string",
+                    "enum": [
+                      "supported",
+                      "contradicted",
+                      "mixed",
+                      "insufficient",
+                      "stale",
+                      "inaccessible"
+                    ]
+                  },
+                  "support_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "opposing_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "entailment_review": {
+                    "type": "string",
+                    "enum": [
+                      "passed",
+                      "failed",
+                      "pending"
+                    ]
+                  },
+                  "reviewer_ref": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "inference_limits": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                },
+                "required": [
+                  "claim_id",
+                  "status",
+                  "support_refs",
+                  "opposing_refs",
+                  "reason",
+                  "entailment_review",
+                  "reviewer_ref",
+                  "inference_limits"
+                ],
+                "additionalProperties": false,
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "status": {
+                          "const": "contradicted"
+                        }
+                      }
+                    },
+                    "then": {
+                      "properties": {
+                        "opposing_refs": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "minItems": 1
+                        },
+                        "entailment_review": {
+                          "const": "passed"
+                        },
+                        "reviewer_ref": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "status": {
+                          "const": "supported"
+                        }
+                      }
+                    },
+                    "then": {
+                      "properties": {
+                        "support_refs": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "minItems": 1
+                        },
+                        "entailment_review": {
+                          "const": "passed"
+                        },
+                        "reviewer_ref": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "status": {
+                          "const": "mixed"
+                        }
+                      }
+                    },
+                    "then": {
+                      "properties": {
+                        "support_refs": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "minItems": 1
+                        },
+                        "opposing_refs": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "minItems": 1
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "policy_ref": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "candidate_ref",
+            "judgments",
+            "policy_ref"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "artifact_id",
+        "schema_version",
+        "business_id",
+        "instance_id",
+        "revision",
+        "owner_ref",
+        "created_at",
+        "access_classification",
+        "source_lineage",
+        "artifact_type",
+        "payload"
+      ],
+      "additionalProperties": false
+    },
+    "obligation_set": {
+      "type": "object",
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schema_version": {
+          "const": "1.0-contract"
+        },
+        "business_id": {
+          "const": "local-content-business"
+        },
+        "instance_id": {
+          "const": "market-intelligence"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "access_classification": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "restricted"
+          ]
+        },
+        "source_lineage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "artifact_type": {
+          "const": "obligation_set"
+        },
+        "payload": {
+          "type": "object",
+          "properties": {
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "obligation_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "question": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "owner_ref": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "blocks": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "status": {
+                    "type": "string",
+                    "enum": [
+                      "open",
+                      "resolved",
+                      "waived_with_reason"
+                    ]
+                  },
+                  "resolution": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "obligation_id",
+                  "question",
+                  "owner_ref",
+                  "blocks",
+                  "status",
+                  "resolution"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "items"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "artifact_id",
+        "schema_version",
+        "business_id",
+        "instance_id",
+        "revision",
+        "owner_ref",
+        "created_at",
+        "access_classification",
+        "source_lineage",
+        "artifact_type",
+        "payload"
+      ],
+      "additionalProperties": false
+    },
+    "cost_ledger": {
+      "type": "object",
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schema_version": {
+          "const": "1.0-contract"
+        },
+        "business_id": {
+          "const": "local-content-business"
+        },
+        "instance_id": {
+          "const": "market-intelligence"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "access_classification": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "restricted"
+          ]
+        },
+        "source_lineage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "artifact_type": {
+          "const": "cost_ledger"
+        },
+        "payload": {
+          "type": "object",
+          "properties": {
+            "events": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "event_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "attempt_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "stage_ref": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "status": {
+                    "type": "string",
+                    "enum": [
+                      "started",
+                      "completed",
+                      "failed",
+                      "cancelled"
+                    ]
+                  },
+                  "owner_minutes": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "resource_usage": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "resource_ref": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "quantity": {
+                          "type": "number",
+                          "minimum": 0
+                        },
+                        "unit": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": [
+                        "resource_ref",
+                        "quantity",
+                        "unit"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "amount": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "minimum": 0
+                  },
+                  "currency": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "cost_basis": {
+                    "type": "string",
+                    "enum": [
+                      "measured",
+                      "assumed",
+                      "unknown"
+                    ]
+                  },
+                  "allocation_key": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "event_id",
+                  "attempt_id",
+                  "stage_ref",
+                  "status",
+                  "owner_minutes",
+                  "resource_usage",
+                  "amount",
+                  "currency",
+                  "cost_basis",
+                  "allocation_key"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "accounting_limits": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "events",
+            "accounting_limits"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "artifact_id",
+        "schema_version",
+        "business_id",
+        "instance_id",
+        "revision",
+        "owner_ref",
+        "created_at",
+        "access_classification",
+        "source_lineage",
+        "artifact_type",
+        "payload"
+      ],
+      "additionalProperties": false
+    },
+    "dossier": {
+      "type": "object",
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schema_version": {
+          "const": "1.0-contract"
+        },
+        "business_id": {
+          "const": "local-content-business"
+        },
+        "instance_id": {
+          "const": "market-intelligence"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "access_classification": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "restricted"
+          ]
+        },
+        "source_lineage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "artifact_type": {
+          "const": "dossier"
+        },
+        "payload": {
+          "type": "object",
+          "properties": {
+            "brief_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "plan_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "evidence_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "alternatives_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "assessments_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "obligations_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "cost_ledger_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "audience_problem": {
+              "type": "string",
+              "minLength": 1
+            },
+            "differentiation_hypothesis": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "recommendation": {
+              "type": "string",
+              "enum": [
+                "continue",
+                "narrow",
+                "ask",
+                "stop",
+                "insufficient"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uncertainty": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "next_action": {
+              "type": "string",
+              "minLength": 1
+            },
+            "business_profitability_proven": {
+              "const": false
+            }
+          },
+          "required": [
+            "brief_ref",
+            "plan_ref",
+            "evidence_ref",
+            "alternatives_ref",
+            "assessments_ref",
+            "obligations_ref",
+            "cost_ledger_ref",
+            "audience_problem",
+            "differentiation_hypothesis",
+            "recommendation",
+            "reason",
+            "uncertainty",
+            "next_action",
+            "business_profitability_proven"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "artifact_id",
+        "schema_version",
+        "business_id",
+        "instance_id",
+        "revision",
+        "owner_ref",
+        "created_at",
+        "access_classification",
+        "source_lineage",
+        "artifact_type",
+        "payload"
+      ],
+      "additionalProperties": false
+    },
+    "review_decision": {
+      "type": "object",
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schema_version": {
+          "const": "1.0-contract"
+        },
+        "business_id": {
+          "const": "local-content-business"
+        },
+        "instance_id": {
+          "const": "market-intelligence"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "access_classification": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "restricted"
+          ]
+        },
+        "source_lineage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "artifact_type": {
+          "const": "review_decision"
+        },
+        "payload": {
+          "type": "object",
+          "properties": {
+            "dossier_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "reviewer_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "authority_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rework",
+                "rejected"
+              ]
+            },
+            "checks": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "criterion_ref": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "status": {
+                    "type": "string",
+                    "enum": [
+                      "pass",
+                      "fail",
+                      "unknown"
+                    ]
+                  },
+                  "evidence_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "criterion_ref",
+                  "status",
+                  "evidence_refs",
+                  "reason"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            },
+            "critical_unresolved": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "dossier_ref",
+            "reviewer_ref",
+            "authority_ref",
+            "decision",
+            "checks",
+            "reason",
+            "critical_unresolved"
+          ],
+          "additionalProperties": false,
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "decision": {
+                    "const": "accepted"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "critical_unresolved": {
+                    "const": 0
+                  },
+                  "checks": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "criterion_ref": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "pass",
+                            "fail",
+                            "unknown"
+                          ]
+                        },
+                        "evidence_refs": {
+                          "type": "array",
+                          "items": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "reason": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": [
+                        "criterion_ref",
+                        "status",
+                        "evidence_refs",
+                        "reason"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "minItems": 1
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "artifact_id",
+        "schema_version",
+        "business_id",
+        "instance_id",
+        "revision",
+        "owner_ref",
+        "created_at",
+        "access_classification",
+        "source_lineage",
+        "artifact_type",
+        "payload"
+      ],
+      "additionalProperties": false
+    },
+    "handoff_receipt": {
+      "type": "object",
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schema_version": {
+          "const": "1.0-contract"
+        },
+        "business_id": {
+          "const": "local-content-business"
+        },
+        "instance_id": {
+          "const": "market-intelligence"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "access_classification": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "restricted"
+          ]
+        },
+        "source_lineage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "artifact_type": {
+          "const": "handoff_receipt"
+        },
+        "payload": {
+          "type": "object",
+          "properties": {
+            "dossier_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "review_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "recipient_id": {
+              "const": "content-strategy"
+            },
+            "idempotency_key": {
+              "type": "string",
+              "minLength": 1
+            },
+            "delivery_status": {
+              "type": "string",
+              "enum": [
+                "pending",
+                "acknowledged",
+                "rejected",
+                "failed"
+              ]
+            },
+            "acknowledgment_ref": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "dossier_ref",
+            "review_ref",
+            "recipient_id",
+            "idempotency_key",
+            "delivery_status",
+            "acknowledgment_ref",
+            "reason"
+          ],
+          "additionalProperties": false,
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "delivery_status": {
+                    "const": "acknowledged"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "acknowledgment_ref": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "artifact_id",
+        "schema_version",
+        "business_id",
+        "instance_id",
+        "revision",
+        "owner_ref",
+        "created_at",
+        "access_classification",
+        "source_lineage",
+        "artifact_type",
+        "payload"
+      ],
+      "additionalProperties": false
+    },
+    "change_notice": {
+      "type": "object",
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schema_version": {
+          "const": "1.0-contract"
+        },
+        "business_id": {
+          "const": "local-content-business"
+        },
+        "instance_id": {
+          "const": "market-intelligence"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "access_classification": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "restricted"
+          ]
+        },
+        "source_lineage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "artifact_type": {
+          "const": "change_notice"
+        },
+        "payload": {
+          "type": "object",
+          "properties": {
+            "parent_dossier_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "affected_source_or_metric_refs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            },
+            "origin_instance": {
+              "type": "string",
+              "enum": [
+                "operations",
+                "audience-care",
+                "finance-performance",
+                "market-intelligence"
+              ]
+            }
+          },
+          "required": [
+            "parent_dossier_ref",
+            "affected_source_or_metric_refs",
+            "reason",
+            "origin_instance"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "artifact_id",
+        "schema_version",
+        "business_id",
+        "instance_id",
+        "revision",
+        "owner_ref",
+        "created_at",
+        "access_classification",
+        "source_lineage",
+        "artifact_type",
+        "payload"
+      ],
+      "additionalProperties": false
+    },
+    "impact_report": {
+      "type": "object",
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schema_version": {
+          "const": "1.0-contract"
+        },
+        "business_id": {
+          "const": "local-content-business"
+        },
+        "instance_id": {
+          "const": "market-intelligence"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "access_classification": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "restricted"
+          ]
+        },
+        "source_lineage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "artifact_type": {
+          "const": "impact_report"
+        },
+        "payload": {
+          "type": "object",
+          "properties": {
+            "parent_dossier_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "affected_claim_refs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "consumer_refs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "unaffected_invariants": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "recommended_reentry": {
+              "type": "string",
+              "enum": [
+                "intake",
+                "discover",
+                "retrieve",
+                "assess"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "parent_dossier_ref",
+            "affected_claim_refs",
+            "consumer_refs",
+            "unaffected_invariants",
+            "recommended_reentry",
+            "reason"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "artifact_id",
+        "schema_version",
+        "business_id",
+        "instance_id",
+        "revision",
+        "owner_ref",
+        "created_at",
+        "access_classification",
+        "source_lineage",
+        "artifact_type",
+        "payload"
+      ],
+      "additionalProperties": false
+    },
+    "revision_request": {
+      "type": "object",
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schema_version": {
+          "const": "1.0-contract"
+        },
+        "business_id": {
+          "const": "local-content-business"
+        },
+        "instance_id": {
+          "const": "market-intelligence"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "access_classification": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "restricted"
+          ]
+        },
+        "source_lineage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "artifact_type": {
+          "const": "revision_request"
+        },
+        "payload": {
+          "type": "object",
+          "properties": {
+            "parent_dossier_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "impact_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "new_revision": {
+              "type": "integer",
+              "minimum": 2
+            },
+            "amendment_reason": {
+              "type": "string",
+              "minLength": 1
+            },
+            "approval_status": {
+              "type": "string",
+              "enum": [
+                "pending",
+                "approved",
+                "rejected"
+              ]
+            }
+          },
+          "required": [
+            "parent_dossier_ref",
+            "impact_ref",
+            "new_revision",
+            "amendment_reason",
+            "approval_status"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "artifact_id",
+        "schema_version",
+        "business_id",
+        "instance_id",
+        "revision",
+        "owner_ref",
+        "created_at",
+        "access_classification",
+        "source_lineage",
+        "artifact_type",
+        "payload"
+      ],
+      "additionalProperties": false
+    },
+    "review_feedback": {
+      "type": "object",
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schema_version": {
+          "const": "1.0-contract"
+        },
+        "business_id": {
+          "const": "local-content-business"
+        },
+        "instance_id": {
+          "const": "market-intelligence"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "owner_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "access_classification": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "restricted"
+          ]
+        },
+        "source_lineage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "artifact_type": {
+          "const": "review_feedback"
+        },
+        "payload": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "pending",
+                "submitted"
+              ]
+            },
+            "parent_dossier_ref": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "assessments_ref": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "reviewer_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "recommendation": {
+              "enum": [
+                null,
+                "continue",
+                "narrow",
+                "ask",
+                "stop",
+                "insufficient"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "parent_dossier_ref",
+            "assessments_ref",
+            "reviewer_ref",
+            "recommendation",
+            "reason"
+          ],
+          "additionalProperties": false,
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "status": {
+                    "const": "submitted"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "parent_dossier_ref": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "assessments_ref": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "recommendation": {
+                    "enum": [
+                      "continue",
+                      "narrow",
+                      "ask",
+                      "stop",
+                      "insufficient"
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "artifact_id",
+        "schema_version",
+        "business_id",
+        "instance_id",
+        "revision",
+        "owner_ref",
+        "created_at",
+        "access_classification",
+        "source_lineage",
+        "artifact_type",
+        "payload"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

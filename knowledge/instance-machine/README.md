@@ -5,7 +5,7 @@ title: Instance Machine Foundations
 type: knowledge-index
 status: defining
 created: 2026-10-25
-updated: 2026-10-26
+updated: 2026-10-27
 tags: [instance-machine, architecture]
 ---
 
@@ -28,6 +28,10 @@ A linked workspace for defining the machine together before implementing its fou
 - Keep open questions, proposals, confirmed decisions, and observed evidence distinct. A checked design item does not imply implemented or verified software.
 - Record decisions with a date, rationale, and source. Link supporting artifacts when they exist.
 - Keep this knowledge workspace readable without a particular app; version it with the project.
+
+## Proposed strategy
+
+[Instance Machine Strategy](strategy.md) connects the existing definitions to an incremental delivery sequence and an Online Research Desk walkthrough. It prioritizes a grounded JSON design and iterative boundary resolution, with visual inspection and execution proved separately. The strategy is proposed for discussion.
 
 ## How we will work together
 

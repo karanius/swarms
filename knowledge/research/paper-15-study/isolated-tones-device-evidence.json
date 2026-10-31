@@ -1,0 +1,89 @@
+{
+  "request_envelopes": [
+    {
+      "started_unix": 1793366973.752055,
+      "path": "/generate",
+      "torch_forward_calls": 153,
+      "torch_devices": [
+        "cpu"
+      ],
+      "rss_before": 731316224,
+      "mlx_before": {
+        "default_device": "Device(gpu, 0)",
+        "active_bytes": 0,
+        "peak_bytes": 0
+      },
+      "response_bytes": 253484,
+      "status": 200,
+      "elapsed_seconds": 12.24082054199971,
+      "rss_after": 627720192,
+      "mlx_after": {
+        "default_device": "Device(gpu, 0)",
+        "active_bytes": 0,
+        "peak_bytes": 0
+      }
+    },
+    {
+      "started_unix": 1793366985.998656,
+      "path": "/generate",
+      "torch_forward_calls": 153,
+      "torch_devices": [
+        "cpu"
+      ],
+      "rss_before": 627720192,
+      "mlx_before": {
+        "default_device": "Device(gpu, 0)",
+        "active_bytes": 0,
+        "peak_bytes": 0
+      },
+      "response_bytes": 253484,
+      "status": 200,
+      "elapsed_seconds": 1.8447906670007796,
+      "rss_after": 627720192,
+      "mlx_after": {
+        "default_device": "Device(gpu, 0)",
+        "active_bytes": 0,
+        "peak_bytes": 0
+      }
+    },
+    {
+      "started_unix": 1793366987.84698,
+      "path": "/generate",
+      "torch_forward_calls": 153,
+      "torch_devices": [
+        "cpu"
+      ],
+      "rss_before": 627720192,
+      "mlx_before": {
+        "default_device": "Device(gpu, 0)",
+        "active_bytes": 0,
+        "peak_bytes": 0
+      },
+      "response_bytes": 253484,
+      "status": 200,
+      "elapsed_seconds": 1.7897903330012923,
+      "rss_after": 627720192,
+      "mlx_after": {
+        "default_device": "Device(gpu, 0)",
+        "active_bytes": 0,
+        "peak_bytes": 0
+      }
+    }
+  ],
+  "sidecar_process_sample": {
+    "pid": 14100,
+    "started_unix": 1793366974.324652,
+    "forward_calls": 71000,
+    "observed_parameter_devices": [
+      "mps:0"
+    ],
+    "observed_tensor_devices": [
+      "mps:0"
+    ],
+    "observed_unix": 1793366989.508495,
+    "process_maxrss_bytes": 15329476608,
+    "mps_allocated_bytes": 10667971328,
+    "mps_driver_bytes": 11653316608
+  },
+  "limits": "Sidecar sample is cumulative process-level evidence, not a per-take memory peak. Parent request envelopes do not measure total sidecar memory."
+}

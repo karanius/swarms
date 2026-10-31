@@ -1,0 +1,330 @@
+{
+  "scope": "Minimal three-type native alphabet, not the complete catalog",
+  "source": "local Langflow checkout; no component run",
+  "langflowCommit": "aeb10d96bb2ea797696613af931e91ddf51f3320",
+  "components": [
+    {
+      "type": "ChatInput",
+      "displayName": "Chat Input",
+      "class": "lfx.components.input_output.chat.ChatInput",
+      "sourceFile": "/Users/x/projects/langflow/src/lfx/src/lfx/components/input_output/chat.py",
+      "sourceSha256": "45974e6b1909ddbbfec5381cf528523131c7579f3724a1a6cc05ab62cfc63827",
+      "inputs": [
+        {
+          "name": "input_value",
+          "required": false,
+          "types": [],
+          "dynamic": false,
+          "fieldClass": "MultilineInput"
+        },
+        {
+          "name": "should_store_message",
+          "required": false,
+          "types": [],
+          "dynamic": false,
+          "fieldClass": "BoolInput"
+        },
+        {
+          "name": "sender",
+          "required": false,
+          "types": [],
+          "dynamic": false,
+          "fieldClass": "DropdownInput"
+        },
+        {
+          "name": "sender_name",
+          "required": false,
+          "types": [
+            "Message"
+          ],
+          "dynamic": false,
+          "fieldClass": "MessageTextInput"
+        },
+        {
+          "name": "session_id",
+          "required": false,
+          "types": [
+            "Message"
+          ],
+          "dynamic": false,
+          "fieldClass": "MessageTextInput"
+        },
+        {
+          "name": "context_id",
+          "required": false,
+          "types": [
+            "Message"
+          ],
+          "dynamic": false,
+          "fieldClass": "MessageTextInput"
+        },
+        {
+          "name": "files",
+          "required": false,
+          "types": [],
+          "dynamic": false,
+          "fieldClass": "FileInput"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "message",
+          "declaredTypes": [],
+          "returnAnnotation": "Message",
+          "activation": "unverified"
+        }
+      ]
+    },
+    {
+      "type": "Agent",
+      "displayName": "Agent",
+      "class": "lfx.components.models_and_agents.agent.AgentComponent",
+      "sourceFile": "/Users/x/projects/langflow/src/lfx/src/lfx/components/models_and_agents/agent.py",
+      "sourceSha256": "9fcfe75813e77e9f618aacc94b079f4d57073000513bb9d38af8609c96ad331e",
+      "inputs": [
+        {
+          "name": "model",
+          "required": true,
+          "types": [
+            "LanguageModel"
+          ],
+          "dynamic": false,
+          "fieldClass": "ModelInput"
+        },
+        {
+          "name": "api_key",
+          "required": false,
+          "types": [],
+          "dynamic": false,
+          "fieldClass": "SecretStrInput"
+        },
+        {
+          "name": "base_url_ibm_watsonx",
+          "required": false,
+          "types": [],
+          "dynamic": false,
+          "fieldClass": "DropdownInput"
+        },
+        {
+          "name": "project_id",
+          "required": false,
+          "types": [],
+          "dynamic": false,
+          "fieldClass": "StrInput"
+        },
+        {
+          "name": "system_prompt",
+          "required": false,
+          "types": [
+            "Message"
+          ],
+          "dynamic": false,
+          "fieldClass": "MultilineInput"
+        },
+        {
+          "name": "context_id",
+          "required": false,
+          "types": [
+            "Message"
+          ],
+          "dynamic": false,
+          "fieldClass": "MessageTextInput"
+        },
+        {
+          "name": "n_messages",
+          "required": false,
+          "types": [],
+          "dynamic": false,
+          "fieldClass": "IntInput"
+        },
+        {
+          "name": "max_tokens",
+          "required": false,
+          "types": [],
+          "dynamic": false,
+          "fieldClass": "IntInput"
+        },
+        {
+          "name": "format_instructions",
+          "required": false,
+          "types": [
+            "Message"
+          ],
+          "dynamic": false,
+          "fieldClass": "MultilineInput"
+        },
+        {
+          "name": "output_schema",
+          "required": false,
+          "types": [
+            "DataFrame",
+            "Table"
+          ],
+          "dynamic": false,
+          "fieldClass": "TableInput"
+        },
+        {
+          "name": "tools",
+          "required": false,
+          "types": [
+            "Tool"
+          ],
+          "dynamic": false,
+          "fieldClass": "HandleInput"
+        },
+        {
+          "name": "input_value",
+          "required": false,
+          "types": [
+            "Message"
+          ],
+          "dynamic": false,
+          "fieldClass": "MessageInput"
+        },
+        {
+          "name": "handle_parsing_errors",
+          "required": false,
+          "types": [],
+          "dynamic": false,
+          "fieldClass": "BoolInput"
+        },
+        {
+          "name": "max_iterations",
+          "required": false,
+          "types": [],
+          "dynamic": false,
+          "fieldClass": "IntInput"
+        },
+        {
+          "name": "stream",
+          "required": false,
+          "types": [],
+          "dynamic": false,
+          "fieldClass": "BoolInput"
+        },
+        {
+          "name": "add_current_date_tool",
+          "required": false,
+          "types": [],
+          "dynamic": false,
+          "fieldClass": "BoolInput"
+        },
+        {
+          "name": "add_calculator_tool",
+          "required": false,
+          "types": [],
+          "dynamic": false,
+          "fieldClass": "BoolInput"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "response",
+          "declaredTypes": [],
+          "returnAnnotation": "Message",
+          "activation": "unverified"
+        },
+        {
+          "name": "structured_response",
+          "declaredTypes": [
+            "Data"
+          ],
+          "returnAnnotation": "JSON",
+          "activation": "unverified"
+        }
+      ]
+    },
+    {
+      "type": "ChatOutput",
+      "displayName": "Chat Output",
+      "class": "lfx.components.input_output.chat_output.ChatOutput",
+      "sourceFile": "/Users/x/projects/langflow/src/lfx/src/lfx/components/input_output/chat_output.py",
+      "sourceSha256": "0aab1c78e1dc24ff5a066dc8db75a695aa46cb3ba8fbb13c34f70672c5f2b967",
+      "inputs": [
+        {
+          "name": "input_value",
+          "required": true,
+          "types": [
+            "Data",
+            "JSON",
+            "DataFrame",
+            "Table",
+            "Message"
+          ],
+          "dynamic": false,
+          "fieldClass": "HandleInput"
+        },
+        {
+          "name": "should_store_message",
+          "required": false,
+          "types": [],
+          "dynamic": false,
+          "fieldClass": "BoolInput"
+        },
+        {
+          "name": "sender",
+          "required": false,
+          "types": [],
+          "dynamic": false,
+          "fieldClass": "DropdownInput"
+        },
+        {
+          "name": "sender_name",
+          "required": false,
+          "types": [
+            "Message"
+          ],
+          "dynamic": false,
+          "fieldClass": "MessageTextInput"
+        },
+        {
+          "name": "session_id",
+          "required": false,
+          "types": [
+            "Message"
+          ],
+          "dynamic": false,
+          "fieldClass": "MessageTextInput"
+        },
+        {
+          "name": "context_id",
+          "required": false,
+          "types": [
+            "Message"
+          ],
+          "dynamic": false,
+          "fieldClass": "MessageTextInput"
+        },
+        {
+          "name": "data_template",
+          "required": false,
+          "types": [
+            "Message"
+          ],
+          "dynamic": false,
+          "fieldClass": "MessageTextInput"
+        },
+        {
+          "name": "clean_data",
+          "required": false,
+          "types": [],
+          "dynamic": false,
+          "fieldClass": "BoolInput"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "message",
+          "declaredTypes": [],
+          "returnAnnotation": "Message",
+          "activation": "unverified"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Metadata and return annotations do not establish active ports or behavior",
+    "No configuration values or credentials included",
+    "The local checkout may include changes beyond its HEAD; class source hashes are pinned"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "model": "F5TTS_v1_Base",
+  "device": "mps",
+  "seed": 42,
+  "steps": 32,
+  "speed": 0.95,
+  "cross_fade_duration": 0.15,
+  "cfg_strength": 2.0,
+  "sway_sampling_coef": -1.0,
+  "reference_audio": "esd:0015:sadness",
+  "reference_text": "This was the twenty fifth of november, seventeen eighty three.",
+  "text": "I keep collecting ideas, but none of them feels ready to begin."
+}

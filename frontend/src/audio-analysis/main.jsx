@@ -1,0 +1,2 @@
+import React from 'react';import{createRoot}from'react-dom/client';import{AudioAnalysis}from'./AudioAnalysis.jsx';import './style.css';
+try{const data=JSON.parse(decodeURIComponent(location.hash.slice(1)));createRoot(document.getElementById('root')).render(<AudioAnalysis url={data.url} label={data.label} role={data.role||'generated'} transcript={data.transcript||''} compact={!!data.compact}/>);}catch{document.getElementById('root').textContent='The recording could not be loaded.';}

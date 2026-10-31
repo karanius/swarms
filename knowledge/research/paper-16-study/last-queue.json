@@ -1,0 +1,18 @@
+{
+  "models": [
+    "index",
+    "vox",
+    "f5",
+    "dia"
+  ],
+  "text": "I need you to stay right here.",
+  "speaker": "0012",
+  "emotion": "anger",
+  "outcomes": [
+    "IndexTTS 2.5 \u2014 saved; 3.00 seconds. Inspect its output below.",
+    "VoxCPM2 \u2014 saved; 2.40 seconds. Inspect its output below.",
+    "F5-TTS v1 Base \u2014 saved; 2.20 seconds. Inspect its output below.",
+    "Dia 1.6B (MLX) \u2014 saved; 1.81 seconds. Inspect its output below."
+  ],
+  "current": "Queue finished. All four recordings saved; verified from the saved generation records."
+}

@@ -1,0 +1,19 @@
+{
+  "status": "prepared-not-executed-pending-coordinator-freeze",
+  "hash_basis": "Tool-reported byte-content SHA256 revisions; notebook independently verifies before evaluation",
+  "sha256": {
+    "inputs/cases-v1.json": "d129cc1625d60e1cf13d73171810c1bfd9f2550bd47bda9ba4c25606a32e3f2d",
+    "context/native_catalog.json": "aa54672f51053b7403d5b6a9d1ba063f1ce9ed54d55eda31539757c8da44b6ed",
+    "protocol-v2.md": "a275797f2ffb3a7315407ed5c94090f75dff0bb87533dd88bcb4453eeb768e3d",
+    "obligation_ledger.py": "9fccbffed2d7307ae1bf4affdb495ce6bdf6a8fd0dcb7f134f7d170c79cbddbe",
+    "obligation-experiment.ipynb": "f21073bd04676f272990b85bdba53cab4022de5a9a546832008e7b8b81fa7687"
+  },
+  "methods": ["B0", "B1", "ledger"],
+  "base_cases": 24,
+  "states": 96,
+  "decision_records": 288,
+  "output": "artifacts/obligation-results.json",
+  "output_policy": "exclusive creation; refuse overwrite",
+  "expected_decisions": "withheld outside workspace; not accessed",
+  "execution_authorized": false
+}

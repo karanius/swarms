@@ -1,0 +1,89 @@
+{
+  "status": "complete",
+  "scope": "bounded rule learning, retrospective masking and symbolic design proposals; not general composite generation",
+  "notebook": "knowledge/research/notebooks/Paper 6 - Rule Mining from Langflow Templates.ipynb",
+  "executedCells": 6,
+  "contractTests": 12,
+  "corruptionTests": 8,
+  "verification": {
+    "status": "passed",
+    "recountedRulesIncludingBaseline": 410,
+    "reconstructedTransactions": 8258,
+    "checkedIncidentWitnesses": 15366,
+    "sourceGraphs": 1107,
+    "verifiedCases": 402,
+    "proposalSpecifications": 58,
+    "requiredExposureRecords": 65,
+    "sourceFamilyOverlap": 0,
+    "qualification": "independent implementation recount; same corpus and developer, not external peer review or independent behavioral evaluation"
+  },
+  "results": {
+    "anyburl": {
+      "rules": 205,
+      "cases": 402,
+      "answered": 58,
+      "recovered": 34,
+      "coverage": 0.14427860696517414,
+      "recoveryPerCase": 0.0845771144278607,
+      "recoveryPerAnswer": 0.5862068965517241,
+      "familyMacroRecovery": 0.20314490086542009,
+      "families": 30
+    },
+    "association_guided": {
+      "rules": 61,
+      "cases": 402,
+      "answered": 50,
+      "recovered": 31,
+      "coverage": 0.12437810945273632,
+      "recoveryPerCase": 0.07711442786069651,
+      "recoveryPerAnswer": 0.62,
+      "familyMacroRecovery": 0.1981449008654201,
+      "families": 30
+    },
+    "exact_counting": {
+      "rules": 205,
+      "cases": 402,
+      "answered": 58,
+      "recovered": 34,
+      "coverage": 0.14427860696517414,
+      "recoveryPerCase": 0.0845771144278607,
+      "recoveryPerAnswer": 0.5862068965517241,
+      "familyMacroRecovery": 0.20314490086542009,
+      "families": 30
+    },
+    "center_frequency": {
+      "rules": 0,
+      "cases": 402,
+      "answered": 249,
+      "recovered": 43,
+      "coverage": 0.6194029850746269,
+      "recoveryPerCase": 0.10696517412935323,
+      "recoveryPerAnswer": 0.17269076305220885,
+      "familyMacroRecovery": 0.27967323839887276,
+      "families": 30
+    }
+  },
+  "proposals": {
+    "total": 58,
+    "catalogUnresolved": 0,
+    "allDeclaredTypeLabelsOverlap": 58,
+    "withDeclaredTypeConflict": 0
+  },
+  "wireProbe": {
+    "status": "infrastructure-failure",
+    "reason": "Java heap exhausted under the fixed 512MB limit",
+    "log": "knowledge/research/paper-6-corpus/relational/engine-batches/1793304404085332000/wire-probe/process.log",
+    "ruleFile": null,
+    "rawRules": null,
+    "withoutOccurrenceConstants": null,
+    "scope": "Training-only feasibility probe; different task, no masked-link performance comparison"
+  },
+  "originalAbstractPreserved": true,
+  "existingThreeExplorersPreserved": true,
+  "review": "internal AI static review R1-R3 addressed; no external academic or behavioral review",
+  "screenshot": "/tmp/paper6-rule-mining-results.png",
+  "sha256": {
+    "notebook": "fbcd2acdbcc50dabbcf2b7517f9e891ece66435067d40d0369f10bc91f4e4e83",
+    "summary": "96a9cf70ca8fad1851773903c87ed5478bf618ba1d3f6da2fc2d33d7897e3bd7"
+  }
+}

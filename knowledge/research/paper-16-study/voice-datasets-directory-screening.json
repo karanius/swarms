@@ -1,0 +1,35 @@
+{
+  "source": "https://raw.githubusercontent.com/jim-schwoebel/voice_datasets/master/README.md",
+  "source_sha256": "404280e9b8ee81edcce896c3a725b3825b82073fe7bf80b7979797018c610080",
+  "checked_date": "2026-10-31",
+  "screening": "Read entire directory and screened entries for a coherent English acted speaker reference library; this is not an audition or individual primary-source verification of every dataset.",
+  "section_entry_counts": {
+    "Speech datasets ": 83,
+    "Audio events and music ": 11
+  },
+  "scope": "Primary-source follow-up focused on plausible acted/emotive candidates. Noise, music, ASR, digit/command, speaker recognition and speech separation resources do not supply the required annotated performance library. Non-English candidates are not the initial English reference set.",
+  "primary_sources_checked": [
+    "https://github.com/CheyneyComputerScience/CREMA-D",
+    "https://github.com/tli725/JL-Corpus",
+    "https://zenodo.org/records/1188976",
+    "https://github.com/numediart/EmoV-DB",
+    "https://raw.githubusercontent.com/numediart/EmoV-DB/master/LICENSE.md",
+    "https://sail.usc.edu/iemocap/iemocap_release.htm",
+    "https://www.lab-msp.com/MSP/MSP-Improv.html",
+    "https://research.nii.ac.jp/src/en/Keio-ESD.html",
+    "https://github.com/declare-lab/MELD",
+    "https://keithito.com/LJ-Speech-Dataset/",
+    "https://www.openslr.org/136/"
+  ],
+  "access_limitations": [
+    "GEMEP landing page blocked; author-hosted paper describes pseudo-speech",
+    "EmoFilm Zenodo rate-limited",
+    "TESS institutional page denied access",
+    "SAVEE timed out",
+    "JL Kaggle page had no readable content; original author GitHub used instead"
+  ],
+  "candidate_from_directory": "CREMA-D: choose one actor using audio-only listener agreement, then audition before adoption",
+  "outside_directory_comparator": "EMNS: richer delivery descriptions and single speaker; do not declare winner without audio audition",
+  "audio_audition_performed": false,
+  "downloads_performed": false
+}

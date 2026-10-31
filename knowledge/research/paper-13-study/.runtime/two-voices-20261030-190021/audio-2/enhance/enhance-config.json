@@ -1,0 +1,1 @@
+{"device": "cpu", "threads": 8, "nfe": 32, "solver": "midpoint", "denoise_strength": 0.1, "temperature": 0.5, "seed": 42, "max_seconds": 120}

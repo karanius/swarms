@@ -1,0 +1,149 @@
+{
+  "asOf": "2026-10-30",
+  "scope": "Primary-source policy research; no account inspection or publishing",
+  "residency": "Unknown; timezone is not evidence",
+  "evidence": [
+    {
+      "id": "P01",
+      "claim": "Standard ad-revenue entry requires 1,000 subscribers and either 4,000 qualified public watch hours in 12 months or 10 million qualified Shorts views in 90 days. Shorts Feed hours do not count toward the hours route. Meeting thresholds triggers review, not acceptance. Country availability, no active strikes, two-step verification, advanced features and AdSense linkage also matter.",
+      "sources": [
+        {
+          "title": "YPP overview",
+          "url": "https://support.google.com/youtube/answer/72851?hl=en"
+        }
+      ],
+      "updateDateAndCaveats": "Not stated. Page separately announces terms updates effective 2027-02-01; do not treat them as already effective.",
+      "designImplication": "Assume zero advertising income before admission; reaching thresholds does not ensure approval.",
+      "accessed": "2026-10-30"
+    },
+    {
+      "id": "P02",
+      "claim": "YPP availability is country/region specific. New Russian sign-ups are paused under the page's notice.",
+      "sources": [
+        {
+          "title": "Availability list",
+          "url": "https://support.google.com/youtube/answer/7101720?hl=en"
+        }
+      ],
+      "updateDateAndCaveats": "Notice dated 2022-03-10; live country list checked on access date.",
+      "designImplication": "Confirm actual eligible payment/residence arrangement before selecting the business model. No workaround assumed.",
+      "accessed": "2026-10-30"
+    },
+    {
+      "id": "P03",
+      "claim": "Monetization requires original, authentic substance; generic, repetitive or mass-produced material is risky. Reused-content restrictions can apply despite permission and independently of copyright enforcement. Automated tools do not remove the requirement for creative vision and viewer value.",
+      "sources": [
+        {
+          "title": "Channel monetization policies",
+          "url": "https://support.google.com/youtube/answer/1311392?hl=en"
+        }
+      ],
+      "updateDateAndCaveats": "Explicit 2025-07-15 change renamed repetitious content to inauthentic content; page also contains newer substantive guidance without a separate date.",
+      "designImplication": "Reusing one production template at scale is not a business moat. Review substantive variation and value across the channel, as well as rights to each asset.",
+      "accessed": "2026-10-30"
+    },
+    {
+      "id": "P04",
+      "claim": "Realistic AI alterations or generated scenes, impersonation and AI music can require disclosure. Minor/non-realistic edits and production assistance have exceptions. Disclosure alone does not reduce earning eligibility; persistent nondisclosure can bring penalties.",
+      "sources": [
+        {
+          "title": "GenAI disclosure",
+          "url": "https://support.google.com/youtube/answer/14328491?hl=en"
+        }
+      ],
+      "updateDateAndCaveats": "Not stated; examples are non-exhaustive.",
+      "designImplication": "A per-video disclosure decision is required; neither \u201call AI forbidden\u201d nor \u201call AI exempt\u201d is accurate.",
+      "accessed": "2026-10-30"
+    },
+    {
+      "id": "P05",
+      "claim": "Authorized API upload supports metadata, scheduling and synthetic-media status. Current reference reports 100 calls/day and one unit in a dedicated upload bucket; it explicitly says unverified projects are not private-only. Omitted privacy can default public.",
+      "sources": [
+        {
+          "title": "videos.insert",
+          "url": "https://developers.google.com/youtube/data/reference/rest/v3/videos/insert"
+        }
+      ],
+      "updateDateAndCaveats": "**2026-10-15 UTC**; materially different from older quota/private-only guidance. Project limits and channel upload limits still need verification.",
+      "designImplication": "Any later uploader must explicitly choose private status and require publication approval. Recheck current project console and reference before implementation.",
+      "accessed": "2026-10-30"
+    },
+    {
+      "id": "P06",
+      "claim": "Analytics queries require authorization; monetary reports use monetary access. Reports stop at the last date for which every requested metric is available.",
+      "sources": [
+        {
+          "title": "Analytics reports.query",
+          "url": "https://developers.google.com/youtube/analytics/reference/reports/query"
+        }
+      ],
+      "updateDateAndCaveats": "Not stated in reviewed excerpt. API v2.",
+      "designImplication": "Analytics collection can be automated; results are not guaranteed instantaneous, and estimated revenue is not cash received.",
+      "accessed": "2026-10-30"
+    },
+    {
+      "id": "P07",
+      "claim": "Payment setup requires accurate personal/business and payment details; verification can involve identity documents, postal PIN and location-dependent phone verification.",
+      "sources": [
+        {
+          "title": "Payment information",
+          "url": "https://support.google.com/youtube/answer/47333?hl=en"
+        },
+        {
+          "title": "Identity verification",
+          "url": "https://support.google.com/youtube/answer/7568896?hl=en"
+        }
+      ],
+      "updateDateAndCaveats": "Not stated; identity page retrieved in United States locale, so details must be checked for the actual account country.",
+      "designImplication": "Human account owner must complete genuine verification. No meetings can be a requirement; anonymity cannot be promised.",
+      "accessed": "2026-10-30"
+    },
+    {
+      "id": "P08",
+      "claim": "Tax information, identity/address verification, missing payment method and compliance review can hold payments. Payment thresholds depend on reporting currency.",
+      "sources": [
+        {
+          "title": "Payment holds",
+          "url": "https://support.google.com/adsense/answer/1714364?hl=en"
+        },
+        {
+          "title": "Payment thresholds",
+          "url": "https://support.google.com/adsense/answer/1709871?hl=en"
+        }
+      ],
+      "updateDateAndCaveats": "Not stated.",
+      "designImplication": "Separate accrued/estimated revenue, payable balance and received cash. Confirm applicable tax information; this report makes no tax determination.",
+      "accessed": "2026-10-30"
+    },
+    {
+      "id": "P09",
+      "claim": "YouTube Shopping affiliate commissions require purchases, program eligibility and supported country status; YPP/subscriber requirements and content restrictions apply. Pilot rules may differ.",
+      "sources": [
+        {
+          "title": "Shopping affiliate overview",
+          "url": "https://support.google.com/youtube/answer/13376398?hl=en"
+        }
+      ],
+      "updateDateAndCaveats": "Not stated; currently lists 18 countries including US, UK and Vietnam. A listed timezone is not proof of eligibility.",
+      "designImplication": "Native Shopping is not an immediately available replacement for YPP. Other affiliate programs require their own review.",
+      "accessed": "2026-10-30"
+    },
+    {
+      "id": "P10",
+      "claim": "Gumroad supports digital products and memberships; listed direct-sale fee is 10% + $0.50, Discover sales 30%, with country-dependent payouts. It describes handling sales-tax collection/remittance as merchant of record. Its payment processor can require identity verification.",
+      "sources": [
+        {
+          "title": "Pricing",
+          "url": "https://gumroad.com/pricing"
+        },
+        {
+          "title": "Getting paid",
+          "url": "https://gumroad.com/help/article/13-getting-paid"
+        }
+      ],
+      "updateDateAndCaveats": "No page-wide update date; merchant-of-record statement effective 2025-01-01.",
+      "designImplication": "Model actual fees and payout eligibility. Sales-tax handling does not establish that the creator has no income-tax or business obligations.",
+      "accessed": "2026-10-30"
+    }
+  ]
+}

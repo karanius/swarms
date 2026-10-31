@@ -1,0 +1,16 @@
+{
+  "notebook": "/Users/x/projects/swarms/knowledge/research/notebooks/Paper 8 - Market Intelligence Instance.ipynb",
+  "sha256": "60cd82632291e9657bbae9f2043d707a83fd0eef4037e51dfdfb417a67876a4d",
+  "cells": 16,
+  "numbered_sections": 14,
+  "embedded_figures": 1,
+  "notebook_schema_valid": true,
+  "required_sections_present": true,
+  "paper7_preservation_verified": true,
+  "market_collection_run": false,
+  "experiments_run": false,
+  "native_components_grounded": false,
+  "review": "coordinator delivery audit; not independent scientific review",
+  "visible_delivery": "Native Jupyter browser verified: Paper 8 title, abstract, scope table; figure inspected separately",
+  "screenshot": "/tmp/paper8-market-intelligence.png"
+}

@@ -1,0 +1,21 @@
+{
+  "repository": "https://github.com/RVC-Boss/GPT-SoVITS",
+  "revision": "b4570b876f5c086819ba84e3215472733c6a7b70",
+  "audit_date": "2026-10-31",
+  "source_checkout": "/tmp/gpt-sovits-paper16-audit",
+  "method": "Static official-source inspection only",
+  "runtime_tested": false,
+  "models_downloaded": false,
+  "environment_installed": false,
+  "source_files": {
+    "README.md": "b680976764d99f61d647394df4948a5698591dc9de1dd802d57f4598fdbb02d1",
+    "LICENSE": "8a064eada186601fc602e45feef61c6abb62246d5ae9c3764dd1fc92d946c3c6",
+    "api_v2.py": "19c50d1b16e744b4fb511233a03dcc8949eead4527714d958638c079fd949d8e",
+    "config.py": "6c8e9417bd3555ccb6ced9418f6664b9ffabca25064519f52c4345569a1d9937",
+    "GPT_SoVITS/inference_webui.py": "e2dacac8475351fe4f818dcaa53971cb13a1f9ba276692edce0401ab44834cb8",
+    "GPT_SoVITS/TTS_infer_pack/TTS.py": "6a80acef239829a5af42916bb1f38598d9fd3ffc49d939601d3153a1f1484fd0",
+    "GPT_SoVITS/configs/tts_infer.yaml": "740342ddf7c1f6dbc50a3b1c4b19f56becd253b1877dd3d26721a1427c619033"
+  },
+  "existing_voicestudio_revision": "beeaae08204f0de5f49d4a087ef2b0ea8fecfcb9",
+  "scope": "Voice profile training, expressive references, native UI/API controls, Mac paths, software licence; not comprehensive security or checkpoint licence certification"
+}

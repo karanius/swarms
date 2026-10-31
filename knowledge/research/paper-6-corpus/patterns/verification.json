@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "rulesRecounted": 890,
+  "witnessPreviewsChecked": 62265,
+  "sourceGraphsChecked": 981,
+  "hashes": "topology index and every derived graph file digest matched frozen analysis",
+  "limits": "Static count and provenance checks, not independent behavioral evaluation or academic review."
+}

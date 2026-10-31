@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "recountedRulesIncludingBaseline": 410,
+  "reconstructedTransactions": 8258,
+  "checkedIncidentWitnesses": 15366,
+  "sourceGraphs": 1107,
+  "verifiedCases": 402,
+  "proposalSpecifications": 58,
+  "requiredExposureRecords": 65,
+  "sourceFamilyOverlap": 0,
+  "qualification": "independent implementation recount; same corpus and developer, not external peer review or independent behavioral evaluation"
+}

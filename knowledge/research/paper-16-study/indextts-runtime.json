@@ -1,0 +1,11 @@
+{
+  "runtime": "/Users/x/.local/share/swarms/indextts-paper16",
+  "python": "/Users/x/.local/share/swarms/indextts-paper16/venv/bin/python",
+  "code_revision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+  "model_revision": "c39ce5ba981572cb187443877ff559dfb246ce63",
+  "model": "IndexTeam/IndexTTS-2.5",
+  "source_repository": "https://github.com/index-tts/index-tts",
+  "installation": "base dependencies; no CUDA extras",
+  "inference": "native API from notebook; separate short-lived process",
+  "production_default_changed": false
+}

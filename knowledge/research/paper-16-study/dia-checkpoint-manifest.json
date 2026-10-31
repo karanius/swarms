@@ -1,0 +1,8 @@
+{
+  "repository": "https://huggingface.co/mlx-community/Dia-1.6B-fp16",
+  "revision": "4575dd9622ffa7dd14cc4342e1aac4bb7841904d",
+  "path": "/Users/x/.local/share/swarms/paper16-dia/Dia-1.6B-fp16",
+  "weights_bytes": 3222361673,
+  "verified_sha256": "b0a027738bc5a2361f2134f3bf372e4a5923133b13a31c326425c715a32127a6",
+  "config_sha256": "b111d877cf2c49f3a1986dd7549aacd1972c408ca61711b7888fc3128976aae0"
+}

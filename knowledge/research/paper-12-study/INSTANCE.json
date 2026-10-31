@@ -1,0 +1,98 @@
+{
+  "name": "Local illustrated research video",
+  "status": "verified for the bounded two-scene diagram-video mode",
+  "source_proposal": "INPUT-PROPOSAL.json",
+  "selected_approach": "image_generation alternative; structured diagram illustrations rather than diffusion imagery",
+  "process": {
+    "purpose": "Turn a bounded brief into a narrated illustrated MP4 with a source and execution trail",
+    "completion": "real local generation, scene timing and full video/audio decode pass"
+  },
+  "flow": [
+    "validate brief",
+    "local scene planning",
+    "render illustrations and narrate each scene",
+    "measure scene audio and create captions",
+    "encode clips and concatenate",
+    "decode and inspect playback"
+  ],
+  "composites": [
+    {
+      "name": "Scene production",
+      "inputs": [
+        "scene JSON"
+      ],
+      "outputs": [
+        "scene PNG",
+        "speech WAV",
+        "measured duration"
+      ],
+      "components": [
+        "diagram renderer",
+        "F5 adapter"
+      ]
+    },
+    {
+      "name": "Timed video assembly",
+      "inputs": [
+        "PNG/WAV scene pairs",
+        "measured durations"
+      ],
+      "outputs": [
+        "MP4",
+        "SRT",
+        "decode evidence"
+      ],
+      "components": [
+        "caption writer",
+        "FFmpeg encoder",
+        "decode verifier"
+      ]
+    }
+  ],
+  "components": [
+    {
+      "capability": "script_input",
+      "implementation": "brief validator and local scene planner",
+      "provenance": "new adapter; archived Text Input is a design reference, not executed or imported"
+    },
+    {
+      "capability": "image_generation",
+      "implementation": "Pillow diagram renderer driven by local Ollama scene JSON",
+      "provenance": "new bounded visual implementation; not diffusion images, photos or motion clips"
+    },
+    {
+      "capability": "narration",
+      "implementation": "pinned local F5-TTS model on MPS via existing repo-owned adapter",
+      "provenance": "actual code/model reuse from the local Money project; not execution of the archived OpenAI-named candidate"
+    },
+    {
+      "capability": "subtitles",
+      "implementation": "new scene-level captions from measured audio duration",
+      "provenance": "new adapter; AssemblyAI candidates are not used; no word-level forced alignment claimed"
+    },
+    {
+      "capability": "video_assembly",
+      "implementation": "local FFmpeg H.264/AAC scene encoding and concat",
+      "provenance": "existing binary reused; new orchestration adapter"
+    }
+  ],
+  "configuration": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "scenes": 2,
+    "local_model": "llama3.2:3b",
+    "voice_model": "F5TTS_v1_Base",
+    "voice_device": "mps",
+    "voice_steps": 16,
+    "publish": false
+  },
+  "hard_limits": [
+    "F5 pretrained weights have noncommercial license restrictions; not a monetization-ready voice",
+    "Upstream voice sample rights are not commercially cleared",
+    "Two-scene diagram-video prototype; not general video generation",
+    "Caption boundaries follow generated scene audio; no word-level alignment",
+    "No automatic Langflow graph assembly or execution",
+    "Local calls/offline asset loading are not OS-level network-isolation proof"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "auditions": [
+    {
+      "id": "ed0976c4-8b91-4c30-8d14-fec6e8a57c34",
+      "mode": "voice_design",
+      "text": "I have a story to tell you. Take a seat, and let us begin.",
+      "description": "A young adult woman with a bright, clear voice, a light higher pitch, an American accent and lively, friendly conversational delivery.",
+      "state": "saved",
+      "exact_words": true,
+      "raw_sha256": "f4fec69a2863f9aa287f1afaa844eae4f5027343448e3ddbb91cfe896f7a86a6",
+      "seconds": 4.32
+    },
+    {
+      "id": "28c7e2ce-704b-4bea-ba0f-974235f810c1",
+      "mode": "profile_reuse",
+      "text": "There is no need to rush. We have enough time to get every detail right.",
+      "description": "",
+      "state": "saved",
+      "exact_words": true,
+      "raw_sha256": "c8e95b6f735b64d88d2dcdeac23c05734c6931906014a23159d7636f794fa27e",
+      "seconds": 5.6
+    },
+    {
+      "id": "fa4ec5a6-c438-4df0-af4a-e2cb0c4b1796",
+      "mode": "profile_reuse",
+      "text": "The rain has stopped. We can open the windows and enjoy the quiet morning.",
+      "description": "",
+      "state": "saved",
+      "exact_words": true,
+      "raw_sha256": "e1ef5a51abf0c14e873a123feb57eeb41c6c6e5481860004c9c429e9dcbca302",
+      "seconds": 6.067020833333333
+    },
+    {
+      "id": "a0158d53-7021-4ad8-88d5-e72575387de7",
+      "mode": "voice_design",
+      "text": "I have a story to tell you. Take a seat, and let us begin.",
+      "description": "An older adult man with a low, resonant voice, a gentle textured tone, a clear American accent, and calm conversational delivery.",
+      "state": "saved",
+      "exact_words": true,
+      "raw_sha256": "473c234794ce7f88cecd88d2f057d2c372513eef5528dfe25799b653a8a7ba0a",
+      "seconds": 4.32
+    }
+  ],
+  "profiles": [
+    {
+      "id": "cb9b1940-7dcc-473f-9e04-beb7c8d3e2f7",
+      "name": "Studio test voice \u00b7 unreviewed",
+      "reference_sha256": "473c234794ce7f88cecd88d2f057d2c372513eef5528dfe25799b653a8a7ba0a"
+    }
+  ],
+  "tests": "Six isolated designer contracts, plus existing scene/casting/recorder checks. Native speech runs reported above are separate.",
+  "word_check": "Four of four native designer recordings matched the requested words in offline ASR.",
+  "presentation_and_identity": "Not listener-qualified. Different design hashes and successful words do not prove requested qualities or voice identity.",
+  "scope": "Designer page with immutable auditions and profile reuse. No conversation, existing-recording editing, exact age/pitch dials, or automatic scene casting.",
+  "existing_comparison_preserved": true
+}

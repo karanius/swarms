@@ -1,0 +1,9 @@
+{"event": "stage_started", "elapsed_seconds": 0.0, "node": "text", "kind": "text"}
+{"event": "stage_finished", "elapsed_seconds": 0.0, "node": "text", "kind": "text"}
+{"event": "stage_started", "elapsed_seconds": 0.0, "node": "voice", "kind": "voice"}
+{"event": "stage_finished", "elapsed_seconds": 9.966, "node": "voice", "kind": "voice", "audio_sha256": "1a7d5a67a9d6080103e69d3eb784cb3158ccaddb2b18148d2c9434a619248472"}
+{"event": "stage_started", "elapsed_seconds": 9.966, "node": "master", "kind": "master"}
+{"event": "stage_finished", "elapsed_seconds": 10.578, "node": "master", "kind": "master", "audio_sha256": "daf418629641efb4b02f2cc1df3fed5dd1656b28b6468a16710c6e7c97952f48"}
+{"event": "stage_started", "elapsed_seconds": 10.578, "node": "enhance", "kind": "enhance"}
+{"event": "stage_finished", "elapsed_seconds": 18.333, "node": "enhance", "kind": "enhance", "audio_sha256": "99b0b711445a2e022062bcab45f66dac16c7152f27eb36997fa3bec0daa80107"}
+{"event": "finished", "elapsed_seconds": 18.333, "audio_sha256": "99b0b711445a2e022062bcab45f66dac16c7152f27eb36997fa3bec0daa80107"}

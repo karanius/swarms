@@ -1,0 +1,46 @@
+{
+  "model": "dia",
+  "text": "[S1] I need you to stay right here. Take a slow breath and listen to me. We have plenty of time, and I will explain exactly what happens next. [S2]",
+  "speaker": "0012",
+  "emotion": "neutral",
+  "settings": {
+    "seed": 7,
+    "use_reference": false
+  },
+  "applied_settings": {
+    "seed": 7,
+    "use_reference": false
+  },
+  "parent_id": null,
+  "reference": {
+    "id": "esd:0012:neutral",
+    "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+    "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+    "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+    "transcript": "I have bunburyed all over goat on two separate occasions."
+  },
+  "created": 1793377572.776024,
+  "voice_conditioning": "uncontrolled",
+  "path": "/Users/x/projects/swarms/knowledge/research/paper-16-study/runs/take-20261030-232612-8e399239/native.wav",
+  "listening_path": "/Users/x/projects/swarms/knowledge/research/paper-16-study/runs/take-20261030-232612-8e399239/listening.wav",
+  "sha256": "12ee386aa7398f62c08e305439d04e9fb3dda068f9cfe02773eb5aa88adc1c6a",
+  "duration_seconds": 8.268041666666667,
+  "sample_rate": 24000,
+  "gain": 0.6116458029546622,
+  "loudness": {
+    "input_i": "-18.73",
+    "input_tp": "0.00",
+    "input_lra": "1.50",
+    "input_thresh": "-29.09",
+    "output_i": "-23.80",
+    "output_tp": "-5.22",
+    "output_lra": "1.00",
+    "output_thresh": "-34.18",
+    "normalization_type": "dynamic",
+    "target_offset": "0.80"
+  },
+  "id": "take-20261030-232612-8e399239",
+  "elapsed_seconds": 19.61712384223938,
+  "assessment": "Unrated; generation is not validation",
+  "url": "/research-jupyter/files/paper-16-audio/take-20261030-232612-8e399239.wav"
+}

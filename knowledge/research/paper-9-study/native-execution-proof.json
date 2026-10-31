@@ -1,0 +1,26 @@
+{
+  "scope": "Private compiled composite graphs; unchanged native PythonFunction executed intake through concrete resource bridge",
+  "compiled_graphs": 11,
+  "native_execution_output": {
+    "stage": "intake",
+    "artifacts": {
+      "plan": "8d2dea8e3f104fbba1791daec5b35d93@1",
+      "obligations": "e54b2ae4bd714791bcc91c98aefd017f@1"
+    }
+  },
+  "run_id": "4233012b83d049258fcc78d762df346c",
+  "catalog": {
+    "type": "PythonFunction",
+    "class": "lfx.components.prototypes.python_function.PythonFunctionComponent",
+    "source_path": "/Users/x/projects/langflow/src/lfx/src/lfx/components/prototypes/python_function.py",
+    "source_sha256": "d1fbbdc1ff53c3c3d514680db2bb30235dfc883cc03c8fcfce22558a4cef5ac9",
+    "catalog_sha256": "3b1623a865b6e20063a18308f7db30f4d13bda3caa37e4cc4da70b5761c9d87b",
+    "native_definition_unchanged": true,
+    "resource_boundary": "Native PythonFunction invokes pinned trusted local resource code. It is not an operating-system sandbox."
+  },
+  "not_claimed": [
+    "All native graphs executed",
+    "Full Langflow GUI run",
+    "Independent market reasoning validation"
+  ]
+}

@@ -1,0 +1,674 @@
+{
+  "schema_version": 1,
+  "business_id": "local-content-business",
+  "revision": 2,
+  "status": "provisional-design",
+  "goal": "Useful original content with sustainable economic profit, local production and no meetings",
+  "shared_planes": [
+    "configuration",
+    "components",
+    "composites",
+    "flows",
+    "processes"
+  ],
+  "instances": [
+    {
+      "id": "market-intelligence",
+      "name": "Market Intelligence",
+      "mandate": "Identify audience problems and evidence, not select the editorial slate",
+      "inputs": "Dated public observations, audience feedback and research questions",
+      "outputs": "Opportunity dossiers, counterevidence and confidence limits",
+      "planes": {
+        "configuration": {
+          "proposed": "Queries, audience/language, inclusion and deduplication policies",
+          "bindings": []
+        },
+        "components": {
+          "native_occurrences": [],
+          "status": "unresolved: requires pinned native catalog and real adapters"
+        },
+        "composites": {
+          "proposed_capabilities": "Evidence collection / provenance normalization / problem comparison",
+          "status": "authored candidate contracts"
+        },
+        "flows": {
+          "proposed": "Observation collection \u2192 deduplication \u2192 opportunity assessment",
+          "status": "not executable"
+        },
+        "processes": {
+          "proposed": "Accountable research cycle; source freshness and uncertainty review",
+          "status": "accountability design"
+        }
+      },
+      "state": "design",
+      "revision": 1
+    },
+    {
+      "id": "content-strategy",
+      "name": "Content Strategy",
+      "mandate": "Choose differentiated viewer outcomes and allocate content priorities",
+      "inputs": "Opportunity dossiers, performance reports, capacity and revenue constraints",
+      "outputs": "Versioned content briefs, acceptance rubrics and portfolio decisions",
+      "planes": {
+        "configuration": {
+          "proposed": "Audience promise, editorial standards, experiment allocation and topic exclusions",
+          "bindings": []
+        },
+        "components": {
+          "native_occurrences": [],
+          "status": "unresolved: requires pinned native catalog and real adapters"
+        },
+        "composites": {
+          "proposed_capabilities": "Opportunity-to-brief / portfolio prioritization / acceptance rubric",
+          "status": "authored candidate contracts"
+        },
+        "flows": {
+          "proposed": "Compare alternatives \u2192 select brief \u2192 reserve capacity \u2192 revise or cancel",
+          "status": "not executable"
+        },
+        "processes": {
+          "proposed": "Editorial planning and hypothesis review, with explicit owner approval gates",
+          "status": "accountability design"
+        }
+      },
+      "state": "design",
+      "revision": 1
+    },
+    {
+      "id": "production",
+      "name": "Production",
+      "mandate": "Produce reproducible original media against an accepted brief",
+      "inputs": "Approved content brief, rights constraints and resource bindings",
+      "outputs": "Private release package, provenance, QA and actual effort record",
+      "planes": {
+        "configuration": {
+          "proposed": "Pinned model/voice/tool revisions, scene schema and render profile",
+          "bindings": []
+        },
+        "components": {
+          "native_occurrences": [],
+          "status": "unresolved: requires pinned native catalog and real adapters"
+        },
+        "composites": {
+          "proposed_capabilities": "Evidence-to-script / script-to-scenes / narration / media QA",
+          "status": "authored candidate contracts"
+        },
+        "flows": {
+          "proposed": "Script \u2192 original demo/diagrams \u2192 audio \u2192 render \u2192 QA \u2192 package",
+          "status": "not executable"
+        },
+        "processes": {
+          "proposed": "Local production, maintenance and quality ownership; failed attempts retained",
+          "status": "accountability design"
+        }
+      },
+      "state": "design",
+      "revision": 1
+    },
+    {
+      "id": "distribution",
+      "name": "Distribution",
+      "mandate": "Manage channels, release state and audience measurement delivery",
+      "inputs": "Accepted package, publication authorization, channel policy and account binding",
+      "outputs": "Release receipts or blocked status, analytics snapshots and corrections",
+      "planes": {
+        "configuration": {
+          "proposed": "Channel/account references, metadata, timezone, disclosure and release policy",
+          "bindings": []
+        },
+        "components": {
+          "native_occurrences": [],
+          "status": "unresolved: requires pinned native catalog and real adapters"
+        },
+        "composites": {
+          "proposed_capabilities": "Package-to-channel metadata / release-state tracking / analytics collection",
+          "status": "authored candidate contracts"
+        },
+        "flows": {
+          "proposed": "Validate package \u2192 approval \u2192 private staging \u2192 authorized release \u2192 reconcile",
+          "status": "not executable"
+        },
+        "processes": {
+          "proposed": "Channel operations and takedown/correction lifecycle; publishing currently disabled",
+          "status": "accountability design"
+        }
+      },
+      "state": "design",
+      "revision": 1
+    },
+    {
+      "id": "monetization",
+      "name": "Monetization",
+      "mandate": "Define and maintain appropriate eligible revenue mechanisms",
+      "inputs": "Viewer value, audience signals, verified eligibility and product/offer evidence",
+      "outputs": "Versioned monetization plan, approved offers and attributed receipt claims",
+      "planes": {
+        "configuration": {
+          "proposed": "Allowed programs, offer terms, disclosures, product versions and support envelope",
+          "bindings": []
+        },
+        "components": {
+          "native_occurrences": [],
+          "status": "unresolved: requires pinned native catalog and real adapters"
+        },
+        "composites": {
+          "proposed_capabilities": "Eligibility assessment / relevant-offer selection / product delivery contract",
+          "status": "authored candidate contracts"
+        },
+        "flows": {
+          "proposed": "Evaluate route \u2192 accept or reject \u2192 configure offer \u2192 monitor/refund/update",
+          "status": "not executable"
+        },
+        "processes": {
+          "proposed": "Revenue-route governance; no guaranteed earnings or hidden custom service",
+          "status": "accountability design"
+        }
+      },
+      "state": "design",
+      "revision": 1
+    },
+    {
+      "id": "audience-care",
+      "name": "Audience Care",
+      "mandate": "Own feedback, corrections and asynchronous service exceptions",
+      "inputs": "Comments, questions, privacy/rights reports and optional customer issues",
+      "outputs": "Categorized signals, correction requests, resolutions and unresolved cases",
+      "planes": {
+        "configuration": {
+          "proposed": "Channels, response standards, consent/retention and escalation policy",
+          "bindings": []
+        },
+        "components": {
+          "native_occurrences": [],
+          "status": "unresolved: requires pinned native catalog and real adapters"
+        },
+        "composites": {
+          "proposed_capabilities": "Feedback triage / correction dossier / written response proposal",
+          "status": "authored candidate contracts"
+        },
+        "flows": {
+          "proposed": "Receive \u2192 classify \u2192 resolve within authority or escalate \u2192 close with record",
+          "status": "not executable"
+        },
+        "processes": {
+          "proposed": "Audience trust and optional product support; no calls or meetings required",
+          "status": "accountability design"
+        }
+      },
+      "state": "design",
+      "revision": 1
+    },
+    {
+      "id": "finance-performance",
+      "name": "Finance and Performance",
+      "mandate": "Reconcile money, total effort and business performance",
+      "inputs": "Cost events, release/cohort measures, attributable revenue and payout evidence",
+      "outputs": "Cost ledger, receipt reconciliation, budget envelope and decision reports",
+      "planes": {
+        "configuration": {
+          "proposed": "Currency, cost allocation, owner hour value, budget/time cap and income target",
+          "bindings": []
+        },
+        "components": {
+          "native_occurrences": [],
+          "status": "unresolved: requires pinned native catalog and real adapters"
+        },
+        "composites": {
+          "proposed_capabilities": "Cost reconciliation / revenue attribution / cohort comparison / budget forecast",
+          "status": "authored candidate contracts"
+        },
+        "flows": {
+          "proposed": "Ingest \u2192 reconcile \u2192 distinguish estimates/cash \u2192 assess \u2192 advise Operations",
+          "status": "not executable"
+        },
+        "processes": {
+          "proposed": "Financial control and performance learning; no tax advice or automatic spend",
+          "status": "accountability design"
+        }
+      },
+      "state": "design",
+      "revision": 1
+    }
+  ],
+  "handoff_contracts": [
+    {
+      "id": "h01",
+      "from": "market-intelligence",
+      "to": "content-strategy",
+      "artifact_type": "opportunity-dossier",
+      "acceptance": "Source IDs, audience/job, alternatives, counterevidence, freshness; not demand proof",
+      "required_envelope": [
+        "business_id",
+        "instance_id",
+        "artifact_id",
+        "revision",
+        "schema_version",
+        "status",
+        "source_refs",
+        "created_at",
+        "idempotency_key",
+        "owner",
+        "acceptance_record",
+        "access_classification"
+      ],
+      "rejection": "reject/quarantine with reason; preserve submitted version; return obligation to sender",
+      "implementation": "proposed contract, no transport implemented"
+    },
+    {
+      "id": "h02",
+      "from": "content-strategy",
+      "to": "production",
+      "artifact_type": "content-brief",
+      "acceptance": "Viewer outcome, evidence, originality, acceptance rubric, budget reservation; no unsupported claims",
+      "required_envelope": [
+        "business_id",
+        "instance_id",
+        "artifact_id",
+        "revision",
+        "schema_version",
+        "status",
+        "source_refs",
+        "created_at",
+        "idempotency_key",
+        "owner",
+        "acceptance_record",
+        "access_classification"
+      ],
+      "rejection": "reject/quarantine with reason; preserve submitted version; return obligation to sender",
+      "implementation": "proposed contract, no transport implemented"
+    },
+    {
+      "id": "h03",
+      "from": "production",
+      "to": "distribution",
+      "artifact_type": "release-package",
+      "acceptance": "Asset hashes, rights/QA, captions, disclosure proposal, version; no public release authority",
+      "required_envelope": [
+        "business_id",
+        "instance_id",
+        "artifact_id",
+        "revision",
+        "schema_version",
+        "status",
+        "source_refs",
+        "created_at",
+        "idempotency_key",
+        "owner",
+        "acceptance_record",
+        "access_classification"
+      ],
+      "rejection": "reject/quarantine with reason; preserve submitted version; return obligation to sender",
+      "implementation": "proposed contract, no transport implemented"
+    },
+    {
+      "id": "h04",
+      "from": "distribution",
+      "to": "audience-care",
+      "artifact_type": "release-context",
+      "acceptance": "Release ID/status and version for feedback routing, no excessive personal data",
+      "required_envelope": [
+        "business_id",
+        "instance_id",
+        "artifact_id",
+        "revision",
+        "schema_version",
+        "status",
+        "source_refs",
+        "created_at",
+        "idempotency_key",
+        "owner",
+        "acceptance_record",
+        "access_classification"
+      ],
+      "rejection": "reject/quarantine with reason; preserve submitted version; return obligation to sender",
+      "implementation": "proposed contract, no transport implemented"
+    },
+    {
+      "id": "h05",
+      "from": "distribution",
+      "to": "finance-performance",
+      "artifact_type": "analytics-snapshot",
+      "acceptance": "Platform, cohort, metric denominator, period, availability and source receipt",
+      "required_envelope": [
+        "business_id",
+        "instance_id",
+        "artifact_id",
+        "revision",
+        "schema_version",
+        "status",
+        "source_refs",
+        "created_at",
+        "idempotency_key",
+        "owner",
+        "acceptance_record",
+        "access_classification"
+      ],
+      "rejection": "reject/quarantine with reason; preserve submitted version; return obligation to sender",
+      "implementation": "proposed contract, no transport implemented"
+    },
+    {
+      "id": "h06",
+      "from": "audience-care",
+      "to": "market-intelligence",
+      "artifact_type": "audience-problem-signal",
+      "acceptance": "Deidentified problem evidence with uncertainty and source authority",
+      "required_envelope": [
+        "business_id",
+        "instance_id",
+        "artifact_id",
+        "revision",
+        "schema_version",
+        "status",
+        "source_refs",
+        "created_at",
+        "idempotency_key",
+        "owner",
+        "acceptance_record",
+        "access_classification"
+      ],
+      "rejection": "reject/quarantine with reason; preserve submitted version; return obligation to sender",
+      "implementation": "proposed contract, no transport implemented"
+    },
+    {
+      "id": "h07",
+      "from": "audience-care",
+      "to": "production",
+      "artifact_type": "correction-request",
+      "acceptance": "Affected version, claim and evidence, severity; proposal cannot rewrite history",
+      "required_envelope": [
+        "business_id",
+        "instance_id",
+        "artifact_id",
+        "revision",
+        "schema_version",
+        "status",
+        "source_refs",
+        "created_at",
+        "idempotency_key",
+        "owner",
+        "acceptance_record",
+        "access_classification"
+      ],
+      "rejection": "reject/quarantine with reason; preserve submitted version; return obligation to sender",
+      "implementation": "proposed contract, no transport implemented"
+    },
+    {
+      "id": "h08",
+      "from": "audience-care",
+      "to": "monetization",
+      "artifact_type": "customer-exception",
+      "acceptance": "Optional product/offer reference, issue and permitted resolution; refund requires authority",
+      "required_envelope": [
+        "business_id",
+        "instance_id",
+        "artifact_id",
+        "revision",
+        "schema_version",
+        "status",
+        "source_refs",
+        "created_at",
+        "idempotency_key",
+        "owner",
+        "acceptance_record",
+        "access_classification"
+      ],
+      "rejection": "reject/quarantine with reason; preserve submitted version; return obligation to sender",
+      "implementation": "proposed contract, no transport implemented"
+    },
+    {
+      "id": "h09",
+      "from": "monetization",
+      "to": "content-strategy",
+      "artifact_type": "revenue-constraints",
+      "acceptance": "Eligible routes, relevant offer, evidence and conflicts; editorial value preserved",
+      "required_envelope": [
+        "business_id",
+        "instance_id",
+        "artifact_id",
+        "revision",
+        "schema_version",
+        "status",
+        "source_refs",
+        "created_at",
+        "idempotency_key",
+        "owner",
+        "acceptance_record",
+        "access_classification"
+      ],
+      "rejection": "reject/quarantine with reason; preserve submitted version; return obligation to sender",
+      "implementation": "proposed contract, no transport implemented"
+    },
+    {
+      "id": "h10",
+      "from": "monetization",
+      "to": "distribution",
+      "artifact_type": "offer-metadata",
+      "acceptance": "Versioned approved links/disclosures or explicit no-offer; no fabricated endorsement",
+      "required_envelope": [
+        "business_id",
+        "instance_id",
+        "artifact_id",
+        "revision",
+        "schema_version",
+        "status",
+        "source_refs",
+        "created_at",
+        "idempotency_key",
+        "owner",
+        "acceptance_record",
+        "access_classification"
+      ],
+      "rejection": "reject/quarantine with reason; preserve submitted version; return obligation to sender",
+      "implementation": "proposed contract, no transport implemented"
+    },
+    {
+      "id": "h11",
+      "from": "monetization",
+      "to": "finance-performance",
+      "artifact_type": "revenue-claim",
+      "acceptance": "External transaction/payout ID, status, currency, gross/fees/refunds; reconcile before counting",
+      "required_envelope": [
+        "business_id",
+        "instance_id",
+        "artifact_id",
+        "revision",
+        "schema_version",
+        "status",
+        "source_refs",
+        "created_at",
+        "idempotency_key",
+        "owner",
+        "acceptance_record",
+        "access_classification"
+      ],
+      "rejection": "reject/quarantine with reason; preserve submitted version; return obligation to sender",
+      "implementation": "proposed contract, no transport implemented"
+    },
+    {
+      "id": "h12",
+      "from": "production",
+      "to": "finance-performance",
+      "artifact_type": "production-cost-event",
+      "acceptance": "Attempt ID, real resource/time, reject cost and owner effort; never successful-only",
+      "required_envelope": [
+        "business_id",
+        "instance_id",
+        "artifact_id",
+        "revision",
+        "schema_version",
+        "status",
+        "source_refs",
+        "created_at",
+        "idempotency_key",
+        "owner",
+        "acceptance_record",
+        "access_classification"
+      ],
+      "rejection": "reject/quarantine with reason; preserve submitted version; return obligation to sender",
+      "implementation": "proposed contract, no transport implemented"
+    },
+    {
+      "id": "h13",
+      "from": "finance-performance",
+      "to": "content-strategy",
+      "artifact_type": "performance-decision-report",
+      "acceptance": "Cost/value evidence, uncertainty and alternatives; no views-to-profit shortcut",
+      "required_envelope": [
+        "business_id",
+        "instance_id",
+        "artifact_id",
+        "revision",
+        "schema_version",
+        "status",
+        "source_refs",
+        "created_at",
+        "idempotency_key",
+        "owner",
+        "acceptance_record",
+        "access_classification"
+      ],
+      "rejection": "reject/quarantine with reason; preserve submitted version; return obligation to sender",
+      "implementation": "proposed contract, no transport implemented"
+    },
+    {
+      "id": "h14",
+      "from": "market-intelligence",
+      "to": "finance-performance",
+      "artifact_type": "domain-cost-event",
+      "acceptance": "Actual research, operator, maintenance, fees or service effort; unique event identity and shared-cost allocation; no internal transfer counted as revenue",
+      "required_envelope": [
+        "business_id",
+        "instance_id",
+        "artifact_id",
+        "revision",
+        "schema_version",
+        "status",
+        "source_refs",
+        "created_at",
+        "idempotency_key",
+        "owner",
+        "acceptance_record",
+        "access_classification"
+      ],
+      "rejection": "reject/quarantine with reason; preserve submitted version; return obligation to sender",
+      "implementation": "proposed contract, no transport implemented"
+    },
+    {
+      "id": "h15",
+      "from": "content-strategy",
+      "to": "finance-performance",
+      "artifact_type": "domain-cost-event",
+      "acceptance": "Actual research, operator, maintenance, fees or service effort; unique event identity and shared-cost allocation; no internal transfer counted as revenue",
+      "required_envelope": [
+        "business_id",
+        "instance_id",
+        "artifact_id",
+        "revision",
+        "schema_version",
+        "status",
+        "source_refs",
+        "created_at",
+        "idempotency_key",
+        "owner",
+        "acceptance_record",
+        "access_classification"
+      ],
+      "rejection": "reject/quarantine with reason; preserve submitted version; return obligation to sender",
+      "implementation": "proposed contract, no transport implemented"
+    },
+    {
+      "id": "h16",
+      "from": "distribution",
+      "to": "finance-performance",
+      "artifact_type": "domain-cost-event",
+      "acceptance": "Actual research, operator, maintenance, fees or service effort; unique event identity and shared-cost allocation; no internal transfer counted as revenue",
+      "required_envelope": [
+        "business_id",
+        "instance_id",
+        "artifact_id",
+        "revision",
+        "schema_version",
+        "status",
+        "source_refs",
+        "created_at",
+        "idempotency_key",
+        "owner",
+        "acceptance_record",
+        "access_classification"
+      ],
+      "rejection": "reject/quarantine with reason; preserve submitted version; return obligation to sender",
+      "implementation": "proposed contract, no transport implemented"
+    },
+    {
+      "id": "h17",
+      "from": "monetization",
+      "to": "finance-performance",
+      "artifact_type": "domain-cost-event",
+      "acceptance": "Actual research, operator, maintenance, fees or service effort; unique event identity and shared-cost allocation; no internal transfer counted as revenue",
+      "required_envelope": [
+        "business_id",
+        "instance_id",
+        "artifact_id",
+        "revision",
+        "schema_version",
+        "status",
+        "source_refs",
+        "created_at",
+        "idempotency_key",
+        "owner",
+        "acceptance_record",
+        "access_classification"
+      ],
+      "rejection": "reject/quarantine with reason; preserve submitted version; return obligation to sender",
+      "implementation": "proposed contract, no transport implemented"
+    },
+    {
+      "id": "h18",
+      "from": "audience-care",
+      "to": "finance-performance",
+      "artifact_type": "domain-cost-event",
+      "acceptance": "Actual research, operator, maintenance, fees or service effort; unique event identity and shared-cost allocation; no internal transfer counted as revenue",
+      "required_envelope": [
+        "business_id",
+        "instance_id",
+        "artifact_id",
+        "revision",
+        "schema_version",
+        "status",
+        "source_refs",
+        "created_at",
+        "idempotency_key",
+        "owner",
+        "acceptance_record",
+        "access_classification"
+      ],
+      "rejection": "reject/quarantine with reason; preserve submitted version; return obligation to sender",
+      "implementation": "proposed contract, no transport implemented"
+    }
+  ],
+  "operations": {
+    "role": "coordination over instances, not a sixth plane or an eighth specialized instance",
+    "responsibilities": [
+      "intent and priority arbitration",
+      "budget/time envelopes",
+      "approval and exception routing",
+      "versioned change coordination",
+      "stop/revise/continue decisions"
+    ],
+    "controls": {
+      "publication_enabled": false,
+      "spending_enabled": false,
+      "account_changes_enabled": false,
+      "monthly_cash_cap": null,
+      "owner_hours_cap": null,
+      "income_target": null
+    },
+    "unknown_gate": "No production commitment until relevant owner decisions and measured feasibility are recorded"
+  },
+  "shared_library": {
+    "native_definitions": "unchanged, pinned when verified",
+    "resource_bindings": "separate from native definitions",
+    "occurrences": "unique per instance, may reference the same definition; no silent collapse"
+  },
+  "business_evidence": "research only: no production, demand, sales or profitability validation"
+}

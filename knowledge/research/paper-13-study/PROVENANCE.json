@@ -1,0 +1,18 @@
+{
+  "source_files_sha256": {
+    "/Users/x/projects/money/runtimes/f5-tts/generate.py": "f2bd3e6ca40b3ffe2f6beaccb7e66d29cbe1e61b287410ffb4868dd42d561c5c",
+    "/Users/x/projects/money/runtimes/f5-tts/polish.py": "674f360571d55e5ad13e11f3dc8d7dbfa5f903312affbf9bb6d510834e0116bf",
+    "/Users/x/projects/money/runtimes/f5-tts/enhance.py": "23ad2aa9f5d125ce0f5dd7e865962357b9714674fe0f21c4a71ce03a08afc8ed",
+    "/Users/x/projects/money/runtimes/f5-tts/voice_presets.py": "6b604a90a9efbaf73edad667c9948e17c93a9a5f5848b98053c293d66846ed2e",
+    "/Users/x/projects/money/runtimes/f5-tts/models.lock.json": "4d3ee0bed8ac2268e254b415f905ec186e2ab524cfbbc8a356b9e9c3e44ad11a",
+    "/Users/x/projects/money/runtimes/f5-tts/esd.lock.json": "f1abf96d0fc09fcf4b0ffb2d9f07944f538e041aba0ed816fd332f7bd046b44a",
+    "/Users/x/projects/money/runtimes/f5-tts/enhance.lock.json": "591b930af7b213768f0d774308cfd2d3948462df60c0ded47914f2b3db7368ed",
+    "/Users/x/projects/money/runtimes/f5-tts/polish-config.json": "ad069b9b11b0ededa4af6c44389b0c6b529b4a0fb98337127603cfa5a5620cd4",
+    "/Users/x/projects/money/runtimes/f5-tts/enhance-config.json": "1abe70421d5b7f64c862edb4461cfa35bea6e568f626e08bf52f1005b367f018",
+    "/Users/x/projects/money/runtimes/f5-tts/voice-reference-config.json": "3cda586144e2f2bbc8685540f4720b51be6f6a3c1f308272f4af5c86de1de6af"
+  },
+  "implementation": "Existing Money engines via audio-workbench worker; original procedural frames by this study",
+  "voice_reference_note": "Prepared research samples, no commercial clearance established",
+  "visual_note": "No external images, clips, footage, or generative-motion model used",
+  "publishing": "Private local research output; no upload or publication performed"
+}

@@ -1,0 +1,37 @@
+{
+  "status": "implemented architecture-proposal research prototype",
+  "notebook": "/Users/x/projects/swarms/knowledge/research/notebooks/Paper 11 - Evidence-Backed Instance Architecture.ipynb",
+  "notebook_sha256": "db07758727183a7138c13ba3d438d89fc2b85b0781dfa877d0621db5560f7ca5",
+  "checks_passed": 22,
+  "preserved_papers": 10,
+  "local_video_coverage": {
+    "logical_requirement_groups": 5,
+    "provisionally_covered": 2,
+    "unfilled": 3,
+    "validated_implementations": 0
+  },
+  "baseline_known_conflicts": 2,
+  "qualified_selected_conflicts": 0,
+  "controlled_parent_preserved": true,
+  "browser_verification": {
+    "live_proposal": true,
+    "candidate_exclusion_revision": true,
+    "text_input_replaced_with_chat_input": true,
+    "final_original_query_shown": true,
+    "source_details_and_visual_hypothesis_rendered": true
+  },
+  "source_hashes": {
+    "proposal_ui.py": "aab3a4f9865a9a58c20a8c7d1b011279501db51dafe125784d8b638d9d67dee5",
+    "test_architecture.py": "fda25cf411ba56e890caf900680d922cb1e302a6b3580b56bbc1aacb2a1da618",
+    "architecture.py": "2cd4d44428918a5101a67e6ba5b8ef487c64cbfc0090875e355d864e822ce485",
+    "evaluate.py": "79ccdb010d9c4acc20586f0cfd6a4ac2a242f5ee325c41a5a8defb3f52613f62"
+  },
+  "screenshot": "/tmp/paper11-architecture-proposal.png",
+  "limits": [
+    "Authored media dependency profile, not a universal architecture planner",
+    "Zero verified runtime implementations",
+    "No automatic converter/semantic compatibility claim",
+    "No downloaded component code execution, assembly, media generation or deployment",
+    "Internal development cases and checks, not independent review"
+  ]
+}

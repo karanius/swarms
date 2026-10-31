@@ -1,0 +1,41 @@
+{
+  "sourceFilesUnchanged": true,
+  "sourceManifest": "runs/stream-1793332483880541000/source-before.json",
+  "sourceFilesCount": 13,
+  "events": 117,
+  "toolNames": [
+    "build_flow"
+  ],
+  "nativeExecutionToolObserved": false,
+  "customGenerationToolObserved": false,
+  "terminal": {
+    "event": "complete",
+    "data": {
+      "result": "Built and proposed a built-in-only flow for review and addition to the canvas\u2014**Chat Input \u2192 Triage Agent \u2192 Separate Review Agent \u2192 Chat Output**\u2014using OpenAI `gpt-6.1-sol`, with category, urgency, an \u226480-word draft reply, unsupported-claim critique, and a clearly labeled human-review suggestion; no messaging or ticket-update integrations were added, no execution or testing was performed, and the essential assumption is that categories and urgency rules remain provisional until you supply your organization\u2019s taxonomy, SLAs, and escalation policy.",
+      "type": "message",
+      "component": "Chat Output",
+      "component_id": "ChatOutput-_BDRz",
+      "success": true,
+      "verified": true,
+      "has_flow": true,
+      "continuation_expected": true,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_tokens": 4366
+      },
+      "duration_seconds": 70.334
+    }
+  },
+  "graphProposed": true,
+  "graphExecuted": false,
+  "limits": "Tool absence applies to the recorded normal-stream event surface; first headless route had limited observability. Upstream success/verified fields mean pipeline status, not task behavior.",
+  "graphTypes": [
+    "ChatInput",
+    "Agent",
+    "Agent",
+    "ChatOutput"
+  ],
+  "graphNodes": 4,
+  "graphEdges": 3
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "condition": "neutral",
+    "raw_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/opposite-tones-neutral-01/native.wav",
+    "duration_seconds": 5.44,
+    "raw_measurement": {
+      "input_i": "-17.7",
+      "input_tp": "-3.3",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_measurement": {
+      "input_i": "-23.0",
+      "input_tp": "-8.6",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/opposite-tones-neutral-01.wav",
+    "sha256": "9e5f7d99b2d0c859caea88eede1c2f1cb53eca30943895404ac8759389379123",
+    "target_lufs": -23.0
+  },
+  {
+    "condition": "switching",
+    "raw_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/opposite-tones-switching-01/native.wav",
+    "duration_seconds": 5.28,
+    "raw_measurement": {
+      "input_i": "-17.3",
+      "input_tp": "-2.7",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_measurement": {
+      "input_i": "-23.0",
+      "input_tp": "-8.4",
+      "meter": "FFmpeg ebur128"
+    },
+    "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/opposite-tones-switching-01.wav",
+    "sha256": "1fe468e87a34b7d61dabde985b1f9d57396dbd7b5e1fdf44bdc4b0bb0a8f2ac3",
+    "target_lufs": -23.0
+  }
+]

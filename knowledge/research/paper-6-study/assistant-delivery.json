@@ -1,0 +1,55 @@
+{
+  "status": "delivered-bounded-paper-and-native-research-assistant",
+  "at": "2026-10-29T21:05:27Z",
+  "paper": "knowledge/research/notebooks/Paper 6 - Rule Mining from Langflow Templates.ipynb",
+  "paperSha256": "1b6bf6e6996eed0c395c2aeef7d1498987145bffe6eea8a8e9519dadf2860539",
+  "runtime": "Native Langflow AgentComponent research tool profile; local API Proxy; isolated Paper6 draft",
+  "collaborationModes": [
+    "interview",
+    "debate",
+    "design",
+    "experiment",
+    "review",
+    "write",
+    "review"
+  ],
+  "conversationEntries": 14,
+  "serviceTests": {
+    "passed": 9,
+    "evidence": "services/paper6-assistant/.runtime/tests-final.log"
+  },
+  "experiment": {
+    "baseCases": 24,
+    "totalStates": 96,
+    "methodDecisions": 288,
+    "originalBaseActionAgreement": "23/24",
+    "checkerAssertions": 927,
+    "checkerPassed": 923,
+    "checkerDifferences": 4,
+    "difference": "C17 ASK versus REJECT_SCOPE in four dependent representations",
+    "resultSha256": "1960ab762f9912b67def5bfd50b2956e25d1f4a69bff6a416986e2fbfdcdbb9d",
+    "acceptancePassed": false,
+    "checkerCorruptionVariantsDetected": 8,
+    "exactReproducedBaseMethodDecisions": 72
+  },
+  "persistence": "Service restart preserved conversation/messages/events/draft byte hashes; browser reopen retained final review;17artifacts accessible",
+  "browserEvidence": [
+    "/tmp/paper6-assistant-in-jupyter.png",
+    "/tmp/paper6-assistant-study-results.png"
+  ],
+  "preserved": [
+    "original abstract",
+    "all3existing explorers",
+    "8prior executed code cells and outputs",
+    "original studyC results",
+    "first studyD outputs and oracle"
+  ],
+  "limits": [
+    "internal authored conformance, no external academic evaluation",
+    "no statistical significance or efficacy claim",
+    "unknown extra predicates, duplicate identity, route and transaction limitations",
+    "no component/provider/task runtime validation",
+    "no general multilayer generator",
+    "no new GitHub push performed by this task"
+  ]
+}

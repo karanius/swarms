@@ -1,0 +1,19 @@
+{
+  "requirements": {
+    "clarify_material_requirements": "Live clarify button returned memory/output/duration questions for an ambiguous Mac-video request; HTTP context test verifies explicit output choice adds required slots.",
+    "compare_complete_requested_approaches": "Two exclusive visual paths retain the four shared requested capabilities; source IDs verified; equal coverage explicitly has no evidence-backed winner.",
+    "diagnose_gaps": "Six diagnoses covered by controlled checks; live video request shows mixed evidence, hard conflicts and absent retrieval separately.",
+    "visual_proposal": "Live still/motion branch switch updates summary, diagram and blockers; dashed authored handoffs are labeled; mobile page width 390 with diagram overflow contained.",
+    "concrete_next_actions": "Video task names assembler input artifacts, source-search brief, and playable-output acceptance evidence; unknown requests instead require clarification; SQL/vector asks for handoff design.",
+    "revision_export": "Live revision changed Text Input to Chat Input; downloaded JSON contained two revisions, decision support and intact parent reference.",
+    "paper_updated": "Paper 11 includes live app link, method table, executed four-scenario evaluation and explicit limitations.",
+    "preservation": "All ten earlier notebook hashes match preserved-papers.json; no Paper 12 created.",
+    "testing": "22 existing engine tests, 12 decision-support tests, 3 live HTTP tests pass. Four exposed development scenarios pass the recorded contract checks.",
+    "usefulness_evaluation": "Author walkthrough can identify requested path, candidates, core gaps and next validation task directly from visible results. This is an inspection outcome, not independent human-comprehension proof."
+  },
+  "limitations": [
+    "Only authored media handoffs and requested OR branches are compared. Other domains retain missing-profile tasks.",
+    "No measured hardware fitness, cost optimization, licensing approval, generated-system execution or independent user study."
+  ],
+  "tests_passed": 37
+}

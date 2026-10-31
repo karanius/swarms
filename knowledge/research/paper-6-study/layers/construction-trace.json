@@ -1,0 +1,150 @@
+{
+  "trace": [
+    {
+      "step": 1,
+      "mode": "decompose",
+      "plane": "processes",
+      "unitIds": [
+        "process-triage"
+      ],
+      "status": "authored_proposal_inspected",
+      "meaning": "Read explicit authored requirements/membership; not autonomous decomposition discovery"
+    },
+    {
+      "step": 2,
+      "mode": "decompose",
+      "plane": "flows",
+      "unitIds": [
+        "flow-triage"
+      ],
+      "status": "authored_proposal_inspected",
+      "meaning": "Read explicit authored requirements/membership; not autonomous decomposition discovery"
+    },
+    {
+      "step": 3,
+      "mode": "decompose",
+      "plane": "composites",
+      "unitIds": [
+        "composite-draft",
+        "composite-review"
+      ],
+      "status": "authored_proposal_inspected",
+      "meaning": "Read explicit authored requirements/membership; not autonomous decomposition discovery"
+    },
+    {
+      "step": 4,
+      "mode": "decompose",
+      "plane": "components",
+      "unitIds": [
+        "ChatInput-88j6M",
+        "Agent-bW6gg",
+        "Agent-HUUnF",
+        "ChatOutput-Zd7Al"
+      ],
+      "status": "authored_proposal_inspected",
+      "meaning": "Read explicit authored requirements/membership; not autonomous decomposition discovery"
+    },
+    {
+      "step": 5,
+      "mode": "decompose",
+      "plane": "configuration",
+      "unitIds": [
+        "cfg-draft-model",
+        "cfg-draft-system_prompt",
+        "cfg-review-model",
+        "cfg-review-system_prompt"
+      ],
+      "status": "authored_proposal_inspected",
+      "meaning": "Read explicit authored requirements/membership; not autonomous decomposition discovery"
+    },
+    {
+      "step": 6,
+      "mode": "ground",
+      "plane": "components",
+      "unitIds": [
+        "ChatInput-88j6M",
+        "Agent-bW6gg",
+        "Agent-HUUnF",
+        "ChatOutput-Zd7Al"
+      ],
+      "status": "native_static_witness",
+      "meaning": "Saved native builder artifact checked; no component executed"
+    },
+    {
+      "step": 7,
+      "mode": "check",
+      "plane": "composites",
+      "unitIds": [
+        "composite-draft",
+        "composite-review"
+      ],
+      "status": "blocked",
+      "meaning": "Upper purpose/control/accountability remains proposed; no runtime promotion"
+    },
+    {
+      "step": 8,
+      "mode": "check",
+      "plane": "flows",
+      "unitIds": [
+        "flow-triage"
+      ],
+      "status": "blocked",
+      "meaning": "Upper purpose/control/accountability remains proposed; no runtime promotion"
+    },
+    {
+      "step": 9,
+      "mode": "check",
+      "plane": "processes",
+      "unitIds": [
+        "process-triage"
+      ],
+      "status": "blocked",
+      "meaning": "Upper purpose/control/accountability remains proposed; no runtime promotion"
+    }
+  ],
+  "stop": "ask_for_missing_evidence",
+  "questions": [
+    {
+      "obligation": "O-model-draft",
+      "question": "Which approved model/resource should supply this Agent? No resource is bound."
+    },
+    {
+      "obligation": "O-prompt-draft",
+      "question": "Approve or revise the proposed instructions before applying them."
+    },
+    {
+      "obligation": "O-model-review",
+      "question": "Which approved model/resource should supply this Agent? No resource is bound."
+    },
+    {
+      "obligation": "O-prompt-review",
+      "question": "Approve or revise the proposed instructions before applying them."
+    },
+    {
+      "obligation": "O-policy",
+      "question": "What is the approved triage policy and its version?"
+    },
+    {
+      "obligation": "O-human",
+      "question": "Who is accountable and what records explicit approval/rejection?"
+    },
+    {
+      "obligation": "O-control",
+      "question": "Which coordinator enforces bounded completion, timeout, cancellation and failure handling?"
+    },
+    {
+      "obligation": "O-source",
+      "question": "How does review receive the original ticket, not only the generated draft?"
+    },
+    {
+      "obligation": "O-behavior",
+      "question": "What independent tasks and acceptance evidence establish usefulness?"
+    },
+    {
+      "obligation": "O-retention",
+      "question": "What confidentiality, redaction and retention rules apply?"
+    }
+  ],
+  "structuralPass": true,
+  "claim": "Executed deterministic gates over authored candidate; not learned multilayer generation"
+}

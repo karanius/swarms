@@ -1,0 +1,15 @@
+{
+  "revision": 2,
+  "scope": "seven-instance whole-business design",
+  "notebook": "/Users/x/projects/swarms/knowledge/research/notebooks/Paper 7 - Local AI Social Media Business.ipynb",
+  "sha256": "7a25cda7dd22e8cd76f2d62aecaa58e83962d9b3d58889d70176ccb60eb70b76",
+  "cells": 24,
+  "executed_code_cells": 6,
+  "errors": 0,
+  "saved_png_figures": 2,
+  "design_checks": 8,
+  "economics_checks": 6,
+  "production_implemented": false,
+  "business_validated": false,
+  "published": false
+}

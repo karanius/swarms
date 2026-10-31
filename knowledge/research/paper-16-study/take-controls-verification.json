@@ -1,0 +1,98 @@
+{
+  "records": [
+    {
+      "id": "initial-index-0",
+      "model": "index",
+      "duration_seconds": 2.75156462585034,
+      "valid_audio": true,
+      "parent_id": null
+    },
+    {
+      "id": "initial-index-1",
+      "model": "index",
+      "duration_seconds": 2.948934240362812,
+      "valid_audio": true,
+      "parent_id": null
+    },
+    {
+      "id": "initial-index-2",
+      "model": "index",
+      "duration_seconds": 2.995374149659864,
+      "valid_audio": true,
+      "parent_id": null
+    },
+    {
+      "id": "initial-vox-0",
+      "model": "vox",
+      "duration_seconds": 2.4,
+      "valid_audio": true,
+      "parent_id": null
+    },
+    {
+      "id": "initial-vox-1",
+      "model": "vox",
+      "duration_seconds": 2.4,
+      "valid_audio": true,
+      "parent_id": null
+    },
+    {
+      "id": "take-20261030-221805-b7ac3031",
+      "model": "index",
+      "duration_seconds": 3.2275736961451247,
+      "valid_audio": true,
+      "parent_id": "initial-index-1"
+    },
+    {
+      "id": "take-20261030-221956-8544657a",
+      "model": "f5",
+      "duration_seconds": 2.005333333333333,
+      "valid_audio": true,
+      "parent_id": null
+    },
+    {
+      "id": "take-20261030-222057-b6d70665",
+      "model": "dia",
+      "duration_seconds": 6.642625,
+      "valid_audio": true,
+      "parent_id": null
+    },
+    {
+      "id": "take-20261030-222522-8d0ea9da",
+      "model": "vox",
+      "duration_seconds": 2.4,
+      "valid_audio": true,
+      "parent_id": "initial-vox-0"
+    },
+    {
+      "id": "take-20261030-222812-40846348",
+      "model": "index",
+      "duration_seconds": 3.297233560090703,
+      "valid_audio": true,
+      "parent_id": "initial-index-0"
+    }
+  ],
+  "all_four_engines_have_real_outputs": true,
+  "originals_intact": true,
+  "duration_scale_observed_ratio": 1.1983122362869199,
+  "changed_vox_steps_sent": 12,
+  "paper_1_to_15_unchanged": true,
+  "money_defaults_and_latest_unchanged": true,
+  "perceptual_ratings": null,
+  "limits": "Dia continuation length flagged; no automatic word/identity/emotion validation. Models have different control semantics.",
+  "browser_models_played": [
+    "index",
+    "vox",
+    "f5",
+    "dia"
+  ],
+  "browser_players_loaded": 7,
+  "browser_media_errors": 0,
+  "neutral_row_top_alignment_verified": true,
+  "original_version_playback_verified": true,
+  "notebook_saved": true,
+  "controller_execution_count": 15,
+  "output_scroll_metadata": null,
+  "expanded_output_visually_verified": true,
+  "state_tests_passed": 5,
+  "layout_review": "No blocking findings; desktop notebook only; accessibility runtime not qualified"
+}

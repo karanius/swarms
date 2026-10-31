@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f3f4f5">
+<title>Character Library · Paper 16</title>
+<link rel="preload" href="/character-ui/geist-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/character-ui/characters.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('paper16.character.theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{}</script>
+<script src="/character-ui/characters.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#workspace">Skip to workspace</a>
+<aside class="sidebar">
+ <a class="brand" href="/characters"><span class="brand-mark" data-icon="Waveform"></span><span>Character Library<small>Paper 16</small></span></a>
+ <nav id="navigation" aria-label="Main navigation"></nav>
+ <div id="character-navigation"></div>
+ <div class="sidebar-bottom"><div class="preview-note"><span data-icon="Info"></span><p>Interface preview<small>Audio is not connected.</small></p></div><button id="theme" class="theme-button" type="button"><span data-icon="Moon"></span><span>Switch appearance</span></button></div>
+</aside>
+<div class="app">
+ <header class="topbar"><nav id="breadcrumbs" aria-label="Breadcrumb"></nav><span class="local-label"><span data-icon="BookmarkSimple"></span>Browser draft</span></header>
+ <main id="workspace" tabindex="-1"><div id="message" role="status" aria-live="polite"></div><div id="content"></div></main>
+ <footer><span>Drafts are saved in this browser.</span><span>Audio tools are not connected.</span></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+{
+  "requirements": [
+    {
+      "requirement": "Notebook-first Paper 15, explicit hypotheses and runnable code",
+      "evidence": [
+        "knowledge/research/notebooks/Paper 15 - Directing a Voice Performance.ipynb",
+        "run_auditions.py",
+        "analyze_auditions.py"
+      ],
+      "status": "verified"
+    },
+    {
+      "requirement": "32 real paired auditions, fixed-text neutral controls, two speakers and contrasting deliveries",
+      "evidence": [
+        "plan.json",
+        "execution-ledger.json",
+        "analysis.json",
+        "runs/*/request.json",
+        "f5-runs/*/outputs.json"
+      ],
+      "status": "verified"
+    },
+    {
+      "requirement": "Actual supported direction paths and recorded conditions",
+      "evidence": [
+        "source-manifest.json",
+        "model-revisions-and-hashes.json",
+        "api_experiment.py"
+      ],
+      "status": "verified"
+    },
+    {
+      "requirement": "Audio integrity, timing, device evidence and matched listening",
+      "evidence": [
+        "independent-verification.json",
+        "api-inference-events.json",
+        "voxcpm-process-device-evidence.json",
+        "f5-runs/*/independent-verification.json"
+      ],
+      "status": "verified"
+    },
+    {
+      "requirement": "Preservation and honest unscored perceptual interpretation",
+      "evidence": [
+        "preservation.json",
+        "independent-verification.json",
+        "listening-review.json",
+        "knowledge/research/notebooks/Paper 15 - Directing a Voice Performance.ipynb"
+      ],
+      "status": "verified"
+    },
+    {
+      "requirement": "Rendered audition controls and actual playback",
+      "evidence": [
+        "notebook-playback.png"
+      ],
+      "status": "verified"
+    }
+  ],
+  "planned_and_completed_takes": 32,
+  "generation_failures": 0,
+  "executed_notebook_cells": 8,
+  "notebook_sha256": "c4a710a252665ae65199351d51c08f04781e42c6bd9f3c470752adb002d65a4e",
+  "perceptual_result": "Unscored: no claim of established emotion accuracy, identity fidelity, word accuracy or superior quality."
+}

@@ -1,0 +1,39 @@
+{
+  "reviewed_at": 1793438110.675468,
+  "scope": "Read-only audit of installed IndexTTS 2.5 implementation, official usage, example cases and published demo setup; no new inference or parameter changes in this audit.",
+  "sources": {
+    "usage": "https://github.com/index-tts/index-tts#3-adjust-emotion-intensity-with-emo_alpha",
+    "examples": "https://index-tts.github.io/index-tts2-5.github.io/#section2",
+    "separate_inputs": "https://index-tts.github.io/index-tts2-5.github.io/#section4",
+    "vectors": "https://index-tts.github.io/index-tts2-5.github.io/#section5",
+    "older_demo": "https://index-tts.github.io/index-tts2.github.io/"
+  },
+  "current_run": {
+    "engine": "IndexTTS 2.5",
+    "text": "I need you to stay right here.",
+    "emotion_strength": 1.0,
+    "guide": "CREMA-D actor 1006 anger",
+    "listener_result": "User reports less anger than the source example, with calmness remaining."
+  },
+  "established": [
+    "Installed path uses separate identity and emotion audio, matching the documented API pattern.",
+    "Current README documents reference strength from zero to one; our latest take is already at one.",
+    "The installed model computes base_emotion + alpha * (guide_emotion - base_emotion); at alpha one this part equals the guide embedding, not an exact acoustic performance copy. Other speaker-conditioning paths remain.",
+    "Official English anger examples show an emotional audio-prompt condition; the separate identity/emotion section is a distinct experiment.",
+    "Emotion vector control is an alternative mode. The installed implementation clears the external emotion audio when a vector is used; they must not be represented as simultaneously applied.",
+    "An older IndexTTS 2 demo includes a 1.4 emotion-weight condition, while current IndexTTS 2.5 usage documents zero to one. Treat any extrapolation as an unqualified experiment, not a production fix.",
+    "Official demonstrations contain multi-sentence examples. Our single-sentence gate is an adopted local experimental standard, not a documented model requirement."
+  ],
+  "official_english_anger_samples": {
+    "prompt": "https://index-tts.github.io/index-tts2-5.github.io/ex2/en/prompt_audio_11.aac",
+    "published_output": "https://index-tts.github.io/index-tts2-5.github.io/ex2/en/angry_high_uttid_11.aac",
+    "availability": "Both returned HTTP 200 with audio/aac content type. Audio was not downloaded locally or perceptually rated."
+  },
+  "next_controlled_comparison": [
+    "Replicate an official example setup locally before changing production settings.",
+    "Compare one performed angry clip used for both identity and emotion against the designed identity plus the same angry clip, holding target sentence and generation settings fixed.",
+    "Compare documented anger-vector control separately against audio-reference control.",
+    "Judge anger intensity, same-character identity, naturalness and words separately."
+  ],
+  "diagnosis": "Emotion/intensity transfer remains unqualified. These sources do not establish the cause of calmness or prove any proposed fix."
+}

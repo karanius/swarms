@@ -1,0 +1,161 @@
+{
+  "initial-index-1": {
+    "version_id": "take-20261030-221805-b7ac3031",
+    "text": "I need you to stay right here.",
+    "speaker": "0012",
+    "emotion": "anger",
+    "settings": {
+      "seed": 7,
+      "strength": 0.8,
+      "duration_scale": 1.0
+    }
+  },
+  "initial-index-2": {
+    "version_id": "initial-index-2",
+    "text": "I need you to stay right here.",
+    "speaker": "0012",
+    "emotion": "anger",
+    "settings": {
+      "seed": 7,
+      "strength": 1.0,
+      "duration_scale": 1.0
+    }
+  },
+  "initial-vox-1": {
+    "version_id": "initial-vox-1",
+    "text": "I need you to stay right here.",
+    "speaker": "0012",
+    "emotion": "anger",
+    "settings": {
+      "seed": 7,
+      "steps": 10,
+      "guidance": 2.0,
+      "direction": ""
+    }
+  },
+  "take-20261030-221956-8544657a": {
+    "version_id": "take-20261030-221956-8544657a",
+    "text": "I need you to stay right here.",
+    "speaker": "0012",
+    "emotion": "neutral",
+    "settings": {
+      "seed": 7,
+      "steps": 32,
+      "guidance": 2.0,
+      "speed": 1.0,
+      "sway": -1.0,
+      "crossfade": 0.15
+    }
+  },
+  "take-20261030-222057-b6d70665": {
+    "version_id": "take-20261030-232748-34082d34",
+    "text": "I need you to stay right here.",
+    "speaker": "0012",
+    "emotion": "neutral",
+    "settings": {
+      "seed": 7,
+      "use_reference": true
+    }
+  },
+  "initial-vox-0": {
+    "version_id": "take-20261030-222522-8d0ea9da",
+    "text": "I need you to stay right here.",
+    "speaker": "0011",
+    "emotion": "neutral",
+    "settings": {
+      "seed": 7,
+      "steps": 12,
+      "guidance": 2.0,
+      "direction": ""
+    }
+  },
+  "take-20261030-232812-b39fe0ed": {
+    "version_id": "take-20261030-232812-b39fe0ed",
+    "text": "We can take our time. Tell me what happened, and we will work through it together.",
+    "speaker": "0012",
+    "emotion": "neutral",
+    "settings": {
+      "seed": 11,
+      "use_reference": true
+    }
+  },
+  "initial-index-0": {
+    "version_id": "take-20261030-235221-e90e2d3c",
+    "text": "I need you to stay right here.",
+    "speaker": "0012",
+    "emotion": "neutral",
+    "settings": {
+      "seed": 7,
+      "strength": 0.9,
+      "duration_scale": 1.2
+    }
+  },
+  "take-20261031-000514-eb8a0f7a": {
+    "version_id": "take-20261031-000514-eb8a0f7a",
+    "text": "I need you to stay right here.",
+    "speaker": "0012",
+    "emotion": "anger",
+    "settings": {
+      "seed": 7,
+      "strength": 1.0,
+      "duration_scale": 1.0
+    }
+  },
+  "take-20261031-000543-0fb5668e": {
+    "version_id": "take-20261031-000543-0fb5668e",
+    "text": "I need you to stay right here.",
+    "speaker": "0012",
+    "emotion": "anger",
+    "settings": {
+      "seed": 7,
+      "steps": 10,
+      "guidance": 2.0,
+      "direction": ""
+    }
+  },
+  "take-20261031-000601-ee1c0d64": {
+    "version_id": "take-20261031-000601-ee1c0d64",
+    "text": "I need you to stay right here.",
+    "speaker": "0012",
+    "emotion": "anger",
+    "settings": {
+      "seed": 7,
+      "steps": 32,
+      "guidance": 2.0,
+      "speed": 1.0,
+      "sway": -1.0,
+      "crossfade": 0.15
+    }
+  },
+  "take-20261031-000615-fa3f3316": {
+    "version_id": "take-20261031-000615-fa3f3316",
+    "text": "I need you to stay right here.",
+    "speaker": "0012",
+    "emotion": "anger",
+    "settings": {
+      "seed": 7,
+      "use_reference": true
+    }
+  },
+  "take-20261031-001751-5dcde654": {
+    "version_id": "take-20261031-001751-5dcde654",
+    "text": "I need you to stay right here.",
+    "speaker": "0011",
+    "emotion": "happiness",
+    "settings": {
+      "seed": 7,
+      "use_reference": true
+    }
+  },
+  "take-20261031-001904-8a70198c": {
+    "version_id": "take-20261031-001904-8a70198c",
+    "text": "I need you to stay right here.",
+    "speaker": "0011",
+    "emotion": "happiness",
+    "settings": {
+      "seed": 7,
+      "strength": 1.0,
+      "duration_scale": 1.0
+    }
+  }
+}

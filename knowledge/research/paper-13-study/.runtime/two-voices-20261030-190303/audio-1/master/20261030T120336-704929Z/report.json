@@ -1,0 +1,122 @@
+{
+  "status": "passed",
+  "source": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/voice/outputs/20261030T120327-144529Z/speech.wav",
+  "source_sha256": "1a7d5a67a9d6080103e69d3eb784cb3158ccaddb2b18148d2c9434a619248472",
+  "original_copy_sha256": "1a7d5a67a9d6080103e69d3eb784cb3158ccaddb2b18148d2c9434a619248472",
+  "master_sha256": "daf418629641efb4b02f2cc1df3fed5dd1656b28b6468a16710c6e7c97952f48",
+  "profile": "Balanced",
+  "settings": {
+    "sample_rate": 48000,
+    "target_lufs": -16.0,
+    "true_peak_db": -1.5,
+    "loudness_range": 11,
+    "profiles": {
+      "Gentle": {
+        "highpass_hz": 60,
+        "mud_db": -1.0,
+        "presence_db": 0.5,
+        "ratio": 1.5,
+        "threshold_db": -18,
+        "attack_ms": 20,
+        "release_ms": 150,
+        "deess_intensity": 0.08
+      },
+      "Balanced": {
+        "highpass_hz": 70,
+        "mud_db": -2.0,
+        "presence_db": 1.5,
+        "ratio": 2.2,
+        "threshold_db": -18,
+        "attack_ms": 15,
+        "release_ms": 120,
+        "deess_intensity": 0.15
+      },
+      "Present": {
+        "highpass_hz": 80,
+        "mud_db": -2.5,
+        "presence_db": 2.0,
+        "ratio": 3.0,
+        "threshold_db": -20,
+        "attack_ms": 10,
+        "release_ms": 100,
+        "deess_intensity": 0.22
+      }
+    }
+  },
+  "pre_gain_db": -2.0548338932399943,
+  "pedalboard_version": "0.9.26",
+  "ffmpeg_version": "7.1",
+  "duration_seconds": 4.672,
+  "sample_rate": 48000,
+  "channels": 1,
+  "original_measurement": {
+    "input_i": "-17.40",
+    "input_tp": "-0.87",
+    "input_lra": "0.80",
+    "input_thresh": "-27.58",
+    "output_i": "-15.87",
+    "output_tp": "-1.50",
+    "output_lra": "0.80",
+    "output_thresh": "-26.07",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.13"
+  },
+  "master_measurement": {
+    "input_i": "-15.98",
+    "input_tp": "-1.50",
+    "input_lra": "0.80",
+    "input_thresh": "-26.16",
+    "output_i": "-15.65",
+    "output_tp": "-1.50",
+    "output_lra": "0.80",
+    "output_thresh": "-25.86",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.35"
+  },
+  "normalization_passes": {
+    "first_pass": {
+      "input_i": "-21.86",
+      "input_tp": "-7.17",
+      "input_lra": "0.90",
+      "input_thresh": "-32.04",
+      "output_i": "-15.62",
+      "output_tp": "-1.50",
+      "output_lra": "0.80",
+      "output_thresh": "-25.83",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.38"
+    },
+    "second_pass": {
+      "input_i": "-21.86",
+      "input_tp": "-7.17",
+      "input_lra": "0.90",
+      "input_thresh": "-32.04",
+      "output_i": "-15.98",
+      "output_tp": "-1.50",
+      "output_lra": "0.80",
+      "output_thresh": "-26.18",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.02"
+    }
+  },
+  "comparison_lufs": -21.0,
+  "comparison_loudness_difference_lu": 0.0,
+  "before_measurement": {
+    "input_i": "-21.0",
+    "input_tp": "-4.5",
+    "meter": "FFmpeg ebur128"
+  },
+  "after_measurement": {
+    "input_i": "-21.0",
+    "input_tp": "-6.6",
+    "meter": "FFmpeg ebur128"
+  },
+  "before": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/master/20261030T120336-704929Z/before-matched.wav",
+  "after": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/master/20261030T120336-704929Z/after-matched.wav",
+  "master": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/master/20261030T120336-704929Z/polished.wav",
+  "original": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/master/20261030T120336-704929Z/original.wav",
+  "comparison": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/master/20261030T120336-704929Z/before-then-after.wav",
+  "elapsed_seconds": 0.578,
+  "tts_rerun": false,
+  "limits": "No denoising or neural restoration. Mono output. 48 kHz conversion does not create missing detail. Listening determines quality; loudness target is our preset, not a platform requirement."
+}

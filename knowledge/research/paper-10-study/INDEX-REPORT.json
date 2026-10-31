@@ -1,0 +1,56 @@
+{
+  "corpus_index_sha256": "dd9c0730ac716ffa69ed1010f5001cf66e84f9e6b872234f46df2b5b42b10cf8",
+  "corpus_counts": {
+    "artifacts": 2942,
+    "statusCounts": {
+      "graph-artifact": 2942
+    },
+    "graphFormatCounts": {
+      "langflow": 2836,
+      "unknown": 51,
+      "mixed-or-ambiguous": 1,
+      "flowise": 54
+    },
+    "miningEligibleStaticCandidates": 1593,
+    "uniqueLangflowVerifiedByteContents": 1276,
+    "uniqueMiningEligibleByteContents": 1148,
+    "verifiedArtifacts": 2942,
+    "uniqueVerifiedByteContents": 1374,
+    "duplicateByteGroups": 307,
+    "duplicateProvenanceRecordsBeyondFirst": 1568,
+    "provenanceCompleteArtifacts": 2942,
+    "provenanceIncompleteArtifacts": 0,
+    "sourceBackedVerifiedArtifacts": 2942,
+    "unknownRevisionArtifacts": 3,
+    "fixtureArtifacts": 1246,
+    "nonfixtureArtifacts": 1696,
+    "recognizedGraphObjects": 3475,
+    "nonemptyGraphObjects": 3475,
+    "malformedGraphShapes": 1,
+    "malformedJsonArtifacts": 0,
+    "emptyGraphObjects": 0,
+    "graphObjectsWithStructuralIssues": 31,
+    "licenseLabels": {
+      "MIT": 2093,
+      "unknown": 774,
+      "Apache-2.0": 70,
+      "GPL-3.0": 5
+    }
+  },
+  "unique_eligible_contents": 1148,
+  "graphs_indexed": 1148,
+  "documents": 8382,
+  "kinds": {
+    "template": 1148,
+    "connected_group": 4954,
+    "component": 2280
+  },
+  "failures": [],
+  "exclusions": "Non-Langflow, fixtures and exact-byte duplicate copies excluded; all origins of included content retained.",
+  "embedding_binding": {
+    "model": "nomic-embed-text:latest",
+    "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+    "dimensions": 768
+  },
+  "generated_at": 1793350303.6523242
+}

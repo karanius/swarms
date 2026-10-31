@@ -58,7 +58,10 @@ export async function mount(element:HTMLElement){
  const supportedTypes=Object.keys(definitions);
  const saved=await fetch('/api/v1/flows/42232ff0-2ef7-46f2-bd61-6151e88cd5e5',{credentials:'include'});
  if(!saved.ok)throw new Error('Langflow flow unavailable ('+saved.status+').');
- const flow=await saved.json();
+ const savedFlow=await saved.json();
+ // Keep the backend flow identity, but never auto-load its saved graph.
+ // V2 starts as a fresh workbench; templates and Custom saves remain intact.
+ const flow={...savedFlow,data:{...savedFlow.data,nodes:[],edges:[],viewport:{x:0,y:0,zoom:1}}};
  useFlowStore.getState().setCurrentFlow(flow);
  useFlowsManagerStore.setState({currentFlowId:flow.id,currentFlow:flow});
  useDarkStore.setState({dark:true});

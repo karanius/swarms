@@ -1,0 +1,32 @@
+{
+  "v1": {
+    "structuralAssertions": 87,
+    "passed": true,
+    "errors": [],
+    "openObligations": 10,
+    "readiness": "blocked by explicit obligations",
+    "limits": "Authored structural contract, not learned hierarchy, useful behavior, scheduler implementation or human approval"
+  },
+  "v2": {
+    "structuralAssertions": 87,
+    "passed": true,
+    "errors": [],
+    "openObligations": 10,
+    "readiness": "blocked by explicit obligations",
+    "limits": "Authored structural contract, not learned hierarchy, useful behavior, scheduler implementation or human approval"
+  },
+  "revisionChecks": {
+    "occurrenceIdsStable": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "requirementsPreserved": true,
+    "obligationsPreserved": true,
+    "nativeGraphUnchanged": true,
+    "revisionParentCorrect": true
+  },
+  "evidence": "Static authored contracts only; configuration change proposed, not applied"
+}

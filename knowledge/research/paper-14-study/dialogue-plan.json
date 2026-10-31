@@ -1,0 +1,44 @@
+{
+  "title": "One Small Light",
+  "dia_text": "[S1] I keep collecting ideas, but none of them feels ready to begin. [S2] Then let\u2019s choose one small thing we can finish together, today. [S1] Just one? A light, a path, and a first step? [S2] Exactly. We don\u2019t need the whole bridge. We need somewhere safe to start.",
+  "seed": 42,
+  "turns": [
+    {
+      "speaker": "Mira",
+      "text": "I keep collecting ideas, but none of them feels ready to begin.",
+      "f5_reference": "esd:0015:sadness",
+      "voxcpm_proposed_instruction": "A thoughtful adult female voice, intimate and gently hesitant.",
+      "reference_audio": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-sadness.wav",
+      "reference_sha256": "04ce66ee24099fac28d82dbb23441e90083601cce577755353cc410b066ffcf6",
+      "reference_transcript": "This was the twenty fifth of november, seventeen eighty three."
+    },
+    {
+      "speaker": "Rowan",
+      "text": "Then let\u2019s choose one small thing we can finish together, today.",
+      "f5_reference": "esd:0012:neutral",
+      "voxcpm_proposed_instruction": "A warm adult male voice, calm, reassuring and conversational.",
+      "reference_audio": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+      "reference_sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+      "reference_transcript": "I have bunburyed all over goat on two separate occasions."
+    },
+    {
+      "speaker": "Mira",
+      "text": "Just one? A light, a path, and a first step?",
+      "f5_reference": "esd:0015:surprise",
+      "voxcpm_proposed_instruction": "A thoughtful adult female voice, intimate and gently hesitant.",
+      "reference_audio": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-surprise.wav",
+      "reference_sha256": "505df29de3430b36ad9f1f6d0e00106094616c8e3d05d466ac7fae817b4c05a8",
+      "reference_transcript": "This was the twenty fifth of november, seventeen eighty three."
+    },
+    {
+      "speaker": "Rowan",
+      "text": "Exactly. We don\u2019t need the whole bridge. We need somewhere safe to start.",
+      "f5_reference": "esd:0012:happiness",
+      "voxcpm_proposed_instruction": "A warm adult male voice, calm, reassuring and conversational.",
+      "reference_audio": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-happiness.wav",
+      "reference_sha256": "b5dc06b810118a6616cd2b49ffc4fe6f8e0552757d72fd38efed126979df0444",
+      "reference_transcript": "I have bunburyed all over goat on two separate occasions."
+    }
+  ],
+  "casting_limit": "Dia generates its native speaker identities; VoxCPM instructions are proposed conditioning, not verified identity or emotion control. F5 uses preserved emotion references."
+}

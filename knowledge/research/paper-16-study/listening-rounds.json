@@ -1,0 +1,46 @@
+{
+  "first_comparison": {
+    "record": {
+      "id": "085185bc-3544-4f1a-8afc-20ea582677fd",
+      "created": 1793420992.4743,
+      "mapping": {
+        "A": "7163c1a2-cfba-4cde-b32a-7d1452cae322",
+        "B": "433bd1f9-7b80-4a31-a30a-86b2d9f6f1e3"
+      },
+      "assessment": {
+        "preference": "B",
+        "notes": "User listening feedback: Option B was significantly better and felt emotional. Option A sounded flat-toned and robotic. Preference applies to these two generated scenes, not a universal dataset ranking.",
+        "saved": 1793421532.5507991,
+        "condition_labels_hidden": true
+      },
+      "revealed": true
+    },
+    "preserved_source_sha256": "7760d04e4742c661de011a2e09c237f6b13cf8c614fd9438197f32708296439f",
+    "interpretation": "User preferred CREMA-D over ESD for this scene because B felt more emotional; A sounded flat and robotic. Not a general dataset ranking."
+  },
+  "second_comparison": {
+    "record": {
+      "id": "50805581-5fed-4f13-8ea3-a6929040bb80",
+      "created": 1793430902.491436,
+      "mapping": {
+        "A": "433bd1f9-7b80-4a31-a30a-86b2d9f6f1e3",
+        "B": "4e3af77e-b063-4af7-84da-7a691b592601"
+      },
+      "assessment": {
+        "preference": "A",
+        "notes": "User listening feedback: Both versions were very good. Preferred Option A because it felt more theatrical and more presentable as a production. Option B was still very nice. This is a preference for these scene configurations, not a universal library ranking.",
+        "saved": 1793431039.997396,
+        "condition_labels_hidden": true
+      },
+      "revealed": true
+    },
+    "libraries": [
+      "crema",
+      "ravdess"
+    ],
+    "scene": "The last copy",
+    "generator": "IndexTTS 2.5",
+    "interpretation": "User found both good and preferred CREMA-D for more theatrical delivery and production presentation. RAVDESS remained a positive alternative. One listener and one scene; no universal ranking."
+  },
+  "current_takeaway": "CREMA-D preferred in both assessed comparisons for this scene using IndexTTS. Repeat with new text before adopting a general standard."
+}

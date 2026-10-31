@@ -1,0 +1,902 @@
+[
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"ChatInput\",\"message\",\"input_value\"]",
+      "[\"Agent\",\"out\",\"ChatOutput\",\"response\",\"input_value\"]"
+    ],
+    "neighborhoods": 219,
+    "graphs": 219,
+    "families": 40
+  },
+  {
+    "pair": [
+      "[\"Prompt\",\"in\",\"ChatInput\",\"message\",\"question\"]",
+      "[\"Prompt\",\"in\",\"ParseData\",\"text\",\"context\"]"
+    ],
+    "neighborhoods": 21,
+    "graphs": 20,
+    "families": 18
+  },
+  {
+    "pair": [
+      "[\"OpenAIModel\",\"in\",\"Prompt\",\"prompt\",\"input_value\"]",
+      "[\"OpenAIModel\",\"out\",\"ChatOutput\",\"text_output\",\"input_value\"]"
+    ],
+    "neighborhoods": 35,
+    "graphs": 33,
+    "families": 17
+  },
+  {
+    "pair": [
+      "[\"Prompt\",\"in\",\"ChatInput\",\"message\",\"question\"]",
+      "[\"Prompt\",\"in\",\"parser\",\"parsed_text\",\"context\"]"
+    ],
+    "neighborhoods": 36,
+    "graphs": 36,
+    "families": 15
+  },
+  {
+    "pair": [
+      "[\"SplitText\",\"in\",\"File\",\"message\",\"data_inputs\"]",
+      "[\"SplitText\",\"out\",\"AstraDB\",\"dataframe\",\"ingest_data\"]"
+    ],
+    "neighborhoods": 27,
+    "graphs": 27,
+    "families": 15
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"ChatInput\",\"message\",\"input_value\"]",
+      "[\"Agent\",\"in\",\"Prompt\",\"prompt\",\"system_prompt\"]"
+    ],
+    "neighborhoods": 65,
+    "graphs": 65,
+    "families": 14
+  },
+  {
+    "pair": [
+      "[\"ChatInput\",\"out\",\"AstraDB\",\"message\",\"search_query\"]",
+      "[\"ChatInput\",\"out\",\"Prompt\",\"message\",\"question\"]"
+    ],
+    "neighborhoods": 23,
+    "graphs": 23,
+    "families": 14
+  },
+  {
+    "pair": [
+      "[\"SplitText\",\"in\",\"File\",\"data\",\"data_inputs\"]",
+      "[\"SplitText\",\"out\",\"AstraDB\",\"chunks\",\"ingest_data\"]"
+    ],
+    "neighborhoods": 16,
+    "graphs": 16,
+    "families": 14
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"URLComponent\",\"component_as_tool\",\"tools\"]",
+      "[\"Agent\",\"out\",\"ChatOutput\",\"response\",\"input_value\"]"
+    ],
+    "neighborhoods": 62,
+    "graphs": 62,
+    "families": 13
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"Prompt\",\"prompt\",\"system_prompt\"]",
+      "[\"Agent\",\"out\",\"ChatOutput\",\"response\",\"input_value\"]"
+    ],
+    "neighborhoods": 83,
+    "graphs": 79,
+    "families": 12
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"CalculatorComponent\",\"component_as_tool\",\"tools\"]",
+      "[\"Agent\",\"out\",\"ChatOutput\",\"response\",\"input_value\"]"
+    ],
+    "neighborhoods": 62,
+    "graphs": 62,
+    "families": 12
+  },
+  {
+    "pair": [
+      "[\"OllamaModel\",\"in\",\"Prompt\",\"prompt\",\"input_value\"]",
+      "[\"OllamaModel\",\"out\",\"ChatOutput\",\"text_output\",\"input_value\"]"
+    ],
+    "neighborhoods": 21,
+    "graphs": 16,
+    "families": 12
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"Agent\",\"component_as_tool\",\"tools\"]",
+      "[\"Agent\",\"out\",\"ChatOutput\",\"response\",\"input_value\"]"
+    ],
+    "neighborhoods": 18,
+    "graphs": 17,
+    "families": 11
+  },
+  {
+    "pair": [
+      "[\"ChatInput\",\"out\",\"Chroma\",\"message\",\"search_query\"]",
+      "[\"ChatInput\",\"out\",\"Prompt\",\"message\",\"question\"]"
+    ],
+    "neighborhoods": 13,
+    "graphs": 13,
+    "families": 11
+  },
+  {
+    "pair": [
+      "[\"OpenAIModel\",\"in\",\"Prompt\",\"prompt\",\"system_message\"]",
+      "[\"OpenAIModel\",\"out\",\"ChatOutput\",\"text_output\",\"input_value\"]"
+    ],
+    "neighborhoods": 28,
+    "graphs": 26,
+    "families": 10
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"CalculatorComponent\",\"component_as_tool\",\"tools\"]",
+      "[\"Agent\",\"in\",\"ChatInput\",\"message\",\"input_value\"]"
+    ],
+    "neighborhoods": 24,
+    "graphs": 24,
+    "families": 10
+  },
+  {
+    "pair": [
+      "[\"OpenAIModel\",\"in\",\"ChatInput\",\"message\",\"input_value\"]",
+      "[\"OpenAIModel\",\"out\",\"ChatOutput\",\"text_output\",\"input_value\"]"
+    ],
+    "neighborhoods": 20,
+    "graphs": 20,
+    "families": 10
+  },
+  {
+    "pair": [
+      "[\"GroqModel\",\"in\",\"ChatInput\",\"message\",\"input_value\"]",
+      "[\"GroqModel\",\"out\",\"ChatOutput\",\"text_output\",\"input_value\"]"
+    ],
+    "neighborhoods": 15,
+    "graphs": 15,
+    "families": 10
+  },
+  {
+    "pair": [
+      "[\"GroqModel\",\"in\",\"Prompt Template\",\"prompt\",\"input_value\"]",
+      "[\"GroqModel\",\"out\",\"ChatOutput\",\"text_output\",\"input_value\"]"
+    ],
+    "neighborhoods": 11,
+    "graphs": 11,
+    "families": 10
+  },
+  {
+    "pair": [
+      "[\"Prompt Template\",\"in\",\"ChatInput\",\"message\",\"question\"]",
+      "[\"Prompt Template\",\"in\",\"ParserComponent\",\"parsed_text\",\"context\"]"
+    ],
+    "neighborhoods": 10,
+    "graphs": 10,
+    "families": 10
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"ChatInput\",\"message\",\"input_value\"]",
+      "[\"Agent\",\"in\",\"URLComponent\",\"component_as_tool\",\"tools\"]"
+    ],
+    "neighborhoods": 52,
+    "graphs": 52,
+    "families": 9
+  },
+  {
+    "pair": [
+      "[\"Prompt\",\"in\",\"ChatInput\",\"message\",\"question\"]",
+      "[\"Prompt\",\"out\",\"OllamaModel\",\"prompt\",\"input_value\"]"
+    ],
+    "neighborhoods": 13,
+    "graphs": 11,
+    "families": 9
+  },
+  {
+    "pair": [
+      "[\"AstraDB\",\"in\",\"ChatInput\",\"message\",\"search_query\"]",
+      "[\"AstraDB\",\"out\",\"ParserComponent\",\"search_results\",\"input_data\"]"
+    ],
+    "neighborhoods": 10,
+    "graphs": 10,
+    "families": 9
+  },
+  {
+    "pair": [
+      "[\"AstraDB\",\"in\",\"ChatInput\",\"message\",\"search_input\"]",
+      "[\"AstraDB\",\"out\",\"ParseData\",\"search_results\",\"data\"]"
+    ],
+    "neighborhoods": 9,
+    "graphs": 9,
+    "families": 9
+  },
+  {
+    "pair": [
+      "[\"LanguageModelComponent\",\"in\",\"Prompt\",\"prompt\",\"input_value\"]",
+      "[\"LanguageModelComponent\",\"out\",\"ChatOutput\",\"text_output\",\"input_value\"]"
+    ],
+    "neighborhoods": 73,
+    "graphs": 65,
+    "families": 8
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"Prompt\",\"prompt\",\"input_value\"]",
+      "[\"Agent\",\"out\",\"ChatOutput\",\"response\",\"input_value\"]"
+    ],
+    "neighborhoods": 65,
+    "graphs": 63,
+    "families": 8
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"Prompt Template\",\"prompt\",\"system_prompt\"]",
+      "[\"Agent\",\"out\",\"ChatOutput\",\"response\",\"input_value\"]"
+    ],
+    "neighborhoods": 53,
+    "graphs": 53,
+    "families": 8
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"ChatInput\",\"message\",\"input_value\"]",
+      "[\"Agent\",\"out\",\"Agent\",\"response\",\"input_value\"]"
+    ],
+    "neighborhoods": 48,
+    "graphs": 48,
+    "families": 8
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"Agent\",\"response\",\"input_value\"]",
+      "[\"Agent\",\"out\",\"ChatOutput\",\"response\",\"input_value\"]"
+    ],
+    "neighborhoods": 49,
+    "graphs": 43,
+    "families": 8
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"CalculatorComponent\",\"component_as_tool\",\"tools\"]",
+      "[\"Agent\",\"in\",\"URLComponent\",\"component_as_tool\",\"tools\"]"
+    ],
+    "neighborhoods": 19,
+    "graphs": 19,
+    "families": 8
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"Agent\",\"component_as_tool\",\"tools\"]",
+      "[\"Agent\",\"in\",\"ChatInput\",\"message\",\"input_value\"]"
+    ],
+    "neighborhoods": 13,
+    "graphs": 13,
+    "families": 8
+  },
+  {
+    "pair": [
+      "[\"LanguageModelComponent\",\"in\",\"Prompt Template\",\"prompt\",\"input_value\"]",
+      "[\"LanguageModelComponent\",\"out\",\"ChatOutput\",\"text_output\",\"input_value\"]"
+    ],
+    "neighborhoods": 11,
+    "graphs": 11,
+    "families": 8
+  },
+  {
+    "pair": [
+      "[\"Prompt\",\"in\",\"ChatInput\",\"message\",\"question\"]",
+      "[\"Prompt\",\"out\",\"OpenAIModel\",\"prompt\",\"input_value\"]"
+    ],
+    "neighborhoods": 11,
+    "graphs": 11,
+    "families": 8
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"Prompt\",\"prompt\",\"system_prompt\"]",
+      "[\"Agent\",\"out\",\"Agent\",\"component_as_tool\",\"tools\"]"
+    ],
+    "neighborhoods": 10,
+    "graphs": 8,
+    "families": 8
+  },
+  {
+    "pair": [
+      "[\"AstraDB\",\"in\",\"ChatInput\",\"message\",\"search_query\"]",
+      "[\"AstraDB\",\"out\",\"ParseData\",\"search_results\",\"data\"]"
+    ],
+    "neighborhoods": 8,
+    "graphs": 8,
+    "families": 8
+  },
+  {
+    "pair": [
+      "[\"ChatInput\",\"out\",\"AstraDB\",\"message\",\"search_query\"]",
+      "[\"ChatInput\",\"out\",\"Prompt Template\",\"message\",\"question\"]"
+    ],
+    "neighborhoods": 8,
+    "graphs": 8,
+    "families": 8
+  },
+  {
+    "pair": [
+      "[\"ParseData\",\"in\",\"AstraDB\",\"search_results\",\"data\"]",
+      "[\"ParseData\",\"out\",\"Prompt\",\"text\",\"context\"]"
+    ],
+    "neighborhoods": 8,
+    "graphs": 8,
+    "families": 8
+  },
+  {
+    "pair": [
+      "[\"LanguageModelComponent\",\"in\",\"ChatInput\",\"message\",\"input_value\"]",
+      "[\"LanguageModelComponent\",\"out\",\"ChatOutput\",\"text_output\",\"input_value\"]"
+    ],
+    "neighborhoods": 60,
+    "graphs": 58,
+    "families": 7
+  },
+  {
+    "pair": [
+      "[\"OpenAIModel\",\"in\",\"ChatInput\",\"message\",\"input_value\"]",
+      "[\"OpenAIModel\",\"in\",\"Prompt\",\"prompt\",\"system_message\"]"
+    ],
+    "neighborhoods": 22,
+    "graphs": 22,
+    "families": 7
+  },
+  {
+    "pair": [
+      "[\"parser\",\"in\",\"AstraDB\",\"dataframe\",\"input_data\"]",
+      "[\"parser\",\"out\",\"Prompt\",\"parsed_text\",\"context\"]"
+    ],
+    "neighborhoods": 15,
+    "graphs": 15,
+    "families": 7
+  },
+  {
+    "pair": [
+      "[\"AstraDB\",\"in\",\"ChatInput\",\"message\",\"search_query\"]",
+      "[\"AstraDB\",\"out\",\"parser\",\"dataframe\",\"input_data\"]"
+    ],
+    "neighborhoods": 14,
+    "graphs": 14,
+    "families": 7
+  },
+  {
+    "pair": [
+      "[\"ChatInput\",\"out\",\"Agent\",\"message\",\"input_value\"]",
+      "[\"ChatInput\",\"out\",\"AstraDB\",\"message\",\"search_query\"]"
+    ],
+    "neighborhoods": 11,
+    "graphs": 11,
+    "families": 7
+  },
+  {
+    "pair": [
+      "[\"GroqModel\",\"in\",\"Prompt\",\"prompt\",\"input_value\"]",
+      "[\"GroqModel\",\"out\",\"ChatOutput\",\"text_output\",\"input_value\"]"
+    ],
+    "neighborhoods": 11,
+    "graphs": 11,
+    "families": 7
+  },
+  {
+    "pair": [
+      "[\"Prompt\",\"in\",\"ParseData\",\"text\",\"context\"]",
+      "[\"Prompt\",\"out\",\"OpenAIModel\",\"prompt\",\"input_value\"]"
+    ],
+    "neighborhoods": 10,
+    "graphs": 10,
+    "families": 7
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"AstraDBToolComponent\",\"api_build_tool\",\"tools\"]",
+      "[\"Agent\",\"in\",\"ChatInput\",\"message\",\"input_value\"]"
+    ],
+    "neighborhoods": 8,
+    "graphs": 8,
+    "families": 7
+  },
+  {
+    "pair": [
+      "[\"Chroma\",\"in\",\"ChatInput\",\"message\",\"search_query\"]",
+      "[\"Chroma\",\"out\",\"ParseData\",\"search_results\",\"data\"]"
+    ],
+    "neighborhoods": 8,
+    "graphs": 8,
+    "families": 7
+  },
+  {
+    "pair": [
+      "[\"ParseData\",\"in\",\"AstraDB\",\"search_results\",\"data\"]",
+      "[\"ParseData\",\"out\",\"Prompt\",\"text\",\"results\"]"
+    ],
+    "neighborhoods": 8,
+    "graphs": 8,
+    "families": 7
+  },
+  {
+    "pair": [
+      "[\"SplitText\",\"in\",\"File\",\"message\",\"data_inputs\"]",
+      "[\"SplitText\",\"out\",\"Chroma\",\"dataframe\",\"ingest_data\"]"
+    ],
+    "neighborhoods": 8,
+    "graphs": 8,
+    "families": 7
+  },
+  {
+    "pair": [
+      "[\"ChatInput\",\"out\",\"AstraDB\",\"message\",\"search_input\"]",
+      "[\"ChatInput\",\"out\",\"Prompt\",\"message\",\"question\"]"
+    ],
+    "neighborhoods": 7,
+    "graphs": 7,
+    "families": 7
+  },
+  {
+    "pair": [
+      "[\"LanguageModelComponent\",\"in\",\"ChatInput\",\"message\",\"input_value\"]",
+      "[\"LanguageModelComponent\",\"in\",\"Prompt\",\"prompt\",\"system_message\"]"
+    ],
+    "neighborhoods": 70,
+    "graphs": 70,
+    "families": 6
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"Agent\",\"response\",\"input_value\"]",
+      "[\"Agent\",\"out\",\"Agent\",\"response\",\"input_value\"]"
+    ],
+    "neighborhoods": 33,
+    "graphs": 27,
+    "families": 6
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"ChatInput\",\"message\",\"input_value\"]",
+      "[\"Agent\",\"in\",\"Prompt Template\",\"prompt\",\"system_prompt\"]"
+    ],
+    "neighborhoods": 22,
+    "graphs": 21,
+    "families": 6
+  },
+  {
+    "pair": [
+      "[\"AstraDB\",\"in\",\"ChatInput\",\"message\",\"search_query\"]",
+      "[\"AstraDB\",\"out\",\"ParserComponent\",\"dataframe\",\"input_data\"]"
+    ],
+    "neighborhoods": 16,
+    "graphs": 16,
+    "families": 6
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"AstraDB\",\"component_as_tool\",\"tools\"]",
+      "[\"Agent\",\"out\",\"ChatOutput\",\"response\",\"input_value\"]"
+    ],
+    "neighborhoods": 8,
+    "graphs": 8,
+    "families": 6
+  },
+  {
+    "pair": [
+      "[\"Prompt Template\",\"in\",\"ChatInput\",\"message\",\"question\"]",
+      "[\"Prompt Template\",\"out\",\"LanguageModelComponent\",\"prompt\",\"input_value\"]"
+    ],
+    "neighborhoods": 8,
+    "graphs": 8,
+    "families": 6
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"AstraDBToolComponent\",\"api_build_tool\",\"tools\"]",
+      "[\"Agent\",\"out\",\"ChatOutput\",\"response\",\"input_value\"]"
+    ],
+    "neighborhoods": 8,
+    "graphs": 7,
+    "families": 6
+  },
+  {
+    "pair": [
+      "[\"Prompt\",\"in\",\"ChatInput\",\"message\",\"question\"]",
+      "[\"Prompt\",\"out\",\"Agent\",\"prompt\",\"system_prompt\"]"
+    ],
+    "neighborhoods": 8,
+    "graphs": 7,
+    "families": 6
+  },
+  {
+    "pair": [
+      "[\"ChatInput\",\"out\",\"Agent\",\"message\",\"input_value\"]",
+      "[\"ChatInput\",\"out\",\"Prompt\",\"message\",\"question\"]"
+    ],
+    "neighborhoods": 7,
+    "graphs": 7,
+    "families": 6
+  },
+  {
+    "pair": [
+      "[\"Prompt\",\"in\",\"ParseData\",\"text\",\"results\"]",
+      "[\"Prompt\",\"out\",\"Agent\",\"prompt\",\"system_prompt\"]"
+    ],
+    "neighborhoods": 7,
+    "graphs": 7,
+    "families": 6
+  },
+  {
+    "pair": [
+      "[\"Prompt\",\"in\",\"ParseData\",\"text\",\"context\"]",
+      "[\"Prompt\",\"out\",\"OllamaModel\",\"prompt\",\"input_value\"]"
+    ],
+    "neighborhoods": 7,
+    "graphs": 6,
+    "families": 6
+  },
+  {
+    "pair": [
+      "[\"ParseData\",\"in\",\"Chroma\",\"search_results\",\"data\"]",
+      "[\"ParseData\",\"out\",\"Prompt\",\"text\",\"context\"]"
+    ],
+    "neighborhoods": 6,
+    "graphs": 6,
+    "families": 6
+  },
+  {
+    "pair": [
+      "[\"ParserComponent\",\"in\",\"AstraDB\",\"search_results\",\"input_data\"]",
+      "[\"ParserComponent\",\"out\",\"Prompt Template\",\"parsed_text\",\"context\"]"
+    ],
+    "neighborhoods": 6,
+    "graphs": 6,
+    "families": 6
+  },
+  {
+    "pair": [
+      "[\"Prompt\",\"in\",\"ChatInput\",\"message\",\"question\"]",
+      "[\"Prompt\",\"in\",\"ParseData\",\"text\",\"results\"]"
+    ],
+    "neighborhoods": 6,
+    "graphs": 6,
+    "families": 6
+  },
+  {
+    "pair": [
+      "[\"LanguageModelComponent\",\"in\",\"Prompt\",\"prompt\",\"system_message\"]",
+      "[\"LanguageModelComponent\",\"out\",\"ChatOutput\",\"text_output\",\"input_value\"]"
+    ],
+    "neighborhoods": 77,
+    "graphs": 77,
+    "families": 5
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"ChatInput\",\"message\",\"input_value\"]",
+      "[\"Agent\",\"in\",\"TavilySearchComponent\",\"component_as_tool\",\"tools\"]"
+    ],
+    "neighborhoods": 46,
+    "graphs": 46,
+    "families": 5
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"APIRequest\",\"component_as_tool\",\"tools\"]",
+      "[\"Agent\",\"out\",\"ChatOutput\",\"response\",\"input_value\"]"
+    ],
+    "neighborhoods": 18,
+    "graphs": 17,
+    "families": 5
+  },
+  {
+    "pair": [
+      "[\"Prompt\",\"in\",\"ChatInput\",\"message\",\"question\"]",
+      "[\"Prompt\",\"out\",\"Agent\",\"prompt\",\"input_value\"]"
+    ],
+    "neighborhoods": 15,
+    "graphs": 15,
+    "families": 5
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"Prompt\",\"prompt\",\"input_value\"]",
+      "[\"Agent\",\"in\",\"TavilySearchComponent\",\"component_as_tool\",\"tools\"]"
+    ],
+    "neighborhoods": 14,
+    "graphs": 14,
+    "families": 5
+  },
+  {
+    "pair": [
+      "[\"Prompt\",\"in\",\"ChatInput\",\"message\",\"question\"]",
+      "[\"Prompt\",\"out\",\"LanguageModelComponent\",\"prompt\",\"input_value\"]"
+    ],
+    "neighborhoods": 14,
+    "graphs": 13,
+    "families": 5
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"MCPTools\",\"component_as_tool\",\"tools\"]",
+      "[\"Agent\",\"out\",\"ChatOutput\",\"response\",\"input_value\"]"
+    ],
+    "neighborhoods": 13,
+    "graphs": 13,
+    "families": 5
+  },
+  {
+    "pair": [
+      "[\"Prompt\",\"in\",\"parser\",\"parsed_text\",\"context\"]",
+      "[\"Prompt\",\"out\",\"LanguageModelComponent\",\"prompt\",\"input_value\"]"
+    ],
+    "neighborhoods": 13,
+    "graphs": 13,
+    "families": 5
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"AstraDB\",\"component_as_tool\",\"tools\"]",
+      "[\"Agent\",\"in\",\"ChatInput\",\"message\",\"input_value\"]"
+    ],
+    "neighborhoods": 7,
+    "graphs": 7,
+    "families": 5
+  },
+  {
+    "pair": [
+      "[\"Prompt\",\"in\",\"Memory\",\"messages_text\",\"memory\"]",
+      "[\"Prompt\",\"out\",\"OpenAIModel\",\"prompt\",\"system_message\"]"
+    ],
+    "neighborhoods": 7,
+    "graphs": 7,
+    "families": 5
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"AstraDBToolComponent\",\"api_build_tool\",\"tools\"]",
+      "[\"Agent\",\"out\",\"Agent\",\"component_as_tool\",\"tools\"]"
+    ],
+    "neighborhoods": 5,
+    "graphs": 5,
+    "families": 5
+  },
+  {
+    "pair": [
+      "[\"GroqModel\",\"in\",\"ChatInput\",\"message\",\"input_value\"]",
+      "[\"GroqModel\",\"in\",\"Prompt\",\"prompt\",\"system_message\"]"
+    ],
+    "neighborhoods": 5,
+    "graphs": 5,
+    "families": 5
+  },
+  {
+    "pair": [
+      "[\"GroqModel\",\"in\",\"Prompt\",\"prompt\",\"system_message\"]",
+      "[\"GroqModel\",\"out\",\"ChatOutput\",\"text_output\",\"input_value\"]"
+    ],
+    "neighborhoods": 5,
+    "graphs": 5,
+    "families": 5
+  },
+  {
+    "pair": [
+      "[\"Prompt\",\"in\",\"ChatInput\",\"message\",\"question\"]",
+      "[\"Prompt\",\"out\",\"GroqModel\",\"prompt\",\"input_value\"]"
+    ],
+    "neighborhoods": 5,
+    "graphs": 5,
+    "families": 5
+  },
+  {
+    "pair": [
+      "[\"StructuredOutput\",\"in\",\"Agent\",\"response\",\"input_value\"]",
+      "[\"StructuredOutput\",\"in\",\"LanguageModelComponent\",\"model_output\",\"llm\"]"
+    ],
+    "neighborhoods": 24,
+    "graphs": 22,
+    "families": 4
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"UnifiedWebSearch\",\"component_as_tool\",\"tools\"]",
+      "[\"Agent\",\"out\",\"ChatOutput\",\"response\",\"input_value\"]"
+    ],
+    "neighborhoods": 18,
+    "graphs": 18,
+    "families": 4
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"CalculatorComponent\",\"component_as_tool\",\"tools\"]",
+      "[\"Agent\",\"in\",\"Prompt\",\"prompt\",\"system_prompt\"]"
+    ],
+    "neighborhoods": 17,
+    "graphs": 17,
+    "families": 4
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"Prompt Template\",\"prompt\",\"system_prompt\"]",
+      "[\"Agent\",\"in\",\"URLComponent\",\"component_as_tool\",\"tools\"]"
+    ],
+    "neighborhoods": 16,
+    "graphs": 16,
+    "families": 4
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"APIRequest\",\"component_as_tool\",\"tools\"]",
+      "[\"Agent\",\"in\",\"ChatInput\",\"message\",\"input_value\"]"
+    ],
+    "neighborhoods": 15,
+    "graphs": 15,
+    "families": 4
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"Agent\",\"response\",\"input_value\"]",
+      "[\"Agent\",\"in\",\"Prompt\",\"prompt\",\"system_prompt\"]"
+    ],
+    "neighborhoods": 13,
+    "graphs": 13,
+    "families": 4
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"Prompt\",\"prompt\",\"system_prompt\"]",
+      "[\"Agent\",\"out\",\"Agent\",\"response\",\"input_value\"]"
+    ],
+    "neighborhoods": 13,
+    "graphs": 13,
+    "families": 4
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"Agent\",\"response\",\"input_value\"]",
+      "[\"Agent\",\"in\",\"URLComponent\",\"component_as_tool\",\"tools\"]"
+    ],
+    "neighborhoods": 9,
+    "graphs": 9,
+    "families": 4
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"URLComponent\",\"component_as_tool\",\"tools\"]",
+      "[\"Agent\",\"out\",\"Agent\",\"response\",\"input_value\"]"
+    ],
+    "neighborhoods": 9,
+    "graphs": 9,
+    "families": 4
+  },
+  {
+    "pair": [
+      "[\"OpenAIModel\",\"in\",\"Prompt\",\"prompt\",\"input_value\"]",
+      "[\"OpenAIModel\",\"in\",\"Prompt\",\"prompt\",\"system_message\"]"
+    ],
+    "neighborhoods": 10,
+    "graphs": 7,
+    "families": 4
+  },
+  {
+    "pair": [
+      "[\"LanguageModelComponent\",\"in\",\"Prompt Template\",\"prompt\",\"system_message\"]",
+      "[\"LanguageModelComponent\",\"out\",\"ChatOutput\",\"text_output\",\"input_value\"]"
+    ],
+    "neighborhoods": 7,
+    "graphs": 7,
+    "families": 4
+  },
+  {
+    "pair": [
+      "[\"Prompt\",\"in\",\"ChatInput\",\"message\",\"question\"]",
+      "[\"Prompt\",\"in\",\"Memory\",\"messages_text\",\"memory\"]"
+    ],
+    "neighborhoods": 7,
+    "graphs": 7,
+    "families": 4
+  },
+  {
+    "pair": [
+      "[\"ChatInput\",\"out\",\"Chroma\",\"message\",\"search_query\"]",
+      "[\"ChatInput\",\"out\",\"Prompt Template\",\"message\",\"question\"]"
+    ],
+    "neighborhoods": 6,
+    "graphs": 6,
+    "families": 4
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"AstraDB\",\"component_as_tool\",\"tools\"]",
+      "[\"Agent\",\"in\",\"URLComponent\",\"component_as_tool\",\"tools\"]"
+    ],
+    "neighborhoods": 5,
+    "graphs": 5,
+    "families": 4
+  },
+  {
+    "pair": [
+      "[\"AstraDB\",\"in\",\"EmbeddingModel\",\"embeddings\",\"embedding_model\"]",
+      "[\"AstraDB\",\"in\",\"SplitText\",\"dataframe\",\"ingest_data\"]"
+    ],
+    "neighborhoods": 5,
+    "graphs": 5,
+    "families": 4
+  },
+  {
+    "pair": [
+      "[\"Chroma\",\"in\",\"ChatInput\",\"message\",\"search_query\"]",
+      "[\"Chroma\",\"out\",\"parser\",\"dataframe\",\"input_data\"]"
+    ],
+    "neighborhoods": 5,
+    "graphs": 5,
+    "families": 4
+  },
+  {
+    "pair": [
+      "[\"parser\",\"in\",\"Chroma\",\"dataframe\",\"input_data\"]",
+      "[\"parser\",\"out\",\"Prompt\",\"parsed_text\",\"context\"]"
+    ],
+    "neighborhoods": 5,
+    "graphs": 5,
+    "families": 4
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"ChatInput\",\"message\",\"input_value\"]",
+      "[\"Agent\",\"out\",\"Agent\",\"component_as_tool\",\"tools\"]"
+    ],
+    "neighborhoods": 6,
+    "graphs": 4,
+    "families": 4
+  },
+  {
+    "pair": [
+      "[\"Prompt Template\",\"in\",\"ChatInput\",\"message\",\"question\"]",
+      "[\"Prompt Template\",\"out\",\"GroqModel\",\"prompt\",\"input_value\"]"
+    ],
+    "neighborhoods": 6,
+    "graphs": 4,
+    "families": 4
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"ChatInput\",\"message\",\"input_value\"]",
+      "[\"Agent\",\"in\",\"UnifiedWebSearch\",\"component_as_tool\",\"tools\"]"
+    ],
+    "neighborhoods": 39,
+    "graphs": 39,
+    "families": 3
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"ChatInput\",\"message\",\"input_value\"]",
+      "[\"Agent\",\"out\",\"StructuredOutput\",\"response\",\"input_value\"]"
+    ],
+    "neighborhoods": 18,
+    "graphs": 18,
+    "families": 3
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"ParserComponent\",\"parsed_text\",\"input_value\"]",
+      "[\"Agent\",\"out\",\"ChatOutput\",\"response\",\"input_value\"]"
+    ],
+    "neighborhoods": 18,
+    "graphs": 18,
+    "families": 3
+  },
+  {
+    "pair": [
+      "[\"Agent\",\"in\",\"UnifiedWebSearch\",\"component_as_tool\",\"tools\"]",
+      "[\"Agent\",\"out\",\"Agent\",\"response\",\"input_value\"]"
+    ],
+    "neighborhoods": 16,
+    "graphs": 16,
+    "families": 3
+  }
+]

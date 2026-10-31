@@ -1,0 +1,42 @@
+{
+  "method": "Seed-VC, pinned source, MPS, 30 steps, CFG 0.7, seed 65, length 1.0; offline inference",
+  "word_check": {
+    "expected": "Maybe tomorrow it will be cold.",
+    "transcript": "Maybe tomorrow it will be cold.",
+    "exact_words": true
+  },
+  "emotion_verdict": "Requires listening; acoustic metrics are not emotion approval",
+  "identity_verdict": "Requires listening",
+  "files": {
+    "actor": {
+      "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1006/1006_MTI_ANG_XX.wav",
+      "sha256": "d8a324371c17b8a9371e79c02642f1c7f1782b3c838de3346dc2904c482d27a9",
+      "duration_seconds": 3.7704375,
+      "peak": 1.0,
+      "finite": true,
+      "clipped_fraction": 0.0003315265138329438,
+      "sample_rate": 16000
+    },
+    "santa_identity": {
+      "path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/82a4a0db-dfd8-4389-8b9b-c6553ab5d92f/voice.wav",
+      "sha256": "b609b09561e6e2973d7fe54a357856e79f053550faa6e098e04ed82144e24ef0",
+      "duration_seconds": 4.0,
+      "peak": 0.41183602809906006,
+      "finite": true,
+      "clipped_fraction": 0.0,
+      "sample_rate": 48000
+    },
+    "converted": {
+      "path": "/Users/x/projects/swarms/.planning/sketches/001-santa-audition/conversion-proof/offline/vc_1006_MTI_ANG_XX_voice_1.0_30_0.7.wav",
+      "sha256": "45e45c8af7e03dec3490ed51befe0478993237f0ca2a3fea503eb05c646fc182",
+      "duration_seconds": 3.7616326530612243,
+      "peak": 0.5165976881980896,
+      "finite": true,
+      "clipped_fraction": 0.0,
+      "sample_rate": 22050
+    }
+  },
+  "rms_envelope_correlation": 0.8880252377666771,
+  "duration_ratio": 0.9976793144031694,
+  "signal_metrics_note": "Peaks and clipping fractions use original decoded samples. RMS envelope correlation uses 16 kHz analysis copies; it does not prove emotion."
+}

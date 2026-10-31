@@ -1,0 +1,173 @@
+{
+  "config": {
+    "splitSalt": "paper6-relational-v1:",
+    "evaluationModulo": 5,
+    "evaluationBucket": 0,
+    "attempts": 3,
+    "secondsPerAttempt": 20,
+    "workers": 1,
+    "minimumJoint": 5,
+    "minimumSourceGroups": 2,
+    "minimumConfidence": 0.5,
+    "minimumCenterLift": 1.05,
+    "guidedPairs": 100,
+    "maximumCases": 1000,
+    "scope": "retrospective source-group separated exploration; previously exposed corpus"
+  },
+  "freeze": {
+    "transactionsSha256": "99d6994fc1ddf8f7d028680abfd756bd3c7e081a222b4b43ba7f85206892964b",
+    "previousFreeze": {
+      "derivedGraphFilesSha256": "f01b1a99a0a68255befe85f715771fd7a01ca38baf40949e8d15e859b0a30828",
+      "topologyIndexSha256": "62044a0b2eb184f778717b53e4e3e917a6af166145c48fef35c43d9850b2c50a",
+      "corpusIndexSha256": "dd9c0730ac716ffa69ed1010f5001cf66e84f9e6b872234f46df2b5b42b10cf8",
+      "extractorSha256": "af5799f6534f6fd9b90f3c51135909396654862012ee8f0c49445855e84d427c",
+      "python": "3.12.15",
+      "mlxtend": "0.23.4",
+      "pandas": "2.3.3",
+      "config": {
+        "minimumJointNeighborhoods": 5,
+        "maxItemsetSize": 2,
+        "maximumDistinctIncidentFeatures": 24,
+        "maximumDisplayedRules": 1000,
+        "scope": "all nonfixture extracted graphs; descriptive exploration; no held-out evaluation",
+        "absence": "no matching recorded incident edge in an assessable saved neighborhood; not a behavioral negative"
+      }
+    },
+    "implementationSha256": "7c30a0e00ee57ac81a56f63a8998aff337bfd3c86c5f955b2527586509e0e24d",
+    "protocolSha256": "b4200ef6b09773c559ae8ec962d43ed892616295b50fd4bd74842f4e455a5e25",
+    "batch": "knowledge/research/paper-6-corpus/relational/engine-batches/1793304404085332000",
+    "trainingFactsSha256": "8db51b944d52c6fba452d879c1305773129dfc609205f60cd4855de2d4e48aa1",
+    "pyclauseCommit": "87c82ec3dd904767741a493dcbdf7605377d4535",
+    "anyburlJarSha256": "b087704cb44ffef76db3f7cdf0de6f5badd19db67533a8ec5b2246fa6d186177",
+    "python": "3.12.15"
+  },
+  "split": {
+    "trainNeighborhoods": 7548,
+    "evaluationNeighborhoods": 710,
+    "trainGraphs": 1020,
+    "evaluationGraphs": 87,
+    "trainFamilies": 170,
+    "evaluationFamilies": 30,
+    "familyOverlap": 0,
+    "cases": 402,
+    "maskedTargetInTrainingVocabulary": 167,
+    "unmaskedEvaluationNeighborhoods": 308
+  },
+  "learning": {
+    "runs": [
+      {
+        "seconds": 22.327,
+        "returncode": 0,
+        "ruleFileSha256": "14f512d60809ca4439fa1fa4792266df42ba519e82b71ca319a0d859461598fe",
+        "ruleFile": "knowledge/research/paper-6-corpus/relational/engine-batches/1793304404085332000/feature-run-1/rules.txt",
+        "log": "knowledge/research/paper-6-corpus/relational/engine-batches/1793304404085332000/feature-run-1/process.log",
+        "rawLines": 13846,
+        "acceptedLanguageUnique": 2296,
+        "thresholdQualified": 202
+      },
+      {
+        "seconds": 22.345,
+        "returncode": 0,
+        "ruleFileSha256": "62c91a91397e99a28b5838017a3f632b358c4fd90b001f157d559bc135d0a4c5",
+        "ruleFile": "knowledge/research/paper-6-corpus/relational/engine-batches/1793304404085332000/feature-run-2/rules.txt",
+        "log": "knowledge/research/paper-6-corpus/relational/engine-batches/1793304404085332000/feature-run-2/process.log",
+        "rawLines": 22516,
+        "acceptedLanguageUnique": 2589,
+        "thresholdQualified": 205
+      },
+      {
+        "seconds": 22.356,
+        "returncode": 0,
+        "ruleFileSha256": "5512e9b44122ad85711b44ca630b12b8731c36810b4110b79a2b434216cdf33f",
+        "ruleFile": "knowledge/research/paper-6-corpus/relational/engine-batches/1793304404085332000/feature-run-3/rules.txt",
+        "log": "knowledge/research/paper-6-corpus/relational/engine-batches/1793304404085332000/feature-run-3/process.log",
+        "rawLines": 14189,
+        "acceptedLanguageUnique": 2289,
+        "thresholdQualified": 203
+      }
+    ],
+    "languageCounts": {
+      "outside-accepted-language": 43377,
+      "same-subject-feature-implication": 7174
+    },
+    "exactQualifiedRules": 205,
+    "engineQualifiedUnion": 205,
+    "guidedQualifiedRules": 61,
+    "trainingFrequentPairs": 400,
+    "shortlistedPairs": 100,
+    "wireProbe": {
+      "status": "infrastructure-failure",
+      "reason": "Java heap exhausted under the fixed 512MB limit",
+      "log": "knowledge/research/paper-6-corpus/relational/engine-batches/1793304404085332000/wire-probe/process.log",
+      "ruleFile": null,
+      "rawRules": null,
+      "withoutOccurrenceConstants": null,
+      "scope": "Training-only feasibility probe; different task, no masked-link performance comparison"
+    },
+    "pairwiseLanguageJaccard": [
+      0.8581209585393685,
+      0.7980392156862746,
+      0.849128127369219
+    ]
+  },
+  "metrics": {
+    "anyburl": {
+      "rules": 205,
+      "cases": 402,
+      "answered": 58,
+      "recovered": 34,
+      "coverage": 0.14427860696517414,
+      "recoveryPerCase": 0.0845771144278607,
+      "recoveryPerAnswer": 0.5862068965517241,
+      "familyMacroRecovery": 0.20314490086542009,
+      "families": 30
+    },
+    "association_guided": {
+      "rules": 61,
+      "cases": 402,
+      "answered": 50,
+      "recovered": 31,
+      "coverage": 0.12437810945273632,
+      "recoveryPerCase": 0.07711442786069651,
+      "recoveryPerAnswer": 0.62,
+      "familyMacroRecovery": 0.1981449008654201,
+      "families": 30
+    },
+    "exact_counting": {
+      "rules": 205,
+      "cases": 402,
+      "answered": 58,
+      "recovered": 34,
+      "coverage": 0.14427860696517414,
+      "recoveryPerCase": 0.0845771144278607,
+      "recoveryPerAnswer": 0.5862068965517241,
+      "familyMacroRecovery": 0.20314490086542009,
+      "families": 30
+    },
+    "center_frequency": {
+      "rules": 0,
+      "cases": 402,
+      "answered": 249,
+      "recovered": 43,
+      "coverage": 0.6194029850746269,
+      "recoveryPerCase": 0.10696517412935323,
+      "recoveryPerAnswer": 0.17269076305220885,
+      "familyMacroRecovery": 0.27967323839887276,
+      "families": 30
+    }
+  },
+  "proposals": {
+    "total": 58,
+    "catalogUnresolved": 0,
+    "allDeclaredTypeLabelsOverlap": 58,
+    "withDeclaredTypeConflict": 0
+  },
+  "limits": [
+    "Retrospective separated evaluation; corpus previously exposed",
+    "Feature clauses serialize associations, not arbitrary topology discovery",
+    "Masks hide one recorded feature; other plausible completions are not behavioral errors",
+    "Association guidance is a post-learning shortlist, not proven faster AnyBURL input",
+    "Proposal identity, aliasing, configuration, active ports, semantics and usefulness remain unresolved",
+    "Native scores are replaced by independently recounted exact counts for the accepted language"
+  ]
+}

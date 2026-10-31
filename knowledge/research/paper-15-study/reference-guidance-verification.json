@@ -1,0 +1,31 @@
+{
+  "conditions": [
+    {
+      "condition": "neutral-reference",
+      "meter": {
+        "input_i": "-23.0",
+        "input_tp": "-7.5",
+        "meter": "FFmpeg ebur128"
+      },
+      "reference_sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+      "matched_sha256": "0800aa490ffadbbb596c1f416dbf35d7974c38419bb769695b14df1fd81c7d5a"
+    },
+    {
+      "condition": "angry-reference",
+      "meter": {
+        "input_i": "-23.0",
+        "input_tp": "-8.0",
+        "meter": "FFmpeg ebur128"
+      },
+      "reference_sha256": "2ee717f077a83a09073f65d2b3530ac26225e1fc56c21175097318239ae61285",
+      "matched_sha256": "246f1be08301fd7b9df37d26d6632734ca214884b6bf6ae098a57751e96e9c51"
+    }
+  ],
+  "embedded_audio_matches_intended_distinct_files": true,
+  "continuation_mode_verified_in_both": true,
+  "prior_api_audio_hashes_preserved": true,
+  "papers_1_to_14_preserved": true,
+  "money_settings_and_latest_preserved": true,
+  "no_notebook_execution_errors": true,
+  "no_listening_success_claimed": true
+}

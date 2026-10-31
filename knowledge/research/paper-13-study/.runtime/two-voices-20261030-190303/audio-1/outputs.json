@@ -1,0 +1,317 @@
+{
+  "text": {
+    "text": "Then let\u2019s choose one small thing we can finish together, today."
+  },
+  "voice": {
+    "audio": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/voice/outputs/20261030T120327-144529Z/speech.wav",
+    "report": {
+      "status": "passed",
+      "model": "F5TTS_v1_Base",
+      "device": "mps",
+      "batch_workers": 1,
+      "sample_rate": 24000,
+      "duration_seconds": 4.672,
+      "inference_seconds": 4.624,
+      "total_seconds": 9.393,
+      "real_time_factor": 0.99,
+      "rms": 0.12669008871861917,
+      "raw_peak_amplitude": 0.8984370827674866,
+      "output_gain": 1.0,
+      "peak_amplitude": 0.8984375,
+      "peak_memory": {
+        "rss_bytes": 2115518464,
+        "mps_driver_bytes": 3519938560,
+        "process_maxrss_bytes": 2151219200
+      },
+      "gpu_execution_evidence": {
+        "transformer_forward_calls": 32,
+        "observed_parameter_devices": [
+          "mps:0"
+        ],
+        "observed_tensor_devices": [
+          "mps:0"
+        ]
+      },
+      "audio_sha256": "1a7d5a67a9d6080103e69d3eb784cb3158ccaddb2b18148d2c9434a619248472",
+      "reference_sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+      "reference_preset": "esd:0012:neutral",
+      "reference_variant": "enhanced",
+      "reference_processing_build": "39ca0e939e536679",
+      "reference_dataset_revision": "dc57273e5872666a110e68dd9e0eee11d5efad60",
+      "offline_inference": true,
+      "model_revisions": [
+        {
+          "repo": "SWivid/F5-TTS",
+          "revision": "84e5a410d9cead4de2f847e7c9369a6440bdfaca",
+          "files": [
+            "F5TTS_v1_Base/model_1250000.safetensors",
+            "F5TTS_v1_Base/vocab.txt"
+          ],
+          "integrity": {
+            "F5TTS_v1_Base/model_1250000.safetensors": {
+              "bytes": 1348435761,
+              "sha256": "670900fd14e6c458b95da6e9ed317cdb20dbaf7a1c02ac06a05475a9d32b6a38"
+            },
+            "F5TTS_v1_Base/vocab.txt": {
+              "bytes": 13800,
+              "sha256": "2a05f992e00af9b0bd3800a8d23e78d520dbd705284ed2eedb5f4bd29398fa3c"
+            }
+          }
+        },
+        {
+          "repo": "charactr/vocos-mel-24khz",
+          "revision": "0feb3fdd929bcd6649e0e7c5a688cf7dd012ef21",
+          "files": [
+            "config.yaml",
+            "pytorch_model.bin"
+          ],
+          "integrity": {
+            "config.yaml": {
+              "bytes": 461,
+              "sha256": "da9033922f969a47f0c160010226919e59f27761fd5066f3828d46de6650b0fc"
+            },
+            "pytorch_model.bin": {
+              "bytes": 54365991,
+              "sha256": "97ec976ad1fd67a33ab2682d29c0ac7df85234fae875aefcc5fb215681a91b2a"
+            }
+          }
+        }
+      ],
+      "limits": "MPS dispatch verified; upstream may fall back to CPU for unsupported operations. Signal checks do not establish pronunciation or naturalness. Memory categories overlap and must not be added.",
+      "settings": {
+        "model": "F5TTS_v1_Base",
+        "device": "mps",
+        "seed": 42,
+        "steps": 32,
+        "speed": 0.95,
+        "cross_fade_duration": 0.15,
+        "cfg_strength": 2.0,
+        "sway_sampling_coef": -1.0,
+        "reference_audio": "esd:0012:neutral",
+        "reference_text": "I have bunburyed all over goat on two separate occasions.",
+        "text": "Then let\u2019s choose one small thing we can finish together, today."
+      }
+    }
+  },
+  "master": {
+    "audio": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/master/20261030T120336-704929Z/polished.wav",
+    "report": {
+      "status": "passed",
+      "source": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/voice/outputs/20261030T120327-144529Z/speech.wav",
+      "source_sha256": "1a7d5a67a9d6080103e69d3eb784cb3158ccaddb2b18148d2c9434a619248472",
+      "original_copy_sha256": "1a7d5a67a9d6080103e69d3eb784cb3158ccaddb2b18148d2c9434a619248472",
+      "master_sha256": "daf418629641efb4b02f2cc1df3fed5dd1656b28b6468a16710c6e7c97952f48",
+      "profile": "Balanced",
+      "settings": {
+        "sample_rate": 48000,
+        "target_lufs": -16.0,
+        "true_peak_db": -1.5,
+        "loudness_range": 11,
+        "profiles": {
+          "Gentle": {
+            "highpass_hz": 60,
+            "mud_db": -1.0,
+            "presence_db": 0.5,
+            "ratio": 1.5,
+            "threshold_db": -18,
+            "attack_ms": 20,
+            "release_ms": 150,
+            "deess_intensity": 0.08
+          },
+          "Balanced": {
+            "highpass_hz": 70,
+            "mud_db": -2.0,
+            "presence_db": 1.5,
+            "ratio": 2.2,
+            "threshold_db": -18,
+            "attack_ms": 15,
+            "release_ms": 120,
+            "deess_intensity": 0.15
+          },
+          "Present": {
+            "highpass_hz": 80,
+            "mud_db": -2.5,
+            "presence_db": 2.0,
+            "ratio": 3.0,
+            "threshold_db": -20,
+            "attack_ms": 10,
+            "release_ms": 100,
+            "deess_intensity": 0.22
+          }
+        }
+      },
+      "pre_gain_db": -2.0548338932399943,
+      "pedalboard_version": "0.9.26",
+      "ffmpeg_version": "7.1",
+      "duration_seconds": 4.672,
+      "sample_rate": 48000,
+      "channels": 1,
+      "original_measurement": {
+        "input_i": "-17.40",
+        "input_tp": "-0.87",
+        "input_lra": "0.80",
+        "input_thresh": "-27.58",
+        "output_i": "-15.87",
+        "output_tp": "-1.50",
+        "output_lra": "0.80",
+        "output_thresh": "-26.07",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.13"
+      },
+      "master_measurement": {
+        "input_i": "-15.98",
+        "input_tp": "-1.50",
+        "input_lra": "0.80",
+        "input_thresh": "-26.16",
+        "output_i": "-15.65",
+        "output_tp": "-1.50",
+        "output_lra": "0.80",
+        "output_thresh": "-25.86",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.35"
+      },
+      "normalization_passes": {
+        "first_pass": {
+          "input_i": "-21.86",
+          "input_tp": "-7.17",
+          "input_lra": "0.90",
+          "input_thresh": "-32.04",
+          "output_i": "-15.62",
+          "output_tp": "-1.50",
+          "output_lra": "0.80",
+          "output_thresh": "-25.83",
+          "normalization_type": "dynamic",
+          "target_offset": "-0.38"
+        },
+        "second_pass": {
+          "input_i": "-21.86",
+          "input_tp": "-7.17",
+          "input_lra": "0.90",
+          "input_thresh": "-32.04",
+          "output_i": "-15.98",
+          "output_tp": "-1.50",
+          "output_lra": "0.80",
+          "output_thresh": "-26.18",
+          "normalization_type": "dynamic",
+          "target_offset": "-0.02"
+        }
+      },
+      "comparison_lufs": -21.0,
+      "comparison_loudness_difference_lu": 0.0,
+      "before_measurement": {
+        "input_i": "-21.0",
+        "input_tp": "-4.5",
+        "meter": "FFmpeg ebur128"
+      },
+      "after_measurement": {
+        "input_i": "-21.0",
+        "input_tp": "-6.6",
+        "meter": "FFmpeg ebur128"
+      },
+      "before": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/master/20261030T120336-704929Z/before-matched.wav",
+      "after": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/master/20261030T120336-704929Z/after-matched.wav",
+      "master": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/master/20261030T120336-704929Z/polished.wav",
+      "original": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/master/20261030T120336-704929Z/original.wav",
+      "comparison": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/master/20261030T120336-704929Z/before-then-after.wav",
+      "elapsed_seconds": 0.578,
+      "tts_rerun": false,
+      "limits": "No denoising or neural restoration. Mono output. 48 kHz conversion does not create missing detail. Listening determines quality; loudness target is our preset, not a platform requirement."
+    },
+    "before": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/master/20261030T120336-704929Z/before-matched.wav",
+    "after": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/master/20261030T120336-704929Z/after-matched.wav",
+    "comparison": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/master/20261030T120336-704929Z/before-then-after.wav",
+    "original": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/master/20261030T120336-704929Z/original.wav"
+  },
+  "enhance": {
+    "audio": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/enhance/20261030T120337-607201Z/enhanced.wav",
+    "report": {
+      "status": "passed",
+      "source": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/master/20261030T120336-704929Z/polished.wav",
+      "source_sha256": "daf418629641efb4b02f2cc1df3fed5dd1656b28b6468a16710c6e7c97952f48",
+      "original_copy_sha256": "daf418629641efb4b02f2cc1df3fed5dd1656b28b6468a16710c6e7c97952f48",
+      "original": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/enhance/20261030T120337-607201Z/mastered-input.wav",
+      "output": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/enhance/20261030T120337-607201Z/enhanced.wav",
+      "output_sha256": "99b0b711445a2e022062bcab45f66dac16c7152f27eb36997fa3bec0daa80107",
+      "before": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/enhance/20261030T120337-607201Z/mastered-matched.wav",
+      "after": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/enhance/20261030T120337-607201Z/enhanced-matched.wav",
+      "comparison": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/enhance/20261030T120337-607201Z/mastered-then-enhanced.wav",
+      "settings": {
+        "device": "cpu",
+        "threads": 8,
+        "nfe": 32,
+        "solver": "midpoint",
+        "denoise_strength": 0.1,
+        "temperature": 0.5,
+        "seed": 42,
+        "max_seconds": 120
+      },
+      "model": {
+        "source_repo": "https://github.com/resemble-ai/resemble-enhance.git",
+        "source_revision": "8e978149bfe8abab3eb77d965d579a111afdb0ff",
+        "model_repo": "ResembleAI/resemble-enhance",
+        "model_revision": "4e3510ce4a8391159f665903544c5150bee7b2cb",
+        "files": {
+          "enhancer_stage2/hparams.yaml": {
+            "bytes": 717,
+            "sha256": "80c3f15bc5a5b2cacf2c698699a0f6599d62911c0d53e1d6dee895c0d7cbaeac"
+          },
+          "enhancer_stage2/ds/G/latest": {
+            "bytes": 7,
+            "sha256": "37a8eec1ce19687d132fe29051dca629d164e2c4958ba141d5f4133a33f0688f"
+          },
+          "enhancer_stage2/ds/G/default/mp_rank_00_model_states.pt": {
+            "bytes": 713176232,
+            "sha256": "f9d035f318de3e6d919bc70cf7ad7d32b4fe92ec5cbe0b30029a27f5db07d9d6"
+          }
+        }
+      },
+      "inference_evidence": {
+        "forward_calls": 1,
+        "parameter_devices": [
+          "cpu"
+        ],
+        "input_devices": [
+          "cpu"
+        ]
+      },
+      "inference_seconds": 5.976,
+      "elapsed_seconds": 7.751,
+      "duration_seconds": 4.672018140589569,
+      "sample_rate": 44100,
+      "raw_peak": 0.7790399193763733,
+      "output_gain": 1.0,
+      "source_measurement": {
+        "input_i": "-15.98",
+        "input_tp": "-1.50",
+        "input_lra": "0.80",
+        "input_thresh": "-26.16",
+        "output_i": "-15.65",
+        "output_tp": "-1.50",
+        "output_lra": "0.80",
+        "output_thresh": "-25.86",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.35"
+      },
+      "enhanced_measurement": {
+        "input_i": "-17.32",
+        "input_tp": "-2.17",
+        "input_lra": "1.00",
+        "input_thresh": "-27.38",
+        "output_i": "-15.77",
+        "output_tp": "-1.50",
+        "output_lra": "0.90",
+        "output_thresh": "-25.88",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.23"
+      },
+      "comparison_loudness_difference_lu": 0.0,
+      "comparison_lufs": -21.0,
+      "tts_rerun": false,
+      "limits": "CPU inference; no claim of MPS acceleration. Neural reconstruction may change voice texture or introduce artifacts. Output has peak headroom but is not remastered to -16 LUFS. Quality must be judged by listening."
+    },
+    "before": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/enhance/20261030T120337-607201Z/mastered-matched.wav",
+    "after": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/enhance/20261030T120337-607201Z/enhanced-matched.wav",
+    "comparison": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/enhance/20261030T120337-607201Z/mastered-then-enhanced.wav",
+    "original": "/Users/x/projects/swarms/knowledge/research/paper-13-study/.runtime/two-voices-20261030-190303/audio-1/enhance/20261030T120337-607201Z/mastered-input.wav"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "reference": {
+    "sample_rate": 16000,
+    "duration": 2.2021875,
+    "peak": 1.0,
+    "samples_near_full_scale": 269,
+    "fraction_near_full_scale": 0.007634454377749397,
+    "finite": true
+  },
+  "actor": {
+    "sample_rate": 22050,
+    "duration": 2.786394557823129,
+    "peak": 1.0,
+    "samples_near_full_scale": 223,
+    "fraction_near_full_scale": 0.0036295572916666668,
+    "finite": true
+  },
+  "converted": {
+    "sample_rate": 22050,
+    "duration": 2.786394557823129,
+    "peak": 0.42045387625694275,
+    "samples_near_full_scale": 0,
+    "fraction_near_full_scale": 0.0,
+    "finite": true
+  },
+  "playback": {
+    "sample_rate": 22050,
+    "duration": 2.786394557823129,
+    "peak": 0.6176156997680664,
+    "samples_near_full_scale": 0,
+    "fraction_near_full_scale": 0.0,
+    "finite": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "dia-fixed-20261030-232601-caafc2",
+  "path": "/Users/x/projects/swarms/knowledge/research/paper-16-study/runs/dia-fixed-20261030-232601-caafc2/native.wav",
+  "text": "I need you to stay right here. Take a slow breath and listen to me. We have plenty of time, and I will explain exactly what happens next.",
+  "model": "dia",
+  "speaker": "0012",
+  "emotion": "neutral",
+  "settings": {
+    "seed": 7,
+    "use_reference": false
+  },
+  "source": "Isolated official Dia cache/prefill fix; generated speaker, no reference",
+  "created": 1793377572.8961148
+}

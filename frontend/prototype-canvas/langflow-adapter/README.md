@@ -38,3 +38,7 @@ Policy checks:
 ```sh
 node --test frontend/prototype-canvas/langflow-adapter/execution-memory.test.mjs
 ```
+
+## Default canvas
+
+V2 starts with an empty graph and a default viewport on every fresh mount. It retains the dedicated backend flow identity for the native editor but does not auto-load that flow’s saved nodes or edges. This initialization does not delete the backend flow, browser-local Custom items, or the official template collection. Open a template or add components explicitly to begin working.

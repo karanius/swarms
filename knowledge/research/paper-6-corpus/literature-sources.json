@@ -1,0 +1,132 @@
+{
+  "reviewType": "targeted primary-source review; not exhaustive or systematic",
+  "date": "2026-10-30",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Fast and Exact Rule Mining with AMIE 3",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7250613/",
+      "inspection": "Lajus, Gal\u00e1rraga, Suchanek (2020), [Fast and Exact Rule Mining with AMIE 3](https://pmc.ncbi.nlm.nih.gov/articles/PMC7250613/), full article, especially support/confidence, PCA and pruning",
+      "contribution": "Mines relational rules with exact scoring options and bounded language/search settings; discusses alternatives for incomplete evidence.",
+      "limits": "Exactness concerns its configured rule space and metrics, not truth or useful software composition. Partial Completeness Assumption is a modeling assumption; absence is not inherently a negative.",
+      "application": "Define explicit rules and denominators; compare observed-world and completeness-qualified metrics. Do not adopt PCA silently."
+    },
+    {
+      "id": "S2",
+      "title": "gSpan: Graph-Based Substructure Pattern Mining",
+      "url": "https://sites.cs.ucsb.edu/~xyan/papers/gSpan-short.pdf",
+      "inspection": "Yan and Han (2002), [gSpan: Graph-Based Substructure Pattern Mining](https://sites.cs.ucsb.edu/~xyan/papers/gSpan-short.pdf), author-hosted paper",
+      "contribution": "Canonical minimum DFS codes support search for frequent connected labeled subgraphs; support counts graphs containing a pattern.",
+      "limits": "A frequent pattern is not an implication, abstraction boundary or behavior contract. Selected implementation must demonstrably preserve direction, labels and port distinctions.",
+      "application": "Motif baseline and candidate generation. Keep graph-level support distinct from occurrence counts and family-level support."
+    },
+    {
+      "id": "S3",
+      "title": "Workflow Patterns",
+      "url": "https://www.vdaalst.com/publications/p108.pdf",
+      "inspection": "van der Aalst, ter Hofstede, Kiepuszewski, Barros, [Workflow Patterns](https://www.vdaalst.com/publications/p108.pdf), author-hosted paper, introduction and pattern descriptions",
+      "contribution": "Names recurring control-flow requirements such as sequence, split and synchronization, independent of a single product.",
+      "limits": "The catalog is a semantic vocabulary, not automatic rule mining. A data edge alone does not establish control-flow or concurrency semantics.",
+      "application": "Label relation kinds explicitly; use patterns as interpretation prompts and competing explanations rather than training truth."
+    },
+    {
+      "id": "S4",
+      "title": "Process Discovery and Exploration",
+      "url": "https://leemans.ch/publications/papers/dc2014leemans.pdf",
+      "inspection": "Leemans (2015), [Process Discovery and Exploration](https://leemans.ch/publications/papers/dc2014leemans.pdf), full short paper",
+      "contribution": "Frames process discovery from execution event logs, distinguishes fitness, precision and generalization, and discusses rediscoverability assumptions.",
+      "limits": "Our static template graphs are not execution traces. Historical state-of-the-art statements in this paper are not current claims.",
+      "application": "Borrow the separation of fit, overgeneralization and future-case behavior; do not claim an event-log discovery method applies unchanged to templates."
+    },
+    {
+      "id": "S5",
+      "title": "Components overview",
+      "url": "https://docs.langflow.org/components/",
+      "inspection": "Langflow, [Components overview](https://docs.langflow.org/components/), official documentation: ports, dynamic ports, output selection and versions",
+      "contribution": "Components expose typed ports; configuration can affect ports and selected outputs. Saved occurrences can retain an older component state.",
+      "limits": "Current online documentation may differ from archived exports. Type compatibility and current names do not prove historical compatibility or task success.",
+      "application": "Extract from each saved occurrence and pin its evidence. Preserve native type/version, port handle, output selection, required fields and uncertainty."
+    },
+    {
+      "id": "S6",
+      "title": "The Algebra of Open and Interconnected Systems",
+      "url": "https://arxiv.org/abs/1609.05382",
+      "inspection": "Fong (2016), [The Algebra of Open and Interconnected Systems](https://arxiv.org/abs/1609.05382), author abstract",
+      "contribution": "Develops compositional mathematics for networks of components with typed terminals using hypergraph categories and related constructions.",
+      "limits": "This review inspected the abstract, not its proofs. No categorical laws or semantic preservation are established for our JSON representation without an explicit interpretation.",
+      "application": "Model an assembly as an open graph with an external interface; preserve boundary mappings when packaging. Formal inspiration, not an imported proof."
+    },
+    {
+      "id": "S7",
+      "title": "Abstraction, Composition and Contracts: A Sheaf Theoretic Approach",
+      "url": "https://arxiv.org/abs/1802.03080",
+      "inspection": "Speranzon, Spivak, Varadarajan (2018), [Abstraction, Composition and Contracts: A Sheaf Theoretic Approach](https://arxiv.org/abs/1802.03080), author abstract",
+      "contribution": "Distinguishes wiring, behavior and abstraction for interconnected systems through a common formal framework.",
+      "limits": "Abstract-level inspection; adapting its semantics requires actual behavioral models. Static templates supply insufficient evidence for that alone.",
+      "application": "Keep structural fit, declared behavior and validated behavior as separate fields. Boundary proposals cannot silently inherit behavioral guarantees."
+    },
+    {
+      "id": "S8",
+      "title": "Shapes Constraint Language",
+      "url": "https://www.w3.org/TR/shacl/",
+      "inspection": "W3C (2017), [Shapes Constraint Language](https://www.w3.org/TR/shacl/), official Recommendation: abstract, shapes and validation model",
+      "contribution": "Separates data graphs from graph-expressed constraints used for conformance checking.",
+      "limits": "SHACL is for RDF and checks declared constraints. It is not itself a workflow miner, synthesizer or proof of operational correctness.",
+      "application": "Adopt the separation of data, constraints and validation report. RDF/SHACL is an optional adapter, not a prerequisite for JSON interchange."
+    },
+    {
+      "id": "S9",
+      "title": "PROV-O",
+      "url": "https://www.w3.org/TR/prov-o/",
+      "inspection": "W3C (2013), [PROV-O](https://www.w3.org/TR/prov-o/), official Recommendation: entities, activities, derivation and revision",
+      "contribution": "Represents derivation chains and responsibility across data artifacts and processing activities.",
+      "limits": "A recorded origin is an audit trail, not a guarantee of authenticity, licensing sufficiency or validity.",
+      "application": "Trace source export \u2192 normalized graph \u2192 fact \u2192 rule witness \u2192 candidate composite; preserve duplicate origins and extraction version."
+    },
+    {
+      "id": "S10",
+      "title": "Genetic Programming",
+      "url": "https://deap.readthedocs.io/en/master/tutorials/advanced/gp.html",
+      "inspection": "DEAP, [Genetic Programming](https://deap.readthedocs.io/en/master/tutorials/advanced/gp.html), official implementation tutorial, especially strongly typed GP",
+      "contribution": "Provides explicit primitive/terminal types and type-matched tree construction, with implementation caveats on available terminals.",
+      "limits": "This is implementation documentation, not the original Montana paper or evidence about our task. Tree representations do not naturally preserve shared DAG substructure.",
+      "application": "Candidate approach for evolving rule expressions or typed constructor programs. Grammar completeness, depth bounds, deterministic validation and scoring remain ours to design."
+    },
+    {
+      "id": "S11",
+      "title": "Cartesian Genetic Programming",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-540-46239-2_9",
+      "inspection": "Miller and Thomson (2000), [Cartesian Genetic Programming](https://link.springer.com/chapter/10.1007/978-3-540-46239-2_9), original publisher abstract",
+      "contribution": "Encodes programs as indexed graphs using connection/function genes and studies evolutionary search and neutrality on example tasks.",
+      "limits": "Publisher abstract inspected; attempted repository PDF was inaccessible. Original benchmark success does not establish compatibility with Langflow resource semantics, ports or composite boundaries.",
+      "application": "More direct graph-search inspiration than evolving neural weights. Require typed gene references, bounded topology operators and a separate legality/evidence evaluator."
+    },
+    {
+      "id": "S12",
+      "title": "Evolving Neural Networks through Augmenting Topologies",
+      "url": "https://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf",
+      "inspection": "Stanley and Miikkulainen (2002), [Evolving Neural Networks through Augmenting Topologies](https://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf), original author-hosted paper, topology mutation, historical markings and ablations",
+      "contribution": "Evolves neural topology and weights; aligns inherited structures, protects variation through speciation and grows structure.",
+      "limits": "Neural activation/weight semantics differ from workflow components. A new encoding, constraints and task-specific fitness are necessary; fast learning of our rules is unestablished.",
+      "application": "Consider lineage, diversity and incremental growth as design ideas. Do not rename a workflow graph search NEAT unless its adaptation is specified and compared."
+    },
+    {
+      "id": "S13",
+      "title": "Cross-validation: grouped data",
+      "url": "https://scikit-learn.org/stable/modules/cross_validation.html#cross-validation-iterators-for-grouped-data",
+      "inspection": "scikit-learn, [Cross-validation: grouped data](https://scikit-learn.org/stable/modules/cross_validation.html#cross-validation-iterators-for-grouped-data), official implementation documentation",
+      "contribution": "Group-aware splits prevent the same specified group from appearing in both training and testing; group sizes can be imbalanced.",
+      "limits": "Quality depends on correct groups. Splitting by repository alone does not stop copied templates crossing splits.",
+      "application": "Group graph variants by source lineage/content families before splitting; record uncertainty and family-balanced as well as graph-weighted summaries."
+    },
+    {
+      "id": "S14",
+      "title": "On Over-fitting in Model Selection and Subsequent Selection Bias in Performance Evaluation",
+      "url": "https://www.jmlr.org/papers/v11/cawley10a.html",
+      "inspection": "Cawley and Talbot (2010), [On Over-fitting in Model Selection and Subsequent Selection Bias in Performance Evaluation](https://www.jmlr.org/papers/v11/cawley10a.html), original journal abstract",
+      "contribution": "Shows that optimizing a finite-sample model-selection criterion can itself overfit and bias evaluation.",
+      "limits": "Abstract-level inspection. It supplies no numeric sample requirement or guaranteed correction for this corpus.",
+      "application": "Separate development tuning from evaluation; record every inspection and reserve fresh families for changed hypotheses. Miners, thresholds and evolutionary fitness all create selection opportunities."
+    }
+  ]
+}

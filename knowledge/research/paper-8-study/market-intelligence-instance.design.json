@@ -1,0 +1,709 @@
+{
+  "schema_version": "0.1-design",
+  "id": "market-intelligence",
+  "revision": 1,
+  "status": "proposed-not-implemented",
+  "operations_plane": {
+    "business_ref": "paper7-local-content-business",
+    "role": "enclosing shared coordination plane",
+    "instance_ref": "market-intelligence"
+  },
+  "instance_contract": {
+    "purpose": "Investigate audience problems and existing solutions; deliver traceable opportunity dossiers",
+    "inputs": [
+      "research_brief",
+      "change_notice"
+    ],
+    "outputs": [
+      "opportunity_dossier",
+      "handoff_record",
+      "cost_event",
+      "open_obligations"
+    ],
+    "decisions_owned": [
+      "evidence judgments",
+      "research scope within accepted brief",
+      "bounded continue/narrow/ask/stop recommendations"
+    ],
+    "decisions_not_owned": [
+      "business adoption",
+      "public release",
+      "spending",
+      "account changes"
+    ],
+    "invariants": [
+      "Trace every factual claim to evidence or label assumption",
+      "Preserve contrary evidence and missingness",
+      "No duplicate source families counted as independent by default",
+      "New evidence creates a new revision",
+      "No public or financial side effects"
+    ],
+    "completion": "Consumer accepts a versioned dossier or receives a reasoned blocked/insufficient outcome"
+  },
+  "processes": [
+    {
+      "id": "P1",
+      "name": "Investigation governance",
+      "trigger": "new or changed brief",
+      "flow_refs": [
+        "F1"
+      ],
+      "owner_role": "intelligence_owner",
+      "exit": "accepted scoped plan or explicit clarification"
+    },
+    {
+      "id": "P2",
+      "name": "Opportunity investigation",
+      "trigger": "accepted plan",
+      "flow_refs": [
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "owner_role": "intelligence_owner",
+      "exit": "evidence and challenged claims or bounded insufficient result"
+    },
+    {
+      "id": "P3",
+      "name": "Review and dossier handoff",
+      "trigger": "candidate dossier",
+      "flow_refs": [
+        "F5"
+      ],
+      "owner_role": "evidence_reviewer",
+      "exit": "accepted handoff or recorded rejection"
+    },
+    {
+      "id": "P4",
+      "name": "Freshness and revision",
+      "trigger": "expiry, correction or new evidence",
+      "flow_refs": [
+        "F6"
+      ],
+      "owner_role": "intelligence_owner",
+      "exit": "superseding revision and affected-consumer notice"
+    },
+    {
+      "id": "P5",
+      "name": "Cost and privacy stewardship",
+      "trigger": "each attempt and access event",
+      "flow_refs": [],
+      "cross_cutting": true,
+      "owner_role": "operations_owner",
+      "exit": "cost/access record or escalated exception"
+    }
+  ],
+  "flows": [
+    {
+      "id": "F1",
+      "name": "Brief intake",
+      "composite_refs": [
+        "C1"
+      ],
+      "input_types": [
+        "research_brief"
+      ],
+      "output_types": [
+        "research_plan",
+        "open_obligations"
+      ],
+      "implementation": "deferred"
+    },
+    {
+      "id": "F2",
+      "name": "Evidence acquisition",
+      "composite_refs": [
+        "C2"
+      ],
+      "input_types": [
+        "research_plan"
+      ],
+      "output_types": [
+        "source_record",
+        "observation",
+        "retrieval_event"
+      ],
+      "implementation": "deferred"
+    },
+    {
+      "id": "F3",
+      "name": "Normalize and assess",
+      "composite_refs": [
+        "C3"
+      ],
+      "input_types": [
+        "source_record",
+        "observation"
+      ],
+      "output_types": [
+        "normalized_evidence",
+        "source_family"
+      ],
+      "implementation": "deferred"
+    },
+    {
+      "id": "F4",
+      "name": "Synthesize and challenge",
+      "composite_refs": [
+        "C4",
+        "C5"
+      ],
+      "input_types": [
+        "normalized_evidence",
+        "research_brief"
+      ],
+      "output_types": [
+        "claim",
+        "alternative"
+      ],
+      "implementation": "deferred"
+    },
+    {
+      "id": "F5",
+      "name": "Review and handoff",
+      "composite_refs": [
+        "C6"
+      ],
+      "input_types": [
+        "claim",
+        "alternative",
+        "research_brief",
+        "cost_event",
+        "open_obligations"
+      ],
+      "output_types": [
+        "opportunity_dossier",
+        "handoff_record"
+      ],
+      "implementation": "deferred"
+    },
+    {
+      "id": "F6",
+      "name": "Refresh and revise",
+      "composite_refs": [
+        "C7"
+      ],
+      "input_types": [
+        "change_notice",
+        "opportunity_dossier"
+      ],
+      "output_types": [
+        "impact_report",
+        "revision_request"
+      ],
+      "implementation": "deferred"
+    }
+  ],
+  "flow_dependencies": [
+    {
+      "from": "F1",
+      "to": "F2",
+      "condition": "accepted plan and access/limit gates pass"
+    },
+    {
+      "from": "F2",
+      "to": "F3",
+      "condition": "available observations; failures remain recorded"
+    },
+    {
+      "from": "F3",
+      "to": "F4",
+      "condition": "reviewable normalized evidence with independence/freshness limits"
+    },
+    {
+      "from": "F4",
+      "to": "F5",
+      "condition": "challenged claims or explicit insufficient-evidence result"
+    },
+    {
+      "from": "F5",
+      "to": "F6",
+      "condition": "accepted dossier later needs refresh",
+      "revision_boundary": true
+    },
+    {
+      "from": "F6",
+      "to": "F1",
+      "condition": "targeted revised brief; preserve parent history",
+      "revision_boundary": true
+    }
+  ],
+  "composite_contracts": [
+    {
+      "id": "C1",
+      "name": "Brief-to-plan",
+      "input_types": [
+        "research_brief"
+      ],
+      "output_types": [
+        "research_plan",
+        "open_obligations"
+      ],
+      "acceptance": "No invented scope or authority",
+      "native_component_refs": [],
+      "internal_wiring": null,
+      "grounding_status": "unbound"
+    },
+    {
+      "id": "C2",
+      "name": "Source-to-observations",
+      "input_types": [
+        "research_plan",
+        "source_locator"
+      ],
+      "output_types": [
+        "source_record",
+        "observation",
+        "retrieval_event"
+      ],
+      "acceptance": "Actual source and access status; preserve failure",
+      "native_component_refs": [],
+      "internal_wiring": null,
+      "grounding_status": "unbound"
+    },
+    {
+      "id": "C3",
+      "name": "Evidence normalization",
+      "input_types": [
+        "source_record",
+        "observation"
+      ],
+      "output_types": [
+        "normalized_evidence",
+        "source_family"
+      ],
+      "acceptance": "Preserve raw context and uncertain duplicate links",
+      "native_component_refs": [],
+      "internal_wiring": null,
+      "grounding_status": "unbound"
+    },
+    {
+      "id": "C4",
+      "name": "Problem and solution comparison",
+      "input_types": [
+        "research_brief",
+        "normalized_evidence"
+      ],
+      "output_types": [
+        "alternative"
+      ],
+      "acceptance": "Include strong existing solutions and contrary evidence",
+      "native_component_refs": [],
+      "internal_wiring": null,
+      "grounding_status": "unbound"
+    },
+    {
+      "id": "C5",
+      "name": "Claim assessment",
+      "input_types": [
+        "normalized_evidence",
+        "alternative"
+      ],
+      "output_types": [
+        "claim"
+      ],
+      "acceptance": "Support status and source entailment; no invented probability",
+      "native_component_refs": [],
+      "internal_wiring": null,
+      "grounding_status": "unbound"
+    },
+    {
+      "id": "C6",
+      "name": "Dossier assembly",
+      "input_types": [
+        "research_brief",
+        "claim",
+        "alternative",
+        "cost_event",
+        "open_obligations"
+      ],
+      "output_types": [
+        "opportunity_dossier"
+      ],
+      "acceptance": "Expose missing evidence; no profitable-niche claim",
+      "native_component_refs": [],
+      "internal_wiring": null,
+      "grounding_status": "unbound"
+    },
+    {
+      "id": "C7",
+      "name": "Change impact",
+      "input_types": [
+        "change_notice",
+        "opportunity_dossier"
+      ],
+      "output_types": [
+        "impact_report",
+        "revision_request"
+      ],
+      "acceptance": "Trace affected claims and preserve unrelated revisions",
+      "native_component_refs": [],
+      "internal_wiring": null,
+      "grounding_status": "unbound"
+    }
+  ],
+  "components": {
+    "native_occurrences": [],
+    "resource_adapters": [],
+    "status": "selection-and-wiring-deferred",
+    "rule": "Only populate after actual pinned catalog and adapter verification"
+  },
+  "configuration": {
+    "required_before_collection": {
+      "audience_job": null,
+      "language": null,
+      "geography": null,
+      "time_window": null,
+      "permitted_sources": null,
+      "time_cap": null,
+      "cash_cap": null,
+      "acceptance_owner": null
+    },
+    "runtime_bindings": {
+      "model_revision": null,
+      "model_license": null,
+      "runtime": null,
+      "secret_refs": []
+    },
+    "policies": {
+      "local_analysis_preferred": true,
+      "calls_or_meetings_required": false,
+      "personal_data_minimization": true,
+      "unauthorized_access": "stop-and-record",
+      "publication_enabled": false,
+      "spending_enabled": false,
+      "account_changes_enabled": false,
+      "retry_limit": null,
+      "retention_policy": null
+    },
+    "unknown_rule": "Unresolved required fields block the relevant transition; do not silently choose defaults"
+  },
+  "artifact_contracts": {
+    "common_envelope": [
+      "artifact_id",
+      "schema_version",
+      "revision",
+      "owner",
+      "created_at",
+      "access_classification",
+      "source_lineage"
+    ],
+    "types": [
+      {
+        "id": "source_locator",
+        "required_fields": [
+          "url_or_authorized_path",
+          "source_type",
+          "access_authority",
+          "retrieval_policy_ref"
+        ],
+        "unknown_handling": "explicit unknown or validation failure according to accepted schema; never fabricated"
+      },
+      {
+        "id": "research_brief",
+        "required_fields": [
+          "decision_question",
+          "audience_job",
+          "language",
+          "geography",
+          "time_window",
+          "permitted_sources",
+          "time_cap",
+          "cash_cap",
+          "acceptance_owner"
+        ],
+        "unknown_handling": "explicit unknown or validation failure according to accepted schema; never fabricated"
+      },
+      {
+        "id": "research_plan",
+        "required_fields": [
+          "brief_ref",
+          "queries",
+          "inclusion_rules",
+          "exclusion_rules",
+          "counterevidence_strategy",
+          "stop_rules"
+        ],
+        "unknown_handling": "explicit unknown or validation failure according to accepted schema; never fabricated"
+      },
+      {
+        "id": "open_obligations",
+        "required_fields": [
+          "question",
+          "owner",
+          "blocked_transition",
+          "resolution_status"
+        ],
+        "unknown_handling": "explicit unknown or validation failure according to accepted schema; never fabricated"
+      },
+      {
+        "id": "source_record",
+        "required_fields": [
+          "locator",
+          "publisher",
+          "retrieval_status",
+          "content_hash",
+          "access_context",
+          "family_ref"
+        ],
+        "unknown_handling": "explicit unknown or validation failure according to accepted schema; never fabricated"
+      },
+      {
+        "id": "observation",
+        "required_fields": [
+          "source_ref",
+          "location",
+          "raw_statement_or_metric",
+          "unit",
+          "period",
+          "limits"
+        ],
+        "unknown_handling": "explicit unknown or validation failure according to accepted schema; never fabricated"
+      },
+      {
+        "id": "retrieval_event",
+        "required_fields": [
+          "attempt_ref",
+          "start",
+          "end",
+          "status",
+          "error_or_reason"
+        ],
+        "unknown_handling": "explicit unknown or validation failure according to accepted schema; never fabricated"
+      },
+      {
+        "id": "normalized_evidence",
+        "required_fields": [
+          "observation_ref",
+          "normalized_value",
+          "transform_ref",
+          "relevance",
+          "freshness"
+        ],
+        "unknown_handling": "explicit unknown or validation failure according to accepted schema; never fabricated"
+      },
+      {
+        "id": "source_family",
+        "required_fields": [
+          "member_refs",
+          "duplicate_basis",
+          "independence_status"
+        ],
+        "unknown_handling": "explicit unknown or validation failure according to accepted schema; never fabricated"
+      },
+      {
+        "id": "alternative",
+        "required_fields": [
+          "description",
+          "support_refs",
+          "opposing_refs",
+          "comparison_limits"
+        ],
+        "unknown_handling": "explicit unknown or validation failure according to accepted schema; never fabricated"
+      },
+      {
+        "id": "claim",
+        "required_fields": [
+          "statement",
+          "evidence_refs",
+          "opposing_refs",
+          "judgment",
+          "inference_limits",
+          "reviewer"
+        ],
+        "unknown_handling": "explicit unknown or validation failure according to accepted schema; never fabricated"
+      },
+      {
+        "id": "cost_event",
+        "required_fields": [
+          "attempt_ref",
+          "owner_minutes",
+          "resource_usage",
+          "cost_basis",
+          "allocation_key"
+        ],
+        "unknown_handling": "explicit unknown or validation failure according to accepted schema; never fabricated"
+      },
+      {
+        "id": "opportunity_dossier",
+        "required_fields": [
+          "brief_ref",
+          "audience_problem",
+          "claim_refs",
+          "alternative_refs",
+          "differentiation_hypothesis",
+          "uncertainty",
+          "open_obligation_refs",
+          "cost_refs",
+          "recommendation"
+        ],
+        "unknown_handling": "explicit unknown or validation failure according to accepted schema; never fabricated"
+      },
+      {
+        "id": "handoff_record",
+        "required_fields": [
+          "artifact_revision",
+          "recipient",
+          "decision",
+          "reason",
+          "acknowledgment"
+        ],
+        "unknown_handling": "explicit unknown or validation failure according to accepted schema; never fabricated"
+      },
+      {
+        "id": "change_notice",
+        "required_fields": [
+          "source_or_artifact_ref",
+          "change_reason",
+          "evidence_refs"
+        ],
+        "unknown_handling": "explicit unknown or validation failure according to accepted schema; never fabricated"
+      },
+      {
+        "id": "impact_report",
+        "required_fields": [
+          "affected_claim_refs",
+          "affected_consumers",
+          "unaffected_invariants"
+        ],
+        "unknown_handling": "explicit unknown or validation failure according to accepted schema; never fabricated"
+      },
+      {
+        "id": "revision_request",
+        "required_fields": [
+          "parent_revision",
+          "proposed_change",
+          "reason",
+          "review_status"
+        ],
+        "unknown_handling": "explicit unknown or validation failure according to accepted schema; never fabricated"
+      }
+    ],
+    "status": "proposed field contracts, not production JSON Schema validation"
+  },
+  "state_model": {
+    "states": [
+      "draft",
+      "needs_clarification",
+      "planned",
+      "collecting",
+      "assessing",
+      "in_review",
+      "accepted",
+      "rejected",
+      "insufficient",
+      "blocked",
+      "cancelled",
+      "superseded"
+    ],
+    "transitions": [
+      [
+        "draft",
+        "needs_clarification"
+      ],
+      [
+        "draft",
+        "planned"
+      ],
+      [
+        "needs_clarification",
+        "planned"
+      ],
+      [
+        "planned",
+        "collecting"
+      ],
+      [
+        "collecting",
+        "assessing"
+      ],
+      [
+        "assessing",
+        "in_review"
+      ],
+      [
+        "in_review",
+        "accepted"
+      ],
+      [
+        "in_review",
+        "rejected"
+      ],
+      [
+        "assessing",
+        "insufficient"
+      ],
+      [
+        "accepted",
+        "superseded"
+      ]
+    ],
+    "exception_rule": "Any active nonterminal state may become blocked or cancelled with a recorded reason; retry/rework creates a new attempt or revision",
+    "missing_evidence_rule": "insufficient is an honest outcome, not proof of no demand"
+  },
+  "handoffs": [
+    {
+      "from": "Operations",
+      "to": "market-intelligence",
+      "artifact_types": [
+        "research_brief"
+      ],
+      "authority": "scope and limit authorization"
+    },
+    {
+      "from": "Audience Care",
+      "to": "market-intelligence",
+      "artifact_types": [
+        "change_notice"
+      ],
+      "authority": "deidentified feedback evidence only"
+    },
+    {
+      "from": "Finance and Performance",
+      "to": "market-intelligence",
+      "artifact_types": [
+        "change_notice"
+      ],
+      "authority": "versioned metrics and resource context; no unsupported causal conclusion"
+    },
+    {
+      "from": "market-intelligence",
+      "to": "Content Strategy",
+      "artifact_types": [
+        "opportunity_dossier",
+        "handoff_record"
+      ],
+      "authority": "recommendation; not automatic strategy adoption"
+    },
+    {
+      "from": "market-intelligence",
+      "to": "Finance and Performance",
+      "artifact_types": [
+        "cost_event"
+      ],
+      "authority": "actual research costs including failed attempts"
+    },
+    {
+      "from": "market-intelligence",
+      "to": "Operations",
+      "artifact_types": [
+        "open_obligations"
+      ],
+      "authority": "scope, budget and access exceptions"
+    }
+  ],
+  "implementation_sequence": [
+    "Freeze one concrete research brief",
+    "Verify native catalog and resource options",
+    "Ground one composite contract at a time",
+    "Verify composite outputs before complete flow",
+    "Review a full dossier against original evidence",
+    "Validate handoff and revision behavior"
+  ],
+  "evidence_status": {
+    "market_collection_run": false,
+    "native_graph_built": false,
+    "local_inference_tested": false,
+    "business_validated": false
+  }
+}

@@ -1,0 +1,345 @@
+{
+  "texts": [
+    "You're here. I wasn't sure you would come.",
+    "That's what you decided. Tell me what happens next."
+  ],
+  "seed": 42,
+  "conditions": [
+    {
+      "id": "0012-neutral-text0",
+      "speaker": "0012",
+      "style": "neutral",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak naturally in a neutral conversational tone, without dramatic emphasis.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    {
+      "id": "0012-neutral-text1",
+      "speaker": "0012",
+      "style": "neutral",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak naturally in a neutral conversational tone, without dramatic emphasis.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    {
+      "id": "0012-excited-text0",
+      "speaker": "0012",
+      "style": "excited",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak with delighted excitement and lively pitch variation, keeping the words clear.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:happiness",
+        "label": "Voice 0012 \u00b7 male \u00b7 happiness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-happiness.wav",
+        "sha256": "b5dc06b810118a6616cd2b49ffc4fe6f8e0552757d72fd38efed126979df0444",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    {
+      "id": "0012-excited-text1",
+      "speaker": "0012",
+      "style": "excited",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak with delighted excitement and lively pitch variation, keeping the words clear.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:happiness",
+        "label": "Voice 0012 \u00b7 male \u00b7 happiness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-happiness.wav",
+        "sha256": "b5dc06b810118a6616cd2b49ffc4fe6f8e0552757d72fd38efed126979df0444",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    {
+      "id": "0012-restrained_anger-text0",
+      "speaker": "0012",
+      "style": "restrained_anger",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak with restrained frustration, controlled tension and firm emphasis. Do not shout.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:anger",
+        "label": "Voice 0012 \u00b7 male \u00b7 anger \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-anger.wav",
+        "sha256": "2ee717f077a83a09073f65d2b3530ac26225e1fc56c21175097318239ae61285",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    {
+      "id": "0012-restrained_anger-text1",
+      "speaker": "0012",
+      "style": "restrained_anger",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak with restrained frustration, controlled tension and firm emphasis. Do not shout.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:anger",
+        "label": "Voice 0012 \u00b7 male \u00b7 anger \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-anger.wav",
+        "sha256": "2ee717f077a83a09073f65d2b3530ac26225e1fc56c21175097318239ae61285",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    {
+      "id": "0012-reflective_sadness-text0",
+      "speaker": "0012",
+      "style": "reflective_sadness",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak with quiet sadness, reflective pauses and subdued energy. Keep speech intelligible.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:sadness",
+        "label": "Voice 0012 \u00b7 male \u00b7 sadness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-sadness.wav",
+        "sha256": "b548fdacb62075241fdade270b0a06e9256d2fa70e8fceab546bf29a9e0b4791",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    {
+      "id": "0012-reflective_sadness-text1",
+      "speaker": "0012",
+      "style": "reflective_sadness",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak with quiet sadness, reflective pauses and subdued energy. Keep speech intelligible.",
+      "voxcpm_reference": {
+        "id": "esd:0012:neutral",
+        "label": "Voice 0012 \u00b7 male \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+        "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      },
+      "f5_reference": {
+        "id": "esd:0012:sadness",
+        "label": "Voice 0012 \u00b7 male \u00b7 sadness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-sadness.wav",
+        "sha256": "b548fdacb62075241fdade270b0a06e9256d2fa70e8fceab546bf29a9e0b4791",
+        "transcript": "I have bunburyed all over goat on two separate occasions."
+      }
+    },
+    {
+      "id": "0015-neutral-text0",
+      "speaker": "0015",
+      "style": "neutral",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak naturally in a neutral conversational tone, without dramatic emphasis.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    {
+      "id": "0015-neutral-text1",
+      "speaker": "0015",
+      "style": "neutral",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak naturally in a neutral conversational tone, without dramatic emphasis.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    {
+      "id": "0015-excited-text0",
+      "speaker": "0015",
+      "style": "excited",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak with delighted excitement and lively pitch variation, keeping the words clear.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:happiness",
+        "label": "Voice 0015 \u00b7 female \u00b7 happiness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-happiness.wav",
+        "sha256": "17ea58ac011f19b3bc3ab2eb83a55e944b5f4f0020d42b64d4f5a94aa287a83b",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    {
+      "id": "0015-excited-text1",
+      "speaker": "0015",
+      "style": "excited",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak with delighted excitement and lively pitch variation, keeping the words clear.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:happiness",
+        "label": "Voice 0015 \u00b7 female \u00b7 happiness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-happiness.wav",
+        "sha256": "17ea58ac011f19b3bc3ab2eb83a55e944b5f4f0020d42b64d4f5a94aa287a83b",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    {
+      "id": "0015-restrained_anger-text0",
+      "speaker": "0015",
+      "style": "restrained_anger",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak with restrained frustration, controlled tension and firm emphasis. Do not shout.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:anger",
+        "label": "Voice 0015 \u00b7 female \u00b7 anger \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-anger.wav",
+        "sha256": "21c19d49142b6db9ba96bb6d5ffcbf55132a77183e71d31a877a36bc9d9ce887",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    {
+      "id": "0015-restrained_anger-text1",
+      "speaker": "0015",
+      "style": "restrained_anger",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak with restrained frustration, controlled tension and firm emphasis. Do not shout.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:anger",
+        "label": "Voice 0015 \u00b7 female \u00b7 anger \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-anger.wav",
+        "sha256": "21c19d49142b6db9ba96bb6d5ffcbf55132a77183e71d31a877a36bc9d9ce887",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    {
+      "id": "0015-reflective_sadness-text0",
+      "speaker": "0015",
+      "style": "reflective_sadness",
+      "text": "You're here. I wasn't sure you would come.",
+      "instruction": "Speak with quiet sadness, reflective pauses and subdued energy. Keep speech intelligible.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:sadness",
+        "label": "Voice 0015 \u00b7 female \u00b7 sadness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-sadness.wav",
+        "sha256": "04ce66ee24099fac28d82dbb23441e90083601cce577755353cc410b066ffcf6",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    },
+    {
+      "id": "0015-reflective_sadness-text1",
+      "speaker": "0015",
+      "style": "reflective_sadness",
+      "text": "That's what you decided. Tell me what happens next.",
+      "instruction": "Speak with quiet sadness, reflective pauses and subdued energy. Keep speech intelligible.",
+      "voxcpm_reference": {
+        "id": "esd:0015:neutral",
+        "label": "Voice 0015 \u00b7 female \u00b7 neutral \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-neutral.wav",
+        "sha256": "8240590462c1794ea160eb4b6907c170b2d0352a2f458261d6e73ed72a8d5c8d",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      },
+      "f5_reference": {
+        "id": "esd:0015:sadness",
+        "label": "Voice 0015 \u00b7 female \u00b7 sadness \u00b7 active",
+        "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0015-sadness.wav",
+        "sha256": "04ce66ee24099fac28d82dbb23441e90083601cce577755353cc410b066ffcf6",
+        "transcript": "This was the twenty fifth of november, seventeen eighty three."
+      }
+    }
+  ]
+}

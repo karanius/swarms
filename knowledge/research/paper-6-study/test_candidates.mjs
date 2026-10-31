@@ -1,0 +1,14 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {analyzeCandidate,expandMembers,seedMembers} from '../../../frontend/candidate-explorer/model.mjs';
+const node=id=>({id,type:id,inputs:[{name:'config',required:true},{name:'in',required:true}],outputs:[{name:'out'}],resourceRequirements:[{field:'api_key',required:true}]});
+const edge=(id,source,target)=>({id,source,target,sourcePort:'out',targetPort:'in',resolved:true});
+const graph={id:'fixture',nodes:['a','b','c','d'].map(node),edges:[edge('ab','a','b'),edge('bc','b','c'),edge('cd','c','d')],sources:[]};
+test('induced group preserves internal edges and both crossing directions',()=>{const c=analyzeCandidate(graph,['b','c']);assert.deepEqual(c.internal.map(e=>e.id),['bc']);assert.deepEqual(c.incoming.map(e=>e.id),['ab']);assert.deepEqual(c.outgoing.map(e=>e.id),['cd']);assert.equal(c.members.length,2)});
+test('required disconnected configuration stays unknown; crossing input is accounted for',()=>{const c=analyzeCandidate(graph,['b','c']);assert.deepEqual(c.unconnectedInputs.map(p=>p.node+'.'+p.name),['b.config','c.config']);assert.equal(c.resources.length,2);assert.equal(c.checks.find(x=>x.name==='Configuration and resources').status,'unknown')});
+test('terminal declarations are proposals and never invented crossing edges',()=>{const c=analyzeCandidate(graph,['d']);assert.equal(c.terminalOutputs.length,1);assert.equal(c.outgoing.length,0)});
+test('aliases, actual seed identities and one-hop expansion are retained',()=>{assert.deepEqual(seedMembers(graph,{previewEdgeIds:['bc']}),['b','c']);assert.deepEqual(new Set(expandMembers(graph,['b'])),new Set(['a','b','c']))});
+test('cycle and disconnected groups are blocked',()=>{assert.equal(analyzeCandidate(graph,['a','d']).checks[1].status,'blocked');const cyclic={...graph,edges:[...graph.edges,edge('cb','c','b')]};assert.equal(analyzeCandidate(cyclic,['b','c']).checks[2].status,'blocked')});
+test('unknown endpoints and handles remain visible',()=>{const broken={...graph,edges:[...graph.edges,{...edge('ux','unknown','b'),sourcePort:null,resolved:false}]};const c=analyzeCandidate(broken,['b']);assert.equal(c.incoming.length,2);assert.equal(c.unresolved.length,1);assert.equal(c.checks[3].status,'unknown')});
+test('empty selection is blocked; source graph is never mutated',()=>{const before=JSON.stringify(graph);assert.equal(analyzeCandidate(graph,[]).checks[0].status,'blocked');analyzeCandidate(graph,['a'],'Job');assert.equal(JSON.stringify(graph),before)});
+test('parallel records retained and all edges partition exactly',()=>{const parallel={...graph,edges:[...graph.edges,edge('bc2','b','c')]};const c=analyzeCandidate(parallel,['b','c']);assert.deepEqual(c.internal.map(e=>e.id),['bc','bc2']);assert.equal(c.internal.length+c.incoming.length+c.outgoing.length,4)});

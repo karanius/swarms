@@ -1,0 +1,13 @@
+{
+  "status": "research foundation completed; experiments not run",
+  "sourceCount": 14,
+  "mappedSections": 14,
+  "abstractSha256": "0715936016a5b93f84354d7807e3bbb1342645ae2c8fa3d9275963d90fd2760a",
+  "notebook": "knowledge/research/notebooks/Paper 6 - Rule Mining from Langflow Templates.ipynb",
+  "artifacts": [
+    "literature-review.md",
+    "design-decisions.md",
+    "literature-sources.json"
+  ],
+  "verification": "nbformat validation; abstract equality; fourteen source records; fourteen section notes"
+}

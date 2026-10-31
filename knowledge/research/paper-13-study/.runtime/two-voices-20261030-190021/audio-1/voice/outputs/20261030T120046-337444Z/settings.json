@@ -1,0 +1,13 @@
+{
+  "model": "F5TTS_v1_Base",
+  "device": "mps",
+  "seed": 42,
+  "steps": 32,
+  "speed": 0.95,
+  "cross_fade_duration": 0.15,
+  "cfg_strength": 2.0,
+  "sway_sampling_coef": -1.0,
+  "reference_audio": "esd:0012:neutral",
+  "reference_text": "I have bunburyed all over goat on two separate occasions.",
+  "text": "Then let\u2019s choose one small thing we can finish together, today."
+}

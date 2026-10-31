@@ -1,0 +1,15 @@
+{
+  "pid": 99227,
+  "started_unix": 1793364389.40094,
+  "forward_calls": 68000,
+  "observed_parameter_devices": [
+    "mps:0"
+  ],
+  "observed_tensor_devices": [
+    "mps:0"
+  ],
+  "observed_unix": 1793364404.93401,
+  "process_maxrss_bytes": 15326953472,
+  "mps_allocated_bytes": 10586457600,
+  "mps_driver_bytes": 11643994112
+}

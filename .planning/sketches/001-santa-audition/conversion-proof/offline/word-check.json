@@ -1,0 +1,7 @@
+{
+  "transcript": "Maybe tomorrow it will be cold.",
+  "expected": "Maybe tomorrow it will be cold.",
+  "exact_words": true,
+  "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+  "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+}

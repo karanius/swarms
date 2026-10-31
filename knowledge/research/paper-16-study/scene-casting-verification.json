@@ -1,0 +1,97 @@
+{
+  "experiment": "3d74ef6d-59b0-4411-9184-9d6f8b72f74f",
+  "state": "complete",
+  "casting": {
+    "A": "crema:1059",
+    "B": "crema:1006"
+  },
+  "roles": {
+    "A": {
+      "speaker_id": "crema:1059",
+      "source_sex": "Male",
+      "presentation_review": "Not yet judged by listening"
+    },
+    "B": {
+      "speaker_id": "crema:1006",
+      "source_sex": "Female",
+      "presentation_review": "Not yet judged by listening"
+    }
+  },
+  "line_speakers": {
+    "01": "crema:1059",
+    "02": "crema:1006",
+    "03": "crema:1059",
+    "04": "crema:1006",
+    "05": "crema:1059",
+    "06": "crema:1006"
+  },
+  "word_checks": {
+    "01": {
+      "transcript": "You promised me it was safe. Please, tell me we have not lost everything.",
+      "expected": "You promised me it was safe. Please tell me we have not lost everything.",
+      "exact_words": true,
+      "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+      "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+    },
+    "02": {
+      "transcript": "I checked twice.  I really thought the coffee was there.  I am sorry.",
+      "expected": "I checked twice. I really thought the copy was there. I am sorry.",
+      "exact_words": false,
+      "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+      "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+    },
+    "03": {
+      "transcript": "Wait, look at the date on that folder that is yesterday, not today.",
+      "expected": "Wait. Look at the date on that folder. That is yesterday, not today.",
+      "exact_words": true,
+      "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+      "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+    },
+    "04": {
+      "transcript": "There is another folder underneath it.  Let me open it before we say anything else.",
+      "expected": "There is another folder underneath it. Let me open it before we say anything else.",
+      "exact_words": true,
+      "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+      "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+    },
+    "05": {
+      "transcript": "It is here. Every single recording, we have it all.  Casey, we have it all.",
+      "expected": "It is here. Every single recording. We have it all, Casey. We have it all.",
+      "exact_words": true,
+      "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+      "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+    },
+    "06": {
+      "transcript": "Oh, thank goodness. I thought I had to let you down. Come on, let us hear it.",
+      "expected": "Oh, thank goodness. I thought I had let you down. Come on, let us hear it.",
+      "exact_words": false,
+      "method": "Offline Faster-Whisper tiny.en, fixed English, beam 5, no VAD or text prompt",
+      "limitation": "ASR is fallible; exact words do not validate emotion or voice identity"
+    }
+  },
+  "mix": {
+    "path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/scenes/3d74ef6d-59b0-4411-9184-9d6f8b72f74f/scene-raw.wav",
+    "listening_path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/scenes/3d74ef6d-59b0-4411-9184-9d6f8b72f74f/listening.wav",
+    "sha256": "43bc88c602a7fe8b42d0cd1baec232e7d6f3ea22e2797319e456d12012d8bee7",
+    "duration_seconds": 27.434958333333334,
+    "sample_rate": 24000,
+    "gain": 0.7227698036021702,
+    "loudness": {
+      "input_i": "-20.18",
+      "input_tp": "-0.03",
+      "input_lra": "10.10",
+      "input_thresh": "-31.25",
+      "output_i": "-23.72",
+      "output_tp": "-3.17",
+      "output_lra": "6.90",
+      "output_thresh": "-34.52",
+      "normalization_type": "dynamic",
+      "target_offset": "0.72"
+    },
+    "raw_sha256": "43bc88c602a7fe8b42d0cd1baec232e7d6f3ea22e2797319e456d12012d8bee7",
+    "policy": "Raw generated lines resampled to mono 24 kHz; 0.30-second gaps. Listening copy uses static loudness gain; no emotion-altering processing."
+  },
+  "previous_assessed_comparisons_unchanged": true,
+  "ui_check": "Browser selected two distinct male profiles, then a male/female pair, previewed identity and generated the complete mixed scene.",
+  "presentation": "Awaiting user listening; source labels are not perceptual proof."
+}

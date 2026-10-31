@@ -1,0 +1,32 @@
+{
+  "study_results": {
+    "file": "study_results.json",
+    "source": "knowledge/research/paper-6-corpus/relational/summary.json",
+    "sha256": "96a9cf70ca8fad1851773903c87ed5478bf618ba1d3f6da2fc2d33d7897e3bd7",
+    "grantedAt": 1793306420.535605
+  },
+  "study_protocol": {
+    "file": "study_protocol.md",
+    "source": "knowledge/research/paper-6-study/RELATIONAL-PROTOCOL.md",
+    "sha256": "b4200ef6b09773c559ae8ec962d43ed892616295b50fd4bd74842f4e455a5e25",
+    "grantedAt": 1793306422.3646998
+  },
+  "study_verification": {
+    "file": "study_verification.json",
+    "source": "knowledge/research/paper-6-corpus/relational/verification.json",
+    "sha256": "43b5e47bf7f46b637b7ab1c0ae40a06b5df9c47018ec713c0bbf04bcd322a651",
+    "grantedAt": 1793306424.673106
+  },
+  "native_catalog": {
+    "file": "native_catalog.json",
+    "source": "knowledge/research/paper-6-study/native-starter-catalog.json",
+    "sha256": "aa54672f51053b7403d5b6a9d1ba063f1ce9ed54d55eda31539757c8da44b6ed",
+    "grantedAt": 1793306883.897567
+  },
+  "assistant_runtime": {
+    "file": "assistant_runtime.md",
+    "source": "knowledge/research/paper-6-study/assistant-runtime-research.md",
+    "sha256": "30fd33b536fb04aed62e84ade9c354b1928faa6187f4cf1da04395e6afadb9d3",
+    "grantedAt": 1793306886.163719
+  }
+}

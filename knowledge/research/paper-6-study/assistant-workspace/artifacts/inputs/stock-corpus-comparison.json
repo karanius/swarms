@@ -1,0 +1,369 @@
+{
+  "edges": [
+    {
+      "query": {
+        "edgeId": "reactflow__edge-ChatInput-rKhf5{\u0153dataType\u0153:\u0153ChatInput\u0153,\u0153id\u0153:\u0153ChatInput-rKhf5\u0153,\u0153name\u0153:\u0153message\u0153,\u0153output_types\u0153:[\u0153Message\u0153]}-Agent-5pkFD{\u0153fieldName\u0153:\u0153input_value\u0153,\u0153id\u0153:\u0153Agent-5pkFD\u0153,\u0153inputTypes\u0153:[\u0153Message\u0153],\u0153type\u0153:\u0153str\u0153}",
+        "sourceType": "ChatInput",
+        "sourcePort": "message",
+        "targetType": "Agent",
+        "targetPort": "input_value"
+      },
+      "matchingDistinctGraphObjects": 345,
+      "supportingGraphIds": "Full list in first-corpus-comparison.json",
+      "examples": [
+        {
+          "graphId": "00adf811faf08841d9a4519c10b2a0ab3728f66a89ea325e584a95c1a6135503",
+          "name": "City Insights",
+          "source": {
+            "sourceUrl": "https://raw.githubusercontent.com/beprith/CityInsights_TelegramBot/d1342c68d3bfbba8ef0027dd05577b58fc87e277/City%20Insights%20%281%29.json",
+            "sourcePath": "City Insights (1).json",
+            "repository": "beprith/CityInsights_TelegramBot",
+            "revision": "d1342c68d3bfbba8ef0027dd05577b58fc87e277",
+            "collector": "community-github",
+            "file": "collectors/community-github/artifacts/beprith/CityInsights_TelegramBot/City Insights (1).json",
+            "licenseAssessment": {
+              "label": "MIT",
+              "declared": {
+                "status": "license-text-collected; review-required",
+                "spdx": "MIT",
+                "files": [
+                  "licenses/beprith/CityInsights_TelegramBot/LICENSE"
+                ]
+              },
+              "localReferences": [
+                "collectors/community-github/licenses/beprith/CityInsights_TelegramBot/LICENSE"
+              ],
+              "missingReferences": [],
+              "licenseTextPresent": true,
+              "reviewRequired": true
+            }
+          },
+          "fileContentSha256": "f2ee274ccebeb0a3355d4ad0d1db94657879f5f4f91a0d189d27c37c5cebfada"
+        },
+        {
+          "graphId": "00ef58c7a68516e02f62b12b9fe37a17549273d232fb555213c4471133ca48a3",
+          "name": "Sequential Tasks Agents",
+          "source": {
+            "sourceUrl": "https://raw.githubusercontent.com/malepti/workflowsAURA-LangFlow/dbca774cbf5fd53e0f2752ce24ddb6cc4b11fe43/src/backend/base/langflow/initial_setup/starter_projects/Sequential%20Tasks%20Agents.json",
+            "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Sequential Tasks Agents.json",
+            "repository": "malepti/workflowsAURA-LangFlow",
+            "revision": "dbca774cbf5fd53e0f2752ce24ddb6cc4b11fe43",
+            "collector": "community-github",
+            "file": "collectors/community-github/artifacts/malepti/workflowsAURA-LangFlow/src/backend/base/langflow/initial_setup/starter_projects/Sequential Tasks Agents.json",
+            "licenseAssessment": {
+              "label": "MIT",
+              "declared": {
+                "status": "license-text-collected; review-required",
+                "spdx": "MIT",
+                "files": [
+                  "licenses/malepti/workflowsAURA-LangFlow/LICENSE"
+                ]
+              },
+              "localReferences": [
+                "collectors/community-github/licenses/malepti/workflowsAURA-LangFlow/LICENSE"
+              ],
+              "missingReferences": [],
+              "licenseTextPresent": true,
+              "reviewRequired": true
+            }
+          },
+          "fileContentSha256": "5da0ba21dc8b813a9ec8fe4bac0d230b3d6487336bbb1224e2868997205291f6"
+        }
+      ],
+      "meaning": "Exact recorded feature occurrence, not independent designs or useful composite evidence"
+    },
+    {
+      "query": {
+        "edgeId": "reactflow__edge-Agent-5pkFD{\u0153dataType\u0153:\u0153Agent\u0153,\u0153id\u0153:\u0153Agent-5pkFD\u0153,\u0153name\u0153:\u0153response\u0153,\u0153output_types\u0153:[\u0153Message\u0153]}-Agent-Vq8mi{\u0153fieldName\u0153:\u0153input_value\u0153,\u0153id\u0153:\u0153Agent-Vq8mi\u0153,\u0153inputTypes\u0153:[\u0153Message\u0153],\u0153type\u0153:\u0153str\u0153}",
+        "sourceType": "Agent",
+        "sourcePort": "response",
+        "targetType": "Agent",
+        "targetPort": "input_value"
+      },
+      "matchingDistinctGraphObjects": 63,
+      "supportingGraphIds": "Full list in first-corpus-comparison.json",
+      "examples": [
+        {
+          "graphId": "00ef58c7a68516e02f62b12b9fe37a17549273d232fb555213c4471133ca48a3",
+          "name": "Sequential Tasks Agents",
+          "source": {
+            "sourceUrl": "https://raw.githubusercontent.com/malepti/workflowsAURA-LangFlow/dbca774cbf5fd53e0f2752ce24ddb6cc4b11fe43/src/backend/base/langflow/initial_setup/starter_projects/Sequential%20Tasks%20Agents.json",
+            "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Sequential Tasks Agents.json",
+            "repository": "malepti/workflowsAURA-LangFlow",
+            "revision": "dbca774cbf5fd53e0f2752ce24ddb6cc4b11fe43",
+            "collector": "community-github",
+            "file": "collectors/community-github/artifacts/malepti/workflowsAURA-LangFlow/src/backend/base/langflow/initial_setup/starter_projects/Sequential Tasks Agents.json",
+            "licenseAssessment": {
+              "label": "MIT",
+              "declared": {
+                "status": "license-text-collected; review-required",
+                "spdx": "MIT",
+                "files": [
+                  "licenses/malepti/workflowsAURA-LangFlow/LICENSE"
+                ]
+              },
+              "localReferences": [
+                "collectors/community-github/licenses/malepti/workflowsAURA-LangFlow/LICENSE"
+              ],
+              "missingReferences": [],
+              "licenseTextPresent": true,
+              "reviewRequired": true
+            }
+          },
+          "fileContentSha256": "5da0ba21dc8b813a9ec8fe4bac0d230b3d6487336bbb1224e2868997205291f6"
+        },
+        {
+          "graphId": "00f6b9e4653ba40828ca6fae0b154a92f70f2957322aaa0f8553f06eba09cbb7",
+          "name": "Deep Research",
+          "source": {
+            "sourceUrl": "https://raw.githubusercontent.com/konradbjk/langflow-flows/39e606b8df424e2c7ded65e2dd5ecb29bdee8cc3/multi-agent/DeepResearch-Tavily.json",
+            "sourcePath": "multi-agent/DeepResearch-Tavily.json",
+            "repository": "konradbjk/langflow-flows",
+            "revision": "39e606b8df424e2c7ded65e2dd5ecb29bdee8cc3",
+            "collector": "community-github",
+            "file": "collectors/community-github/artifacts/konradbjk/langflow-flows/multi-agent/DeepResearch-Tavily.json",
+            "licenseAssessment": {
+              "label": "unknown",
+              "declared": {
+                "status": "unknown",
+                "spdx": null,
+                "files": []
+              },
+              "localReferences": [],
+              "missingReferences": [],
+              "licenseTextPresent": false,
+              "reviewRequired": true
+            }
+          },
+          "fileContentSha256": "f593833e98ba5a32f62e6c3589b63c2c3243d7c05ae6ad243212b69245c84866"
+        }
+      ],
+      "meaning": "Exact recorded feature occurrence, not independent designs or useful composite evidence"
+    },
+    {
+      "query": {
+        "edgeId": "reactflow__edge-Agent-Vq8mi{\u0153dataType\u0153:\u0153Agent\u0153,\u0153id\u0153:\u0153Agent-Vq8mi\u0153,\u0153name\u0153:\u0153response\u0153,\u0153output_types\u0153:[\u0153Message\u0153]}-ChatOutput-pnkrt{\u0153fieldName\u0153:\u0153input_value\u0153,\u0153id\u0153:\u0153ChatOutput-pnkrt\u0153,\u0153inputTypes\u0153:[\u0153Data\u0153,\u0153JSON\u0153,\u0153DataFrame\u0153,\u0153Table\u0153,\u0153Message\u0153],\u0153type\u0153:\u0153other\u0153}",
+        "sourceType": "Agent",
+        "sourcePort": "response",
+        "targetType": "ChatOutput",
+        "targetPort": "input_value"
+      },
+      "matchingDistinctGraphObjects": 439,
+      "supportingGraphIds": "Full list in first-corpus-comparison.json",
+      "examples": [
+        {
+          "graphId": "00adf811faf08841d9a4519c10b2a0ab3728f66a89ea325e584a95c1a6135503",
+          "name": "City Insights",
+          "source": {
+            "sourceUrl": "https://raw.githubusercontent.com/beprith/CityInsights_TelegramBot/d1342c68d3bfbba8ef0027dd05577b58fc87e277/City%20Insights%20%281%29.json",
+            "sourcePath": "City Insights (1).json",
+            "repository": "beprith/CityInsights_TelegramBot",
+            "revision": "d1342c68d3bfbba8ef0027dd05577b58fc87e277",
+            "collector": "community-github",
+            "file": "collectors/community-github/artifacts/beprith/CityInsights_TelegramBot/City Insights (1).json",
+            "licenseAssessment": {
+              "label": "MIT",
+              "declared": {
+                "status": "license-text-collected; review-required",
+                "spdx": "MIT",
+                "files": [
+                  "licenses/beprith/CityInsights_TelegramBot/LICENSE"
+                ]
+              },
+              "localReferences": [
+                "collectors/community-github/licenses/beprith/CityInsights_TelegramBot/LICENSE"
+              ],
+              "missingReferences": [],
+              "licenseTextPresent": true,
+              "reviewRequired": true
+            }
+          },
+          "fileContentSha256": "f2ee274ccebeb0a3355d4ad0d1db94657879f5f4f91a0d189d27c37c5cebfada"
+        },
+        {
+          "graphId": "00ef58c7a68516e02f62b12b9fe37a17549273d232fb555213c4471133ca48a3",
+          "name": "Sequential Tasks Agents",
+          "source": {
+            "sourceUrl": "https://raw.githubusercontent.com/malepti/workflowsAURA-LangFlow/dbca774cbf5fd53e0f2752ce24ddb6cc4b11fe43/src/backend/base/langflow/initial_setup/starter_projects/Sequential%20Tasks%20Agents.json",
+            "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Sequential Tasks Agents.json",
+            "repository": "malepti/workflowsAURA-LangFlow",
+            "revision": "dbca774cbf5fd53e0f2752ce24ddb6cc4b11fe43",
+            "collector": "community-github",
+            "file": "collectors/community-github/artifacts/malepti/workflowsAURA-LangFlow/src/backend/base/langflow/initial_setup/starter_projects/Sequential Tasks Agents.json",
+            "licenseAssessment": {
+              "label": "MIT",
+              "declared": {
+                "status": "license-text-collected; review-required",
+                "spdx": "MIT",
+                "files": [
+                  "licenses/malepti/workflowsAURA-LangFlow/LICENSE"
+                ]
+              },
+              "localReferences": [
+                "collectors/community-github/licenses/malepti/workflowsAURA-LangFlow/LICENSE"
+              ],
+              "missingReferences": [],
+              "licenseTextPresent": true,
+              "reviewRequired": true
+            }
+          },
+          "fileContentSha256": "5da0ba21dc8b813a9ec8fe4bac0d230b3d6487336bbb1224e2868997205291f6"
+        }
+      ],
+      "meaning": "Exact recorded feature occurrence, not independent designs or useful composite evidence"
+    }
+  ],
+  "neighborhoods": [
+    {
+      "query": {
+        "centerNode": "Agent-5pkFD",
+        "centerType": "Agent",
+        "allIncidentFeatureItems": [
+          "[\"Agent\",\"in\",\"ChatInput\",\"message\",\"input_value\"]",
+          "[\"Agent\",\"out\",\"Agent\",\"response\",\"input_value\"]"
+        ],
+        "rule": "all generated incident signatures coexist at one recorded center"
+      },
+      "matchingDistinctGraphObjects": 48,
+      "supportingGraphIds": "Full list in first-corpus-comparison.json",
+      "examples": [
+        {
+          "graphId": "00ef58c7a68516e02f62b12b9fe37a17549273d232fb555213c4471133ca48a3",
+          "name": "Sequential Tasks Agents",
+          "source": {
+            "sourceUrl": "https://raw.githubusercontent.com/malepti/workflowsAURA-LangFlow/dbca774cbf5fd53e0f2752ce24ddb6cc4b11fe43/src/backend/base/langflow/initial_setup/starter_projects/Sequential%20Tasks%20Agents.json",
+            "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Sequential Tasks Agents.json",
+            "repository": "malepti/workflowsAURA-LangFlow",
+            "revision": "dbca774cbf5fd53e0f2752ce24ddb6cc4b11fe43",
+            "collector": "community-github",
+            "file": "collectors/community-github/artifacts/malepti/workflowsAURA-LangFlow/src/backend/base/langflow/initial_setup/starter_projects/Sequential Tasks Agents.json",
+            "licenseAssessment": {
+              "label": "MIT",
+              "declared": {
+                "status": "license-text-collected; review-required",
+                "spdx": "MIT",
+                "files": [
+                  "licenses/malepti/workflowsAURA-LangFlow/LICENSE"
+                ]
+              },
+              "localReferences": [
+                "collectors/community-github/licenses/malepti/workflowsAURA-LangFlow/LICENSE"
+              ],
+              "missingReferences": [],
+              "licenseTextPresent": true,
+              "reviewRequired": true
+            }
+          },
+          "fileContentSha256": "5da0ba21dc8b813a9ec8fe4bac0d230b3d6487336bbb1224e2868997205291f6"
+        },
+        {
+          "graphId": "12d23b0bda490b8476a6c2f0d73b33624cc6376745258e23652e562579495415",
+          "name": "Travel Planning Agents",
+          "source": {
+            "sourceUrl": "https://raw.githubusercontent.com/haydonbawden/langflow/9fc6861aa83ae693e19f7339d922b8ad18dec561/src/backend/base/langflow/initial_setup/starter_projects/Travel%20Planning%20Agents.json",
+            "sourcePath": "src/backend/base/langflow/initial_setup/starter_projects/Travel Planning Agents.json",
+            "repository": "haydonbawden/langflow",
+            "revision": "9fc6861aa83ae693e19f7339d922b8ad18dec561",
+            "collector": "community-github",
+            "file": "collectors/community-github/artifacts/haydonbawden/langflow/src/backend/base/langflow/initial_setup/starter_projects/Travel Planning Agents.json",
+            "licenseAssessment": {
+              "label": "MIT",
+              "declared": {
+                "status": "license-text-collected; review-required",
+                "spdx": "MIT",
+                "files": [
+                  "licenses/haydonbawden/langflow/LICENSE"
+                ]
+              },
+              "localReferences": [
+                "collectors/community-github/licenses/haydonbawden/langflow/LICENSE"
+              ],
+              "missingReferences": [],
+              "licenseTextPresent": true,
+              "reviewRequired": true
+            }
+          },
+          "fileContentSha256": "0e619a703bbdf0569e8c962690e35d8ef90b8b07fbf73066f0542551e9430665"
+        }
+      ],
+      "meaning": "Exact recorded feature occurrence, not independent designs or useful composite evidence"
+    },
+    {
+      "query": {
+        "centerNode": "Agent-Vq8mi",
+        "centerType": "Agent",
+        "allIncidentFeatureItems": [
+          "[\"Agent\",\"in\",\"Agent\",\"response\",\"input_value\"]",
+          "[\"Agent\",\"out\",\"ChatOutput\",\"response\",\"input_value\"]"
+        ],
+        "rule": "all generated incident signatures coexist at one recorded center"
+      },
+      "matchingDistinctGraphObjects": 43,
+      "supportingGraphIds": "Full list in first-corpus-comparison.json",
+      "examples": [
+        {
+          "graphId": "00f6b9e4653ba40828ca6fae0b154a92f70f2957322aaa0f8553f06eba09cbb7",
+          "name": "Deep Research",
+          "source": {
+            "sourceUrl": "https://raw.githubusercontent.com/konradbjk/langflow-flows/39e606b8df424e2c7ded65e2dd5ecb29bdee8cc3/multi-agent/DeepResearch-Tavily.json",
+            "sourcePath": "multi-agent/DeepResearch-Tavily.json",
+            "repository": "konradbjk/langflow-flows",
+            "revision": "39e606b8df424e2c7ded65e2dd5ecb29bdee8cc3",
+            "collector": "community-github",
+            "file": "collectors/community-github/artifacts/konradbjk/langflow-flows/multi-agent/DeepResearch-Tavily.json",
+            "licenseAssessment": {
+              "label": "unknown",
+              "declared": {
+                "status": "unknown",
+                "spdx": null,
+                "files": []
+              },
+              "localReferences": [],
+              "missingReferences": [],
+              "licenseTextPresent": false,
+              "reviewRequired": true
+            }
+          },
+          "fileContentSha256": "f593833e98ba5a32f62e6c3589b63c2c3243d7c05ae6ad243212b69245c84866"
+        },
+        {
+          "graphId": "0557900b23ce57a673c9303736d92d0a3066e1763850e85b1ae9a149e7dc9843",
+          "name": "VOFM requirment Output Control",
+          "source": {
+            "sourceUrl": "https://raw.githubusercontent.com/zhysga/multi_agent_coope_with_graphDrag/0440c9e83b7f5cccfa31807a846814c8d7d3a294/DefineSapAgent4/apps/api/AImodel/flow/VOFM%20requirment%20Output%20Control%20%283%29.json",
+            "sourcePath": "DefineSapAgent4/apps/api/AImodel/flow/VOFM requirment Output Control (3).json",
+            "repository": "zhysga/multi_agent_coope_with_graphDrag",
+            "revision": "0440c9e83b7f5cccfa31807a846814c8d7d3a294",
+            "collector": "community-github",
+            "file": "collectors/community-github/artifacts/zhysga/multi_agent_coope_with_graphDrag/DefineSapAgent4/apps/api/AImodel/flow/VOFM requirment Output Control (3).json",
+            "licenseAssessment": {
+              "label": "MIT",
+              "declared": {
+                "status": "license-text-collected; review-required",
+                "spdx": "MIT",
+                "files": [
+                  "licenses/zhysga/multi_agent_coope_with_graphDrag/LICENSE"
+                ]
+              },
+              "localReferences": [
+                "collectors/community-github/licenses/zhysga/multi_agent_coope_with_graphDrag/LICENSE"
+              ],
+              "missingReferences": [],
+              "licenseTextPresent": true,
+              "reviewRequired": true
+            }
+          },
+          "fileContentSha256": "d609cf7b0b319f19288809f8eb5eb02646f7b874ded941250563f32b3baae18b"
+        }
+      ],
+      "meaning": "Exact recorded feature occurrence, not independent designs or useful composite evidence"
+    }
+  ],
+  "corpusTransactionSha256": "99d6994fc1ddf8f7d028680abfd756bd3c7e081a222b4b43ba7f85206892964b",
+  "scope": "Existing frozen descriptive nonfixture neighborhood dataset; exact type/port spellings, no alias expansion",
+  "limits": [
+    "Frequency is not correctness or requirement fulfillment",
+    "Mirrors/related examples may remain; graph objects are not independent designs",
+    "No new rules learned, no guidance intervention or performance claim"
+  ]
+}

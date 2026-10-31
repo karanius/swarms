@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "swift-agent",
+  "version": "0.3.0",
+  "name": "Swift",
+  "kind": "agent-template",
+  "layer": "Components",
+  "status": "draft",
+  "resources": {
+    "executor": {
+      "repository": "https://github.com/openai/codex",
+      "configurationRef": null,
+      "status": "planned"
+    },
+    "model": {
+      "providerRef": "api-proxy",
+      "provider": "OpenAI Compatible",
+      "name": "gpt-6.1-sol",
+      "configurationRef": "langflow:model-provider/OpenAI Compatible"
+    },
+    "skills": []
+  },
+  "assembly": {
+    "scriptRef": "frontend/prototype-canvas-v3/scripts/assemble-swift.mjs",
+    "status": "implemented"
+  },
+  "deployment": {
+    "launcherRef": "frontend/prototype-canvas-v3/scripts/deploy-swift.mjs",
+    "status": "implemented"
+  },
+  "architecture": [
+    {
+      "piece": "Instance generator",
+      "type": "Agent",
+      "github": "https://github.com/openai/codex",
+      "status": "planned",
+      "role": "Propose Instance JSON"
+    },
+    {
+      "piece": "Library tools",
+      "type": "Tool interface",
+      "status": "planned",
+      "role": "Find items and resolve definitions",
+      "tools": [
+        "List layers",
+        "Search items",
+        "Inspect definitions",
+        "Inspect contracts",
+        "Resolve dependencies",
+        "Find compatible items",
+        "Retrieve assembly recipes",
+        "Check available versions"
+      ]
+    },
+    {
+      "piece": "Ajv",
+      "type": "JSON Schema validator",
+      "github": "https://github.com/ajv-validator/ajv",
+      "status": "planned",
+      "role": "Validate structure against our schemas"
+    },
+    {
+      "piece": "Harness\u00b2",
+      "type": "Optimization framework",
+      "github": "https://github.com/google-research/harness2",
+      "status": "planned",
+      "role": "Improve the generator harness"
+    }
+  ],
+  "documents": [
+    {
+      "path": "knowledge/instance-machine/domain-model.md",
+      "title": "Domain Model",
+      "href": "/swift-agent/documents/ca7ac221ba0c02fc-domain-model.md",
+      "sha256": "ca7ac221ba0c02fcfb079bd729e42c1e287942e4aa991f8c7e204dc77f008426"
+    },
+    {
+      "path": "knowledge/instance-machine/contracts.md",
+      "title": "Contracts",
+      "href": "/swift-agent/documents/7682c60a59f91292-contracts.md",
+      "sha256": "7682c60a59f912923341d3f21990c6b781428b5e9f1f2a1d92ceeb6f4c3f8d2b"
+    },
+    {
+      "path": "knowledge/instance-machine/canonical-specification.md",
+      "title": "Canonical Specification",
+      "href": "/swift-agent/documents/fc8446cbaea80fa9-canonical-specification.md",
+      "sha256": "fc8446cbaea80fa91ecc1aabc533e83e0ab30067dc7e9a347b566d2d115460be"
+    },
+    {
+      "path": "knowledge/instance-machine/compiler-lifecycle.md",
+      "title": "Compiler Lifecycle",
+      "href": "/swift-agent/documents/bb7d1cba4a67b305-compiler-lifecycle.md",
+      "sha256": "bb7d1cba4a67b30540dbb845c526c3a1d770ab73e47aef42f1ed8aea0b4749a8"
+    },
+    {
+      "path": "knowledge/instance-machine/proof-milestone.md",
+      "title": "Proof Milestone",
+      "href": "/swift-agent/documents/50ee036322b13ab9-proof-milestone.md",
+      "sha256": "50ee036322b13ab9d80691cbc04f7ed72e9829a425abccba5526e1a5d5f8da94"
+    },
+    {
+      "path": "knowledge/instance-machine/strategy.md",
+      "title": "Strategy",
+      "href": "/swift-agent/documents/dc77909a07d8e433-strategy.md",
+      "sha256": "dc77909a07d8e43395da77e86e3b57702ca39fe898cd5ebb8776552a6b1d7ab1"
+    }
+  ]
+}

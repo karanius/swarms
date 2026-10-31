@@ -1,0 +1,52 @@
+{
+  "listener_feedback": "Actor control sounds angry; character sounds frustrated rather than angry.",
+  "experiment": "Native anger vector with fixed character identity, sentence and seed; audio-guided actor control.",
+  "job": {
+    "id": "a558b22c-ab86-4dde-8763-568108ccce64",
+    "kind": "guided",
+    "state": "finished",
+    "created": 1793443657.6167822,
+    "total": 2,
+    "done": 2,
+    "results": [
+      {
+        "audition_id": "cc563850-0bb0-4805-8a04-aac89603e63f",
+        "state": "saved",
+        "engine": "IndexTTS 2.5",
+        "style": "anger",
+        "batch_id": "a558b22c-ab86-4dde-8763-568108ccce64",
+        "text": "I need you to stay right here.",
+        "sentence_policy": "one-sentence-v1",
+        "error": null,
+        "reference": {
+          "id": "character-audition:cc563850-0bb0-4805-8a04-aac89603e63f",
+          "source": "Locally designed synthetic character",
+          "audition_id": "cc563850-0bb0-4805-8a04-aac89603e63f",
+          "path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/cc563850-0bb0-4805-8a04-aac89603e63f/voice.wav",
+          "sha256": "91a6509d864f7ee717c9e39f7d31a6564ae11bca3c2a08e252d34e2a62aeeb6b",
+          "transcript": "I need you to stay right here."
+        }
+      },
+      {
+        "audition_id": "530b1f52-e1b6-4e61-b16e-af6cd1aa8e39",
+        "state": "saved",
+        "engine": "IndexTTS 2.5",
+        "style": "anger",
+        "batch_id": "a558b22c-ab86-4dde-8763-568108ccce64",
+        "text": "I need you to stay right here.",
+        "sentence_policy": "one-sentence-v1",
+        "error": null,
+        "reference": {
+          "id": "character-audition:530b1f52-e1b6-4e61-b16e-af6cd1aa8e39",
+          "source": "Locally designed synthetic character",
+          "audition_id": "530b1f52-e1b6-4e61-b16e-af6cd1aa8e39",
+          "path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/530b1f52-e1b6-4e61-b16e-af6cd1aa8e39/voice.wav",
+          "sha256": "e726210e4faf7ccc4558d23f2be2f398c76392df153135c1b7a17b586acc9f10",
+          "transcript": "I need you to stay right here."
+        }
+      }
+    ],
+    "current_style": "anger"
+  },
+  "perceptual_status": "Awaiting user listening; no success inferred from saved WAVs."
+}

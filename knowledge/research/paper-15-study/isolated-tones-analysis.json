@@ -1,0 +1,128 @@
+{
+  "only_request_difference": "instruct",
+  "controls_equal": true,
+  "raw_files_distinct": true,
+  "conditions": [
+    {
+      "condition": "neutral",
+      "request": {
+        "text": "I need you to stay right here.",
+        "engine": "voxcpm2",
+        "seed": "7",
+        "effect_preset": "raw",
+        "wav_bits": "24",
+        "max_chunk_chars": "0",
+        "pronounce": "false",
+        "instruct": "Speak in a natural neutral conversational tone, without emotional emphasis. Say only the supplied sentence.",
+        "ref_text": "I have bunburyed all over goat on two separate occasions.",
+        "num_step": "10",
+        "reference": {
+          "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+          "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f"
+        }
+      },
+      "raw_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/isolated-tones-neutral-01/native.wav",
+      "raw_sha256": "a4e99f39b3e927c038bbfe92e7ed58203697c9efb96856b094bdc88da15802a0",
+      "duration_seconds": 1.76,
+      "api_seconds": 12.263106107711792,
+      "sample_rate": 48000,
+      "pitch_median_hz": 164.57571158346943,
+      "pitch_iqr_hz": 48.66321204531323,
+      "raw_measurement": {
+        "input_i": "-19.2",
+        "input_tp": "-4.1",
+        "meter": "FFmpeg ebur128"
+      },
+      "listening_assessment": null,
+      "matched_measurement": {
+        "input_i": "-23.0",
+        "input_tp": "-7.9",
+        "meter": "FFmpeg ebur128"
+      },
+      "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/isolated-tones-neutral-01.wav",
+      "matched_sha256": "be11c31c2027f107941caf2f862ba91de9802e5a7ebb71eb01240661b4b05120",
+      "target_lufs": -23.0
+    },
+    {
+      "condition": "controlled-anger",
+      "request": {
+        "text": "I need you to stay right here.",
+        "engine": "voxcpm2",
+        "seed": "7",
+        "effect_preset": "raw",
+        "wav_bits": "24",
+        "max_chunk_chars": "0",
+        "pronounce": "false",
+        "instruct": "Controlled anger in a tense confrontation. Firm, stern and tense, with forceful emphasis on stay right here. Contain the anger; do not shout. Say only the supplied sentence.",
+        "ref_text": "I have bunburyed all over goat on two separate occasions.",
+        "num_step": "10",
+        "reference": {
+          "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+          "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f"
+        }
+      },
+      "raw_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/isolated-tones-controlled-anger-01/native.wav",
+      "raw_sha256": "7d1e4f70526878f0dbeca5f04ff34bc4513d24a049f2d524d6e05dce4de26a36",
+      "duration_seconds": 1.76,
+      "api_seconds": 1.8486149311065674,
+      "sample_rate": 48000,
+      "pitch_median_hz": 156.48268494974462,
+      "pitch_iqr_hz": 46.829886335835255,
+      "raw_measurement": {
+        "input_i": "-17.7",
+        "input_tp": "-2.5",
+        "meter": "FFmpeg ebur128"
+      },
+      "listening_assessment": null,
+      "matched_measurement": {
+        "input_i": "-23.0",
+        "input_tp": "-7.8",
+        "meter": "FFmpeg ebur128"
+      },
+      "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/isolated-tones-controlled-anger-01.wav",
+      "matched_sha256": "68244f55ba092ef663278e379c27f670cec77b8db3f07403b2b4b653eeb9002c",
+      "target_lufs": -23.0
+    },
+    {
+      "condition": "tender-reassurance",
+      "request": {
+        "text": "I need you to stay right here.",
+        "engine": "voxcpm2",
+        "seed": "7",
+        "effect_preset": "raw",
+        "wav_bits": "24",
+        "max_chunk_chars": "0",
+        "pronounce": "false",
+        "instruct": "Tender reassurance to someone frightened. Speak gently, warmly and soothingly, with patient caring emphasis. No anger, threat or sternness. Say only the supplied sentence.",
+        "ref_text": "I have bunburyed all over goat on two separate occasions.",
+        "num_step": "10",
+        "reference": {
+          "path": "/Users/x/.local/share/money/f5-tts/datasets/esd/enhanced/39ca0e939e536679/0012-neutral.wav",
+          "sha256": "ec8dbecd4224045910c80fbacc687954a2b0b0ae5ca45b08cffad72a6dd1fb9f"
+        }
+      },
+      "raw_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/runs/isolated-tones-tender-reassurance-01/native.wav",
+      "raw_sha256": "fcf4baec1ef1b1cc9c735301bde9182967a34036da4b5baeaa7c6e1a3c2704f9",
+      "duration_seconds": 1.76,
+      "api_seconds": 1.7936949729919434,
+      "sample_rate": 48000,
+      "pitch_median_hz": 141.42807015878014,
+      "pitch_iqr_hz": 45.5480424943288,
+      "raw_measurement": {
+        "input_i": "-19.3",
+        "input_tp": "-3.7",
+        "meter": "FFmpeg ebur128"
+      },
+      "listening_assessment": null,
+      "matched_measurement": {
+        "input_i": "-23.0",
+        "input_tp": "-7.4",
+        "meter": "FFmpeg ebur128"
+      },
+      "matched_path": "/Users/x/projects/swarms/knowledge/research/paper-15-study/listening/isolated-tones-tender-reassurance-01.wav",
+      "matched_sha256": "51b5dd19646184d9ea712d9b235690bd409962f47c349f7c50cea4e453fa402a",
+      "target_lufs": -23.0
+    }
+  ],
+  "limits": "Amplitude-gated Yin pitch estimates are diagnostic only. No automatic emotion, exact-word or identity validation. No switching sequence assembled."
+}

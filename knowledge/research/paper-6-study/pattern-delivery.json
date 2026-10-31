@@ -1,0 +1,41 @@
+{
+  "status": "complete for bounded exploratory pattern visualization",
+  "stats": {
+    "nonfixtureGraphs": 1149,
+    "componentOccurrences": 8528,
+    "assessableNeighborhoods": 8258,
+    "excludedNeighborhoods": {
+      "no-recorded-incident-edge": 137,
+      "unknown-endpoint-type-port-or-self-loop": 133
+    },
+    "distinctFeatures": 3554,
+    "frequentItemsets": 987,
+    "repeatedConnectedPairs": 445,
+    "directedAssociationRules": 890,
+    "displayedRules": 890,
+    "recordedSourceGroups": 209,
+    "largestGroupGraphs": 499,
+    "runtimeSeconds": 15.649
+  },
+  "evidenceRecount": {
+    "status": "passed",
+    "rulesRecounted": 890,
+    "witnessPreviewsChecked": 62265,
+    "sourceGraphsChecked": 981,
+    "hashes": "topology index and every derived graph file digest matched frozen analysis",
+    "limits": "Static count and provenance checks, not independent behavioral evaluation or academic review."
+  },
+  "checks": {
+    "controlledTests": 9,
+    "productionBuild": "passed",
+    "dependencyCompatibility": "passed",
+    "notebookValidation": "passed",
+    "abstractPreserved": true,
+    "oldTopologyFigurePreserved": true,
+    "currentResultOnlyAPI": "invalid400; stale404; download200",
+    "browser": "selection, absence-category switch, full-original toggle, exact ports, filtering, empty-state, pagination and notebook embed checked"
+  },
+  "review": "internal AI static review; fixes recorded; no blocker for stated exploratory scope",
+  "limits": "No held-out evaluation, behavioral validation, composite generation, AnyBURL/PyClause or evolutionary run.",
+  "notebookSha256": "a5fde7b66b0d3fd352ff66462c280c3bcb44472c56db0ce91d21dffab1f107fc"
+}

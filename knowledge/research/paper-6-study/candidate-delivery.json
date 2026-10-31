@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "scope": "source-backed candidate-group boundary explorer and Paper 6 update",
+  "views": [
+    "/corpus-explorer/",
+    "/pattern-explorer/",
+    "/candidate-explorer/"
+  ],
+  "existingViewsPreserved": true,
+  "originalAbstractPreserved": true,
+  "notebook": "knowledge/research/notebooks/Paper 6 - Rule Mining from Langflow Templates.ipynb",
+  "audit": {
+    "candidates": 445,
+    "withCrossingWires": 443,
+    "withRequiredUnwired": 322,
+    "withUnresolvedIncident": 0,
+    "connected": 445,
+    "acyclic": 440
+  },
+  "controlledTests": {
+    "passed": 8,
+    "failed": 0
+  },
+  "browserChecks": [
+    "whole workflow selection",
+    "clear and disabled export",
+    "reset",
+    "one-hop expansion",
+    "named membership toggle",
+    "purpose proposed judgment",
+    "search empty state",
+    "catalog pagination",
+    "notebook embed",
+    "no console errors"
+  ],
+  "build": "passed",
+  "screenshots": [
+    "/tmp/paper6-candidate-groups.png",
+    "/tmp/paper6-candidate-embedded.png"
+  ],
+  "limits": [
+    "No purpose inference or automatic boundary discovery",
+    "No library promotion or higher-plane generation",
+    "No workflow execution or behavioral validation",
+    "Manual edits temporary until JSON download",
+    "445 ranked representatives, not independent or held out"
+  ]
+}

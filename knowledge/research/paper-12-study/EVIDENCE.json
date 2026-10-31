@@ -1,0 +1,545 @@
+{
+  "runs": [
+    {
+      "folder": "/Users/x/projects/swarms/knowledge/research/paper-12-study/.runtime/first-proof-fixed",
+      "result": {
+        "status": "passed",
+        "brief": "Explain how a request becomes a proposed design, then a tested system. The first scene covers request, requirements and proposal. The second covers implementation, testing and evidence.",
+        "events": [
+          {
+            "stage": "start",
+            "elapsed_seconds": 0.0
+          },
+          {
+            "stage": "scene_plan",
+            "elapsed_seconds": 2.429,
+            "endpoint": "loopback Ollama",
+            "model": "llama3.2:3b",
+            "eval_count": 132,
+            "seconds": 2.4286662499998783,
+            "mode": "JSON scene specification; raster image rendered from generated labels. No diffusion or motion model."
+          },
+          {
+            "stage": "image",
+            "elapsed_seconds": 2.455,
+            "scene": 0,
+            "width": 1280,
+            "height": 720,
+            "sha256": "47cb0e64b8c69f8daefb6af33d65069d67a9b36a55cde95d8c3cc7c2b44346ac",
+            "mode": "Programmatic diagram from local model scene plan; narration text burned into each scene."
+          },
+          {
+            "stage": "narration",
+            "elapsed_seconds": 12.674,
+            "scene": 0,
+            "duration": 6.0906666666666665,
+            "evidence": {
+              "status": "passed",
+              "model": "F5TTS_v1_Base",
+              "device": "mps",
+              "batch_workers": 1,
+              "sample_rate": 24000,
+              "duration_seconds": 6.091,
+              "inference_seconds": 3.157,
+              "total_seconds": 8.889,
+              "real_time_factor": 0.518,
+              "rms": 0.12642296056536081,
+              "raw_peak_amplitude": 1.080493450164795,
+              "output_gain": 0.879227911890727,
+              "peak_amplitude": 0.949981689453125,
+              "peak_memory": {
+                "rss_bytes": 2140127232,
+                "mps_driver_bytes": 3572350976,
+                "process_maxrss_bytes": 2146566144
+              },
+              "gpu_execution_evidence": {
+                "transformer_forward_calls": 16,
+                "observed_parameter_devices": [
+                  "mps:0"
+                ],
+                "observed_tensor_devices": [
+                  "mps:0"
+                ]
+              },
+              "audio_sha256": "dbef8656731de58f85a3cc798115e2df85096ef0530c3d6dfeb550f2c4da962e",
+              "reference_sha256": "b0e22048e72414fcc1e6b6342e47a774d748a195ed34e4a5b3fcf416707f2b71",
+              "reference_preset": "bundled",
+              "reference_variant": null,
+              "reference_processing_build": null,
+              "reference_dataset_revision": null,
+              "offline_inference": true,
+              "model_revisions": [
+                {
+                  "repo": "SWivid/F5-TTS",
+                  "revision": "84e5a410d9cead4de2f847e7c9369a6440bdfaca",
+                  "files": [
+                    "F5TTS_v1_Base/model_1250000.safetensors",
+                    "F5TTS_v1_Base/vocab.txt"
+                  ],
+                  "integrity": {
+                    "F5TTS_v1_Base/model_1250000.safetensors": {
+                      "bytes": 1348435761,
+                      "sha256": "670900fd14e6c458b95da6e9ed317cdb20dbaf7a1c02ac06a05475a9d32b6a38"
+                    },
+                    "F5TTS_v1_Base/vocab.txt": {
+                      "bytes": 13800,
+                      "sha256": "2a05f992e00af9b0bd3800a8d23e78d520dbd705284ed2eedb5f4bd29398fa3c"
+                    }
+                  }
+                },
+                {
+                  "repo": "charactr/vocos-mel-24khz",
+                  "revision": "0feb3fdd929bcd6649e0e7c5a688cf7dd012ef21",
+                  "files": [
+                    "config.yaml",
+                    "pytorch_model.bin"
+                  ],
+                  "integrity": {
+                    "config.yaml": {
+                      "bytes": 461,
+                      "sha256": "da9033922f969a47f0c160010226919e59f27761fd5066f3828d46de6650b0fc"
+                    },
+                    "pytorch_model.bin": {
+                      "bytes": 54365991,
+                      "sha256": "97ec976ad1fd67a33ab2682d29c0ac7df85234fae875aefcc5fb215681a91b2a"
+                    }
+                  }
+                }
+              ],
+              "limits": "MPS dispatch verified; upstream may fall back to CPU for unsupported operations. Signal checks do not establish pronunciation or naturalness. Memory categories overlap and must not be added."
+            }
+          },
+          {
+            "stage": "clip_encoded",
+            "elapsed_seconds": 12.85,
+            "scene": 0,
+            "sha256": "04c69ecb6d9e2a709d3b38cbb2a02f1b7af280f84ad29206a1eddd5407bcfd9f"
+          },
+          {
+            "stage": "image",
+            "elapsed_seconds": 12.863,
+            "scene": 1,
+            "width": 1280,
+            "height": 720,
+            "sha256": "6d0a8ae5e7ff469a71eb01689afcb9b67c1ba3911fd39c23c8f42ca301a2485d",
+            "mode": "Programmatic diagram from local model scene plan; narration text burned into each scene."
+          },
+          {
+            "stage": "narration",
+            "elapsed_seconds": 22.641,
+            "scene": 1,
+            "duration": 6.944,
+            "evidence": {
+              "status": "passed",
+              "model": "F5TTS_v1_Base",
+              "device": "mps",
+              "batch_workers": 1,
+              "sample_rate": 24000,
+              "duration_seconds": 6.944,
+              "inference_seconds": 3.95,
+              "total_seconds": 8.688,
+              "real_time_factor": 0.569,
+              "rms": 0.14141494776749336,
+              "raw_peak_amplitude": 0.926851749420166,
+              "output_gain": 1.0,
+              "peak_amplitude": 0.9268798828125,
+              "peak_memory": {
+                "rss_bytes": 2135425024,
+                "mps_driver_bytes": 3595419648,
+                "process_maxrss_bytes": 2151153664
+              },
+              "gpu_execution_evidence": {
+                "transformer_forward_calls": 16,
+                "observed_parameter_devices": [
+                  "mps:0"
+                ],
+                "observed_tensor_devices": [
+                  "mps:0"
+                ]
+              },
+              "audio_sha256": "22d2ef307e1613657d962ef20803764b04c2409427c3966a0ac48795285025c6",
+              "reference_sha256": "b0e22048e72414fcc1e6b6342e47a774d748a195ed34e4a5b3fcf416707f2b71",
+              "reference_preset": "bundled",
+              "reference_variant": null,
+              "reference_processing_build": null,
+              "reference_dataset_revision": null,
+              "offline_inference": true,
+              "model_revisions": [
+                {
+                  "repo": "SWivid/F5-TTS",
+                  "revision": "84e5a410d9cead4de2f847e7c9369a6440bdfaca",
+                  "files": [
+                    "F5TTS_v1_Base/model_1250000.safetensors",
+                    "F5TTS_v1_Base/vocab.txt"
+                  ],
+                  "integrity": {
+                    "F5TTS_v1_Base/model_1250000.safetensors": {
+                      "bytes": 1348435761,
+                      "sha256": "670900fd14e6c458b95da6e9ed317cdb20dbaf7a1c02ac06a05475a9d32b6a38"
+                    },
+                    "F5TTS_v1_Base/vocab.txt": {
+                      "bytes": 13800,
+                      "sha256": "2a05f992e00af9b0bd3800a8d23e78d520dbd705284ed2eedb5f4bd29398fa3c"
+                    }
+                  }
+                },
+                {
+                  "repo": "charactr/vocos-mel-24khz",
+                  "revision": "0feb3fdd929bcd6649e0e7c5a688cf7dd012ef21",
+                  "files": [
+                    "config.yaml",
+                    "pytorch_model.bin"
+                  ],
+                  "integrity": {
+                    "config.yaml": {
+                      "bytes": 461,
+                      "sha256": "da9033922f969a47f0c160010226919e59f27761fd5066f3828d46de6650b0fc"
+                    },
+                    "pytorch_model.bin": {
+                      "bytes": 54365991,
+                      "sha256": "97ec976ad1fd67a33ab2682d29c0ac7df85234fae875aefcc5fb215681a91b2a"
+                    }
+                  }
+                }
+              ],
+              "limits": "MPS dispatch verified; upstream may fall back to CPU for unsupported operations. Signal checks do not establish pronunciation or naturalness. Memory categories overlap and must not be added."
+            }
+          },
+          {
+            "stage": "clip_encoded",
+            "elapsed_seconds": 22.807,
+            "scene": 1,
+            "sha256": "50357d841258a50e5f081ad129541269698cc745d12187e9c51ccc172d72f381"
+          },
+          {
+            "stage": "assembly",
+            "elapsed_seconds": 22.829,
+            "sha256": "d0a3f54cb6639ef45f2cb96ba5a162b934448efbe33f73ce07519cc0c497e995"
+          },
+          {
+            "stage": "verified_decode",
+            "elapsed_seconds": 22.926,
+            "returncode": 0
+          }
+        ],
+        "network_scope": "Application requests only loopback Ollama. F5 loads pinned local assets in offline mode. Not an OS-level network-isolation proof.",
+        "final": "/Users/x/projects/swarms/knowledge/research/paper-12-study/.runtime/first-proof-fixed/final.mp4",
+        "duration_seconds": 13.13,
+        "expected_seconds": 13.034666666666666,
+        "output_sha256": "d0a3f54cb6639ef45f2cb96ba5a162b934448efbe33f73ce07519cc0c497e995",
+        "captions": "/Users/x/projects/swarms/knowledge/research/paper-12-study/.runtime/first-proof-fixed/captions.srt",
+        "visual_mode": "JSON scene specification; raster image rendered from generated labels. No diffusion or motion model.",
+        "scope": "Working local illustrated-video prototype; no Langflow source graph executed, no general-purpose image/motion generation, no commercial readiness."
+      },
+      "independent": {
+        "independent_full_decode": true,
+        "output_sha256": "d0a3f54cb6639ef45f2cb96ba5a162b934448efbe33f73ce07519cc0c497e995",
+        "scene_audio_seconds": [
+          6.0906666666666665,
+          6.944
+        ],
+        "audio_rms": [
+          0.12642296056536081,
+          0.14141494776749336
+        ],
+        "observed_transformer_calls": [
+          16,
+          16
+        ],
+        "decoded_scene_psnr_db": [
+          40.52052015499805,
+          40.65789962638676
+        ],
+        "captions_match_generated_text_and_audio_boundaries": true,
+        "not_proven": [
+          "speech pronunciation/naturalness",
+          "word-level synchronization",
+          "commercial rights",
+          "general video generation",
+          "OS network isolation"
+        ]
+      }
+    },
+    {
+      "folder": "/Users/x/projects/swarms/knowledge/research/paper-12-study/.runtime/notebook-change-48d14c9d28",
+      "result": {
+        "status": "passed",
+        "brief": "Explain why a proposed connection needs testing. Scene one should distinguish a declared input and output from a working handoff. Scene two should show a small test, a failure report and a revised design.",
+        "events": [
+          {
+            "stage": "start",
+            "elapsed_seconds": 0.0
+          },
+          {
+            "stage": "scene_plan",
+            "elapsed_seconds": 2.535,
+            "endpoint": "loopback Ollama",
+            "model": "llama3.2:3b",
+            "eval_count": 147,
+            "seconds": 2.534473459001674,
+            "mode": "JSON scene specification; raster image rendered from generated labels. No diffusion or motion model."
+          },
+          {
+            "stage": "image",
+            "elapsed_seconds": 2.553,
+            "scene": 0,
+            "width": 1280,
+            "height": 720,
+            "sha256": "eaefe0480854541fc03c55f75c8a8a8239f4ce13817a7fa701cab91bcaf16ea1",
+            "mode": "Programmatic diagram from local model scene plan; narration text burned into each scene."
+          },
+          {
+            "stage": "narration",
+            "elapsed_seconds": 13.278,
+            "scene": 0,
+            "duration": 8.096,
+            "evidence": {
+              "status": "passed",
+              "model": "F5TTS_v1_Base",
+              "device": "mps",
+              "batch_workers": 1,
+              "sample_rate": 24000,
+              "duration_seconds": 8.096,
+              "inference_seconds": 3.917,
+              "total_seconds": 9.505,
+              "real_time_factor": 0.484,
+              "rms": 0.12587066708483627,
+              "raw_peak_amplitude": 1.1002599000930786,
+              "output_gain": 0.8634323580452518,
+              "peak_amplitude": 0.95001220703125,
+              "peak_memory": {
+                "rss_bytes": 2150252544,
+                "mps_driver_bytes": 3626876928,
+                "process_maxrss_bytes": 2150383616
+              },
+              "gpu_execution_evidence": {
+                "transformer_forward_calls": 16,
+                "observed_parameter_devices": [
+                  "mps:0"
+                ],
+                "observed_tensor_devices": [
+                  "mps:0"
+                ]
+              },
+              "audio_sha256": "13b5740cb4d631652295e1b8f78fcb9e562f48e4deb95c6ad0836b89d3e48afb",
+              "reference_sha256": "b0e22048e72414fcc1e6b6342e47a774d748a195ed34e4a5b3fcf416707f2b71",
+              "reference_preset": "bundled",
+              "reference_variant": null,
+              "reference_processing_build": null,
+              "reference_dataset_revision": null,
+              "offline_inference": true,
+              "model_revisions": [
+                {
+                  "repo": "SWivid/F5-TTS",
+                  "revision": "84e5a410d9cead4de2f847e7c9369a6440bdfaca",
+                  "files": [
+                    "F5TTS_v1_Base/model_1250000.safetensors",
+                    "F5TTS_v1_Base/vocab.txt"
+                  ],
+                  "integrity": {
+                    "F5TTS_v1_Base/model_1250000.safetensors": {
+                      "bytes": 1348435761,
+                      "sha256": "670900fd14e6c458b95da6e9ed317cdb20dbaf7a1c02ac06a05475a9d32b6a38"
+                    },
+                    "F5TTS_v1_Base/vocab.txt": {
+                      "bytes": 13800,
+                      "sha256": "2a05f992e00af9b0bd3800a8d23e78d520dbd705284ed2eedb5f4bd29398fa3c"
+                    }
+                  }
+                },
+                {
+                  "repo": "charactr/vocos-mel-24khz",
+                  "revision": "0feb3fdd929bcd6649e0e7c5a688cf7dd012ef21",
+                  "files": [
+                    "config.yaml",
+                    "pytorch_model.bin"
+                  ],
+                  "integrity": {
+                    "config.yaml": {
+                      "bytes": 461,
+                      "sha256": "da9033922f969a47f0c160010226919e59f27761fd5066f3828d46de6650b0fc"
+                    },
+                    "pytorch_model.bin": {
+                      "bytes": 54365991,
+                      "sha256": "97ec976ad1fd67a33ab2682d29c0ac7df85234fae875aefcc5fb215681a91b2a"
+                    }
+                  }
+                }
+              ],
+              "limits": "MPS dispatch verified; upstream may fall back to CPU for unsupported operations. Signal checks do not establish pronunciation or naturalness. Memory categories overlap and must not be added."
+            }
+          },
+          {
+            "stage": "clip_encoded",
+            "elapsed_seconds": 13.46,
+            "scene": 0,
+            "sha256": "88e11a007f8cd18d5797413adf99207076aeca974e81874de8752bfe1f55c365"
+          },
+          {
+            "stage": "image",
+            "elapsed_seconds": 13.473,
+            "scene": 1,
+            "width": 1280,
+            "height": 720,
+            "sha256": "0e9c18a5e7ce7124fb6c9a19f9d377ef1c7f8d555c598b7bda95eb525fa13722",
+            "mode": "Programmatic diagram from local model scene plan; narration text burned into each scene."
+          },
+          {
+            "stage": "narration",
+            "elapsed_seconds": 23.435,
+            "scene": 1,
+            "duration": 8.949333333333334,
+            "evidence": {
+              "status": "passed",
+              "model": "F5TTS_v1_Base",
+              "device": "mps",
+              "batch_workers": 1,
+              "sample_rate": 24000,
+              "duration_seconds": 8.949,
+              "inference_seconds": 4.162,
+              "total_seconds": 8.881,
+              "real_time_factor": 0.465,
+              "rms": 0.15514626484040356,
+              "raw_peak_amplitude": 0.9004403948783875,
+              "output_gain": 1.0,
+              "peak_amplitude": 0.90045166015625,
+              "peak_memory": {
+                "rss_bytes": 2137833472,
+                "mps_driver_bytes": 3652042752,
+                "process_maxrss_bytes": 2147270656
+              },
+              "gpu_execution_evidence": {
+                "transformer_forward_calls": 16,
+                "observed_parameter_devices": [
+                  "mps:0"
+                ],
+                "observed_tensor_devices": [
+                  "mps:0"
+                ]
+              },
+              "audio_sha256": "9a7662c0bcd51518bb5a2cfec30f728928e47c07c10a8c1982f20da8f4ec87a3",
+              "reference_sha256": "b0e22048e72414fcc1e6b6342e47a774d748a195ed34e4a5b3fcf416707f2b71",
+              "reference_preset": "bundled",
+              "reference_variant": null,
+              "reference_processing_build": null,
+              "reference_dataset_revision": null,
+              "offline_inference": true,
+              "model_revisions": [
+                {
+                  "repo": "SWivid/F5-TTS",
+                  "revision": "84e5a410d9cead4de2f847e7c9369a6440bdfaca",
+                  "files": [
+                    "F5TTS_v1_Base/model_1250000.safetensors",
+                    "F5TTS_v1_Base/vocab.txt"
+                  ],
+                  "integrity": {
+                    "F5TTS_v1_Base/model_1250000.safetensors": {
+                      "bytes": 1348435761,
+                      "sha256": "670900fd14e6c458b95da6e9ed317cdb20dbaf7a1c02ac06a05475a9d32b6a38"
+                    },
+                    "F5TTS_v1_Base/vocab.txt": {
+                      "bytes": 13800,
+                      "sha256": "2a05f992e00af9b0bd3800a8d23e78d520dbd705284ed2eedb5f4bd29398fa3c"
+                    }
+                  }
+                },
+                {
+                  "repo": "charactr/vocos-mel-24khz",
+                  "revision": "0feb3fdd929bcd6649e0e7c5a688cf7dd012ef21",
+                  "files": [
+                    "config.yaml",
+                    "pytorch_model.bin"
+                  ],
+                  "integrity": {
+                    "config.yaml": {
+                      "bytes": 461,
+                      "sha256": "da9033922f969a47f0c160010226919e59f27761fd5066f3828d46de6650b0fc"
+                    },
+                    "pytorch_model.bin": {
+                      "bytes": 54365991,
+                      "sha256": "97ec976ad1fd67a33ab2682d29c0ac7df85234fae875aefcc5fb215681a91b2a"
+                    }
+                  }
+                }
+              ],
+              "limits": "MPS dispatch verified; upstream may fall back to CPU for unsupported operations. Signal checks do not establish pronunciation or naturalness. Memory categories overlap and must not be added."
+            }
+          },
+          {
+            "stage": "clip_encoded",
+            "elapsed_seconds": 23.637,
+            "scene": 1,
+            "sha256": "c82a8ba5800a8a3b31d03eeb557ab0cebfffaa38c37fc61d1b5c0aef9eda3525"
+          },
+          {
+            "stage": "assembly",
+            "elapsed_seconds": 23.658,
+            "sha256": "0c62c97cb9917c3df04b3ba3eccfcfa08c6f2f0475bfe75324e3897124fe3099"
+          },
+          {
+            "stage": "verified_decode",
+            "elapsed_seconds": 23.762,
+            "returncode": 0
+          }
+        ],
+        "network_scope": "Application requests only loopback Ollama. F5 loads pinned local assets in offline mode. Not an OS-level network-isolation proof.",
+        "final": "/Users/x/projects/swarms/knowledge/research/paper-12-study/.runtime/notebook-change-48d14c9d28/final.mp4",
+        "duration_seconds": 17.13,
+        "expected_seconds": 17.045333333333332,
+        "output_sha256": "0c62c97cb9917c3df04b3ba3eccfcfa08c6f2f0475bfe75324e3897124fe3099",
+        "captions": "/Users/x/projects/swarms/knowledge/research/paper-12-study/.runtime/notebook-change-48d14c9d28/captions.srt",
+        "visual_mode": "JSON scene specification; raster image rendered from generated labels. No diffusion or motion model.",
+        "scope": "Working local illustrated-video prototype; no Langflow source graph executed, no general-purpose image/motion generation, no commercial readiness."
+      },
+      "independent": {
+        "independent_full_decode": true,
+        "output_sha256": "0c62c97cb9917c3df04b3ba3eccfcfa08c6f2f0475bfe75324e3897124fe3099",
+        "scene_audio_seconds": [
+          8.096,
+          8.949333333333334
+        ],
+        "audio_rms": [
+          0.12587066708483627,
+          0.15514626484040356
+        ],
+        "observed_transformer_calls": [
+          16,
+          16
+        ],
+        "decoded_scene_psnr_db": [
+          40.229149199230605,
+          40.69384946979572
+        ],
+        "captions_match_generated_text_and_audio_boundaries": true,
+        "not_proven": [
+          "speech pronunciation/naturalness",
+          "word-level synchronization",
+          "commercial rights",
+          "general video generation",
+          "OS network isolation"
+        ]
+      }
+    }
+  ],
+  "negative_checks": [
+    {
+      "Defect": "video_tamper",
+      "Rejected": true,
+      "Reason": "Final hash mismatch"
+    },
+    {
+      "Defect": "caption_tamper",
+      "Rejected": true,
+      "Reason": "Caption text/timing differs from measured scene audio"
+    }
+  ],
+  "contract_tests_returncode": 0,
+  "scope": [
+    "F5 pretrained weights have noncommercial license restrictions; not a monetization-ready voice",
+    "Upstream voice sample rights are not commercially cleared",
+    "Two-scene diagram-video prototype; not general video generation",
+    "Caption boundaries follow generated scene audio; no word-level alignment",
+    "No automatic Langflow graph assembly or execution",
+    "Local calls/offline asset loading are not OS-level network-isolation proof"
+  ]
+}

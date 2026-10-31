@@ -1,0 +1,288 @@
+{
+  "requested_action": "Stop running Docker containers, preserve native Scene Studio and Jupyter; no generation",
+  "before": [
+    {
+      "id": "becf82463c03b2b96a53c1d13b41acb993ada34377e045f3c590001fee724601",
+      "name": "contract-studio-novu-api-1",
+      "image": "ghcr.io/novuhq/novu/api:3.19.0",
+      "compose_project": "contract-studio-novu",
+      "restart_policy": {
+        "Name": "no",
+        "MaximumRetryCount": 0
+      },
+      "mounts": []
+    },
+    {
+      "id": "508903d4032386a32288b2e7465c6261456200a1355e7d4d3fb8661fe10457b0",
+      "name": "contract-studio-novu-ws-1",
+      "image": "ghcr.io/novuhq/novu/ws:3.19.0",
+      "compose_project": "contract-studio-novu",
+      "restart_policy": {
+        "Name": "no",
+        "MaximumRetryCount": 0
+      },
+      "mounts": []
+    },
+    {
+      "id": "04c4c24964660213a8c97ac6b0bdc1dcd693bb17d4c9d2efa9fb509820825186",
+      "name": "contract-studio-novu-worker-1",
+      "image": "ghcr.io/novuhq/novu/worker:3.19.0",
+      "compose_project": "contract-studio-novu",
+      "restart_policy": {
+        "Name": "no",
+        "MaximumRetryCount": 0
+      },
+      "mounts": []
+    },
+    {
+      "id": "e88e287f9a0627372acf02e34606bc5f00fbba18948b210b41fd67314498dada",
+      "name": "contract-studio-novu-redis-1",
+      "image": "redis:7.4.7-alpine",
+      "compose_project": "contract-studio-novu",
+      "restart_policy": {
+        "Name": "no",
+        "MaximumRetryCount": 0
+      },
+      "mounts": [
+        {
+          "type": "bind",
+          "source": "/Users/x/tax/workspace/99-intake/projects/canadreamers/notebooks/studies/pipeline-workbench-data/inbox-bridge-v1/novu-data/redis",
+          "destination": "/data"
+        }
+      ]
+    },
+    {
+      "id": "f2278f05ae19befb2bcf3b357c8469b0c54ae6f0d027d86c1f40a5f81b0ef080",
+      "name": "contract-studio-novu-mongodb-1",
+      "image": "mongo:8.0.17",
+      "compose_project": "contract-studio-novu",
+      "restart_policy": {
+        "Name": "no",
+        "MaximumRetryCount": 0
+      },
+      "mounts": [
+        {
+          "type": "volume",
+          "source": "/var/lib/docker/volumes/e3b9e29cf731e79593c098e17538e4dcd397c0789cd264a320fd46c96e150ae6/_data",
+          "destination": "/data/configdb"
+        },
+        {
+          "type": "bind",
+          "source": "/Users/x/tax/workspace/99-intake/projects/canadreamers/notebooks/studies/pipeline-workbench-data/inbox-bridge-v1/novu-data/mongodb",
+          "destination": "/data/db"
+        }
+      ]
+    },
+    {
+      "id": "3716dcbc7eff6b4c49f93b9fe7ddb2f536a01bb1cc5b9f03e7b252e4599bca55",
+      "name": "sular-contract-ragflow-app-1",
+      "image": "sular/ragflow:350df0863253-arm64-configured",
+      "compose_project": "sular-contract-ragflow",
+      "restart_policy": {
+        "Name": "no",
+        "MaximumRetryCount": 0
+      },
+      "mounts": [
+        {
+          "type": "bind",
+          "source": "/Users/x/tax/workspace/99-intake/projects/canadreamers/runtime/ragflow-data/logs",
+          "destination": "/ragflow/logs"
+        }
+      ]
+    },
+    {
+      "id": "77992ddff4f8ec6d20c3013a3639d79f196ea8b3c29c9ee4aa5e4dbcbdbb7d89",
+      "name": "sular-contract-ragflow-clickhouse-1",
+      "image": "clickhouse/clickhouse-server:26.5.5.8@sha256:894ae0107b1cedc3c537521539a7ecc76fe0ee6e31efbb2af2c84ab858cb32a4",
+      "compose_project": "sular-contract-ragflow",
+      "restart_policy": {
+        "Name": "no",
+        "MaximumRetryCount": 0
+      },
+      "mounts": [
+        {
+          "type": "bind",
+          "source": "/Users/x/tax/workspace/99-intake/projects/canadreamers/runtime/ragflow-data/clickhouse",
+          "destination": "/var/lib/clickhouse"
+        }
+      ]
+    },
+    {
+      "id": "9663f8099c0f1b06c7407315532c2694dd3ebb8c8546d4dcd9b0af65dc409dc9",
+      "name": "sular-contract-ragflow-mysql-1",
+      "image": "mysql:8.0.40@sha256:d58ac93387f644e4e040c636b8f50494e78e5afc27ca0a87348b2f577da2b7ff",
+      "compose_project": "sular-contract-ragflow",
+      "restart_policy": {
+        "Name": "no",
+        "MaximumRetryCount": 0
+      },
+      "mounts": [
+        {
+          "type": "bind",
+          "source": "/Users/x/tax/workspace/99-intake/projects/canadreamers/runtime/ragflow-data/mysql",
+          "destination": "/var/lib/mysql"
+        }
+      ]
+    },
+    {
+      "id": "2465b78388dc52ead0f9f2ea8ab8c05aa0a67851e4eade65291b276a0dd3d372",
+      "name": "sular-contract-ragflow-kvrocks-1",
+      "image": "apache/kvrocks:2.16.0@sha256:9e632c317c83c80d92f1c9d22ac6aa9f64d149e1f04ff2af5f15a5768a01c4b7",
+      "compose_project": "sular-contract-ragflow",
+      "restart_policy": {
+        "Name": "no",
+        "MaximumRetryCount": 0
+      },
+      "mounts": [
+        {
+          "type": "bind",
+          "source": "/Users/x/tax/workspace/99-intake/projects/canadreamers/runtime/ragflow-data/kvrocks",
+          "destination": "/var/lib/kvrocks"
+        }
+      ]
+    },
+    {
+      "id": "bea05560185812f29fc1e7e164737a4602109e59e40172493588f75e2b049afc",
+      "name": "sular-contract-ragflow-nats-1",
+      "image": "nats:2.14.2-alpine@sha256:952d157e28d5394a211229bd57a7b37ff9f184e58e2c8486a08fa909fd254e32",
+      "compose_project": "sular-contract-ragflow",
+      "restart_policy": {
+        "Name": "no",
+        "MaximumRetryCount": 0
+      },
+      "mounts": [
+        {
+          "type": "bind",
+          "source": "/Users/x/tax/workspace/99-intake/projects/canadreamers/runtime/ragflow-data/nats",
+          "destination": "/data"
+        }
+      ]
+    },
+    {
+      "id": "68ecb4d89497da743b9d8fbba4660fb91d9f611db34d5f69b980245d59e98d0b",
+      "name": "sular-contract-ragflow-elasticsearch-1",
+      "image": "elasticsearch:8.11.3@sha256:58a3a280935d830215802322e9a0373faaacdfd646477aa7e718939c2f29292a",
+      "compose_project": "sular-contract-ragflow",
+      "restart_policy": {
+        "Name": "no",
+        "MaximumRetryCount": 0
+      },
+      "mounts": [
+        {
+          "type": "bind",
+          "source": "/Users/x/tax/workspace/99-intake/projects/canadreamers/runtime/ragflow-data/elasticsearch",
+          "destination": "/usr/share/elasticsearch/data"
+        }
+      ]
+    },
+    {
+      "id": "7b0bdfe68aad99022c8211b5513e5ca078c31b978a5a95f220739a1af13ce6fb",
+      "name": "sular-contract-ragflow-minio-1",
+      "image": "pgsty/minio:RELEASE.2026-03-25T00-00-00Z@sha256:a72bf37c235a83a73890d2a46c5b36801fed61c335175e0396070bf84a8bbb98",
+      "compose_project": "sular-contract-ragflow",
+      "restart_policy": {
+        "Name": "no",
+        "MaximumRetryCount": 0
+      },
+      "mounts": [
+        {
+          "type": "bind",
+          "source": "/Users/x/tax/workspace/99-intake/projects/canadreamers/runtime/ragflow-data/minio",
+          "destination": "/data"
+        }
+      ]
+    },
+    {
+      "id": "69de156a00f0eda7da3bbf6ad300c45ddcf8a067c3279495fff962d7455f25a6",
+      "name": "second-brain-anythingllm-1",
+      "image": "mintplexlabs/anythingllm@sha256:7cb74d09c31738790dbed6bea31284a25b0b64682a86deec47b8de59205a4784",
+      "compose_project": "second-brain",
+      "restart_policy": {
+        "Name": "unless-stopped",
+        "MaximumRetryCount": 0
+      },
+      "mounts": [
+        {
+          "type": "bind",
+          "source": "/Users/x/projects/security/runtime/anythingllm/server.env",
+          "destination": "/app/server/.env"
+        },
+        {
+          "type": "bind",
+          "source": "/Users/x/projects/security/runtime/anythingllm/storage",
+          "destination": "/app/server/storage"
+        }
+      ]
+    }
+  ],
+  "created": 1793444337.866551,
+  "user_correction": "Keep contract and unrelated projects running; scope only to voice project",
+  "restoration_requested_at": 1793444377.31106,
+  "restoration_verified": [
+    {
+      "name": "contract-studio-novu-api-1",
+      "running": false,
+      "health": null
+    },
+    {
+      "name": "contract-studio-novu-ws-1",
+      "running": false,
+      "health": null
+    },
+    {
+      "name": "contract-studio-novu-worker-1",
+      "running": false,
+      "health": null
+    },
+    {
+      "name": "contract-studio-novu-redis-1",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "name": "contract-studio-novu-mongodb-1",
+      "running": false,
+      "health": "unhealthy"
+    },
+    {
+      "name": "sular-contract-ragflow-app-1",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "name": "sular-contract-ragflow-clickhouse-1",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "name": "sular-contract-ragflow-mysql-1",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "name": "sular-contract-ragflow-kvrocks-1",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "name": "sular-contract-ragflow-nats-1",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "name": "sular-contract-ragflow-elasticsearch-1",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "name": "sular-contract-ragflow-minio-1",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "name": "second-brain-anythingllm-1",
+      "running": true,
+      "health": "healthy"
+    }
+  ]
+}

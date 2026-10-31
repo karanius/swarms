@@ -1,0 +1,257 @@
+{
+  "project_id": "da2312a0-20b9-4633-bd90-67c0803ac43c",
+  "old_candidate_id": "d1426fd9-f0b8-4bc4-a340-bfd5be55e2e2",
+  "user_feedback": [
+    {
+      "candidate_id": "d1426fd9-f0b8-4bc4-a340-bfd5be55e2e2",
+      "trial_ids": [
+        "0785d035-a05f-457e-bf0f-070579a0d51d",
+        "dd401243-bf89-4be1-b531-9b00de07626c"
+      ],
+      "note": "The user reports that the anger performance and its new-line recordings do not sound angry. The requested delivery was not demonstrated.",
+      "at": 1793436947.354165,
+      "source": "listener_feedback"
+    }
+  ],
+  "identity_input": {
+    "audition_id": "32f61b1e-0917-4b8b-a9bb-a7ddd016741d",
+    "path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/32f61b1e-0917-4b8b-a9bb-a7ddd016741d/voice.wav",
+    "sha256": "f1e4ed9b051186c69f875235f0a914b35116a0a80e6afa229215c82c5ad7f368",
+    "transcript": "Good morning. I thought we could meet after lunch, take a walk through the garden, and talk about our plans for the weekend."
+  },
+  "acted_emotion_input": {
+    "id": "crema:1006_MTI_ANG_XX",
+    "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1006/1006_MTI_ANG_XX.wav",
+    "sha256": "d8a324371c17b8a9371e79c02642f1c7f1782b3c838de3346dc2904c482d27a9",
+    "transcript": "Maybe tomorrow it will be cold.",
+    "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_MTI_ANG_XX.wav",
+    "annotations": {
+      "intended_emotion": "A",
+      "intended_intensity": "XX",
+      "audio_only_votes": {
+        "A": 10,
+        "D": 0,
+        "F": 0,
+        "H": 0,
+        "N": 0,
+        "S": 0
+      },
+      "n": 10,
+      "target_share": 1.0,
+      "conditional_intensity": {
+        "A": 66.5,
+        "D": null,
+        "F": null,
+        "H": null,
+        "N": null,
+        "S": null
+      },
+      "selection": "Top source-metadata candidate, not listener-approved"
+    },
+    "qc": {
+      "duration_seconds": 3.7704375,
+      "sample_rate": 16000,
+      "near_full_scale_samples": 20
+    },
+    "qualification": "Candidate; source annotations retained, acting and transcript unreviewed",
+    "emotion": "anger",
+    "speaker": "crema:1006",
+    "library": "crema",
+    "label": "CREMA-D \u00b7 crema:1006 \u00b7 anger",
+    "terms": "ODbL database / DbCL contents. Research comparison; no unrestricted commercial identity-use claim."
+  },
+  "native_identity_and_emotion_bindings_verified": true,
+  "new_word_continuation_bindings_verified": 2,
+  "new_recordings": [
+    {
+      "id": "9c42d08f-3ceb-445e-bdd4-7a9dec29b396",
+      "engine": "IndexTTS 2.5",
+      "state": "saved",
+      "exact_words": true,
+      "audio": {
+        "path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/9c42d08f-3ceb-445e-bdd4-7a9dec29b396/voice.wav",
+        "listening_path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/9c42d08f-3ceb-445e-bdd4-7a9dec29b396/listening.wav",
+        "sha256": "8be08ea97aa8bd06c08dee60538a3fb99303e90ce8a2e7968c1f1bb0bde01957",
+        "duration_seconds": 5.50312925170068,
+        "sample_rate": 22050,
+        "gain": 0.3953666200681279,
+        "loudness": {
+          "input_i": "-14.94",
+          "input_tp": "0.27",
+          "input_lra": "1.70",
+          "input_thresh": "-25.11",
+          "output_i": "-23.23",
+          "output_tp": "-8.26",
+          "output_lra": "1.60",
+          "output_thresh": "-33.41",
+          "normalization_type": "dynamic",
+          "target_offset": "0.23"
+        }
+      },
+      "request": {
+        "text": "I need you to stay right here. Listen to me for a moment. There is something important I want you to understand.",
+        "description": "",
+        "seed": 23,
+        "steps": 10,
+        "guidance": 2.0,
+        "profile": {
+          "name": "British character \u00b7 pipeline test, unreviewed",
+          "reference": {
+            "audition_id": "32f61b1e-0917-4b8b-a9bb-a7ddd016741d",
+            "path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/32f61b1e-0917-4b8b-a9bb-a7ddd016741d/voice.wav",
+            "sha256": "f1e4ed9b051186c69f875235f0a914b35116a0a80e6afa229215c82c5ad7f368",
+            "transcript": "Good morning. I thought we could meet after lunch, take a walk through the garden, and talk about our plans for the weekend."
+          }
+        },
+        "performance_direction": "",
+        "mode": "reference_performance",
+        "target_style": "anger",
+        "emotion_reference": {
+          "id": "crema:1006_MTI_ANG_XX",
+          "path": "/Users/x/.local/share/swarms/scene-datasets/crema/1006/1006_MTI_ANG_XX.wav",
+          "sha256": "d8a324371c17b8a9371e79c02642f1c7f1782b3c838de3346dc2904c482d27a9",
+          "transcript": "Maybe tomorrow it will be cold.",
+          "source": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/1658cd342dff90010aa843eaeebd53610a08b1dc/AudioWAV/1006_MTI_ANG_XX.wav",
+          "annotations": {
+            "intended_emotion": "A",
+            "intended_intensity": "XX",
+            "audio_only_votes": {
+              "A": 10,
+              "D": 0,
+              "F": 0,
+              "H": 0,
+              "N": 0,
+              "S": 0
+            },
+            "n": 10,
+            "target_share": 1.0,
+            "conditional_intensity": {
+              "A": 66.5,
+              "D": null,
+              "F": null,
+              "H": null,
+              "N": null,
+              "S": null
+            },
+            "selection": "Top source-metadata candidate, not listener-approved"
+          },
+          "qc": {
+            "duration_seconds": 3.7704375,
+            "sample_rate": 16000,
+            "near_full_scale_samples": 20
+          },
+          "qualification": "Candidate; source annotations retained, acting and transcript unreviewed",
+          "emotion": "anger",
+          "speaker": "crema:1006",
+          "library": "crema",
+          "label": "CREMA-D \u00b7 crema:1006 \u00b7 anger",
+          "terms": "ODbL database / DbCL contents. Research comparison; no unrestricted commercial identity-use claim."
+        },
+        "strength": 1.0,
+        "duration_scale": 1.0
+      }
+    },
+    {
+      "id": "0a7aa14d-2ffe-403c-9498-da6657d1fbdb",
+      "engine": "VoxCPM2",
+      "state": "saved",
+      "exact_words": true,
+      "audio": {
+        "path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/0a7aa14d-2ffe-403c-9498-da6657d1fbdb/voice.wav",
+        "listening_path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/0a7aa14d-2ffe-403c-9498-da6657d1fbdb/listening.wav",
+        "sha256": "a4a18cd5dd31fb94d07e7cf7b6a5a00ca9c88f0c4fd48a7dafa280a18bce062f",
+        "duration_seconds": 4.48,
+        "sample_rate": 48000,
+        "gain": 0.32322132033960876,
+        "loudness": {
+          "input_i": "-13.19",
+          "input_tp": "0.01",
+          "input_lra": "1.10",
+          "input_thresh": "-23.67",
+          "output_i": "-21.69",
+          "output_tp": "-8.67",
+          "output_lra": "1.00",
+          "output_thresh": "-32.17",
+          "normalization_type": "dynamic",
+          "target_offset": "-1.31"
+        }
+      },
+      "request": {
+        "text": "The door was open when I arrived. I waited outside until you came back.",
+        "description": "",
+        "seed": 23,
+        "steps": 20,
+        "guidance": 2.5,
+        "profile": {
+          "name": "British character \u00b7 pipeline test, unreviewed \u00b7 anger",
+          "reference": {
+            "id": "character-audition:9c42d08f-3ceb-445e-bdd4-7a9dec29b396",
+            "source": "Locally designed synthetic character",
+            "audition_id": "9c42d08f-3ceb-445e-bdd4-7a9dec29b396",
+            "path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/9c42d08f-3ceb-445e-bdd4-7a9dec29b396/voice.wav",
+            "sha256": "8be08ea97aa8bd06c08dee60538a3fb99303e90ce8a2e7968c1f1bb0bde01957",
+            "transcript": "I need you to stay right here. Listen to me for a moment. There is something important I want you to understand."
+          }
+        },
+        "performance_direction": "",
+        "mode": "profile_reuse"
+      }
+    },
+    {
+      "id": "1ace2e49-e1ce-4ffb-ae85-fe467a105f02",
+      "engine": "VoxCPM2",
+      "state": "saved",
+      "exact_words": true,
+      "audio": {
+        "path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/1ace2e49-e1ce-4ffb-ae85-fe467a105f02/voice.wav",
+        "listening_path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/1ace2e49-e1ce-4ffb-ae85-fe467a105f02/listening.wav",
+        "sha256": "d399b08689a19e1e777b1535d1da20e7555ffb7501f6e3991efc27f9a357cfdc",
+        "duration_seconds": 4.48,
+        "sample_rate": 48000,
+        "gain": 0.3209962804210691,
+        "loudness": {
+          "input_i": "-13.13",
+          "input_tp": "-0.07",
+          "input_lra": "1.60",
+          "input_thresh": "-23.55",
+          "output_i": "-20.97",
+          "output_tp": "-7.90",
+          "output_lra": "1.60",
+          "output_thresh": "-31.33",
+          "normalization_type": "dynamic",
+          "target_offset": "-2.03"
+        }
+      },
+      "request": {
+        "text": "We can talk about the details tomorrow. For now, tell me what you need.",
+        "description": "",
+        "seed": 23,
+        "steps": 20,
+        "guidance": 2.5,
+        "profile": {
+          "name": "British character \u00b7 pipeline test, unreviewed \u00b7 anger",
+          "reference": {
+            "id": "character-audition:9c42d08f-3ceb-445e-bdd4-7a9dec29b396",
+            "source": "Locally designed synthetic character",
+            "audition_id": "9c42d08f-3ceb-445e-bdd4-7a9dec29b396",
+            "path": "/Users/x/projects/swarms/services/speaker-studio/.runtime/voice-designer/auditions/9c42d08f-3ceb-445e-bdd4-7a9dec29b396/voice.wav",
+            "sha256": "8be08ea97aa8bd06c08dee60538a3fb99303e90ce8a2e7968c1f1bb0bde01957",
+            "transcript": "I need you to stay right here. Listen to me for a moment. There is something important I want you to understand."
+          }
+        },
+        "performance_direction": "",
+        "mode": "profile_reuse"
+      }
+    }
+  ],
+  "contract_tests_passed": 46,
+  "perceptual_result": "Not rated. User rejected the earlier written-direction anger take; no approval is inferred for this corrected path.",
+  "browser_playback_verified": {
+    "performance_seconds": 5.503129,
+    "first_new_line_seconds": 4.48,
+    "errors": null
+  },
+  "emotion_preview_matches_saved_native_input": true,
+  "portable_draft_contains_emotion_guide": true,
+  "paper16_correction_saved": true
+}

@@ -1,0 +1,53 @@
+{
+  "status": "delivered-bounded-three-role-stock-generation-study",
+  "at": "2026-10-30T04:04:15Z",
+  "paperSha256": "c6661bf33a4fd8c7267b3e3271f7691a4c16bc118f0ea075b6afbbfbc9f31f80",
+  "subject": "Existing local stock Langflow Assistant via native APIs, not research profile",
+  "promptAndToolkit": "Unmodified during observations, not pristine upstream claim",
+  "input": "Natural-language request; no node/edge recipe",
+  "observations": {
+    "headless": {
+      "nativeNodes": 4,
+      "nativeEdges": 3,
+      "publicEvents": 3,
+      "application": "private persisted graph",
+      "traceLimit": "No complete tool trace; nonexecution self-reported"
+    },
+    "normalStream": {
+      "nativeNodes": 4,
+      "nativeEdges": 3,
+      "publicEvents": 117,
+      "observedToolStarts": [
+        "build_flow"
+      ],
+      "sourceFilesStable": 13,
+      "application": "proposal in separate fresh private flow"
+    }
+  },
+  "interpretation": {
+    "author": "research collaborator",
+    "upperPlanes": "analyst proposed, including alternative one-composite interpretation",
+    "firstCheck": "One inherited obligation missing; raw graph unchanged",
+    "revisedChecks": 51,
+    "revisedPassed": true,
+    "faultVariantsDetected": 10,
+    "testMethods": 2,
+    "limits": "Authored row retention and finite structure, not semantic completeness or behavior"
+  },
+  "corpusComparison": {
+    "wireGraphObjects": [
+      345,
+      63,
+      439
+    ],
+    "neighborhoodGraphObjects": [
+      48,
+      43
+    ],
+    "meaning": "Exact recorded comparisons with source examples; no independence/usefulness/guidance benefit"
+  },
+  "activeCanvasChanged": false,
+  "generatedTaskExecution": "Not requested; no run_flow observed on normal stream; first trace limited",
+  "screenshot": "/tmp/paper6-stock-builder-in-jupyter.png",
+  "publishing": "No GitHub push or task deployment performed"
+}
